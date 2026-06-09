@@ -190,6 +190,8 @@ Vulnerable dependencies are a specific GIT repository finding. Similarly to othe
 
 For findings on transitive dependencies, Codacy also displays the **dependency chain**: the ordered path from a direct (top-level) dependency in your manifest down to the vulnerable package. This helps you identify which of your direct dependencies you need to update to resolve the finding.
 
+![Security and risk management finding dependency chain](images/security-risk-management-finding-dependency-chain.png)
+
 Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.
 
 !!! important
