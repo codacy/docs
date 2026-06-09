@@ -99,6 +99,10 @@ On the right section, you can view the filtered list of findings. Each finding c
 
 ![Security and risk management finding page](images/security-risk-management-finding-details.png)
 
+For findings on transitive dependencies, the finding also displays the **dependency chain**: the ordered path from a direct (top-level) dependency in your manifest down to the vulnerable package (for example, `direct-package → intermediate-package → vulnerable-package`). This helps you identify which of your direct dependencies you need to update to resolve the finding.
+
+![Security and risk management finding dependency chain](images/security-risk-management-finding-dependency-chain.png)
+
 The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
@@ -187,10 +191,6 @@ Codacy closes a finding in either of the following cases:
     To make sure that Codacy detects dependency issues correctly, [enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Trivy tool. 
 
 Vulnerable dependencies are a specific GIT repository finding. Similarly to other repository findings, Codacy opens an issue whenever a commit is analyzed.
-
-For findings on transitive dependencies, Codacy also displays the **dependency chain**: the ordered path from a direct (top-level) dependency in your manifest down to the vulnerable package (for example, `direct-package → intermediate-package → vulnerable-package`). This helps you identify which of your direct dependencies you need to update to resolve the finding.
-
-![Security and risk management finding dependency chain](images/security-risk-management-finding-dependency-chain.png)
 
 Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.
 
