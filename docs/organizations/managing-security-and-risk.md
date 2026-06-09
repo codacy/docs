@@ -188,6 +188,8 @@ Codacy closes a finding in either of the following cases:
 
 Vulnerable dependencies are a specific GIT repository finding. Similarly to other repository findings, Codacy opens an issue whenever a commit is analyzed.
 
+For findings on transitive dependencies, Codacy also displays the **dependency chain**: the ordered path from a direct (top-level) dependency in your manifest down to the vulnerable package. This helps you identify which of your direct dependencies you need to update to resolve the finding.
+
 Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.
 
 !!! important
