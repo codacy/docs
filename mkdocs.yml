@@ -692,6 +692,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2026:
+                      - release-notes/cloud/cloud-2026-05.md
                       - release-notes/cloud/cloud-2026-04.md
                       - release-notes/cloud/cloud-2026-03.md
                       - release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md
