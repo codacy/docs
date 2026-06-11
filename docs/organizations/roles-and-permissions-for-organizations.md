@@ -29,13 +29,10 @@ By default, only users with the Codacy role **repository write** can change anal
 
 To change this, open your organization **Settings**, page **Roles and permissions**, and choose the Codacy roles that can perform the following operations on the repositories of your organization:
 
+-   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
--   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
--   [Configure languages](../repositories-configure/languages.md)
--   [Manage branches](../repositories-configure/managing-branches.md)
 -   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
--   [Create targets and run Dynamic Application Security Testing scans](../organizations/managing-security-and-risk.md#app-scanning)
 
 ![Configuring repository management permissions](images/roles-permissions-repo-management.png)
 
