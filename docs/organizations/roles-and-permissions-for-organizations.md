@@ -29,13 +29,10 @@ By default, only users with the Codacy role **repository write** can change anal
 
 To change this, open your organization **Settings**, page **Roles and permissions**, and choose the Codacy roles that can perform the following operations on the repositories of your organization:
 
+-   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
--   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
--   [Configure languages](../repositories-configure/languages.md)
--   [Manage branches](../repositories-configure/managing-branches.md)
 -   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
--   [Create targets and run Dynamic Application Security Testing scans](../organizations/managing-security-and-risk.md#app-scanning)
 
 ![Configuring repository management permissions](images/roles-permissions-repo-management.png)
 
@@ -129,7 +126,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and languages,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td class="no">No</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -293,7 +290,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and languages,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td class="no">No</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -439,7 +436,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and languages,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
