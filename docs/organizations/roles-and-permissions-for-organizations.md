@@ -126,7 +126,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and languages,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td class="no">No</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -290,7 +290,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and languages,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td class="no">No</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -436,7 +436,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and languages,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
