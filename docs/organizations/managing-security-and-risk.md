@@ -103,7 +103,7 @@ For findings on transitive dependencies, the finding also displays the **depende
 
 ![Security and risk management finding dependency chain](images/security-risk-management-finding-dependency-chain.png)
 
-### Severity changes
+### Severity changes {: id="severity-changes"}
 
 The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
 
