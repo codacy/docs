@@ -99,6 +99,8 @@ On the right section, you can view the filtered list of findings. Each finding c
 
 ![Security and risk management finding page](images/security-risk-management-finding-details.png)
 
+### Dependency chain
+
 For findings on transitive dependencies, the finding also displays the **dependency chain**: the ordered path from a direct (top-level) dependency in your manifest down to the vulnerable package (for example, `direct-package → intermediate-package → vulnerable-package`). This helps you identify which of your direct dependencies you need to update to resolve the finding.
 
 ![Security and risk management finding dependency chain](images/security-risk-management-finding-dependency-chain.png)
