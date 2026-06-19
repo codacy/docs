@@ -230,7 +230,7 @@ Codacy Guardrails supports working behind a proxy. To set it up, configure your 
 
 ### CA certificate path
 
-If your proxy uses a custom CA certificate, the extension adds an extra setting as a fallback: **Codacy › Proxy: Ca Cert Path** (`codacy.proxy.caCertPath`).
+If your proxy uses a custom CA certificate, the extension has an extra setting as a fallback option to add the path of the certificate: **Codacy › Proxy: CA Cert Path** (`codacy.proxy.caCertPath`).
 
 ![Codacy proxy CA certificate path setting](images/codacy-proxy-ca-cert-path.png)
 
