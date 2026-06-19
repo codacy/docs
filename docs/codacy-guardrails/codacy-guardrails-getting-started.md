@@ -224,6 +224,16 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 
 ![Copilot Agent with Codacy tools](images/copilot_agent.png)
 
+## Proxy configuration
+
+Codacy Guardrails supports working behind a proxy. To set it up, configure your proxy the same way you would for any other VSCode feature, either through the IDE settings or through your system's environment variables.
+
+### CA certificate path
+
+If your proxy uses a custom CA certificate, the extension adds an extra setting as a fallback: **Codacy › Proxy: Ca Cert Path** (`codacy.proxy.caCertPath`).
+
+![Codacy proxy CA certificate path setting](images/codacy-proxy-ca-cert-path.png)
+
 
 # JetBrains IDEs
 
