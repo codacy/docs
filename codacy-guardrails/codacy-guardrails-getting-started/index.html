@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy Guardrails is a brand new way of enforcing code security and quality standards for AI-generated code, built into the free Codacy IDE Extension for VSCode, Copilot, Cursor, and Windsurf. Guardrails help developers ship safer, cleaner AI code by applying best practices and blocking insecure patterns while the code is being generated.">
       
       
-        <meta http-equiv="last-modified" content="2025-09-26 15:25:33">
+        <meta http-equiv="last-modified" content="2026-06-19 13:02:20">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-guardrails/codacy-guardrails-getting-started/">
@@ -5177,6 +5177,11 @@ You can either put the downloaded script in a specific file or create an alias t
 <p>b. Make sure you have Agent mode enabled: <a href="vscode://settings/chat.agent.enabled">vscode://settings/chat.agent.enabled</a></p>
 <p>c. Open the Copilot chat and switch the mode to <code>Agent</code>. You can check that the MCP server was enabled correctly by clicking on the <code>Select tools</code> icon, which should list all the available Codacy tools.</p>
 <p><img alt="Copilot Agent with Codacy tools" src="../images/copilot_agent.png" /></p>
+<h2 id="proxy-configuration">Proxy configuration<a class="headerlink" href="#proxy-configuration" title="Permanent link">#</a></h2>
+<p>Codacy Guardrails supports working behind a proxy. To set it up, configure your proxy the same way you would for any other VSCode feature, either through the IDE settings or through your system's environment variables.</p>
+<h3 id="ca-certificate-path">CA certificate path<a class="headerlink" href="#ca-certificate-path" title="Permanent link">#</a></h3>
+<p>If your proxy uses a custom CA certificate, the extension has an extra setting as a fallback option to add the path of the certificate: <strong>Codacy › Proxy: CA Cert Path</strong> (<code>codacy.proxy.caCertPath</code>).</p>
+<p><img alt="Codacy proxy CA certificate path setting" src="../images/codacy-proxy-ca-cert-path.png" /></p>
 <h1 id="jetbrains-ides">JetBrains IDEs<a class="headerlink" href="#jetbrains-ides" title="Permanent link">#</a></h1>
 <h3 id="supported-operating-systems_1">Supported Operating Systems<a class="headerlink" href="#supported-operating-systems_1" title="Permanent link">#</a></h3>
 <ul>
@@ -5421,7 +5426,7 @@ You can either put the downloaded script in a specific file or create an alias t
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 26, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 19, 2026</span>
     
   </small>
 </div>
