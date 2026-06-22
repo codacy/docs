@@ -191,17 +191,19 @@ Codacy closes a finding in either of the following cases:
 
 SCA findings detect known vulnerabilities in the third-party dependencies used by your repositories. Codacy opens a finding whenever a commit to the default branch is analyzed and a vulnerable dependency is detected.
 
-On the Business plan, Codacy also runs daily re-scans across all repositories — so newly discovered vulnerabilities are surfaced even without a new commit. Results are visible on the [Findings](#item-list) page and in the [Dependencies](#dependencies-list) tab.
-
-!!! important
-    The proactive SCA scanning is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, [talk to us](https://start-chat.com/slack/codacy/rmbTzb).
+On the Business plan, Codacy also runs daily re-scans across all repositories — so newly discovered vulnerabilities are surfaced even without a new commit. Results are visible on the [Findings](#item-list) page and in the [Dependencies](#dependencies-list) tab. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) if you're interested in upgrading.
 
 #### Trivy requirements for proactive SCA {: id="proactive-sca-requirements"}
 
 Proactive SCA uses **Trivy** as its scanning tool. For daily re-scans to produce results on a repository, **both** conditions must be met:
 
 1. The **Trivy tool** is enabled — either through a [coding standard](using-coding-standards.md) applied to the repository, or directly via the repository's [Code patterns settings](../repositories-configure/configuring-code-patterns.md).
-2. At least one **Trivy vulnerability pattern** is enabled: `Trivy_vulnerability_critical`, `Trivy_vulnerability_high`, `Trivy_vulnerability_medium`, `Trivy_vulnerability_minor`, or `Trivy_malicious_packages`.
+2. At least one **Trivy vulnerability pattern** is enabled:
+    -   `Trivy_vulnerability_critical`
+    -   `Trivy_vulnerability_high`
+    -   `Trivy_vulnerability_medium`
+    -   `Trivy_vulnerability_minor`
+    -   `Trivy_malicious_packages`
 
 To enable Trivy across your organization, you can:
 
