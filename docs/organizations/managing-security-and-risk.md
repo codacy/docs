@@ -567,6 +567,8 @@ Security and risk management supports checking the languages and infrastructure-
 
 The **Security and risk management Dependencies** page displays a unified view of all dependencies used by your repositories, populated by Codacy's daily SCA re-scans.
 
+To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
+
 ### Daily re-scan requirements {: id="proactive-sca-requirements"}
 
 Proactive SCA uses **Trivy** as its scanning tool. For daily re-scans to produce results on a repository, **both** conditions must be met:
@@ -583,8 +585,6 @@ To enable Trivy across your organization, you can:
 
 -   **Recommended — via coding standard:** [Add Trivy to a coding standard](using-coding-standards.md), enable its vulnerability patterns in the standard configuration, and apply the standard to your repositories. This covers all linked repositories in one step.
 -   **Per repository:** Open each repository's [Code patterns page](../repositories-configure/configuring-code-patterns.md), enable the Trivy tool, and enable the relevant vulnerability patterns.
-
-To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
 
 ![Security and risk management dependencies page](images/security-risk-management-dependencies-list.png)
 
