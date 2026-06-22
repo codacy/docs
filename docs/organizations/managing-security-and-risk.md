@@ -203,9 +203,6 @@ Proactive SCA uses **Trivy** as its scanning tool. For nightly scans to produce 
 1. The **Trivy tool** is enabled — either through a [coding standard](using-coding-standards.md) applied to the repository, or directly via the repository's [Code patterns settings](../repositories-configure/configuring-code-patterns.md).
 2. At least one **Trivy vulnerability pattern** is enabled: `Trivy_vulnerability_critical`, `Trivy_vulnerability_high`, `Trivy_vulnerability_medium`, `Trivy_vulnerability_minor`, or `Trivy_malicious_packages`.
 
-!!! important
-    Enabling the Trivy tool alone is not sufficient. If no vulnerability patterns are active, the nightly scan runs but produces no findings, and the [Dependencies](#dependencies-list) page shows no data.
-
 To enable Trivy across your organization, you can:
 
 -   **Recommended — via coding standard:** [Add Trivy to a coding standard](using-coding-standards.md), enable its vulnerability patterns in the standard configuration, and apply the standard to your repositories. This covers all linked repositories in one step.
