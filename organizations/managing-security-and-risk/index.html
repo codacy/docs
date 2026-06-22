@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2026-06-16 13:57:42">
+        <meta http-equiv="last-modified" content="2026-06-22 15:41:50">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -5272,16 +5272,8 @@
 <p>Deleting a repository deletes all open findings belonging to that repository.</p>
 </div>
 <h3 id="opening-and-closing-sca-items">How Codacy manages findings detected during software composition analysis (SCA)<a class="headerlink" href="#opening-and-closing-sca-items" title="Permanent link">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To make sure that Codacy detects dependency issues correctly, <a href="../../repositories-configure/configuring-code-patterns/">enable code patterns</a> belonging to the Trivy tool. </p>
-</div>
-<p>Vulnerable dependencies are a specific GIT repository finding. Similarly to other repository findings, Codacy opens an issue whenever a commit is analyzed.</p>
-<p>Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>The proactive SCA scanning is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.</p>
-</div>
+<p>SCA findings behave like other Git repository findings. Codacy opens a finding whenever a commit to the default branch is analyzed and a vulnerable dependency is detected, and closes it when the dependency is no longer detected.</p>
+<p>On the Business plan, Codacy also runs <a href="#proactive-sca-requirements">daily re-scans</a> across all repositories — so newly discovered vulnerabilities are surfaced even without a new commit. <a href="https://start-chat.com/slack/codacy/rmbTzb">Talk to us</a> if you're interested in upgrading.</p>
 <h3 id="opening-and-closing-jira-items">How Codacy manages findings detected on Jira<a class="headerlink" href="#opening-and-closing-jira-items" title="Permanent link">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -5741,9 +5733,28 @@ Note that some issues just don't have a security category. These issues will rem
 <h2 id="dependencies-list">Dependencies<a class="headerlink" href="#dependencies-list" title="Permanent link">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.</p>
+<p>The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, <a href="https://start-chat.com/slack/codacy/rmbTzb">talk to us</a>.</p>
 </div>
-<p>The <strong>Security and risk management Dependencies</strong> page displays a unified view of all dependencies used by your repositories. </p>
+<p>The <strong>Security and risk management Dependencies</strong> page displays a unified view of all dependencies used by your repositories, populated by Codacy's daily SCA re-scans.</p>
+<h3 id="proactive-sca-requirements">Daily re-scan requirements<a class="headerlink" href="#proactive-sca-requirements" title="Permanent link">#</a></h3>
+<p>Proactive SCA uses <strong>Trivy</strong> as its scanning tool. For daily re-scans to produce results on a repository, <strong>both</strong> conditions must be met:</p>
+<ol>
+<li>The <strong>Trivy tool</strong> is enabled — either through a <a href="../using-coding-standards/">coding standard</a> applied to the repository, or directly via the repository's <a href="../../repositories-configure/configuring-code-patterns/">Code patterns settings</a>.</li>
+<li>At least one <strong>Trivy vulnerability pattern</strong> is enabled:<ul>
+<li><code>Trivy_vulnerability_critical</code></li>
+<li><code>Trivy_vulnerability_high</code></li>
+<li><code>Trivy_vulnerability_medium</code></li>
+<li><code>Trivy_vulnerability_minor</code></li>
+<li><code>Trivy_malicious_packages</code></li>
+</ul>
+</li>
+</ol>
+<p>To enable Trivy across your organization, you can:</p>
+<ul>
+<li><strong>Recommended — via coding standard:</strong> <a href="../using-coding-standards/">Add Trivy to a coding standard</a>, enable its vulnerability patterns in the standard configuration, and apply the standard to your repositories. This covers all linked repositories in one step.</li>
+<li><strong>Per repository:</strong> Open each repository's <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, enable the Trivy tool, and enable the relevant vulnerability patterns.</li>
+</ul>
+<h3 id="viewing-your-dependencies">Viewing your dependencies<a class="headerlink" href="#viewing-your-dependencies" title="Permanent link">#</a></h3>
 <p>To access the dependencies page, access the <a href="#dashboard">overview page</a> and click the <strong>Dependencies</strong> tab.</p>
 <p><img alt="Security and risk management dependencies page" src="../images/security-risk-management-dependencies-list.png" /></p>
 <p>When viewing dependencies, you'll be presented with a list of the dependencies used by all repositories in your organization. For each dependency, you'll be able to see how many repositories are making use of it, how many different versions you are using across all repositories, and how many security findings were found due to the presence of that dependency.</p>
@@ -6115,7 +6126,7 @@ You can also delete a specific tag inside an image card.</p>
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 22, 2026</span>
     
   </small>
 </div>
