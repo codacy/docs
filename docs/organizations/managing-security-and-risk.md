@@ -584,6 +584,8 @@ To enable Trivy across your organization, you can:
 -   **Recommended — via coding standard:** [Add Trivy to a coding standard](using-coding-standards.md), enable its vulnerability patterns in the standard configuration, and apply the standard to your repositories. This covers all linked repositories in one step.
 -   **Per repository:** Open each repository's [Code patterns page](../repositories-configure/configuring-code-patterns.md), enable the Trivy tool, and enable the relevant vulnerability patterns.
 
+### Viewing your dependencies
+
 To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
 
 ![Security and risk management dependencies page](images/security-risk-management-dependencies-list.png)
