@@ -189,15 +189,29 @@ Codacy closes a finding in either of the following cases:
 
 ### How Codacy manages findings detected during software composition analysis (SCA) {: id="opening-and-closing-sca-items"}
 
-!!! note
-    To make sure that Codacy detects dependency issues correctly, [enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Trivy tool. 
+Vulnerable dependencies are a specific Git repository finding. Codacy opens a finding whenever a commit to the default branch is analyzed and a vulnerable dependency is detected.
 
-Vulnerable dependencies are a specific GIT repository finding. Similarly to other repository findings, Codacy opens an issue whenever a commit is analyzed.
-
-Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.
+If your organization has proactive SCA enabled, Codacy also runs a nightly scan of all repositories — so newly discovered vulnerabilities are surfaced even without a new commit.
 
 !!! important
-    The proactive SCA scanning is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+    The proactive SCA scanning is a Business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, [talk to us](https://start-chat.com/slack/codacy/rmbTzb).
+
+#### Trivy requirements for proactive SCA {: id="proactive-sca-requirements"}
+
+Proactive SCA uses **Trivy** as its scanning tool. For nightly scans to produce results on a repository, **both** conditions must be met:
+
+1. The **Trivy tool** is enabled — either through a [coding standard](using-coding-standards.md) applied to the repository, or directly via the repository's [Code patterns settings](../repositories-configure/configuring-code-patterns.md).
+2. At least one **Trivy vulnerability pattern** is enabled: `Trivy_vulnerability_critical`, `Trivy_vulnerability_high`, `Trivy_vulnerability_medium`, `Trivy_vulnerability_minor`, or `Trivy_malicious_packages`.
+
+!!! important
+    Enabling the Trivy tool alone is not sufficient. If no vulnerability patterns are active, the nightly scan runs but produces no findings, and the [Dependencies](#dependencies-list) page shows no data.
+
+To enable Trivy across your organization, you can:
+
+-   **Recommended — via coding standard:** [Add Trivy to a coding standard](using-coding-standards.md), enable its vulnerability patterns in the standard configuration, and apply the standard to your repositories. This covers all linked repositories in one step.
+-   **Per repository:** Open each repository's [Code patterns page](../repositories-configure/configuring-code-patterns.md), enable the Trivy tool, and enable the relevant vulnerability patterns.
+
+After enabling Trivy, nightly scans run automatically. Results appear in the [Dependencies](#dependencies-list) tab and the [Findings](#item-list) page after the nightly scan completes.
 
 
 ### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
