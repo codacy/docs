@@ -189,26 +189,9 @@ Codacy closes a finding in either of the following cases:
 
 ### How Codacy manages findings detected during software composition analysis (SCA) {: id="opening-and-closing-sca-items"}
 
-SCA findings detect known vulnerabilities in the third-party dependencies used by your repositories. Codacy opens a finding whenever a commit to the default branch is analyzed and a vulnerable dependency is detected.
+SCA findings behave like other Git repository findings. Codacy opens a finding whenever a commit to the default branch is analyzed and a vulnerable dependency is detected, and closes it when the dependency is no longer detected.
 
-On the Business plan, Codacy also runs daily re-scans across all repositories — so newly discovered vulnerabilities are surfaced even without a new commit. Results are visible on the [Findings](#item-list) page and in the [Dependencies](#dependencies-list) tab. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) if you're interested in upgrading.
-
-#### Trivy requirements for proactive SCA {: id="proactive-sca-requirements"}
-
-Proactive SCA uses **Trivy** as its scanning tool. For daily re-scans to produce results on a repository, **both** conditions must be met:
-
-1. The **Trivy tool** is enabled — either through a [coding standard](using-coding-standards.md) applied to the repository, or directly via the repository's [Code patterns settings](../repositories-configure/configuring-code-patterns.md).
-2. At least one **Trivy vulnerability pattern** is enabled:
-    -   `Trivy_vulnerability_critical`
-    -   `Trivy_vulnerability_high`
-    -   `Trivy_vulnerability_medium`
-    -   `Trivy_vulnerability_minor`
-    -   `Trivy_malicious_packages`
-
-To enable Trivy across your organization, you can:
-
--   **Recommended — via coding standard:** [Add Trivy to a coding standard](using-coding-standards.md), enable its vulnerability patterns in the standard configuration, and apply the standard to your repositories. This covers all linked repositories in one step.
--   **Per repository:** Open each repository's [Code patterns page](../repositories-configure/configuring-code-patterns.md), enable the Trivy tool, and enable the relevant vulnerability patterns.
+On the Business plan, Codacy also runs [daily re-scans](#proactive-sca-requirements) across all repositories — so newly discovered vulnerabilities are surfaced even without a new commit. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) if you're interested in upgrading.
 
 
 ### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
@@ -580,10 +563,26 @@ Security and risk management supports checking the languages and infrastructure-
 ## Dependencies {: id="dependencies-list"}
 
 !!! important
-    The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
+    The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, [talk to us](https://start-chat.com/slack/codacy/rmbTzb).
 
+The **Security and risk management Dependencies** page displays a unified view of all dependencies used by your repositories, populated by Codacy's daily SCA re-scans.
 
-The **Security and risk management Dependencies** page displays a unified view of all dependencies used by your repositories. Data is populated by Codacy's daily SCA re-scans — for results to appear, [Trivy must be enabled with vulnerability patterns](#proactive-sca-requirements) on each repository.
+### Daily re-scan requirements {: id="proactive-sca-requirements"}
+
+Proactive SCA uses **Trivy** as its scanning tool. For daily re-scans to produce results on a repository, **both** conditions must be met:
+
+1. The **Trivy tool** is enabled — either through a [coding standard](using-coding-standards.md) applied to the repository, or directly via the repository's [Code patterns settings](../repositories-configure/configuring-code-patterns.md).
+2. At least one **Trivy vulnerability pattern** is enabled:
+    -   `Trivy_vulnerability_critical`
+    -   `Trivy_vulnerability_high`
+    -   `Trivy_vulnerability_medium`
+    -   `Trivy_vulnerability_minor`
+    -   `Trivy_malicious_packages`
+
+To enable Trivy across your organization, you can:
+
+-   **Recommended — via coding standard:** [Add Trivy to a coding standard](using-coding-standards.md), enable its vulnerability patterns in the standard configuration, and apply the standard to your repositories. This covers all linked repositories in one step.
+-   **Per repository:** Open each repository's [Code patterns page](../repositories-configure/configuring-code-patterns.md), enable the Trivy tool, and enable the relevant vulnerability patterns.
 
 To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
 
