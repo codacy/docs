@@ -194,7 +194,7 @@ SCA findings detect known vulnerabilities in the third-party dependencies used b
 On the Business plan, Codacy also runs daily re-scans across all repositories — so newly discovered vulnerabilities are surfaced even without a new commit. Results are visible on the [Findings](#item-list) page and in the [Dependencies](#dependencies-list) tab.
 
 !!! important
-    The proactive SCA scanning is a Business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, [talk to us](https://start-chat.com/slack/codacy/rmbTzb).
+    The proactive SCA scanning is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, [talk to us](https://start-chat.com/slack/codacy/rmbTzb).
 
 #### Trivy requirements for proactive SCA {: id="proactive-sca-requirements"}
 
