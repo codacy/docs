@@ -1,0 +1,28 @@
+import Admonition from '@theme/Admonition';
+
+export default function Paid({
+  variant = 'paid',
+  pricingUrl = 'https://www.codacy.com/pricing',
+}) {
+  let prefix = 'This feature is ';
+  let linkText = 'only available on paid plans';
+
+  switch (variant) {
+    case 'private-repositories':
+      prefix = 'Analyzing private repositories is ';
+      break;
+    case 'business':
+      linkText = 'only available on Business plan';
+      break;
+    case 'paid':
+    default:
+      break;
+  }
+
+  return (
+    <Admonition type="note" title="Paid plans">
+      {prefix}
+      <a href={pricingUrl}>{linkText}</a>.
+    </Admonition>
+  );
+}

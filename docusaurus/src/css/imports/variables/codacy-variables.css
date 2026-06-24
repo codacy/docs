@@ -1,0 +1,80 @@
+:root {
+  /* Blue */
+  --codacy-blue-00: #050b1a;
+  --codacy-blue-10: #091e4e;
+  --codacy-blue-20: #073683;
+  --codacy-blue-30: #0048bd;
+  --codacy-blue-40: #005df0;
+  --codacy-blue-50: #276bfc;
+  --codacy-blue-60: #5784ff;
+  --codacy-blue-70: #8ab7ff;
+  --codacy-blue-80: #bdd6ff;
+  --codacy-blue-90: #cce0ff;
+  --codacy-blue-95: #e5efff;
+  --codacy-blue-98: #f5f9ff;
+
+  /* Green */
+  --codacy-green-00: #0a1e10;
+  --codacy-green-10: #12351c;
+  --codacy-green-20: #1a4b28;
+  --codacy-green-30: #26733c;
+  --codacy-green-40: #339950;
+  --codacy-green-50: #40bf64;
+  --codacy-green-60: #66cc83;
+  --codacy-green-70: #8cd9a2;
+  --codacy-green-80: #b3e5c1;
+  --codacy-green-90: #d9f2e0;
+  --codacy-green-95: #ecf9ef;
+  --codacy-green-98: #f7fcf9;
+
+  /* Grey */
+  --codacy-grey-00: #0b0e13;
+  --codacy-grey-05: #11151d;
+  --codacy-grey-10: #171d26;
+  --codacy-grey-15: #1d2430;
+  --codacy-grey-20: #344056;
+  --codacy-grey-30: #475776;
+  --codacy-grey-40: #5a6f96;
+  --codacy-grey-50: #7689ad;
+  --codacy-grey-60: #96a4c0;
+  --codacy-grey-70: #b6c0d3;
+  --codacy-grey-80: #d6dbe6;
+  --codacy-grey-90: #dfe4ec;
+  --codacy-grey-95: #eff1f5;
+  --codacy-grey-98: #f9fafb;
+  --codacy-grey-100: #ffffff;
+
+  /* Red */
+  --codacy-red-00: #290002;
+  --codacy-red-10: #3d0003;
+  --codacy-red-20: #8a000b;
+  --codacy-red-30: #b90415;
+  --codacy-red-40: #c8282a;
+  --codacy-red-50: #db4b48;
+  --codacy-red-60: #fb615a;
+  --codacy-red-70: #ff928a;
+  --codacy-red-80: #ffc2bd;
+  --codacy-red-90: #ffd1cc;
+  --codacy-red-95: #ffe8e5;
+  --codacy-red-98: #fff6f5;
+
+  /* Yellow */
+  --codacy-yellow-00: #291a00;
+  --codacy-yellow-10: #472d00;
+  --codacy-yellow-20: #8a5600;
+  --codacy-yellow-30: #bd7600;
+  --codacy-yellow-40: #f09700;
+  --codacy-yellow-50: #ffae24;
+  --codacy-yellow-60: #ffc157;
+  --codacy-yellow-70: #ffd38a;
+  --codacy-yellow-80: #ffe6bd;
+  --codacy-yellow-90: #ffeecc;
+  --codacy-yellow-95: #fff6e5;
+  --codacy-yellow-98: #fffbf5;
+
+  /* Semantic tokens (optional) */
+  --codacy-primary: var(--codacy-blue-40);
+  --codacy-success: var(--codacy-green-40);
+  --codacy-warning: var(--codacy-yellow-40);
+  --codacy-danger: var(--codacy-red-40);
+}

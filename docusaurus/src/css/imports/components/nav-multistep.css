@@ -1,0 +1,32 @@
+
+.nav-multistep {
+    margin: 1rem 0 1.25rem;
+    padding: 1rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 0.75rem;
+    background: var(--ifm-background-surface-color);
+  }
+  
+  .nav-multistep__label {
+    margin: 0 0 0.75rem;
+    color: var(--ifm-color-emphasis-700);
+    font-size: 0.875rem;
+  }
+  
+  .nav-multistep__list {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  
+  .nav-multistep__step {
+    margin: 0.25rem 0;
+  }
+  
+  .nav-multistep__step--active {
+    font-weight: 600;
+  }
+  
+  .nav-multistep__current {
+    color: var(--ifm-font-color-base);
+  }
+  
