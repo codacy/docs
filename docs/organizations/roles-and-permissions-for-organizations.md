@@ -126,6 +126,24 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Access AI Risk Hub Overview</td>
+      <td class="no">No</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Access AI Risk Hub AI assets and Tools &amp; workflows</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td class="no">No</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -290,6 +308,24 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Access AI Risk Hub Overview</td>
+      <td class="no">No</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Access AI Risk Hub AI assets and Tools &amp; workflows</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="yes">Yes</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
       <td class="no">No</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -432,6 +468,18 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     <tr>
       <td>Access Security and risk management</td>
       <td colspan="2" class="yes">Yes<sup>3</sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Access AI Risk Hub Overview</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Access AI Risk Hub AI assets and Tools &amp; workflows</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
