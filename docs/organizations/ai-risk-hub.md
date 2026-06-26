@@ -14,9 +14,11 @@ To access the AI Risk Hub, select an organization from the top navigation bar an
 
 Inside this hub, you can find the following tabs to help you monitor the AI risk of your organization:
 
-- [Overview](#overview)
-- [AI assets](#ai-assets)
-- [Tools & workflows](#tools-workflows)
+| Tab | Who can access |
+|-----|----------------|
+| [Overview](#overview) | All organization members |
+| [AI assets](#ai-assets) | Organization managers and admins only |
+| [Tools & workflows](#tools-workflows) | Organization managers and admins only |
 
 ---
 
