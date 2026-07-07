@@ -75,8 +75,8 @@ On GitHub, when you transfer a repository to a different organization, GitHub on
 
 Codacy automatically removes the repository from its original organization when both of the following organizations are added to Codacy:
 
--   The **original** organization that the repository is being transferred from.
--   The **destination** organization that the repository is being transferred to.
+-   The **original** organization that the repository is being transferred from. Since the repository is already tracked on Codacy under this organization, this is normally already the case.
+-   The **destination** organization that the repository is being transferred to. This is usually the step you need to take: adding the destination organization to Codacy is what installs the Codacy GitHub App there, allowing Codacy to receive the transfer notification.
 
 !!! note
     The destination organization doesn't need a paid plan or any repositories added to Codacy — simply [adding the organization to Codacy](what-are-organizations.md#adding-an-organization) so that the Codacy GitHub App is installed is enough for Codacy to detect the transfer.
@@ -86,7 +86,7 @@ Codacy automatically removes the repository from its original organization when 
     Codacy only removes the repository from its original organization — it doesn't automatically add it to the destination organization on Codacy. If you want to keep analyzing the repository after the transfer, you still need to add it to the destination organization on Codacy yourself.
 
 !!! important
-    This is currently supported for **GitHub Cloud** and **GitHub Enterprise Cloud** only. For GitLab and Bitbucket, or if the original organization isn't added to Codacy, [remove the repository manually](../repositories-configure/removing-your-repository.md).
+    This is currently supported for **GitHub Cloud** and **GitHub Enterprise Cloud** only. For GitLab and Bitbucket, or if the destination organization isn't added to Codacy, [remove the repository manually](../repositories-configure/removing-your-repository.md).
 
 ## Finding your repositories with Segments {: id="provider-segments"}
 

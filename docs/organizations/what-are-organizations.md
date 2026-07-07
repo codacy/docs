@@ -34,16 +34,16 @@ If you update your organization or repository information on your Git provider, 
 | Git provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group | Transfer repository to a different organization |
 |---|---|---|---|---|---|---|---|
 | GitHub Cloud | Yes | Yes | Yes | Yes | Yes | Yes | Yes* |
-| GitHub Enterprise | Yes | Yes | Yes | Yes | Yes | Yes | Yes* |
+| GitHub Enterprise | Yes | Yes | Yes | Yes | Yes | Yes | No |
 | GitLab Cloud | No | No | No | No | No | No | No |
 | GitLab Enterprise |  Yes | Yes | Yes | Yes | Yes | Yes | No |
 | Bitbucket Cloud | Yes | Yes | No | No | No | No | No |
 | Bitbucket Server | Yes | Yes | No | No | No | No | No |
 
 !!! note
-    \* Only when both the original and destination organizations are added to Codacy. See [Transferring a repository to another organization](managing-repositories.md#transferring-repository).
+    \* Only for GitHub Cloud, including organizations added through GitHub Enterprise Cloud, and only when both the original and destination organizations are added to Codacy. See [Transferring a repository to another organization](managing-repositories.md#transferring-repository).
 
-Se also the [roles and permission mapping from the Git providers](roles-and-permissions-for-organizations.md).
+See also the [roles and permission mapping from the Git providers](roles-and-permissions-for-organizations.md).
 
 ## Deleting an organization
 
