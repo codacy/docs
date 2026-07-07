@@ -88,6 +88,18 @@ Codacy automatically removes the repository from its original organization when 
 !!! important
     This is currently supported for **GitHub Cloud** and **GitHub Enterprise Cloud** only. For GitLab and Bitbucket, or if the destination organization isn't added to Codacy, [remove the repository manually](../repositories-configure/removing-your-repository.md).
 
+## Repository archived on GitHub {: id="archived-repository"}
+
+Since July 7, 2026, when you archive a repository on GitHub, Codacy automatically removes that repository from Codacy, since archived repositories are read-only and don't need further code quality analysis.
+
+!!! note
+    This only applies to repositories archived on **GitHub Cloud** or **GitHub Enterprise Cloud** — GitLab and Bitbucket aren't affected.
+
+!!! important
+    This only applies going forward: repositories that were already archived on GitHub before July 7, 2026 aren't automatically removed. [Remove them manually](../repositories-configure/removing-your-repository.md) if needed.
+
+    If you unarchive a repository after Codacy removes it, Codacy doesn't automatically bring it back — you need to [add it back to Codacy](#adding-a-repository) to resume analyzing it.
+
 ## Finding your repositories with Segments {: id="provider-segments"}
 
 Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
