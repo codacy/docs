@@ -11,7 +11,7 @@
         <meta name="description" content="Users with the necessary permissions on your Git provider can add repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then follow on Codacy the repositories of their interest.">
       
       
-        <meta http-equiv="last-modified" content="2026-02-20 10:08:57">
+        <meta http-equiv="last-modified" content="2026-07-07 15:51:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-repositories/">
@@ -1078,6 +1078,13 @@
         <li class="md-nav__item">
   <a href="#follow-unfollow" class="md-nav__link">
     Following or unfollowing a repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferring-repository" class="md-nav__link">
+    Transferring a repository to another organization
   </a>
   
 </li>
@@ -2336,18 +2343,6 @@
   <li class="md-nav__item">
     <a href="../../faq/repositories/i-renamed-my-repository-on-the-git-provider/" title="I renamed my repository on the Git provider" class="md-nav__link">
       I renamed my repository on the Git provider
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../faq/repositories/i-moved-my-repository-on-the-git-provider/" title="I moved my repository on the Git provider" class="md-nav__link">
-      I moved my repository on the Git provider
     </a>
   </li>
 
@@ -5118,6 +5113,23 @@
 <p>You automatically <strong>start following</strong> a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.</p>
 <p>Conversely, you automatically <strong>stop following</strong> a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.</p>
 </div>
+<h2 id="transferring-repository">Transferring a repository to another organization<a class="headerlink" href="#transferring-repository" title="Permanent link">#</a></h2>
+<p>On GitHub, when you transfer a repository to a different organization, GitHub only notifies the <strong>destination</strong> organization about the transfer — the original organization doesn't receive any notification. Because of this, Codacy needs some information from both organizations to keep track of the repository.</p>
+<p>Codacy automatically removes the repository from its original organization when both of the following organizations are added to Codacy:</p>
+<ul>
+<li>The <strong>original</strong> organization that the repository is being transferred from. Since the repository is already tracked on Codacy under this organization, this is normally already the case.</li>
+<li>The <strong>destination</strong> organization that the repository is being transferred to. This is usually the step you need to take: adding the destination organization to Codacy is what installs the Codacy GitHub App there, allowing Codacy to receive the transfer notification.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The destination organization doesn't need a paid plan or any repositories added to Codacy — simply <a href="../what-are-organizations/#adding-an-organization">adding the organization to Codacy</a> so that the Codacy GitHub App is installed is enough for Codacy to detect the transfer.</p>
+<p>This is commonly used to set up a dedicated "archive" organization on GitHub, to which repositories are transferred when they're decommissioned, so that Codacy automatically cleans them up from their original organization.</p>
+<p>Codacy only removes the repository from its original organization — it doesn't automatically add it to the destination organization on Codacy. If you want to keep analyzing the repository after the transfer, you still need to add it to the destination organization on Codacy yourself.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This is currently supported for <strong>GitHub Cloud</strong> and <strong>GitHub Enterprise Cloud</strong> only. For GitLab and Bitbucket, or if the destination organization isn't added to Codacy, <a href="../../repositories-configure/removing-your-repository/">remove the repository manually</a>.</p>
+</div>
 <h2 id="provider-segments">Finding your repositories with Segments<a class="headerlink" href="#provider-segments" title="Permanent link">#</a></h2>
 <p>Codacy allows you to utilise <a href="../segments"><strong>Segments</strong></a> to categorize and filter repositories more effectively within the Codacy platform.</p>
 <div class="admonition info">
@@ -5129,6 +5141,7 @@
 <ul>
 <li><a href="../segments">How to setup Segments?</a></li>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
+<li><a href="../../faq/general/how-does-codacy-support-github-enterprise/">How does Codacy support GitHub Enterprise?</a></li>
 </ul>
               
               
@@ -5286,7 +5299,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 20, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 7, 2026</span>
     
   </small>
 </div>
