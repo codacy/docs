@@ -11,7 +11,7 @@
         <meta name="description" content="Users with the necessary permissions on your Git provider can add repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then follow on Codacy the repositories of their interest.">
       
       
-        <meta http-equiv="last-modified" content="2026-07-07 15:51:29">
+        <meta http-equiv="last-modified" content="2026-07-07 16:39:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-repositories/">
@@ -1085,6 +1085,13 @@
         <li class="md-nav__item">
   <a href="#transferring-repository" class="md-nav__link">
     Transferring a repository to another organization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archived-repository" class="md-nav__link">
+    Repository archived on GitHub
   </a>
   
 </li>
@@ -5129,6 +5136,17 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>This is currently supported for <strong>GitHub Cloud</strong> and <strong>GitHub Enterprise Cloud</strong> only. For GitLab and Bitbucket, or if the destination organization isn't added to Codacy, <a href="../../repositories-configure/removing-your-repository/">remove the repository manually</a>.</p>
+</div>
+<h2 id="archived-repository">Repository archived on GitHub<a class="headerlink" href="#archived-repository" title="Permanent link">#</a></h2>
+<p>Since July 7, 2026, when you archive a repository on GitHub, Codacy automatically removes that repository from Codacy, as archived repositories are read-only and don't need further code quality analysis.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This only applies to repositories archived on <strong>GitHub Cloud</strong> or <strong>GitHub Enterprise Cloud</strong> — GitLab and Bitbucket aren't affected.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This only applies going forward: repositories that were already archived on GitHub before July 7, 2026 aren't automatically removed. <a href="../../repositories-configure/removing-your-repository/">Remove them manually</a> if needed.</p>
+<p>If you unarchive a repository after Codacy removes it, Codacy doesn't automatically bring it back — you need to <a href="#adding-a-repository">add it back to Codacy</a> to resume analyzing it.</p>
 </div>
 <h2 id="provider-segments">Finding your repositories with Segments<a class="headerlink" href="#provider-segments" title="Permanent link">#</a></h2>
 <p>Codacy allows you to utilise <a href="../segments"><strong>Segments</strong></a> to categorize and filter repositories more effectively within the Codacy platform.</p>

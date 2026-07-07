@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don&#x27;t belong to a Git provider organization), and team members into Codacy with a few clicks.">
       
       
-        <meta http-equiv="last-modified" content="2026-07-07 15:51:29">
+        <meta http-equiv="last-modified" content="2026-07-07 16:39:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/what-are-organizations/">
@@ -5081,6 +5081,7 @@
 <th>Remove member from organization or group</th>
 <th>Delete organization or group</th>
 <th>Transfer repository to a different organization</th>
+<th>Archive repository</th>
 </tr>
 </thead>
 <tbody>
@@ -5093,6 +5094,7 @@
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes*</td>
+<td>Yes**</td>
 </tr>
 <tr>
 <td>GitHub Enterprise</td>
@@ -5103,9 +5105,11 @@
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
+<td>No</td>
 </tr>
 <tr>
 <td>GitLab Cloud</td>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -5123,11 +5127,13 @@
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
+<td>No</td>
 </tr>
 <tr>
 <td>Bitbucket Cloud</td>
 <td>Yes</td>
 <td>Yes</td>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -5143,12 +5149,14 @@
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>No</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>* Only for GitHub Cloud, including organizations added through GitHub Enterprise Cloud, and only when both the original and destination organizations are added to Codacy. See <a href="../managing-repositories/#transferring-repository">Transferring a repository to another organization</a>.</p>
+<p>** Since July 7, 2026, Codacy automatically removes repositories archived on GitHub Cloud (including GitHub Enterprise Cloud) from Codacy. See <a href="../managing-repositories/#archived-repository">Repository archived on GitHub</a>.</p>
 </div>
 <p>See also the <a href="../roles-and-permissions-for-organizations/">roles and permission mapping from the Git providers</a>.</p>
 <h2 id="deleting-an-organization">Deleting an organization<a class="headerlink" href="#deleting-an-organization" title="Permanent link">#</a></h2>
