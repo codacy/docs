@@ -86,7 +86,7 @@ Codacy automatically removes the repository from its original organization when 
     Codacy only removes the repository from its original organization — it doesn't automatically add it to the destination organization on Codacy. If you want to keep analyzing the repository after the transfer, you still need to add it to the destination organization on Codacy yourself.
 
 !!! important
-    This is currently supported for **GitHub Cloud** and **GitHub Enterprise Cloud** only. For GitLab and Bitbucket, or if the original organization isn't added to Codacy, [remove the repository manually](../faq/repositories/i-moved-my-repository-on-the-git-provider.md).
+    This is currently supported for **GitHub Cloud** and **GitHub Enterprise Cloud** only. For GitLab and Bitbucket, or if the original organization isn't added to Codacy, [remove the repository manually](../repositories-configure/removing-your-repository.md).
 
 ## Finding your repositories with Segments {: id="provider-segments"}
 

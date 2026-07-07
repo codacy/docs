@@ -321,8 +321,8 @@ plugins:
               "hc/en-us/articles/360012973060-How-does-Codacy-support-Bitbucket-Cloud-.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
               "hc/en-us/articles/360013142699.md": "repositories-configure/local-analysis/client-side-tools.md"
               "hc/en-us/articles/360013142699-Client-side-tools.md": "repositories-configure/local-analysis/client-side-tools.md"
-              "hc/en-us/articles/360013560819.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
-              "hc/en-us/articles/360013560819-I-moved-my-repository-on-the-Git-provider.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
+              "hc/en-us/articles/360013560819.md": "organizations/managing-repositories.md"
+              "hc/en-us/articles/360013560819-I-moved-my-repository-on-the-Git-provider.md": "organizations/managing-repositories.md"
               "hc/en-us/articles/360013926899.md": "faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md"
               "hc/en-us/articles/360013926899-Why-aren-t-duplication-metrics-being-calculated-.md": "faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md"
               "hc/en-us/articles/360015300100.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
@@ -669,7 +669,6 @@ nav:
           - Repositories:
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
-                - faq/repositories/i-moved-my-repository-on-the-git-provider.md
           - Code analysis:
                 - faq/code-analysis/which-metrics-does-codacy-calculate.md
                 - faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md
