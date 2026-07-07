@@ -90,7 +90,7 @@ Codacy automatically removes the repository from its original organization when 
 
 ## Repository archived on GitHub {: id="archived-repository"}
 
-Since July 7, 2026, when you archive a repository on GitHub, Codacy automatically removes that repository from Codacy, since archived repositories are read-only and don't need further code quality analysis.
+Since July 7, 2026, when you archive a repository on GitHub, Codacy automatically removes that repository from Codacy, as archived repositories are read-only and don't need further code quality analysis.
 
 !!! note
     This only applies to repositories archived on **GitHub Cloud** or **GitHub Enterprise Cloud** — GitLab and Bitbucket aren't affected.

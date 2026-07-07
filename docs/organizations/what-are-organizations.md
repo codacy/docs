@@ -43,7 +43,7 @@ If you update your organization or repository information on your Git provider, 
 !!! note
     \* Only for GitHub Cloud, including organizations added through GitHub Enterprise Cloud, and only when both the original and destination organizations are added to Codacy. See [Transferring a repository to another organization](managing-repositories.md#transferring-repository).
 
-    \*\* Codacy automatically removes the repository from Codacy. Since July 7, 2026, and only for repositories archived on GitHub Cloud (including GitHub Enterprise Cloud). See [Repository archived on GitHub](managing-repositories.md#archived-repository).
+    \*\* Since July 7, 2026, Codacy automatically removes repositories archived on GitHub Cloud (including GitHub Enterprise Cloud) from Codacy. See [Repository archived on GitHub](managing-repositories.md#archived-repository).
 
 See also the [roles and permission mapping from the Git providers](roles-and-permissions-for-organizations.md).
 
