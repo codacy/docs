@@ -12,6 +12,9 @@ Each directory row shows the aggregated quality metrics for the current folder â
 
 ![Directories](images/files-directories.png)
 
+!!! note
+    Directories are only available for repositories that have a completed analysis since 10th of July. If you don't see folders on the Files page, [reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to make them available.
+
 ## Quality metrics
 
 Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file and folder, if available:
