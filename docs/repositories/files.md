@@ -1,25 +1,33 @@
 # Files page
 
-The **Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
+The **Files page** displays the current code quality information for each analyzed file and folder in your [enabled repository branches](../repositories-configure/managing-branches.md).
 
-By default, the page lists the files on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.md), you can select other branches using the drop-down list at the top of the page.
+By default, the page lists the contents of the root directory on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.md), you can select other branches using the drop-down list at the top of the page.
 
-Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
+## Browsing by folder
 
--   **Grade:** Overall grade of the file
--   **Issues:** Number of issues in the file
--   **Complexity:** Cyclomatic complexity of the file
--   **Duplication:** Number of duplicated code blocks in the file
--   **Coverage:** Percentage of coverable source lines of code that are covered by tests
+The Files page lets you browse your repository by directory. Folders are listed at the top of the table, each showing how many files they contain. Click a folder to drill into it and see its contents. Use the breadcrumb trail at the top of the table to navigate back up to any parent directory.
 
-Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.
+The directory summary bar above the table shows the aggregated quality metrics for the current folder — across all files it contains, including files in nested subdirectories.
+
+## Quality metrics
+
+Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file and folder, if available:
+
+-   **Grade:** Overall grade of the file or folder
+-   **Issues:** Number of issues in the file, or total issues across all files in the folder
+-   **Complexity:** Cyclomatic complexity of the file, or total complexity across all files in the folder
+-   **Duplication:** Number of duplicated code blocks in the file, or duplication percentage across all files in the folder
+-   **Coverage:** Percentage of coverable lines covered by tests in the file, or aggregated coverage percentage across all files in the folder
+
+The list is sorted with folders first and files below, both in alphabetical order by default. You can sort by any column to help you identify which directories or files to improve or refactor next.
 
 !!! note
-    You can [use the Codacy API to generate reports or obtain code quality metrics](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) for the files in your repositories in a more flexible way.
+    You can [use the Codacy API to generate reports or obtain code quality metrics](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) for the files in your repositories in a more flexible way. Directory-level metrics are also available via the API — see [Obtaining code quality metrics for directories](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md).
 
 ![Files list](images/files.png)
 
-Use the search box to filter the list and find specific files:
+Use the search box to filter the list and find specific files or folders:
 
 ![Finding specific files](images/files-search.png)
 
