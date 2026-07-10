@@ -6,9 +6,11 @@ By default, the page lists the contents of the root directory on the main branch
 
 ## Browsing by folder
 
-The Files page lets you browse your repository by directory. Folders are listed at the top of the table, each showing how many files they contain. Click a folder to drill into it and see its contents. Use the breadcrumb trail at the top of the table to navigate back up to any parent directory.
+The Files page lets you browse your repository by directory. Folders are listed at the top of the table. Click a folder to drill into it and see its contents. Use the breadcrumb trail at the top of the table to navigate back up to any parent directory.
 
-The directory summary bar above the table shows the aggregated quality metrics for the current folder — across all files it contains, including files in nested subdirectories.
+Each directory row shows the aggregated quality metrics for the current folder — across all files it contains, including files in nested subdirectories.
+
+![Directories](images/files-directories.png)
 
 ## Quality metrics
 
