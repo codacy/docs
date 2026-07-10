@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-25 15:19:27">
+        <meta http-equiv="last-modified" content="2026-07-10 13:22:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Obtaining code quality metrics for files - Codacy docs</title>
+        <title>Obtaining code quality metrics for files and directories - Codacy docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#obtaining-code-quality-metrics-for-files" class="md-skip">
+        <a href="#obtaining-code-quality-metrics-for-files-and-directories" class="md-skip">
           Skip to content
         </a>
       
@@ -1547,11 +1547,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Obtaining code quality metrics for files
+        Obtaining code quality metrics for files and directories
       </label>
     
-    <a href="./" title="Obtaining code quality metrics for files" class="md-nav__link md-nav__link--active">
-      Obtaining code quality metrics for files
+    <a href="./" title="Obtaining code quality metrics for files and directories" class="md-nav__link md-nav__link--active">
+      Obtaining code quality metrics for files and directories
     </a>
     
       
@@ -5043,8 +5043,8 @@
                   
                 
                 
-                <h1 id="obtaining-code-quality-metrics-for-files">Obtaining code quality metrics for files<a class="headerlink" href="#obtaining-code-quality-metrics-for-files" title="Permanent link">#</a></h1>
-<p>To obtain the code quality information for your files in a flexible way, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#listfiles"><span class="skip-vale">listFiles</span></a>.</p>
+                <h1 id="obtaining-code-quality-metrics-for-files-and-directories">Obtaining code quality metrics for files and directories<a class="headerlink" href="#obtaining-code-quality-metrics-for-files-and-directories" title="Permanent link">#</a></h1>
+<p>To obtain the code quality information for your files and directories in a flexible way, use the Codacy API endpoints <a href="https://app.codacy.com/api/api-docs#listfiles"><span class="skip-vale">listFiles</span></a>, and <a href="https://app.codacy.com/api/api-docs#listDirectories"><span class="skip-vale">listDirectories</span></a>.</p>
 <p>For example, if you're managing your source code using a monorepo strategy you may want to generate separate code quality reports for the subset of files that belong to each component or project in your repository.</p>
 <h2 id="example-obtaining-code-quality-metrics-for-a-subdirectory-of-your-repository">Example: Obtaining code quality metrics for a subdirectory of your repository<a class="headerlink" href="#example-obtaining-code-quality-metrics-for-a-subdirectory-of-your-repository" title="Permanent link">#</a></h2>
 <p>This example exports the grade, total issues, complexity, coverage, and duplication in CSV format for all files in the directory <code>src/router</code> of the GitHub repository <code>codacy/website</code>.</p>
@@ -5122,7 +5122,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Obtaining code quality metrics for files%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Obtaining code quality metrics for files and directories%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -5138,7 +5138,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Obtaining code quality metrics for files">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Obtaining code quality metrics for files and directories">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -5235,7 +5235,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2026</span>
     
   </small>
 </div>

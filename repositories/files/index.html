@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Files page displays the current code quality information for each analyzed file in your enabled repository branches.">
+        <meta name="description" content="The Files page displays the current code quality information for each analyzed file and folder in your enabled repository branches.">
       
       
-        <meta http-equiv="last-modified" content="2026-01-06 10:34:22">
+        <meta http-equiv="last-modified" content="2026-07-10 13:22:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/files/">
@@ -581,6 +581,20 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#browsing-by-folder" class="md-nav__link">
+    Browsing by folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-metrics" class="md-nav__link">
+    Quality metrics
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#file-details" class="md-nav__link">
@@ -1589,8 +1603,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
-      Obtaining code quality metrics for files
+    <a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files and directories" class="md-nav__link">
+      Obtaining code quality metrics for files and directories
     </a>
   </li>
 
@@ -5049,23 +5063,32 @@
                 
                 
                 <h1 id="files-page">Files page<a class="headerlink" href="#files-page" title="Permanent link">#</a></h1>
-<p>The <strong>Files page</strong> displays the current code quality information for each analyzed file in your <a href="../../repositories-configure/managing-branches/">enabled repository branches</a>.</p>
-<p>By default, the page lists the files on the main branch of your repository. However, if you have <a href="../../repositories-configure/managing-branches/">more than one branch enabled</a>, you can select other branches using the drop-down list at the top of the page.</p>
-<p>Codacy displays the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> for each file, if available:</p>
-<ul>
-<li><strong>Grade:</strong> Overall grade of the file</li>
-<li><strong>Issues:</strong> Number of issues in the file</li>
-<li><strong>Complexity:</strong> Cyclomatic complexity of the file</li>
-<li><strong>Duplication:</strong> Number of duplicated code blocks in the file</li>
-<li><strong>Coverage:</strong> Percentage of coverable source lines of code that are covered by tests</li>
-</ul>
-<p>Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.</p>
+<p>The <strong>Files page</strong> displays the current code quality information for each analyzed file and folder in your <a href="../../repositories-configure/managing-branches/">enabled repository branches</a>.</p>
+<p>By default, the page lists the contents of the root directory on the main branch of your repository. However, if you have <a href="../../repositories-configure/managing-branches/">more than one branch enabled</a>, you can select other branches using the drop-down list at the top of the page.</p>
+<h2 id="browsing-by-folder">Browsing by folder<a class="headerlink" href="#browsing-by-folder" title="Permanent link">#</a></h2>
+<p>The Files page lets you browse your repository by directory. Folders are listed at the top of the table. Click a folder to drill into it and see its contents. Use the breadcrumb trail at the top of the table to navigate back up to any parent directory.</p>
+<p>Each directory row shows the aggregated quality metrics for the current folder — across all files it contains, including files in nested subdirectories.</p>
+<p><img alt="Directories" src="../images/files-directories.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can <a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/">use the Codacy API to generate reports or obtain code quality metrics</a> for the files in your repositories in a more flexible way.</p>
+<p>Directories are only available for repositories that have a completed analysis since 10th of July. If you don't see folders on the Files page, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyze your repository</a> to make them available.</p>
+</div>
+<h2 id="quality-metrics">Quality metrics<a class="headerlink" href="#quality-metrics" title="Permanent link">#</a></h2>
+<p>Codacy displays the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> for each file and folder, if available:</p>
+<ul>
+<li><strong>Grade:</strong> Overall grade of the file or folder</li>
+<li><strong>Issues:</strong> Number of issues in the file, or total issues across all files in the folder</li>
+<li><strong>Complexity:</strong> Cyclomatic complexity of the file, or total complexity across all files in the folder</li>
+<li><strong>Duplication:</strong> Number of duplicated code blocks in the file, or duplication percentage across all files in the folder</li>
+<li><strong>Coverage:</strong> Percentage of coverable lines covered by tests in the file, or aggregated coverage percentage across all files in the folder</li>
+</ul>
+<p>The list is sorted with folders first and files below, both in alphabetical order by default. You can sort by any column to help you identify which directories or files to improve or refactor next.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can <a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/">use the Codacy API to generate reports or obtain code quality metrics</a> for the files and directories in your repositories in a more flexible way.</p>
 </div>
 <p><img alt="Files list" src="../images/files.png" /></p>
-<p>Use the search box to filter the list and find specific files:</p>
+<p>Use the search box to filter the list and find specific files or folders:</p>
 <p><img alt="Finding specific files" src="../images/files-search.png" /></p>
 <h2 id="file-details">File details<a class="headerlink" href="#file-details" title="Permanent link">#</a></h2>
 <p>Click a specific file to see more detailed analysis information for that file.</p>
@@ -5271,7 +5294,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 6, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2026</span>
     
   </small>
 </div>
