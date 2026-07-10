@@ -68,7 +68,38 @@ To follow or unfollow repositories on Codacy:
     You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
 
     Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
- 
+
+## Transferring a repository to another organization {: id="transferring-repository"}
+
+On GitHub, when you transfer a repository to a different organization, GitHub only notifies the **destination** organization about the transfer — the original organization doesn't receive any notification. Because of this, Codacy needs some information from both organizations to keep track of the repository.
+
+Codacy automatically removes the repository from its original organization when both of the following organizations are added to Codacy:
+
+-   The **original** organization that the repository is being transferred from. Since the repository is already tracked on Codacy under this organization, this is normally already the case.
+-   The **destination** organization that the repository is being transferred to. This is usually the step you need to take: adding the destination organization to Codacy is what installs the Codacy GitHub App there, allowing Codacy to receive the transfer notification.
+
+!!! note
+    The destination organization doesn't need a paid plan or any repositories added to Codacy — simply [adding the organization to Codacy](what-are-organizations.md#adding-an-organization) so that the Codacy GitHub App is installed is enough for Codacy to detect the transfer.
+
+    This is commonly used to set up a dedicated "archive" organization on GitHub, to which repositories are transferred when they're decommissioned, so that Codacy automatically cleans them up from their original organization.
+
+    Codacy only removes the repository from its original organization — it doesn't automatically add it to the destination organization on Codacy. If you want to keep analyzing the repository after the transfer, you still need to add it to the destination organization on Codacy yourself.
+
+!!! important
+    This is currently supported for **GitHub Cloud** and **GitHub Enterprise Cloud** only. For GitLab and Bitbucket, or if the destination organization isn't added to Codacy, [remove the repository manually](../repositories-configure/removing-your-repository.md).
+
+## Repository archived on GitHub {: id="archived-repository"}
+
+Since July 7, 2026, when you archive a repository on GitHub, Codacy automatically removes that repository from Codacy, as archived repositories are read-only and don't need further code quality analysis.
+
+!!! note
+    This only applies to repositories archived on **GitHub Cloud** or **GitHub Enterprise Cloud** — GitLab and Bitbucket aren't affected.
+
+!!! important
+    This only applies going forward: repositories that were already archived on GitHub before July 7, 2026 aren't automatically removed. [Remove them manually](../repositories-configure/removing-your-repository.md) if needed.
+
+    If you unarchive a repository after Codacy removes it, Codacy doesn't automatically bring it back — you need to [add it back to Codacy](#adding-a-repository) to resume analyzing it.
+
 ## Finding your repositories with Segments {: id="provider-segments"}
 
 Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
@@ -84,3 +115,4 @@ Codacy allows you to utilise [**Segments**](../segments) to categorize and filte
 ## See also
 -  [How to setup Segments?](../segments)
 -  [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-  [How does Codacy support GitHub Enterprise?](../faq/general/how-does-codacy-support-github-enterprise.md)
