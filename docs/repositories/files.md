@@ -25,7 +25,7 @@ Codacy displays the following [code quality metrics](../faq/code-analysis/which-
 The list is sorted with folders first and files below, both in alphabetical order by default. You can sort by any column to help you identify which directories or files to improve or refactor next.
 
 !!! note
-    You can [use the Codacy API to generate reports or obtain code quality metrics](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) for the files in your repositories in a more flexible way. Directory-level metrics are also available via the API — see [Obtaining code quality metrics for directories](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md).
+    You can [use the Codacy API to generate reports or obtain code quality metrics](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) for the files and directories in your repositories in a more flexible way.
 
 ![Files list](images/files.png)
 
