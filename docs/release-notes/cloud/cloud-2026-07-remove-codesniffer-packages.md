@@ -23,7 +23,7 @@ The following packages are incompatible with the latest PHP_CodeSniffer version 
 
 As a result, pattern IDs from these packages will no longer be evaluated during your code scans, and any existing issues from them will disappear.
 
-Below is the comprehensive list of patterns that are being removed, categorized by their respective frameworks. If your projects rely on these specific checks, you may need to update your rulesets or migrate to modern, supported equivalents.
+Below is the comprehensive list of patterns that are being removed, categorized by their respective frameworks.
 
 #### Magento
 
