@@ -1,0 +1,29 @@
+.docs-home-lead { max-width: 36rem; color: var(--docs-text-secondary); font-size: 1.05rem; }
+.content-columns-wrapper { display: grid; grid-template-columns: 1fr; gap: 1.75rem; margin: 2rem 0 3rem; }
+.content-link-column { display: grid; align-content: start; gap: .75rem; }
+.content-link-column > h2 { margin: 0 0 .15rem; padding: 0; color: var(--docs-text); font-size: .78rem; font-weight: 700; letter-spacing: .04em; line-height: 1.4; text-transform: uppercase; }
+.md-typeset .content-link, .md-typeset .topic-card { position: relative; display: block; min-height: 3.75rem; padding: 1rem 2.65rem 1rem 1rem; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg); color: var(--docs-text-secondary); text-decoration: none; transition: border-color .15s ease, background .15s ease; }
+.md-typeset .content-link::after, .md-typeset .topic-card::after { position: absolute; top: .95rem; right: 1rem; color: var(--docs-text-tertiary); content: "→"; font-size: .9rem; transition: color .15s ease, transform .15s ease; }
+.content-link:hover, .topic-card:hover, .content-link:focus-visible, .topic-card:focus-visible { border-color: var(--docs-border-strong); background: var(--docs-bg-secondary); text-decoration: none; }
+.content-link:hover::after, .topic-card:hover::after, .content-link:focus-visible::after, .topic-card:focus-visible::after { color: var(--docs-link); transform: translateX(.12rem); }
+.md-typeset .content-link--primary { border-color: color-mix(in srgb, var(--docs-link) 32%, var(--docs-border)); background: color-mix(in srgb, var(--docs-link) 5%, var(--docs-bg)); }
+.content-link h3, .topic-card h3 { margin: 0 0 .35rem; color: var(--docs-text); font-size: .92rem; font-weight: 600; letter-spacing: -.01em; line-height: 1.4; }
+.content-link p, .topic-card p { margin: 0; color: var(--docs-text-secondary); font-size: .82rem; font-weight: 400; line-height: 1.55; }
+.topic-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
+.md-typeset .topic-card { padding-top: 1rem; }
+.tc-icon { display: grid; width: 2.25rem; height: 2.25rem; place-items: center; margin-bottom: .9rem; border-radius: var(--docs-radius); background: var(--docs-bg-brand); }
+.tc-icon img { width: 1.25rem; height: 1.25rem; margin: 0 !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+.md-main__inner:has(.content-columns-wrapper) .md-sidebar--secondary { display: none; }
+.md-main__inner:has(.content-columns-wrapper) .docs-page-nav { display: flex; justify-content: flex-end; margin-top: 2rem; padding-top: 1rem; }
+.md-main__inner:has(.content-columns-wrapper) .docs-page-nav a { min-height: 0; padding: .5rem 0; border: 0; background: transparent; }
+.md-main__inner:has(.content-columns-wrapper) .docs-page-nav__next { grid-column: auto; }
+
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series { margin: 2rem 0 .45rem; padding: 0; color: var(--docs-text); font-size: .8rem; font-weight: 700; letter-spacing: .035em; line-height: 1.4; text-transform: uppercase; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul { margin: 0 0 1.75rem; padding: 0; border-top: 1px solid var(--docs-border); list-style: none; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li { position: relative; margin: 0; padding: .58rem .65rem .58rem 1.35rem; border-bottom: 1px solid var(--docs-border); color: var(--docs-text-tertiary); font-size: .875rem; line-height: 1.5; transition: background-color .12s ease; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li::before { position: absolute; top: 1.05rem; left: .55rem; width: .28rem; height: .28rem; border-radius: 50%; background: var(--docs-border-strong); content: ""; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:hover { background: var(--docs-bg-secondary); }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul a { color: var(--docs-text-secondary); font-weight: 500; text-decoration: none; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul a:hover { color: var(--docs-link); }
+.md-typeset #tool-versions + ul, .md-typeset #tool-versions + p + ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; margin-top: 1rem; font-size: .875rem; line-height: 1.5; }
+.md-typeset #tool-versions + ul > li, .md-typeset #tool-versions + p + ul > li { margin: .18rem 0; break-inside: avoid; }

@@ -25,18 +25,18 @@ The table below lists all languages that Codacy supports and the corresponding t
 !!! important
     Codacy runs security and other analysis tools when code changes are pushed to your repositories. These tools don't scan code for issues continuously.
 
-<table style="font-size: .5rem;">
+<table>
   <thead>
     <tr>
       <th>Language</th>
       <th>File extensions</th>
-      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
-      <th><a style="color: white;text-decoration: underline;" href="#suggest-fixes">Suggested fixes</a></th>
+      <th><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
+      <th><a href="#suggest-fixes">Suggested fixes</a></th>
       <th>Secret detection</th>
       <th>Dependency vulnerability scanning</th>
-      <th>Malicious packages detection <a style="color: white;text-decoration: underline;" href="#malicious-packages-detection"><sup>11</sup></a></th>
-      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
-      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
+      <th>Malicious packages detection <a href="#malicious-packages-detection"><sup>11</sup></a></th>
+      <th><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
+      <th><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
       <th>License scanning</th>
     </tr>
   </thead>

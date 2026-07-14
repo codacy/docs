@@ -3,6 +3,7 @@
 You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going:
 
 -   [Authoring documentation pages](#authoring-documentation-pages)
+-   [Working on the documentation theme](#working-on-the-documentation-theme)
 -   [Releasing a new Codacy Self-hosted documentation version](#releasing-a-new-codacy-self-hosted-documentation-version)
 -   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
 -   [Applying documentation hotfixes to existing chart releases](#applying-documentation-hotfixes-to-existing-chart-releases)
@@ -38,6 +39,75 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
     ```bash
     mkdocs serve
     ```
+
+### Working on the documentation theme
+
+The documentation uses the installed `mkdocs-material` package with a small,
+Codacy-owned theme layer in [`theme/`](theme/). This is
+the current theme source of truth. Do not copy, modify, or revive the legacy
+`submodules/codacy-mkdocs-material` clone when changing this site's theme.
+
+The theme is intentionally plain CSS and minimal Jinja overrides:
+
+-   [`theme/stylesheets/tokens.css`](theme/stylesheets/tokens.css)
+    defines the Codacy color tokens and Material color mappings.
+-   The visual styling lives in [`theme/stylesheets/`](theme/stylesheets/),
+    split by concern (`base`, `header`, `navigation`, `content`, `home`,
+    `footer`, `layout`, `responsive`) and loaded in that order via `extra_css`.
+    The files are plain, comment-free CSS; keep a rule in the file that matches
+    its concern, and keep `extra_css` in cascade order (it layers over the
+    Material package, so order and specificity are what make an override win).
+-   [`theme/main.html`](theme/main.html) and its
+    [`partials/`](theme/partials/) retain only the overrides and
+    integrations that Codacy needs.
+-   [`mkdocs.yml`](mkdocs.yml) connects this layer through `theme.custom_dir`
+    and loads the small supporting browser scripts and stylesheets.
+
+Several partials under [`theme/partials/`](theme/partials/) (for example
+`nav-item.html`, `header.html`, `search.html`, and `toc.html`) are derived from
+the equivalent templates in the `mkdocs-material` version pinned in
+[`requirements.txt`](requirements.txt) and then trimmed to Codacy's needs. They
+are coupled to that version's markup, CSS class names, and JavaScript component
+contracts, so **bumping `mkdocs-material` requires re-diffing these partials
+against the new upstream templates** and re-testing search, the palette toggle,
+and navigation. Pin the package to an exact version and treat an upgrade as a
+deliberate task, not an incidental dependency bump.
+
+There is no front-end build step. Edit the CSS, Jinja partials, or supporting
+JavaScript directly, then use the normal MkDocs preview:
+
+```bash
+mkdocs serve
+```
+
+The theme self-hosts the Inter and Roboto Mono font files under
+`theme/assets/fonts/`; it doesn't contact a third-party font service. Keep the
+font license beside those assets when updating them.
+
+Icons are provided by Ionicons, also vendored locally under
+`theme/assets/vendor/ionicons/` (the runtime loader plus only the SVGs the theme
+references) so the docs render fully offline and don't depend on a third-party
+CDN — this matters for Self-hosted installations. When you add an
+`<ion-icon name="…">` or a `sidebar_icons` entry, copy the matching
+`svg/<name>.svg` from the Ionicons package into that folder; unreferenced icons
+are intentionally not vendored. Keep the Ionicons license beside the assets.
+
+The `theme/hooks/image_metadata.py` hook adds intrinsic dimensions and safe
+loading hints to local documentation images at build time. Authors normally use
+standard Markdown image syntax; explicit HTML image attributes are preserved
+when a page needs an exception.
+
+Before opening a pull request that changes the theme, build with warnings
+treated as errors and check representative pages in the local preview:
+
+```bash
+mkdocs build --strict
+```
+
+Check a Cloud page and, when relevant, a Self-hosted page. Also check light and
+dark color schemes, desktop and narrow mobile widths, search, the version
+picker, and any changed content component. Preserve analytics, feedback,
+preview and Self-hosted notices, source metadata, and existing URLs.
 
 ### Markdown conventions
 

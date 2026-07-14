@@ -3,7 +3,7 @@ site_name: "Codacy docs"
 site_description: "Documentation for the Codacy automated code review tool."
 site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com (Codacy Support)"
-copyright: "© <script>document.write(new Date().getFullYear())</script> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
+copyright: "© <span data-copyright-year>2026</span> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
 
 # Repository information
 repo_name: "codacy/docs"
@@ -12,19 +12,52 @@ repo_url: "https://github.com/codacy/docs"
 # Theme configuration
 theme:
     name: "material"
-    custom_dir: "submodules/codacy-mkdocs-material/material"
-    font: false
+    # A small, plain-CSS theme layer over the installed Material package.
+    # It deliberately contains no vendored Material source or frontend build tooling.
+    custom_dir: "theme"
+    font:
+        text: "Inter"
+        code: "Roboto Mono"
     language: "en"
     favicon: "assets/images/favicon.ico"
     palette:
-        primary: "indigo"
-        accent: "indigo"
+        - media: "(prefers-color-scheme: light)"
+          scheme: "codacy-light"
+          primary: "custom"
+          accent: "custom"
+          toggle:
+              name: "Switch to dark mode"
+        - media: "(prefers-color-scheme: dark)"
+          scheme: "codacy-dark"
+          primary: "custom"
+          accent: "custom"
+          toggle:
+              name: "Switch to light mode"
     logo: "assets/images/codacy-docs-logo.svg"
-    features: []
+    features:
+        - "search.suggest"
+        - "content.code.copy"
+        - "content.tabs.link"
+        - "navigation.instant"
+        - "navigation.path"
 extra_css:
-    - "assets/stylesheets/version-select.css"
+    - "stylesheets/fonts.css"
+    - "stylesheets/tokens.css"
+    - "stylesheets/base.css"
+    - "stylesheets/header.css"
+    - "stylesheets/navigation.css"
+    - "stylesheets/content.css"
+    - "stylesheets/home.css"
+    - "stylesheets/footer.css"
+    - "stylesheets/layout.css"
+    - "stylesheets/responsive.css"
 extra_javascript:
     - "assets/javascripts/version-select.js"
+    - "assets/javascripts/docs-theme.js"
+
+# Reserve image space and defer below-the-fold screenshots without a frontend build step.
+hooks:
+    - "theme/hooks/image_metadata.py"
 
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
@@ -35,6 +68,25 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
+    # Ionicons displayed for top-level entries in the navigation sidebar.
+    sidebar_icons:
+        "Documentation home": "home-outline"
+        "Getting started": "rocket-outline"
+        "Codacy Guardrails (IDE Extension)": "shield-checkmark-outline"
+        "Codacy Cloud CLI": "terminal-outline"
+        "Codacy AI": "sparkles-outline"
+        "Repositories on Codacy": "folder-open-outline"
+        "Configuring your repositories": "settings-outline"
+        "Organizations": "people-outline"
+        "Enterprise Cloud": "business-outline"
+        "Your account": "person-circle-outline"
+        "Codacy API": "code-slash-outline"
+        "Managing Codacy Self-hosted": "server-outline"
+        "Troubleshooting and FAQs": "medical-outline"
+        "Release notes": "megaphone-outline"
+        "Special thanks": "heart-outline"
+    # Do not show a generated-by badge in the footer.
+    generator: false
     # Add pull request preview banner
     preview_branch: !ENV [MKDOCS_PREVIEW_BRANCH, false]
     preview_pull_request: !ENV [MKDOCS_PREVIEW_PULL_REQUEST, false]
@@ -53,12 +105,17 @@ markdown_extensions:
     # Add attributes to the generated HTML elements, such as explicit ids for section titles
     # https://python-markdown.github.io/extensions/attr_list/
     - attr_list
+    # Allow collapsible sections without introducing custom JavaScript
+    - pymdownx.details
     # Add syntax highlighting to code blocks
     # https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
     - pymdownx.highlight
     # Extended syntax for fenced code blocks
     # https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
     - pymdownx.superfences
+    # Support linked, accessible content tabs using Material's native markup
+    - pymdownx.tabbed:
+          alternate_style: true
     # Strip comments from the generated HTML
     # https://facelessuser.github.io/pymdown-extensions/extensions/striphtml/
     - pymdownx.striphtml
@@ -66,13 +123,14 @@ markdown_extensions:
     # https://python-markdown.github.io/extensions/toc/
     - toc:
           permalink: "#"
+          title: "On this page"
           toc_depth: 2
 
 # Plugins
 plugins:
     # Built-in plugin to activate the search
     # https://www.mkdocs.org/user-guide/configuration/#search
-    - search
+    - material/search
     # Exclude files to avoid warnings during the MkDocs build
     # https://github.com/apenwarr/mkdocs-exclude
     - exclude:

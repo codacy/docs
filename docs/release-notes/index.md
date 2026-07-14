@@ -2,7 +2,8 @@
 rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 description: Index of release notes for Codacy Cloud and Codacy Self-hosted.
-hide_toc: true
+hide:
+  - toc
 ---
 
 # Codacy release notes
@@ -16,7 +17,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Cloud release notes {: id="cloud"}
 
-2026
+### 2026 {.release-series}
 
 -   [PHP_CodeSniffer Upgrade and Legacy Package Deprecations July, 2026](cloud/cloud-2026-07-remove-codesniffer-packages.md)
 -   [Cloud June 2026](cloud/cloud-2026-06.md)
@@ -29,7 +30,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud January 2026](cloud/cloud-2026-01.md)
 -   [Adding GolangCI-Lint as new supported tool January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md)
 
-2025
+### 2025 {.release-series}
 
 -   [Cloud December 2025](cloud/cloud-2025-12.md)
 -   [Cloud November 2025](cloud/cloud-2025-11.md)
@@ -46,7 +47,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud February 2025](cloud/cloud-2025-02.md)
 -   [Cloud January 2025](cloud/cloud-2025-01.md)
 
-2024
+### 2024 {.release-series}
 
 -   [Cloud December 2024](cloud/cloud-2024-12.md)
 -   [Cloud November 2024](cloud/cloud-2024-11.md)
@@ -63,7 +64,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud January 2024](cloud/cloud-2024-01.md)
 -   [Discontinuation of SSH keys for GitHub repositories January 15, 2024](cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation.md)
 
-2023
+### 2023 {.release-series}
 
 -   [Cloud December 2023](cloud/cloud-2023-12.md)
 -   [Cloud November 2023](cloud/cloud-2023-11.md)
@@ -82,7 +83,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud February 2023](cloud/cloud-2023-02.md)
 -   [Cloud January 2023](cloud/cloud-2023-01.md)
 
-2022
+### 2022 {.release-series}
 
 -   [Cloud December 2022](cloud/cloud-2022-12.md)
 -   [Cloud November 2022](cloud/cloud-2022-11.md)
@@ -99,7 +100,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Removal of PMD (Legacy) February 16, 2022](cloud/cloud-2022-02-16-pmd-legacy-removal.md)
 -   [Cloud January 2022](cloud/cloud-2022-01.md)
 
-2021
+### 2021 {.release-series}
 
 -   [Cloud December 2021](cloud/cloud-2021-12.md)
 -   [Cloud November 2021](cloud/cloud-2021-11.md)
@@ -109,13 +110,13 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud August 2021](cloud/cloud-2021-08.md)
 -   [Performing scheduled database maintenance July 3, 2021](cloud/cloud-2021-07-03-scheduled-db-maintenance.md)
 
-2020
+### 2020 {.release-series}
 
 -   [Deprecating HTTP headers for API tokens April 1, 2020](cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md)
 -   [Removal of NodeSecurity, GoLint, and SCSS Lint March 9, 2020](cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md)
 -   [Codacy now supports GitHub Apps February 2, 2020](cloud/cloud-2020-02-github-apps.md)
 
-2019
+### 2019 {.release-series}
 
 -   [Cloud November 15, 2019](cloud/cloud-2019-11-15.md)
 -   [Cloud October 30, 2019](cloud/cloud-2019-10-30.md)
@@ -129,7 +130,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Bitbucket changes February 18, 2019](cloud/cloud-2019-02-18-bitbucket-changes.md)
 -   [Cloud January 2, 2019](cloud/cloud-2019-01-02.md)
 
-2018
+### 2018 {.release-series}
 
 -   [Cloud November 16, 2018](cloud/cloud-2018-11-16.md)
 -   [Cloud November 2, 2018](cloud/cloud-2018-11-02.md)
@@ -138,58 +139,58 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
-v16
+### v16 {.release-series}
 
 -   [v16.0.0](self-hosted/self-hosted-v16.0.0.md) (January, 2026)
 
-v15
+### v15 {.release-series}
 
 -   [v15.0.0](self-hosted/self-hosted-v15.0.0.md) (April 10, 2025)
 
-v14
+### v14 {.release-series}
 
 -   [v14.1.1](self-hosted/self-hosted-v14.1.1.md) (March 10, 2025)
 -   [v14.0.0](self-hosted/self-hosted-v14.0.0.md) (June 26, 2024)
 
-v13
+### v13 {.release-series}
 
 -   [v13.0.0](self-hosted/self-hosted-v13.0.0.md) (November 23, 2023)
 
-v12
+### v12 {.release-series}
 
 -   [v12.0.0](self-hosted/self-hosted-v12.0.0.md) (July 20, 2023)
 
-v11
+### v11 {.release-series}
 
 -   [v11.0.0](self-hosted/self-hosted-v11.0.0.md) (April 20, 2023)
 
-v10
+### v10 {.release-series}
 
 -   [v10.0.0](self-hosted/self-hosted-v10.0.0.md) (February 3, 2023)
 
-v9
+### v9 {.release-series}
 
 -   [v9.0.0](self-hosted/self-hosted-v9.0.0.md) (September 23, 2022)
 
-v8
+### v8 {.release-series}
 
 -   [v8.1.0](self-hosted/self-hosted-v8.1.0.md) (June 17, 2022)
 -   [v8.0.0](self-hosted/self-hosted-v8.0.0.md) (May 12, 2022)
 
-v7
+### v7 {.release-series}
 
 -   [v7.0.0](self-hosted/self-hosted-v7.0.0.md) (April 4, 2022)
 
-v6
+### v6 {.release-series}
 
 -   [v6.0.0](self-hosted/self-hosted-v6.0.0.md) (March 2, 2022)
 
-v5
+### v5 {.release-series}
 
 -   [v5.1.0](self-hosted/self-hosted-v5.1.0.md) (January 6, 2022)
 -   [v5.0.0](self-hosted/self-hosted-v5.0.0.md) (December 17, 2021)
 
-v4
+### v4 {.release-series}
 
 -   [v4.4.0](self-hosted/self-hosted-v4.4.0.md) (October 12, 2021)
 -   [v4.3.0](self-hosted/self-hosted-v4.3.0.md) (September 16, 2021)
@@ -198,7 +199,7 @@ v4
 -   [v4.0.1](self-hosted/self-hosted-v4.0.1.md) (June 2, 2021)
 -   [v4.0.0](self-hosted/self-hosted-v4.0.0.md) (May 18, 2021)
 
-v3
+### v3 {.release-series}
 
 -   [v3.5.1](self-hosted/self-hosted-v3.5.1.md) (June 1, 2021)
 -   [v3.5.0](self-hosted/self-hosted-v3.5.0.md) (March 31, 2021)
@@ -208,7 +209,7 @@ v3
 -   [v3.1.0](self-hosted/self-hosted-v3.1.0.md) (December 10, 2020)
 -   [v3.0.0](self-hosted/self-hosted-v3.0.0.md) (November 2, 2020)
 
-v2
+### v2 {.release-series}
 
 -   [v2.2.1](self-hosted/self-hosted-v2.2.1.md) (October 22, 2020)
 -   [v2.2.0](self-hosted/self-hosted-v2.2.0.md) (October 8, 2020)
@@ -216,7 +217,7 @@ v2
 -   [v2.1.0](self-hosted/self-hosted-v2.1.0.md) (September 16, 2020)
 -   [v2.0.0](self-hosted/self-hosted-v2.0.0.md) (August 18, 2020)
 
-v1
+### v1 {.release-series}
 
 -   [v1.5.0](self-hosted/self-hosted-v1.5.0.md) (July 20, 2020)
 -   [v1.4.0](self-hosted/self-hosted-v1.4.0.md) (June 23, 2020)

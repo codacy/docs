@@ -2,66 +2,69 @@
 description: Documentation homepage for the Codacy automated code review tool.
 ---
 
-# Documentation home
+# Codacy documentation
+
+Everything you need to set up Codacy, integrate it into your workflow, and get more value from your code-quality data.
+{ .docs-home-lead }
 
 <div class="content-columns-wrapper">
-  <div class="content-link-column">
-    <div>Getting started</div>
+  <section class="content-link-column" aria-labelledby="home-get-started">
+    <h2 id="home-get-started">Get started</h2>
 
-    <a class="content-link" href="getting-started/codacy-quickstart/">
-      <div>Adding your first repository (5 min)</div>
-      <div>Sign up with your Git provider so that Codacy can have access to your Git provider organizations and members. You can then add any repository you have access to with one click.</div>
+    <a class="content-link content-link--primary" href="getting-started/codacy-quickstart/">
+      <h3>Add your first repository (5 min)</h3>
+      <p>Connect your Git provider and add a repository in one guided setup.</p>
     </a>
 
     <a class="content-link" href="getting-started/supported-languages-and-tools/">
-      <div>Supported languages</div>
-      <div>Codacy supports over 40 programming languages and infrastructure-as-code platforms out of the box, and regularly adds support for new languages and tools.</div>
+      <h3>Explore supported languages</h3>
+      <p>See the languages, infrastructure platforms, and analysis tools available out of the box.</p>
     </a>
-  </div>
+  </section>
 
-  <div class="content-link-column">
-    <div>Using Codacy</div>
+  <section class="content-link-column" aria-labelledby="home-use-codacy">
+    <h2 id="home-use-codacy">Use Codacy</h2>
 
     <a class="content-link" href="organizations/what-are-organizations/">
-      <div>Creating and managing an organization</div>
-      <div>Codacy automatically imports your Git provider organizations and members. Changes reflect on Codacy in real time and you can manage people who joined your organization on Codacy.</div>
+      <h3>Create and manage an organization</h3>
+      <p>Bring repositories and teammates together with synchronized Git provider organizations.</p>
     </a>
 
     <a class="content-link" href="repositories-configure/integrations/github-integration/">
-      <div>Setting up integrations</div>
-      <div>Configure Codacy to provide analysis feedback and status checks directly on your pull requests.</div>
+      <h3>Set up integrations</h3>
+      <p>Send analysis feedback and status checks directly to your pull requests.</p>
     </a>
-  </div>
+  </section>
 </div>
 
-<h2>Most popular topics</h2>
+<h2 id="popular-topics">Popular topics</h2>
 
 <div class="topic-row">
   <a class="topic-card"  href="organizations/managing-people/">
     <div class="tc-icon">
-      <img alt="Adding and managing people" src="/assets/images/icon-user-management.svg">
+      <img alt="People" src="assets/images/icon-user-management.svg">
     </div>
     <div class="tc-content">
-      <div>Managing people in organizations</div>
-      <div>Invite your teammates to join Codacy to analyze their commits on private repositories.</div>
+      <h3>Manage people</h3>
+      <p>Invite teammates to analyze their work across private repositories.</p>
     </div>
   </a>
   <a class="topic-card" href="coverage-reporter/">
     <div class="tc-icon">
-      <img alt="Adding coverage to your repository" src="/assets/images/icon-checklist.svg">
+      <img alt="Checklist" src="assets/images/icon-checklist.svg">
     </div>
     <div class="tc-content">
-      <div>Adding coverage to your repository</div>
-      <div>Set up your repositories to show code coverage reports directly on Codacy.</div>
+      <h3>Add coverage</h3>
+      <p>Show repository coverage reports and changes directly in Codacy.</p>
     </div>
   </a>
   <a class="topic-card" href="codacy-api/using-the-codacy-api/">
     <div class="tc-icon">
-      <img alt="Using the Codacy API" src="/assets/images/icon-code.svg">
+      <img alt="Code" src="assets/images/icon-code.svg">
     </div>
     <div class="tc-content">
-      <div>Using the Codacy API</div>
-      <div>Retrieve and analyze data from Codacy and perform configuration changes programmatically</div>
+      <h3>Use the Codacy API</h3>
+      <p>Retrieve data and automate configuration changes programmatically.</p>
     </div>
   </a>
 </div>

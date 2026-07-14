@@ -1,0 +1,13 @@
+{% if page.meta %}
+  {% if page.meta.git_revision_date_localized %}
+    {% set updated = page.meta.git_revision_date_localized %}
+  {% elif page.meta.revision_date %}
+    {% set updated = page.meta.revision_date %}
+  {% endif %}
+{% endif %}
+{% if updated %}
+  <aside class="md-source-file docs-revision" aria-label="Page information">
+    <span>Last updated</span>
+    <time{% if page.meta.git_revision_date_localized_raw_iso_datetime %} datetime="{{ page.meta.git_revision_date_localized_raw_iso_datetime }}"{% endif %}>{{ updated }}</time>
+  </aside>
+{% endif %}

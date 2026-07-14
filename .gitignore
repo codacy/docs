@@ -1,6 +1,10 @@
 # MkDocs build dir
 site/
 
+# Python bytecode generated while running MkDocs hooks
+__pycache__/
+*.py[cod]
+
 # OS generated files
 .DS_Store
 
@@ -28,4 +32,3 @@ tools/*.csv
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
-
