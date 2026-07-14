@@ -48,6 +48,10 @@ function getVisibleFocusableElements(container) {
 }
 
 function initializeDocsTheme() {
+    document.querySelectorAll("[data-copyright-year]").forEach(function (element) {
+        element.textContent = String(new Date().getFullYear());
+    });
+
     if (tocScrollCleanup) {
         tocScrollCleanup();
         tocScrollCleanup = undefined;

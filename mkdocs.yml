@@ -3,7 +3,7 @@ site_name: "Codacy docs"
 site_description: "Documentation for the Codacy automated code review tool."
 site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com (Codacy Support)"
-copyright: "© 2026 <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
+copyright: "Codacy - Automated code review"
 
 # Repository information
 repo_name: "codacy/docs"
