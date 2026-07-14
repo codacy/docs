@@ -1,5 +1,5 @@
 {% set repo = config.repo_url | trim('/') %}
 {% set path = page.meta.path | default('') %}
-<a href="{{ [repo, path, page.meta.source] | join('/') }}" title="View source: {{ page.meta.source }}" class="docs-source-link">
+<a href="{{ [repo, path, page.meta.source] | select | join('/') }}" title="View source: {{ page.meta.source }}" class="docs-source-link">
   View source
 </a>

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 import posixpath
 import re
 import struct
@@ -11,11 +12,17 @@ from defusedxml import ElementTree as SafeElementTree
 from defusedxml.common import DefusedXmlException
 
 
-_IMAGE_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
+# Match a full <img> tag, skipping over quoted attribute values so a stray ">"
+# inside an attribute (e.g. alt="a > b") does not truncate the match.
+_IMAGE_TAG = re.compile(r"<img\b(?:[^>\"']|\"[^\"]*\"|'[^']*')*>", re.IGNORECASE)
 _SOURCE = re.compile(r"\bsrc\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
 _DIMENSION = re.compile(r"^\s*([0-9]+(?:\.[0-9]+)?)\s*(?:px)?\s*$", re.IGNORECASE)
 _STYLE = re.compile(r"\bstyle\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
 _WIDE_SCREENSHOT_MINIMUM = 280
+
+# Logged at DEBUG on purpose: MkDocs' strict mode promotes WARNING-level records
+# to build failures, and an unreadable image must never break the docs build.
+_log = logging.getLogger("mkdocs.hooks.image_metadata")
 
 _files_identity = None
 _files_by_destination: dict[str, Path] = {}
@@ -73,7 +80,8 @@ def _image_dimensions(path: Path) -> tuple[str, str] | None:
                 if width and height:
                     dimensions = (str(width), str(height))
         elif suffix == ".svg":
-            _, root = next(SafeElementTree.iterparse(path, events=("start",)))
+            with path.open("rb") as svg_file:
+                _, root = next(SafeElementTree.iterparse(svg_file, events=("start",)))
             width = _svg_dimension(root.get("width"))
             height = _svg_dimension(root.get("height"))
             if not width or not height:
@@ -94,6 +102,7 @@ def _image_dimensions(path: Path) -> tuple[str, str] | None:
         ValueError,
     ):
         # An unreadable or unusual image must never make the docs build fail.
+        _log.debug("Could not read image dimensions for %s", path, exc_info=True)
         dimensions = None
 
     _dimensions_by_path[path] = dimensions
