@@ -54,7 +54,9 @@ function openSearch(opener) {
     window.setTimeout(function () {
         var input = document.querySelector(".md-search__input");
         if (input) {
-            input.focus();
+            // preventScroll: focusing the input inside the fixed search overlay
+            // must not nudge the page scroll position.
+            input.focus({ preventScroll: true });
         }
     }, 0);
 }

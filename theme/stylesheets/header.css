@@ -28,12 +28,17 @@
 .md-header [data-md-component="palette"] .md-header__button:hover { border-color: var(--docs-border-strong); color: var(--docs-text-secondary); }
 .md-header [data-md-component="palette"] .md-header__button:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }
 .md-header .md-search { display: block; position: fixed; inset: 0; z-index: 100; width: auto; visibility: hidden; opacity: 0; pointer-events: none; background: color-mix(in srgb, var(--docs-bg) 55%, transparent); backdrop-filter: blur(3px); }
+/* While search is open, Material locks the page by setting the body to
+   position: fixed, which would drag the sticky header (and its theme toggle)
+   out of view and behind the search overlay. Pin the header to the viewport
+   above the overlay so the whole navbar stays visible and interactive. */
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header { position: fixed; top: 0; right: 0; left: 0; z-index: 101; }
 .md-toggle[data-md-toggle="search"]:not(:checked) ~ .md-header .md-search__inner { width: 0; height: 0; margin: 0; overflow: hidden; }
 .md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search { visibility: visible; opacity: 1; pointer-events: auto; }
 .md-search__overlay { display: block; position: absolute; inset: 0; background: transparent; }
-.md-search__inner { position: relative; z-index: 1; display: flex; float: none; flex-direction: column; width: min(40rem, calc(100vw - 3rem)); max-height: calc(100dvh - 6.5rem); height: auto; margin: clamp(3.25rem, 7.5vh, 5rem) auto 0; overflow: hidden; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg); box-shadow: 0 24px 48px color-mix(in srgb, var(--docs-text) 12%, transparent), 0 0 0 1px color-mix(in srgb, var(--docs-bg) 72%, transparent) inset; }
+.md-search__inner { position: relative; z-index: 1; display: flex; float: none; flex-direction: column; width: min(40rem, calc(100vw - 3rem)); max-height: calc(100dvh - 6.5rem); height: auto; margin: clamp(4.75rem, 8vh, 5.25rem) auto 0; overflow: hidden; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg); box-shadow: 0 24px 48px color-mix(in srgb, var(--docs-text) 12%, transparent), 0 0 0 1px color-mix(in srgb, var(--docs-bg) 72%, transparent) inset; }
 [dir="ltr"] .md-search__inner, [dir="rtl"] .md-search__inner { float: none; }
-.md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: min(40rem, calc(100vw - 3rem)); max-height: calc(100dvh - 6.5rem); height: auto; margin: clamp(3.25rem, 7.5vh, 5rem) auto 0; overflow: hidden; transform: none; }
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: min(40rem, calc(100vw - 3rem)); max-height: calc(100dvh - 6.5rem); height: auto; margin: clamp(4.75rem, 8vh, 5.25rem) auto 0; overflow: hidden; transform: none; }
 .md-search .md-search__form { flex: 0 0 3.5rem; min-height: 3.5rem; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
 .md-search .md-search__input, .md-search .md-search__suggest { height: 3.5rem; padding-right: 3rem; padding-left: 2.8rem; background: transparent; font-size: .9375rem; line-height: 3.5rem; }
 .md-search .md-search__input { color: var(--docs-text); }
