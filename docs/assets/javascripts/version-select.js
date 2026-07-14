@@ -51,7 +51,7 @@ function initializeVersionSelector() {
                 }
 
                 if (nodeText.length) {
-                    var prefix = nodeText[0].slice(0, -1);
+                    const prefix = nodeText[0].slice(0, -1);
                     window.versionPages[version] = nodeText.map(function(e) {
                         return removePrefix(e, prefix);
                     });
@@ -169,13 +169,13 @@ function initializeVersionSelector() {
                 return;
             }
             try {
-                var versions = JSON.parse(this.responseText);
+                const versions = JSON.parse(this.responseText);
                 if (!Array.isArray(versions) || !versions.length) {
                     fallback();
                     return;
                 }
                 callback(versions);
-            } catch (error) {
+            } catch {
                 fallback();
             }
         };

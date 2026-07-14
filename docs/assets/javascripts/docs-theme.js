@@ -74,7 +74,7 @@ function initializeDocsTheme() {
     // and a hamburger tap toggles the checkbox an even number of times.
     if (drawerToggle && drawerTrigger && drawer && !drawerTrigger.dataset.docsDrawerInitialized) {
         drawerTrigger.dataset.docsDrawerInitialized = "true";
-        var suppressDrawerKeyboardClick = false;
+        let suppressDrawerKeyboardClick = false;
         drawerTrigger.addEventListener("keydown", function (event) {
             if (event.key === "Enter" || event.key === " ") {
                 event.preventDefault();
@@ -175,7 +175,7 @@ function initializeDocsTheme() {
     // Material's legacy scroll spy activates a heading only once it clears the
     // header. The outline is more useful when it reflects the reading position,
     // so activate the latest heading that has crossed 40% of the viewport.
-    var tocLinks = Array.from(document.querySelectorAll(".md-sidebar--secondary .md-nav__link[href*='#']")).filter(function (link) {
+    const tocLinks = Array.from(document.querySelectorAll(".md-sidebar--secondary .md-nav__link")).filter(function (link) {
         var target = new URL(link.href, window.location.href);
         return target.pathname === window.location.pathname && target.hash;
     });
@@ -185,9 +185,9 @@ function initializeDocsTheme() {
         // when the two updates occur in different animation frames.
         document.documentElement.classList.add("docs-toc-scrollspy");
 
-        var updateTableOfContents = function () {
-            var threshold = window.innerHeight * 0.4;
-            var activeLink = tocLinks[0];
+        const updateTableOfContents = function () {
+            const threshold = window.innerHeight * 0.4;
+            let activeLink = tocLinks[0];
 
             tocLinks.forEach(function (link) {
                 var id = decodeURIComponent(link.hash.slice(1));
@@ -202,8 +202,8 @@ function initializeDocsTheme() {
             });
         };
 
-        var tocFrame;
-        var onTocScroll = function () {
+        let tocFrame;
+        const onTocScroll = function () {
             window.cancelAnimationFrame(tocFrame);
             tocFrame = window.requestAnimationFrame(updateTableOfContents);
         };
@@ -256,7 +256,7 @@ if (typeof document$ !== "undefined" && document$.subscribe) {
 
 window.addEventListener("keydown", function (event) {
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
-        var target = event.target;
+        const target = event.target;
         if (target && (target.matches("input, textarea, select") || target.isContentEditable)) {
             return;
         }
@@ -266,19 +266,19 @@ window.addEventListener("keydown", function (event) {
 
     if (event.key === "Escape") {
         closeSearch();
-        var drawerToggle = document.querySelector("#__drawer");
+        const drawerToggle = document.querySelector("#__drawer");
         if (drawerToggle && drawerToggle.checked) {
             drawerToggle.click();
         }
     }
 
-    var searchToggle = document.querySelector("#__search");
+    const searchToggle = document.querySelector("#__search");
     if (event.key === "Tab" && searchToggle && searchToggle.checked) {
-        var dialog = document.querySelector("#docs-search");
-        var focusable = dialog ? Array.from(dialog.querySelectorAll("input, button:not([disabled]), a[href], [tabindex]:not([tabindex='-1'])")).filter(function (element) { return element.offsetParent !== null; }) : [];
+        const dialog = document.querySelector("#docs-search");
+        const focusable = dialog ? Array.from(dialog.querySelectorAll("input, button:not([disabled]), a[href], [tabindex]")).filter(function (element) { return element.tabIndex >= 0 && element.offsetParent !== null; }) : [];
         if (focusable.length) {
-            var first = focusable[0];
-            var last = focusable[focusable.length - 1];
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
             if (event.shiftKey && document.activeElement === first) {
                 event.preventDefault();
                 last.focus();
@@ -289,19 +289,21 @@ window.addEventListener("keydown", function (event) {
         }
     }
 
-    var drawerToggle = document.querySelector("#__drawer");
-    if (event.key === "Tab" && drawerToggle && drawerToggle.checked) {
-        var drawer = document.querySelector("#docs-navigation");
-        var drawerFocusable = drawer ? Array.from(drawer.querySelectorAll("a[href], label[tabindex='0'], button:not([disabled]), [tabindex]:not([tabindex='-1'])")).filter(function (element) { return element.offsetParent !== null; }) : [];
-        if (drawerFocusable.length) {
-            var drawerFirst = drawerFocusable[0];
-            var drawerLast = drawerFocusable[drawerFocusable.length - 1];
-            if (event.shiftKey && document.activeElement === drawerFirst) {
-                event.preventDefault();
-                drawerLast.focus();
-            } else if (!event.shiftKey && document.activeElement === drawerLast) {
-                event.preventDefault();
-                drawerFirst.focus();
+    if (event.key === "Tab") {
+        const drawerToggle = document.querySelector("#__drawer");
+        if (drawerToggle && drawerToggle.checked) {
+            const drawer = document.querySelector("#docs-navigation");
+            const drawerFocusable = drawer ? Array.from(drawer.querySelectorAll("a[href], label, button:not([disabled]), [tabindex]")).filter(function (element) { return element.tabIndex >= 0 && element.offsetParent !== null; }) : [];
+            if (drawerFocusable.length) {
+                const drawerFirst = drawerFocusable[0];
+                const drawerLast = drawerFocusable[drawerFocusable.length - 1];
+                if (event.shiftKey && document.activeElement === drawerFirst) {
+                    event.preventDefault();
+                    drawerLast.focus();
+                } else if (!event.shiftKey && document.activeElement === drawerLast) {
+                    event.preventDefault();
+                    drawerFirst.focus();
+                }
             }
         }
     }
