@@ -12,9 +12,12 @@ from defusedxml import ElementTree as SafeElementTree
 from defusedxml.common import DefusedXmlException
 
 
-# Match a full <img> tag, skipping over quoted attribute values so a stray ">"
-# inside an attribute (e.g. alt="a > b") does not truncate the match.
-_IMAGE_TAG = re.compile(r"<img\b(?:[^>\"']|\"[^\"]*\"|'[^']*')*>", re.IGNORECASE)
+# Deliberately linear: match up to the first ">". A quote-aware pattern would
+# need a nested quantifier that static analysis flags as ReDoS-prone, and it is
+# unnecessary here because attributes are inserted right after the "<img" token
+# (see _add_attributes), which stays valid even if a ">" inside an attribute
+# value ends the match early.
+_IMAGE_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 _SOURCE = re.compile(r"\bsrc\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
 _DIMENSION = re.compile(r"^\s*([0-9]+(?:\.[0-9]+)?)\s*(?:px)?\s*$", re.IGNORECASE)
 _STYLE = re.compile(r"\bstyle\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
@@ -143,10 +146,11 @@ def _add_attributes(tag: str, attributes: list[tuple[str, str]]) -> str:
     if not attributes:
         return tag
     insertion = "".join(f' {name}="{value}"' for name, value in attributes)
-    end = tag.rfind("/>")
-    if end < 0:
-        end = tag.rfind(">")
-    return f"{tag[:end]}{insertion}{tag[end:]}"
+    # Insert right after the "<img" token rather than before the closing ">".
+    # This keeps the output valid even when a later attribute value contains a
+    # ">" that ended the tag match early — the attributes still land inside the
+    # tag, before any author attributes.
+    return f"{tag[:4]}{insertion}{tag[4:]}"
 
 
 def on_page_content(html, page, config, files):
