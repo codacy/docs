@@ -194,6 +194,11 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 .md-typeset .tabbed-control--next .tabbed-button::after { -webkit-mask-image: url("https://unpkg.com/ionicons@7.4.0/dist/svg/chevron-forward-outline.svg"); mask-image: url("https://unpkg.com/ionicons@7.4.0/dist/svg/chevron-forward-outline.svg"); }
 .md-typeset .md-code__button:hover, .md-typeset .md-code__button:focus-visible { background: color-mix(in srgb, var(--docs-text) 8%, transparent); color: var(--docs-text); }
 .md-typeset .md-code__button:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 1px; }
+/* Clipboard confirmations use Material's dialog component. Its default
+   foreground/background pairing is intentionally inverted, which conflicts
+   with the documentation palettes. */
+.md-dialog { border: 1px solid var(--docs-border); background: var(--docs-bg-secondary); }
+.md-dialog__inner { color: var(--docs-text); }
 .md-typeset .highlight span.hll { display: inline-block; width: 100%; background: color-mix(in srgb, var(--docs-link) 18%, transparent); }
 .md-typeset .tabbed-set { margin: 1.5rem 0; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg); overflow: hidden; }
 .md-typeset .tabbed-labels { padding: .25rem .5rem 0; border-bottom: 1px solid var(--docs-border); background: var(--docs-bg-secondary); }
