@@ -94,7 +94,7 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 .md-nav--primary .md-nav__item { font-size: .875rem; line-height: 1.45; }
 .md-nav--primary .md-nav__link { margin: .06rem 0; padding: .34rem .5rem; border: 0; border-radius: var(--docs-radius-sm); color: var(--docs-text-secondary); font-weight: 400; transition: background-color .12s ease, color .12s ease; }
 .md-nav__link:hover { color: var(--docs-text); background: color-mix(in srgb, var(--docs-text) 4%, transparent); }
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link { margin-top: .5rem; padding: .5rem; color: var(--docs-text); background: transparent; font-size: .75rem; font-weight: 700; letter-spacing: .025em; text-transform: uppercase; }
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link { padding: .5rem; color: var(--docs-text); background: transparent; font-size: .75rem; font-weight: 700; letter-spacing: .025em; text-transform: uppercase; }
 /* Navigation rows share a 24px rail gutter and an 8px inner text inset.
    This makes the background a deliberate hit target in both sidebars and
    drawers, while preserving the existing nesting indentation. */
@@ -115,10 +115,15 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link--active { color: var(--docs-link); background: var(--docs-bg-brand); font-weight: 600; }
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link:is(:hover, :focus-visible) { color: var(--docs-text); background: var(--docs-bg-secondary); }
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link--active:is(:hover, :focus-visible) { color: var(--docs-link); background: var(--docs-bg-brand); }
-.md-nav--primary > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link { margin-top: 0; }
 .md-nav__item .md-nav__link--active { padding: .34rem .5rem; border: 0; border-radius: var(--docs-radius); background: transparent; box-shadow: none; color: var(--docs-link); font-weight: 600; }
 .md-nav__item .md-nav__link--active:hover { background: color-mix(in srgb, var(--docs-link) 7%, transparent); }
 .md-nav__icon { display: inline-grid; place-items: center; }
+/* Pin the disclosure icon to the glyph size. Without an explicit box the span
+   inherits Material's 1.2rem .md-icon sizing, so before ion-icon hydrates it is
+   taller than the 12px top-level line box and collapsible rows render ~2px
+   taller than standalone links until the icons load. A fixed box keeps every
+   row the same height regardless of hydration state. */
+.md-nav--primary .md-nav__link .md-nav__icon { min-width: 0; min-height: 0; width: .8rem; height: .8rem; font-size: .8rem; line-height: 1; }
 .md-nav__icon::after { display: none; }
 .md-nav__icon .docs-ionicon { width: .8rem; height: .8rem; color: var(--docs-text-tertiary); opacity: .72; transition: transform .16s ease, color .12s ease, opacity .12s ease; }
 .md-nav__link:hover .md-nav__icon .docs-ionicon { color: var(--docs-text-secondary); opacity: 1; }
