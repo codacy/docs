@@ -13,7 +13,9 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 .md-header { border-bottom: 1px solid var(--docs-border); background: color-mix(in srgb, var(--docs-bg) 96%, transparent); box-shadow: none; backdrop-filter: blur(14px); }
 .md-header__inner { display: grid; grid-template-columns: auto 1fr minmax(15rem, 30rem) 1fr auto auto auto; gap: .65rem; min-height: 4rem; align-items: center; }
 .md-header__button { margin: 0; color: var(--docs-text-secondary); }
-.md-header__button.md-logo { display: inline-flex; overflow: hidden; }
+/* Material keeps a .2rem margin on the logo; drop it so the logo's box starts
+   on the shared frame's left gutter, in line with the rail and footer edge. */
+.md-header__button.md-logo { display: inline-flex; margin: 0; overflow: hidden; }
 .md-header__button.md-logo img { display: block; width: auto; height: 1.75rem; max-width: none; }
 .md-header__button.md-logo img.docs-logo--light { display: none; }
 [data-md-color-scheme="codacy-light"] .md-header__button.md-logo img.docs-logo--dark { display: none; }
@@ -163,8 +165,8 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 .docs-ionicon--breadcrumb { flex: 0 0 .8rem; width: .8rem; height: .8rem; margin: 0 .2rem; color: var(--docs-text-tertiary); }
 .md-path__item:first-child .docs-ionicon--breadcrumb { display: none; }
 
-/* Content: a readable measure and a restrained documentation type scale. */
-.md-content { max-width: 38rem; }
+/* Content type scale. The article's measure is set by the layout frame — the
+   grid's middle track on desktop, the full frame below it — not a fixed cap. */
 .md-content__inner { position: relative; padding-top: 1.25rem; padding-bottom: 3rem; }
 .md-typeset { color: var(--docs-text-secondary); font-size: 1rem; line-height: 1.7; }
 .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 { color: var(--docs-text); font-weight: 700; letter-spacing: -.025em; }
@@ -331,42 +333,54 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 .docs-feedback__links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; padding-top: .75rem; color: var(--docs-text-tertiary); font-size: .78rem; }
 .docs-search-trigger:focus-visible, .docs-header__cta:focus-visible, .version-select-container .select-css:focus-visible, .content-link:focus-visible, .topic-card:focus-visible, .docs-page-nav a:focus-visible, .docs-feedback button:focus-visible, .docs-feedback textarea:focus-visible, .docs-feedback a:focus-visible, .docs-footer a:focus-visible, .docs-source-link:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }
 
+/* Shared page frame. The header bar, the main grid, and the footer all use the
+   same max width, the same auto side margins, and the same left/right gutter, so
+   three landmarks line up at every width: on the left the logo / primary rail /
+   footer's left edge; on the right the theme toggle / outline (or content) right
+   edge / footer's right edge. Only the gutter changes per breakpoint (2rem on
+   desktop, 1rem below it) plus, on desktop, the grid tracks. Below the desktop
+   breakpoint the sidebars fold away and the article fills this same frame, so it
+   stays aligned with the menu and footer. */
+.md-header__inner, .md-main__inner, .docs-footer__inner {
+  box-sizing: border-box;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: var(--docs-frame-gutter, 1rem);
+}
+
 /* Desktop is a deliberate three-rail reading layout, not Material's fluid flex row.
    Fixed rails keep the article measure stable and make the generous empty space useful. */
 @media screen and (min-width: 76.25em) {
-  .md-grid { max-width: 96rem; }
-  .md-header .md-grid { box-sizing: border-box; max-width: 70rem; padding-right: 2rem; padding-left: 2.8rem; }
-  .md-main .md-grid { box-sizing: border-box; padding-right: 2rem; padding-left: 2rem; }
-  /* Footer copy shares the logo and primary-navigation baseline. */
-  .docs-footer__inner { max-width: 70rem; padding-right: 2rem; padding-left: 3rem; }
-  /* One layout shell for every page. The breakpoints below only retune the
-     four track tokens; the grid, its centering, and the divider are defined
-     once, here. Pages differ only in what fills the columns, never in where the
-     rail and article sit — so moving between them never shifts the chrome. */
+  /* Widen the shared frame's gutter on desktop; the frame geometry itself is
+     defined once, globally (see the .md-header__inner/.md-main__inner/
+     .docs-footer__inner rule above the breakpoints). */
+  :root { --docs-frame-gutter: 2rem; }
+  /* The main grid fills the frame: the rail pins to the left gutter, the
+     outline to the right gutter, and the article takes the remaining middle
+     (so its measure follows the frame). Making the middle flexible instead of
+     centering a fixed-width block is what stopped the rail and outline from
+     drifting inward, out of the header's and footer's edges. */
   .md-main__inner {
     --docs-primary-rail-width: 16rem;   /* primary navigation */
-    --docs-content-width: 34rem;        /* article measure */
     --docs-toc-width: 12rem;            /* outline; stays reserved (empty) on pages without a TOC */
     --docs-grid-gap: 2rem;
-    --docs-layout-half-width: calc((var(--docs-primary-rail-width) + var(--docs-content-width) + var(--docs-toc-width)) / 2 + var(--docs-grid-gap));
     position: relative;
     display: grid;
-    grid-template-columns: var(--docs-primary-rail-width) minmax(0, var(--docs-content-width)) var(--docs-toc-width);
+    grid-template-columns: var(--docs-primary-rail-width) minmax(0, 1fr) var(--docs-toc-width);
     column-gap: var(--docs-grid-gap);
-    justify-content: center;
   }
   /* This belongs to the full main grid, not the sticky sidebar: it therefore
      frames the primary rail continuously from the header to the footer. The
-     grid is centered, so the divider is derived from its first grid line — a
-     fixed offset would drift into the rail as the viewport widens. */
+     rail is pinned to the left gutter, so the divider sits a fixed distance in
+     — the gutter, the rail, and half a column gap — with no viewport math. */
   .md-main__inner::before { position: absolute; top: -1.5rem; bottom: 0; z-index: 1; width: 1px; background: var(--docs-border); content: ""; pointer-events: none; }
-  [dir="ltr"] .md-main__inner::before { left: calc(50% - var(--docs-layout-half-width) + var(--docs-primary-rail-width)); }
-  [dir="rtl"] .md-main__inner::before { right: calc(50% - var(--docs-layout-half-width) + var(--docs-primary-rail-width)); }
+  [dir="ltr"] .md-main__inner::before { left: calc(var(--docs-frame-gutter) + var(--docs-primary-rail-width) + var(--docs-grid-gap) / 2); }
+  [dir="rtl"] .md-main__inner::before { right: calc(var(--docs-frame-gutter) + var(--docs-primary-rail-width) + var(--docs-grid-gap) / 2); }
   /* The error page is the single deliberate exception: no rail, one centered
      column (its sidebars are hidden above). Every other page — including no-TOC
      landing pages — keeps the shell and simply leaves the outline column empty,
      so the rail and article never move. */
-  .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); }
+  .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); justify-content: center; }
   .md-main__inner:has(.docs-error)::before { content: none; }
   .md-sidebar { width: auto; max-width: none; }
   .md-sidebar--secondary { margin-left: 0; }
@@ -408,19 +422,11 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 }
 
 @media screen and (min-width: 80em) {
-  /* The main grid expands to the 18rem navigation rail at this breakpoint.
-     Keep the header and footer in that same viewport frame until the 90rem
-     desktop cap applies, rather than centering a narrower 80rem shell. */
-  .md-header .md-grid, .docs-footer__inner { max-width: 90rem; }
-  .md-main__inner { --docs-primary-rail-width: 18rem; --docs-content-width: 38rem; --docs-toc-width: 14rem; --docs-grid-gap: 3rem; }
-}
-
-@media screen and (min-width: 90em) {
-  /* Aikido/Lovable/Replit converge on this centered wide-docs geometry:
-     288px navigation, 768px article, 224px outline, and 48px gutters. */
-  .md-grid { max-width: 90rem; }
-  .md-header .md-grid, .docs-footer__inner { max-width: 90rem; }
-  .md-main__inner { --docs-content-width: 48rem; }
+  /* Wider rail, outline, and gutters once there is room. The frame's max width
+     and side margins are unchanged, so the shared left/right edges hold; only
+     the tracks grow, and the article measure follows (reaching ~48rem once the
+     frame hits its 90rem cap). */
+  .md-main__inner { --docs-primary-rail-width: 18rem; --docs-toc-width: 14rem; --docs-grid-gap: 3rem; }
 }
 
 @media screen and (max-width: 76.2344em) {
@@ -483,7 +489,6 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
   .version-select-container { grid-column: auto; margin-left: auto; }
   .md-header [data-md-component="palette"] { grid-column: auto; }
   .version-select-container .select-css { width: auto; max-width: 41vw; height: 2.35rem; }
-  .md-content { max-width: 38rem; }
   .md-typeset h1 { font-size: 1.75rem; }
   .docs-feedback { grid-template-columns: 1fr; }
   .docs-feedback__choices { grid-column: 1; grid-row: auto; margin-top: .5rem; }
