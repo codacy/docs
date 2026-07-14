@@ -37,6 +37,16 @@ function closeSearch() {
     }
 }
 
+function getVisibleFocusableElements(container) {
+    if (!container) {
+        return [];
+    }
+
+    return Array.from(container.querySelectorAll("*")).filter(function (element) {
+        return element.tabIndex >= 0 && element.offsetParent !== null;
+    });
+}
+
 function initializeDocsTheme() {
     if (tocScrollCleanup) {
         tocScrollCleanup();
@@ -275,7 +285,7 @@ window.addEventListener("keydown", function (event) {
     const searchToggle = document.querySelector("#__search");
     if (event.key === "Tab" && searchToggle && searchToggle.checked) {
         const dialog = document.querySelector("#docs-search");
-        const focusable = dialog ? Array.from(dialog.querySelectorAll("input, button:not([disabled]), a[href], [tabindex]")).filter(function (element) { return element.tabIndex >= 0 && element.offsetParent !== null; }) : [];
+        const focusable = getVisibleFocusableElements(dialog);
         if (focusable.length) {
             const first = focusable[0];
             const last = focusable[focusable.length - 1];
@@ -293,7 +303,7 @@ window.addEventListener("keydown", function (event) {
         const drawerToggle = document.querySelector("#__drawer");
         if (drawerToggle && drawerToggle.checked) {
             const drawer = document.querySelector("#docs-navigation");
-            const drawerFocusable = drawer ? Array.from(drawer.querySelectorAll("a[href], label, button:not([disabled]), [tabindex]")).filter(function (element) { return element.tabIndex >= 0 && element.offsetParent !== null; }) : [];
+            const drawerFocusable = getVisibleFocusableElements(drawer);
             if (drawerFocusable.length) {
                 const drawerFirst = drawerFocusable[0];
                 const drawerLast = drawerFocusable[drawerFocusable.length - 1];
