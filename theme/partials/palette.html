@@ -1,0 +1,13 @@
+<form class="md-header__option" data-md-component="palette">
+  {% for option in config.theme.palette %}
+    {% set scheme = option.scheme | d("default", true) %}
+    {% set primary = option.primary | d("indigo", true) %}
+    {% set accent = option.accent | d("indigo", true) %}
+    <input class="md-option" data-md-color-media="{{ option.media }}" data-md-color-scheme="{{ scheme | replace(' ', '-') }}" data-md-color-primary="{{ primary | replace(' ', '-') }}" data-md-color-accent="{{ accent | replace(' ', '-') }}" {% if option.toggle %} aria-label="{{ option.toggle.name }}" {% else %} aria-hidden="true" {% endif %} type="radio" name="__palette" id="__palette_{{ loop.index0 }}">
+    {% if option.toggle %}
+      <label class="md-header__button md-icon" title="{{ option.toggle.name }}" for="__palette_{{ loop.index % loop.length }}" hidden>
+        <ion-icon name="{{ 'moon-outline' if 'light' in scheme else 'sunny-outline' }}" aria-hidden="true"></ion-icon>
+      </label>
+    {% endif %}
+  {% endfor %}
+</form>

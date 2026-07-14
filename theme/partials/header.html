@@ -1,0 +1,35 @@
+{% set class = "md-header" %}
+{% if "navigation.tabs.sticky" in features %}
+  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+  {% set class = class ~ " md-header--shadow" %}
+{% endif %}
+<header class="{{ class }}" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      <img class="docs-logo docs-logo--dark" src="{{ config.theme.logo | url }}" alt="">
+      <img class="docs-logo docs-logo--light" src="{{ 'assets/images/codacy-docs-logo-light.svg' | url }}" alt="">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Open navigation" aria-controls="docs-navigation" aria-expanded="false" data-drawer-trigger>
+      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </label>
+    <label class="docs-search-trigger" for="__search" role="button" tabindex="0" data-search-trigger aria-label="Open search" aria-haspopup="dialog" aria-controls="docs-search" aria-expanded="false">
+      <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+      <span>Search documentation</span><kbd data-search-shortcut>⌘ K</kbd>
+    </label>
+    <div class="version-select-container">
+      <select id="version-selector" class="select-css" aria-label="Documentation version" title="For Codacy Cloud, select Latest. For Codacy Self-Hosted, select the version of your Codacy installation.">
+        <option selected>{% if config.extra.self_hosted %}Self-hosted {{ config.extra.codacy_self_hosted_version }}{% else %}Cloud (Latest){% endif %}</option>
+      </select>
+      <ion-icon class="docs-version-select__icon" name="chevron-down-outline" aria-hidden="true"></ion-icon>
+    </div>
+    <a class="docs-header__cta" href="https://www.codacy.com/signup">Get started</a>
+    {% if config.theme.palette %}
+      {% if not config.theme.palette is mapping %}{% include "partials/palette.html" %}{% endif %}
+    {% endif %}
+    {% if not config.theme.palette is mapping %}{% include "partials/javascripts/palette.html" %}{% endif %}
+    {% if config.extra.alternate %}{% include "partials/alternate.html" %}{% endif %}
+    {% if "material/search" in config.plugins %}{% include "partials/search.html" %}{% endif %}
+  </nav>
+  {% if "navigation.tabs.sticky" in features and "navigation.tabs" in features %}{% include "partials/tabs.html" %}{% endif %}
+</header>

@@ -113,7 +113,7 @@ The same Common Vulnerability and Exposure can be classified with different seve
 
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
 
-!!! Important " [**Segments**](../segments) filter won't be considered when sharing the filtered view"
+!!! important " [**Segments**](../segments) filter won't be considered when sharing the filtered view"
 
 ## Ignoring findings {: id="ignoring-findings"}
 
@@ -129,7 +129,7 @@ From Codacy's standpoint, ignoring a finding means it will be removed from the m
 
 !!! info "[Jira](./integrations/jira-integration.md) findings can't be ignored in Codacy. You should closed the issue directly in Jira."
 
-!!! Important "Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
+!!! important "Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
 
 You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Statuses** dropdown. You can assess which status a finding has at his overview, on the right top corner.
 
@@ -141,7 +141,7 @@ Unignoring a finding reverts the effects of ignoring it.
 
 ![Security and risk management finding unignore](images/security-risk-management-finding-unignore.png)
 
-!!! Important "Unignoring findings detected on [Git repositories](#opening-and-closing-items) will also [unignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
+!!! important "Unignoring findings detected on [Git repositories](#opening-and-closing-items) will also [unignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
 
 !!! info "Ignoring and unignoring findings are [auditable actions](../organizations/audit-logs-for-organizations.md#organization)."
 
@@ -839,4 +839,3 @@ If there is no last analysis date for an image tag, it means that the SBOM file 
 
 !!! note
     Remember that scans run nightly (UTC). If you just uploaded the SBOM file, but need results immediately, consider using our [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to run a local analysis to scan for any issues.
- 

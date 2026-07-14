@@ -1,0 +1,10 @@
+{% set title = config.mdx_configs.toc.title if config.mdx_configs.toc and config.mdx_configs.toc.title else lang.t("toc") %}
+<nav class="md-nav md-nav--secondary" aria-label="{{ title | e }}">
+  {% set toc = page.toc %}
+  {% set first = toc | first %}
+  {% if first and first.level == 1 %}{% set toc = first.children %}{% endif %}
+  {% if toc %}
+    <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><ion-icon name="arrow-back-outline" aria-hidden="true" class="docs-ionicon docs-ionicon--nav"></ion-icon></span>{{ title }}</label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>{% for toc_item in toc %}{% include "partials/toc-item.html" %}{% endfor %}</ul>
+  {% endif %}
+</nav>

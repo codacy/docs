@@ -9,7 +9,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uVyRWnnJu-0?si=Pnbk65EvpvvJRXX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-# VSCode-based IDEs
+## VSCode-based IDEs
 
 ## Prerequisites
 
@@ -235,7 +235,7 @@ If your proxy uses a custom CA certificate, the extension has an extra setting a
 ![Codacy proxy CA certificate path setting](images/codacy-proxy-ca-cert-path.png)
 
 
-# JetBrains IDEs
+## JetBrains IDEs
 
 
 ### Supported Operating Systems

@@ -3,6 +3,7 @@
 You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going:
 
 -   [Authoring documentation pages](#authoring-documentation-pages)
+-   [Working on the documentation theme](#working-on-the-documentation-theme)
 -   [Releasing a new Codacy Self-hosted documentation version](#releasing-a-new-codacy-self-hosted-documentation-version)
 -   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
 -   [Applying documentation hotfixes to existing chart releases](#applying-documentation-hotfixes-to-existing-chart-releases)
@@ -38,6 +39,56 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
     ```bash
     mkdocs serve
     ```
+
+### Working on the documentation theme
+
+The documentation uses the installed `mkdocs-material` package with a small,
+Codacy-owned theme layer in [`theme/`](theme/). This is
+the current theme source of truth. Do not copy, modify, or revive the legacy
+`submodules/codacy-mkdocs-material` clone when changing this site's theme.
+
+The theme is intentionally plain CSS and minimal Jinja overrides:
+
+-   [`theme/stylesheets/tokens.css`](theme/stylesheets/tokens.css)
+    defines the Codacy color tokens and Material color mappings.
+-   [`theme/stylesheets/theme.css`](theme/stylesheets/theme.css)
+    contains the visual styling.
+-   [`theme/main.html`](theme/main.html) and its
+    [`partials/`](theme/partials/) retain only the overrides and
+    integrations that Codacy needs.
+-   [`mkdocs.yml`](mkdocs.yml) connects this layer through `theme.custom_dir`
+    and loads the small supporting browser scripts and stylesheets.
+
+There is no SCSS compilation, Webpack configuration, Node dependency, or
+frontend build step. Edit the CSS, Jinja partials, or supporting JavaScript
+directly, then use the normal MkDocs preview:
+
+```bash
+mkdocs serve
+```
+
+The theme self-hosts the Inter and Roboto Mono webfonts under
+`theme/assets/fonts/`; it does not contact a third-party font
+service. Keep the font license beside those assets when updating them.
+
+The dependency-free `theme/hooks/image_metadata.py` hook adds
+intrinsic dimensions and safe loading hints to local documentation images at
+build time. Authors normally only need to use standard Markdown image syntax;
+explicit HTML image attributes are preserved when a page needs an exception.
+
+Before opening a pull request that changes the theme, build with warnings
+treated as errors and check representative pages in the local preview:
+
+```bash
+mkdocs build --strict
+```
+
+Check at least a Cloud page, a Self-hosted page when relevant, light and dark
+color schemes, desktop and narrow mobile widths, search, the version picker,
+and any changed content component. Preserve the behavior described in
+[`theme/PROJECT.md`](theme/PROJECT.md), including
+analytics, feedback, preview and Self-hosted notices, source metadata, and
+existing URLs.
 
 ### Markdown conventions
 

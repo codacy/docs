@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <section class="docs-error" aria-labelledby="docs-error-title">
+    <p class="docs-error__code">404</p>
+    <h1 id="docs-error-title">Page not found</h1>
+    <p id="docs-404-message">The page you requested does not exist. If you think something is missing, <a href="{{ config.repo_url }}/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Missing%20page">let us know</a>.</p>
+    <div class="docs-error__actions">
+      <a class="docs-error__primary" href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}">Browse documentation</a>
+      <label for="__search" role="button" tabindex="0" data-search-trigger aria-haspopup="dialog" aria-controls="docs-search" aria-expanded="false">Search documentation</label>
+    </div>
+  </section>
+  <script>
+    (function () {
+      if (window.location.pathname.startsWith('/hc/requests/') || window.location.pathname.startsWith('/hc/en-us/requests')) {
+        var destination = 'https://codacy.zendesk.com' + window.location.pathname;
+        document.querySelector('#docs-404-message').innerHTML = 'You should be redirected to <a href="' + destination + '">' + destination + '</a> shortly.';
+        document.querySelector('.docs-error__actions').hidden = true;
+        window.setTimeout(function () { window.location.assign(destination); }, 5000);
+      }
+    }());
+  </script>
+{% endblock %}

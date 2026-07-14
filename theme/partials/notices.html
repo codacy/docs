@@ -1,0 +1,19 @@
+{% if config.extra.preview_pull_request or config.extra.preview_branch %}
+  <aside class="docs-notice" role="status">
+    <strong>Preview documentation</strong>
+    <p>
+      {% if config.extra.preview_pull_request %}
+        This is a preview of <a href="{{ config.repo_url }}/pull/{{ config.extra.preview_pull_request }}">pull request #{{ config.extra.preview_pull_request }}</a>.
+      {% else %}
+        This is a preview of branch <code><a href="{{ config.repo_url }}/tree/{{ config.extra.preview_branch }}">{{ config.extra.preview_branch }}</a></code>.
+      {% endif %}
+      For production documentation, visit <a href="https://docs.codacy.com/">docs.codacy.com</a>.
+    </p>
+  </aside>
+{% endif %}
+{% if config.extra.self_hosted %}
+  <aside class="docs-notice" role="status">
+    <strong>Codacy Self-hosted{% if config.extra.codacy_self_hosted_version %} v{{ config.extra.codacy_self_hosted_version }}{% endif %}</strong>
+    <p>This documentation applies to a Self-hosted installation. For Cloud documentation, visit <a href="https://docs.codacy.com/">docs.codacy.com</a>.</p>
+  </aside>
+{% endif %}
