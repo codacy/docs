@@ -61,6 +61,23 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
+    # Ionicons displayed for top-level entries in the navigation sidebar.
+    sidebar_icons:
+        "Documentation home": "home-outline"
+        "Getting started": "rocket-outline"
+        "Codacy Guardrails (IDE Extension)": "shield-checkmark-outline"
+        "Codacy Cloud CLI": "terminal-outline"
+        "Codacy AI": "sparkles-outline"
+        "Repositories on Codacy": "folder-open-outline"
+        "Configuring your repositories": "settings-outline"
+        "Organizations": "people-outline"
+        "Enterprise Cloud": "business-outline"
+        "Your account": "person-circle-outline"
+        "Codacy API": "code-slash-outline"
+        "Managing Codacy Self-hosted": "server-outline"
+        "Troubleshooting and FAQs": "medical-outline"
+        "Release notes": "megaphone-outline"
+        "Special thanks": "heart-outline"
     # Do not show a generated-by badge in the footer.
     generator: false
     # Add pull request preview banner

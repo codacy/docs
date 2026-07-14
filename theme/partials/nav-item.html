@@ -15,23 +15,7 @@
 {% endmacro %}
 {% macro render_content(nav_item, ref, level = none) %}
   {% set ref = ref or nav_item %}
-  {% set section_icons = {
-    "Documentation home": "home-outline",
-    "Getting started": "rocket-outline",
-    "Codacy Guardrails (IDE Extension)": "shield-checkmark-outline",
-    "Codacy Cloud CLI": "terminal-outline",
-    "Codacy AI": "sparkles-outline",
-    "Repositories on Codacy": "folder-open-outline",
-    "Configuring your repositories": "settings-outline",
-    "Organizations": "people-outline",
-    "Enterprise Cloud": "business-outline",
-    "Your account": "person-circle-outline",
-    "Codacy API": "code-slash-outline",
-    "Managing Codacy Self-hosted": "server-outline",
-    "Troubleshooting and FAQs": "medical-outline",
-    "Release notes": "megaphone-outline",
-    "Special thanks": "heart-outline"
-  } %}
+  {% set section_icons = config.extra.sidebar_icons or {} %}
   {% if level == 1 and section_icons.get(nav_item.title) %}
     <ion-icon name="{{ section_icons.get(nav_item.title) }}" aria-hidden="true" class="docs-nav-section-icon{% if not nav_item.children %} docs-nav-section-icon--standalone{% endif %}"></ion-icon>
   {% elif nav_item.meta and nav_item.meta.icon %}
