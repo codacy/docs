@@ -59,22 +59,21 @@ The theme is intentionally plain CSS and minimal Jinja overrides:
 -   [`mkdocs.yml`](mkdocs.yml) connects this layer through `theme.custom_dir`
     and loads the small supporting browser scripts and stylesheets.
 
-There is no SCSS compilation, Webpack configuration, Node dependency, or
-frontend build step. Edit the CSS, Jinja partials, or supporting JavaScript
-directly, then use the normal MkDocs preview:
+There is no front-end build step. Edit the CSS, Jinja partials, or supporting
+JavaScript directly, then use the normal MkDocs preview:
 
 ```bash
 mkdocs serve
 ```
 
-The theme self-hosts the Inter and Roboto Mono webfonts under
-`theme/assets/fonts/`; it does not contact a third-party font
-service. Keep the font license beside those assets when updating them.
+The theme self-hosts the Inter and Roboto Mono font files under
+`theme/assets/fonts/`; it doesn't contact a third-party font service. Keep the
+font license beside those assets when updating them.
 
-The dependency-free `theme/hooks/image_metadata.py` hook adds
-intrinsic dimensions and safe loading hints to local documentation images at
-build time. Authors normally only need to use standard Markdown image syntax;
-explicit HTML image attributes are preserved when a page needs an exception.
+The `theme/hooks/image_metadata.py` hook adds intrinsic dimensions and safe
+loading hints to local documentation images at build time. Authors normally use
+standard Markdown image syntax; explicit HTML image attributes are preserved
+when a page needs an exception.
 
 Before opening a pull request that changes the theme, build with warnings
 treated as errors and check representative pages in the local preview:
@@ -83,12 +82,10 @@ treated as errors and check representative pages in the local preview:
 mkdocs build --strict
 ```
 
-Check at least a Cloud page, a Self-hosted page when relevant, light and dark
-color schemes, desktop and narrow mobile widths, search, the version picker,
-and any changed content component. Preserve the behavior described in
-[`theme/PROJECT.md`](theme/PROJECT.md), including
-analytics, feedback, preview and Self-hosted notices, source metadata, and
-existing URLs.
+Check a Cloud page and, when relevant, a Self-hosted page. Also check light and
+dark color schemes, desktop and narrow mobile widths, search, the version
+picker, and any changed content component. Preserve analytics, feedback,
+preview and Self-hosted notices, source metadata, and existing URLs.
 
 ### Markdown conventions
 

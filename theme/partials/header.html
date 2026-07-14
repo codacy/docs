@@ -7,8 +7,8 @@
 <header class="{{ class }}" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
-      <img class="docs-logo docs-logo--dark" src="{{ config.theme.logo | url }}" alt="">
-      <img class="docs-logo docs-logo--light" src="{{ 'assets/images/codacy-docs-logo-light.svg' | url }}" alt="">
+      <img class="docs-logo docs-logo--dark" src="{{ config.theme.logo | url }}" alt="Codacy Docs">
+      <img class="docs-logo docs-logo--light" src="{{ 'assets/images/codacy-docs-logo-light.svg' | url }}" alt="Codacy Docs">
     </a>
     <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Open navigation" aria-controls="docs-navigation" aria-expanded="false" data-drawer-trigger>
       <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>

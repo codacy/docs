@@ -7,7 +7,8 @@ import re
 import struct
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
-from xml.etree import ElementTree
+from defusedxml import ElementTree as SafeElementTree
+from defusedxml.common import DefusedXmlException
 
 
 _IMAGE_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
@@ -86,7 +87,7 @@ def _image_dimensions(path: Path) -> tuple[str, str] | None:
                 if width and height:
                     dimensions = (str(width), str(height))
         elif suffix == ".svg":
-            _, root = next(ElementTree.iterparse(path, events=("start",)))
+            _, root = next(SafeElementTree.iterparse(path, events=("start",)))
             width = _svg_dimension(root.get("width"))
             height = _svg_dimension(root.get("height"))
             if not width or not height:
@@ -98,7 +99,14 @@ def _image_dimensions(path: Path) -> tuple[str, str] | None:
                     height = height or view_height
             if width and height:
                 dimensions = (_format_dimension(width), _format_dimension(height))
-    except (OSError, ElementTree.ParseError, StopIteration, struct.error, ValueError):
+    except (
+        OSError,
+        SafeElementTree.ParseError,
+        DefusedXmlException,
+        StopIteration,
+        struct.error,
+        ValueError,
+    ):
         # An unreadable or unusual image must never make the docs build fail.
         dimensions = None
 
