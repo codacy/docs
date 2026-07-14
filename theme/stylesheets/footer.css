@@ -5,14 +5,14 @@
 .docs-page-nav strong { font-size: .86rem; font-weight: 600; }
 .docs-page-nav__next { grid-column: 2; text-align: right; }
 .docs-footer { border-top: 1px solid var(--docs-border); background: var(--docs-bg); }
-/* Three balanced columns: brand (left) · links (center) · copyright (right).
-   The generous bottom padding keeps the copyright clear of the floating
-   support widget that is pinned to the bottom-right of the viewport. */
-.docs-footer__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1.25rem 2rem; max-width: 90rem; padding: 1.4rem 1.5rem 2.4rem; margin: auto; color: var(--docs-text-tertiary); font-size: .78rem; }
-.docs-footer__brand { min-width: 0; }
-.docs-footer__brand strong { color: var(--docs-text); font-size: .86rem; font-weight: 600; }
-.docs-footer__nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem 1.25rem; }
-.docs-footer__copyright { justify-self: end; text-align: right; line-height: 1.5; }
+/* Tagline (left) and the links + copyright group (right). The generous bottom
+   padding keeps the right-hand group clear of the floating support widget that
+   is pinned to the bottom-right of the viewport. */
+.docs-footer__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem; max-width: 90rem; padding: 1.4rem 1.5rem 2.4rem; margin: auto; color: var(--docs-text-tertiary); font-size: .78rem; }
+.docs-footer__brand { color: var(--docs-text-secondary); }
+.docs-footer__meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .6rem 1.25rem; margin-left: auto; }
+.docs-footer__nav { display: flex; flex-wrap: wrap; gap: .6rem 1.25rem; }
+.docs-footer__copyright { line-height: 1.5; }
 .docs-footer a { color: var(--docs-text-secondary); text-decoration: none; }
 .docs-footer a:hover { color: var(--docs-link); }
 

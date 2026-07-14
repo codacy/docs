@@ -110,9 +110,8 @@
   .docs-footer a, .docs-feedback__links a { display: inline-flex; min-height: 2.75rem; align-items: center; }
   .docs-page-nav { grid-template-columns: 1fr; }
   .docs-page-nav__next { grid-column: 1; text-align: left; }
-  .docs-footer__inner { grid-template-columns: 1fr; justify-items: start; gap: 1rem; }
-  .docs-footer__nav { justify-content: flex-start; }
-  .docs-footer__copyright { justify-self: start; text-align: left; }
+  .docs-footer__inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .docs-footer__meta { justify-content: flex-start; margin-left: 0; }
 }
 @media screen and (max-width: 40em) {
   .content-columns-wrapper, .topic-row { grid-template-columns: 1fr; gap: .75rem; }
