@@ -1,3 +1,4 @@
+{% from "partials/icon.html" import icon %}
 {% macro render_status(nav_item, type) %}
   {% set class = "md-status md-status--" ~ type %}
   {% if config.extra.status and config.extra.status[type] %}
@@ -17,7 +18,7 @@
   {% set ref = ref or nav_item %}
   {% set section_icons = config.extra.sidebar_icons or {} %}
   {% if level == 1 and section_icons.get(nav_item.title) %}
-    <ion-icon name="{{ section_icons.get(nav_item.title) }}" aria-hidden="true" class="docs-nav-section-icon{% if not nav_item.children %} docs-nav-section-icon--standalone{% endif %}"></ion-icon>
+    {{ icon(section_icons.get(nav_item.title), "docs-nav-section-icon" ~ ("" if nav_item.children else " docs-nav-section-icon--standalone")) }}
   {% elif nav_item.meta and nav_item.meta.icon %}
     {% include ".icons/" ~ nav_item.meta.icon ~ ".svg" %}
   {% endif %}
@@ -36,7 +37,7 @@
   {% else %}
     <a href="{{ first.url | url }}" class="md-nav__link">
       {{ render_content(ref) }}
-      {% if nav_item.children | length > 0 %}<span class="md-nav__icon md-icon"><ion-icon name="chevron-forward-outline" aria-hidden="true" class="docs-ionicon docs-ionicon--nav"></ion-icon></span>{% endif %}
+      {% if nav_item.children | length > 0 %}<span class="md-nav__icon md-icon">{{ icon("chevron-forward-outline", "docs-ionicon docs-ionicon--nav") }}</span>{% endif %}
     </a>
   {% endif %}
 {% endmacro %}
@@ -68,7 +69,7 @@
           {% set tabindex = "0" if not is_section %}
           <label class="md-nav__link" for="{{ path }}" id="{{ path }}_label" tabindex="{{ tabindex }}">
             {{ render_content(nav_item, none, level) }}
-            <span class="md-nav__icon md-icon"><ion-icon name="chevron-forward-outline" aria-hidden="true" class="docs-ionicon docs-ionicon--nav"></ion-icon></span>
+            <span class="md-nav__icon md-icon">{{ icon("chevron-forward-outline", "docs-ionicon docs-ionicon--nav") }}</span>
           </label>
         {% else %}
           {% set active_class = "md-nav__link--active" if index == page %}
@@ -76,12 +77,12 @@
             <a href="{{ index.url | url }}" class="md-nav__link {{ active_class }}">{{ render_content(index, nav_item, level) }}</a>
             {% if nav_item.children | length > 1 %}
               {% set tabindex = "0" if not is_section %}
-              <label class="md-nav__link {{ active_class }}" for="{{ path }}" id="{{ path }}_label" tabindex="{{ tabindex }}"><span class="md-nav__icon md-icon"><ion-icon name="chevron-forward-outline" aria-hidden="true" class="docs-ionicon docs-ionicon--nav"></ion-icon></span></label>
+              <label class="md-nav__link {{ active_class }}" for="{{ path }}" id="{{ path }}_label" tabindex="{{ tabindex }}"><span class="md-nav__icon md-icon">{{ icon("chevron-forward-outline", "docs-ionicon docs-ionicon--nav") }}</span></label>
             {% endif %}
           </div>
         {% endif %}
         <nav class="md-nav" data-md-level="{{ level }}" aria-labelledby="{{ path }}_label" aria-expanded="{{ nav_item.active | tojson }}">
-          <label class="md-nav__title" for="{{ path }}"><span class="md-nav__icon md-icon"><ion-icon name="arrow-back-outline" aria-hidden="true" class="docs-ionicon docs-ionicon--nav"></ion-icon></span>{{ render_title(nav_item) }}</label>
+          <label class="md-nav__title" for="{{ path }}"><span class="md-nav__icon md-icon">{{ icon("arrow-back-outline", "docs-ionicon docs-ionicon--nav") }}</span>{{ render_title(nav_item) }}</label>
           <ul class="md-nav__list" data-md-scrollfix>
             {% for item in nav_item.children %}{% if not index or item != index %}{{ render(item, path ~ "_" ~ loop.index, level + 1, nav_item) }}{% endif %}{% endfor %}
           </ul>
@@ -96,7 +97,7 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       {% set first = toc | first %}
       {% if first and first.level == 1 %}{% set toc = first.children %}{% endif %}
-      {% if toc %}<label class="md-nav__link md-nav__link--active" for="__toc">{{ render_content(nav_item, none, level) }}<span class="md-nav__icon md-icon"><ion-icon name="chevron-forward-outline" aria-hidden="true" class="docs-ionicon docs-ionicon--nav"></ion-icon></span></label>{% endif %}
+      {% if toc %}<label class="md-nav__link md-nav__link--active" for="__toc">{{ render_content(nav_item, none, level) }}<span class="md-nav__icon md-icon">{{ icon("chevron-forward-outline", "docs-ionicon docs-ionicon--nav") }}</span></label>{% endif %}
       <a href="{{ nav_item.url | url }}" class="md-nav__link md-nav__link--active">{{ render_content(nav_item, none, level) }}</a>
       {% if toc %}{% include "partials/toc.html" %}{% endif %}
     </li>

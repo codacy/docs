@@ -1,0 +1,21 @@
+{#-
+  Inline an Ionicons SVG into the server-rendered HTML at build time.
+
+  This replaces the Ionicons web-component runtime: no client-side JS, no lazy
+  network fetch, no flash of missing icons / layout shift. The SVG source files
+  live in `assets/vendor/ionicons/svg/<name>.svg` (Ionicons, MIT — see the
+  sibling LICENSE) and are the only remaining icon assets.
+
+  Usage:
+    {% from "partials/icon.html" import icon %}
+    {{ icon("menu-outline") }}
+    {{ icon("chevron-forward-outline", "docs-ionicon docs-ionicon--nav") }}
+
+  Every icon gets the shared `docs-icon` class (base sizing / currentColor,
+  see stylesheets/base.css) plus any extra classes passed by the call site.
+-#}
+{%- macro icon(name, class="") -%}
+  {%- set _classes = ("docs-icon " ~ class) | trim -%}
+  {%- set _svg -%}{%- include "assets/vendor/ionicons/svg/" ~ name ~ ".svg" -%}{%- endset -%}
+  {{- _svg | string | replace("<svg ", "<svg class=\"" ~ _classes ~ "\" aria-hidden=\"true\" ") | safe -}}
+{%- endmacro -%}

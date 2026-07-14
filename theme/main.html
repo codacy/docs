@@ -13,12 +13,6 @@
   {% if config.extra.self_hosted %}<meta name="robots" content="noindex">{% endif %}
 {% endblock %}
 
-{% block libs %}
-  {{ super() }}
-  <script type="module" src="{{ 'assets/vendor/ionicons/ionicons.esm.js' | url }}"></script>
-  <script nomodule src="{{ 'assets/vendor/ionicons/ionicons.js' | url }}"></script>
-{% endblock %}
-
 {% block analytics %}
   {{ super() }}
   {% if config.extra.segment_key %}{% include "partials/integrations/segment.html" %}{% endif %}
