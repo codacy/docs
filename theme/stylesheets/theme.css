@@ -12,7 +12,7 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 /* Header: stable product context, centered search, and quiet utility controls. */
 .md-header { border-bottom: 1px solid var(--docs-border); background: color-mix(in srgb, var(--docs-bg) 96%, transparent); box-shadow: none; backdrop-filter: blur(14px); }
 .md-header__inner { display: grid; grid-template-columns: auto 1fr minmax(15rem, 30rem) 1fr auto auto auto; gap: .65rem; min-height: 4rem; align-items: center; }
-.md-header__button { color: var(--docs-text-secondary); }
+.md-header__button { margin: 0; color: var(--docs-text-secondary); }
 .md-header__button.md-logo { display: inline-flex; overflow: hidden; }
 .md-header__button.md-logo img { display: block; width: auto; height: 1.75rem; max-width: none; }
 .md-header__button.md-logo img.docs-logo--light { display: none; }
