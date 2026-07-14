@@ -5,15 +5,27 @@
 .docs-page-nav strong { font-size: .86rem; font-weight: 600; }
 .docs-page-nav__next { grid-column: 2; text-align: right; }
 .docs-footer { border-top: 1px solid var(--docs-border); background: var(--docs-bg); }
-.docs-footer__inner { display: flex; justify-content: space-between; gap: 2rem; max-width: 90rem; padding: 1.4rem 1rem; margin: auto; color: var(--docs-text-tertiary); font-size: .78rem; }
-.docs-footer__brand { display: grid; gap: .4rem; max-width: 31rem; }
+/* Three balanced columns: brand (left) · links (center) · copyright (right).
+   The generous bottom padding keeps the copyright clear of the floating
+   support widget that is pinned to the bottom-right of the viewport. */
+.docs-footer__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1.25rem 2rem; max-width: 90rem; padding: 1.4rem 1.5rem 2.4rem; margin: auto; color: var(--docs-text-tertiary); font-size: .78rem; }
+.docs-footer__brand { min-width: 0; }
 .docs-footer__brand strong { color: var(--docs-text); font-size: .86rem; font-weight: 600; }
-.docs-footer__brand span { line-height: 1.5; }
-.docs-footer__brand b { margin: 0 .35rem; color: var(--docs-border-strong); font-weight: 400; }
-.docs-footer__meta { display: grid; align-content: space-between; justify-items: end; gap: .9rem; text-align: right; }
-.docs-footer nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+.docs-footer__nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem 1.25rem; }
+.docs-footer__copyright { justify-self: end; text-align: right; line-height: 1.5; }
 .docs-footer a { color: var(--docs-text-secondary); text-decoration: none; }
 .docs-footer a:hover { color: var(--docs-link); }
+
+/* When the footer scrolls into view, docs-theme.js flags <html> so the floating
+   support widget (Zendesk) rises above the footer instead of covering it. The
+   selectors cover the widget's known launcher iframes; unmatched = no-op. */
+:root[data-docs-footer-visible] iframe#launcher,
+:root[data-docs-footer-visible] iframe#web-widget-launcher,
+:root[data-docs-footer-visible] iframe[title*="messaging" i],
+:root[data-docs-footer-visible] iframe[data-product="web_widget"] {
+  transform: translateY(calc(-1 * var(--docs-footer-widget-lift, 5rem))) !important;
+  transition: transform .2s ease;
+}
 
 .docs-feedback { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 1rem; row-gap: .25rem; margin-top: 3rem; padding: 1.5rem 0; border: 0; border-top: 1px solid var(--docs-border); border-bottom: 1px solid var(--docs-border); border-radius: 0; background: transparent; }
 .docs-feedback h2 { grid-column: 1; margin: 0; padding: 0; font-size: 1rem; }

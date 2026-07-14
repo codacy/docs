@@ -1,5 +1,35 @@
 var searchReturnTarget;
 var tocScrollCleanup;
+var footerWidgetObserver;
+
+// Lift the floating support widget (Zendesk) above the footer once the footer
+// scrolls into view, so it never overlaps the footer links. Purely additive:
+// it toggles a flag on <html> that CSS reacts to, and is a no-op when no widget
+// is present or IntersectionObserver is unavailable.
+function observeFooterForWidget() {
+    var root = document.documentElement;
+    if (footerWidgetObserver) {
+        footerWidgetObserver.disconnect();
+        footerWidgetObserver = undefined;
+    }
+    root.removeAttribute("data-docs-footer-visible");
+
+    var footer = document.querySelector("[data-docs-footer]");
+    if (!footer || typeof IntersectionObserver === "undefined") {
+        return;
+    }
+
+    footerWidgetObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                root.setAttribute("data-docs-footer-visible", "true");
+            } else {
+                root.removeAttribute("data-docs-footer-visible");
+            }
+        });
+    });
+    footerWidgetObserver.observe(footer);
+}
 
 function openSearch(opener) {
     var searchToggle = document.querySelector("#__search");
@@ -60,7 +90,11 @@ function initializeDocsTheme() {
     var trigger = document.querySelector("[data-search-trigger]");
     var searchTriggers = document.querySelectorAll("[data-search-trigger]");
     var shortcut = document.querySelector("[data-search-shortcut]");
-    if (shortcut && !/Mac|iPhone|iPad/.test(navigator.platform)) {
+    // Prefer the modern userAgentData.platform; fall back to the (deprecated)
+    // navigator.platform and finally the user agent string for older browsers.
+    var platform = (navigator.userAgentData && navigator.userAgentData.platform) ||
+        navigator.platform || navigator.userAgent || "";
+    if (shortcut && !/Mac|iPhone|iPad|iPod/i.test(platform)) {
         shortcut.textContent = "Ctrl K";
     }
     // The header search trigger persists across navigation.instant page loads,
@@ -269,6 +303,8 @@ function initializeDocsTheme() {
             img.addEventListener("load", frame, { once: true });
         }
     });
+
+    observeFooterForWidget();
 }
 
 if (typeof document$ !== "undefined" && document$.subscribe) {
