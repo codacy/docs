@@ -25,7 +25,7 @@ _UNTITLED_ADMONITION = re.compile(
     r"(?P<container><(?P<tag>div|details)\b"
     r"(?=[^>]*\bclass\s*=\s*[\"'][^\"']*\badmonition\b)(?P<attributes>[^>]*)>)"
     r"(?P<space>\s*)"
-    r"(?!(?:<p\b(?=[^>]*\bclass\s*=\s*[\"'][^\"']*\badmonition-title\b)[^>]*>|<summary\b))",
+    r"(?P<first><(?!/)[^>]+>)",
     re.IGNORECASE | re.DOTALL,
 )
 _WIDE_SCREENSHOT_MINIMUM = 280
@@ -180,11 +180,21 @@ def _add_admonition_icons(html: str) -> str:
         )
 
     def enhance_untitled(match: re.Match[str]) -> str:
+        first = match.group("first")
+        classes = _CLASS.search(first)
+        is_title = (
+            first.lower().startswith("<summary")
+            or (classes is not None and "admonition-title" in classes.group(2).lower().split())
+        )
+        if is_title:
+            return match.group(0)
+
         icon = _admonition_icon(match.group("attributes"))
         return (
             f'{match.group("container")}{match.group("space")}'
             f'<ion-icon name="{icon}" aria-hidden="true" '
             'class="docs-ionicon docs-ionicon--admonition"></ion-icon>'
+            f"{first}"
         )
 
     html = _UNTITLED_ADMONITION.sub(enhance_untitled, html)
