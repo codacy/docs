@@ -343,12 +343,11 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
   [dir="rtl"] .md-main__inner::before { right: calc(50% - var(--docs-layout-half-width) + var(--docs-primary-rail-width)); }
   .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); justify-content: center; }
   .md-main__inner:has(.docs-error)::before { content: none; }
-  .md-main__inner:has(.content-columns-wrapper) { grid-template-columns: 16rem minmax(0, 40rem); justify-content: start; }
-  .md-main__inner:has(#codacy-release-notes) { grid-template-columns: 16rem minmax(0, 40rem); justify-content: start; }
-  /* These two-column pages start at the main grid's inline inset instead of
-     being centered, so their divider keeps the inset-based position. */
-  [dir="ltr"] .md-main__inner:has(.content-columns-wrapper, #codacy-release-notes)::before { left: calc(var(--docs-primary-rail-width) + 2rem); }
-  [dir="rtl"] .md-main__inner:has(.content-columns-wrapper, #codacy-release-notes)::before { right: calc(var(--docs-primary-rail-width) + 2rem); }
+  /* No-TOC pages still need the navigation rail to share the centered desktop
+     frame. Use a two-column grid, but derive its divider from that frame. */
+  .md-main__inner:has(.content-columns-wrapper), .md-main__inner:has(#codacy-release-notes) { --docs-no-toc-half-width: 29rem; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 40rem); justify-content: center; }
+  [dir="ltr"] .md-main__inner:has(.content-columns-wrapper, #codacy-release-notes)::before { left: calc(50% - var(--docs-no-toc-half-width) + var(--docs-primary-rail-width)); }
+  [dir="rtl"] .md-main__inner:has(.content-columns-wrapper, #codacy-release-notes)::before { right: calc(50% - var(--docs-no-toc-half-width) + var(--docs-primary-rail-width)); }
   .md-sidebar { width: auto; max-width: none; }
   .md-sidebar--secondary { margin-left: 0; }
   .md-content { min-width: 0; max-width: none; }
@@ -395,8 +394,8 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
   .md-header .md-grid, .docs-footer__inner { max-width: 90rem; }
   .md-main__inner { --docs-primary-rail-width: 18rem; --docs-layout-half-width: 38rem; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 38rem) 14rem; column-gap: 3rem; }
   .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); justify-content: center; }
-  .md-main__inner:has(.content-columns-wrapper) { grid-template-columns: 18rem minmax(0, 48rem); justify-content: start; }
-  .md-main__inner:has(#codacy-release-notes) { grid-template-columns: 18rem minmax(0, 44rem); justify-content: start; }
+  .md-main__inner:has(.content-columns-wrapper) { --docs-no-toc-half-width: 34.5rem; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 48rem); }
+  .md-main__inner:has(#codacy-release-notes) { --docs-no-toc-half-width: 32.5rem; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 44rem); }
 }
 
 @media screen and (min-width: 90em) {
@@ -406,8 +405,8 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
   .md-header .md-grid, .docs-footer__inner { max-width: 90rem; }
   .md-main__inner { --docs-layout-half-width: 43rem; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 48rem) 14rem; }
   .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); justify-content: center; }
-  .md-main__inner:has(.content-columns-wrapper) { grid-template-columns: 18rem minmax(0, 48rem) 14rem; }
-  .md-main__inner:has(#codacy-release-notes) { grid-template-columns: 18rem minmax(0, 44rem) 14rem; justify-content: center; }
+  .md-main__inner:has(.content-columns-wrapper) { grid-template-columns: var(--docs-primary-rail-width) minmax(0, 48rem); }
+  .md-main__inner:has(#codacy-release-notes) { grid-template-columns: var(--docs-primary-rail-width) minmax(0, 44rem); }
 }
 
 @media screen and (max-width: 76.2344em) {
