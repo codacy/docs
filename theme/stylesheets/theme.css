@@ -339,21 +339,35 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
   .md-main .md-grid { box-sizing: border-box; padding-right: 2rem; padding-left: 2rem; }
   /* Footer copy shares the logo and primary-navigation baseline. */
   .docs-footer__inner { max-width: 70rem; padding-right: 2rem; padding-left: 3rem; }
-  .md-main__inner { --docs-primary-rail-width: 16rem; --docs-layout-half-width: 33rem; position: relative; display: grid; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 34rem) 12rem; column-gap: 2rem; justify-content: center; }
+  /* One layout shell for every page. The breakpoints below only retune the
+     four track tokens; the grid, its centering, and the divider are defined
+     once, here. Pages differ only in what fills the columns, never in where the
+     rail and article sit — so moving between them never shifts the chrome. */
+  .md-main__inner {
+    --docs-primary-rail-width: 16rem;   /* primary navigation */
+    --docs-content-width: 34rem;        /* article measure */
+    --docs-toc-width: 12rem;            /* outline; stays reserved (empty) on pages without a TOC */
+    --docs-grid-gap: 2rem;
+    --docs-layout-half-width: calc((var(--docs-primary-rail-width) + var(--docs-content-width) + var(--docs-toc-width)) / 2 + var(--docs-grid-gap));
+    position: relative;
+    display: grid;
+    grid-template-columns: var(--docs-primary-rail-width) minmax(0, var(--docs-content-width)) var(--docs-toc-width);
+    column-gap: var(--docs-grid-gap);
+    justify-content: center;
+  }
   /* This belongs to the full main grid, not the sticky sidebar: it therefore
-     frames the primary rail continuously from the header to the footer. */
+     frames the primary rail continuously from the header to the footer. The
+     grid is centered, so the divider is derived from its first grid line — a
+     fixed offset would drift into the rail as the viewport widens. */
   .md-main__inner::before { position: absolute; top: -1.5rem; bottom: 0; z-index: 1; width: 1px; background: var(--docs-border); content: ""; pointer-events: none; }
-  /* The grid is centered, so derive the divider from its first grid line.
-     A fixed left offset drifts into the rail as the viewport widens. */
   [dir="ltr"] .md-main__inner::before { left: calc(50% - var(--docs-layout-half-width) + var(--docs-primary-rail-width)); }
   [dir="rtl"] .md-main__inner::before { right: calc(50% - var(--docs-layout-half-width) + var(--docs-primary-rail-width)); }
-  .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); justify-content: center; }
+  /* The error page is the single deliberate exception: no rail, one centered
+     column (its sidebars are hidden above). Every other page — including no-TOC
+     landing pages — keeps the shell and simply leaves the outline column empty,
+     so the rail and article never move. */
+  .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); }
   .md-main__inner:has(.docs-error)::before { content: none; }
-  .md-main__inner:has(.content-columns-wrapper) { grid-template-columns: 16rem minmax(0, 40rem); justify-content: start; }
-  /* These two-column pages start at the main grid's inline inset instead of
-     being centered, so their divider keeps the inset-based position. */
-  [dir="ltr"] .md-main__inner:has(.content-columns-wrapper)::before { left: calc(var(--docs-primary-rail-width) + 2rem); }
-  [dir="rtl"] .md-main__inner:has(.content-columns-wrapper)::before { right: calc(var(--docs-primary-rail-width) + 2rem); }
   .md-sidebar { width: auto; max-width: none; }
   .md-sidebar--secondary { margin-left: 0; }
   .md-content { min-width: 0; max-width: none; }
@@ -398,9 +412,7 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
      Keep the header and footer in that same viewport frame until the 90rem
      desktop cap applies, rather than centering a narrower 80rem shell. */
   .md-header .md-grid, .docs-footer__inner { max-width: 90rem; }
-  .md-main__inner { --docs-primary-rail-width: 18rem; --docs-layout-half-width: 38rem; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 38rem) 14rem; column-gap: 3rem; }
-  .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); justify-content: center; }
-  .md-main__inner:has(.content-columns-wrapper) { grid-template-columns: 18rem minmax(0, 48rem); justify-content: start; }
+  .md-main__inner { --docs-primary-rail-width: 18rem; --docs-content-width: 38rem; --docs-toc-width: 14rem; --docs-grid-gap: 3rem; }
 }
 
 @media screen and (min-width: 90em) {
@@ -408,9 +420,7 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
      288px navigation, 768px article, 224px outline, and 48px gutters. */
   .md-grid { max-width: 90rem; }
   .md-header .md-grid, .docs-footer__inner { max-width: 90rem; }
-  .md-main__inner { --docs-layout-half-width: 43rem; grid-template-columns: var(--docs-primary-rail-width) minmax(0, 48rem) 14rem; }
-  .md-main__inner:has(.docs-error) { grid-template-columns: minmax(0, 38rem); justify-content: center; }
-  .md-main__inner:has(.content-columns-wrapper) { grid-template-columns: 18rem minmax(0, 48rem) 14rem; }
+  .md-main__inner { --docs-content-width: 48rem; }
 }
 
 @media screen and (max-width: 76.2344em) {
