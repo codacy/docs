@@ -42,7 +42,7 @@ Everything you need to set up Codacy, integrate it into your workflow, and get m
 <div class="topic-row">
   <a class="topic-card"  href="organizations/managing-people/">
     <div class="tc-icon">
-      <img alt="" aria-hidden="true" src="assets/images/icon-user-management.svg">
+      <img alt="People" src="assets/images/icon-user-management.svg">
     </div>
     <div class="tc-content">
       <h3>Manage people</h3>
@@ -51,7 +51,7 @@ Everything you need to set up Codacy, integrate it into your workflow, and get m
   </a>
   <a class="topic-card" href="coverage-reporter/">
     <div class="tc-icon">
-      <img alt="" aria-hidden="true" src="assets/images/icon-checklist.svg">
+      <img alt="Checklist" src="assets/images/icon-checklist.svg">
     </div>
     <div class="tc-content">
       <h3>Add coverage</h3>
@@ -60,7 +60,7 @@ Everything you need to set up Codacy, integrate it into your workflow, and get m
   </a>
   <a class="topic-card" href="codacy-api/using-the-codacy-api/">
     <div class="tc-icon">
-      <img alt="" aria-hidden="true" src="assets/images/icon-code.svg">
+      <img alt="Code" src="assets/images/icon-code.svg">
     </div>
     <div class="tc-content">
       <h3>Use the Codacy API</h3>
