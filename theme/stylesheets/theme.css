@@ -101,6 +101,7 @@ body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -a
 .md-sidebar--primary .md-nav--primary .md-nav__link { margin-inline: 0; padding: .5rem; border-radius: var(--docs-radius-sm); }
 .docs-nav-section-icon { flex: 0 0 .95rem; width: .95rem; height: .95rem; margin-right: .45rem; color: var(--docs-text-secondary); }
 .docs-nav-section-icon--standalone { color: var(--docs-text-secondary); transition: color .12s ease; }
+.md-nav__link--active .docs-nav-section-icon--standalone { color: var(--docs-link); }
 /* Every first-level entry uses the same rhythm, whether it is a page or a
    collapsible group. Keeping this on the item avoids selection changing the
    gap between rows. */
