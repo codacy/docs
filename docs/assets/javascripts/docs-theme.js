@@ -63,7 +63,14 @@ function initializeDocsTheme() {
     if (shortcut && !/Mac|iPhone|iPad/.test(navigator.platform)) {
         shortcut.textContent = "Ctrl K";
     }
+    // The header search trigger persists across navigation.instant page loads,
+    // so bind each trigger once; otherwise every navigation stacks another
+    // handler on the same element.
     searchTriggers.forEach(function (searchTrigger) {
+        if (searchTrigger.dataset.docsSearchTriggerInitialized) {
+            return;
+        }
+        searchTrigger.dataset.docsSearchTriggerInitialized = "true";
         searchTrigger.addEventListener("click", function (event) {
             event.preventDefault();
             openSearch(searchTrigger);
@@ -143,7 +150,8 @@ function initializeDocsTheme() {
     }
 
     var searchToggle = document.querySelector("#__search");
-    if (searchToggle && trigger) {
+    if (searchToggle && trigger && !searchToggle.dataset.docsSearchToggleInitialized) {
+        searchToggle.dataset.docsSearchToggleInitialized = "true";
         searchToggle.addEventListener("change", function () {
             searchTriggers.forEach(function (searchTrigger) {
                 searchTrigger.setAttribute("aria-expanded", String(searchToggle.checked));
@@ -160,7 +168,8 @@ function initializeDocsTheme() {
     }
 
     var searchInput = document.querySelector(".md-search__input");
-    if (searchInput) {
+    if (searchInput && !searchInput.dataset.docsSearchInputInitialized) {
+        searchInput.dataset.docsSearchInputInitialized = "true";
         searchInput.addEventListener("input", function (event) {
             // Material listens for keyup. Mirroring input events also covers
             // paste, autofill, and browser automation without duplicating

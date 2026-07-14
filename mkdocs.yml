@@ -3,7 +3,7 @@ site_name: "Codacy docs"
 site_description: "Documentation for the Codacy automated code review tool."
 site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com (Codacy Support)"
-copyright: "Codacy - Automated code review"
+copyright: "© <span data-copyright-year>2026</span> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
 
 # Repository information
 repo_name: "codacy/docs"
@@ -43,7 +43,14 @@ theme:
 extra_css:
     - "stylesheets/fonts.css"
     - "stylesheets/tokens.css"
-    - "stylesheets/theme.css"
+    - "stylesheets/base.css"
+    - "stylesheets/header.css"
+    - "stylesheets/navigation.css"
+    - "stylesheets/content.css"
+    - "stylesheets/home.css"
+    - "stylesheets/footer.css"
+    - "stylesheets/layout.css"
+    - "stylesheets/responsive.css"
 extra_javascript:
     - "assets/javascripts/version-select.js"
     - "assets/javascripts/docs-theme.js"

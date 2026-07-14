@@ -51,13 +51,27 @@ The theme is intentionally plain CSS and minimal Jinja overrides:
 
 -   [`theme/stylesheets/tokens.css`](theme/stylesheets/tokens.css)
     defines the Codacy color tokens and Material color mappings.
--   [`theme/stylesheets/theme.css`](theme/stylesheets/theme.css)
-    contains the visual styling.
+-   The visual styling lives in [`theme/stylesheets/`](theme/stylesheets/),
+    split by concern (`base`, `header`, `navigation`, `content`, `home`,
+    `footer`, `layout`, `responsive`) and loaded in that order via `extra_css`.
+    The files are plain, comment-free CSS; keep a rule in the file that matches
+    its concern, and keep `extra_css` in cascade order (it layers over the
+    Material package, so order and specificity are what make an override win).
 -   [`theme/main.html`](theme/main.html) and its
     [`partials/`](theme/partials/) retain only the overrides and
     integrations that Codacy needs.
 -   [`mkdocs.yml`](mkdocs.yml) connects this layer through `theme.custom_dir`
     and loads the small supporting browser scripts and stylesheets.
+
+Several partials under [`theme/partials/`](theme/partials/) (for example
+`nav-item.html`, `header.html`, `search.html`, and `toc.html`) are derived from
+the equivalent templates in the `mkdocs-material` version pinned in
+[`requirements.txt`](requirements.txt) and then trimmed to Codacy's needs. They
+are coupled to that version's markup, CSS class names, and JavaScript component
+contracts, so **bumping `mkdocs-material` requires re-diffing these partials
+against the new upstream templates** and re-testing search, the palette toggle,
+and navigation. Pin the package to an exact version and treat an upgrade as a
+deliberate task, not an incidental dependency bump.
 
 There is no front-end build step. Edit the CSS, Jinja partials, or supporting
 JavaScript directly, then use the normal MkDocs preview:
@@ -69,6 +83,14 @@ mkdocs serve
 The theme self-hosts the Inter and Roboto Mono font files under
 `theme/assets/fonts/`; it doesn't contact a third-party font service. Keep the
 font license beside those assets when updating them.
+
+Icons are provided by Ionicons, also vendored locally under
+`theme/assets/vendor/ionicons/` (the runtime loader plus only the SVGs the theme
+references) so the docs render fully offline and don't depend on a third-party
+CDN — this matters for Self-hosted installations. When you add an
+`<ion-icon name="…">` or a `sidebar_icons` entry, copy the matching
+`svg/<name>.svg` from the Ionicons package into that folder; unreferenced icons
+are intentionally not vendored. Keep the Ionicons license beside the assets.
 
 The `theme/hooks/image_metadata.py` hook adds intrinsic dimensions and safe
 loading hints to local documentation images at build time. Authors normally use

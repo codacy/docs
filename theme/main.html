@@ -2,6 +2,7 @@
 
 {% block fonts %}
   <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+  <link rel="preload" href="{{ 'assets/fonts/inter-latin.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 {% endblock %}
 
 {% block site_meta %}
@@ -14,8 +15,8 @@
 
 {% block libs %}
   {{ super() }}
-  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="{{ 'assets/vendor/ionicons/ionicons.esm.js' | url }}"></script>
+  <script nomodule src="{{ 'assets/vendor/ionicons/ionicons.js' | url }}"></script>
 {% endblock %}
 
 {% block analytics %}

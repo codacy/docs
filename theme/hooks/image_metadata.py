@@ -14,21 +14,7 @@ from defusedxml.common import DefusedXmlException
 _IMAGE_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 _SOURCE = re.compile(r"\bsrc\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
 _DIMENSION = re.compile(r"^\s*([0-9]+(?:\.[0-9]+)?)\s*(?:px)?\s*$", re.IGNORECASE)
-_CLASS = re.compile(r"\bclass\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
 _STYLE = re.compile(r"\bstyle\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
-_ADMONITION_TITLE = re.compile(
-    r"(?P<container><(?P<tag>div|details)\b(?P<attributes>[^>]*)>)"
-    r"(?P<space>\s*)"
-    r"(?P<title><p\b(?=[^>]*\bclass\s*=\s*[\"'][^\"']*\badmonition-title\b)[^>]*>|<summary\b[^>]*>)",
-    re.IGNORECASE | re.DOTALL,
-)
-_UNTITLED_ADMONITION = re.compile(
-    r"(?P<container><(?P<tag>div|details)\b"
-    r"(?=[^>]*\bclass\s*=\s*[\"'][^\"']*\badmonition\b)(?P<attributes>[^>]*)>)"
-    r"(?P<space>\s*)"
-    r"(?P<first><(?!/)[^>]+>)",
-    re.IGNORECASE | re.DOTALL,
-)
 _WIDE_SCREENSHOT_MINIMUM = 280
 
 _files_identity = None
@@ -154,61 +140,6 @@ def _add_attributes(tag: str, attributes: list[tuple[str, str]]) -> str:
     return f"{tag[:end]}{insertion}{tag[end:]}"
 
 
-def _admonition_icon(attributes: str) -> str:
-    """Select a solid Ionicon that matches the generated admonition type."""
-
-    match = _CLASS.search(attributes)
-    classes = set(match.group(2).lower().split()) if match else set()
-    if classes & {"danger", "failure", "bug"}:
-        return "alert-circle"
-    if classes & {"warning", "caution", "attention"}:
-        return "warning"
-    if classes & {"success"}:
-        return "checkmark-circle"
-    if classes & {"tip", "hint"}:
-        return "bulb"
-    if classes & {"abstract", "summary"}:
-        return "document-text"
-    if classes & {"example"}:
-        return "flask"
-    if classes & {"quote"}:
-        return "chatbubble"
-    return "information-circle"
-
-
-def _add_admonition_icons(html: str) -> str:
-    """Emit status icons at build time, avoiding client-side DOM mutation."""
-
-    def enhance(match: re.Match[str]) -> str:
-        icon = _admonition_icon(match.group("attributes"))
-        return (
-            f'{match.group("container")}{match.group("space")}{match.group("title")}'
-            f'<ion-icon name="{icon}" aria-hidden="true" '
-            'class="docs-ionicon docs-ionicon--admonition"></ion-icon>'
-        )
-
-    def enhance_untitled(match: re.Match[str]) -> str:
-        first = match.group("first")
-        classes = _CLASS.search(first)
-        is_title = (
-            first.lower().startswith("<summary")
-            or (classes is not None and "admonition-title" in classes.group(2).lower().split())
-        )
-        if is_title:
-            return match.group(0)
-
-        icon = _admonition_icon(match.group("attributes"))
-        return (
-            f'{match.group("container")}{match.group("space")}'
-            f'<ion-icon name="{icon}" aria-hidden="true" '
-            'class="docs-ionicon docs-ionicon--admonition"></ion-icon>'
-            f"{first}"
-        )
-
-    html = _UNTITLED_ADMONITION.sub(enhance_untitled, html)
-    return _ADMONITION_TITLE.sub(enhance, html)
-
-
 def on_page_content(html, page, config, files):
     """Reserve image space and defer non-leading screenshots in article HTML."""
 
@@ -246,4 +177,4 @@ def on_page_content(html, page, config, files):
 
         return _add_attributes(tag, attributes)
 
-    return _add_admonition_icons(_IMAGE_TAG.sub(enhance, html))
+    return _IMAGE_TAG.sub(enhance, html)
