@@ -34,12 +34,9 @@ body[data-md-color-scheme="codacy-dark"] [data-md-component="palette"] .docs-pal
 .md-header [data-md-component="palette"] .md-header__button:hover { border-color: var(--docs-border-strong); color: var(--docs-text-secondary); }
 .md-header [data-md-component="palette"] .md-header__button:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }
 .md-header .md-search { display: block; position: fixed; inset: 0; z-index: 100; width: auto; visibility: hidden; opacity: 0; pointer-events: none; background: color-mix(in srgb, var(--docs-bg) 55%, transparent); backdrop-filter: blur(3px); }
-/* Material locks the page when search opens. Keep the header fixed above the
-   page. Only the theme selector is promoted above the backdrop; the rest of
-   the navbar stays beneath it and keeps the selected-search filter. */
+/* Material locks the page when search opens. Keep the header fixed so the
+   search backdrop can filter every navbar control consistently. */
 .md-toggle[data-md-toggle="search"]:checked ~ .md-header { position: fixed; top: 0; right: 0; left: 0; z-index: 101; }
-.md-toggle[data-md-toggle="search"]:checked ~ .md-header [data-md-component="palette"] { position: relative; z-index: 102; }
-.md-toggle[data-md-toggle="search"]:checked ~ .md-header [data-md-component="palette"] .md-header__button:not([hidden]) { position: relative; z-index: 1; pointer-events: auto; }
 .md-toggle[data-md-toggle="search"]:not(:checked) ~ .md-header .md-search__inner { width: 0; height: 0; margin: 0; overflow: hidden; }
 .md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search { visibility: visible; opacity: 1; pointer-events: auto; }
 .md-search__overlay { display: block; position: absolute; inset: 0; background: transparent; }
