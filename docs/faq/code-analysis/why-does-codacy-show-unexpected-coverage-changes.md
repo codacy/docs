@@ -377,7 +377,7 @@ The table below displays the code coverage metrics as calculated by Codacy:
 
 /*Right border*/
 th.border {
-  border-right: 1px solid white;
+  border-right: 1px solid var(--docs-border);
 }
 
 .border {
@@ -391,11 +391,11 @@ th.border {
 
 /*Green text*/
 .text-green {
-  color: #21c178;
+  color: var(--docs-success);
 }
 
 /*Red text*/
 .text-red {
-  color: #ef5454;
+  color: var(--docs-danger);
 }
 </style>
