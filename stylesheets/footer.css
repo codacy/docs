@@ -1,0 +1,46 @@
+.docs-page-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--docs-border); }
+.docs-page-nav a { display: grid; gap: .25rem; min-height: 4.75rem; padding: .9rem 1rem; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); color: var(--docs-text); text-decoration: none; }
+.docs-page-nav a:hover { border-color: var(--docs-border-strong); background: var(--docs-bg-secondary); text-decoration: none; }
+.docs-page-nav span { color: var(--docs-text-tertiary); font-size: .72rem; }
+.docs-page-nav strong { font-size: .86rem; font-weight: 600; }
+.docs-page-nav__next { grid-column: 2; text-align: right; }
+.docs-footer { border-top: 1px solid var(--docs-border); background: var(--docs-bg); }
+/* Tagline (left) and the links + copyright group (right). The generous bottom
+   padding keeps the right-hand group clear of the floating support widget that
+   is pinned to the bottom-right of the viewport. */
+.docs-footer__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem; max-width: 90rem; padding: 1.4rem 1.5rem 2.4rem; margin: auto; color: var(--docs-text-tertiary); font-size: .78rem; }
+.docs-footer__brand { color: var(--docs-text-secondary); }
+.docs-footer__meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .6rem 1.25rem; margin-left: auto; }
+.docs-footer__nav { display: flex; flex-wrap: wrap; gap: .6rem 1.25rem; }
+.docs-footer__copyright { line-height: 1.5; }
+.docs-footer a { color: var(--docs-text-secondary); text-decoration: none; }
+.docs-footer a:hover { color: var(--docs-link); }
+
+/* When the footer scrolls into view, docs-theme.js flags <html> so the floating
+   support widget (Zendesk) rises above the footer instead of covering it. The
+   selectors cover the widget's known launcher iframes; unmatched = no-op. */
+:root[data-docs-footer-visible] iframe#launcher,
+:root[data-docs-footer-visible] iframe#web-widget-launcher,
+:root[data-docs-footer-visible] iframe[title*="messaging" i],
+:root[data-docs-footer-visible] iframe[data-product="web_widget"] {
+  transform: translateY(calc(-1 * var(--docs-footer-widget-lift, 5rem))) !important;
+  transition: transform .2s ease;
+}
+
+.docs-feedback { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 1rem; row-gap: .25rem; margin-top: 3rem; padding: 1.5rem 0; border: 0; border-top: 1px solid var(--docs-border); border-bottom: 1px solid var(--docs-border); border-radius: 0; background: transparent; }
+.docs-feedback h2 { grid-column: 1; margin: 0; padding: 0; font-size: 1rem; }
+.docs-feedback p { grid-column: 1 / -1; margin: .25rem 0 0; }
+.docs-feedback > p:first-of-type { grid-column: 1; color: var(--docs-text-tertiary); font-size: .82rem; }
+.docs-feedback button { padding: .45rem .75rem; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg); color: var(--docs-text-secondary); cursor: pointer; font: inherit; font-size: .8rem; }
+.docs-feedback button:hover { border-color: var(--docs-border-strong); color: var(--docs-link); }
+.docs-feedback button[aria-pressed="true"] { border-color: color-mix(in srgb, var(--docs-link) 55%, var(--docs-border)); background: color-mix(in srgb, var(--docs-link) 9%, var(--docs-bg)); color: var(--docs-link); font-weight: 600; }
+.docs-feedback button:disabled { cursor: default; opacity: .65; }
+.docs-feedback.is-submitted .docs-feedback__choices { opacity: .7; }
+.docs-feedback__choices { display: flex; grid-column: 2; grid-row: 1 / span 2; align-self: center; gap: .5rem; }
+.docs-feedback__form { grid-column: 1 / -1; margin-top: 1rem; }
+.docs-feedback textarea { display: block; width: 100%; box-sizing: border-box; margin-top: .5rem; padding: .7rem; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg); color: var(--docs-text); font: inherit; }
+.docs-feedback__count { color: var(--docs-text-tertiary); font-size: .72rem; }
+.docs-feedback__thanks { color: var(--docs-success); font-weight: 600; }
+.docs-feedback__thanks:focus { outline: none; }
+.docs-feedback__links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; padding-top: .75rem; color: var(--docs-text-tertiary); font-size: .78rem; }
+.docs-search-trigger:focus-visible, .docs-header__cta:focus-visible, .version-select-container .select-css:focus-visible, .content-link:focus-visible, .topic-card:focus-visible, .docs-page-nav a:focus-visible, .docs-feedback button:focus-visible, .docs-feedback textarea:focus-visible, .docs-feedback a:focus-visible, .docs-footer a:focus-visible, .docs-source-link:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }

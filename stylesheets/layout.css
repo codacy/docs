@@ -1,0 +1,6 @@
+.md-header__inner, .md-main__inner, .docs-footer__inner {
+  box-sizing: border-box;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: var(--docs-frame-gutter, 1rem);
+}
