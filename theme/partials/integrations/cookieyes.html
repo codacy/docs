@@ -1,8 +1,7 @@
 {# TEST-ONLY: reproduce navigation.instant + CookieYes interaction on a Netlify
-   preview. CookieYes is normally injected at runtime via GTM (scoped to
-   docs.codacy.com), so it never fires on a preview host — we inject it here so
-   the real CookieYes banner + auto-blocking can be exercised against instant
-   navigation. Do NOT merge this to master. #}
+   preview. Uses the CookieYes *staging site* key registered for this preview
+   host (banner enabled + auto-blocking), NOT the production key that GTM
+   injects on docs.codacy.com. Do NOT merge this to master. #}
 <!-- Start cookieyes banner -->
-<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/66dc14ff018de634f7cb2c8add0b3c8a/script.js"></script>
+<script id="cookieyes" type="text/javascript" src="ttps://cdn-cookieyes.com/client_data/c5874f8d39a04e1ffb9c4b1c8b3074e9/script.js"></script>
 <!-- End cookieyes banner -->
