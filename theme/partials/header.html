@@ -27,6 +27,7 @@
     <a class="docs-header__cta" href="https://www.codacy.com/signup">Get started</a>
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}{% include "partials/palette.html" %}{% endif %}
+      {% if not config.theme.palette is mapping %}{% include "partials/javascripts/palette.html" %}{% endif %}
     {% endif %}
     {% if config.extra.alternate %}{% include "partials/alternate.html" %}{% endif %}
     {% if "material/search" in config.plugins %}{% include "partials/search.html" %}{% endif %}
