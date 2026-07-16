@@ -206,6 +206,7 @@ function initializeVersionSelector() {
         }), currentVersion.version);
         selector.replaceChildren.apply(selector, Array.prototype.slice.call(generatedSelect.options));
         var select = selector;
+        select.value = currentVersion.version;
         select.disabled = false;
 
         // Navigate to the selected version
