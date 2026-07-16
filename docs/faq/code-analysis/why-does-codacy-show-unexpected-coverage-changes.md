@@ -260,7 +260,7 @@ The table below represents two example coverage reports reflecting a pull reques
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">ClassA.java</td>
+      <td rowspan="4">ClassA.java</td>
       <td>2</td>
       <td class="border">Yes</td>
       <td>2</td>
