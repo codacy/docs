@@ -386,7 +386,7 @@ th.border {
 
 /*Red background*/
 .background-red {
-  background-color: #ffe6e6;
+  background-color: var(--docs-danger-bg);
 }
 
 /*Green text*/
