@@ -1,5 +1,4 @@
 var searchReturnTarget;
-var searchFocusFrame;
 var tocScrollCleanup;
 var footerWidgetObserver;
 
@@ -52,8 +51,7 @@ function openSearch(opener) {
         trigger.setAttribute("aria-expanded", "true");
     }
 
-    window.cancelAnimationFrame(searchFocusFrame);
-    searchFocusFrame = window.requestAnimationFrame(function () {
+    window.setTimeout(function () {
         var input = document.querySelector(".md-search__input");
         if (input) {
             // preventScroll: focusing the input inside the fixed search overlay
@@ -66,7 +64,6 @@ function openSearch(opener) {
 function closeSearch() {
     var searchToggle = document.querySelector("#__search");
 
-    window.cancelAnimationFrame(searchFocusFrame);
     if (searchToggle && searchToggle.checked) {
         searchToggle.click();
     }
@@ -102,8 +99,9 @@ function initializeDocsTheme() {
     if (shortcut && !/Mac|iPhone|iPad|iPod/i.test(platform)) {
         shortcut.textContent = "Ctrl K";
     }
-    // This is a full-page navigation site. Bind a search handler once to each
-    // trigger in case this file is included more than once by an integration.
+    // The header search trigger persists across navigation.instant page loads,
+    // so bind each trigger once; otherwise every navigation stacks another
+    // handler on the same element.
     searchTriggers.forEach(function (searchTrigger) {
         if (searchTrigger.dataset.docsSearchTriggerInitialized) {
             return;
@@ -127,8 +125,10 @@ function initializeDocsTheme() {
     if (drawer) {
         drawer.id = "docs-navigation";
     }
-    // Bind drawer controls once, even if an integration includes this script
-    // more than once on the same document.
+    // With navigation.instant, Material keeps the header and drawer mounted
+    // while emitting document$ for each page. Only bind these persistent
+    // controls once; otherwise every navigation adds another click handler
+    // and a hamburger tap toggles the checkbox an even number of times.
     if (drawerToggle && drawerTrigger && drawer && !drawerTrigger.dataset.docsDrawerInitialized) {
         drawerTrigger.dataset.docsDrawerInitialized = "true";
         let suppressDrawerKeyboardClick = false;
@@ -309,10 +309,10 @@ function initializeDocsTheme() {
     observeFooterForWidget();
 }
 
-if (document.readyState === "loading") {
-    window.addEventListener("DOMContentLoaded", initializeDocsTheme, { once: true });
+if (typeof document$ !== "undefined" && document$.subscribe) {
+    document$.subscribe(initializeDocsTheme);
 } else {
-    initializeDocsTheme();
+    window.addEventListener("DOMContentLoaded", initializeDocsTheme);
 }
 
 window.addEventListener("keydown", function (event) {

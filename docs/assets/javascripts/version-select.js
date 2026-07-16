@@ -235,8 +235,8 @@ function initializeVersionSelector() {
     fetchVersions(generateVersionSwitcher);
 }
 
-if (document.readyState === "loading") {
-    window.addEventListener("DOMContentLoaded", initializeVersionSelector, { once: true });
+if (typeof document$ !== "undefined" && document$.subscribe) {
+    document$.subscribe(initializeVersionSelector);
 } else {
-    initializeVersionSelector();
+    window.addEventListener("DOMContentLoaded", initializeVersionSelector);
 }
