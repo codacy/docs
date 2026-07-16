@@ -38,6 +38,7 @@ theme:
         - "search.suggest"
         - "content.code.copy"
         - "content.tabs.link"
+        - "navigation.instant"
         - "navigation.path"
 extra_css:
     - "stylesheets/fonts.css"

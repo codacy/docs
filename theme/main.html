@@ -5,6 +5,12 @@
   <link rel="preload" href="{{ 'assets/fonts/inter-latin.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 {% endblock %}
 
+{% block extrahead %}
+  {{ super() }}
+  {# TEST-ONLY (do not merge): exercise CookieYes under navigation.instant #}
+  {% include "partials/integrations/cookieyes.html" %}
+{% endblock %}
+
 {% block site_meta %}
   {{ super() }}
   {% if page and page.meta and page.meta.git_revision_date_localized_raw_iso_datetime %}
