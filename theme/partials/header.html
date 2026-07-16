@@ -28,7 +28,6 @@
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}{% include "partials/palette.html" %}{% endif %}
     {% endif %}
-    {% if not config.theme.palette is mapping %}{% include "partials/javascripts/palette.html" %}{% endif %}
     {% if config.extra.alternate %}{% include "partials/alternate.html" %}{% endif %}
     {% if "material/search" in config.plugins %}{% include "partials/search.html" %}{% endif %}
   </nav>
