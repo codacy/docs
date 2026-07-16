@@ -44,7 +44,7 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 
 The documentation uses the installed `mkdocs-material` package with a small,
 Codacy-owned theme layer in [`theme/`](theme/). This is
-the current theme source of truth. Do not copy, modify, or revive the legacy
+the current theme source of truth. Don't copy, modify, or renew the legacy
 `submodules/codacy-mkdocs-material` clone when changing this site's theme.
 
 The theme is intentionally plain CSS and minimal Jinja overrides:
