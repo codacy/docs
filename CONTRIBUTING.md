@@ -87,7 +87,7 @@ font license beside those assets when updating them.
 Icons are provided by Ionicons, also vendored locally under
 `theme/assets/vendor/ionicons/` (the runtime loader plus only the SVGs the theme
 references) so the docs render fully offline and don't depend on a third-party
-CDN — this matters for Self-hosted installations. When you add an
+CDN—this matters for Self-hosted installations. When you add an
 `<ion-icon name="…">` or a `sidebar_icons` entry, copy the matching
 `svg/<name>.svg` from the Ionicons package into that folder; unreferenced icons
 are intentionally not vendored. Keep the Ionicons license beside the assets.
