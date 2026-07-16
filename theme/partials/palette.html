@@ -12,7 +12,11 @@
     {% endif %}
   {% endfor %}
   <span class="docs-palette__fallback" aria-hidden="true">
-    <span class="docs-palette__fallback-button docs-palette__fallback-button--light md-icon">{{ icon("moon-outline") }}</span>
-    <span class="docs-palette__fallback-button docs-palette__fallback-button--dark md-icon">{{ icon("sunny-outline") }}</span>
+    <label class="docs-palette__fallback-button docs-palette__fallback-button--light md-icon" title="Switch to dark mode" for="__palette_1">
+      {{ icon("moon-outline") }}
+    </label>
+    <label class="docs-palette__fallback-button docs-palette__fallback-button--dark md-icon" title="Switch to light mode" for="__palette_0">
+      {{ icon("sunny-outline") }}
+    </label>
   </span>
 </form>
