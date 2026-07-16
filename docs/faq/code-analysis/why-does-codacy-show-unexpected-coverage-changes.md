@@ -272,17 +272,17 @@ The table below represents two example coverage reports reflecting a pull reques
       <td>4</td>
       <td>Yes</td>
     </tr>
+    <tr>
       <td>5</td>
       <td class="border">Yes</td>
       <td class="background-red"></td>
       <td class="background-red"></td>
-    <tr>
     </tr>
+    <tr>
       <td>6</td>
       <td class="border">Yes</td>
       <td class="background-red"></td>
       <td class="background-red"></td>
-    <tr>
     </tr>
     <tr>
       <td rowspan="3">ClassB.java</td>
