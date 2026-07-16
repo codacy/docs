@@ -39,6 +39,7 @@ theme:
         - "content.code.copy"
         - "content.tabs.link"
         - "navigation.path"
+        - "navigation.prune"
 extra_css:
     - "stylesheets/fonts.css"
     - "stylesheets/tokens.css"
