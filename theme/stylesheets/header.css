@@ -38,7 +38,8 @@ body[data-md-color-scheme="codacy-dark"] [data-md-component="palette"] .docs-pal
    page. Only the theme selector is promoted above the backdrop; the rest of
    the navbar stays beneath it and keeps the selected-search filter. */
 .md-toggle[data-md-toggle="search"]:checked ~ .md-header { position: fixed; top: 0; right: 0; left: 0; z-index: 101; }
-.md-toggle[data-md-toggle="search"]:checked ~ .md-header [data-md-component="palette"] { position: relative; z-index: 101; }
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header [data-md-component="palette"] { position: relative; z-index: 102; }
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header [data-md-component="palette"] .md-header__button:not([hidden]) { position: relative; z-index: 1; pointer-events: auto; }
 .md-toggle[data-md-toggle="search"]:not(:checked) ~ .md-header .md-search__inner { width: 0; height: 0; margin: 0; overflow: hidden; }
 .md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search { visibility: visible; opacity: 1; pointer-events: auto; }
 .md-search__overlay { display: block; position: absolute; inset: 0; background: transparent; }
