@@ -4,3 +4,12 @@
   margin-inline: auto;
   padding-inline: var(--docs-frame-gutter, 1rem);
 }
+
+/* Keep article content and its breadcrumb on the same visual column instead
+   of inheriting Material's independent viewport-dependent offsets. */
+[dir="ltr"] .md-content__inner { margin-left: var(--docs-content-inset); margin-right: var(--docs-content-inset); }
+[dir="rtl"] .md-content__inner { margin-right: var(--docs-content-inset); margin-left: var(--docs-content-inset); }
+[dir="ltr"] .md-path { margin-left: var(--docs-content-inset); margin-right: var(--docs-content-inset); }
+[dir="rtl"] .md-path { margin-right: var(--docs-content-inset); margin-left: var(--docs-content-inset); }
+.md-path { padding-inline: 0; }
+.md-tabs__list { margin-inline: 0; }

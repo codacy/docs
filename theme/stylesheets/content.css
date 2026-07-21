@@ -86,7 +86,7 @@
 .docs-revision span::after { color: var(--docs-text-tertiary); content: "·"; margin-left: .35rem; }
 .docs-revision .git-revision-date-localized-plugin::after { content: none; }
 
-.docs-error { max-width: 34rem; padding: 4rem 0 7rem; }
+.docs-error { max-width: 34rem; margin-inline: auto; padding: 4rem 0 7rem; }
 .docs-error__code { margin: 0 0 .55rem; color: var(--docs-link); font-size: .78rem; font-weight: 700; letter-spacing: .08em; }
 .docs-error h1 { margin-bottom: 1rem; }
 .docs-error > p:not(.docs-error__code) { max-width: 31rem; }

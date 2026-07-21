@@ -39,6 +39,9 @@ theme:
         - "content.code.copy"
         - "content.tabs.link"
         - "navigation.path"
+        - "navigation.tabs"
+        - "navigation.tabs.sticky"
+        - "navigation.sections"
 extra_css:
     - "stylesheets/fonts.css"
     - "stylesheets/tokens.css"
@@ -67,23 +70,6 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
-    # Ionicons displayed for top-level entries in the navigation sidebar.
-    sidebar_icons:
-        "Documentation home": "home-outline"
-        "Getting started": "rocket-outline"
-        "Codacy Guardrails (IDE Extension)": "shield-checkmark-outline"
-        "Codacy Cloud CLI": "terminal-outline"
-        "Codacy AI": "sparkles-outline"
-        "Repositories on Codacy": "folder-open-outline"
-        "Configuring your repositories": "settings-outline"
-        "Organizations": "people-outline"
-        "Enterprise Cloud": "business-outline"
-        "Your account": "person-circle-outline"
-        "Codacy API": "code-slash-outline"
-        "Managing Codacy Self-hosted": "server-outline"
-        "Troubleshooting and FAQs": "medical-outline"
-        "Release notes": "megaphone-outline"
-        "Special thanks": "heart-outline"
     # Do not show a generated-by badge in the footer.
     generator: false
     # Add pull request preview banner
@@ -613,296 +599,269 @@ plugins:
               "repositories-configure/file-extensions.md": "repositories-configure/languages.md"
 
 nav:
-    - Documentation home: "index.md"
-    - Getting started:
-          - getting-started/codacy-quickstart.md
-          - getting-started/configuring-your-repository.md
-          - getting-started/integrating-codacy-with-your-git-workflow.md
-          - Integrating Codacy with your IDE:
-                - getting-started/integrating-codacy-with-intellij-ides.md
-                - getting-started/integrating-codacy-with-visual-studio-code.md
-          - getting-started/supported-languages-and-tools.md
-          - getting-started/which-permissions-does-codacy-need-from-my-account.md
-          - getting-started/adding-a-codacy-badge.md
-    - Codacy Guardrails (IDE Extension):
-          - codacy-guardrails/codacy-guardrails-getting-started.md
-          - codacy-guardrails/codacy-guardrails-how-to-use.md
-          - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
-          - codacy-guardrails/codacy-guardrails-limitations.md
-          - codacy-guardrails/codacy-guardrails-troubleshooting.md
-          - codacy-guardrails/codacy-guardrails-faq.md
-    - Codacy Cloud CLI:
-          - codacy-cloud-cli/index.md
-    - Codacy AI:
-          - codacy-ai/codacy-ai.md
-    - Repositories on Codacy:
-          - repositories/repository-dashboard.md
-          - repositories/commits.md
-          - repositories/files.md
-          - repositories/issues.md
-          - repositories/coverage.md
-          - repositories/pull-requests.md
-    - Configuring your repositories:
-          - repositories-configure/configuring-code-patterns.md
-          - repositories-configure/managing-branches.md
-          - Managing integrations:
-                - repositories-configure/integrations/github-integration.md
-                - repositories-configure/integrations/gitlab-integration.md
-                - repositories-configure/integrations/bitbucket-integration.md
-                - repositories-configure/integrations/post-commit-hooks.md
-          - repositories-configure/ignoring-files.md
-          - repositories-configure/languages.md
-          - repositories-configure/adjusting-quality-gates.md
-          - repositories-configure/adjusting-quality-goals.md
-          - Setting up code coverage:
-                - coverage-reporter/index.md
-                - coverage-reporter/alternative-ways-of-running-coverage-reporter.md
-                - coverage-reporter/uploading-coverage-in-advanced-scenarios.md
-                - coverage-reporter/troubleshooting-coverage-cli-issues.md
-          - Local analysis:
-                - repositories-configure/local-analysis/client-side-tools.md
-                - repositories-configure/local-analysis/running-aligncheck.md
-                - repositories-configure/local-analysis/running-dartanalyzer.md
-                - repositories-configure/local-analysis/running-deadcode.md
-                - repositories-configure/local-analysis/running-spotbugs.md
-                - repositories-configure/local-analysis/running-eslint.md
-          - repositories-configure/using-submodules.md
-          - repositories-configure/codacy-configuration-file.md
-          - repositories-configure/removing-your-repository.md
-    - Organizations:
-          - organizations/what-are-organizations.md
-          - organizations/managing-repositories.md
-          - organizations/segments.md
-          - Reporting:
-                  - organizations/reporting/organization-overview.md
-                  - organizations/reporting/issues-metrics.md
-                  - organizations/reporting/codacy-usage.md
-          - organizations/using-gate-policies.md
-          - organizations/using-coding-standards.md
-          - organizations/ai-risk-hub.md
-          - Managing integrations:
-                - organizations/integrations/default-git-provider-integration-settings.md
-                - Slack integration for Security issues: organizations/integrations/slack-integration.md
-                - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
-          - organizations/managing-security-and-risk.md
-          - organizations/managing-people.md
-          - organizations/audit-logs-for-organizations.md
-          - organizations/roles-and-permissions-for-organizations.md
-          - organizations/changing-your-plan-and-billing.md
-    - Enterprise Cloud:
-          - enterprise-cloud/github-enterprise-cloud.md
-    - Your account:
-          - account/managing-your-profile.md
-          - account/emails.md
-          - account/user-session-management.md
-    - Codacy API:
-          - codacy-api/using-the-codacy-api.md
-          - codacy-api/api-tokens.md
-          - API v3 reference (recommended): https://api.codacy.com/api/api-docs
-          - API v2 reference: https://api.codacy.com/api-docs
-          - Examples:
-                - codacy-api/examples/adding-people-to-codacy-programmatically.md
-                - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
-                - codacy-api/examples/creating-repository-api-tokens-programmatically.md
-                - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
-                - codacy-api/examples/obtaining-current-issues-in-repositories.md
-                - codacy-api/examples/identifying-commits-without-coverage-data.md
-                - codacy-api/examples/uploading-dast-results.md
-                - codacy-api/examples/triggering-dast-scans.md
-    - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
-    - Troubleshooting and FAQs:
-          - General:
-                - faq/general/which-platforms-and-technologies-does-codacy-support.md
-                - faq/general/how-does-codacy-support-github-enterprise.md
-                - faq/general/how-does-codacy-support-gitlab-cloud.md
-                - faq/general/how-does-codacy-support-gitlab-enterprise.md
-                - faq/general/how-does-codacy-support-bitbucket-cloud.md
-                - faq/general/how-does-codacy-support-bitbucket-server.md
-                - faq/general/how-does-codacy-keep-my-data-secure.md
-                - faq/general/how-does-codacy-protect-my-privacy.md
-                - faq/general/does-codacy-keep-audit-logs.md
-                - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
-                - faq/general/how-can-i-change-or-cancel-my-plan.md
-          - Repositories:
-                - faq/repositories/how-do-i-reanalyze-my-repository.md
-                - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
-          - Code analysis:
-                - faq/code-analysis/which-metrics-does-codacy-calculate.md
-                - faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md
-                - faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md
-                - faq/code-analysis/does-codacy-check-for-dependencies.md
-                - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
-                - faq/code-analysis/how-to-skip-an-analysis.md
-                - faq/code-analysis/can-i-bypass-codacy-status-check.md
-                - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
-          - Troubleshooting:
-                - faq/troubleshooting/why-cant-i-see-my-organization.md
-                - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
-                - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
-                - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
-                - faq/troubleshooting/not-a-member-of-the-organization.md
-                - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
-                - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
-                - faq/troubleshooting/error-line-endings.md
+    - Platform:
+        - Get started:
+              - Documentation home: "index.md"
+              - getting-started/codacy-quickstart.md
+              - getting-started/configuring-your-repository.md
+              - getting-started/integrating-codacy-with-your-git-workflow.md
+              - getting-started/supported-languages-and-tools.md
+              - getting-started/which-permissions-does-codacy-need-from-my-account.md
+              - getting-started/adding-a-codacy-badge.md
+        - Quality:
+              - Repository results:
+                    - repositories/repository-dashboard.md
+                    - repositories/commits.md
+                    - repositories/files.md
+                    - repositories/issues.md
+                    - repositories/pull-requests.md
+              - Configure analysis:
+                    - repositories-configure/configuring-code-patterns.md
+                    - repositories-configure/managing-branches.md
+                    - Git provider integration:
+                          - repositories-configure/integrations/github-integration.md
+                          - repositories-configure/integrations/gitlab-integration.md
+                          - repositories-configure/integrations/bitbucket-integration.md
+                          - repositories-configure/integrations/post-commit-hooks.md
+                    - repositories-configure/ignoring-files.md
+                    - repositories-configure/languages.md
+                    - repositories-configure/adjusting-quality-gates.md
+                    - repositories-configure/adjusting-quality-goals.md
+                    - Run analysis in your build:
+                          - repositories-configure/local-analysis/client-side-tools.md
+                          - repositories-configure/local-analysis/running-aligncheck.md
+                          - repositories-configure/local-analysis/running-dartanalyzer.md
+                          - repositories-configure/local-analysis/running-deadcode.md
+                          - repositories-configure/local-analysis/running-spotbugs.md
+                          - repositories-configure/local-analysis/running-eslint.md
+                    - repositories-configure/using-submodules.md
+                    - repositories-configure/codacy-configuration-file.md
+                    - repositories-configure/removing-your-repository.md
+        - AI:
+              - Code review and triage: codacy-ai/codacy-ai.md
+              - AI Risk Hub: organizations/ai-risk-hub.md
+        - Security:
+              - Security overview, findings, and scans: organizations/managing-security-and-risk.md
+              - Security integrations:
+                    - Slack integration for Security issues: organizations/integrations/slack-integration.md
+                    - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
+        - Coverage:
+              - View coverage: repositories/coverage.md
+              - Set up coverage:
+                    - coverage-reporter/index.md
+                    - coverage-reporter/alternative-ways-of-running-coverage-reporter.md
+                    - coverage-reporter/uploading-coverage-in-advanced-scenarios.md
+                    - coverage-reporter/troubleshooting-coverage-cli-issues.md
+        - Self-hosted: "!include submodules/chart/mkdocs.yml"
+    - Developer tools:
+        - Codacy Guardrails:
+              - codacy-guardrails/codacy-guardrails-getting-started.md
+              - codacy-guardrails/codacy-guardrails-how-to-use.md
+              - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
+              - codacy-guardrails/codacy-guardrails-limitations.md
+              - codacy-guardrails/codacy-guardrails-troubleshooting.md
+              - codacy-guardrails/codacy-guardrails-faq.md
+        - IDE extensions:
+              - Review Codacy findings in IntelliJ: getting-started/integrating-codacy-with-intellij-ides.md
+              - Review Codacy findings in Visual Studio Code: getting-started/integrating-codacy-with-visual-studio-code.md
+        - Codacy Cloud CLI:
+              - codacy-cloud-cli/index.md
+        - Codacy API:
+              - codacy-api/using-the-codacy-api.md
+              - codacy-api/api-tokens.md
+              - API v3 reference (recommended): https://api.codacy.com/api/api-docs
+              - API v2 reference: https://api.codacy.com/api-docs
+              - Examples:
+                    - codacy-api/examples/adding-people-to-codacy-programmatically.md
+                    - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
+                    - codacy-api/examples/creating-repository-api-tokens-programmatically.md
+                    - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
+                    - codacy-api/examples/obtaining-current-issues-in-repositories.md
+                    - codacy-api/examples/identifying-commits-without-coverage-data.md
+                    - codacy-api/examples/uploading-dast-results.md
+                    - codacy-api/examples/triggering-dast-scans.md
+    - Administration:
+        - Organizations and repositories:
+              - organizations/what-are-organizations.md
+              - organizations/managing-repositories.md
+              - organizations/segments.md
+        - People and permissions:
+              - organizations/managing-people.md
+              - organizations/roles-and-permissions-for-organizations.md
+        - Policies:
+              - organizations/using-gate-policies.md
+              - organizations/using-coding-standards.md
+        - Reporting:
+              - organizations/reporting/organization-overview.md
+              - organizations/reporting/issues-metrics.md
+              - organizations/reporting/codacy-usage.md
+        - Organization integration defaults: organizations/integrations/default-git-provider-integration-settings.md
+        - organizations/audit-logs-for-organizations.md
+        - organizations/changing-your-plan-and-billing.md
+        - GitHub Enterprise Cloud: enterprise-cloud/github-enterprise-cloud.md
+        - Your account:
+              - account/managing-your-profile.md
+              - account/emails.md
+              - account/user-session-management.md
     - Release notes:
-          - release-notes/index.md
-          - Cloud:
-                - 2026:
-                      - release-notes/cloud/cloud-2026-07-remove-codesniffer-packages.md
-                      - release-notes/cloud/cloud-2026-06.md
-                      - release-notes/cloud/cloud-2026-05.md
-                      - release-notes/cloud/cloud-2026-04.md
-                      - release-notes/cloud/cloud-2026-03.md
-                      - release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md
-                      - release-notes/cloud/cloud-2026-02.md
-                      - release-notes/cloud/cloud-2026-01.md
-                      - release-notes/cloud/cloud-2026-01-adding-golangci-lint.md
-                - 2025:
-                      - release-notes/cloud/cloud-2025-12.md
-                      - release-notes/cloud/cloud-2025-11.md
-                      - release-notes/cloud/cloud-2025-10.md
-                      - release-notes/cloud/cloud-2025-09.md
-                      - release-notes/cloud/cloud-2025-08.md
-                      - release-notes/cloud/cloud-2025-07.md
-                      - release-notes/cloud/cloud-2025-06.md
-                      - release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek.md
-                      - release-notes/cloud/cloud-2025-05.md
-                      - release-notes/cloud/cloud-2025-04.md
-                      - release-notes/cloud/cloud-2025-03.md
-                      - release-notes/cloud/cloud-2025-02-adding-ruff-lizard.md      
-                      - release-notes/cloud/cloud-2025-02.md
-                      - release-notes/cloud/cloud-2025-01.md
-                - 2024:
-                      - release-notes/cloud/cloud-2024-12.md
-                      - release-notes/cloud/cloud-2024-11.md
-                      - release-notes/cloud/cloud-2024-10.md
-                      - release-notes/cloud/cloud-2024-09.md
-                      - release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7.md
-                      - release-notes/cloud/cloud-2024-08.md
-                      - release-notes/cloud/cloud-2024-07.md
-                      - release-notes/cloud/cloud-2024-06.md
-                      - release-notes/cloud/cloud-2024-05.md
-                      - release-notes/cloud/cloud-2024-04.md
-                      - release-notes/cloud/cloud-2024-03.md
-                      - release-notes/cloud/cloud-2024-02.md
-                      - release-notes/cloud/cloud-2024-01.md
-                      - release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation.md
-                - 2023:
-                      - release-notes/cloud/cloud-2023-12.md
-                      - release-notes/cloud/cloud-2023-11.md
-                      - release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md
-                      - release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md
-                      - release-notes/cloud/cloud-2023-10.md
-                      - release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md
-                      - release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md
-                      - release-notes/cloud/cloud-2023-09.md
-                      - release-notes/cloud/cloud-2023-08.md
-                      - release-notes/cloud/cloud-2023-07.md
-                      - release-notes/cloud/cloud-2023-06.md
-                      - release-notes/cloud/cloud-2023-05.md
-                      - release-notes/cloud/cloud-2023-04.md
-                      - release-notes/cloud/cloud-2023-03.md
-                      - release-notes/cloud/cloud-2023-02.md
-                      - release-notes/cloud/cloud-2023-01.md
-                - 2022:
-                      - release-notes/cloud/cloud-2022-12.md
-                      - release-notes/cloud/cloud-2022-11.md
-                      - release-notes/cloud/cloud-2022-10.md
-                      - release-notes/cloud/cloud-2022-09.md
-                      - release-notes/cloud/cloud-2022-08.md
-                      - release-notes/cloud/cloud-2022-07.md
-                      - release-notes/cloud/cloud-2022-06.md
-                      - release-notes/cloud/cloud-2022-05.md
-                      - release-notes/cloud/cloud-2022-04.md
-                      - release-notes/cloud/cloud-2022-03.md
-                      - release-notes/cloud/cloud-2022-03-31-adding-eslint8.md
-                      - release-notes/cloud/cloud-2022-02.md
-                      - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
-                      - release-notes/cloud/cloud-2022-01.md
-                - 2021:
-                      - release-notes/cloud/cloud-2021-12.md
-                      - release-notes/cloud/cloud-2021-11.md
-                      - release-notes/cloud/cloud-2021-10.md
-                      - release-notes/cloud/cloud-2021-09.md
-                      - release-notes/cloud/cloud-2021-11-02-legacy-organizations.md
-                      - release-notes/cloud/cloud-2021-08.md
-                      - release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance.md
-                - 2020:
-                      - release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md
-                      - release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md
-                      - release-notes/cloud/cloud-2020-02-github-apps.md
-                - 2019:
-                      - release-notes/cloud/cloud-2019-11-15.md
-                      - release-notes/cloud/cloud-2019-10-30.md
-                      - release-notes/cloud/cloud-2019-09-05.md
-                      - release-notes/cloud/cloud-2019-08-07.md
-                      - release-notes/cloud/cloud-2019-06-18.md
-                      - release-notes/cloud/cloud-2019-05-20.md
-                      - release-notes/cloud/cloud-2019-05-05.md
-                      - release-notes/cloud/cloud-2019-04-08.md
-                      - release-notes/cloud/cloud-2019-03-29.md
-                      - release-notes/cloud/cloud-2019-02-18-bitbucket-changes.md
-                      - release-notes/cloud/cloud-2019-01-02.md
-                - 2018:
-                      - release-notes/cloud/cloud-2018-11-16.md
-                      - release-notes/cloud/cloud-2018-11-02.md
-                      - release-notes/cloud/cloud-2018-10-19.md
-                      - release-notes/cloud/cloud-2018-07-23.md
-          - Self-hosted:
-                - v16:
-                      - release-notes/self-hosted/self-hosted-v16.0.0.md
-                - v15:
-                      - release-notes/self-hosted/self-hosted-v15.0.0.md
-                - v14:
-                      - release-notes/self-hosted/self-hosted-v14.1.1.md
-                      - release-notes/self-hosted/self-hosted-v14.0.0.md
-                - v13:
-                      - release-notes/self-hosted/self-hosted-v13.0.0.md
-                - v12:
-                      - release-notes/self-hosted/self-hosted-v12.0.0.md
-                - v11:
-                      - release-notes/self-hosted/self-hosted-v11.0.0.md
-                - v10:
-                      - release-notes/self-hosted/self-hosted-v10.0.0.md
-                - v9:
-                      - release-notes/self-hosted/self-hosted-v9.0.0.md
-                - v8:
-                      - release-notes/self-hosted/self-hosted-v8.1.0.md
-                      - release-notes/self-hosted/self-hosted-v8.0.0.md
-                - v7:
-                      - release-notes/self-hosted/self-hosted-v7.0.0.md
-                - v6:
-                      - release-notes/self-hosted/self-hosted-v6.0.0.md
-                - v5:
-                      - release-notes/self-hosted/self-hosted-v5.1.0.md
-                      - release-notes/self-hosted/self-hosted-v5.0.0.md
-                - v4:
-                      - release-notes/self-hosted/self-hosted-v4.4.0.md
-                      - release-notes/self-hosted/self-hosted-v4.3.0.md
-                      - release-notes/self-hosted/self-hosted-v4.2.0.md
-                      - release-notes/self-hosted/self-hosted-v4.1.0.md
-                      - release-notes/self-hosted/self-hosted-v4.0.1.md
-                      - release-notes/self-hosted/self-hosted-v4.0.0.md
-                - v3:
-                      - release-notes/self-hosted/self-hosted-v3.5.1.md
-                      - release-notes/self-hosted/self-hosted-v3.5.0.md
-                      - release-notes/self-hosted/self-hosted-v3.4.0.md
-                      - release-notes/self-hosted/self-hosted-v3.3.0.md
-                      - release-notes/self-hosted/self-hosted-v3.2.0.md
-                      - release-notes/self-hosted/self-hosted-v3.1.0.md
-                      - release-notes/self-hosted/self-hosted-v3.0.0.md
-                - v2:
-                      - release-notes/self-hosted/self-hosted-v2.2.1.md
-                      - release-notes/self-hosted/self-hosted-v2.2.0.md
-                      - release-notes/self-hosted/self-hosted-v2.1.1.md
-                      - release-notes/self-hosted/self-hosted-v2.1.0.md
-                      - release-notes/self-hosted/self-hosted-v2.0.0.md
-                - v1:
-                      - release-notes/self-hosted/self-hosted-v1.5.0.md
-                      - release-notes/self-hosted/self-hosted-v1.4.0.md
-                      - release-notes/self-hosted/self-hosted-v1.3.0.md
-                      - release-notes/self-hosted/self-hosted-v1.2.0.md
-                      - release-notes/self-hosted/self-hosted-v1.1.0.md
-                      - release-notes/self-hosted/self-hosted-v1.0.1.md
-                      - release-notes/self-hosted/self-hosted-v1.0.0.md
-    - special-thanks.md
+        - Release notes:
+              - release-notes/index.md
+              - Cloud:
+                    - 2026:
+                          - release-notes/cloud/cloud-2026-07-remove-codesniffer-packages.md
+                          - release-notes/cloud/cloud-2026-06.md
+                          - release-notes/cloud/cloud-2026-05.md
+                          - release-notes/cloud/cloud-2026-04.md
+                          - release-notes/cloud/cloud-2026-03.md
+                          - release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md
+                          - release-notes/cloud/cloud-2026-02.md
+                          - release-notes/cloud/cloud-2026-01.md
+                          - release-notes/cloud/cloud-2026-01-adding-golangci-lint.md
+                    - 2025:
+                          - release-notes/cloud/cloud-2025-12.md
+                          - release-notes/cloud/cloud-2025-11.md
+                          - release-notes/cloud/cloud-2025-10.md
+                          - release-notes/cloud/cloud-2025-09.md
+                          - release-notes/cloud/cloud-2025-08.md
+                          - release-notes/cloud/cloud-2025-07.md
+                          - release-notes/cloud/cloud-2025-06.md
+                          - release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek.md
+                          - release-notes/cloud/cloud-2025-05.md
+                          - release-notes/cloud/cloud-2025-04.md
+                          - release-notes/cloud/cloud-2025-03.md
+                          - release-notes/cloud/cloud-2025-02-adding-ruff-lizard.md
+                          - release-notes/cloud/cloud-2025-02.md
+                          - release-notes/cloud/cloud-2025-01.md
+                    - 2024:
+                          - release-notes/cloud/cloud-2024-12.md
+                          - release-notes/cloud/cloud-2024-11.md
+                          - release-notes/cloud/cloud-2024-10.md
+                          - release-notes/cloud/cloud-2024-09.md
+                          - release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7.md
+                          - release-notes/cloud/cloud-2024-08.md
+                          - release-notes/cloud/cloud-2024-07.md
+                          - release-notes/cloud/cloud-2024-06.md
+                          - release-notes/cloud/cloud-2024-05.md
+                          - release-notes/cloud/cloud-2024-04.md
+                          - release-notes/cloud/cloud-2024-03.md
+                          - release-notes/cloud/cloud-2024-02.md
+                          - release-notes/cloud/cloud-2024-01.md
+                          - release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation.md
+                    - 2023:
+                          - release-notes/cloud/cloud-2023-12.md
+                          - release-notes/cloud/cloud-2023-11.md
+                          - release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md
+                          - release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md
+                          - release-notes/cloud/cloud-2023-10.md
+                          - release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md
+                          - release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md
+                          - release-notes/cloud/cloud-2023-09.md
+                          - release-notes/cloud/cloud-2023-08.md
+                          - release-notes/cloud/cloud-2023-07.md
+                          - release-notes/cloud/cloud-2023-06.md
+                          - release-notes/cloud/cloud-2023-05.md
+                          - release-notes/cloud/cloud-2023-04.md
+                          - release-notes/cloud/cloud-2023-03.md
+                          - release-notes/cloud/cloud-2023-02.md
+                          - release-notes/cloud/cloud-2023-01.md
+                    - 2022:
+                          - release-notes/cloud/cloud-2022-12.md
+                          - release-notes/cloud/cloud-2022-11.md
+                          - release-notes/cloud/cloud-2022-10.md
+                          - release-notes/cloud/cloud-2022-09.md
+                          - release-notes/cloud/cloud-2022-08.md
+                          - release-notes/cloud/cloud-2022-07.md
+                          - release-notes/cloud/cloud-2022-06.md
+                          - release-notes/cloud/cloud-2022-05.md
+                          - release-notes/cloud/cloud-2022-04.md
+                          - release-notes/cloud/cloud-2022-03.md
+                          - release-notes/cloud/cloud-2022-03-31-adding-eslint8.md
+                          - release-notes/cloud/cloud-2022-02.md
+                          - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
+                          - release-notes/cloud/cloud-2022-01.md
+                    - 2021:
+                          - release-notes/cloud/cloud-2021-12.md
+                          - release-notes/cloud/cloud-2021-11.md
+                          - release-notes/cloud/cloud-2021-10.md
+                          - release-notes/cloud/cloud-2021-09.md
+                          - release-notes/cloud/cloud-2021-11-02-legacy-organizations.md
+                          - release-notes/cloud/cloud-2021-08.md
+                          - release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance.md
+                    - 2020:
+                          - release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md
+                          - release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md
+                          - release-notes/cloud/cloud-2020-02-github-apps.md
+                    - 2019:
+                          - release-notes/cloud/cloud-2019-11-15.md
+                          - release-notes/cloud/cloud-2019-10-30.md
+                          - release-notes/cloud/cloud-2019-09-05.md
+                          - release-notes/cloud/cloud-2019-08-07.md
+                          - release-notes/cloud/cloud-2019-06-18.md
+                          - release-notes/cloud/cloud-2019-05-20.md
+                          - release-notes/cloud/cloud-2019-05-05.md
+                          - release-notes/cloud/cloud-2019-04-08.md
+                          - release-notes/cloud/cloud-2019-03-29.md
+                          - release-notes/cloud/cloud-2019-02-18-bitbucket-changes.md
+                          - release-notes/cloud/cloud-2019-01-02.md
+                    - 2018:
+                          - release-notes/cloud/cloud-2018-11-16.md
+                          - release-notes/cloud/cloud-2018-11-02.md
+                          - release-notes/cloud/cloud-2018-10-19.md
+                          - release-notes/cloud/cloud-2018-07-23.md
+              - Self-hosted:
+                    - v16:
+                          - release-notes/self-hosted/self-hosted-v16.0.0.md
+                    - v15:
+                          - release-notes/self-hosted/self-hosted-v15.0.0.md
+                    - v14:
+                          - release-notes/self-hosted/self-hosted-v14.1.1.md
+                          - release-notes/self-hosted/self-hosted-v14.0.0.md
+                    - v13:
+                          - release-notes/self-hosted/self-hosted-v13.0.0.md
+                    - v12:
+                          - release-notes/self-hosted/self-hosted-v12.0.0.md
+                    - v11:
+                          - release-notes/self-hosted/self-hosted-v11.0.0.md
+                    - v10:
+                          - release-notes/self-hosted/self-hosted-v10.0.0.md
+                    - v9:
+                          - release-notes/self-hosted/self-hosted-v9.0.0.md
+                    - v8:
+                          - release-notes/self-hosted/self-hosted-v8.1.0.md
+                          - release-notes/self-hosted/self-hosted-v8.0.0.md
+                    - v7:
+                          - release-notes/self-hosted/self-hosted-v7.0.0.md
+                    - v6:
+                          - release-notes/self-hosted/self-hosted-v6.0.0.md
+                    - v5:
+                          - release-notes/self-hosted/self-hosted-v5.1.0.md
+                          - release-notes/self-hosted/self-hosted-v5.0.0.md
+                    - v4:
+                          - release-notes/self-hosted/self-hosted-v4.4.0.md
+                          - release-notes/self-hosted/self-hosted-v4.3.0.md
+                          - release-notes/self-hosted/self-hosted-v4.2.0.md
+                          - release-notes/self-hosted/self-hosted-v4.1.0.md
+                          - release-notes/self-hosted/self-hosted-v4.0.1.md
+                          - release-notes/self-hosted/self-hosted-v4.0.0.md
+                    - v3:
+                          - release-notes/self-hosted/self-hosted-v3.5.1.md
+                          - release-notes/self-hosted/self-hosted-v3.5.0.md
+                          - release-notes/self-hosted/self-hosted-v3.4.0.md
+                          - release-notes/self-hosted/self-hosted-v3.3.0.md
+                          - release-notes/self-hosted/self-hosted-v3.2.0.md
+                          - release-notes/self-hosted/self-hosted-v3.1.0.md
+                          - release-notes/self-hosted/self-hosted-v3.0.0.md
+                    - v2:
+                          - release-notes/self-hosted/self-hosted-v2.2.1.md
+                          - release-notes/self-hosted/self-hosted-v2.2.0.md
+                          - release-notes/self-hosted/self-hosted-v2.1.1.md
+                          - release-notes/self-hosted/self-hosted-v2.1.0.md
+                          - release-notes/self-hosted/self-hosted-v2.0.0.md
+                    - v1:
+                          - release-notes/self-hosted/self-hosted-v1.5.0.md
+                          - release-notes/self-hosted/self-hosted-v1.4.0.md
+                          - release-notes/self-hosted/self-hosted-v1.3.0.md
+                          - release-notes/self-hosted/self-hosted-v1.2.0.md
+                          - release-notes/self-hosted/self-hosted-v1.1.0.md
+                          - release-notes/self-hosted/self-hosted-v1.0.1.md
+                          - release-notes/self-hosted/self-hosted-v1.0.0.md

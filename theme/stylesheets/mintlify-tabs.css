@@ -1,0 +1,14 @@
+.md-tabs { display: block; min-height: var(--docs-tab-height); overflow: visible; border-bottom: 1px solid var(--docs-border); background: var(--docs-bg); color: var(--docs-text-secondary); box-shadow: none; }
+.md-tabs .md-grid { display: flex; max-width: 90rem; min-height: var(--docs-tab-height); padding-inline: var(--docs-frame-gutter, 1rem); }
+.md-tabs .md-tabs__list { display: flex; min-width: 0; gap: 0; align-items: stretch; }
+.md-tabs .md-tabs__item { display: flex; height: auto; margin: 0; padding: 0; }
+.md-tabs .md-tabs__link { display: flex; height: var(--docs-tab-height); align-items: center; box-sizing: border-box; margin: 0; padding: 0 1rem; border-bottom: 2px solid transparent; border-radius: 0; color: var(--docs-text-tertiary); font-size: .875rem; font-weight: 500; letter-spacing: 0; line-height: 1.25; opacity: 1; white-space: nowrap; }
+.md-tabs .md-tabs__link::after { content: none; }
+.md-tabs .md-tabs__link:hover { background: transparent; color: var(--docs-text); }
+.md-tabs .md-tabs__item--active > .md-tabs__link { border-bottom-color: var(--docs-link); color: var(--docs-link); font-weight: 600; }
+.md-tabs .md-tabs__link:focus-visible { outline: 2px solid var(--docs-link); outline-offset: -2px; }
+
+@media screen and (max-width: 59.9844em) {
+  :root { --docs-tab-height: 0px; }
+  .md-tabs { display: none; }
+}

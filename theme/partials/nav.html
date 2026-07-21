@@ -1,3 +1,4 @@
+{% from "partials/icon.html" import icon %}
 {% import "partials/nav-item.html" as item with context %}
 {% set class = "md-nav md-nav--primary" %}
 {% if "navigation.tabs" in features %}
@@ -7,6 +8,20 @@
   {% set class = class ~ " md-nav--integrated" %}
 {% endif %}
 <nav class="{{ class }}" aria-label="{{ lang.t('nav') }}" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-nav__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    {{ config.site_name }}
+  </label>
+  <label class="docs-mobile-product-picker">
+    <span>Area</span>
+    <select data-mobile-product-switcher aria-label="Documentation area">
+      {% for nav_item in nav.items %}
+        <option value="{{ loop.index0 }}"{% if nav_item.active %} selected{% endif %}>{{ nav_item.title }}</option>
+      {% endfor %}
+    </select>
+  </label>
   {% if config.repo_url %}
     <div class="md-nav__source">
       {% include "partials/source.html" %}

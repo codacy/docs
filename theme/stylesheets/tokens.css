@@ -10,6 +10,8 @@
   --docs-link: #005DF0;
   --docs-link-hover: #0048BD;
   --docs-border: #DFE4EC;
+  --docs-border-subtle: #EEF1F5;
+  --docs-control-border: #D5DDE9;
   --docs-border-strong: #8AB7FF;
   --docs-success: #339950;
   --docs-success-bg: #ECF9EF;
@@ -47,6 +49,8 @@
   --docs-space-5: 1.5rem;
   --docs-space-6: 2rem;
   --docs-space-7: 3rem;
+  --docs-header-height: 3.5rem;
+  --docs-tab-height: 3rem;
   --md-default-bg-color: var(--docs-bg);
   --md-default-fg-color: var(--docs-text);
   --md-default-fg-color--light: var(--docs-text-secondary);
@@ -73,6 +77,8 @@
   --docs-link: #5784FF;
   --docs-link-hover: #8AB7FF;
   --docs-border: #344056;
+  --docs-border-subtle: #222B3A;
+  --docs-control-border: #3B4860;
   --docs-border-strong: #5784FF;
   --docs-success: #66CC83;
   --docs-success-bg: #12351C;
@@ -98,6 +104,7 @@
   --md-code-hl-variable-color: #FFA657;
   --docs-shadow-1: 0 1px 2px #00000066;
   --docs-shadow-2: 0 12px 28px #00000080;
+  --docs-tab-height: 3rem;
   --md-default-bg-color: var(--docs-bg);
   --md-default-fg-color: var(--docs-text);
   --md-default-fg-color--light: var(--docs-text-secondary);
@@ -112,3 +119,5 @@
   --md-footer-bg-color: var(--docs-bg);
   --md-footer-bg-color--dark: var(--docs-bg);
 }
+
+:root { --docs-content-inset: .8rem; }

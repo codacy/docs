@@ -13,6 +13,12 @@
   {% if config.extra.self_hosted %}<meta name="robots" content="noindex">{% endif %}
 {% endblock %}
 
+{% block extrahead %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'stylesheets/mintlify-tabs.css' | url }}">
+  {% if "navigation.tabs" not in config.theme.features %}<style>:root { --docs-tab-height: 0px; }</style>{% endif %}
+{% endblock %}
+
 {% block analytics %}
   {{ super() }}
   {% if config.extra.segment_key %}{% include "partials/integrations/segment.html" %}{% endif %}

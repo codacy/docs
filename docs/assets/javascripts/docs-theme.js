@@ -1,6 +1,71 @@
 var searchReturnTarget;
 var tocScrollCleanup;
 var footerWidgetObserver;
+var persistentLayoutResizeBound;
+
+function closeDrawerForPersistentLayout() {
+    if (!window.matchMedia("(min-width: 60em)").matches) {
+        return;
+    }
+
+    var drawerToggle = document.querySelector("#__drawer");
+    var drawerTrigger = document.querySelector("[data-drawer-trigger]");
+    if (drawerToggle && drawerToggle.checked) {
+        drawerToggle.checked = false;
+        drawerToggle.dispatchEvent(new Event("change"));
+    }
+
+    syncBackgroundInertState();
+    if (drawerTrigger) {
+        drawerTrigger.setAttribute("aria-expanded", "false");
+        drawerTrigger.setAttribute("aria-label", "Open navigation");
+    }
+}
+
+function syncBackgroundInertState() {
+    var drawerToggle = document.querySelector("#__drawer");
+    var searchToggle = document.querySelector("#__search");
+    var shouldInertContent = Boolean(
+        (drawerToggle && drawerToggle.checked) || (searchToggle && searchToggle.checked)
+    );
+    var shouldInertPrimaryNavigation = Boolean(searchToggle && searchToggle.checked);
+
+    document.querySelectorAll(".md-content, .md-sidebar--secondary, footer").forEach(function (element) {
+        element.toggleAttribute("inert", shouldInertContent);
+    });
+    document.querySelectorAll(".md-sidebar--primary").forEach(function (element) {
+        element.toggleAttribute("inert", shouldInertPrimaryNavigation);
+    });
+}
+
+function initializeMobileProductSwitcher(drawer) {
+    var switcher = drawer.querySelector("[data-mobile-product-switcher]");
+    var productItems = Array.prototype.filter.call(
+        drawer.querySelectorAll(".md-nav--primary > .md-nav__list > .md-nav__item"),
+        function (item) { return item.classList.contains("md-nav__item--nested"); }
+    );
+    if (!switcher || !productItems.length || switcher.dataset.docsMobileProductInitialized) {
+        return;
+    }
+
+    function selectProduct(index) {
+        productItems.forEach(function (item, itemIndex) {
+            var isSelected = itemIndex === index;
+            item.classList.toggle("docs-mobile-product--selected", isSelected);
+
+        });
+        switcher.value = String(index);
+    }
+
+    var activeIndex = productItems.findIndex(function (item) {
+        return item.classList.contains("md-nav__item--active");
+    });
+    selectProduct(activeIndex >= 0 ? activeIndex : 0);
+    switcher.dataset.docsMobileProductInitialized = "true";
+    switcher.addEventListener("change", function () {
+        selectProduct(Number(switcher.value));
+    });
+}
 
 // Lift the floating support widget (Zendesk) above the footer once the footer
 // scrolls into view, so it never overlaps the footer links. Purely additive:
@@ -84,6 +149,12 @@ function initializeDocsTheme() {
         element.textContent = String(new Date().getFullYear());
     });
 
+    if (!persistentLayoutResizeBound) {
+        persistentLayoutResizeBound = true;
+        window.addEventListener("resize", closeDrawerForPersistentLayout);
+    }
+    closeDrawerForPersistentLayout();
+
     if (tocScrollCleanup) {
         tocScrollCleanup();
         tocScrollCleanup = undefined;
@@ -124,6 +195,7 @@ function initializeDocsTheme() {
     var drawer = document.querySelector(".md-sidebar--primary");
     if (drawer) {
         drawer.id = "docs-navigation";
+        initializeMobileProductSwitcher(drawer);
     }
     // With navigation.instant, Material keeps the header and drawer mounted
     // while emitting document$ for each page. Only bind these persistent
@@ -131,39 +203,28 @@ function initializeDocsTheme() {
     // and a hamburger tap toggles the checkbox an even number of times.
     if (drawerToggle && drawerTrigger && drawer && !drawerTrigger.dataset.docsDrawerInitialized) {
         drawerTrigger.dataset.docsDrawerInitialized = "true";
-        let suppressDrawerKeyboardClick = false;
         drawerTrigger.addEventListener("keydown", function (event) {
             if (event.key === "Enter" || event.key === " ") {
                 event.preventDefault();
-                suppressDrawerKeyboardClick = true;
                 drawerToggle.click();
-                window.setTimeout(function () {
-                    suppressDrawerKeyboardClick = false;
-                }, 250);
             }
-        });
-        drawerTrigger.addEventListener("click", function (event) {
-            event.preventDefault();
-            if (suppressDrawerKeyboardClick && event.detail === 0) {
-                return;
-            }
-            drawerToggle.click();
         });
         drawerToggle.addEventListener("change", function () {
             drawerTrigger.setAttribute("aria-expanded", String(drawerToggle.checked));
             drawerTrigger.setAttribute("aria-label", drawerToggle.checked ? "Close navigation" : "Open navigation");
-            document.querySelectorAll(".md-content, .md-sidebar--secondary, footer").forEach(function (element) {
-                element.toggleAttribute("inert", drawerToggle.checked);
-            });
+            syncBackgroundInertState();
 
             if (drawerToggle.checked) {
                 window.setTimeout(function () {
-                    var firstLink = drawer.querySelector(".md-nav__list a[href]");
-                    if (firstLink) {
-                        firstLink.focus();
+                    var navigationControls = drawer.querySelectorAll(".md-nav__link[href], .md-nav__link[tabindex=\"0\"]");
+                    var firstNavigationControl = Array.prototype.find.call(navigationControls, function (control) {
+                        return control.offsetParent !== null;
+                    });
+                    if (firstNavigationControl) {
+                        firstNavigationControl.focus();
                     }
                 }, 0);
-            } else {
+            } else if (!window.matchMedia("(min-width: 60em)").matches) {
                 drawerTrigger.focus();
             }
         });
@@ -193,9 +254,7 @@ function initializeDocsTheme() {
                 searchTrigger.setAttribute("aria-expanded", String(searchToggle.checked));
             });
 
-            document.querySelectorAll(".md-main, footer").forEach(function (element) {
-                element.toggleAttribute("inert", searchToggle.checked);
-            });
+            syncBackgroundInertState();
 
             if (!searchToggle.checked) {
                 (searchReturnTarget || trigger).focus();
