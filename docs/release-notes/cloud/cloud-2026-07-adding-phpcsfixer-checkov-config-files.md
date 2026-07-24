@@ -28,7 +28,7 @@ Refer to our [documentation](https://github.com/codacy/codacy-php-cs-fixer) for 
 
 ## Now Checkov supports configuration files
 
-Codacy now recognizes `.checkov.yaml` and `.checkov.yml` as valid Checkov configuration files. If your repository already has one of these files, Codacy will automatically pick it up during analysis — but don't forget, you need to enable the configuration file in the Repository > Code Patterns > Checkov > "Use Checkov configuration file found in the repository"
+Previously, Checkov analysis on Codacy could only be configured through the Codacy UI. Now, Codacy also supports Checkov configuration files — simply add a `.checkov.yaml` or `.checkov.yml` file to your repository and Codacy will automatically pick it up during analysis — but don't forget, you need to enable the configuration file in the Repository > Code Patterns > Checkov > "Use Checkov configuration file found in the repository"
 
 ![Enable Checkov configuration file](../images/checkov-configuration-file.png)
 
