@@ -19,6 +19,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ### 2026 {.release-series}
 
+-   [Adding PHP CS Fixer and support to Checkov configuration files July, 2026](cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files.md)
 -   [PHP_CodeSniffer Upgrade and Legacy Package Deprecations July, 2026](cloud/cloud-2026-07-remove-codesniffer-packages.md)
 -   [Cloud June 2026](cloud/cloud-2026-06.md)
 -   [Cloud May 2026](cloud/cloud-2026-05.md)
