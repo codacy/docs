@@ -748,6 +748,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2026:
+                      - release-notes/cloud/cloud-2026-07-adding-shellcheck-config-file.md
                       - release-notes/cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files.md
                       - release-notes/cloud/cloud-2026-07-remove-codesniffer-packages.md
                       - release-notes/cloud/cloud-2026-06.md
