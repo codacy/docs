@@ -237,7 +237,7 @@ Follow these instructions to validate that your coverage setup is working correc
 
     If there are commits with a status different from **Processed**, please follow the troubleshooting instructions for the corresponding error status and click the button **Test integration** to display any new coverage reports uploaded to Codacy.
 
-    ### Commit not found {: id="status-commit-not-found" style="color: #EF5454;"}
+    ### Commit not found {: id="status-commit-not-found" style="color: var(--docs-danger);"}
 
     Codacy doesn't have information about the commit associated with the coverage data.
 
@@ -272,7 +272,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Branch not enabled {: id="status-branch-not-enabled" style="color: #EF5454;"}
+    ### Branch not enabled {: id="status-branch-not-enabled" style="color: var(--docs-danger);"}
 
     The commit associated with the coverage data doesn't belong to any branch that Codacy is analyzing.
 
@@ -307,7 +307,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Commit not analyzed {: id="status-commit-not-analyzed" style="color: #EF5454;"}
+    ### Commit not analyzed {: id="status-commit-not-analyzed" style="color: var(--docs-danger);"}
 
     Due to technical limitations, Codacy only reports coverage for a commit after successfully completing the static code analysis of that commit.
 
@@ -365,7 +365,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Final report not sent {: id="status-final-report-not-sent" style="color: #EF5454;"}
+    ### Final report not sent {: id="status-final-report-not-sent" style="color: var(--docs-danger);"}
 
     Codacy is waiting to receive more coverage data before reporting the coverage for a commit.
 
@@ -391,7 +391,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Pending {: id="status-pending" style="color: #2562EA;"}
+    ### Pending {: id="status-pending" style="color: var(--docs-info);"}
 
     Codacy is waiting to receive valid coverage data for the files in your repository.
 

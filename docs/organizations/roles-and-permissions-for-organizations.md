@@ -571,7 +571,7 @@ td:not(:first-child), th:not(:first-child) {
 
 /*Background color for row containing the Codacy permission levels*/
 table:not(data-exclude) tr:nth-child(1) td {
-  background-color: #EBF1FF;
+  background-color: var(--docs-bg-brand);
 }
 
 /*Add vertical borders and disable horizontal borders*/
@@ -585,12 +585,12 @@ td:nth-child(1) {
 
 /*Background for cells marking various operations*/
 .yes {
-  background-color: #E6F4EA;
+  background-color: var(--docs-success-bg);
 }
 .no {
-  background-color: #FFF1EB;
+  background-color: var(--docs-danger-bg);
 }
 .maybe {
-  background-color: #F2F9FC;
+  background-color: var(--docs-info-bg);
 }
 </style>

@@ -11,6 +11,8 @@
   --docs-link-hover: #0048BD;
   --docs-border: #DFE4EC;
   --docs-border-strong: #8AB7FF;
+  --docs-info: #005DF0;
+  --docs-info-bg: #E5EFFF;
   --docs-success: #339950;
   --docs-success-bg: #ECF9EF;
   --docs-warning: #BD7600;
@@ -74,6 +76,8 @@
   --docs-link-hover: #8AB7FF;
   --docs-border: #344056;
   --docs-border-strong: #5784FF;
+  --docs-info: #5784FF;
+  --docs-info-bg: #091E4E;
   --docs-success: #66CC83;
   --docs-success-bg: #12351C;
   --docs-warning: #FFC157;
