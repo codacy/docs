@@ -109,8 +109,9 @@ For findings on transitive dependencies, the finding also displays the **depende
 
 For vulnerable dependency findings linked to an advisory (a CVE or a GitHub Security Advisory) where Codacy has identified which functions in the dependency are affected, the finding's **Advisory Information** tab shows the list of **affected functions**.
 
-<!-- TODO: capture a screenshot of the Affected functions section (pill + "Check if you're affected" button) and save it as images/security-risk-management-affected-functions.png -->
+<!-- TODO: capture a screenshot of the Affected functions section (pill + "Check if you're affected" button), save it as images/security-risk-management-affected-functions.png, and add:
 ![Security and risk management finding affected functions](images/security-risk-management-affected-functions.png)
+-->
 
 Click **Check if you're affected** to copy a ready-made prompt for your AI coding assistant (such as Cursor, Claude Code, or GitHub Copilot). The prompt asks your assistant to search your repository for calls to the affected functions and recommend whether to upgrade the dependency or, if the functions aren't used, ignore the finding as **Not exploitable**.
 
