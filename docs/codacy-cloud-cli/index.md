@@ -129,6 +129,39 @@ Findings are tracked with statuses like `Overdue`, `OnTrack`, and `DueSoon`. Use
 codacy findings gh my-org --statuses Overdue,DueSoon
 ```
 
+### Check affected functions on vulnerable dependencies {: id="affected-functions"}
+
+For SCA issues and findings linked to an advisory (CVE or GHSA) where Codacy has identified the affected functions, `issues`, `issue`, `findings`, `finding`, and `pull-request` show that information alongside the regular output.
+
+List and card views show a compact summary line:
+
+```bash
+codacy issues gh my-org my-repo
+```
+
+```
+Vulnerable functions: Unmarshal, UnmarshalOptions.Unmarshal (+1 more)
+```
+
+Detail views (`codacy issue`, `codacy pull-request ... --issue`, and `codacy finding` when the finding has no linked Codacy issue) show the full block instead:
+
+```bash
+codacy issue gh my-org my-repo <issueId>
+```
+
+```
+Vulnerable Functions (CVE-2024-24786)
+Published: 2024-03-08
+
+  • Unmarshal
+  • UnmarshalOptions.Unmarshal
+```
+
+This information is also included when using `--output json`.
+
+!!! note
+    Not every advisory lists specific affected functions — this section only appears when Codacy has identified them.
+
 ### Inspect pull requests
 
 ```bash
