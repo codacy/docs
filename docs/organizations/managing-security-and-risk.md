@@ -105,6 +105,24 @@ For findings on transitive dependencies, the finding also displays the **depende
 
 ![Security and risk management finding dependency chain](images/security-risk-management-finding-dependency-chain.png)
 
+### Affected functions {: id="affected-functions"}
+
+For vulnerable dependency and container scanning findings linked to an advisory (a CVE or a GitHub Security Advisory) where Codacy has identified which functions in the dependency are affected, the finding's **Advisory Information** tab shows the list of **affected functions**.
+
+![Security and risk management finding affected functions](images/security-risk-management-affected-functions.png)
+
+Click **Check if you're affected** to copy a ready-made prompt for your AI coding assistant (such as Cursor, Claude Code, or GitHub Copilot). The prompt asks your assistant to search your repository for calls to the affected functions and recommend whether to upgrade the dependency or, if the functions aren't used, ignore the finding as **Not exploitable**.
+
+!!! note
+    This is a signal, not a guarantee. Review your coding assistant's findings before upgrading a dependency or ignoring a finding.
+
+!!! note
+    Not every advisory lists specific affected functions — some vulnerabilities (for example, configuration issues) aren't tied to specific functions, so this section doesn't appear for every finding.
+
+Affected functions are also available from the terminal — see [checking affected functions with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#affected-functions).
+
+To review reachable dependencies across one or multiple repositories at once, instead of one finding at a time, see [auditing affected functions across one or multiple repositories](../codacy-cloud-cli/index.md#affected-functions-scale) with the Codacy Cloud CLI.
+
 ### Severity changes {: id="severity-changes"}
 
 The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
