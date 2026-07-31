@@ -260,7 +260,7 @@ The table below represents two example coverage reports reflecting a pull reques
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">ClassA.java</td>
+      <td rowspan="4">ClassA.java</td>
       <td>2</td>
       <td class="border">Yes</td>
       <td>2</td>
@@ -272,17 +272,17 @@ The table below represents two example coverage reports reflecting a pull reques
       <td>4</td>
       <td>Yes</td>
     </tr>
+    <tr>
       <td>5</td>
       <td class="border">Yes</td>
       <td class="background-red"></td>
       <td class="background-red"></td>
-    <tr>
     </tr>
+    <tr>
       <td>6</td>
       <td class="border">Yes</td>
       <td class="background-red"></td>
       <td class="background-red"></td>
-    <tr>
     </tr>
     <tr>
       <td rowspan="3">ClassB.java</td>
@@ -377,7 +377,7 @@ The table below displays the code coverage metrics as calculated by Codacy:
 
 /*Right border*/
 th.border {
-  border-right: 1px solid white;
+  border-right: 1px solid var(--docs-border);
 }
 
 .border {
@@ -386,16 +386,16 @@ th.border {
 
 /*Red background*/
 .background-red {
-  background-color: #ffe6e6;
+  background-color: var(--docs-danger-bg);
 }
 
 /*Green text*/
 .text-green {
-  color: #21c178;
+  color: var(--docs-success);
 }
 
 /*Red text*/
 .text-red {
-  color: #ef5454;
+  color: var(--docs-danger);
 }
 </style>
