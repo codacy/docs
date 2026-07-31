@@ -85,8 +85,6 @@ extra:
         "Codacy API": "code-slash-outline"
         "Managing Codacy Self-hosted": "server-outline"
         "Troubleshooting and FAQs": "medical-outline"
-        "Release notes": "megaphone-outline"
-        "Special thanks": "heart-outline"
     # Do not show a generated-by badge in the footer.
     generator: false
     # Add pull request preview banner
