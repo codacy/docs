@@ -234,6 +234,19 @@ codacy pull-request gh my-org my-repo 42 --diff
 
 Feed both outputs to Claude Code (with the Codacy skill installed) to decide what to fix and apply it directly.
 
+### Audit affected functions across one or multiple repositories {: id="affected-functions-scale"}
+
+The [affected functions](#affected-functions) shown for a single finding tell you whether one vulnerable dependency is reachable. To check vulnerable dependencies across one or multiple repositories at once, [install the Codacy Skills](#install-the-codacy-skills) — the `codacy-cloud-cli` skill already knows how to pull SCA findings for one or more repositories, tell direct from transitive dependencies apart, and check whether the affected functions are actually used.
+
+With the skill installed and local checkouts of the repositories you want to cover, ask your assistant directly, for example:
+
+```text
+Audit vulnerable dependencies in <repo-one> and <repo-two>. For every SCA finding where Codacy has identified affected functions, tell me whether the dependency is direct or transitive, search my local checkout for calls to those functions, and report back per repository — used/not used, chain status, and your recommendation — before ignoring anything as NotExploitable or applying an upgrade.
+```
+
+!!! note
+    Only include repositories you have checked out locally — the assistant can't verify reachability for a repository it can't search. It's also a signal, not a guarantee: review the recommendation before upgrading a dependency or ignoring a finding.
+
 ### Use the CLI in CI
 
 The CLI works in any CI environment. Set `CODACY_API_TOKEN` as a secret and install the CLI as a step:

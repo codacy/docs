@@ -121,6 +121,8 @@ Click **Check if you're affected** to copy a ready-made prompt for your AI codin
 
 Affected functions are also available from the terminal — see [checking affected functions with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#affected-functions).
 
+To review reachable dependencies across one or multiple repositories at once, instead of one finding at a time, see [auditing affected functions across one or multiple repositories](../codacy-cloud-cli/index.md#affected-functions-scale) with the Codacy Cloud CLI.
+
 ### Severity changes {: id="severity-changes"}
 
 The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
