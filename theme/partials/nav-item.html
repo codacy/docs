@@ -63,12 +63,7 @@
     <li class="{{ class }} md-nav__item--nested">
       {% if not is_pruned %}
         {% set checked = "checked" if nav_item.active %}
-        {# Every level looks expanded by default on desktop. `md-toggle--indeterminate`
-           drives Material's desktop-only grid-collapse CSS (@media min-width: 76.25em)
-           without touching `checked` itself or requiring JS: it has zero effect within
-           the mobile media query, so the lifted drawer's one-branch-at-a-time behavior
-           there is untouched, and there's no post-load re-render to flash on page load. #}
-        {% if not checked %}{% set indeterminate = "md-toggle--indeterminate" %}{% endif %}
+        {% if "navigation.expand" in features and not checked %}{% set indeterminate = "md-toggle--indeterminate" %}{% endif %}
         <input class="md-nav__toggle md-toggle {{ indeterminate }}" type="checkbox" id="{{ path }}" {{ checked }}>
         {% if not index %}
           {% set tabindex = "0" if not is_section %}
