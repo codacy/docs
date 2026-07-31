@@ -39,6 +39,8 @@ theme:
         - "content.code.copy"
         - "content.tabs.link"
         - "navigation.path"
+        - "navigation.tabs"
+        - "navigation.tabs.sticky"
 extra_css:
     - "stylesheets/fonts.css"
     - "stylesheets/tokens.css"
@@ -67,23 +69,29 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
-    # Ionicons displayed for top-level entries in the navigation sidebar.
+    # Ionicons displayed for top-level tabs and, when navigation.tabs is
+    # active, for the top section within each tab's sidebar (see level == 2
+    # handling in theme/partials/nav-item.html).
     sidebar_icons:
+        "Product": "business-outline"
+        "Management": "settings-outline"
+        "Developer Tools": "terminal-outline"
+        "Release Notes": "megaphone-outline"
         "Documentation home": "home-outline"
         "Getting started": "rocket-outline"
-        "Codacy Guardrails (IDE Extension)": "shield-checkmark-outline"
-        "Codacy Cloud CLI": "terminal-outline"
-        "Codacy AI": "sparkles-outline"
-        "Repositories on Codacy": "folder-open-outline"
-        "Configuring your repositories": "settings-outline"
+        "Quality": "code-slash-outline"
+        "Security": "shield-checkmark-outline"
+        "AI": "sparkles-outline"
+        "Coverage": "umbrella-outline"
+        "Support": "medical-outline"
+        "Configuring your repositories": "folder-open-outline"
         "Organizations": "people-outline"
-        "Enterprise Cloud": "business-outline"
         "Your account": "person-circle-outline"
-        "Codacy API": "code-slash-outline"
+        "Enterprise Cloud": "business-outline"
         "Managing Codacy Self-hosted": "server-outline"
-        "Troubleshooting and FAQs": "medical-outline"
-        "Release notes": "megaphone-outline"
-        "Special thanks": "heart-outline"
+        "Codacy Guardrails (IDE Extension)": "shield-checkmark-outline"
+        "Codacy Cloud CLI": "code-slash-outline"
+        "Codacy API": "share-social-outline"
     # Do not show a generated-by badge in the footer.
     generator: false
     # Add pull request preview banner
@@ -613,138 +621,141 @@ plugins:
               "repositories-configure/file-extensions.md": "repositories-configure/languages.md"
 
 nav:
-    - Documentation home: "index.md"
-    - Getting started:
-          - getting-started/codacy-quickstart.md
-          - getting-started/configuring-your-repository.md
-          - getting-started/integrating-codacy-with-your-git-workflow.md
-          - Integrating Codacy with your IDE:
-                - getting-started/integrating-codacy-with-intellij-ides.md
-                - getting-started/integrating-codacy-with-visual-studio-code.md
-          - getting-started/supported-languages-and-tools.md
-          - getting-started/which-permissions-does-codacy-need-from-my-account.md
-          - getting-started/adding-a-codacy-badge.md
-    - Codacy Guardrails (IDE Extension):
-          - codacy-guardrails/codacy-guardrails-getting-started.md
-          - codacy-guardrails/codacy-guardrails-how-to-use.md
-          - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
-          - codacy-guardrails/codacy-guardrails-limitations.md
-          - codacy-guardrails/codacy-guardrails-troubleshooting.md
-          - codacy-guardrails/codacy-guardrails-faq.md
-    - Codacy Cloud CLI:
-          - codacy-cloud-cli/index.md
-    - Codacy AI:
-          - codacy-ai/codacy-ai.md
-    - Repositories on Codacy:
-          - repositories/repository-dashboard.md
-          - repositories/commits.md
-          - repositories/files.md
-          - repositories/issues.md
-          - repositories/coverage.md
-          - repositories/pull-requests.md
-    - Configuring your repositories:
-          - repositories-configure/configuring-code-patterns.md
-          - repositories-configure/managing-branches.md
-          - Managing integrations:
-                - repositories-configure/integrations/github-integration.md
-                - repositories-configure/integrations/gitlab-integration.md
-                - repositories-configure/integrations/bitbucket-integration.md
-                - repositories-configure/integrations/post-commit-hooks.md
-          - repositories-configure/ignoring-files.md
-          - repositories-configure/languages.md
-          - repositories-configure/adjusting-quality-gates.md
-          - repositories-configure/adjusting-quality-goals.md
-          - Setting up code coverage:
+    - Product:
+          - Documentation home: "index.md"
+          - Getting started:
+                - getting-started/codacy-quickstart.md
+                - getting-started/configuring-your-repository.md
+                - getting-started/integrating-codacy-with-your-git-workflow.md
+                - Integrating Codacy with your IDE:
+                      - getting-started/integrating-codacy-with-intellij-ides.md
+                      - getting-started/integrating-codacy-with-visual-studio-code.md
+                - getting-started/supported-languages-and-tools.md
+                - getting-started/which-permissions-does-codacy-need-from-my-account.md
+                - getting-started/adding-a-codacy-badge.md
+          - Quality:
+                - repositories/issues.md
+                - repositories-configure/configuring-code-patterns.md
+                - repositories-configure/adjusting-quality-gates.md
+                - repositories-configure/adjusting-quality-goals.md
+                - organizations/using-coding-standards.md
+                - organizations/using-gate-policies.md
+                - Using your repository:
+                      - repositories/repository-dashboard.md
+                      - repositories/commits.md
+                      - repositories/files.md
+                      - repositories/pull-requests.md
+          - Security:
+                - organizations/managing-security-and-risk.md
+                - Slack integration for Security issues: organizations/integrations/slack-integration.md
+                - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
+          - AI:
+                - codacy-ai/codacy-ai.md
+                - organizations/ai-risk-hub.md
+          - Coverage:
+                - repositories/coverage.md
                 - coverage-reporter/index.md
                 - coverage-reporter/alternative-ways-of-running-coverage-reporter.md
                 - coverage-reporter/uploading-coverage-in-advanced-scenarios.md
                 - coverage-reporter/troubleshooting-coverage-cli-issues.md
-          - Local analysis:
-                - repositories-configure/local-analysis/client-side-tools.md
-                - repositories-configure/local-analysis/running-aligncheck.md
-                - repositories-configure/local-analysis/running-dartanalyzer.md
-                - repositories-configure/local-analysis/running-deadcode.md
-                - repositories-configure/local-analysis/running-spotbugs.md
-                - repositories-configure/local-analysis/running-eslint.md
-          - repositories-configure/using-submodules.md
-          - repositories-configure/codacy-configuration-file.md
-          - repositories-configure/removing-your-repository.md
-    - Organizations:
-          - organizations/what-are-organizations.md
-          - organizations/managing-repositories.md
-          - organizations/segments.md
-          - Reporting:
-                  - organizations/reporting/organization-overview.md
-                  - organizations/reporting/issues-metrics.md
-                  - organizations/reporting/codacy-usage.md
-          - organizations/using-gate-policies.md
-          - organizations/using-coding-standards.md
-          - organizations/ai-risk-hub.md
-          - Managing integrations:
+          - Enterprise Cloud:
+                - enterprise-cloud/github-enterprise-cloud.md
+          - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
+          - Support:
+                - General:
+                      - faq/general/which-platforms-and-technologies-does-codacy-support.md
+                      - faq/general/how-does-codacy-support-github-enterprise.md
+                      - faq/general/how-does-codacy-support-gitlab-cloud.md
+                      - faq/general/how-does-codacy-support-gitlab-enterprise.md
+                      - faq/general/how-does-codacy-support-bitbucket-cloud.md
+                      - faq/general/how-does-codacy-support-bitbucket-server.md
+                      - faq/general/how-does-codacy-keep-my-data-secure.md
+                      - faq/general/how-does-codacy-protect-my-privacy.md
+                      - faq/general/does-codacy-keep-audit-logs.md
+                      - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
+                      - faq/general/how-can-i-change-or-cancel-my-plan.md
+                - Repositories:
+                      - faq/repositories/how-do-i-reanalyze-my-repository.md
+                      - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
+                - Code analysis:
+                      - faq/code-analysis/which-metrics-does-codacy-calculate.md
+                      - faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md
+                      - faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md
+                      - faq/code-analysis/does-codacy-check-for-dependencies.md
+                      - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
+                      - faq/code-analysis/how-to-skip-an-analysis.md
+                      - faq/code-analysis/can-i-bypass-codacy-status-check.md
+                      - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
+                - Troubleshooting:
+                      - faq/troubleshooting/why-cant-i-see-my-organization.md
+                      - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
+                      - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
+                      - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
+                      - faq/troubleshooting/not-a-member-of-the-organization.md
+                      - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
+                      - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
+                      - faq/troubleshooting/error-line-endings.md
+    - Management:
+          - Configuring your repositories:
+                - repositories-configure/managing-branches.md
+                - Managing integrations:
+                      - repositories-configure/integrations/github-integration.md
+                      - repositories-configure/integrations/gitlab-integration.md
+                      - repositories-configure/integrations/bitbucket-integration.md
+                      - repositories-configure/integrations/post-commit-hooks.md
+                - repositories-configure/ignoring-files.md
+                - repositories-configure/languages.md
+                - Local analysis:
+                      - repositories-configure/local-analysis/client-side-tools.md
+                      - repositories-configure/local-analysis/running-aligncheck.md
+                      - repositories-configure/local-analysis/running-dartanalyzer.md
+                      - repositories-configure/local-analysis/running-deadcode.md
+                      - repositories-configure/local-analysis/running-spotbugs.md
+                      - repositories-configure/local-analysis/running-eslint.md
+                - repositories-configure/using-submodules.md
+                - repositories-configure/codacy-configuration-file.md
+                - repositories-configure/removing-your-repository.md
+          - Organizations:
+                - organizations/what-are-organizations.md
+                - organizations/managing-repositories.md
+                - organizations/segments.md
+                - Reporting:
+                      - organizations/reporting/organization-overview.md
+                      - organizations/reporting/issues-metrics.md
+                      - organizations/reporting/codacy-usage.md
                 - organizations/integrations/default-git-provider-integration-settings.md
-                - Slack integration for Security issues: organizations/integrations/slack-integration.md
-                - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
-          - organizations/managing-security-and-risk.md
-          - organizations/managing-people.md
-          - organizations/audit-logs-for-organizations.md
-          - organizations/roles-and-permissions-for-organizations.md
-          - organizations/changing-your-plan-and-billing.md
-    - Enterprise Cloud:
-          - enterprise-cloud/github-enterprise-cloud.md
-    - Your account:
-          - account/managing-your-profile.md
-          - account/emails.md
-          - account/user-session-management.md
-    - Codacy API:
-          - codacy-api/using-the-codacy-api.md
-          - codacy-api/api-tokens.md
-          - API v3 reference (recommended): https://api.codacy.com/api/api-docs
-          - API v2 reference: https://api.codacy.com/api-docs
-          - Examples:
-                - codacy-api/examples/adding-people-to-codacy-programmatically.md
-                - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
-                - codacy-api/examples/creating-repository-api-tokens-programmatically.md
-                - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
-                - codacy-api/examples/obtaining-current-issues-in-repositories.md
-                - codacy-api/examples/identifying-commits-without-coverage-data.md
-                - codacy-api/examples/uploading-dast-results.md
-                - codacy-api/examples/triggering-dast-scans.md
-    - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
-    - Troubleshooting and FAQs:
-          - General:
-                - faq/general/which-platforms-and-technologies-does-codacy-support.md
-                - faq/general/how-does-codacy-support-github-enterprise.md
-                - faq/general/how-does-codacy-support-gitlab-cloud.md
-                - faq/general/how-does-codacy-support-gitlab-enterprise.md
-                - faq/general/how-does-codacy-support-bitbucket-cloud.md
-                - faq/general/how-does-codacy-support-bitbucket-server.md
-                - faq/general/how-does-codacy-keep-my-data-secure.md
-                - faq/general/how-does-codacy-protect-my-privacy.md
-                - faq/general/does-codacy-keep-audit-logs.md
-                - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
-                - faq/general/how-can-i-change-or-cancel-my-plan.md
-          - Repositories:
-                - faq/repositories/how-do-i-reanalyze-my-repository.md
-                - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
-          - Code analysis:
-                - faq/code-analysis/which-metrics-does-codacy-calculate.md
-                - faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md
-                - faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md
-                - faq/code-analysis/does-codacy-check-for-dependencies.md
-                - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
-                - faq/code-analysis/how-to-skip-an-analysis.md
-                - faq/code-analysis/can-i-bypass-codacy-status-check.md
-                - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
-          - Troubleshooting:
-                - faq/troubleshooting/why-cant-i-see-my-organization.md
-                - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
-                - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
-                - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
-                - faq/troubleshooting/not-a-member-of-the-organization.md
-                - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
-                - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
-                - faq/troubleshooting/error-line-endings.md
-    - Release notes:
+                - organizations/managing-people.md
+                - organizations/audit-logs-for-organizations.md
+                - organizations/roles-and-permissions-for-organizations.md
+                - organizations/changing-your-plan-and-billing.md
+          - Your account:
+                - account/managing-your-profile.md
+                - account/emails.md
+                - account/user-session-management.md
+    - Developer Tools:
+          - Codacy Guardrails (IDE Extension):
+                - codacy-guardrails/codacy-guardrails-getting-started.md
+                - codacy-guardrails/codacy-guardrails-how-to-use.md
+                - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
+                - codacy-guardrails/codacy-guardrails-limitations.md
+                - codacy-guardrails/codacy-guardrails-troubleshooting.md
+                - codacy-guardrails/codacy-guardrails-faq.md
+          - Codacy Cloud CLI: codacy-cloud-cli/index.md
+          - Codacy API:
+                - codacy-api/using-the-codacy-api.md
+                - codacy-api/api-tokens.md
+                - API v3 reference (recommended): https://api.codacy.com/api/api-docs
+                - API v2 reference: https://api.codacy.com/api-docs
+                - Examples:
+                      - codacy-api/examples/adding-people-to-codacy-programmatically.md
+                      - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
+                      - codacy-api/examples/creating-repository-api-tokens-programmatically.md
+                      - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
+                      - codacy-api/examples/obtaining-current-issues-in-repositories.md
+                      - codacy-api/examples/identifying-commits-without-coverage-data.md
+                      - codacy-api/examples/uploading-dast-results.md
+                      - codacy-api/examples/triggering-dast-scans.md
+    - Release Notes:
           - release-notes/index.md
           - Cloud:
                 - 2026:
@@ -907,4 +918,4 @@ nav:
                       - release-notes/self-hosted/self-hosted-v1.1.0.md
                       - release-notes/self-hosted/self-hosted-v1.0.1.md
                       - release-notes/self-hosted/self-hosted-v1.0.0.md
-    - special-thanks.md
+          - special-thanks.md

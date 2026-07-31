@@ -1,4 +1,4 @@
-.md-header { border-bottom: 1px solid var(--docs-border); background: color-mix(in srgb, var(--docs-bg) 68%, transparent); box-shadow: none; -webkit-backdrop-filter: blur(16px) saturate(180%); backdrop-filter: blur(16px) saturate(180%); }
+.md-header { border-bottom: 0; background: color-mix(in srgb, var(--docs-bg) 68%, transparent); box-shadow: none; -webkit-backdrop-filter: blur(16px) saturate(180%); backdrop-filter: blur(16px) saturate(180%); }
 .md-header__inner { display: grid; grid-template-columns: auto 1fr minmax(15rem, 30rem) 1fr auto auto auto; gap: .65rem; min-height: 4rem; align-items: center; }
 .md-header__button { margin: 0; color: var(--docs-text-secondary); }
 

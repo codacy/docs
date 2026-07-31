@@ -1,4 +1,4 @@
-.md-header__inner, .md-main__inner, .docs-footer__inner {
+.md-header__inner, .md-main__inner, .docs-footer__inner, .md-tabs .md-grid {
   box-sizing: border-box;
   max-width: 90rem;
   margin-inline: auto;

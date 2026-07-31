@@ -17,7 +17,7 @@
 {% macro render_content(nav_item, ref, level = none) %}
   {% set ref = ref or nav_item %}
   {% set section_icons = config.extra.sidebar_icons or {} %}
-  {% if level == 1 and section_icons.get(nav_item.title) %}
+  {% if (level == 1 or (level == 2 and "navigation.tabs" in features)) and section_icons.get(nav_item.title) %}
     {{ icon(section_icons.get(nav_item.title), "docs-nav-section-icon" ~ ("" if nav_item.children else " docs-nav-section-icon--standalone")) }}
   {% elif nav_item.meta and nav_item.meta.icon %}
     {% include ".icons/" ~ nav_item.meta.icon ~ ".svg" %}
@@ -63,7 +63,12 @@
     <li class="{{ class }} md-nav__item--nested">
       {% if not is_pruned %}
         {% set checked = "checked" if nav_item.active %}
-        {% if "navigation.expand" in features and not checked %}{% set indeterminate = "md-toggle--indeterminate" %}{% endif %}
+        {# Every level looks expanded by default on desktop. `md-toggle--indeterminate`
+           drives Material's desktop-only grid-collapse CSS (@media min-width: 76.25em)
+           without touching `checked` itself or requiring JS: it has zero effect within
+           the mobile media query, so the lifted drawer's one-branch-at-a-time behavior
+           there is untouched, and there's no post-load re-render to flash on page load. #}
+        {% if not checked %}{% set indeterminate = "md-toggle--indeterminate" %}{% endif %}
         <input class="md-nav__toggle md-toggle {{ indeterminate }}" type="checkbox" id="{{ path }}" {{ checked }}>
         {% if not index %}
           {% set tabindex = "0" if not is_section %}
