@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-07-16 08:44:52">
+    <meta http-equiv="last-modified" content="2026-07-31 13:22:36">
   
   
 
@@ -8945,6 +8945,27 @@ codacy<span class="w"> </span>findings<span class="w"> </span>gh<span class="w">
 <p>Findings are tracked with statuses like <code>Overdue</code>, <code>OnTrack</code>, and <code>DueSoon</code>. Use <code>--statuses</code> to filter accordingly:</p>
 <div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>findings<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>--statuses<span class="w"> </span>Overdue,DueSoon
 </code></pre></div>
+<h3 id="affected-functions">Check affected functions on vulnerable dependencies<a class="headerlink" href="#affected-functions" title="Permanent link">#</a></h3>
+<p>For SCA issues and findings linked to an advisory (CVE or GHSA) where Codacy has identified the affected functions, <code>issues</code>, <code>issue</code>, <code>findings</code>, <code>finding</code>, and <code>pull-request</code> show that information alongside the regular output.</p>
+<p>List and card views show a compact summary line:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>issues<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Vulnerable functions: Unmarshal, UnmarshalOptions.Unmarshal (+1 more)
+</code></pre></div>
+<p>Detail views (<code>codacy issue</code>, <code>codacy pull-request ... --issue</code>, and <code>codacy finding</code> when the finding has no linked Codacy issue) show the full block instead:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>issue<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span>&lt;issueId&gt;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Vulnerable Functions (CVE-2024-24786)
+Published: 2024-03-08
+
+  • Unmarshal
+  • UnmarshalOptions.Unmarshal
+</code></pre></div>
+<p>This information is also included when using <code>--output json</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Not every advisory lists specific affected functions — this section only appears when Codacy has identified them.</p>
+</div>
 <h3 id="inspect-pull-requests">Inspect pull requests<a class="headerlink" href="#inspect-pull-requests" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Get the full analysis summary</span>
 codacy<span class="w"> </span>pull-request<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span><span class="m">42</span>
@@ -8999,6 +9020,15 @@ gh<span class="w"> </span>pr<span class="w"> </span>view<span class="w"> </span>
 codacy<span class="w"> </span>pull-request<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span><span class="m">42</span><span class="w"> </span>--diff
 </code></pre></div>
 <p>Feed both outputs to Claude Code (with the Codacy skill installed) to decide what to fix and apply it directly.</p>
+<h3 id="affected-functions-scale">Audit affected functions across one or multiple repositories<a class="headerlink" href="#affected-functions-scale" title="Permanent link">#</a></h3>
+<p>The <a href="#affected-functions">affected functions</a> shown for a single finding tell you whether one vulnerable dependency is reachable. To check vulnerable dependencies across one or multiple repositories at once, <a href="#install-the-codacy-skills">install the Codacy Skills</a> — the <code>codacy-cloud-cli</code> skill already knows how to pull SCA findings for one or more repositories, tell direct from transitive dependencies apart, and check whether the affected functions are actually used.</p>
+<p>With the skill installed and local checkouts of the repositories you want to cover, ask your assistant directly, for example:</p>
+<div class="highlight"><pre><span></span><code>Audit vulnerable dependencies in &lt;repo-one&gt; and &lt;repo-two&gt;. For every SCA finding where Codacy has identified affected functions, tell me whether the dependency is direct or transitive, search my local checkout for calls to those functions, and report back per repository — used/not used, chain status, and your recommendation — before ignoring anything as NotExploitable or applying an upgrade.
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only include repositories you have checked out locally — the assistant can't verify reachability for a repository it can't search. It's also a signal, not a guarantee: review the recommendation before upgrading a dependency or ignoring a finding.</p>
+</div>
 <h3 id="use-the-cli-in-ci">Use the CLI in CI<a class="headerlink" href="#use-the-cli-in-ci" title="Permanent link">#</a></h3>
 <p>The CLI works in any CI environment. Set <code>CODACY_API_TOKEN</code> as a secret and install the CLI as a step:</p>
 <div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install Codacy Cloud CLI</span>
@@ -9026,7 +9056,7 @@ codacy<span class="w"> </span>pull-request<span class="w"> </span>gh<span class=
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-07-16 08:44:52"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 16, 2026</span></time>
+    <time datetime="2026-07-31 13:22:36"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2026</span></time>
   </aside>
 
 
