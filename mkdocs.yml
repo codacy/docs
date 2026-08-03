@@ -148,6 +148,11 @@ plugins:
           categories_allowed:
               - "Cloud"
               - "Self-hosted"
+          # Raised from the default of 10 -- htmltest was failing to find
+          # release-notes/category/self-hosted/index.html specifically on CI
+          # (not reproducible locally); giving Self-hosted's 40 posts a single
+          # page sidesteps whatever page-1-of-N edge case caused it.
+          categories_pagination_per_page: 50
           authors: false
     # Exclude files to avoid warnings during the MkDocs build
     # https://github.com/apenwarr/mkdocs-exclude
