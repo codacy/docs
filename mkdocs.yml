@@ -768,4 +768,5 @@ nav:
                       - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
                       - faq/troubleshooting/error-line-endings.md
           - Special thanks: "special-thanks.md"
-    - Release notes: "release-notes/index.md"
+    - Release notes:
+          - release-notes/index.md
