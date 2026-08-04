@@ -5,7 +5,7 @@ description: Generate coverage reports in a supported format and upload them to 
 # Adding coverage to your repository
 
 !!! important
-    💡 Tip: Setting up test coverage is now easier. Use our new Codacy skill to automatically generate and upload your coverage reports.  [Learn how to use it](https://github.com/codacy/codacy-skills/blob/master/skills/setup-coverage/SKILL.md)
+    💡 Tip: Setting up Coverage is now easier. Use our new Codacy skill to automatically generate and upload your coverage reports.  [Learn how to use it](https://github.com/codacy/codacy-skills/blob/master/skills/setup-coverage/SKILL.md)
 
 Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more <span class="skip-vale">thoroughly</span> tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the [basics of code coverage](https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/) on Codacy's blog.
 
