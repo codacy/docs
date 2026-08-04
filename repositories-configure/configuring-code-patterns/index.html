@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-04-09 15:51:21">
+    <meta http-equiv="last-modified" content="2026-08-04 13:55:13">
   
   
 
@@ -8976,7 +8976,7 @@ You can add extra tools and patterns, if these are not enabled by any applied co
     <td></td>
   </tr>
   <tr>
-    <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
+    <td>Bandit</td>
     <td>Python</td>
     <td><code>bandit.yml</code>, <code>bandit.yaml</code>, <code>.bandit</code>, <code>bandit.toml</code>, <code>bandit.ini</code></td>
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
@@ -8991,6 +8991,12 @@ You can add extra tools and patterns, if these are not enabled by any applied co
     <td>Brakeman</td>
     <td>Ruby</td>
     <td><code>config/brakeman.yml</code></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Checkov</td>
+    <td>YAML, Terraform, JSON</td>
+    <td><code>.checkov.yaml</code>, <code>.checkov.yml</code></td>
     <td></td>
   </tr>
   <tr>
@@ -9047,8 +9053,20 @@ You can add extra tools and patterns, if these are not enabled by any applied co
     <td><code>.markdownlint.yml</code>, <code>.markdownlint.yaml</code>, <code>.markdownlint.jsonc</code>, <code>.markdownlint.json</code></td>
     <td></td>
   </tr>
+    <tr>
+    <td>Opengrep</td>
+    <td>Apex, C++, C#, Dockerfile, Elixir, GitHub Actions, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Shell, Swift, Terraform, TypeScript</td>
+    <td><code>.semgrep.yaml</code></td>
+    <td></td>
+  </tr>
   <tr>
-    <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP_CodeSniffer</a></td>
+    <td>PHP CS Fixer</td>
+    <td>PHP</td>
+    <td><code>.php-cs-fixer.dist.php</code>, <code>.php-cs-fixer.php</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PHP_CodeSniffer</td>
     <td>PHP</td>
     <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
     <td></td>
@@ -9107,10 +9125,10 @@ You can add extra tools and patterns, if these are not enabled by any applied co
     <td><code>scalastyle-config.xml</code>, <code>scalastyle_config.xml</code></td>
     <td></td>
   </tr>
-  <tr>
-    <td>Opengrep</td>
-    <td>Apex, C++, C#, Dockerfile, Elixir, GitHub Actions, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Shell, Swift, Terraform, TypeScript</td>
-    <td><code>.semgrep.yaml</code></td>
+    <tr>
+    <td>Shellcheck</td>
+    <td>Shell</td>
+    <td><code>.shellcheckrc</code></td>
     <td></td>
   </tr>
   <tr>
@@ -9169,7 +9187,6 @@ You can add extra tools and patterns, if these are not enabled by any applied co
 <p>Codacy doesn't support configuration files for the following tools:</p>
 <ul>
 <li>Aligncheck</li>
-<li>Checkov</li>
 <li>Clang-Tidy</li>
 <li>Codacy Scalameta Pro</li>
 <li>CoffeeLint</li>
@@ -9180,7 +9197,6 @@ You can add extra tools and patterns, if these are not enabled by any applied co
 <li>Jackson Linter</li>
 <li>Lizard</li>
 <li>PSScriptAnalyzer</li>
-<li>ShellCheck</li>
 <li>SQLint</li>
 <li>Staticcheck</li>
 <li>Trivy</li>
@@ -9200,7 +9216,7 @@ You can add extra tools and patterns, if these are not enabled by any applied co
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-04-09 15:51:21"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 9, 2026</span></time>
+    <time datetime="2026-08-04 13:55:13"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 4, 2026</span></time>
   </aside>
 
 
