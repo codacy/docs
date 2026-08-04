@@ -413,7 +413,8 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>PHP</td>
       <td>.php</td>
-      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
+      <td><a href="https://github.com/php-cs-fixer/php-cs-fixer">PHP CS Fixer</a>,
+          <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#opengrep"><sup>1</sup></a></td>
       <td>-</td>
@@ -756,6 +757,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/seojoonkim/agentlinter">AgentLinter</a></td>
+<td><a href="https://github.com/codacy/codacy-agentlinter" class="skip-vale">codacy/codacy-agentlinter</a></td>
+</tr>
+<tr>
 <td><a href="https://gitlab.com/opennota/check">aligncheck</a> <a href="#client-side"><sup>3</sup></a></td>
 <td><a href="https://github.com/codacy/codacy-aligncheck" class="skip-vale">codacy/codacy-aligncheck</a></td>
 </tr>
@@ -848,6 +853,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/codacy/codacy-php-cs-fixer">PHP CS Fixer</a></td>
+<td><a href="https://github.com/codacy/codacy-php-cs-fixer" class="skip-vale">codacy/codacy-php-cs-fixer</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
 <td><a href="https://github.com/codacy/codacy-codesniffer" class="skip-vale">codacy/codacy-codesniffer</a></td>
 </tr>
@@ -918,6 +927,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
 <td><a href="https://github.com/codacy/codacy-sqlint" class="skip-vale">codacy/codacy-sqlint</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sqlfluff/sqlfluff">SQLFluff</a></td>
+<td><a href="https://github.com/codacy/codacy-sqlfluff" class="skip-vale">codacy/codacy-sqlfluff</a></td>
 </tr>
 <tr>
 <td><a href="https://staticcheck.io">Staticcheck</a> <a href="#client-side"><sup>3</sup></a></td>
