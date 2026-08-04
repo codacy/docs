@@ -4,6 +4,9 @@ description: Generate coverage reports in a supported format and upload them to 
 
 # Adding coverage to your repository
 
+!!! important
+    Codacy now supports Claude skills and created one to setup coverage in a easier way. Sets up test coverage reporting in a repository and configures upload to Codacy. Detects testing frameworks, CI/CD pipelines, and coverage gaps, then adds the missing pieces to generate and upload coverage reports.  [Check how to use it](https://github.com/codacy/codacy-skills/blob/master/skills/setup-coverage/SKILL.md)
+
 Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more <span class="skip-vale">thoroughly</span> tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the [basics of code coverage](https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/) on Codacy's blog.
 
 To monitor the code coverage of your repository on Codacy you must generate coverage reports for each commit on your CI/CD workflow, and then upload the coverage data to Codacy.
