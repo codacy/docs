@@ -192,6 +192,7 @@ jacksonlinter
 lizard
 markdownlint
 phpcs
+phpcsfixer
 phpmd
 pmd
 pmd-7
