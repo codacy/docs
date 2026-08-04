@@ -413,7 +413,8 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>PHP</td>
       <td>.php</td>
-      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
+      <td><a href="https://github.com/php-cs-fixer/php-cs-fixer">PHP CS Fixer</a>,
+          <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#opengrep"><sup>1</sup></a></td>
       <td>-</td>

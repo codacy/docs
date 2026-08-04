@@ -116,7 +116,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
+    <td>Bandit</td>
     <td>Python</td>
     <td><code>bandit.yml</code>, <code>bandit.yaml</code>, <code>.bandit</code>, <code>bandit.toml</code>, <code>bandit.ini</code></td>
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
@@ -131,6 +131,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Brakeman</td>
     <td>Ruby</td>
     <td><code>config/brakeman.yml</code></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Checkov</td>
+    <td>Yaml, Terraform, Json</td>
+    <td><code>.checkov.yaml</code>, <code>.checkov.yml</code></td>
     <td></td>
   </tr>
   <tr>
@@ -187,8 +193,20 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><code>.markdownlint.yml</code>, <code>.markdownlint.yaml</code>, <code>.markdownlint.jsonc</code>, <code>.markdownlint.json</code></td>
     <td></td>
   </tr>
+    <tr>
+    <td>Opengrep</td>
+    <td>Apex, C++, C#, Dockerfile, Elixir, GitHub Actions, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Shell, Swift, Terraform, TypeScript</td>
+    <td><code>.semgrep.yaml</code></td>
+    <td></td>
+  </tr>
   <tr>
-    <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP_CodeSniffer</a></td>
+    <td>PHP CS Fixer</td>
+    <td>PHP</td>
+    <td><code>.php-cs-fixer.dist.php</code>, <code>.php-cs-fixer.php</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PHP_CodeSniffer</td>
     <td>PHP</td>
     <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
     <td></td>
@@ -247,10 +265,10 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><code>scalastyle-config.xml</code>, <code>scalastyle_config.xml</code></td>
     <td></td>
   </tr>
-  <tr>
-    <td>Opengrep</td>
-    <td>Apex, C++, C#, Dockerfile, Elixir, GitHub Actions, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Shell, Swift, Terraform, TypeScript</td>
-    <td><code>.semgrep.yaml</code></td>
+    <tr>
+    <td>Shellcheck</td>
+    <td>Shell</td>
+    <td><code>.shellcheckrc</code></td>
     <td></td>
   </tr>
   <tr>
@@ -308,7 +326,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     Codacy doesn't support configuration files for the following tools:
 
     -   Aligncheck
-    -   Checkov
     -   Clang-Tidy
     -   Codacy Scalameta Pro
     -   CoffeeLint
@@ -319,7 +336,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Jackson Linter
     -   Lizard
     -   PSScriptAnalyzer
-    -   ShellCheck
     -   SQLint
     -   Staticcheck
     -   Trivy
