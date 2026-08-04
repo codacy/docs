@@ -758,7 +758,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tbody>
 <tr>
 <td><a href="https://github.com/seojoonkim/agentlinter">AgentLinter</a></td>
-<td><a href="https://github.com/codacy/codacy-agentlinter" class="skip-vale">codacy/codacy-agentlinte</a></td>
+<td><a href="https://github.com/codacy/codacy-agentlinter" class="skip-vale">codacy/codacy-agentlinter</a></td>
 </tr>
 <tr>
 <td><a href="https://gitlab.com/opennota/check">aligncheck</a> <a href="#client-side"><sup>3</sup></a></td>

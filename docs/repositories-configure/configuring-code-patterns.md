@@ -135,7 +135,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   </tr>
     <tr>
     <td>Checkov</td>
-    <td>Yaml, Terraform, Json</td>
+    <td>YAML, Terraform, JSON</td>
     <td><code>.checkov.yaml</code>, <code>.checkov.yml</code></td>
     <td></td>
   </tr>
