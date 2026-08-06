@@ -22,7 +22,7 @@ Above the **Open** and **Closed** tabs, use the search box and the branch switch
 
 The Open and Closed counts update to match the selected branch, but aren't affected by the search text.
 
-![Filtering pull requests](images/pull-requests-filters.png)
+![Filtering pull requests](images/pull-request-filters.png)
 
 !!! tip
     The [Codacy Cloud CLI](../codacy-cloud-cli/index.md) supports the same filters, for example `codacy pull-requests gh my-org my-repo --search "fix flaky" --base main`.
