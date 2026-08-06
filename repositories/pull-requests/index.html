@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-05-21 09:06:48">
+    <meta http-equiv="last-modified" content="2026-08-06 10:57:38">
   
   
 
@@ -1073,6 +1073,15 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtering pull requests
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#status" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8811,6 +8820,15 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtering pull requests
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#status" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8978,6 +8996,22 @@
 <p>The <strong>Pull Requests page</strong> displays an overview of the pull requests in your repository, such as the analysis status and the code quality metrics for each pull request. This allows you to monitor the code quality of the work in progress in your repository.</p>
 <p>By default, the page lists open pull requests, but you can click the <strong>Closed</strong> tab at the top of the list to display the closed pull requests.</p>
 <p><img width="1280" height="713" decoding="async" alt="Pull Requests page" src="../images/pull-requests.png" /></p>
+<h2 id="filtering">Filtering pull requests<a class="headerlink" href="#filtering" title="Permanent link">#</a></h2>
+<p>Above the <strong>Open</strong> and <strong>Closed</strong> tabs, use the search box and the branch switch to narrow down the pull request list:</p>
+<ul>
+<li><strong>Search</strong>: type at least 3 characters to filter pull requests by title or author handle. The search applies to both the Open and Closed tabs.</li>
+<li><strong>Branch switch</strong>: click <strong>View all target branches</strong> to choose between:<ul>
+<li><strong>Targeting any branch</strong> (the default): shows every pull request, regardless of its base branch.</li>
+<li><strong>Targeting current branch</strong>: shows only pull requests whose base branch matches the branch currently selected for the repository.</li>
+</ul>
+</li>
+</ul>
+<p>The Open and Closed counts update to match the selected branch, but aren't affected by the search text.</p>
+<p><img width="948" height="617" decoding="async" loading="lazy" alt="Filtering pull requests" src="../images/pull-request-filters.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <a href="../../codacy-cloud-cli/">Codacy Cloud CLI</a> supports the same filters, for example <code>codacy pull-requests gh my-org my-repo --search "fix flaky" --base main</code>.</p>
+</div>
 <p>Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -9185,7 +9219,7 @@ The main view displays the code changes with a specialized coverage overlay to p
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-05-21 09:06:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 21, 2026</span></time>
+    <time datetime="2026-08-06 10:57:38"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2026</span></time>
   </aside>
 
 

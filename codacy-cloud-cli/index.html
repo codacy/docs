@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-07-31 13:22:36">
+    <meta http-equiv="last-modified" content="2026-08-06 10:57:38">
   
   
 
@@ -8966,6 +8966,17 @@ Published: 2024-03-08
 <p class="admonition-title">Note</p>
 <p>Not every advisory lists specific affected functions — this section only appears when Codacy has identified them.</p>
 </div>
+<h3 id="list-and-filter-pull-requests">List and filter pull requests<a class="headerlink" href="#list-and-filter-pull-requests" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># List open pull requests (default)</span>
+codacy<span class="w"> </span>pull-requests<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo
+
+<span class="c1"># Filter by title or author handle, and by base branch</span>
+codacy<span class="w"> </span>pull-requests<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span>--search<span class="w"> </span><span class="s2">&quot;fix flaky&quot;</span><span class="w"> </span>--base<span class="w"> </span>main
+
+<span class="c1"># List closed pull requests instead</span>
+codacy<span class="w"> </span>pull-requests<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span>--state<span class="w"> </span>closed
+</code></pre></div>
+<p><code>pull-requests</code> (alias <code>prs</code>) mirrors the <a href="../repositories/pull-requests/#filtering">Pull Requests page filters</a>: <code>--search</code>/<code>-q</code> matches the title or author handle, and <code>--base</code>/<code>-B</code> matches the pull request's base branch.</p>
 <h3 id="inspect-pull-requests">Inspect pull requests<a class="headerlink" href="#inspect-pull-requests" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Get the full analysis summary</span>
 codacy<span class="w"> </span>pull-request<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span><span class="m">42</span>
@@ -9056,7 +9067,7 @@ codacy<span class="w"> </span>pull-request<span class="w"> </span>gh<span class=
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-07-31 13:22:36"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2026</span></time>
+    <time datetime="2026-08-06 10:57:38"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2026</span></time>
   </aside>
 
 
