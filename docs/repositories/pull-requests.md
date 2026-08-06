@@ -11,6 +11,22 @@ By default, the page lists open pull requests, but you can click the **Closed** 
 
 ![Pull Requests page](images/pull-requests.png)
 
+## Filtering pull requests {: id="filtering"}
+
+Above the **Open** and **Closed** tabs, use the search box and the branch switch to narrow down the pull request list:
+
+-   **Search**: type at least 3 characters to filter pull requests by title or author handle. The search applies to both the Open and Closed tabs.
+-   **Branch switch**: click **View all target branches** to choose between:
+    -   **Targeting any branch** (the default): shows every pull request, regardless of its base branch.
+    -   **Targeting current branch**: shows only pull requests whose base branch matches the branch currently selected for the repository.
+
+The Open and Closed counts update to match the selected branch, but aren't affected by the search text.
+
+![Filtering pull requests](images/pull-requests-filters.png)
+
+!!! tip
+    The [Codacy Cloud CLI](../codacy-cloud-cli/index.md) supports the same filters, for example `codacy pull-requests gh my-org my-repo --search "fix flaky" --base main`.
+
 Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.
 
 !!! tip

@@ -162,6 +162,21 @@ This information is also included when using `--output json`.
 !!! note
     Not every advisory lists specific affected functions — this section only appears when Codacy has identified them.
 
+### List and filter pull requests
+
+```bash
+# List open pull requests (default)
+codacy pull-requests gh my-org my-repo
+
+# Filter by title or author handle, and by base branch
+codacy pull-requests gh my-org my-repo --search "fix flaky" --base main
+
+# List closed pull requests instead
+codacy pull-requests gh my-org my-repo --state closed
+```
+
+`pull-requests` (alias `prs`) mirrors the [Pull Requests page filters](../repositories/pull-requests.md#filtering): `--search`/`-q` matches the title or author handle, and `--base`/`-B` matches the pull request's base branch.
+
 ### Inspect pull requests
 
 ```bash
