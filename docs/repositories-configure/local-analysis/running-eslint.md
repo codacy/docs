@@ -41,7 +41,7 @@ codacy-analysis upload eslint.sarif --commit $COMMIT_SHA --repository <gh|gl|bb>
 ```
 
 !!! note
-    Use `codacy-analysis info` to confirm the exact tool ID registered in your `.codacy/codacy.config.json` (for example, `ESLint9` for ESLint 9.x or `ESLint8` for ESLint 8.x) if `--tool eslint9` doesn't match your setup.
+    Use `codacy-analysis info` to confirm the exact tool ID registered in your `.codacy/codacy.config.json` (for example, `ESLint9` for ESLint 9.x or `ESLint8` for ESLint 8.x) if `--tool eslint9` doesn't match your setup. See the [configuration file reference](../../codacy-guardrails/codacy-guardrails-configuration-file.md) for the file's full structure.
 
 ## GitHub Action
 

@@ -38,6 +38,8 @@ Not yet — we're working on making this automatic. In the meantime, run this co
 codacy-analysis update-config
 ```
 
+See the [configuration file reference](codacy-guardrails-configuration-file.md) for how this command reconciles your local edits with what's changed.
+
 ## Does guardrails generate code for me?
 Guardrails itself doesn’t generate anything but we inform the AI agent where issues are located and scan generated code using the Codacy CLI.
 

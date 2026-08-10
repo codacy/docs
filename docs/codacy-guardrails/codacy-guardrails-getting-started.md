@@ -72,7 +72,7 @@ It will create a folder in your local repository called **.codacy** with all nee
 -  The Codacy CLI configuration used to run analysis locally
 
 !!! note
-    If you don't want this folder to be part of your repository in future commits but continue working with it locally, add **.codacy** to your `.gitignore` file. Keep in mind that committing `codacy.config.json` and `codacy.config.baseline.json` (everything except the `generated/` subfolder) lets future configuration updates preserve your local edits instead of falling back to a less precise merge.
+    If you don't want this folder to be part of your repository in future commits but continue working with it locally, add **.codacy** to your `.gitignore` file. Keep in mind that gitignoring `codacy.config.json` and `codacy.config.baseline.json` (as opposed to just the `generated/` subfolder) has consequences for future configuration updates — see [the configuration file reference](codacy-guardrails-configuration-file.md#baseline-file) for details.
 
 !!! note
     The IDE extension will ignore any CLI version already installed (e.g. through brew or other package manager) on the machine.
