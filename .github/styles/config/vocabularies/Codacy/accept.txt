@@ -37,8 +37,6 @@ Flawfinder
 Fluentd
 GitHub
 GitLab
-gitignored
-gitignoring
 Gocyclo
 Gosec
 Gradle
@@ -56,7 +54,6 @@ jscpd
 JSHint
 JSP
 Junie
-lightbulb
 markdownlint
 monorepo
 namespace
