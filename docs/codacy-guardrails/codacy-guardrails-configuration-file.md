@@ -53,6 +53,9 @@ The [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) (`@c
 
 To hand-edit the file: remove a pattern's entry to disable it, add one to enable it, or add a `parameters` object to tune it. Save the file and run `codacy-analysis analyze`: no extra command is needed to pick up manual edits.
 
+!!! warning
+    This only holds while `metadata.source` is `local`, `auto`, or `default`. If it's `remote` (the repository is connected to Codacy Cloud), don't hand-edit this file: the next sync, whether a manual `codacy-analysis update-config` or Guardrails' automatic background sync, fully overwrites it from Codacy Cloud instead of merging your edits in. See [the baseline file](#baseline-file) for details, and disable patterns from the [Codacy Cloud UI or the editor's Quick Fix](#disabling-a-pattern) instead.
+
 ## Disabling a pattern from the editor {: id="disabling-a-pattern"}
 
 You don't have to hand-edit the file for the most common change. When Codacy Guardrails flags an issue in your editor, open the Quick Fix menu (the lightbulb) on the highlighted line and choose **Codacy CLI: Disable pattern**.
@@ -68,13 +71,15 @@ For a purely local setup with no Codacy Cloud connection, there's no editor acti
 
 Every time `init` or `update-config` writes `codacy.config.json`, it also writes `.codacy/codacy.config.baseline.json`: an exact snapshot of what the generator produced, before any manual edits. Its only purpose is letting a later `update-config` run tell your deliberate edits apart from whatever the generator would have produced anyway.
 
-When you run `codacy-analysis update-config` (or Guardrails triggers the equivalent automatically), it reconciles three versions of the config:
+For a `local`, `auto`, or `default`-sourced config, running `codacy-analysis update-config` (or Guardrails triggering the equivalent automatically) reconciles three versions of the config:
 
 -   **base**: the baseline snapshot (the generator's last output)
 -   **current**: your live config (baseline plus your edits)
 -   **next**: what the generator produces right now, for your repository's current stack
 
 It adds whatever is new in `next` but wasn't in `base` (a newly detected language or framework), removes whatever was in `base` but isn't in `next` anymore (a language or framework that's gone), and otherwise leaves `current` untouched: patterns you disabled stay disabled and parameters you tuned survive.
+
+A `remote`-sourced config skips this reconciliation entirely: Codacy Cloud is authoritative for cloud-connected repositories, so both `codacy-analysis update-config` and Guardrails' background sync always pull a fresh copy from Codacy Cloud and overwrite the file outright, baseline included. Manual edits to a remote config don't survive the next sync, no matter how it's triggered.
 
 !!! important
     If `.codacy/codacy.config.baseline.json` is missing, for example because `.codacy` was gitignored and a teammate cloned the repository without it, `update-config` can't tell "you disabled this pattern" apart from "this pattern was never selected." It falls back to an additive merge instead: your edits are kept, but tools or patterns for a language/framework that's no longer in the repository won't be pruned, and disabled patterns may reappear. The CLI prints a warning when this happens.
