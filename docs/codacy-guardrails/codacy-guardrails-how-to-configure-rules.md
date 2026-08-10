@@ -11,6 +11,8 @@ You can configure your rules in one of two ways:
 
 -  Using the [Codacy UI](#using-the-codacy-ui)–for quick, manual adjustments.
 
+Either way, the result is recorded in a local file that Guardrails uses when it analyzes your code. For what that file contains and how it's kept up to date, see the [configuration file reference](codacy-guardrails-configuration-file.md).
+
 !!! note
     If you're already using a configuration file, please we recommend you can follow the first way. Otherwise, the second way is the best for you, so you can configure directly in the Codacy platform.
 

@@ -1,16 +1,17 @@
 ---
-description: How the local configuration and baseline files used by the Codacy Analysis CLI work, and how to edit them.
+description: Reference for the local configuration and baseline files used by the Codacy Analysis CLI, covering their fields, how updates reconcile your edits, and how to combine them.
 ---
 
-# Codacy Analysis CLI configuration file
+# Configuration file reference
+
+This page describes the files themselves: their fields and how updates to them work. If what you want is to **change which rules run**, start from [how to customize the analysis rules](codacy-guardrails-how-to-configure-rules.md) instead.
 
 The [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) (`@codacy/analysis-cli`, the `codacy-analysis` command) is what powers Codacy Guardrails' local analysis, and it's the same CLI you install manually for [local analysis outside an IDE](../repositories-configure/local-analysis/client-side-tools.md). It keeps its own configuration in two files inside `.codacy/`:
 
 -   `.codacy/codacy.config.json`: which tools and patterns run, and any parameter overrides
 -   `.codacy/codacy.config.baseline.json`: a snapshot used to keep future updates precise
 
-!!! note
-    This is different from the [Codacy configuration file](../repositories-configure/codacy-configuration-file.md) (`.codacy.yml`/`.codacy.yaml`), which configures Codacy Cloud's own analysis. The two aren't related.
+Don't confuse these with the [Codacy configuration file](../repositories-configure/codacy-configuration-file.md) (`.codacy.yml`/`.codacy.yaml`) in your repository root, which configures Codacy Cloud's own analysis. The two are separate, and the CLI takes just one thing from it: your `exclude_paths`, which `init` copies into the `exclude` fields described below.
 
 !!! important
     The IDE extension bundles the analyzer, so Guardrails works without you installing anything: it writes and updates these files for you. The `codacy-analysis` commands on this page are the standalone CLI, which the extension doesn't put on your `PATH`. To run them yourself, [install the CLI](codacy-guardrails-getting-started.md#install-cli) first:
@@ -58,24 +59,23 @@ The [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) (`@c
 | `tools[].exclude` / top-level `exclude` | Glob patterns excluded from that tool, or from analysis entirely |
 | `tools[].useLocalConfigurationFile` | When `true`, the tool runs from its own native config file (recorded in `tools[].localConfigurationFile`, for example `.eslintrc.json`) instead of the patterns listed here. `init` sets this for you when it finds a native config file for the tool in your repository; for a `remote`-sourced config it reflects the **Configuration file** toggle on your repository's **Code patterns** page (see [customizing analysis rules](codacy-guardrails-how-to-configure-rules.md#using-configuration-files)) |
 
-To hand-edit the file: remove a pattern's entry to disable it, add one to enable it, or add a `parameters` object to tune it. Save the file and run `codacy-analysis analyze`: no extra command is needed to pick up manual edits.
+## Changing a pattern {: id="disabling-a-pattern"}
 
-!!! warning
-    This only holds while `metadata.source` is `local`, `auto`, or `default`. If it's `remote` (the repository is connected to Codacy Cloud), don't hand-edit this file: the next sync, whether a manual `codacy-analysis update-config` or Guardrails' automatic background sync, fully overwrites it from Codacy Cloud instead of merging your edits in. See [the baseline file](#baseline-file) for details, and disable patterns from the [Codacy Cloud UI or the editor's Quick Fix](#disabling-a-pattern) instead.
+Where you change a pattern depends on `metadata.source`, because that decides who owns the file.
 
-## Disabling a pattern from the editor {: id="disabling-a-pattern"}
+### Local configurations: edit the file {: id="editing-the-file"}
 
-You don't have to hand-edit the file for the most common change. When Codacy Guardrails flags an issue in your editor, open the Quick Fix menu (the lightbulb) on the highlighted line and choose **Codacy CLI: Disable pattern**.
+When `metadata.source` is `local`, `auto`, or `default`, the file is yours. Remove a pattern's entry to disable it, add one to enable it, or add a `parameters` object to tune it. Save the file and run `codacy-analysis analyze`: no extra command is needed to pick up your edits, and a later [`update-config`](#baseline-file) preserves them.
 
-!!! note
-    This action only appears when your repository is connected to Codacy Cloud: it isn't available for a purely local, cloud-disconnected setup. Disabling the pattern also requires [admin permission](../organizations/roles-and-permissions-for-organizations.md) on the repository. If you don't have it, the editor tells you so when you run the action.
+### Cloud-connected configurations: change it on Codacy Cloud {: id="changing-on-codacy-cloud"}
 
-This doesn't edit `codacy.config.json` directly: it calls the Codacy API to disable the pattern for the repository on Codacy Cloud. Your local configuration only picks up the change the next time it's regenerated from Codacy Cloud, either by running `codacy-analysis update-config` yourself, or when Guardrails re-syncs your configuration in the background, which it does whenever you add a new file to the repository (see [does changing configuration in the UI apply automatically?](codacy-guardrails-faq.md#when-i-change-some-analysis-configuration-in-the-ui-is-it-automatically-applied-to-guardrails)).
+When `metadata.source` is `remote`, Codacy Cloud owns the file. Editing it by hand doesn't stick: the next sync, whether a manual `codacy-analysis update-config` or Guardrails' automatic background sync, overwrites it from Codacy Cloud rather than merging your edits in. Change the pattern on Codacy Cloud instead, in one of two places:
 
-!!! note
-    If the pattern is enabled by a [coding standard](../organizations/using-coding-standards.md), the editor can't disable it: coding standards are shared across your organization, so the action opens a panel pointing you to the standards you need to edit in the Codacy Cloud UI instead.
+-   **From your editor**, when Codacy Guardrails flags the issue on a line: open the Quick Fix menu (the lightbulb) and choose **Codacy CLI: Disable pattern**. This calls the Codacy API and disables the pattern for the repository, so it needs [admin permission](../organizations/roles-and-permissions-for-organizations.md) on the repository. If the pattern comes from a [coding standard](../organizations/using-coding-standards.md), the action can't disable it, since standards are shared across your organization: it opens a panel pointing you to the standards to edit instead.
 
-For a purely local setup with no Codacy Cloud connection, there's no editor action for this: edit `tools[].patterns` in the file directly, as described above.
+-   **From the Codacy Cloud UI**, on your repository's **Code patterns** page or in the coding standard itself. See [how to customize the analysis rules](codacy-guardrails-how-to-configure-rules.md).
+
+Either way, your local file only reflects the change once it's regenerated from Codacy Cloud, either by running `codacy-analysis update-config` yourself or when Guardrails re-syncs in the background, which it does whenever you add a new file to the repository (see [does changing configuration in the UI apply automatically?](codacy-guardrails-faq.md#when-i-change-some-analysis-configuration-in-the-ui-is-it-automatically-applied-to-guardrails)).
 
 ## The baseline file {: id="baseline-file"}
 
@@ -105,10 +105,10 @@ Use `codacy-analysis config` to combine the tools and patterns of two configurat
 codacy-analysis config --merge --source .codacy/extra.json --dest .codacy/codacy.config.json
 
 # Only tools/patterns present in both
-codacy-analysis config --intersect --source a.json --dest b.json
+codacy-analysis config --intersect --source .codacy/a.json --dest .codacy/b.json
 
 # Tools/patterns in dest that aren't in source
-codacy-analysis config --diff --source baseline.json --dest .codacy/codacy.config.json
+codacy-analysis config --diff --source .codacy/codacy.config.baseline.json --dest .codacy/codacy.config.json
 ```
 
 The result is always written to `--dest`; `--source` is read-only.

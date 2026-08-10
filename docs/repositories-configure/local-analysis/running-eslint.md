@@ -22,7 +22,7 @@ Install the Codacy Analysis CLI and initialize the repository. Initialization wr
 
 ```bash
 npm i -g @codacy/analysis-cli
-codacy-analysis init --remote <gh|gl|bb> ORGANIZATION REPOSITORY
+codacy-analysis init --remote <gh|gl|bb> <ORGANIZATION> <REPOSITORY>
 ```
 
 Then run the analysis and upload the results:
@@ -36,7 +36,7 @@ codacy-analysis upload eslint.sarif --commit $COMMIT_SHA
 
 ```bash
 codacy-analysis analyze --tool eslint9 --output-format sarif --output eslint.sarif
-codacy-analysis upload eslint.sarif --commit $COMMIT_SHA --repository <gh|gl|bb> ORGANIZATION REPOSITORY
+codacy-analysis upload eslint.sarif --commit $COMMIT_SHA --repository <gh|gl|bb> <ORGANIZATION> <REPOSITORY>
 ```
 
 !!! note
