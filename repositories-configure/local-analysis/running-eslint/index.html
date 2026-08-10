@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2024-10-23 14:42:27">
+    <meta http-equiv="last-modified" content="2026-08-10 16:34:03">
   
   
 
@@ -643,7 +643,7 @@
   <span class="md-ellipsis">
     
   
-    How to customize the analysis rules for Codacy Guardrails
+    Customizing analysis rules
   
 
     
@@ -1688,15 +1688,6 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
-  <a href="#important-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Important Concepts
-      
-    </span>
-  </a>
-  
-</li><li class="md-nav__item">
   <a href="#manual-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8730,15 +8721,6 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
-  <a href="#important-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Important Concepts
-      
-    </span>
-  </a>
-  
-</li><li class="md-nav__item">
   <a href="#manual-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8861,26 +8843,36 @@
 </code></pre></div>
 </li>
 </ol>
-<h2 id="important-concepts">Important Concepts<a class="headerlink" href="#important-concepts" title="Permanent link">#</a></h2>
-<ul>
-<li><strong><code>.codacy/codacy.yaml</code></strong>: Configuration file to specify <code>node</code> and <code>eslint</code> versions for the CLI.</li>
-</ul>
+<h2 id="manual-configuration">Manual configuration<a class="headerlink" href="#manual-configuration" title="Permanent link">#</a></h2>
+<p>Install the Codacy Analysis CLI and initialize the repository. Initialization writes <code>.codacy/codacy.config.json</code>, which <code>analyze</code> requires: pulling it from Codacy Cloud with <code>init --remote</code> means the local run uses the same ESLint patterns as your repository's <strong>Code patterns</strong> page.</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@codacy/analysis-cli
+codacy-analysis<span class="w"> </span>init<span class="w"> </span>--remote<span class="w"> </span>&lt;gh<span class="p">|</span>gl<span class="p">|</span>bb&gt;<span class="w"> </span>&lt;ORGANIZATION&gt;<span class="w"> </span>&lt;REPOSITORY&gt;
+</code></pre></div>
+<p>Then run the analysis and upload the results:</p>
+<div class="highlight"><pre><span></span><code>codacy-analysis<span class="w"> </span>analyze<span class="w"> </span>--tool<span class="w"> </span>eslint9<span class="w"> </span>--output-format<span class="w"> </span>sarif<span class="w"> </span>--output<span class="w"> </span>eslint.sarif
+codacy-analysis<span class="w"> </span>upload<span class="w"> </span>eslint.sarif<span class="w"> </span>--commit<span class="w"> </span><span class="nv">$COMMIT_SHA</span>
+</code></pre></div>
+<p><strong>If you're using an account API token</strong>, you must also provide the <code>--repository</code> flag with your provider, organization, and repository name. You can obtain these values from the URL of your repository dashboard on Codacy:</p>
+<div class="highlight"><pre><span></span><code>codacy-analysis<span class="w"> </span>analyze<span class="w"> </span>--tool<span class="w"> </span>eslint9<span class="w"> </span>--output-format<span class="w"> </span>sarif<span class="w"> </span>--output<span class="w"> </span>eslint.sarif
+codacy-analysis<span class="w"> </span>upload<span class="w"> </span>eslint.sarif<span class="w"> </span>--commit<span class="w"> </span><span class="nv">$COMMIT_SHA</span><span class="w"> </span>--repository<span class="w"> </span>&lt;gh<span class="p">|</span>gl<span class="p">|</span>bb&gt;<span class="w"> </span>&lt;ORGANIZATION&gt;<span class="w"> </span>&lt;REPOSITORY&gt;
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>--tool</code> matches against the tool IDs in your <code>.codacy/codacy.config.json</code>, and only tools listed there run. If <code>--tool eslint9</code> doesn't match your setup, check that file for the ID it recorded, which is <code>ESLint9</code> for ESLint 9.x and <code>ESLint8</code> for ESLint 8.x.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>On Codacy Self-hosted, <code>upload</code> sends results to a different endpoint from the rest of the CLI, and it doesn't read <code>CODACY_API_BASE_URL</code>. Point it at your instance with <code>CODACY_RESULTS_API_BASE_URL</code> as well:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_RESULTS_API_BASE_URL</span><span class="o">=</span>&lt;your<span class="w"> </span>Codacy<span class="w"> </span>instance<span class="w"> </span>results<span class="w"> </span>API<span class="w"> </span>URL&gt;
+</code></pre></div>
+</div>
+<h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">#</a></h2>
+<p>The GitHub Action still uses <a href="https://github.com/codacy/codacy-cli-v2">Codacy CLI v2</a>, a separate tool from the <code>codacy-analysis</code> CLI used above. It reads its runtime and tool versions from a <code>.codacy/codacy.yaml</code> file in your repository:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">runtimes</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node@22.2.0</span>
 <span class="nt">tools</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eslint@9.3.0</span>
 </code></pre></div>
-<h2 id="manual-configuration">Manual configuration<a class="headerlink" href="#manual-configuration" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code>codacy-cli<span class="w"> </span>install
-codacy-cli<span class="w"> </span>analyze<span class="w"> </span>-t<span class="w"> </span>eslint<span class="w"> </span>-o<span class="w"> </span>eslint.sarif
-codacy-cli<span class="w"> </span>upload<span class="w"> </span>-s<span class="w"> </span>eslint.sarif<span class="w"> </span>-c<span class="w"> </span><span class="nv">$COMMIT_SHA</span><span class="w"> </span>-t<span class="w"> </span>CODACY_PROJECT_TOKEN
-</code></pre></div>
-<p><strong>If you're using an account API token</strong>, you must also provide the flags <code>-p</code>, <code>-o</code>, and <code>-r</code>. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:</p>
-<div class="highlight"><pre><span></span><code>codacy-cli<span class="w"> </span>install
-codacy-cli<span class="w"> </span>analyze<span class="w"> </span>-t<span class="w"> </span>eslint<span class="w"> </span>-o<span class="w"> </span>eslint.sarif
-codacy-cli<span class="w"> </span>analyze<span class="w"> </span>-t<span class="w"> </span>eslint<span class="w"> </span>-o<span class="w"> </span>eslint.sarif<span class="w"> </span>-c<span class="w"> </span><span class="nv">$COMMIT_SHA</span><span class="w"> </span>-a<span class="w"> </span>CODACY_API_TOKEN<span class="w"> </span>-p<span class="w"> </span>provider<span class="w"> </span><span class="o">(</span>gh<span class="p">|</span>gl<span class="p">|</span>bb<span class="o">)</span><span class="w"> </span>-o<span class="w"> </span>ORGANIZATION<span class="w"> </span>-r<span class="w"> </span>REPOSITORY
-</code></pre></div>
-<h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">#</a></h2>
 <h3 id="using-a-project-token">Using a project token<a class="headerlink" href="#using-a-project-token" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code>- name: Run Codacy CLI
   uses: codacy/codacy-cli-v2-action@main
@@ -8911,7 +8903,7 @@ codacy-cli<span class="w"> </span>analyze<span class="w"> </span>-t<span class="
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2024-10-23 14:42:27"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2024</span></time>
+    <time datetime="2026-08-10 16:34:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 10, 2026</span></time>
   </aside>
 
 

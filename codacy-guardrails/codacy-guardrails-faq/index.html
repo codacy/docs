@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2025-09-15 10:38:01">
+    <meta http-equiv="last-modified" content="2026-08-10 16:34:03">
   
   
 
@@ -643,7 +643,7 @@
   <span class="md-ellipsis">
     
   
-    How to customize the analysis rules for Codacy Guardrails
+    Customizing analysis rules
   
 
     
@@ -9000,10 +9000,12 @@
 <h2 id="is-my-data-secure">Is my data secure?<a class="headerlink" href="#is-my-data-secure" title="Permanent link">#</a></h2>
 <p>Codacy Guardrails isn't a large language model, but an IDE extension that uses an MCP Server to communicate with existing AI coding agents owned by the user.</p>
 <h2 id="when-i-change-some-analysis-configuration-in-the-ui-is-it-automatically-applied-to-guardrails">When I change some analysis configuration in the UI, is it automatically applied to Guardrails?<a class="headerlink" href="#when-i-change-some-analysis-configuration-in-the-ui-is-it-automatically-applied-to-guardrails" title="Permanent link">#</a></h2>
-<p>We're still working on this feature but in order to update the new tool configuration. you should run the command in your repository:</p>
-<div class="highlight"><pre><span></span><code>codacy-cli<span class="w"> </span>init
+<p>Not immediately, but you don't have to do anything special either. For a repository connected to Codacy Cloud, Guardrails re-syncs your local configuration in the background whenever you add a new file to the repository, pulling a fresh copy of your patterns from Codacy Cloud. Changes you make in the UI are picked up on that next sync.</p>
+<p>To force the sync right away, you can run the standalone <a href="../codacy-guardrails-getting-started/#install-cli">Codacy Analysis CLI</a> in your repository:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@codacy/analysis-cli
+codacy-analysis<span class="w"> </span>update-config
 </code></pre></div>
-<p>This way Codacy will run the latest configuration.</p>
+<p>The IDE extension bundles its own copy of the analyzer, so this <code>npm</code> install is only needed to run the command yourself.</p>
 <h2 id="does-guardrails-generate-code-for-me">Does guardrails generate code for me?<a class="headerlink" href="#does-guardrails-generate-code-for-me" title="Permanent link">#</a></h2>
 <p>Guardrails itself doesn’t generate anything but we inform the AI agent where issues are located and scan generated code using the Codacy CLI.</p>
 <h2 id="how-much-does-guardrails-cost">How much does Guardrails cost?<a class="headerlink" href="#how-much-does-guardrails-cost" title="Permanent link">#</a></h2>
@@ -9026,7 +9028,7 @@
 <li>Jira integration</li>
 </ul>
 <h2 id="does-guardrails-work-with-all-os">Does Guardrails work with all OS?<a class="headerlink" href="#does-guardrails-work-with-all-os" title="Permanent link">#</a></h2>
-<p>Guardrails is supported on MacOS, Linux, and Windows (via <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL</a>)</p>
+<p>Guardrails is supported on MacOS, Linux, and Windows, natively for Visual Studio Code, Cursor, and Windsurf. JetBrains IDEs on Windows still require <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL</a>.</p>
 <h2 id="can-i-use-guardrails-without-an-ai-copilot">Can I use Guardrails without an AI copilot?<a class="headerlink" href="#can-i-use-guardrails-without-an-ai-copilot" title="Permanent link">#</a></h2>
 <p>Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf, but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.</p>
 <p>Without an AI coding agent, you can still use the IDE extension for local analysis and PR check information.</p>
@@ -9065,7 +9067,7 @@ To revert to the latest version, click on <code>Update</code>.</p>
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2025-09-15 10:38:01"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 15, 2025</span></time>
+    <time datetime="2026-08-10 16:34:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 10, 2026</span></time>
   </aside>
 
 

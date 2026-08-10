@@ -1,9 +1,14 @@
 .md-content__inner { position: relative; padding-top: 1.25rem; padding-bottom: 3rem; }
 .md-typeset { color: var(--docs-text-secondary); font-size: 1rem; line-height: 1.7; }
-.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 { color: var(--docs-text); font-weight: 700; letter-spacing: -.025em; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5 { color: var(--docs-text); font-weight: 700; letter-spacing: -.025em; }
 .md-typeset h1 { margin: 0 0 1.5rem; font-size: 1.875rem; line-height: 1.25; }
 .md-typeset h2 { margin-top: 3rem; padding-top: .25rem; font-size: 1.5rem; line-height: 1.35; }
 .md-typeset h3 { margin-top: 2rem; font-size: 1.2rem; }
+.md-typeset h4 { margin: 1.75rem 0 .5rem; font-size: 1.05rem; line-height: 1.45; }
+.md-typeset h5 { margin: 1.5rem 0 .4rem; font-size: .95rem; line-height: 1.45; }
+/* Material ships `.md-typeset h2+h3{margin-top:.8em}`, which out-specifies the
+   plain h3 rule above and tightens exactly the stacked case that needs the room. */
+.md-typeset h2 + h3 { margin-top: 2rem; }
 .md-content__inner > h1 + p { color: var(--docs-text-secondary); font-size: 1.0625rem; line-height: 1.65; }
 .md-typeset a { color: var(--docs-link); font-weight: 500; text-decoration-thickness: 1px; text-underline-offset: .14em; }
 .md-typeset a:hover { color: var(--docs-link-hover); }

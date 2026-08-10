@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-01-14 14:16:37">
+    <meta http-equiv="last-modified" content="2026-08-10 16:34:03">
   
   
 
@@ -643,7 +643,7 @@
   <span class="md-ellipsis">
     
   
-    How to customize the analysis rules for Codacy Guardrails
+    Customizing analysis rules
   
 
     
@@ -8795,8 +8795,12 @@
 <p>Codacy supports client-side tools in two ways:</p>
 <ul>
 <li>
-<p><strong>Containerized tools:</strong> Codacy provides Docker images to run analysis tools locally. To fetch code pattern configurations from Codacy, run the images, print out analysis results, and upload them to Codacy, use the <a href="https://github.com/codacy/codacy-analysis-cli">Codacy Analysis CLI</a>.</p>
-<p>The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.</p>
+<p><strong>Containerized tools:</strong> Codacy provides Docker images to run analysis tools locally. To fetch code pattern configurations from Codacy, run the images, print out analysis results, and upload them to Codacy, use the <a href="https://github.com/codacy/codacy-analysis-cli">legacy Codacy Analysis CLI</a> (<code>codacy-analysis-cli</code>).</p>
+<p>The legacy Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a separate, older tool from the <a href="../../../codacy-guardrails/codacy-guardrails-getting-started/#install-cli">Codacy Analysis CLI</a> (<code>@codacy/analysis-cli</code>, the <code>codacy-analysis</code> command) that powers Codacy Guardrails and <a href="../running-eslint/">running ESLint locally</a>. The tools listed below don't have an equivalent on the newer CLI yet.</p>
+</div>
 </li>
 <li>
 <p><strong>Standalone tools:</strong> Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.</p>
@@ -8893,7 +8897,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-01-14 14:16:37"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2026</span></time>
+    <time datetime="2026-08-10 16:34:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 10, 2026</span></time>
   </aside>
 
 

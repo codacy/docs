@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2025-08-22 14:29:50">
+    <meta http-equiv="last-modified" content="2026-08-10 16:34:03">
   
   
 
@@ -643,7 +643,7 @@
   <span class="md-ellipsis">
     
   
-    How to customize the analysis rules for Codacy Guardrails
+    Customizing analysis rules
   
 
     
@@ -722,6 +722,15 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#codacy-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codacy CLI
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#node" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8721,6 +8730,15 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#codacy-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codacy CLI
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#node" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8795,6 +8813,13 @@
 
 
 <h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">#</a></h1>
+<h2 id="codacy-cli">Codacy CLI<a class="headerlink" href="#codacy-cli" title="Permanent link">#</a></h2>
+<h3 id="diagnosing-local-analysis-issues">Diagnosing local analysis issues<a class="headerlink" href="#diagnosing-local-analysis-issues" title="Permanent link">#</a></h3>
+<p>Whenever local analysis or Guardrails scanning isn't behaving as expected, the standalone <a href="../codacy-guardrails-getting-started/#install-cli">Codacy Analysis CLI</a> can tell you the state of your setup: your authentication status, your system information, and every analysis tool it knows about, along with whether each one is installed locally.</p>
+<p>The IDE extension bundles its own copy of the analyzer and doesn't put the <code>codacy-analysis</code> command on your <code>PATH</code>, so install the CLI first:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@codacy/analysis-cli
+codacy-analysis<span class="w"> </span>info
+</code></pre></div>
 <h2 id="node">Node<a class="headerlink" href="#node" title="Permanent link">#</a></h2>
 <h3 id="claude-desktop">Claude Desktop<a class="headerlink" href="#claude-desktop" title="Permanent link">#</a></h3>
 <p>When using NVM with Claude Desktop, NPX may not work. You should first install the MCP Server globally, and then use Node directly:</p>
@@ -8806,8 +8831,7 @@
 <span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/yourusername/.nvm/versions/node/vXX.X.X/bin/node&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/path-to/codacy-mcp/dist/index.js&quot;</span><span class="p">],</span>
 <span class="w">      </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;CODACY_ACCOUNT_TOKEN&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;YOUR_TOKEN&gt;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;CODACY_CLI_VERSION&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;VERSION&gt;&quot;</span>
+<span class="w">        </span><span class="nt">&quot;CODACY_ACCOUNT_TOKEN&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;YOUR_TOKEN&gt;&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
@@ -8825,7 +8849,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2025-08-22 14:29:50"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 22, 2025</span></time>
+    <time datetime="2026-08-10 16:34:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 10, 2026</span></time>
   </aside>
 
 
