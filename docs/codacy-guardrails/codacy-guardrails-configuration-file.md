@@ -53,6 +53,17 @@ The [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) (`@c
 
 To hand-edit the file: remove a pattern's entry to disable it, add one to enable it, or add a `parameters` object to tune it. Save the file and run `codacy-analysis analyze` — no extra command is needed to pick up manual edits.
 
+## Disabling a pattern from the editor {: id="disabling-a-pattern"}
+
+You don't have to hand-edit the file for the most common change. When Codacy Guardrails flags an issue in your editor, open the Quick Fix menu (the lightbulb) on the highlighted line and choose **Codacy CLI: Disable pattern**.
+
+!!! note
+    This action only appears when your repository is connected to Codacy Cloud and you have admin permission on it — it isn't available for a purely local, cloud-disconnected setup.
+
+This doesn't edit `codacy.config.json` directly: it calls the Codacy API to disable the pattern for the repository on Codacy Cloud. Your local configuration only picks up the change the next time it's regenerated from the cloud — either by running `codacy-analysis update-config` yourself, or incidentally, whenever Guardrails re-syncs your configuration in the background (see [does changing configuration in the UI apply automatically?](codacy-guardrails-faq.md#when-i-change-some-analysis-configuration-in-the-ui-is-it-automatically-applied-to-guardrails)).
+
+For a purely local setup with no Codacy Cloud connection, there's no editor action for this — edit `tools[].patterns` in the file directly, as described above.
+
 ## The baseline file {: id="baseline-file"}
 
 Every time `init` or `update-config` writes `codacy.config.json`, it also writes `.codacy/codacy.config.baseline.json` — an exact snapshot of what the generator produced, before any manual edits. Its only purpose is letting a later `update-config` run tell your deliberate edits apart from whatever the generator would have produced anyway.
