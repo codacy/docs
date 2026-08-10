@@ -20,7 +20,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 - macOS
 - Linux
-- Windows (native, no WSL required)
+- Windows
 
 !!! note
     We currently only support VSCode, Cursor, and Windsurf on Windows.
