@@ -29,18 +29,19 @@ tools:
 ## Manual configuration
 
 ```bash
-codacy-cli install
-codacy-cli analyze -t eslint -o eslint.sarif
-codacy-cli upload -s eslint.sarif -c $COMMIT_SHA -t CODACY_PROJECT_TOKEN
+codacy-analysis analyze --tool eslint9 --output-format sarif --output eslint.sarif
+codacy-analysis upload eslint.sarif --commit $COMMIT_SHA
 ```
 
- **If you're using an account API token**, you must also provide the flags `-p`, `-o`, and `-r`. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:
+ **If you're using an account API token**, you must also provide the `--repository` flag with your provider, organization, and repository name. You can obtain these values from the URL of your repository dashboard on Codacy:
 
 ```bash
-codacy-cli install
-codacy-cli analyze -t eslint -o eslint.sarif
-codacy-cli analyze -t eslint -o eslint.sarif -c $COMMIT_SHA -a CODACY_API_TOKEN -p provider (gh|gl|bb) -o ORGANIZATION -r REPOSITORY
+codacy-analysis analyze --tool eslint9 --output-format sarif --output eslint.sarif
+codacy-analysis upload eslint.sarif --commit $COMMIT_SHA --repository <gh|gl|bb> ORGANIZATION REPOSITORY
 ```
+
+!!! note
+    Use `codacy-analysis info` to confirm the exact tool ID registered in your `.codacy/codacy.config.json` (for example, `ESLint9` for ESLint 9.x or `ESLint8` for ESLint 8.x) if `--tool eslint9` doesn't match your setup.
 
 ## GitHub Action
 

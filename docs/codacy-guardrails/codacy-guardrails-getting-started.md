@@ -117,33 +117,20 @@ You can later generate the instructions manually from the Guardrails section of 
 
 #### Download
 
-##### MacOS (brew)
-
-To install `codacy-cli` using Homebrew:
+The Codacy Analysis CLI is distributed as an npm package and installs the same way on macOS, Linux, and Windows:
 
 ```bash
-brew install codacy/codacy-cli-v2/codacy-cli-v2
-```
-
-##### Linux
-
-For Linux, we rely on the **codacy-cli.sh** script in the root. To download the CLI, run:
-
-```bash
-bash <(curl -Ls https://raw.githubusercontent.com/codacy/codacy-cli-v2/main/codacy-cli.sh)
-```
-You can either put the downloaded script in a specific file or create an alias that will download the script and look for changes:
-
-```bash
-alias codacy-cli="bash <(curl -Ls https://raw.githubusercontent.com/codacy/codacy-cli-v2/main/codacy-cli.sh)"
+npm i -g @codacy/analysis-cli
 ```
 
 #### Installation
 
-Before running the analysis, install the specified tools:
+Authenticate with your Codacy API token, then initialize the configuration for your repository. Initialization detects your stack and selects the tools and patterns it needs:
 
 ```bash
-codacy-cli install
+codacy-analysis login --token <YOUR_API_TOKEN>
+codacy-analysis init --auto
+codacy-analysis analyze --install-dependencies
 ```
 
 ### 2. Install MCP Server {: id="install-mcp-server"}

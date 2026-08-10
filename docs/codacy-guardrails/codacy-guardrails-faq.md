@@ -35,7 +35,7 @@ Codacy Guardrails isn't a large language model, but an IDE extension that uses a
 We're still working on this feature but in order to update the new tool configuration. you should run the command in your repository:
 
 ``` bash
-codacy-cli init
+codacy-analysis update-config
 ```
 
 This way Codacy will run the latest configuration.
