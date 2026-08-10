@@ -4,13 +4,14 @@
 
 ### Diagnosing local analysis issues
 
-Before digging further, run the following command in your repository to check your authentication status, system information, and which analysis tools are registered and available:
+Whenever local analysis or Guardrails scanning isn't behaving as expected, the standalone [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) can tell you the state of your setup: your authentication status, your system information, and every analysis tool it knows about, along with whether each one is installed locally.
+
+The IDE extension bundles its own copy of the analyzer and doesn't put the `codacy-analysis` command on your `PATH`, so install the CLI first:
 
 ```bash
+npm i -g @codacy/analysis-cli
 codacy-analysis info
 ```
-
-This is a good first step whenever local analysis or Guardrails scanning isn't behaving as expected.
 
 ## Node
 

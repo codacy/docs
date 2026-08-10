@@ -60,22 +60,22 @@ This will open the Codacy Extension in your IDE Marketplace. Click **Install**
 ![Install Extension](images/install-codacy-extension.png)
 
 
-### 2. Codacy CLI sets up automatically
+### 2. Local analysis sets up automatically
 
-The extension installs and initializes the Codacy CLI for local analysis in the background: no click needed. If automatic setup fails, a **Set up local analysis** button appears so you can retry it.
+The extension ships with the Codacy analyzer built in, so there's nothing to install and no button to click. When you open a repository, the extension sets local analysis up in the background: it generates the analysis configuration for your repository and downloads any tool dependencies it needs (such as Node, Python, or Java). If the automatic setup fails, a **Set up local analysis** button appears so you can retry it.
 
 ![Install CLI](images/codacy-extension-activate-cli.png)
 
 It will create a folder in your local repository called **.codacy** with all needed configuration:
 
 -  The configuration from all built-in scanners
--  The Codacy CLI configuration used to run analysis locally
+-  The configuration used to run analysis locally
 
 !!! note
     If you don't want this folder to be part of your repository in future commits but continue working with it locally, add **.codacy** to your `.gitignore` file. Keep in mind that gitignoring `codacy.config.json` and `codacy.config.baseline.json` (as opposed to just the `generated/` subfolder) has consequences for future configuration updates: see [the configuration file reference](codacy-guardrails-configuration-file.md#baseline-file) for details.
 
 !!! note
-    The IDE extension will ignore any CLI version already installed (e.g. through brew or other package manager) on the machine.
+    Because the analyzer is bundled with the extension, it doesn't use, and isn't affected by, any version of the Codacy CLI already installed on your machine.
 
 
 ### 3. Check if the Codacy MCP Server is properly setup
@@ -97,15 +97,6 @@ You can later generate the instructions manually from the Guardrails section of 
 * Remember that for you to be able to interact with Codacy MCP server, you must be on the `Agent` mode of the chat, not the default `Ask` mode.
 * If you're still having issues with the MCP server, try to run the command `Preferences: Open User Settings (JSON)`, look for the Codacy MCP server settings and right on top of it you'll should see a `Start` option. Click on it and, if unsuccessful, go to `View > Debug Console` and check for errors. Don't forget to ensure you have `node.js` and `npx` installed and set up.
 
-## How to install - WSL {: id="how-to-install-wsl"}
-
-### 1. Install or update [WSL.](https://learn.microsoft.com/en-us/windows/wsl/install)
-
-### 2. Install `curl` on your WSL instance if it's not installed already.
-* This will depend on the Linux distribution you are using, but for example in Debian and Ubuntu the command will be something like `sudo apt update && sudo apt install curl`. Execute the command on a WSL terminal.
-
-### 3. Now you should be able to install the Codacy extension without issues. Go through the steps [here](#how-to-install-quick-guide).
-
 ## How to install - Manually
 
 ### 1.  Install and activate the Codacy CLI for local analysis {: id="install-cli"}
@@ -118,13 +109,26 @@ The Codacy Analysis CLI is distributed as an npm package and installs the same w
 npm i -g @codacy/analysis-cli
 ```
 
-#### Installation
+#### Initialization
 
-Authenticate with your Codacy API token, then initialize the configuration for your repository. Initialization detects your stack and selects the tools and patterns it needs:
+Next, initialize the analysis configuration for your repository. This creates `.codacy/codacy.config.json`, which decides [which tools and patterns run](codacy-guardrails-configuration-file.md).
+
+**If your repository is on Codacy Cloud**, authenticate and pull its configuration, so that local analysis matches the code patterns and coding standards configured for the repository. This is what the IDE extension does for you:
 
 ```bash
 codacy-analysis login --token <YOUR_API_TOKEN>
+codacy-analysis init --remote <gh|gl|bb> <ORGANIZATION> <REPOSITORY>
+```
+
+**If you're working purely locally**, let the CLI detect your stack and pick the tools and patterns itself. No token is needed:
+
+```bash
 codacy-analysis init --auto
+```
+
+Then run the analysis. The first run downloads any tool dependencies that are missing:
+
+```bash
 codacy-analysis analyze --install-dependencies
 ```
 
@@ -248,6 +252,17 @@ If your proxy uses a custom CA certificate, the extension has an extra setting a
 - dartanalyzer
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
 - Revive
+
+## How to install - WSL {: id="how-to-install-wsl"}
+
+Windows support for JetBrains IDEs relies on WSL. If you're on Windows and using a VSCode-based IDE, you don't need any of this: [follow the quick guide](#how-to-install-quick-guide) instead.
+
+### 1. Install or update [WSL.](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+### 2. Install `curl` on your WSL instance if it's not installed already.
+* This will depend on the Linux distribution you are using, but for example in Debian and Ubuntu the command will be something like `sudo apt update && sudo apt install curl`. Execute the command on a WSL terminal.
+
+### 3. Now you should be able to install the Codacy extension without issues. Go through the steps [here](#how-to-install-quick-guide-jetbrains).
 
 ## How to install - JetBrains Quick Guide {: id="how-to-install-quick-guide-jetbrains"}
 

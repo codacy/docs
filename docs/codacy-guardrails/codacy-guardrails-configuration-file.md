@@ -12,6 +12,13 @@ The [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) (`@c
 !!! note
     This is different from the [Codacy configuration file](../repositories-configure/codacy-configuration-file.md) (`.codacy.yml`/`.codacy.yaml`), which configures Codacy Cloud's own analysis. The two aren't related.
 
+!!! important
+    The IDE extension bundles the analyzer, so Guardrails works without you installing anything: it writes and updates these files for you. The `codacy-analysis` commands on this page are the standalone CLI, which the extension doesn't put on your `PATH`. To run them yourself, [install the CLI](codacy-guardrails-getting-started.md#install-cli) first:
+
+    ```bash
+    npm i -g @codacy/analysis-cli
+    ```
+
 ## The configuration file {: id="configuration-file"}
 
 `codacy-analysis init` creates `.codacy/codacy.config.json` the first time you run it: Guardrails does this for you automatically. It looks like this:
@@ -45,11 +52,11 @@ The [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) (`@c
 | Field | Meaning |
 |---|---|
 | `metadata.source` | How the file was generated: `local` (default detection, no flag), `auto` (`init --auto`), `default` (`init --default`), `remote` (`init --remote`, synced from Codacy Cloud), or `container` (`init --container`, from a `.codacyrc`) |
-| `tools[].toolId` | The tool's identifier (for example `ESLint9`, `PMD7`). Run `codacy-analysis info` to see the exact IDs registered for your repository |
+| `tools[].toolId` | The tool's identifier (for example `ESLint9`, `PMD7`). The tools in this list are the ones that run on your repository; to see every tool ID the CLI knows about, along with whether it's installed locally, run `codacy-analysis info` |
 | `tools[].patterns` | The **enabled** patterns for that tool. There's no `enabled: false` flag: a pattern not listed here is disabled |
 | `tools[].patterns[].parameters` | Parameter overrides for that pattern, as string values |
 | `tools[].exclude` / top-level `exclude` | Glob patterns excluded from that tool, or from analysis entirely |
-| `tools[].useLocalConfigurationFile` | When `true`, the tool runs from its own native config file (for example `.eslintrc.json`) instead of the patterns listed here (see [customizing analysis rules](codacy-guardrails-how-to-configure-rules.md)) |
+| `tools[].useLocalConfigurationFile` | When `true`, the tool runs from its own native config file (recorded in `tools[].localConfigurationFile`, for example `.eslintrc.json`) instead of the patterns listed here. `init` sets this for you when it finds a native config file for the tool in your repository; for a `remote`-sourced config it reflects the **Configuration file** toggle on your repository's **Code patterns** page (see [customizing analysis rules](codacy-guardrails-how-to-configure-rules.md#using-configuration-files)) |
 
 To hand-edit the file: remove a pattern's entry to disable it, add one to enable it, or add a `parameters` object to tune it. Save the file and run `codacy-analysis analyze`: no extra command is needed to pick up manual edits.
 
@@ -61,9 +68,12 @@ To hand-edit the file: remove a pattern's entry to disable it, add one to enable
 You don't have to hand-edit the file for the most common change. When Codacy Guardrails flags an issue in your editor, open the Quick Fix menu (the lightbulb) on the highlighted line and choose **Codacy CLI: Disable pattern**.
 
 !!! note
-    This action only appears when your repository is connected to Codacy Cloud and you have admin permission on it: it isn't available for a purely local, cloud-disconnected setup.
+    This action only appears when your repository is connected to Codacy Cloud: it isn't available for a purely local, cloud-disconnected setup. Disabling the pattern also requires [admin permission](../organizations/roles-and-permissions-for-organizations.md) on the repository. If you don't have it, the editor tells you so when you run the action.
 
-This doesn't edit `codacy.config.json` directly: it calls the Codacy API to disable the pattern for the repository on Codacy Cloud. Your local configuration only picks up the change the next time it's regenerated from Codacy Cloud, either by running `codacy-analysis update-config` yourself, or incidentally, whenever Guardrails re-syncs your configuration in the background (see [does changing configuration in the UI apply automatically?](codacy-guardrails-faq.md#when-i-change-some-analysis-configuration-in-the-ui-is-it-automatically-applied-to-guardrails)).
+This doesn't edit `codacy.config.json` directly: it calls the Codacy API to disable the pattern for the repository on Codacy Cloud. Your local configuration only picks up the change the next time it's regenerated from Codacy Cloud, either by running `codacy-analysis update-config` yourself, or when Guardrails re-syncs your configuration in the background, which it does whenever you add a new file to the repository (see [does changing configuration in the UI apply automatically?](codacy-guardrails-faq.md#when-i-change-some-analysis-configuration-in-the-ui-is-it-automatically-applied-to-guardrails)).
+
+!!! note
+    If the pattern is enabled by a [coding standard](../organizations/using-coding-standards.md), the editor can't disable it: coding standards are shared across your organization, so the action opens a panel pointing you to the standards you need to edit in the Codacy Cloud UI instead.
 
 For a purely local setup with no Codacy Cloud connection, there's no editor action for this: edit `tools[].patterns` in the file directly, as described above.
 
@@ -79,7 +89,7 @@ For a `local`, `auto`, or `default`-sourced config, running `codacy-analysis upd
 
 It adds whatever is new in `next` but wasn't in `base` (a newly detected language or framework), removes whatever was in `base` but isn't in `next` anymore (a language or framework that's gone), and otherwise leaves `current` untouched: patterns you disabled stay disabled and parameters you tuned survive.
 
-A `remote`-sourced config skips this reconciliation entirely: Codacy Cloud is authoritative for cloud-connected repositories, so both `codacy-analysis update-config` and Guardrails' background sync always pull a fresh copy from Codacy Cloud and overwrite the file outright, baseline included. Manual edits to a remote config don't survive the next sync, no matter how it's triggered.
+A `remote`- or `container`-sourced config skips this reconciliation entirely, because its origin is authoritative: for a `remote` config, both `codacy-analysis update-config` and Guardrails' background sync always pull a fresh copy from Codacy Cloud and overwrite the file outright, baseline included; a `container` config is regenerated from the `.codacyrc` the same way. Manual edits to either don't survive the next update, no matter how it's triggered.
 
 !!! important
     If `.codacy/codacy.config.baseline.json` is missing, for example because `.codacy` was gitignored and a teammate cloned the repository without it, `update-config` can't tell "you disabled this pattern" apart from "this pattern was never selected." It falls back to an additive merge instead: your edits are kept, but tools or patterns for a language/framework that's no longer in the repository won't be pruned, and disabled patterns may reappear. The CLI prints a warning when this happens.

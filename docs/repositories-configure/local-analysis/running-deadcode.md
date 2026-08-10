@@ -7,6 +7,9 @@ tool_name: deadcode
 
 To run deadcode as a [client-side tool](client-side-tools.md):
 
+!!! note
+    This page uses the legacy `codacy-analysis-cli` command: [a different, older tool](client-side-tools.md#client-side-tools) from the `codacy-analysis` CLI used elsewhere in these docs.
+
 <!-- NOTE
      include-markdown breaks the final list in two, use include instead. -->
 {%

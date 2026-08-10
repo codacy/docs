@@ -32,11 +32,16 @@ Configuring and enforcing coding standards at scale across all IDEs in your orga
 Codacy Guardrails isn't a large language model, but an IDE extension that uses an MCP Server to communicate with existing AI coding agents owned by the user.
 
 ## When I change some analysis configuration in the UI, is it automatically applied to Guardrails?
-Not yet: we're working on making this automatic. In the meantime, run this command in your repository to sync your local configuration with your latest changes:
+Not immediately, but you don't have to do anything special either. For a repository connected to Codacy Cloud, Guardrails re-syncs your local configuration in the background whenever you add a new file to the repository, pulling a fresh copy of your patterns from Codacy Cloud. Changes you make in the UI are picked up on that next sync.
+
+To force the sync right away, you can run the standalone [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) in your repository:
 
 ``` bash
+npm i -g @codacy/analysis-cli
 codacy-analysis update-config
 ```
+
+The IDE extension bundles its own copy of the analyzer, so this `npm` install is only needed to run the command yourself.
 
 See the [configuration file reference](codacy-guardrails-configuration-file.md) for how this command reconciles your local edits with what's changed.
 
