@@ -11,7 +11,9 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 ## VSCode-based IDEs
 
-## Prerequisites
+Codacy Guardrails supports Visual Studio Code, Cursor, and Windsurf.
+
+## Prerequisites (VSCode) {: id="prerequisites"}
 
 - git
 - node.js - ensure the `npx` command runs without issues
@@ -46,7 +48,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
 - Revive
 
-## How to install - Quick Guide {: id="how-to-install-quick-guide"}
+## How to install - Quick Guide (VSCode) {: id="how-to-install-quick-guide"}
 
 ### 1.  Download the extension
 
@@ -101,7 +103,7 @@ You can later generate the instructions manually from the Guardrails section of 
 * Remember that for you to be able to interact with Codacy MCP server, you must be on the `Agent` mode of the chat, not the default `Ask` mode.
 * If you're still having issues with the MCP server, try to run the command `Preferences: Open User Settings (JSON)`, look for the Codacy MCP server settings and right on top of it you'll should see a `Start` option. Click on it and, if unsuccessful, go to `View > Debug Console` and check for errors. Don't forget to ensure you have `node.js` and `npx` installed and set up.
 
-## How to install - Manually
+## How to install - Manually (VSCode) {: id="how-to-install-manually"}
 
 ### 1.  Install and activate the Codacy CLI for local analysis {: id="install-cli"}
 
@@ -143,9 +145,9 @@ If you want to use MCP Server with a NPM package you should download it from [he
 !!! important
     You can find some limitations using this approach because the AI doesn't automatically analyse the code generated unless there's a rule set for it to do so. When using the IDE extension (VS Code, Cursor, or Windsurf), we create those AI rules for the workspace, but if you are installing the MCP manually, you will need to create those rules by yourself. <a href="mailto:support@codacy.com">Let us know if you you plan to use this approach, so we can provide more information</a>
 
-#### Setup
+<span id="setup"></span>
 
-##### Cursor, Windsurf and Claude Desktop
+#### Cursor, Windsurf and Claude Desktop
 
 Depending on what IDE you are connecting the MCP Server to, you can use the following methods:
 
@@ -167,7 +169,7 @@ Depending on what IDE you are connecting the MCP Server to, you can use the foll
 }
 ```
 
-##### VS Code with Copilot
+#### VS Code with Copilot
 
 For connecting the MCP Server to Copilot in VS Code, add the following to the global config of the IDE:
 
@@ -212,7 +214,7 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 
 ![Copilot Agent with Codacy tools](images/copilot_agent.png)
 
-## Proxy configuration
+## Proxy configuration (VSCode) {: id="proxy-configuration"}
 
 Codacy Guardrails supports working behind a proxy. To set it up, configure your proxy the same way you would for any other VSCode feature, either through the IDE settings or through your system's environment variables.
 
@@ -225,6 +227,9 @@ If your proxy uses a custom CA certificate, the extension has an extra setting a
 
 ## JetBrains IDEs
 
+Codacy Guardrails supports IntelliJ IDEA, PyCharm, PhpStorm, and other IDEs in the JetBrains suite.
+
+## Prerequisites (JetBrains) {: id="prerequisites-jetbrains"}
 
 ### Supported Operating Systems
 
@@ -257,7 +262,7 @@ If your proxy uses a custom CA certificate, the extension has an extra setting a
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
 - Revive
 
-## How to install - WSL {: id="how-to-install-wsl"}
+## How to install - WSL (JetBrains) {: id="how-to-install-wsl"}
 
 Windows support for JetBrains IDEs relies on WSL. If you're on Windows and using a VSCode-based IDE, you don't need any of this: [follow the quick guide](#how-to-install-quick-guide) instead.
 
@@ -268,10 +273,12 @@ Windows support for JetBrains IDEs relies on WSL. If you're on Windows and using
 
 ### 3. Now you should be able to install the Codacy extension without issues. Go through the steps [here](#how-to-install-quick-guide-jetbrains).
 
-## How to install - JetBrains Quick Guide {: id="how-to-install-quick-guide-jetbrains"}
+## How to install - Quick Guide (JetBrains) {: id="how-to-install-quick-guide-jetbrains"}
 
-#### Note for Windows users:
-To take advantage of Codacy Guardrails on Windows, you need to set up WSL first; [check the steps here](#how-to-install-wsl). **Only local analysis** are supported for Windows, as MCP support for JetBrains IDEs is still not completely done.
+<span id="note-for-windows-users"></span>
+
+!!! note "For Windows users"
+    To take advantage of Codacy Guardrails on Windows, you need to set up WSL first; [check the steps here](#how-to-install-wsl). **Only local analysis** are supported for Windows, as MCP support for JetBrains IDEs is still not completely done.
 
 ### 1.  Install the extension
 
