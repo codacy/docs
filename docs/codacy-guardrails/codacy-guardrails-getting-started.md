@@ -62,7 +62,7 @@ This will open the Codacy Extension in your IDE Marketplace. Click **Install**
 
 ### 2. Codacy CLI sets up automatically
 
-The extension installs and initializes the Codacy CLI for local analysis in the background — no click needed. If automatic setup fails, a **Set up local analysis** button appears so you can retry it.
+The extension installs and initializes the Codacy CLI for local analysis in the background: no click needed. If automatic setup fails, a **Set up local analysis** button appears so you can retry it.
 
 ![Install CLI](images/codacy-extension-activate-cli.png)
 
@@ -72,7 +72,7 @@ It will create a folder in your local repository called **.codacy** with all nee
 -  The Codacy CLI configuration used to run analysis locally
 
 !!! note
-    If you don't want this folder to be part of your repository in future commits but continue working with it locally, add **.codacy** to your `.gitignore` file. Keep in mind that gitignoring `codacy.config.json` and `codacy.config.baseline.json` (as opposed to just the `generated/` subfolder) has consequences for future configuration updates — see [the configuration file reference](codacy-guardrails-configuration-file.md#baseline-file) for details.
+    If you don't want this folder to be part of your repository in future commits but continue working with it locally, add **.codacy** to your `.gitignore` file. Keep in mind that gitignoring `codacy.config.json` and `codacy.config.baseline.json` (as opposed to just the `generated/` subfolder) has consequences for future configuration updates: see [the configuration file reference](codacy-guardrails-configuration-file.md#baseline-file) for details.
 
 !!! note
     The IDE extension will ignore any CLI version already installed (e.g. through brew or other package manager) on the machine.

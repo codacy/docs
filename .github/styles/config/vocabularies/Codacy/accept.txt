@@ -37,6 +37,8 @@ Flawfinder
 Fluentd
 GitHub
 GitLab
+gitignored
+gitignoring
 Gocyclo
 Gosec
 Gradle
@@ -54,9 +56,11 @@ jscpd
 JSHint
 JSP
 Junie
+lightbulb
 markdownlint
 monorepo
 namespace
+npm
 OAuth
 onboarding
 Opengrep
@@ -89,6 +93,7 @@ SpotBugs
 SQLint
 Staticcheck
 Stylelint
+subfolder
 SVGs
 SwiftLint
 Tailor
