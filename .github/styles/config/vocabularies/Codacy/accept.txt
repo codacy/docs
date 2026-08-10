@@ -57,6 +57,7 @@ Junie
 markdownlint
 monorepo
 namespace
+npm
 OAuth
 onboarding
 Opengrep
@@ -89,6 +90,7 @@ SpotBugs
 SQLint
 Staticcheck
 Stylelint
+subfolder
 SVGs
 SwiftLint
 Tailor

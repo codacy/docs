@@ -32,13 +32,16 @@ Configuring and enforcing coding standards at scale across all IDEs in your orga
 Codacy Guardrails isn't a large language model, but an IDE extension that uses an MCP Server to communicate with existing AI coding agents owned by the user.
 
 ## When I change some analysis configuration in the UI, is it automatically applied to Guardrails?
-We're still working on this feature but in order to update the new tool configuration. you should run the command in your repository:
+Not immediately, but you don't have to do anything special either. For a repository connected to Codacy Cloud, Guardrails re-syncs your local configuration in the background whenever you add a new file to the repository, pulling a fresh copy of your patterns from Codacy Cloud. Changes you make in the UI are picked up on that next sync.
+
+To force the sync right away, you can run the standalone [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) in your repository:
 
 ``` bash
-codacy-cli init
+npm i -g @codacy/analysis-cli
+codacy-analysis update-config
 ```
 
-This way Codacy will run the latest configuration.
+The IDE extension bundles its own copy of the analyzer, so this `npm` install is only needed to run the command yourself.
 
 ## Does guardrails generate code for me?
 Guardrails itself doesn’t generate anything but we inform the AI agent where issues are located and scan generated code using the Codacy CLI.
@@ -62,7 +65,7 @@ Check our [Team and Organization plans](https://www.codacy.com/pricing) to unloc
 -   Jira integration
 
 ## Does Guardrails work with all OS?
-Guardrails is supported on MacOS, Linux, and Windows (via [WSL](https://learn.microsoft.com/en-us/windows/wsl/install))
+Guardrails is supported on MacOS, Linux, and Windows, natively for Visual Studio Code, Cursor, and Windsurf. JetBrains IDEs on Windows still require [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 ## Can I use Guardrails without an AI copilot?
 Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf, but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.

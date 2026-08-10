@@ -16,9 +16,42 @@ To run ESLint as a [client-side tool](client-side-tools.md):
     end="<!--instructions-end-->"
 %}
 
-## Important Concepts
+## Manual configuration
 
-- **`.codacy/codacy.yaml`**: Configuration file to specify `node` and `eslint` versions for the CLI.
+Install the Codacy Analysis CLI and initialize the repository. Initialization writes `.codacy/codacy.config.json`, which `analyze` requires: pulling it from Codacy Cloud with `init --remote` means the local run uses the same ESLint patterns as your repository's **Code patterns** page.
+
+```bash
+npm i -g @codacy/analysis-cli
+codacy-analysis init --remote <gh|gl|bb> <ORGANIZATION> <REPOSITORY>
+```
+
+Then run the analysis and upload the results:
+
+```bash
+codacy-analysis analyze --tool eslint9 --output-format sarif --output eslint.sarif
+codacy-analysis upload eslint.sarif --commit $COMMIT_SHA
+```
+
+ **If you're using an account API token**, you must also provide the `--repository` flag with your provider, organization, and repository name. You can obtain these values from the URL of your repository dashboard on Codacy:
+
+```bash
+codacy-analysis analyze --tool eslint9 --output-format sarif --output eslint.sarif
+codacy-analysis upload eslint.sarif --commit $COMMIT_SHA --repository <gh|gl|bb> <ORGANIZATION> <REPOSITORY>
+```
+
+!!! note
+    `--tool` matches against the tool IDs in your `.codacy/codacy.config.json`, and only tools listed there run. If `--tool eslint9` doesn't match your setup, check that file for the ID it recorded, which is `ESLint9` for ESLint 9.x and `ESLint8` for ESLint 8.x.
+
+!!! important
+    On Codacy Self-hosted, `upload` sends results to a different endpoint from the rest of the CLI, and it doesn't read `CODACY_API_BASE_URL`. Point it at your instance with `CODACY_RESULTS_API_BASE_URL` as well:
+
+    ```bash
+    export CODACY_RESULTS_API_BASE_URL=<your Codacy instance results API URL>
+    ```
+
+## GitHub Action
+
+The GitHub Action still uses [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2), a separate tool from the `codacy-analysis` CLI used above. It reads its runtime and tool versions from a `.codacy/codacy.yaml` file in your repository:
 
 ```yaml
 runtimes:
@@ -26,23 +59,6 @@ runtimes:
 tools:
     - eslint@9.3.0
 ```
-## Manual configuration
-
-```bash
-codacy-cli install
-codacy-cli analyze -t eslint -o eslint.sarif
-codacy-cli upload -s eslint.sarif -c $COMMIT_SHA -t CODACY_PROJECT_TOKEN
-```
-
- **If you're using an account API token**, you must also provide the flags `-p`, `-o`, and `-r`. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:
-
-```bash
-codacy-cli install
-codacy-cli analyze -t eslint -o eslint.sarif
-codacy-cli analyze -t eslint -o eslint.sarif -c $COMMIT_SHA -a CODACY_API_TOKEN -p provider (gh|gl|bb) -o ORGANIZATION -r REPOSITORY
-```
-
-## GitHub Action
 
 
 ### Using a project token
