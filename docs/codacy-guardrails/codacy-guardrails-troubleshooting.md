@@ -1,5 +1,17 @@
 # Troubleshooting
 
+## Codacy CLI
+
+### Diagnosing local analysis issues
+
+Before digging further, run the following command in your repository to check your authentication status, system information, and which analysis tools are registered and available:
+
+```bash
+codacy-analysis info
+```
+
+This is a good first step whenever local analysis or Guardrails scanning isn't behaving as expected.
+
 ## Node
 
 ### Claude Desktop
@@ -17,8 +29,7 @@ npm install -g @codacy/codacy-mcp
       "command": "/Users/yourusername/.nvm/versions/node/vXX.X.X/bin/node",
       "args": ["/path-to/codacy-mcp/dist/index.js"],
       "env": {
-        "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>",
-        "CODACY_CLI_VERSION": "<VERSION>"
+        "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>"
       }
     }
   }

@@ -32,13 +32,11 @@ Configuring and enforcing coding standards at scale across all IDEs in your orga
 Codacy Guardrails isn't a large language model, but an IDE extension that uses an MCP Server to communicate with existing AI coding agents owned by the user.
 
 ## When I change some analysis configuration in the UI, is it automatically applied to Guardrails?
-We're still working on this feature but in order to update the new tool configuration. you should run the command in your repository:
+Not yet — we're working on making this automatic. In the meantime, run this command in your repository to sync your local configuration with your latest changes:
 
 ``` bash
 codacy-analysis update-config
 ```
-
-This way Codacy will run the latest configuration.
 
 ## Does guardrails generate code for me?
 Guardrails itself doesn’t generate anything but we inform the AI agent where issues are located and scan generated code using the Codacy CLI.
@@ -62,7 +60,7 @@ Check our [Team and Organization plans](https://www.codacy.com/pricing) to unloc
 -   Jira integration
 
 ## Does Guardrails work with all OS?
-Guardrails is supported on MacOS, Linux, and Windows (via [WSL](https://learn.microsoft.com/en-us/windows/wsl/install))
+Guardrails is supported on MacOS, Linux, and Windows — natively for Visual Studio Code, Cursor, and Windsurf. JetBrains IDEs on Windows still require [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 ## Can I use Guardrails without an AI copilot?
 Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf, but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.

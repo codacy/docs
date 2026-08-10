@@ -15,16 +15,14 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 - git
 - node.js - ensure the `npx` command runs without issues
-- curl
 
 ### Supported Operating Systems
 
 - macOS
 - Linux
-- Windows (via WSL)
+- Windows (native, no WSL required)
 
-!!! important
-    **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.
+!!! note
     We currently only support VSCode, Cursor, and Windsurf on Windows.
 
 
@@ -50,9 +48,6 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 ## How to install - Quick Guide {: id="how-to-install-quick-guide"}
 
-#### Note for Windows users:
-To take advantage of Codacy Guardrails on Windows, you might need to setup WSL first, [check the steps here.](#how-to-install-wsl)
-
 ### 1.  Download the extension
 
 - [Visual Studio Code](https://tinyurl.com/codacy-vscode-extension)
@@ -65,19 +60,19 @@ This will open the Codacy Extension in your IDE Marketplace. Click **Install**
 ![Install Extension](images/install-codacy-extension.png)
 
 
-### 2. Install and activate the Codacy CLI for local analysis
+### 2. Codacy CLI sets up automatically
 
-Click on the button **Install Codacy CLI**
+The extension installs and initializes the Codacy CLI for local analysis in the background — no click needed. If automatic setup fails, a **Set up local analysis** button appears so you can retry it.
 
 ![Install CLI](images/codacy-extension-activate-cli.png)
 
 It will create a folder in your local repository called **.codacy** with all needed configuration:
 
 -  The configuration from all built-in scanners
--  Codacy CLI script to run analysis locally 
+-  The Codacy CLI configuration used to run analysis locally
 
 !!! note
-    If you don't want this folder to be part of your repository in future commits but continue working with it locally, please add **.codacy** to your .gitignore file
+    If you don't want this folder to be part of your repository in future commits but continue working with it locally, add **.codacy** to your `.gitignore` file. Keep in mind that committing `codacy.config.json` and `codacy.config.baseline.json` (everything except the `generated/` subfolder) lets future configuration updates preserve your local edits instead of falling back to a less precise merge.
 
 !!! note
     The IDE extension will ignore any CLI version already installed (e.g. through brew or other package manager) on the machine.
@@ -157,8 +152,7 @@ Depending on what IDE you are connecting the MCP Server to, you can use the foll
       "command": "npx",
       "args": ["-y", "@codacy/codacy-mcp"],
       "env": {
-        "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>",
-        "CODACY_CLI_VERSION": "<VERSION>"
+        "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>"
       }
     }
   }
@@ -178,8 +172,7 @@ For connecting the MCP Server to Copilot in VS Code, add the following to the gl
         "command": "npx",
         "args": ["-y", "@codacy/codacy-mcp"],
         "env": {
-          "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>",
-          "CODACY_CLI_VERSION": "<VERSION>"
+          "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>"
         }
       }
     }
