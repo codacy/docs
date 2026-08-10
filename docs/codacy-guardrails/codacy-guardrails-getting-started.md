@@ -68,11 +68,15 @@ The extension ships with the Codacy analyzer built in, so there's nothing to ins
 
 It will create a folder in your local repository called **.codacy** with all needed configuration:
 
--  The configuration from all built-in scanners
--  The configuration used to run analysis locally
+-   `codacy.config.json` and `codacy.config.baseline.json`: which built-in scanners and rules run on your repository
+-   `generated/`: the per-scanner configuration files derived from them at analysis time
+
+These files belong to the [Codacy Analysis CLI](https://www.npmjs.com/package/@codacy/analysis-cli) that the extension bundles, and the extension writes and updates them for you. To change which rules run, [customize them on Codacy Cloud](codacy-guardrails-how-to-configure-rules.md) rather than editing these files.
 
 !!! note
-    If you don't want this folder to be part of your repository in future commits but continue working with it locally, add **.codacy** to your `.gitignore` file. Keep in mind that gitignoring `codacy.config.json` and `codacy.config.baseline.json` (as opposed to just the `generated/` subfolder) has consequences for future configuration updates: see [the configuration file reference](codacy-guardrails-configuration-file.md#baseline-file) for details.
+    Commit `codacy.config.json` and `codacy.config.baseline.json` so your team analyzes against the same configuration. The CLI already keeps the `generated/` subfolder out of version control for you, via a `.codacy/.gitignore` file.
+
+    If you'd rather not track any of it, add **.codacy** to your `.gitignore` instead. Local analysis still works, but without the committed files each clone rebuilds its configuration from scratch.
 
 !!! note
     Because the analyzer is bundled with the extension, it doesn't use, and isn't affected by, any version of the Codacy CLI already installed on your machine.
@@ -111,7 +115,7 @@ npm i -g @codacy/analysis-cli
 
 #### Initialization
 
-Next, initialize the analysis configuration for your repository. This creates `.codacy/codacy.config.json`, which decides [which tools and patterns run](codacy-guardrails-configuration-file.md).
+Next, initialize the analysis configuration for your repository. This creates `.codacy/codacy.config.json`, which decides which tools and patterns run.
 
 **If your repository is on Codacy Cloud**, authenticate and pull its configuration, so that local analysis matches the code patterns and coding standards configured for the repository. This is what the IDE extension does for you:
 
