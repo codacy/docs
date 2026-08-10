@@ -8,9 +8,12 @@ The following diagram presents a high-level overview of the local analysis flow.
 
 Codacy supports client-side tools in two ways:
 
--   **Containerized tools:** Codacy provides Docker images to run analysis tools locally. To fetch code pattern configurations from Codacy, run the images, print out analysis results, and upload them to Codacy, use the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli).
+-   **Containerized tools:** Codacy provides Docker images to run analysis tools locally. To fetch code pattern configurations from Codacy, run the images, print out analysis results, and upload them to Codacy, use the [legacy Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli) (`codacy-analysis-cli`).
 
-    The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
+    The legacy Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
+
+    !!! note
+        This is an older tool that Codacy no longer actively maintains, separate from the [Codacy Analysis CLI](../../codacy-guardrails/codacy-guardrails-getting-started.md#install-cli) (`@codacy/analysis-cli`, the `codacy-analysis` command) that powers Codacy Guardrails and [running ESLint locally](running-eslint.md). The tools listed below don't have an equivalent on the newer CLI yet.
 
 -   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.<!-- NOTE: If updating this line or the one below, search for and update the matching UI copy on the Code patterns page in codacy-spa. -->
 
