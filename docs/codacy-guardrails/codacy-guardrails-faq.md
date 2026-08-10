@@ -43,7 +43,7 @@ codacy-analysis update-config
 
 The IDE extension bundles its own copy of the analyzer, so this `npm` install is only needed to run the command yourself.
 
-See the [configuration file reference](codacy-guardrails-configuration-file.md) for how this command reconciles your local edits with what's changed.
+See the [configuration file reference](codacy-guardrails-configuration-file.md) for what this command writes.
 
 ## Does guardrails generate code for me?
 Guardrails itself doesn’t generate anything but we inform the AI agent where issues are located and scan generated code using the Codacy CLI.
