@@ -2,7 +2,7 @@
 .md-header__inner { display: grid; grid-template-columns: auto 1fr minmax(15rem, 30rem) 1fr auto auto auto; gap: .65rem; min-height: 4rem; align-items: center; }
 .md-header__button { margin: 0; color: var(--docs-text-secondary); }
 
-.md-header__button.md-logo { display: inline-flex; margin: 0; overflow: hidden; }
+.md-header__button.md-logo { display: inline-flex; justify-self: start; margin: 0; overflow: hidden; }
 .md-header__button.md-logo img { display: block; width: auto; height: 1.75rem; max-width: none; }
 .md-header__button.md-logo img.docs-logo--light { display: none; }
 [data-md-color-scheme="codacy-light"] .md-header__button.md-logo img.docs-logo--dark { display: none; }
@@ -33,14 +33,38 @@ body[data-md-color-scheme="codacy-light"] [data-md-component="palette"] .docs-pa
 body[data-md-color-scheme="codacy-dark"] [data-md-component="palette"] .docs-palette__fallback-button--dark { display: inline-flex; }
 .md-header [data-md-component="palette"]:hover { border-color: var(--docs-border-strong); color: var(--docs-text-secondary); }
 .md-header [data-md-component="palette"] .md-header__button:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }
-.md-header .md-search { display: block; position: fixed; inset: 0; z-index: 100; width: auto; visibility: hidden; opacity: 0; pointer-events: none; background: color-mix(in srgb, var(--docs-bg) 55%, transparent); backdrop-filter: blur(3px); }
-/* Material locks the page when search opens. Keep the header fixed so the
-   search backdrop can filter every navbar control consistently. */
-.md-toggle[data-md-toggle="search"]:checked ~ .md-header { position: fixed; top: 0; right: 0; left: 0; z-index: 101; }
-.md-toggle[data-md-toggle="search"]:checked ~ .md-header [data-md-component="palette"] { max-width: 2.25rem; opacity: 1; transition: none; }
+/* .md-header's own backdrop-filter makes it a containing block for
+   position:fixed descendants, so inset:0 here would resolve against the
+   header's own (much shorter) box instead of the viewport. top/left/right
+   still land correctly since the sticky header sits flush with the viewport
+   edges, but height needs the vh unit, which always resolves against the
+   real viewport regardless of containing block. */
+.md-header .md-search { display: block; position: fixed; top: 0; right: 0; left: 0; height: 100dvh; z-index: 100; width: auto; visibility: hidden; opacity: 0; pointer-events: none; background: color-mix(in srgb, var(--docs-bg) 55%, transparent); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+/* Material locks the page when search opens. The header is already sticky,
+   which keeps it pinned at the top without a position switch — switching to
+   fixed removes it from the flow and collapses its reserved space, which was
+   snapping the page up by the header's height the instant search opened.
+   Just raise the stacking order so the search backdrop sits over the navbar.
+   A colour wash reads inconsistently across the navbar's mixed backgrounds
+   (solid CTA, icon tiles, plain text), so dim every control by the same
+   relative amount via opacity instead of layering a tint on top. */
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header { z-index: 101; }
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-logo,
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-header__button.md-icon,
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .docs-search-trigger,
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .version-select-container,
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .docs-header__cta,
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-tabs { opacity: .35; transition: opacity .15s ease; }
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header [data-md-component="palette"] { max-width: 2.25rem; opacity: .35; transition: none; }
 .md-toggle[data-md-toggle="search"]:not(:checked) ~ .md-header .md-search__inner { width: 0; height: 0; margin: 0; overflow: hidden; }
 .md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search { visibility: visible; opacity: 1; pointer-events: auto; }
 .md-search__overlay { display: block; position: absolute; inset: 0; background: transparent; }
+/* Material only makes this a real, clickable full-page catcher at >=60em —
+   below that it shrinks to a decorative 2rem circle with pointer-events:none
+   (it expects mobile users to close via the header icon instead). Force the
+   same full-coverage, clickable overlay at every width so tapping outside
+   the search box closes it on mobile too, matching desktop. */
+.md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search__overlay { inset: 0; width: auto; height: auto; transform: none; pointer-events: auto; }
 .md-search__inner { position: relative; z-index: 1; display: flex; float: none; flex-direction: column; width: min(40rem, calc(100vw - 3rem)); max-height: calc(100dvh - 6.5rem); height: auto; margin: clamp(4.75rem, 8vh, 5.25rem) auto 0; overflow: hidden; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg); box-shadow: 0 24px 48px color-mix(in srgb, var(--docs-text) 12%, transparent), 0 0 0 1px color-mix(in srgb, var(--docs-bg) 72%, transparent) inset; }
 [dir="ltr"] .md-search__inner, [dir="rtl"] .md-search__inner { float: none; }
 .md-toggle[data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: min(40rem, calc(100vw - 3rem)); max-height: calc(100dvh - 6.5rem); height: auto; margin: clamp(4.75rem, 8vh, 5.25rem) auto 0; overflow: hidden; transform: none; }
@@ -50,8 +74,6 @@ body[data-md-color-scheme="codacy-dark"] [data-md-component="palette"] .docs-pal
 .md-search .md-search__suggest { color: var(--docs-text-tertiary); }
 .md-search .md-search__icon[for="__search"] { top: 50%; left: 1rem; width: 1rem; height: 1rem; transform: translateY(-50%); color: var(--docs-text-tertiary); }
 .md-search .md-search__icon[for="__search"] svg { width: 1rem; height: 1rem; }
-.md-search .md-search__icon[for="__search"] svg:first-child { display: block; }
-.md-search .md-search__icon[for="__search"] svg:last-child { display: none; }
 .md-search .md-search__options { position: absolute; top: .7rem; right: .7rem; z-index: 3; }
 .md-search .md-search__options .md-search__icon { display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: var(--docs-radius); color: var(--docs-text-tertiary); }
 .md-search .md-search__options .md-search__icon svg { width: 1rem; height: 1rem; }

@@ -2,10 +2,16 @@
 
   :root { --docs-frame-gutter: 2rem; }
 
-  .md-main__inner {
+  /* Defined on :root, not .md-main__inner, so the header (a sibling, not a
+     descendant, of .md-main__inner) can also read these to line its own
+     columns up with the content grid below it. */
+  :root {
     --docs-primary-rail-width: 16rem;
     --docs-toc-width: 12rem;
     --docs-grid-gap: 2rem;
+  }
+
+  .md-main__inner {
     position: relative;
     display: grid;
     grid-template-columns: var(--docs-primary-rail-width) minmax(0, 1fr) var(--docs-toc-width);
@@ -75,14 +81,32 @@
   [dir="rtl"] .md-sidebar--primary .md-nav--primary .md-nav__link { margin-left: 0; }
 
   .md-sidebar__inner, .md-sidebar--secondary .md-sidebar__inner { padding-top: 0; }
+
+  /* Line the header up with the content grid below it: the logo's column
+     absorbs the sidebar's rail width (plus the grid's own gap, minus the
+     header's smaller inter-item gap counted twice for the now-empty spacer
+     column next to it) so the search field starts flush with where the
+     article column starts, instead of floating in the middle of the bar.
+     Skipped on pages with no visible sidebar (e.g. the 404 page), which keep
+     the original centered layout. */
+  .md-header:has(+ .md-container .md-sidebar--primary:not([hidden])):not(:has(+ .md-container .docs-error)) .md-header__inner {
+    grid-template-columns: calc(var(--docs-primary-rail-width) + var(--docs-grid-gap) - 1.3rem) 0 minmax(15rem, 30rem) 1fr auto auto auto;
+  }
+  .md-header:has(+ .md-container .md-sidebar--primary:not([hidden])):not(:has(+ .md-container .docs-error)) .docs-search-trigger {
+    margin: 0 1.2rem;
+  }
 }
 
 @media screen and (min-width: 80em) {
 
-  .md-main__inner { --docs-primary-rail-width: 18rem; --docs-toc-width: 14rem; --docs-grid-gap: 3rem; }
+  :root { --docs-primary-rail-width: 18rem; --docs-toc-width: 14rem; --docs-grid-gap: 3rem; }
 }
 
 @media screen and (max-width: 76.2344em) {
+  /* Below this breakpoint .md-tabs (and the border-bottom that comes with it)
+     is hidden, so the navbar loses the divider line it has on desktop. Add it
+     directly to the header instead so the two breakpoints look consistent. */
+  .md-header { border-bottom: 1px solid var(--docs-border); }
   .md-sidebar--secondary:not([hidden]) { display: none; }
 
   .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link { margin-top: .25rem; }

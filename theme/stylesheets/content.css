@@ -1,5 +1,10 @@
 .md-content__inner { position: relative; padding-top: 1.25rem; padding-bottom: 3rem; }
 .md-typeset { color: var(--docs-text-secondary); font-size: 1rem; line-height: 1.7; }
+/* Offsets anchor jumps (TOC links, in-page #hash links) so headings don't land
+   under the sticky header. Scoped to headings rather than a page-wide
+   scroll-padding-top on <html>, which also caught focus() calls on elements
+   inside the header itself and caused a large scroll jump on search open. */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 { scroll-margin-top: 5rem; }
 .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5 { color: var(--docs-text); font-weight: 700; letter-spacing: -.025em; }
 .md-typeset h1 { margin: 0 0 1.5rem; font-size: 1.875rem; line-height: 1.25; }
 .md-typeset h2 { margin-top: 3rem; padding-top: .25rem; font-size: 1.5rem; line-height: 1.35; }
