@@ -84,6 +84,6 @@ svg.docs-nav-section-icon { flex: 0 0 .95rem; width: .95rem; height: .95rem; mar
 .md-tabs__item { height: 2.75rem; padding-inline: .5rem; }
 .md-tabs__item:first-child { padding-left: 0; }
 .md-tabs__item:last-child { padding-right: 0; }
-.md-tabs__link { display: flex; height: 100%; align-items: center; margin-top: 0; padding: 0 .1rem; border-bottom: 2px solid transparent; color: var(--docs-text-secondary); font-size: .8125rem; font-weight: 500; opacity: 1; transition: color .12s ease, border-color .12s ease; }
+.md-tabs__link { display: flex; height: 100%; align-items: center; margin-top: 0; padding: 0 .1rem; border-bottom: 2px solid transparent; color: var(--docs-text-secondary); font-size: .8125rem; font-weight: 600; opacity: 1; transition: color .12s ease, border-color .12s ease; }
 .md-tabs__link:hover { color: var(--docs-text); }
-.md-tabs__item--active .md-tabs__link { border-bottom-color: var(--docs-link); color: var(--docs-link); font-weight: 600; opacity: 1; }
+.md-tabs__item--active .md-tabs__link { border-bottom-color: var(--docs-link); color: var(--docs-link); opacity: 1; }

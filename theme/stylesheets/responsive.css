@@ -55,6 +55,15 @@
     text-transform: uppercase;
   }
 
+  /* A group's collapsed submenu still reserves .4rem of height (Material's
+     .md-nav__toggle ~ .md-nav uses grid-template-rows: minmax(.4rem, 0fr)),
+     so it sits .4rem further from the item below it than a flat page like
+     "Documentation home" does, which has no submenu to reserve that space.
+     Add it back so flat and group items keep the same bottom spacing. */
+  .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item:not(.md-nav__item--nested) {
+    margin-bottom: .4rem;
+  }
+
   .md-path { margin-top: 1.25rem; margin-right: 1.2rem; margin-left: 1.2rem; }
   .md-sidebar--primary { padding-top: .75rem; }
   .md-sidebar--secondary { padding-top: .75rem; }
