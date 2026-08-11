@@ -1,4 +1,9 @@
 .md-content__inner { position: relative; padding-top: 1.25rem; padding-bottom: 3rem; }
+/* Material only gives .md-content__inner its right-hand gutter (margin-right:
+   1.2rem) via a `:not([hidden])` sidebar selector, so pages that hide the TOC
+   through `hide: - toc` (native `[hidden]` attribute) lose 0.4rem of margin and
+   end up wider than every other page. Restore it so widths stay consistent. */
+.md-sidebar--secondary[hidden] ~ .md-content > .md-content__inner { margin-right: 1.2rem; }
 .md-typeset { color: var(--docs-text-secondary); font-size: 1rem; line-height: 1.7; }
 /* Offsets anchor jumps (TOC links, in-page #hash links) so headings don't land
    under the sticky header. Scoped to headings rather than a page-wide
