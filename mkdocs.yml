@@ -86,6 +86,8 @@ extra:
         "Managing Codacy Self-hosted": "server-outline"
         "Troubleshooting and FAQs": "medical-outline"
         "Special thanks": "heart-outline"
+        "Cloud": "cloud-outline"
+        "Self-hosted": "server-outline"
     # Do not show a generated-by badge in the footer.
     generator: false
     # Add pull request preview banner

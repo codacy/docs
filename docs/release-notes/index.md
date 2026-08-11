@@ -2,6 +2,7 @@
 rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 description: Index of release notes for Codacy Cloud and Codacy Self-hosted.
+icon: megaphone-outline
 hide:
   - toc
 ---
