@@ -2,10 +2,16 @@
 
   :root { --docs-frame-gutter: 2rem; }
 
-  .md-main__inner {
+  /* Defined on :root, not .md-main__inner, so the header (a sibling, not a
+     descendant, of .md-main__inner) can also read these to line its own
+     columns up with the content grid below it. */
+  :root {
     --docs-primary-rail-width: 16rem;
     --docs-toc-width: 12rem;
     --docs-grid-gap: 2rem;
+  }
+
+  .md-main__inner {
     position: relative;
     display: grid;
     grid-template-columns: var(--docs-primary-rail-width) minmax(0, 1fr) var(--docs-toc-width);
@@ -24,6 +30,40 @@
   .md-header__button[data-drawer-trigger] { display: none; }
   .md-nav--primary > .md-nav__title { display: none; }
 
+  /* The active tab's own name already shows in the .md-tabs bar above, so
+     drop the redundant repeated label at the top of its sidebar (mobile
+     still needs it — it's the only place a tab name appears there). */
+  .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav__link { display: none; }
+
+  /* Material's own lifted-nav rule pulls each tab's level-2 list left by
+     .6rem (it assumes the now-hidden tab-name label above it needs the
+     extra room). With that label gone, the negative margin instead shifts
+     level-2 icons past the sidebar's left edge, clipping them. */
+  [dir="ltr"] .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav:not(.md-nav--secondary) { margin-left: 0; }
+  [dir="rtl"] .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav:not(.md-nav--secondary) { margin-right: 0; }
+
+  /* Give each tab's top-level items (e.g. "Quality", "Configuring your
+     repositories", but also flat pages like "AI" or "Documentation home")
+     the same small/bold/uppercase treatment the tab-name label above used
+     to have, now that it's the highest-level heading actually visible in
+     the sidebar. Applied uniformly regardless of whether the item has
+     children, so flat pages don't look out of place next to groups. */
+  .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+  }
+
+  /* A group's collapsed submenu still reserves .4rem of height (Material's
+     .md-nav__toggle ~ .md-nav uses grid-template-rows: minmax(.4rem, 0fr)),
+     so it sits .4rem further from the item below it than a flat page like
+     "Documentation home" does, which has no submenu to reserve that space.
+     Add it back so flat and group items keep the same bottom spacing. */
+  .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item:not(.md-nav__item--nested) {
+    margin-bottom: .4rem;
+  }
+
   .md-path { margin-top: 1.25rem; margin-right: 1.2rem; margin-left: 1.2rem; }
   .md-sidebar--primary { padding-top: .75rem; }
   .md-sidebar--secondary { padding-top: .75rem; }
@@ -40,20 +80,42 @@
 
   .md-sidebar--primary .md-sidebar__scrollwrap { scrollbar-gutter: stable !important; }
 
+  @supports (hanging-punctuation: first) {
+    .md-sidebar--primary .md-sidebar__scrollwrap { overflow-y: scroll; }
+  }
+
   .md-sidebar--primary .md-nav--primary > .md-nav__list { padding-inline: 0; }
   .md-sidebar--primary .md-nav--primary .md-nav__link { margin-inline: 0; }
   [dir="ltr"] .md-sidebar--primary .md-nav--primary .md-nav__link { margin-right: 0; }
   [dir="rtl"] .md-sidebar--primary .md-nav--primary .md-nav__link { margin-left: 0; }
 
   .md-sidebar__inner, .md-sidebar--secondary .md-sidebar__inner { padding-top: 0; }
+
+  /* Line the header up with the content grid below it: the logo's column
+     absorbs the sidebar's rail width (plus the grid's own gap, minus the
+     header's smaller inter-item gap counted twice for the now-empty spacer
+     column next to it) so the search field starts flush with where the
+     article column starts, instead of floating in the middle of the bar.
+     Skipped on pages with no visible sidebar (e.g. the 404 page), which keep
+     the original centered layout. */
+  .md-header:has(+ .md-container .md-sidebar--primary:not([hidden])):not(:has(+ .md-container .docs-error)) .md-header__inner {
+    grid-template-columns: calc(var(--docs-primary-rail-width) + var(--docs-grid-gap) - 1.3rem) 0 minmax(15rem, 30rem) 1fr auto auto auto;
+  }
+  .md-header:has(+ .md-container .md-sidebar--primary:not([hidden])):not(:has(+ .md-container .docs-error)) .docs-search-trigger {
+    margin: 0 1.2rem;
+  }
 }
 
 @media screen and (min-width: 80em) {
 
-  .md-main__inner { --docs-primary-rail-width: 18rem; --docs-toc-width: 14rem; --docs-grid-gap: 3rem; }
+  :root { --docs-primary-rail-width: 18rem; --docs-toc-width: 14rem; --docs-grid-gap: 3rem; }
 }
 
 @media screen and (max-width: 76.2344em) {
+  /* Below this breakpoint .md-tabs (and the border-bottom that comes with it)
+     is hidden, so the navbar loses the divider line it has on desktop. Add it
+     directly to the header instead so the two breakpoints look consistent. */
+  .md-header { border-bottom: 1px solid var(--docs-border); }
   .md-sidebar--secondary:not([hidden]) { display: none; }
 
   .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link { margin-top: .25rem; }

@@ -9,12 +9,21 @@
 
 .md-sidebar--primary .md-nav--primary > .md-nav__list { padding-inline: 1rem; }
 .md-sidebar--primary .md-nav--primary .md-nav__link { margin-inline: 0; padding: .5rem; border-radius: var(--docs-radius-sm); }
-.docs-nav-section-icon { flex: 0 0 .95rem; width: .95rem; height: .95rem; margin-right: .45rem; color: var(--docs-text-secondary); }
+/* Material's stock ".md-nav__link svg { height: 1.3em }" outranks a plain
+   class selector on specificity, stretching every sidebar icon vertically.
+   Qualify with the element type to match and win on source order instead. */
+svg.docs-nav-section-icon { flex: 0 0 .95rem; width: .95rem; height: .95rem; margin-right: .45rem; color: var(--docs-text-secondary); }
 .docs-nav-section-icon--standalone { color: var(--docs-text-secondary); transition: color .12s ease; }
 .md-nav__link--active .docs-nav-section-icon--standalone { color: var(--docs-link); }
 
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item { margin-block: .25rem; }
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link { margin-top: 0; }
+/* Material's stock ".md-nav__link:focus { color: var(--md-accent-fg-color) }"
+   fires on plain :focus, not just :focus-visible — a link stays focused (and
+   blue) after a mouse click, not only real keyboard navigation, which reads
+   as a second "active" item sitting right under the actual one. Restrict the
+   accent color to genuine keyboard focus and non-active links. */
+.md-nav__link:focus:not(:focus-visible):not(.md-nav__link--active) { color: var(--docs-text-secondary); }
 .md-sidebar--primary .md-nav__link:is(:hover, :focus-visible) { color: var(--docs-text); background: var(--docs-bg-secondary); }
 .md-sidebar--primary .md-nav__item .md-nav__link--active { background: var(--docs-bg-brand); }
 .md-sidebar--primary .md-nav__item .md-nav__link--active:is(:hover, :focus-visible) { color: var(--docs-link); background: var(--docs-bg-brand); }
@@ -37,6 +46,13 @@
 .md-nav--primary .md-nav__toggle ~ .md-nav > .md-nav__list { padding-left: 0; }
 
 .md-nav--primary .md-nav .md-nav__toggle ~ .md-nav > .md-nav__list { padding-left: .8rem; }
+
+/* Align level-3 pages (the ones revealed when you expand a tab's top-level
+   group) with that group's own text, not just Material's default indent.
+   Scoped to exactly this depth via a full child-selector chain so it
+   doesn't cascade into deeper levels (FAQ subcategories, release-notes
+   years), which should keep the smaller default indent. */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list { padding-left: 1.8rem; }
 .md-sidebar__scrollwrap { overscroll-behavior: contain; scrollbar-color: auto !important; scrollbar-gutter: auto; scrollbar-width: auto !important; }
 .md-sidebar__scrollwrap::-webkit-scrollbar, .md-sidebar__scrollwrap::-webkit-scrollbar-thumb, .md-sidebar__scrollwrap::-webkit-scrollbar-track { width: auto; height: auto; background: initial !important; }
 .md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover { background: initial !important; }
@@ -62,3 +78,12 @@
 .md-path__item + .md-path__item::before { display: none; }
 .docs-ionicon--breadcrumb { flex: 0 0 .8rem; width: .8rem; height: .8rem; margin: 0 .2rem; color: var(--docs-text-tertiary); }
 .md-path__item:first-child .docs-ionicon--breadcrumb { display: none; }
+
+.md-tabs { border-bottom: 1px solid var(--docs-border); background: transparent; }
+.md-tabs__list { gap: .25rem; margin-inline: 0; }
+.md-tabs__item { height: 2.75rem; padding-inline: .5rem; }
+.md-tabs__item:first-child { padding-left: 0; }
+.md-tabs__item:last-child { padding-right: 0; }
+.md-tabs__link { display: flex; height: 100%; align-items: center; margin-top: 0; padding: 0 .1rem; border-bottom: 2px solid transparent; color: var(--docs-text-secondary); font-size: .8125rem; font-weight: 600; opacity: 1; transition: color .12s ease, border-color .12s ease; }
+.md-tabs__link:hover { color: var(--docs-text); }
+.md-tabs__item--active .md-tabs__link { border-bottom-color: var(--docs-link); color: var(--docs-link); opacity: 1; }
