@@ -65,6 +65,10 @@
 
   .md-sidebar--primary .md-sidebar__scrollwrap { scrollbar-gutter: stable !important; }
 
+  @supports (hanging-punctuation: first) {
+    .md-sidebar--primary .md-sidebar__scrollwrap { overflow-y: scroll; }
+  }
+
   .md-sidebar--primary .md-nav--primary > .md-nav__list { padding-inline: 0; }
   .md-sidebar--primary .md-nav--primary .md-nav__link { margin-inline: 0; }
   [dir="ltr"] .md-sidebar--primary .md-nav--primary .md-nav__link { margin-right: 0; }
