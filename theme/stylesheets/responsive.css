@@ -27,7 +27,7 @@
   /* The active tab's own name already shows in the .md-tabs bar above, so
      drop the redundant repeated label at the top of its sidebar (mobile
      still needs it — it's the only place a tab name appears there). */
-  .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link { display: none; }
+  .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav__link { display: none; }
 
   /* Material's own lifted-nav rule pulls each tab's level-2 list left by
      .6rem (it assumes the now-hidden tab-name label above it needs the
@@ -42,7 +42,7 @@
      to have, now that it's the highest-level heading actually visible in
      the sidebar. Applied uniformly regardless of whether the item has
      children, so flat pages don't look out of place next to groups. */
-  .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  .md-nav--lifted > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
     font-size: .75rem;
     font-weight: 700;
     letter-spacing: .025em;

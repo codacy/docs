@@ -676,9 +676,9 @@ nav:
                 - organizations/managing-repositories.md
                 - organizations/segments.md
                 - Reporting:
-                        - organizations/reporting/organization-overview.md
-                        - organizations/reporting/issues-metrics.md
-                        - organizations/reporting/codacy-usage.md
+                      - organizations/reporting/organization-overview.md
+                      - organizations/reporting/issues-metrics.md
+                      - organizations/reporting/codacy-usage.md
                 - organizations/using-gate-policies.md
                 - organizations/using-coding-standards.md
                 - organizations/ai-risk-hub.md

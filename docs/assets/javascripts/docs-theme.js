@@ -164,7 +164,7 @@ function initializeDocsTheme() {
                     // .md-sidebar__scrollwrap scrolled one panel-width to the right,
                     // hiding the active tab's own list off-screen. Force it back to
                     // the resting position before moving focus.
-                    var scrollwrap = drawer.querySelector(".md-sidebar__scrollwrap");
+                    const scrollwrap = drawer.querySelector(".md-sidebar__scrollwrap");
                     if (scrollwrap) {
                         scrollwrap.scrollLeft = 0;
                     }
@@ -173,7 +173,7 @@ function initializeDocsTheme() {
                     // isn't currently visible; focusing it without a scoped lookup
                     // would re-trigger the same off-screen scroll. Prefer the
                     // active tab's first link, and pass preventScroll as a backstop.
-                    var firstLink = drawer.querySelector(".md-nav__item--active > .md-nav .md-nav__list a[href]") || drawer.querySelector(".md-nav__list a[href]");
+                    const firstLink = drawer.querySelector(".md-nav__item--active > .md-nav .md-nav__list a[href]") || drawer.querySelector(".md-nav__list a[href]");
                     if (firstLink) {
                         firstLink.focus({ preventScroll: true });
                     }
