@@ -85,6 +85,7 @@ extra:
         "Codacy API": "code-slash-outline"
         "Managing Codacy Self-hosted": "server-outline"
         "Troubleshooting and FAQs": "medical-outline"
+        "Special thanks": "heart-outline"
     # Do not show a generated-by badge in the footer.
     generator: false
     # Add pull request preview banner
@@ -746,6 +747,7 @@ nav:
                       - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                       - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
                       - faq/troubleshooting/error-line-endings.md
+          - special-thanks.md
     - Release notes:
           - release-notes/index.md
           - Cloud:
@@ -910,4 +912,3 @@ nav:
                       - release-notes/self-hosted/self-hosted-v1.1.0.md
                       - release-notes/self-hosted/self-hosted-v1.0.1.md
                       - release-notes/self-hosted/self-hosted-v1.0.0.md
-          - special-thanks.md
