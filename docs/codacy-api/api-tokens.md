@@ -9,7 +9,7 @@ Codacy provides **account** and **repository**-level API tokens that allow you t
 -   [Upload coverage data](../coverage-reporter/index.md) to Codacy
 -   Upload to Codacy the results of [running client-side analysis tools](../repositories-configure/local-analysis/client-side-tools.md)
 -   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests)
--   [Authenticate with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication)
+-   [Authenticate with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication) (account API tokens only — the Codacy Cloud CLI doesn't currently support repository API tokens)
 
 The sections below provide details about the two types of API tokens and instructions on how to generate and revoke them.
 
@@ -55,7 +55,7 @@ You can create new repository API tokens programmatically [using the Codacy API]
 
 1.  Click the button **Create API token** under **Repository API tokens**.
 
-    -   Optionally give the token a name. Names may contain only letters, numbers, and dashes, up to 100 characters. If you don't set a name, Codacy generates one for you.
+    -   Optionally give the token a name. Names may contain only letters, numbers, and dashes, up to 100 characters, and must be unique within the repository. If you don't set a name, Codacy generates one for you.
     -   Select an expiration date for the token. Repository API tokens must always have an expiration date, up to a maximum of one year from creation — there's no option to create a token that never expires.
 
     !!! tip
