@@ -66,9 +66,15 @@
 .md-typeset .admonition > :first-child:not(.admonition-title), .md-typeset details > :first-child:not(summary) { margin-top: 0; }
 .md-typeset .admonition > p, .md-typeset details > p { color: var(--docs-text-secondary); }
 .md-typeset .admonition > .admonition-title + p, .md-typeset details > summary + p { margin: 0; }
-.md-typeset .admonition > .admonition-title, .md-typeset details > summary { display: flex; gap: .6rem; align-items: flex-start; margin: 0 0 .3rem; padding: 0; background: transparent; color: var(--docs-text); font-size: .875rem; font-weight: 600; line-height: 1.45; list-style: none; }
+/* Hanging indent, not flex: titles carry inline markup (links, bold), and each of
+   those would otherwise become a separate flex item with a gap between the words. */
+.md-typeset .admonition > .admonition-title, .md-typeset details > summary { display: block; position: relative; margin: 0 0 .3rem; padding: 0 0 0 1.5rem; background: transparent; color: var(--docs-text); font-size: .875rem; font-weight: 600; line-height: 1.45; list-style: none; }
+/* Material's own `[dir=ltr] .md-typeset summary` outranks a plain `details > summary`
+   selector, so match its specificity to keep summaries aligned with admonition titles.
+   The extra right padding keeps the title clear of the expand/collapse chevron. */
+.md-typeset details[class] > summary { padding: 0 1.2rem 0 1.5rem; }
 .md-typeset .admonition > .admonition-title:only-child, .md-typeset details > summary:only-child { margin-bottom: 0; }
-.md-typeset .admonition > .admonition-title::before, .md-typeset details > summary::before { content: ""; position: static; display: block; flex: 0 0 .9rem; width: .9rem; height: .9rem; margin-top: .18rem; background-color: var(--docs-link); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
+.md-typeset .admonition > .admonition-title::before, .md-typeset details[class] > summary::before { content: ""; position: absolute; top: .18rem; left: 0; display: block; width: .9rem; height: .9rem; background-color: var(--docs-link); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
 .md-typeset .admonition.important > .admonition-title::before, .md-typeset details.important > summary::before { -webkit-mask-image: var(--md-admonition-icon--info); mask-image: var(--md-admonition-icon--info); }
 .md-typeset .admonition.info > .admonition-title::before, .md-typeset details.info > summary::before { background-color: #00b8d4; }
 .md-typeset .admonition.tip > .admonition-title::before, .md-typeset details.tip > summary::before, .md-typeset .admonition.success > .admonition-title::before, .md-typeset details.success > summary::before { background-color: var(--docs-success); }
