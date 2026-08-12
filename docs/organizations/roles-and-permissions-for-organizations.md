@@ -76,12 +76,14 @@ To revoke the organization manager role:
 
 The following GitHub Cloud and GitHub Enterprise roles map to these Codacy roles:
 
--   **Outside collaborator<sup>1</sup>:** not supported as a Codacy role
--   **Repository read, Repository triage:** [Repository read](#repository-read)
--   **Repository write, Repository maintain:** [Repository write](#repository-write)
--   **Repository admin:** [Repository admin](#repository-admin)
--   **No GitHub role maps here—assigned directly on Codacy:** [Organization manager](#organization-manager)
--   **Organization Owner:** [Organization admin](#organization-admin)
+| GitHub role | Codacy role |
+|---|---|
+| Outside collaborator<sup>1</sup> | Not supported as a Codacy role |
+| Repository read, Repository triage | [Repository read](#repository-read) |
+| Repository write, Repository maintain | [Repository write](#repository-write) |
+| Repository admin | [Repository admin](#repository-admin) |
+| — (assigned directly on Codacy) | [Organization manager](#organization-manager) |
+| Organization Owner | [Organization admin](#organization-admin) |
 
 <sup>1</sup>: Outside collaborators aren't supported as members of organizations on Codacy. You can still [add outside collaborators to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.
 
@@ -89,12 +91,14 @@ The following GitHub Cloud and GitHub Enterprise roles map to these Codacy roles
 
 The following GitLab Cloud and GitLab Enterprise roles map to these Codacy roles:
 
--   **External user<sup>1</sup>:** not supported as a Codacy role
--   **Project guest, Project reporter:** [Repository read](#repository-read)
--   **Project developer:** [Repository write](#repository-write)
--   **Project maintainer, Project owner:** [Repository admin](#repository-admin)
--   **No GitLab role maps here—assigned directly on Codacy:** [Organization manager](#organization-manager)
--   **Group owner, Administrator:** [Organization admin](#organization-admin)
+| GitLab role | Codacy role |
+|---|---|
+| External user<sup>1</sup> | Not supported as a Codacy role |
+| Project guest, Project reporter | [Repository read](#repository-read) |
+| Project developer | [Repository write](#repository-write) |
+| Project maintainer, Project owner | [Repository admin](#repository-admin) |
+| — (assigned directly on Codacy) | [Organization manager](#organization-manager) |
+| Group owner, Administrator | [Organization admin](#organization-admin) |
 
 <sup>1</sup>: External users aren't supported as members of organizations on Codacy. You can still [add external users to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.
 
@@ -102,9 +106,11 @@ The following GitLab Cloud and GitLab Enterprise roles map to these Codacy roles
 
 The following Bitbucket Cloud and Bitbucket Server roles map to these Codacy roles:
 
--   **Read, Write<sup>1</sup>:** [Repository read](#repository-read)
--   **No Bitbucket role maps here—assigned directly on Codacy:** [Organization manager](#organization-manager)
--   **Admin:** [Organization admin](#organization-admin)
+| Bitbucket role | Codacy role |
+|---|---|
+| Read, Write<sup>1</sup> | [Repository read](#repository-read) |
+| — (assigned directly on Codacy) | [Organization manager](#organization-manager) |
+| Admin | [Organization admin](#organization-admin) |
 
 Bitbucket has no role that maps to [Repository write](#repository-write) or [Repository admin](#repository-admin).
 
