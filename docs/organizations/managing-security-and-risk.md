@@ -131,7 +131,7 @@ The same Common Vulnerability and Exposure can be classified with different seve
 
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
 
-!!! important " [**Segments**](segments.md) filter won't be considered when sharing the filtered view"
+!!! important "[**Segments**](segments.md) filter won't be considered when sharing the filtered view"
 
 ## Ignoring findings {: id="ignoring-findings"}
 

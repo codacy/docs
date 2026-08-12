@@ -53,12 +53,22 @@ Read `plugins:` in `mkdocs.yml` for the current list. Four of them affect what y
 
 ## Prose checks in CI
 
-Both run on pull requests and neither blocks a merge.
+Both run on pull requests.
 
-- **Vale** (`.github/workflows/vale.yml`) posts inline review comments. It runs with `filter_mode: added`, so it only comments on lines the pull request adds, and `fail_on_error: false`, so it never fails the check. Its vocabulary file, `.github/styles/config/vocabularies/Codacy/accept.txt`, is the source of truth for tool and product spellings. Run it against changed files only — across all of `docs/` it returns hundreds of pre-existing alerts unrelated to any change.
-- **A readability report** posts a score summary on the pull request. Informational.
+- **Vale** (`.github/workflows/vale.yml`) posts inline review comments through reviewdog, on added lines only (`filter_mode: added`). **It reports a failed check when it finds anything on those lines.** The workflow sets `fail_on_error: false`, which does not prevent this — reviewdog exits non-zero on its own once it has results in the diff. Do not tell anyone a Vale comment is non-blocking without checking the check's actual conclusion.
+- **A readability report** posts a score summary. Informational, and does not fail.
 
-Treat both as advisory input, not as a gate to satisfy. Do not restructure a sentence solely to move a score, and do not suppress an alert without an inline reason.
+Vale's scope is set by the section globs in `.vale.ini`. Prose styles apply to `docs/` and the repo's top-level documentation, and deliberately not to agent instruction files, which follow conventions the Microsoft style would fight. Its vocabulary file, `.github/styles/config/vocabularies/Codacy/accept.txt`, is the source of truth for tool and product spellings.
+
+Run Vale against changed files only:
+
+```bash
+vale docs/<path>/<page>.md
+```
+
+Across all of `docs/` it returns hundreds of pre-existing alerts unrelated to any change, so a repo-wide run tells you nothing about your own work.
+
+Treat the content of both reports as advisory: do not restructure a sentence solely to move a readability score, and do not suppress an alert without an inline reason. Treat the check status as real, because it gates the pull request's green tick.
 
 ## The theme layer
 

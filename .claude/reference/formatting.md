@@ -27,6 +27,8 @@ Check for these first, in this order. Each one makes a page unusable regardless 
 
 Syntax is `!!! note`, with the body indented four spaces. Available types include `note`, `tip`, `info`, `warning`, `important`, `example`, and `quote`.
 
+Two forms are both valid and both in use here. `!!! note` followed by an indented body renders the type name as the heading. `!!! note "Some text"` puts that text in the heading and needs no body — used throughout this repo for one-line asides, including ones containing markdown links, which do render inside the title. Do not convert between the forms while making an unrelated change; match the page. Two things to get right in the title form: no leading space inside the quotes, and no closing period.
+
 - One admonition carries one message at one severity. Two messages means either two blocks in different places, or prose.
 - Place it directly above the step or paragraph it modifies, never at the top of a page as an introduction.
 - Never stack two in a row and never nest one inside another. Stacking is a signal that the surrounding prose is doing too little work.
