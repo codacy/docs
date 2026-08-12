@@ -100,6 +100,20 @@ extra:
 # To disable while developing locally set MKDOCS_STRICT to false
 strict: !ENV [MKDOCS_STRICT, true]
 
+# Link validation
+# MkDocs defaults `anchors` to info level, which means a link to a heading that no
+# longer exists passes the strict build silently. Most work in this repo is editing
+# existing pages, and rewording a heading changes its anchor, so this is promoted to
+# a warning: with `strict` above, a broken #anchor now fails the build.
+# `unrecognized_links` is deliberately left at its default. It catches links written in
+# the directory form (`../segments` instead of `segments.md`), which resolve to the wrong
+# URL silently. Every occurrence under docs/ has been fixed, but one remains under
+# submodules/chart — a separate repository this one cannot edit. Promote this to `warn`
+# once that link is fixed upstream; until then it would fail the build on someone
+# else's file.
+validation:
+    anchors: warn
+
 # Extensions
 markdown_extensions:
     # Add cards such as tips, notes, and warnings

@@ -102,8 +102,8 @@ Since July 7, 2026, when you archive a repository on GitHub, Codacy automaticall
 
 ## Finding your repositories with Segments {: id="provider-segments"}
 
-Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
-!!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
+Codacy allows you to utilise [**Segments**](segments.md) to categorize and filter repositories more effectively within the Codacy platform.
+!!! info "Check out how to [enable and configure **Segments**](segments.md#enabling-segments)"
 
 ![Repositories list filter](images/organization-manage-repos-custom-properties.png)
 
@@ -113,6 +113,6 @@ Codacy allows you to utilise [**Segments**](../segments) to categorize and filte
 
 
 ## See also
--  [How to setup Segments?](../segments)
+-  [How to setup Segments?](segments.md)
 -  [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
 -  [How does Codacy support GitHub Enterprise?](../faq/general/how-does-codacy-support-github-enterprise.md)
