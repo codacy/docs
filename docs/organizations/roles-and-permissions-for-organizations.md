@@ -112,150 +112,36 @@ Bitbucket has no role that maps to [Repository write](#repository-write) or [Rep
 
 ## Permissions by Codacy role
 
-The tables below list what each Codacy role is allowed to do. These permissions are the same regardless of Git provider—see [Permissions for GitHub](#permissions-for-github), [Permissions for GitLab](#permissions-for-gitlab), or [Permissions for Bitbucket](#permissions-for-bitbucket) to find your Codacy role.
-
-### Repository read
+The table below compares what each Codacy role is allowed to do. These permissions are the same regardless of Git provider—see [Permissions for GitHub](#permissions-for-github), [Permissions for GitLab](#permissions-for-gitlab), or [Permissions for Bitbucket](#permissions-for-bitbucket) to find your Codacy role.
 
 <table>
   <thead>
     <tr>
       <th>Operation</th>
-      <th>Allowed</th>
+      <th id="repository-read">Repository read</th>
+      <th id="repository-write">Repository write</th>
+      <th id="repository-admin">Repository admin</th>
+      <th id="organization-manager">Organization manager</th>
+      <th id="organization-admin">Organization admin</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td></tr>
-    <tr><td>View and follow private repository</td><td class="yes">Yes</td></tr>
-    <tr><td>Access Security and risk management</td><td class="yes">Yes<sup>2</sup></td></tr>
-    <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td></tr>
-    <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="no">No</td></tr>
-    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td></tr>
-    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="no">No</td></tr>
-    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td></tr>
-    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td></tr>
-    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td></tr>
-    <tr><td>Add and remove repository</td><td class="no">No</td></tr>
-    <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td></tr>
-    <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td></tr>
-    <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td></tr>
-    <tr><td>Invite and accept members, modify billing</td><td class="no">No</td></tr>
-    <tr><td>Assign and revoke the organization manager role</td><td class="no">No</td></tr>
-  </tbody>
-</table>
-
-### Repository write
-
-<table>
-  <thead>
-    <tr>
-      <th>Operation</th>
-      <th>Allowed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td></tr>
-    <tr><td>View and follow private repository</td><td class="yes">Yes</td></tr>
-    <tr><td>Access Security and risk management</td><td class="yes">Yes<sup>2</sup></td></tr>
-    <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td></tr>
-    <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="no">No</td></tr>
-    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td></tr>
-    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td></tr>
-    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td></tr>
-    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td></tr>
-    <tr><td>Add and remove repository</td><td class="no">No</td></tr>
-    <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td></tr>
-    <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td></tr>
-    <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td></tr>
-    <tr><td>Invite and accept members, modify billing</td><td class="no">No</td></tr>
-    <tr><td>Assign and revoke the organization manager role</td><td class="no">No</td></tr>
-  </tbody>
-</table>
-
-### Repository admin
-
-<table>
-  <thead>
-    <tr>
-      <th>Operation</th>
-      <th>Allowed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td></tr>
-    <tr><td>View and follow private repository</td><td class="yes">Yes</td></tr>
-    <tr><td>Access Security and risk management</td><td class="yes">Yes<sup>2</sup></td></tr>
-    <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td></tr>
-    <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="no">No</td></tr>
-    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="yes">Yes</td></tr>
-    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository Git provider integration settings</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository quality gates and goals</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="yes">Yes</td></tr>
-    <tr><td>Add and remove repository</td><td class="yes">Yes<sup>3</sup></td></tr>
-    <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td></tr>
-    <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td></tr>
-    <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td></tr>
-    <tr><td>Invite and accept members, modify billing</td><td class="no">No</td></tr>
-    <tr><td>Assign and revoke the organization manager role</td><td class="no">No</td></tr>
-  </tbody>
-</table>
-
-### Organization manager
-
-<table>
-  <thead>
-    <tr>
-      <th>Operation</th>
-      <th>Allowed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Join organization</td><td class="yes">Yes</td></tr>
-    <tr><td>View and follow private repository</td><td class="yes">Yes</td></tr>
-    <tr><td>Access Security and risk management</td><td class="yes">Yes</td></tr>
-    <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td></tr>
-    <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="yes">Yes</td></tr>
-    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe">Inherits original permission</td></tr>
-    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="maybe">Inherits original permission</td></tr>
-    <tr><td>Configure repository Git provider integration settings</td><td class="maybe">Inherits original permission</td></tr>
-    <tr><td>Configure repository quality gates and goals</td><td class="maybe">Inherits original permission</td></tr>
-    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="maybe">Inherits original permission</td></tr>
-    <tr><td>Add and remove repository</td><td class="maybe">Inherits original permission</td></tr>
-    <tr><td>Manage organization gate policies and coding standards</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure organization default settings for Git provider integration</td><td class="yes">Yes</td></tr>
-    <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="yes">Yes</td></tr>
-    <tr><td>Invite and accept members, modify billing</td><td class="no">No</td></tr>
-    <tr><td>Assign and revoke the organization manager role</td><td class="no">No</td></tr>
-  </tbody>
-</table>
-
-### Organization admin
-
-<table>
-  <thead>
-    <tr>
-      <th>Operation</th>
-      <th>Allowed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td></tr>
-    <tr><td>View and follow private repository</td><td class="yes">Yes</td></tr>
-    <tr><td>Access Security and risk management</td><td class="yes">Yes</td></tr>
-    <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td></tr>
-    <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="yes">Yes</td></tr>
-    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="yes">Yes</td></tr>
-    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository Git provider integration settings</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository quality gates and goals</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="yes">Yes</td></tr>
-    <tr><td>Add and remove repository</td><td class="yes">Yes</td></tr>
-    <tr><td>Manage organization gate policies and coding standards</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure organization default settings for Git provider integration</td><td class="yes">Yes</td></tr>
-    <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="yes">Yes</td></tr>
-    <tr><td>Invite and accept members, modify billing</td><td class="yes">Yes</td></tr>
-    <tr><td>Assign and revoke the organization manager role</td><td class="yes">Yes</td></tr>
+    <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes</td><td class="yes">Yes<sup>1</sup></td></tr>
+    <tr><td>View and follow private repository</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Access Security and risk management</td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Add and remove repository</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes<sup>3</sup></td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Invite and accept members, modify billing</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+    <tr><td>Assign and revoke the organization manager role</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
   </tbody>
 </table>
 
