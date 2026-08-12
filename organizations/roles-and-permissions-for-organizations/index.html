@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-07-16 15:22:37">
+    <meta http-equiv="last-modified" content="2026-08-12 15:09:30">
   
   
 
@@ -2398,6 +2398,15 @@
     <span class="md-ellipsis">
       
         Permissions for Bitbucket
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#permissions-by-codacy-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissions by Codacy role
       
     </span>
   </a>
@@ -9057,6 +9066,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#permissions-by-codacy-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissions by Codacy role
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9130,12 +9148,13 @@
 <li>To roles, by <a href="#change-analysis-configuration">configuring repository management permissions</a></li>
 <li>To individual members, by <a href="#managing-the-organization-manager-role">assigning the organization manager role</a></li>
 </ul>
-<p>To review the permissions granted by each role, see the tables for each Git provider:</p>
+<p>To find your Codacy role, see the roles for your Git provider:</p>
 <ul>
 <li><a href="#permissions-for-github">Permissions for GitHub</a></li>
 <li><a href="#permissions-for-gitlab">Permissions for GitLab</a></li>
 <li><a href="#permissions-for-bitbucket">Permissions for Bitbucket</a></li>
 </ul>
+<p>Then see what that role can do in <a href="#permissions-by-codacy-role">Permissions by Codacy role</a>.</p>
 <p>To list and manage the members of your Codacy organization, see the <a href="../managing-people/">Managing people</a> page.</p>
 <h2 id="change-analysis-configuration">Configuring repository management permissions<a class="headerlink" href="#change-analysis-configuration" title="Permanent link">#</a></h2>
 <div class="admonition info">
@@ -9155,7 +9174,7 @@
 <p class="admonition-title">Only organization admins can update this setting</p>
 </div>
 <p>To grant an organization member additional permissions, you can assign that member the organization manager role. This role isn't influenced by a member's Git provider role.</p>
-<p>To review the additional permissions granted by the organization manager role, see the tables for each Git provider (<a href="#permissions-for-github">GitHub</a>, <a href="#permissions-for-gitlab">GitLab</a>, <a href="#permissions-for-bitbucket">Bitbucket</a>).</p>
+<p>To review the additional permissions granted by the organization manager role, see <a href="#organization-manager">Organization manager</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Organization managers can access the <strong>Policies</strong> and <strong>Integrations</strong> settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.</p>
@@ -9189,482 +9208,141 @@
 </li>
 </ol>
 <h2 id="permissions-for-github">Permissions for GitHub<a class="headerlink" href="#permissions-for-github" title="Permanent link">#</a></h2>
-<p>The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresponding Codacy roles and the operations that they're allowed to perform:</p>
+<p>The following GitHub Cloud and GitHub Enterprise roles map to these Codacy roles:</p>
 <table>
-  <thead>
-    <tr>
-      <th>GitHub role</th>
-      <th>Outside<br/>collaborator<sup>1</sup></th>
-      <th>Repository<br/>read</th>
-      <th>Repository<br/>triage</th>
-      <th>Repository<br/>write</th>
-      <th>Repository<br/>maintain</th>
-      <th>Repository<br/>admin</th>
-      <th>-</th>
-      <th>Organization<br/>Owner</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Codacy role</td>
-      <td>-</td>
-      <td colspan="2">Repository<br/>read</td>
-      <td colspan="2">Repository<br/>write</td>
-      <td>Repository<br/>admin</td>
-      <td><a href="#managing-the-organization-manager-role">Organization<br/>manager</a></td>
-      <td>Organization<br/>admin</td>
-    </tr>
-    <tr>
-      <td>Join organization</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes<sup>2</sup></td>
-      <td colspan="2" class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes<sup>2</sup></td>
-    </tr>
-    <tr>
-      <td>View and follow private repository</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access Security and risk management</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes<sup>3</sup></td>
-      <td colspan="2" class="yes">Yes<sup>3</sup></td>
-      <td class="yes">Yes<sup>3</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access AI Risk Hub Overview</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access AI Risk Hub AI assets and Tools &amp; workflows</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
-      <td class="no">No</td>
-      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository Git provider integration settings</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository quality gates and goals</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Enable repository analysis to run on a local build server, manage repository API tokens</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Add and remove repository</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes<sup>4</sup></td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Manage organization gate policies and coding standards</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure organization default settings for Git provider integration</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Obtain audit logs for organization events<sup>5</sup></td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Invite and accept members,<br/>modify billing</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Assign and revoke the organization manager role</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-    </tr>
-  </tbody>
+<thead>
+<tr>
+<th>GitHub role</th>
+<th>Codacy role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outside collaborator<sup>1</sup></td>
+<td>Not supported as a Codacy role</td>
+</tr>
+<tr>
+<td>Repository read, Repository triage</td>
+<td><a href="#repository-read">Repository read</a></td>
+</tr>
+<tr>
+<td>Repository write, Repository maintain</td>
+<td><a href="#repository-write">Repository write</a></td>
+</tr>
+<tr>
+<td>Repository admin</td>
+<td><a href="#repository-admin">Repository admin</a></td>
+</tr>
+<tr>
+<td>— (assigned directly on Codacy)</td>
+<td><a href="#organization-manager">Organization manager</a></td>
+</tr>
+<tr>
+<td>Organization Owner</td>
+<td><a href="#organization-admin">Organization admin</a></td>
+</tr>
+</tbody>
 </table>
-
-<p><sup>1</sup>: Outside collaborators aren't supported as members of organizations on Codacy. You can still <a href="../managing-people/#adding-people">add outside collaborators to Codacy</a> so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.<br />
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
-<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
-<sup>4</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.<br />
-<sup>5</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.</p>
+<p><sup>1</sup>: Outside collaborators aren't supported as members of organizations on Codacy. You can still <a href="../managing-people/#adding-people">add outside collaborators to Codacy</a> so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.</p>
 <h2 id="permissions-for-gitlab">Permissions for GitLab<a class="headerlink" href="#permissions-for-gitlab" title="Permanent link">#</a></h2>
-<p>The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy roles and the operations that they're allowed to perform:</p>
+<p>The following GitLab Cloud and GitLab Enterprise roles map to these Codacy roles:</p>
 <table>
-  <thead>
-    <tr>
-      <th>GitLab role</th>
-      <th>External<br/>user<sup>1</sup></th>
-      <th>Project<br/>guest</th>
-      <th>Project<br/>reporter</th>
-      <th>Project<br/>developer</th>
-      <th>Project<br/>maintainer</th>
-      <th>Project<br/>owner</th>
-      <th>-</th>
-      <th>Group<br/>owner</th>
-      <th>Administrator</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Codacy role</td>
-      <td>-</td>
-      <td colspan="2">Repository<br/>read</td>
-      <td>Repository<br/>write</td>
-      <td colspan="2">Repository<br/>admin</td>
-      <td><a href="#managing-the-organization-manager-role">Organization<br/>manager</a></td>
-      <td colspan="2">Organization<br/>admin</td>
-    </tr>
-    <tr>
-      <td>Join organization</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td colspan="2" class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes<sup>2</sup></td>
-    </tr>
-    <tr>
-      <td>View and follow private repository</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access Security and risk management</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes<sup>3</sup></td>
-      <td class="yes">Yes<sup>3</sup></td>
-      <td colspan="2" class="yes">Yes<sup>3</sup></td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access AI Risk Hub Overview</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access AI Risk Hub AI assets and Tools &amp; workflows</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
-      <td class="no">No</td>
-      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository Git provider integration settings</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository quality gates and goals</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository to run analysis on local build server, manage repository API tokens</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Add and remove repository</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="maybe">Inherits original permission</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Manage organization gate policies and coding standards</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure organization default settings for Git provider integration</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Obtain audit logs for organization events<sup>4</sup></td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Invite and accept members,<br/>modify billing</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Assign and revoke the organization manager role</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-  </tbody>
+<thead>
+<tr>
+<th>GitLab role</th>
+<th>Codacy role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>External user<sup>1</sup></td>
+<td>Not supported as a Codacy role</td>
+</tr>
+<tr>
+<td>Project guest, Project reporter</td>
+<td><a href="#repository-read">Repository read</a></td>
+</tr>
+<tr>
+<td>Project developer</td>
+<td><a href="#repository-write">Repository write</a></td>
+</tr>
+<tr>
+<td>Project maintainer, Project owner</td>
+<td><a href="#repository-admin">Repository admin</a></td>
+</tr>
+<tr>
+<td>— (assigned directly on Codacy)</td>
+<td><a href="#organization-manager">Organization manager</a></td>
+</tr>
+<tr>
+<td>Group owner, Administrator</td>
+<td><a href="#organization-admin">Organization admin</a></td>
+</tr>
+</tbody>
 </table>
-
-<p><sup>1</sup>: External users aren't supported as members of organizations on Codacy. You can still <a href="../managing-people/#adding-people">add external users to Codacy</a> so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.<br />
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
-<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
-<sup>4</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.</p>
+<p><sup>1</sup>: External users aren't supported as members of organizations on Codacy. You can still <a href="../managing-people/#adding-people">add external users to Codacy</a> so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.</p>
 <h2 id="permissions-for-bitbucket">Permissions for Bitbucket<a class="headerlink" href="#permissions-for-bitbucket" title="Permanent link">#</a></h2>
-<p>The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corresponding Codacy roles and the operations that they're allowed to perform:</p>
+<p>The following Bitbucket Cloud and Bitbucket Server roles map to these Codacy roles:</p>
+<table>
+<thead>
+<tr>
+<th>Bitbucket role</th>
+<th>Codacy role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read, Write<sup>1</sup></td>
+<td><a href="#repository-read">Repository read</a></td>
+</tr>
+<tr>
+<td>— (assigned directly on Codacy)</td>
+<td><a href="#organization-manager">Organization manager</a></td>
+</tr>
+<tr>
+<td>Admin</td>
+<td><a href="#organization-admin">Organization admin</a></td>
+</tr>
+</tbody>
+</table>
+<p>Bitbucket has no role that maps to <a href="#repository-write">Repository write</a> or <a href="#repository-admin">Repository admin</a>.</p>
+<p><sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.</p>
+<h2 id="permissions-by-codacy-role">Permissions by Codacy role<a class="headerlink" href="#permissions-by-codacy-role" title="Permanent link">#</a></h2>
+<p>The table below compares what each Codacy role is allowed to do. These permissions are the same regardless of Git provider—see <a href="#permissions-for-github">Permissions for GitHub</a>, <a href="#permissions-for-gitlab">Permissions for GitLab</a>, or <a href="#permissions-for-bitbucket">Permissions for Bitbucket</a> to find your Codacy role.</p>
 <table>
   <thead>
     <tr>
-      <th>Bitbucket role</th>
-      <th>Read</th>
-      <th>Write<sup>1</sup></th>
-      <th>-</th>
-      <th>Admin</th>
+      <th>Operation</th>
+      <th id="repository-read">Repository read</th>
+      <th id="repository-write">Repository write</th>
+      <th id="repository-admin">Repository admin</th>
+      <th id="organization-manager">Organization manager</th>
+      <th id="organization-admin">Organization admin</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Codacy role</td>
-      <td colspan="2">Repository<br/>read</td>
-      <td><a href="#managing-the-organization-manager-role">Organization<br/>manager</a></td>
-      <td>Organization<br/>admin</td>
-    </tr>
-    <tr>
-      <td>Join organization</td>
-      <td colspan="2" class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes<sup>2</sup></td>
-    </tr>
-    <tr>
-      <td>View and follow private repository</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access Security and risk management</td>
-      <td colspan="2" class="yes">Yes<sup>3</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access AI Risk Hub Overview</td>
-      <td colspan="2" class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access AI Risk Hub AI assets and Tools &amp; workflows</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Ignore issues and files,<br/>configure code patterns,<br/>reanalyze branches and pull requests</td>
-      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
-      <td colspan="2" class="no">No</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository Git provider integration settings</td>
-      <td colspan="2" class="no">No</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository quality gates and goals</td>
-      <td colspan="2" class="no">No</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure repository to run analysis on local build server, manage repository API tokens</td>
-      <td colspan="2" class="no">No</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Add and remove repository</td>
-      <td colspan="2" class="no">No</td>
-      <td class="maybe">Inherits original permission</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Manage organization gate policies and coding standards</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure organization default settings for Git provider integration</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Obtain audit logs for organization events<sup>4</sup></td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Invite and accept members,<br/>modify billing</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Assign and revoke the organization manager role</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-    </tr>
+    <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes</td><td class="yes">Yes<sup>1</sup></td></tr>
+    <tr><td>View and follow private repository</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Access Security and risk management</td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Add and remove repository</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes<sup>3</sup></td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Invite and accept members, modify billing</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+    <tr><td>Assign and revoke the organization manager role</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
   </tbody>
 </table>
 
-<p><sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.<br />
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
-<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
+<p><sup>1</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
+<sup>2</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
+<sup>3</sup>: On GitHub, requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.<br />
 <sup>4</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
@@ -9677,17 +9355,12 @@ td:not(:first-child), th:not(:first-child) {
   text-align: center !important;
 }
 
-/*Background color for row containing the Codacy permission levels*/
-table:not(data-exclude) tr:nth-child(1) td {
-  background-color: var(--docs-bg-brand);
-}
-
-/*Add vertical borders and disable horizontal borders*/
-td {
+/*Add vertical and horizontal borders between cells*/
+th, td {
   border-left: 1px solid var(--md-default-fg-color--lightest);
   border-top: 1px solid var(--md-default-fg-color--lightest);
 }
-td:nth-child(1) {
+th:nth-child(1), td:nth-child(1) {
   border-left: 0;
 }
 
@@ -9710,7 +9383,7 @@ td:nth-child(1) {
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-07-16 15:22:37"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 16, 2026</span></time>
+    <time datetime="2026-08-12 15:09:30"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 12, 2026</span></time>
   </aside>
 
 
