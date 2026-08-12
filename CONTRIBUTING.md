@@ -161,6 +161,15 @@ Follow these Markdown conventions when editing the documentation:
         This feature is not supported for pull requests.
     ```
 
+-   Use the [collapsible blocks syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#collapsible-blocks) for supporting detail that most readers can skip, such as long troubleshooting steps or an exhaustive list of options. `???` starts collapsed, `???+` starts expanded:
+
+    ```markdown
+    ??? note "Why does Codacy need these permissions?"
+        Codacy needs read access to your repository to analyze it.
+    ```
+
+    Collapsible blocks always need a title, since that's all readers see before expanding. Don't put anything a reader must see to follow the page inside one: readers scanning the page won't see it, and the browser's find-in-page doesn't reliably look inside collapsed blocks.
+
 If you are unsure about the best syntax or way to convey information in Markdown, search for similar examples on the existing Markdown files.
 
 ### Making changes to the documentation
