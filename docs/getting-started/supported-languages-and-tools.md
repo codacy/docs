@@ -207,7 +207,7 @@ Malicious packages identified in the [OpenSSF Malicious Packages database](https
 
 ## License scanning
 
-| Language | Tools |
+| Language | Package managers |
 |---|---|
 | C | Conan |
 | C++ | Conan |
@@ -337,7 +337,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 | <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-codesniffer">codacy/codacy-codesniffer</a> |
 | <a href="https://phpmd.org/">PHP Mess Detector</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-phpmd">codacy/codacy-phpmd</a> |
 | <a href="https://pmd.github.io/">PMD</a> [^complexity-limitations] | <a class="skip-vale" href="https://github.com/codacy/codacy-pmd7">codacy/codacy-pmd7</a> |
-| <a href="https://github.com/landscapeio/prospector2">Prospector</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-prospector">codacy/codacy-prospector</a> |
+| <a href="https://github.com/landscapeio/prospector">Prospector</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-prospector">codacy/codacy-prospector</a> |
 | <a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-psscriptanalyzer">codacy/codacy-psscriptanalyzer</a> |
 | <a href="https://github.com/pylint-dev/pylint">Pylint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-pylint-python3">codacy/codacy-pylint-python3</a> |
 | <a href="https://github.com/remarkjs/remark-lint">remark-lint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-remark-lint">codacy/codacy-remark-lint</a> |
