@@ -168,12 +168,12 @@ td:not(:first-child), th:not(:first-child) {
   text-align: center !important;
 }
 
-/*Add vertical borders and disable horizontal borders*/
-td {
+/*Add vertical and horizontal borders between cells*/
+th, td {
   border-left: 1px solid var(--md-default-fg-color--lightest);
   border-top: 1px solid var(--md-default-fg-color--lightest);
 }
-td:nth-child(1) {
+th:nth-child(1), td:nth-child(1) {
   border-left: 0;
 }
 
