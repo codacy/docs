@@ -74,6 +74,17 @@
 .md-typeset .admonition.tip > .admonition-title::before, .md-typeset details.tip > summary::before, .md-typeset .admonition.success > .admonition-title::before, .md-typeset details.success > summary::before { background-color: var(--docs-success); }
 .md-typeset .admonition.warning > .admonition-title::before, .md-typeset details.warning > summary::before { background-color: var(--docs-warning); }
 .md-typeset .admonition.danger > .admonition-title::before, .md-typeset details.danger > summary::before { background-color: var(--docs-danger); }
+/* Untitled admonitions (`!!! note ""`) have no title element to hang the icon on,
+   so the icon moves onto the box itself instead of leaving an unlabelled colored block. */
+.md-typeset .admonition { --docs-admonition-icon: var(--md-admonition-icon--note); --docs-admonition-color: var(--docs-link); }
+.md-typeset .admonition.important { --docs-admonition-icon: var(--md-admonition-icon--info); }
+.md-typeset .admonition.info { --docs-admonition-icon: var(--md-admonition-icon--info); --docs-admonition-color: #00b8d4; }
+.md-typeset .admonition.tip { --docs-admonition-icon: var(--md-admonition-icon--tip); --docs-admonition-color: var(--docs-success); }
+.md-typeset .admonition.success { --docs-admonition-icon: var(--md-admonition-icon--success); --docs-admonition-color: var(--docs-success); }
+.md-typeset .admonition.warning { --docs-admonition-icon: var(--md-admonition-icon--warning); --docs-admonition-color: var(--docs-warning); }
+.md-typeset .admonition.danger { --docs-admonition-icon: var(--md-admonition-icon--danger); --docs-admonition-color: var(--docs-danger); }
+.md-typeset .admonition:not(:has(> .admonition-title)) { position: relative; padding-left: 2.4rem; }
+.md-typeset .admonition:not(:has(> .admonition-title))::before { content: ""; position: absolute; top: .88rem; left: .9rem; width: .9rem; height: .9rem; background-color: var(--docs-admonition-color); -webkit-mask-image: var(--docs-admonition-icon); mask-image: var(--docs-admonition-icon); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
 .md-typeset .admonition.tip, .md-typeset details.tip, .md-typeset .admonition.success, .md-typeset details.success { border-color: color-mix(in srgb, var(--docs-success) 35%, var(--docs-border)); background: color-mix(in srgb, var(--docs-success) 6%, var(--docs-bg)); }
 .md-typeset .admonition.warning, .md-typeset details.warning { border-color: color-mix(in srgb, var(--docs-warning) 38%, var(--docs-border)); background: color-mix(in srgb, var(--docs-warning) 6%, var(--docs-bg)); }
 .md-typeset .admonition.danger, .md-typeset details.danger { border-color: color-mix(in srgb, var(--docs-danger) 35%, var(--docs-border)); background: color-mix(in srgb, var(--docs-danger) 6%, var(--docs-bg)); }
