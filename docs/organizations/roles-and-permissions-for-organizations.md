@@ -153,7 +153,7 @@ The table below compares what each Codacy role is allowed to do. These permissio
 
 <sup>1</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
 <sup>2</sup>: These users can only see security items originating from Codacy repositories that they follow.  
-<sup>3</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.  
+<sup>3</sup>: On GitHub, requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.  
 <sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only on [Business plan](https://www.codacy.com/pricing).
 
 ## See also
