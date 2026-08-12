@@ -22,6 +22,11 @@
 .md-content__inner > h1 + p { color: var(--docs-text-secondary); font-size: 1.0625rem; line-height: 1.65; }
 .md-typeset a { color: var(--docs-link); font-weight: 500; text-decoration-thickness: 1px; text-underline-offset: .14em; }
 .md-typeset a:hover { color: var(--docs-link-hover); }
+/* Footnote-marker links (<a href="#note"><sup>1</sup></a>) inherit sup's
+   browser-default font-size: smaller, which shrinks the link's hit area to a
+   few px on a side. Pad and pull back with a matching negative margin so the
+   tap target grows without shifting surrounding text. */
+.md-typeset a sup { display: inline-block; padding: .35rem; margin: -.35rem; }
 .md-typeset code { padding: .14em .32em; border-radius: var(--docs-radius); background: var(--docs-bg-subtle); color: var(--docs-text); }
 
 .md-typeset :not(pre) > code { border: 1px solid var(--docs-border); }
