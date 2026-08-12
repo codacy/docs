@@ -29,56 +29,56 @@ The sections below group the tools that Codacy uses by scan type. Besides this, 
 
 | Language | File extensions | Supported scans / Others |
 |---|---|---|
-| Apex | .cls, .trigger | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Duplication](#duplication) |
+| Apex | `.cls`, `.trigger` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Duplication](#duplication) |
 | AsyncAPI | - | [Static analysis](#static-analysis) |
 | AWS CloudFormation | - | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
 | Azure Resource Manager Templates | - | [Static analysis](#static-analysis) |
-| C | .c, .h | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| C++ | .cpp, .hpp, .cc, .cxx, .ino | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| C# | .cs | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| CoffeeScript | .coffee | [Static analysis](#static-analysis), [Duplication](#duplication) |
-| Crystal | .cr | [Static analysis](#static-analysis) |
-| CSS | .css | [Static analysis](#static-analysis) |
-| Dart | .dart | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [License scanning](#license-scanning) |
-| Dockerfile | .dockerfile | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection) |
-| Elixir | .ex, .exs | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [License scanning](#license-scanning) |
+| C | `.c`, `.h` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| C++ | `.cpp`, `.hpp`, `.cc`, `.cxx`, `.ino` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| C# | `.cs` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| CoffeeScript | `.coffee` | [Static analysis](#static-analysis), [Duplication](#duplication) |
+| Crystal | `.cr` | [Static analysis](#static-analysis) |
+| CSS | `.css` | [Static analysis](#static-analysis) |
+| Dart | `.dart` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [License scanning](#license-scanning) |
+| Dockerfile | `.dockerfile` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection) |
+| Elixir | `.ex`, `.exs` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [License scanning](#license-scanning) |
 | GitHub Actions | - | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
-| Go | .go | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| Groovy | .groovy | [Static analysis](#static-analysis), [Duplication](#duplication) |
+| Go | `.go` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| Groovy | `.groovy` | [Static analysis](#static-analysis), [Duplication](#duplication) |
 | Helm | - | [Secret detection](#secret-detection) |
-| Java | .java | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| JavaScript | .js, .jsx, .jsm, .vue, .mjs | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| JSON | .json | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
-| JSP | .jsp | [Static analysis](#static-analysis), [Duplication](#duplication) |
-| Kotlin | .kt, .kts | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| Java | `.java` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| JavaScript | `.js`, `.jsx`, `.jsm`, `.vue`, `.mjs` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| JSON | `.json` | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
+| JSP | `.jsp` | [Static analysis](#static-analysis), [Duplication](#duplication) |
+| Kotlin | `.kt`, `.kts` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
 | Kubernetes | - | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Complexity](#complexity) |
-| Less | .less | [Static analysis](#static-analysis) |
-| Markdown | .md, .markdown, .mdown, .mkdn, .mkd, .mdwn, .mkdown, .ron | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes) |
-| Objective-C | .m | [Static analysis](#static-analysis), [Duplication](#duplication), [Complexity](#complexity) |
+| Less | `.less` | [Static analysis](#static-analysis) |
+| Markdown | `.md`, `.markdown`, `.mdown`, `.mkdn`, `.mkd`, `.mdwn`, `.mkdown`, `.ron` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes) |
+| Objective-C | `.m` | [Static analysis](#static-analysis), [Duplication](#duplication), [Complexity](#complexity) |
 | OpenAPI | - | [Static analysis](#static-analysis) |
-| PHP | .php | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| PL/SQL | .trg, .prc, .fnc, .pld, .pls, .plh, .plb, .pck, .pks, .pkh, .pkb, .typ, .tyb, .tps, .tpb | [Static analysis](#static-analysis) |
+| PHP | `.php` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| PL/SQL | `.trg`, `.prc`, `.fnc`, `.pld`, `.pls`, `.plh`, `.plb`, `.pck`, `.pks`, `.pkh`, `.pkb`, `.typ`, `.tyb`, `.tps`, `.tpb` | [Static analysis](#static-analysis) |
 | PostgreSQL | - | [Static analysis](#static-analysis) |
-| PowerShell | .ps1, .psc1, .psd1, .psm1, .ps1xml, .pssc, .cdxml, .clixml | [Static analysis](#static-analysis) |
-| Python | .py | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| Ruby | .rb, .gemspec, .podspec, .jbuilder, .rake, .opal | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| Rust | .rs, .rlib | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| Sass | .scss | [Static analysis](#static-analysis) |
-| Scala | .scala | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| PowerShell | `.ps1`, `.psc1`, `.psd1`, `.psm1`, `.ps1xml`, `.pssc`, `.cdxml`, `.clixml` | [Static analysis](#static-analysis) |
+| Python | `.py` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| Ruby | `.rb`, `.gemspec`, `.podspec`, `.jbuilder`, `.rake`, `.opal` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| Rust | `.rs`, `.rlib` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| Sass | `.scss` | [Static analysis](#static-analysis) |
+| Scala | `.scala` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
 | Serverless Framework | - | [Static analysis](#static-analysis) |
-| Shell | .sh, .bash | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
-| Swift | .swift | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
-| SQL | .sql | [Static analysis](#static-analysis) |
-| Terraform | .tf | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
-| Transact-SQL | .tsql | [Static analysis](#static-analysis) |
-| TypeScript | .ts, .tsx | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| Shell | `.sh`, `.bash` | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
+| Swift | `.swift` | [Static analysis](#static-analysis), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
+| SQL | `.sql` | [Static analysis](#static-analysis) |
+| Terraform | `.tf` | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
+| Transact-SQL | `.tsql` | [Static analysis](#static-analysis) |
+| TypeScript | `.ts`, `.tsx` | [Static analysis](#static-analysis), [Suggested fixes](#suggested-fixes), [Secret detection](#secret-detection), [Dependency vulnerability scanning](#dependency-vulnerability-scanning), [Malicious packages detection](#malicious-packages-detection), [Duplication](#duplication), [Complexity](#complexity), [License scanning](#license-scanning) |
 | Unity | - | [Static analysis](#static-analysis) |
-| Velocity | .vm | [Static analysis](#static-analysis) |
-| Visual Basic | .vb | [Static analysis](#static-analysis), [Duplication](#duplication) |
-| Visualforce | .component, .page | [Static analysis](#static-analysis), [Duplication](#duplication) |
-| XML | .xml, .xsl, .wsdl, .pom | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
-| XSL | .xsl | [Static analysis](#static-analysis) |
-| YAML | .yaml, .yml, .env, .env.production, .env.prod, .env.staging, .env.dev, .env.development | [Secret detection](#secret-detection) |
+| Velocity | `.vm` | [Static analysis](#static-analysis) |
+| Visual Basic | `.vb` | [Static analysis](#static-analysis), [Duplication](#duplication) |
+| Visualforce | `.component`, `.page` | [Static analysis](#static-analysis), [Duplication](#duplication) |
+| XML | `.xml`, `.xsl`, `.wsdl`, `.pom` | [Static analysis](#static-analysis), [Secret detection](#secret-detection) |
+| XSL | `.xsl` | [Static analysis](#static-analysis) |
+| YAML | `.yaml`, `.yml`, `.env`, `.env.production`, `.env.prod`, `.env.staging`, `.env.dev`, `.env.development` | [Secret detection](#secret-detection) |
 
 ## Static analysis
 
@@ -109,7 +109,7 @@ See how Codacy calculates [static analysis issues](../faq/code-analysis/which-me
 | Kotlin | <a href="https://github.com/detekt/detekt">detekt</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep], <a href="https://pmd.github.io">PMD</a> |
 | Kubernetes | <a href="https://github.com/bridgecrewio/checkov/">Checkov</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^yaml-only] |
 | Less | <a href="https://stylelint.io/">Stylelint</a> |
-| Markdown | <a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a>, <a href="https://github.com/seojoonkim/agentlinter">Agentlinter</a> |
+| Markdown | <a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a>, <a href="https://github.com/seojoonkim/agentlinter">AgentLinter</a> |
 | Objective-C | <a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> [^client-side] |
 | OpenAPI | <a href="https://stoplight.io/open-source/spectral/">Spectral</a> |
 | PHP | <a href="https://github.com/php-cs-fixer/php-cs-fixer">PHP CS Fixer</a>, <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>, <a href="https://phpmd.org/">PHP Mess Detector</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
@@ -195,7 +195,7 @@ Malicious packages identified in the [OpenSSF Malicious Packages database](https
 | Language | Tools |
 |---|---|
 | C# | <a href="https://trivy.dev">Trivy</a>, scans <code>packages.lock.json</code> for malicious packages published in <a href="https://www.nuget.org/">NuGet</a> |
-| Go | <a href="https://trivy.dev">Trivy</a>, scans <code>go.mod</code> for malicious packages published in <a href="https://github.com">github.com</a> |
+| Go | <a href="https://trivy.dev">Trivy</a>, scans <code>go.mod</code> for malicious packages published in <a href="https://github.com"><code>github.com</code></a> |
 | Java | <a href="https://trivy.dev">Trivy</a>, scans <code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a> |
 | JavaScript | <a href="https://trivy.dev">Trivy</a>, scans <code>package.json</code> and <code>package-lock.json</code> for malicious packages published in <a href="https://www.npmjs.com/">npm</a> |
 | Kotlin | <a href="https://trivy.dev">Trivy</a>, scans <code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a> |
@@ -236,17 +236,17 @@ Codacy can [suggest fixes](../repositories-configure/integrations/github-integra
 
 | Language | Tools |
 |---|---|
-| C | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| C# | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| Dockerfile | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| Go | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| Java | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| JavaScript | <a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a> |
-| Kubernetes | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| Markdown | <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a> |
-| Python | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| Ruby | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a> |
-| TypeScript | <a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a> |
+| C | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| C# | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| Dockerfile | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| Go | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| Java | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| JavaScript | <a href="https://eslint.org/docs/rules/">ESLint</a> |
+| Kubernetes | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| Markdown | <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> |
+| Python | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| Ruby | <a href="https://github.com/opengrep/opengrep/">Opengrep</a> |
+| TypeScript | <a href="https://eslint.org/docs/rules/">ESLint</a> |
 
 ### Duplication
 
