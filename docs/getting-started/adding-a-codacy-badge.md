@@ -25,6 +25,6 @@ The Codacy badges for your repository may become unavailable or grayed out if th
 To fix each badge:
 
 -   [Reanalyze the branch](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch) associated with the **code quality badge**
--   Make sure that you're [generating and uploading code coverage reports](../../coverage-reporter/) for all the commits in the branch associated with the **coverage badge**
+-   Make sure that you're [generating and uploading code coverage reports](../coverage-reporter/index.md) for all the commits in the branch associated with the **coverage badge**
 
 If these steps don't fix your Codacy badges it can mean that the badges are no longer valid. In this case, [repeat the steps above](#adding-a-codacy-badge) to replace the existing badges with new ones.
