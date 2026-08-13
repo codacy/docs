@@ -73,9 +73,11 @@ extra:
     # level == 2 handling in theme/partials/nav-item.html).
     sidebar_icons:
         "Documentation home": "home-outline"
+        "Codacy dev tools": "settings-outline"
         "Getting started": "rocket-outline"
-        "Codacy Guardrails (IDE Extension)": "shield-checkmark-outline"
-        "Codacy Cloud CLI": "terminal-outline"
+        "Codacy Guardrails": "shield-checkmark-outline"
+        "Codacy CLIs": "terminal-outline"
+        "IDE integrations": "share-social-outline"
         "Codacy AI": "sparkles-outline"
         "Repositories on Codacy": "folder-open-outline"
         "Configuring your repositories": "settings-outline"
@@ -642,21 +644,9 @@ nav:
                 - getting-started/codacy-quickstart.md
                 - getting-started/configuring-your-repository.md
                 - getting-started/integrating-codacy-with-your-git-workflow.md
-                - Integrating Codacy with your IDE:
-                      - getting-started/integrating-codacy-with-intellij-ides.md
-                      - getting-started/integrating-codacy-with-visual-studio-code.md
                 - getting-started/supported-languages-and-tools.md
                 - getting-started/which-permissions-does-codacy-need-from-my-account.md
                 - getting-started/adding-a-codacy-badge.md
-          - Codacy Guardrails (IDE Extension):
-                - codacy-guardrails/codacy-guardrails-getting-started.md
-                - codacy-guardrails/codacy-guardrails-how-to-use.md
-                - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
-                - codacy-guardrails/codacy-guardrails-limitations.md
-                - codacy-guardrails/codacy-guardrails-troubleshooting.md
-                - codacy-guardrails/codacy-guardrails-faq.md
-          - Codacy Cloud CLI:
-                - codacy-cloud-cli/index.md
           - Codacy AI:
                 - codacy-ai/codacy-ai.md
           - Repositories on Codacy:
@@ -719,20 +709,6 @@ nav:
                 - account/managing-your-profile.md
                 - account/emails.md
                 - account/user-session-management.md
-          - Codacy API:
-                - codacy-api/using-the-codacy-api.md
-                - codacy-api/api-tokens.md
-                - API v3 reference (recommended): https://api.codacy.com/api/api-docs
-                - API v2 reference: https://api.codacy.com/api-docs
-                - Examples:
-                      - codacy-api/examples/adding-people-to-codacy-programmatically.md
-                      - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
-                      - codacy-api/examples/creating-repository-api-tokens-programmatically.md
-                      - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
-                      - codacy-api/examples/obtaining-current-issues-in-repositories.md
-                      - codacy-api/examples/identifying-commits-without-coverage-data.md
-                      - codacy-api/examples/uploading-dast-results.md
-                      - codacy-api/examples/triggering-dast-scans.md
           - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
           - Troubleshooting and FAQs:
                 - General:
@@ -769,6 +745,32 @@ nav:
                       - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
                       - faq/troubleshooting/error-line-endings.md
           - special-thanks.md
+    - Developer tools:
+          - Codacy dev tools: "developer-tools/index.md"
+          - Codacy Guardrails:
+                - codacy-guardrails/codacy-guardrails-getting-started.md
+                - codacy-guardrails/codacy-guardrails-how-to-use.md
+                - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
+                - codacy-guardrails/codacy-guardrails-limitations.md
+                - codacy-guardrails/codacy-guardrails-troubleshooting.md
+                - codacy-guardrails/codacy-guardrails-faq.md
+          - Codacy API:
+                - codacy-api/using-the-codacy-api.md
+                - codacy-api/api-tokens.md
+                - Examples:
+                      - codacy-api/examples/adding-people-to-codacy-programmatically.md
+                      - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
+                      - codacy-api/examples/creating-repository-api-tokens-programmatically.md
+                      - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
+                      - codacy-api/examples/obtaining-current-issues-in-repositories.md
+                      - codacy-api/examples/identifying-commits-without-coverage-data.md
+                      - codacy-api/examples/uploading-dast-results.md
+                      - codacy-api/examples/triggering-dast-scans.md
+          - Codacy CLIs:
+                - codacy-cloud-cli/index.md
+          - IDE integrations:
+                - getting-started/integrating-codacy-with-visual-studio-code.md
+                - getting-started/integrating-codacy-with-intellij-ides.md
     - Release notes:
           - release-notes/index.md
           - Cloud:

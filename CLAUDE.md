@@ -46,11 +46,13 @@ A direct instruction from the person you are working with outranks items 2–4. 
 - **Do not invent a step, UI label, endpoint, filename, or behavior.** Confirm it in the code, in existing docs, or from the person asking. Otherwise mark it `<!-- TODO: verify ... -->` and list every marker when you hand off.
 - **Do not claim a check passed without running it.** If you could not run one, name it and say why in a sentence at handoff. Silence reads as success, and that is how a broken build ships with a confident summary. "Follows the guidelines" is not a substitute for naming what you actually verified.
 - **Do not commit or push unless you were asked to.** Leave the work in the tree and describe it. Someone else opens the pull request.
-- **Do not apply an information-architecture change on your own initiative.** Moving pages between sections, renaming a nav section, or splitting a page changes what readers can find. Write up the proposal and stop there.
+- **Do not apply an information-architecture change on your own initiative.** Moving pages between sections, renaming a nav section, or splitting a page changes what readers can find. Write up the proposal and stop there to get human approval — the person you're working with has reviewed the specific proposal and explicitly confirms applying it, in which case apply exactly what was written up.
 - **Do not skip alt text, `nav:` registration, or redirects.** These are the failures that break the site without warning anyone.
 - **Do not suppress a linter warning** without an inline sentence saying why. A suppression should read as an obvious false positive to whoever finds it next.
 - **Do not write marketing adjectives or filler.** "Powerful", "seamless", "robust", "effortless", "it's worth noting that", "in order to", "simply", "just". Show the product working instead of grading it.
 - **Do not widen the diff past the request.** Opportunistic reflowing, renaming, and prose improvement hide the real change from the reviewer, and the reviewer is the point. Mention what else you spotted; do not fix it in the same pass.
+
+A direct instruction from the person you are working with outranks items 2–4. Say which rule it conflicts with, in one sentence, then do what was asked — they may know something these files do not. Item 1 is not subject to that. In particular, "make the change" does not convert a *propose this first* rule into permission to apply it.
 
 ## Mechanics that fail silently
 
@@ -71,4 +73,5 @@ Shared across every workflow. Read the relevant one rather than re-deriving it.
 - [`.claude/reference/formatting.md`](.claude/reference/formatting.md) — markdown and structural rules: admonitions, tables, headings, links, images, nesting. The design contract for page bodies.
 - [`.claude/reference/voice.md`](.claude/reference/voice.md) — tone, with before/after pairs, plus canonical product names.
 - [`.claude/reference/repo-map.md`](.claude/reference/repo-map.md) — how the site is assembled, what each check does and does not catch, and the commands that answer questions about the current state of the repo.
+- [`.claude/reference/information-architecture.md`](.claude/reference/information-architecture.md) — durable classification decisions (developer tools vs. the rest of the product, Codacy AI vs. developer tools, where borderline features belong) so structure questions aren't re-derived each time.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — local build, preview, and release mechanics for humans.
