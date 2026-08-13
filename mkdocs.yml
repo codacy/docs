@@ -126,6 +126,11 @@ markdown_extensions:
     - attr_list
     # Allow collapsible sections without introducing custom JavaScript
     - pymdownx.details
+    # Render [^id] / [^id]: as numbered, back-linkable footnotes instead of
+    # hand-rolled <sup><a></a></sup> HTML, which several pages used and which
+    # has no custom styling anywhere in the theme.
+    # https://python-markdown.github.io/extensions/footnotes/
+    - footnotes
     # Add syntax highlighting to code blocks
     # https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
     - pymdownx.highlight
