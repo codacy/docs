@@ -76,7 +76,7 @@ extra:
         "Codacy dev tools": "settings-outline"
         "Getting started": "rocket-outline"
         "Codacy Guardrails": "shield-checkmark-outline"
-        "Codacy Cloud CLI": "terminal-outline"
+        "Codacy CLIs": "terminal-outline"
         "IDE integrations": "share-social-outline"
         "Codacy AI": "sparkles-outline"
         "Repositories on Codacy": "folder-open-outline"
