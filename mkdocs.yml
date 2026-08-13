@@ -761,11 +761,11 @@ nav:
                       - codacy-api/examples/identifying-commits-without-coverage-data.md
                       - codacy-api/examples/uploading-dast-results.md
                       - codacy-api/examples/triggering-dast-scans.md
-          - Codacy Cloud CLI:
+          - Codacy CLIs:
                 - codacy-cloud-cli/index.md
           - IDE integrations:
-                - getting-started/integrating-codacy-with-intellij-ides.md
                 - getting-started/integrating-codacy-with-visual-studio-code.md
+                - getting-started/integrating-codacy-with-intellij-ides.md
     - Release notes:
           - release-notes/index.md
           - Cloud:
