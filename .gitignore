@@ -37,3 +37,4 @@ tools/*.csv
 # .claude/ is the shared, committed docs-writing system and stays tracked.
 .claude/settings.local.json
 .claude/worktrees/
+.claude/plans/
