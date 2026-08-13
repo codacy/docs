@@ -7,45 +7,45 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="To stop Codacy from analyzing your repository, you must remove the repository from Codacy.">
+        <meta name="description" content="Overview of how to use Codacy from outside the Codacy web app, through the API, Codacy Cloud CLI, IDE integrations, and Codacy Guardrails.">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/removing-your-repository/">
+        <link rel="canonical" href="https://docs.codacy.com/developer-tools/">
       
       
-        <link rel="prev" href="../codacy-configuration-file/">
+        <link rel="prev" href="../special-thanks/">
       
       
-        <link rel="next" href="../../organizations/what-are-organizations/">
+        <link rel="next" href="../codacy-guardrails/codacy-guardrails-getting-started/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.ico">
+      <link rel="icon" href="../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2024-02-19 15:49:05">
+    <meta http-equiv="last-modified" content="2026-08-13 12:28:54">
   
   
 
     
       
-        <title>Removing your repository - Codacy docs</title>
+        <title>Codacy dev tools - Codacy docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -56,30 +56,30 @@
     
     
   <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
-  <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 
     
-      <link rel="stylesheet" href="../../stylesheets/fonts.css">
+      <link rel="stylesheet" href="../stylesheets/fonts.css">
     
-      <link rel="stylesheet" href="../../stylesheets/tokens.css">
+      <link rel="stylesheet" href="../stylesheets/tokens.css">
     
-      <link rel="stylesheet" href="../../stylesheets/base.css">
+      <link rel="stylesheet" href="../stylesheets/base.css">
     
-      <link rel="stylesheet" href="../../stylesheets/header.css">
+      <link rel="stylesheet" href="../stylesheets/header.css">
     
-      <link rel="stylesheet" href="../../stylesheets/navigation.css">
+      <link rel="stylesheet" href="../stylesheets/navigation.css">
     
-      <link rel="stylesheet" href="../../stylesheets/content.css">
+      <link rel="stylesheet" href="../stylesheets/content.css">
     
-      <link rel="stylesheet" href="../../stylesheets/home.css">
+      <link rel="stylesheet" href="../stylesheets/home.css">
     
-      <link rel="stylesheet" href="../../stylesheets/footer.css">
+      <link rel="stylesheet" href="../stylesheets/footer.css">
     
-      <link rel="stylesheet" href="../../stylesheets/layout.css">
+      <link rel="stylesheet" href="../stylesheets/layout.css">
     
-      <link rel="stylesheet" href="../../stylesheets/responsive.css">
+      <link rel="stylesheet" href="../stylesheets/responsive.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
   
       
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#removing-your-repository" class="md-skip">
+        <a href="#codacy-dev-tools" class="md-skip">
           Skip to content
         </a>
       
@@ -124,9 +124,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Codacy docs" class="md-header__button md-logo" aria-label="Codacy docs" data-md-component="logo">
-      <img class="docs-logo docs-logo--dark" src="../../assets/images/codacy-docs-logo.svg" alt="Codacy Docs">
-      <img class="docs-logo docs-logo--light" src="../../assets/images/codacy-docs-logo-light.svg" alt="Codacy Docs">
+    <a href=".." title="Codacy docs" class="md-header__button md-logo" aria-label="Codacy docs" data-md-component="logo">
+      <img class="docs-logo docs-logo--dark" src="../assets/images/codacy-docs-logo.svg" alt="Codacy Docs">
+      <img class="docs-logo docs-logo--light" src="../assets/images/codacy-docs-logo-light.svg" alt="Codacy Docs">
     </a>
     <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Open navigation" aria-controls="docs-navigation" aria-expanded="false" data-drawer-trigger>
       <svg class="docs-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
@@ -221,13 +221,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../.." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
           
   
   
@@ -243,11 +241,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../developer-tools/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -267,7 +267,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../release-notes/" class="md-tabs__link">
+        <a href="../release-notes/" class="md-tabs__link">
           
   
   
@@ -329,14 +329,14 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -355,7 +355,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Documentation
@@ -367,7 +367,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../.." class="md-nav__link">
+    <li class="md-nav__item"><a href=".." class="md-nav__link">
   
   
   
@@ -438,7 +438,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/codacy-quickstart/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/codacy-quickstart/" class="md-nav__link">
   
   
   
@@ -459,7 +459,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/configuring-your-repository/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/configuring-your-repository/" class="md-nav__link">
   
   
   
@@ -480,7 +480,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/integrating-codacy-with-your-git-workflow/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/integrating-codacy-with-your-git-workflow/" class="md-nav__link">
   
   
   
@@ -501,7 +501,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/supported-languages-and-tools/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/supported-languages-and-tools/" class="md-nav__link">
   
   
   
@@ -522,7 +522,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/which-permissions-does-codacy-need-from-my-account/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/which-permissions-does-codacy-need-from-my-account/" class="md-nav__link">
   
   
   
@@ -543,7 +543,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/adding-a-codacy-badge/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/adding-a-codacy-badge/" class="md-nav__link">
   
   
   
@@ -618,7 +618,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-ai/codacy-ai/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-ai/codacy-ai/" class="md-nav__link">
   
   
   
@@ -693,7 +693,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../repositories/repository-dashboard/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories/repository-dashboard/" class="md-nav__link">
   
   
   
@@ -714,7 +714,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../repositories/commits/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories/commits/" class="md-nav__link">
   
   
   
@@ -735,7 +735,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../repositories/files/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories/files/" class="md-nav__link">
   
   
   
@@ -756,7 +756,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../repositories/issues/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories/issues/" class="md-nav__link">
   
   
   
@@ -777,7 +777,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../repositories/coverage/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories/coverage/" class="md-nav__link">
   
   
   
@@ -798,7 +798,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../repositories/pull-requests/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories/pull-requests/" class="md-nav__link">
   
   
   
@@ -833,11 +833,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
         
           
           <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
@@ -861,7 +861,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_5"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Configuring your repositories
@@ -873,7 +873,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../configuring-code-patterns/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/configuring-code-patterns/" class="md-nav__link">
   
   
   
@@ -894,7 +894,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../managing-branches/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/managing-branches/" class="md-nav__link">
   
   
   
@@ -961,7 +961,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../integrations/github-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/integrations/github-integration/" class="md-nav__link">
   
   
   
@@ -982,7 +982,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../integrations/gitlab-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/integrations/gitlab-integration/" class="md-nav__link">
   
   
   
@@ -1003,7 +1003,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../integrations/bitbucket-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/integrations/bitbucket-integration/" class="md-nav__link">
   
   
   
@@ -1024,7 +1024,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../integrations/post-commit-hooks/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/integrations/post-commit-hooks/" class="md-nav__link">
   
   
   
@@ -1051,7 +1051,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../ignoring-files/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/ignoring-files/" class="md-nav__link">
   
   
   
@@ -1072,7 +1072,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../languages/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/languages/" class="md-nav__link">
   
   
   
@@ -1093,7 +1093,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../adjusting-quality-gates/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/adjusting-quality-gates/" class="md-nav__link">
   
   
   
@@ -1114,7 +1114,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../adjusting-quality-goals/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/adjusting-quality-goals/" class="md-nav__link">
   
   
   
@@ -1181,7 +1181,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../coverage-reporter/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../coverage-reporter/" class="md-nav__link">
   
   
   
@@ -1202,7 +1202,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../coverage-reporter/alternative-ways-of-running-coverage-reporter/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../coverage-reporter/alternative-ways-of-running-coverage-reporter/" class="md-nav__link">
   
   
   
@@ -1223,7 +1223,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../coverage-reporter/uploading-coverage-in-advanced-scenarios/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../coverage-reporter/uploading-coverage-in-advanced-scenarios/" class="md-nav__link">
   
   
   
@@ -1244,7 +1244,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../coverage-reporter/troubleshooting-coverage-cli-issues/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../coverage-reporter/troubleshooting-coverage-cli-issues/" class="md-nav__link">
   
   
   
@@ -1317,7 +1317,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../local-analysis/client-side-tools/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/local-analysis/client-side-tools/" class="md-nav__link">
   
   
   
@@ -1338,7 +1338,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../local-analysis/running-aligncheck/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/local-analysis/running-aligncheck/" class="md-nav__link">
   
   
   
@@ -1359,7 +1359,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../local-analysis/running-dartanalyzer/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/local-analysis/running-dartanalyzer/" class="md-nav__link">
   
   
   
@@ -1380,7 +1380,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../local-analysis/running-deadcode/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/local-analysis/running-deadcode/" class="md-nav__link">
   
   
   
@@ -1401,7 +1401,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../local-analysis/running-spotbugs/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/local-analysis/running-spotbugs/" class="md-nav__link">
   
   
   
@@ -1422,7 +1422,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../local-analysis/running-eslint/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/local-analysis/running-eslint/" class="md-nav__link">
   
   
   
@@ -1449,7 +1449,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../using-submodules/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/using-submodules/" class="md-nav__link">
   
   
   
@@ -1470,7 +1470,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../codacy-configuration-file/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../repositories-configure/codacy-configuration-file/" class="md-nav__link">
   
   
   
@@ -1491,13 +1491,7 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item"><a href="../repositories-configure/removing-your-repository/" class="md-nav__link">
   
   
   
@@ -1511,9 +1505,7 @@
   </span>
   
   
-</a>
-      
-    </li>
+</a></li>
   
 
           </ul>
@@ -1574,7 +1566,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/what-are-organizations/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/what-are-organizations/" class="md-nav__link">
   
   
   
@@ -1595,7 +1587,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/managing-repositories/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/managing-repositories/" class="md-nav__link">
   
   
   
@@ -1616,7 +1608,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/segments/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/segments/" class="md-nav__link">
   
   
   
@@ -1683,7 +1675,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/reporting/organization-overview/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/reporting/organization-overview/" class="md-nav__link">
   
   
   
@@ -1704,7 +1696,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/reporting/issues-metrics/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/reporting/issues-metrics/" class="md-nav__link">
   
   
   
@@ -1725,7 +1717,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/reporting/codacy-usage/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/reporting/codacy-usage/" class="md-nav__link">
   
   
   
@@ -1752,7 +1744,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/using-gate-policies/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/using-gate-policies/" class="md-nav__link">
   
   
   
@@ -1773,7 +1765,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/using-coding-standards/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/using-coding-standards/" class="md-nav__link">
   
   
   
@@ -1794,7 +1786,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/ai-risk-hub/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/ai-risk-hub/" class="md-nav__link">
   
   
   
@@ -1861,7 +1853,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/integrations/default-git-provider-integration-settings/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/integrations/default-git-provider-integration-settings/" class="md-nav__link">
   
   
   
@@ -1882,7 +1874,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/integrations/slack-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/integrations/slack-integration/" class="md-nav__link">
   
   
   
@@ -1903,7 +1895,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/integrations/jira-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/integrations/jira-integration/" class="md-nav__link">
   
   
   
@@ -1930,7 +1922,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/managing-security-and-risk/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/managing-security-and-risk/" class="md-nav__link">
   
   
   
@@ -1951,7 +1943,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/managing-people/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/managing-people/" class="md-nav__link">
   
   
   
@@ -1972,7 +1964,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/audit-logs-for-organizations/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/audit-logs-for-organizations/" class="md-nav__link">
   
   
   
@@ -1993,7 +1985,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/roles-and-permissions-for-organizations/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/roles-and-permissions-for-organizations/" class="md-nav__link">
   
   
   
@@ -2014,7 +2006,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../organizations/changing-your-plan-and-billing/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../organizations/changing-your-plan-and-billing/" class="md-nav__link">
   
   
   
@@ -2089,7 +2081,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../enterprise-cloud/github-enterprise-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../enterprise-cloud/github-enterprise-cloud/" class="md-nav__link">
   
   
   
@@ -2164,7 +2156,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../account/managing-your-profile/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../account/managing-your-profile/" class="md-nav__link">
   
   
   
@@ -2185,7 +2177,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../account/emails/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../account/emails/" class="md-nav__link">
   
   
   
@@ -2206,7 +2198,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../account/user-session-management/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../account/user-session-management/" class="md-nav__link">
   
   
   
@@ -2281,7 +2273,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/" class="md-nav__link">
   
   
   
@@ -2302,7 +2294,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/requirements/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/requirements/" class="md-nav__link">
   
   
   
@@ -2369,7 +2361,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/infrastructure/eks-quickstart/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/infrastructure/eks-quickstart/" class="md-nav__link">
   
   
   
@@ -2390,7 +2382,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/infrastructure/microk8s-quickstart/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/infrastructure/microk8s-quickstart/" class="md-nav__link">
   
   
   
@@ -2509,7 +2501,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/github-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/github-cloud/" class="md-nav__link">
   
   
   
@@ -2530,7 +2522,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/github-enterprise/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/github-enterprise/" class="md-nav__link">
   
   
   
@@ -2551,7 +2543,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/github-app-create/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/github-app-create/" class="md-nav__link">
   
   
   
@@ -2572,7 +2564,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/gitlab-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/gitlab-cloud/" class="md-nav__link">
   
   
   
@@ -2593,7 +2585,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/gitlab-enterprise/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/gitlab-enterprise/" class="md-nav__link">
   
   
   
@@ -2614,7 +2606,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/bitbucket-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/bitbucket-cloud/" class="md-nav__link">
   
   
   
@@ -2635,7 +2627,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/bitbucket-server/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/bitbucket-server/" class="md-nav__link">
   
   
   
@@ -2656,7 +2648,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/integrations/email/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/integrations/email/" class="md-nav__link">
   
   
   
@@ -2683,7 +2675,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/caching/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/caching/" class="md-nav__link">
   
   
   
@@ -2704,7 +2696,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/monitoring/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/monitoring/" class="md-nav__link">
   
   
   
@@ -2725,7 +2717,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/configuration/logging/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/configuration/logging/" class="md-nav__link">
   
   
   
@@ -2798,7 +2790,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/maintenance/license/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/maintenance/license/" class="md-nav__link">
   
   
   
@@ -2819,7 +2811,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/maintenance/upgrade/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/maintenance/upgrade/" class="md-nav__link">
   
   
   
@@ -2840,7 +2832,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/maintenance/uninstall/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/maintenance/uninstall/" class="md-nav__link">
   
   
   
@@ -2861,7 +2853,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/maintenance/database/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/maintenance/database/" class="md-nav__link">
   
   
   
@@ -2934,7 +2926,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/troubleshoot/troubleshoot/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/troubleshoot/troubleshoot/" class="md-nav__link">
   
   
   
@@ -2955,7 +2947,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/troubleshoot/logs-collect/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/troubleshoot/logs-collect/" class="md-nav__link">
   
   
   
@@ -2976,7 +2968,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../chart/troubleshoot/k8s-cheatsheet/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../chart/troubleshoot/k8s-cheatsheet/" class="md-nav__link">
   
   
   
@@ -3103,7 +3095,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/which-platforms-and-technologies-does-codacy-support/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/which-platforms-and-technologies-does-codacy-support/" class="md-nav__link">
   
   
   
@@ -3124,7 +3116,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-does-codacy-support-github-enterprise/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-does-codacy-support-github-enterprise/" class="md-nav__link">
   
   
   
@@ -3145,7 +3137,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-does-codacy-support-gitlab-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-does-codacy-support-gitlab-cloud/" class="md-nav__link">
   
   
   
@@ -3166,7 +3158,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-does-codacy-support-gitlab-enterprise/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-does-codacy-support-gitlab-enterprise/" class="md-nav__link">
   
   
   
@@ -3187,7 +3179,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-does-codacy-support-bitbucket-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-does-codacy-support-bitbucket-cloud/" class="md-nav__link">
   
   
   
@@ -3208,7 +3200,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-does-codacy-support-bitbucket-server/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-does-codacy-support-bitbucket-server/" class="md-nav__link">
   
   
   
@@ -3229,7 +3221,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-does-codacy-keep-my-data-secure/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-does-codacy-keep-my-data-secure/" class="md-nav__link">
   
   
   
@@ -3250,7 +3242,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-does-codacy-protect-my-privacy/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-does-codacy-protect-my-privacy/" class="md-nav__link">
   
   
   
@@ -3271,7 +3263,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/does-codacy-keep-audit-logs/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/does-codacy-keep-audit-logs/" class="md-nav__link">
   
   
   
@@ -3292,7 +3284,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" class="md-nav__link">
   
   
   
@@ -3313,7 +3305,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/general/how-can-i-change-or-cancel-my-plan/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/general/how-can-i-change-or-cancel-my-plan/" class="md-nav__link">
   
   
   
@@ -3386,7 +3378,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/repositories/how-do-i-reanalyze-my-repository/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/repositories/how-do-i-reanalyze-my-repository/" class="md-nav__link">
   
   
   
@@ -3407,7 +3399,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/repositories/i-renamed-my-repository-on-the-git-provider/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/repositories/i-renamed-my-repository-on-the-git-provider/" class="md-nav__link">
   
   
   
@@ -3480,7 +3472,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/which-metrics-does-codacy-calculate/" class="md-nav__link">
   
   
   
@@ -3501,7 +3493,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/" class="md-nav__link">
   
   
   
@@ -3522,7 +3514,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/" class="md-nav__link">
   
   
   
@@ -3543,7 +3535,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/does-codacy-check-for-dependencies/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/does-codacy-check-for-dependencies/" class="md-nav__link">
   
   
   
@@ -3564,7 +3556,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" class="md-nav__link">
   
   
   
@@ -3585,7 +3577,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/how-to-skip-an-analysis/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/how-to-skip-an-analysis/" class="md-nav__link">
   
   
   
@@ -3606,7 +3598,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/can-i-bypass-codacy-status-check/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/can-i-bypass-codacy-status-check/" class="md-nav__link">
   
   
   
@@ -3627,7 +3619,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/" class="md-nav__link">
   
   
   
@@ -3700,7 +3692,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/why-cant-i-see-my-organization/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/why-cant-i-see-my-organization/" class="md-nav__link">
   
   
   
@@ -3721,7 +3713,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" class="md-nav__link">
   
   
   
@@ -3742,7 +3734,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/why-arent-duplication-metrics-being-calculated/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/why-arent-duplication-metrics-being-calculated/" class="md-nav__link">
   
   
   
@@ -3763,7 +3755,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/" class="md-nav__link">
   
   
   
@@ -3784,7 +3776,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/not-a-member-of-the-organization/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/not-a-member-of-the-organization/" class="md-nav__link">
   
   
   
@@ -3805,7 +3797,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/we-no-longer-have-access-to-this-repository/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/we-no-longer-have-access-to-this-repository/" class="md-nav__link">
   
   
   
@@ -3826,7 +3818,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/why-is-my-file-over-150-kb-missing/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/why-is-my-file-over-150-kb-missing/" class="md-nav__link">
   
   
   
@@ -3847,7 +3839,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../faq/troubleshooting/error-line-endings/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../faq/troubleshooting/error-line-endings/" class="md-nav__link">
   
   
   
@@ -3880,7 +3872,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../special-thanks/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../special-thanks/" class="md-nav__link">
   
   
   
@@ -3920,14 +3912,14 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -3946,7 +3938,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Developer tools
@@ -3958,7 +3950,13 @@
   
   
   
-    <li class="md-nav__item"><a href="../../developer-tools/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
   
   
   
@@ -3974,7 +3972,9 @@
   </span>
   
   
-</a></li>
+</a>
+      
+    </li>
   
 
   
@@ -4029,7 +4029,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-guardrails/codacy-guardrails-getting-started/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-guardrails/codacy-guardrails-getting-started/" class="md-nav__link">
   
   
   
@@ -4050,7 +4050,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-guardrails/codacy-guardrails-how-to-use/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-guardrails/codacy-guardrails-how-to-use/" class="md-nav__link">
   
   
   
@@ -4071,7 +4071,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-guardrails/codacy-guardrails-how-to-configure-rules/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-guardrails/codacy-guardrails-how-to-configure-rules/" class="md-nav__link">
   
   
   
@@ -4092,7 +4092,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-guardrails/codacy-guardrails-limitations/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-guardrails/codacy-guardrails-limitations/" class="md-nav__link">
   
   
   
@@ -4113,7 +4113,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-guardrails/codacy-guardrails-troubleshooting/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-guardrails/codacy-guardrails-troubleshooting/" class="md-nav__link">
   
   
   
@@ -4134,7 +4134,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-guardrails/codacy-guardrails-faq/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-guardrails/codacy-guardrails-faq/" class="md-nav__link">
   
   
   
@@ -4209,7 +4209,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/using-the-codacy-api/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/using-the-codacy-api/" class="md-nav__link">
   
   
   
@@ -4230,7 +4230,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/api-tokens/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/api-tokens/" class="md-nav__link">
   
   
   
@@ -4297,7 +4297,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/adding-people-to-codacy-programmatically/" class="md-nav__link">
   
   
   
@@ -4318,7 +4318,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/adding-repositories-to-codacy-programmatically/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/adding-repositories-to-codacy-programmatically/" class="md-nav__link">
   
   
   
@@ -4339,7 +4339,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/creating-repository-api-tokens-programmatically/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/creating-repository-api-tokens-programmatically/" class="md-nav__link">
   
   
   
@@ -4360,7 +4360,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/obtaining-code-quality-metrics-for-files/" class="md-nav__link">
   
   
   
@@ -4381,7 +4381,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/obtaining-current-issues-in-repositories/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/obtaining-current-issues-in-repositories/" class="md-nav__link">
   
   
   
@@ -4402,7 +4402,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/identifying-commits-without-coverage-data/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/identifying-commits-without-coverage-data/" class="md-nav__link">
   
   
   
@@ -4423,7 +4423,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/uploading-dast-results/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/uploading-dast-results/" class="md-nav__link">
   
   
   
@@ -4444,7 +4444,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-api/examples/triggering-dast-scans/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-api/examples/triggering-dast-scans/" class="md-nav__link">
   
   
   
@@ -4525,7 +4525,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-cloud-cli/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../codacy-cloud-cli/" class="md-nav__link">
   
   
   
@@ -4600,7 +4600,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/integrating-codacy-with-visual-studio-code/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/integrating-codacy-with-visual-studio-code/" class="md-nav__link">
   
   
   
@@ -4621,7 +4621,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../getting-started/integrating-codacy-with-intellij-ides/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../getting-started/integrating-codacy-with-intellij-ides/" class="md-nav__link">
   
   
   
@@ -4703,7 +4703,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/" class="md-nav__link">
   
   
   
@@ -4820,7 +4820,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-07/" class="md-nav__link">
   
   
   
@@ -4841,7 +4841,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-07-adding-shellcheck-config-file/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-07-adding-shellcheck-config-file/" class="md-nav__link">
   
   
   
@@ -4862,7 +4862,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files/" class="md-nav__link">
   
   
   
@@ -4883,7 +4883,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-07-remove-codesniffer-packages/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-07-remove-codesniffer-packages/" class="md-nav__link">
   
   
   
@@ -4904,7 +4904,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-06/" class="md-nav__link">
   
   
   
@@ -4925,7 +4925,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-05/" class="md-nav__link">
   
   
   
@@ -4946,7 +4946,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-04/" class="md-nav__link">
   
   
   
@@ -4967,7 +4967,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-03/" class="md-nav__link">
   
   
   
@@ -4988,7 +4988,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-03-github-integration-settings-changes/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-03-github-integration-settings-changes/" class="md-nav__link">
   
   
   
@@ -5009,7 +5009,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-02/" class="md-nav__link">
   
   
   
@@ -5030,7 +5030,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-01/" class="md-nav__link">
   
   
   
@@ -5051,7 +5051,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2026-01-adding-golangci-lint/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2026-01-adding-golangci-lint/" class="md-nav__link">
   
   
   
@@ -5124,7 +5124,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-12/" class="md-nav__link">
   
   
   
@@ -5145,7 +5145,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-11/" class="md-nav__link">
   
   
   
@@ -5166,7 +5166,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-10/" class="md-nav__link">
   
   
   
@@ -5187,7 +5187,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-09/" class="md-nav__link">
   
   
   
@@ -5208,7 +5208,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-08/" class="md-nav__link">
   
   
   
@@ -5229,7 +5229,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-07/" class="md-nav__link">
   
   
   
@@ -5250,7 +5250,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-06/" class="md-nav__link">
   
   
   
@@ -5271,7 +5271,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek/" class="md-nav__link">
   
   
   
@@ -5292,7 +5292,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-05/" class="md-nav__link">
   
   
   
@@ -5313,7 +5313,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-04/" class="md-nav__link">
   
   
   
@@ -5334,7 +5334,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-03/" class="md-nav__link">
   
   
   
@@ -5355,7 +5355,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-02-adding-ruff-lizard/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-02-adding-ruff-lizard/" class="md-nav__link">
   
   
   
@@ -5376,7 +5376,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-02/" class="md-nav__link">
   
   
   
@@ -5397,7 +5397,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2025-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2025-01/" class="md-nav__link">
   
   
   
@@ -5470,7 +5470,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-12/" class="md-nav__link">
   
   
   
@@ -5491,7 +5491,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-11/" class="md-nav__link">
   
   
   
@@ -5512,7 +5512,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-10/" class="md-nav__link">
   
   
   
@@ -5533,7 +5533,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-09/" class="md-nav__link">
   
   
   
@@ -5554,7 +5554,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7/" class="md-nav__link">
   
   
   
@@ -5575,7 +5575,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-08/" class="md-nav__link">
   
   
   
@@ -5596,7 +5596,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-07/" class="md-nav__link">
   
   
   
@@ -5617,7 +5617,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-06/" class="md-nav__link">
   
   
   
@@ -5638,7 +5638,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-05/" class="md-nav__link">
   
   
   
@@ -5659,7 +5659,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-04/" class="md-nav__link">
   
   
   
@@ -5680,7 +5680,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-03/" class="md-nav__link">
   
   
   
@@ -5701,7 +5701,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-02/" class="md-nav__link">
   
   
   
@@ -5722,7 +5722,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-01/" class="md-nav__link">
   
   
   
@@ -5743,7 +5743,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/" class="md-nav__link">
   
   
   
@@ -5816,7 +5816,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-12/" class="md-nav__link">
   
   
   
@@ -5837,7 +5837,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-11/" class="md-nav__link">
   
   
   
@@ -5858,7 +5858,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/" class="md-nav__link">
   
   
   
@@ -5879,7 +5879,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal/" class="md-nav__link">
   
   
   
@@ -5900,7 +5900,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-10/" class="md-nav__link">
   
   
   
@@ -5921,7 +5921,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/" class="md-nav__link">
   
   
   
@@ -5942,7 +5942,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation/" class="md-nav__link">
   
   
   
@@ -5963,7 +5963,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-09/" class="md-nav__link">
   
   
   
@@ -5984,7 +5984,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-08/" class="md-nav__link">
   
   
   
@@ -6005,7 +6005,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-07/" class="md-nav__link">
   
   
   
@@ -6026,7 +6026,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-06/" class="md-nav__link">
   
   
   
@@ -6047,7 +6047,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-05/" class="md-nav__link">
   
   
   
@@ -6068,7 +6068,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-04/" class="md-nav__link">
   
   
   
@@ -6089,7 +6089,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-03/" class="md-nav__link">
   
   
   
@@ -6110,7 +6110,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-02/" class="md-nav__link">
   
   
   
@@ -6131,7 +6131,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2023-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2023-01/" class="md-nav__link">
   
   
   
@@ -6204,7 +6204,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-12/" class="md-nav__link">
   
   
   
@@ -6225,7 +6225,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-11/" class="md-nav__link">
   
   
   
@@ -6246,7 +6246,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-10/" class="md-nav__link">
   
   
   
@@ -6267,7 +6267,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-09/" class="md-nav__link">
   
   
   
@@ -6288,7 +6288,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-08/" class="md-nav__link">
   
   
   
@@ -6309,7 +6309,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-07/" class="md-nav__link">
   
   
   
@@ -6330,7 +6330,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-06/" class="md-nav__link">
   
   
   
@@ -6351,7 +6351,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-05/" class="md-nav__link">
   
   
   
@@ -6372,7 +6372,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-04/" class="md-nav__link">
   
   
   
@@ -6393,7 +6393,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-03/" class="md-nav__link">
   
   
   
@@ -6414,7 +6414,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-03-31-adding-eslint8/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-03-31-adding-eslint8/" class="md-nav__link">
   
   
   
@@ -6435,7 +6435,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-02/" class="md-nav__link">
   
   
   
@@ -6456,7 +6456,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/" class="md-nav__link">
   
   
   
@@ -6477,7 +6477,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2022-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2022-01/" class="md-nav__link">
   
   
   
@@ -6550,7 +6550,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2021-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2021-12/" class="md-nav__link">
   
   
   
@@ -6571,7 +6571,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2021-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2021-11/" class="md-nav__link">
   
   
   
@@ -6592,7 +6592,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2021-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2021-10/" class="md-nav__link">
   
   
   
@@ -6613,7 +6613,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2021-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2021-09/" class="md-nav__link">
   
   
   
@@ -6634,7 +6634,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" class="md-nav__link">
   
   
   
@@ -6655,7 +6655,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2021-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2021-08/" class="md-nav__link">
   
   
   
@@ -6676,7 +6676,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" class="md-nav__link">
   
   
   
@@ -6749,7 +6749,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" class="md-nav__link">
   
   
   
@@ -6770,7 +6770,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" class="md-nav__link">
   
   
   
@@ -6791,7 +6791,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2020-02-github-apps/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2020-02-github-apps/" class="md-nav__link">
   
   
   
@@ -6864,7 +6864,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-11-15/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-11-15/" class="md-nav__link">
   
   
   
@@ -6885,7 +6885,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-10-30/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-10-30/" class="md-nav__link">
   
   
   
@@ -6906,7 +6906,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-09-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-09-05/" class="md-nav__link">
   
   
   
@@ -6927,7 +6927,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-08-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-08-07/" class="md-nav__link">
   
   
   
@@ -6948,7 +6948,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-06-18/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-06-18/" class="md-nav__link">
   
   
   
@@ -6969,7 +6969,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-05-20/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-05-20/" class="md-nav__link">
   
   
   
@@ -6990,7 +6990,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-05-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-05-05/" class="md-nav__link">
   
   
   
@@ -7011,7 +7011,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-04-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-04-08/" class="md-nav__link">
   
   
   
@@ -7032,7 +7032,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-03-29/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-03-29/" class="md-nav__link">
   
   
   
@@ -7053,7 +7053,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" class="md-nav__link">
   
   
   
@@ -7074,7 +7074,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2019-01-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2019-01-02/" class="md-nav__link">
   
   
   
@@ -7147,7 +7147,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2018-11-16/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2018-11-16/" class="md-nav__link">
   
   
   
@@ -7168,7 +7168,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2018-11-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2018-11-02/" class="md-nav__link">
   
   
   
@@ -7189,7 +7189,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2018-10-19/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2018-10-19/" class="md-nav__link">
   
   
   
@@ -7210,7 +7210,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/cloud/cloud-2018-07-23/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/cloud/cloud-2018-07-23/" class="md-nav__link">
   
   
   
@@ -7337,7 +7337,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v16.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v16.0.0/" class="md-nav__link">
   
   
   
@@ -7410,7 +7410,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v15.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v15.0.0/" class="md-nav__link">
   
   
   
@@ -7483,7 +7483,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v14.1.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v14.1.1/" class="md-nav__link">
   
   
   
@@ -7504,7 +7504,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v14.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v14.0.0/" class="md-nav__link">
   
   
   
@@ -7577,7 +7577,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v13.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v13.0.0/" class="md-nav__link">
   
   
   
@@ -7650,7 +7650,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v12.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v12.0.0/" class="md-nav__link">
   
   
   
@@ -7723,7 +7723,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v11.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v11.0.0/" class="md-nav__link">
   
   
   
@@ -7796,7 +7796,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v10.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v10.0.0/" class="md-nav__link">
   
   
   
@@ -7869,7 +7869,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v9.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v9.0.0/" class="md-nav__link">
   
   
   
@@ -7942,7 +7942,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v8.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v8.1.0/" class="md-nav__link">
   
   
   
@@ -7963,7 +7963,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v8.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v8.0.0/" class="md-nav__link">
   
   
   
@@ -8036,7 +8036,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v7.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v7.0.0/" class="md-nav__link">
   
   
   
@@ -8109,7 +8109,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v6.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v6.0.0/" class="md-nav__link">
   
   
   
@@ -8182,7 +8182,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v5.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v5.1.0/" class="md-nav__link">
   
   
   
@@ -8203,7 +8203,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v5.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v5.0.0/" class="md-nav__link">
   
   
   
@@ -8276,7 +8276,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v4.4.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v4.4.0/" class="md-nav__link">
   
   
   
@@ -8297,7 +8297,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v4.3.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v4.3.0/" class="md-nav__link">
   
   
   
@@ -8318,7 +8318,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v4.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v4.2.0/" class="md-nav__link">
   
   
   
@@ -8339,7 +8339,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v4.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v4.1.0/" class="md-nav__link">
   
   
   
@@ -8360,7 +8360,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v4.0.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v4.0.1/" class="md-nav__link">
   
   
   
@@ -8381,7 +8381,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v4.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v4.0.0/" class="md-nav__link">
   
   
   
@@ -8454,7 +8454,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v3.5.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v3.5.1/" class="md-nav__link">
   
   
   
@@ -8475,7 +8475,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v3.5.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v3.5.0/" class="md-nav__link">
   
   
   
@@ -8496,7 +8496,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v3.4.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v3.4.0/" class="md-nav__link">
   
   
   
@@ -8517,7 +8517,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v3.3.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v3.3.0/" class="md-nav__link">
   
   
   
@@ -8538,7 +8538,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v3.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v3.2.0/" class="md-nav__link">
   
   
   
@@ -8559,7 +8559,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v3.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v3.1.0/" class="md-nav__link">
   
   
   
@@ -8580,7 +8580,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v3.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v3.0.0/" class="md-nav__link">
   
   
   
@@ -8653,7 +8653,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v2.2.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v2.2.1/" class="md-nav__link">
   
   
   
@@ -8674,7 +8674,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v2.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v2.2.0/" class="md-nav__link">
   
   
   
@@ -8695,7 +8695,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v2.1.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v2.1.1/" class="md-nav__link">
   
   
   
@@ -8716,7 +8716,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v2.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v2.1.0/" class="md-nav__link">
   
   
   
@@ -8737,7 +8737,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v2.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v2.0.0/" class="md-nav__link">
   
   
   
@@ -8810,7 +8810,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v1.5.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v1.5.0/" class="md-nav__link">
   
   
   
@@ -8831,7 +8831,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v1.4.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v1.4.0/" class="md-nav__link">
   
   
   
@@ -8852,7 +8852,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v1.3.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v1.3.0/" class="md-nav__link">
   
   
   
@@ -8873,7 +8873,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v1.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v1.2.0/" class="md-nav__link">
   
   
   
@@ -8894,7 +8894,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v1.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v1.1.0/" class="md-nav__link">
   
   
   
@@ -8915,7 +8915,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v1.0.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v1.0.1/" class="md-nav__link">
   
   
   
@@ -8936,7 +8936,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../release-notes/self-hosted/self-hosted-v1.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../release-notes/self-hosted/self-hosted-v1.0.0/" class="md-nav__link">
   
   
   
@@ -9004,37 +9004,6 @@
 
 
 
-  <nav class="md-path" aria-label="Navigation" >
-    <ol class="md-path__list">
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../.." class="md-path__link">
-  <span class="md-ellipsis">Documentation</span>
-</a></li>
-    
-  
-
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../configuring-code-patterns/" class="md-path__link">
-  <span class="md-ellipsis">Configuring your repositories</span>
-</a></li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -9045,31 +9014,38 @@
 
 
 
-<h1 id="removing-your-repository">Removing your repository<a class="headerlink" href="#removing-your-repository" title="Permanent link">#</a></h1>
-<p>To stop Codacy from analyzing your repository, you must remove the repository from Codacy.</p>
-<p>Removing a repository from Codacy completely removes the configurations and all data related to your repository from Codacy. This operation doesn't make any changes on your Git provider.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>To remove a repository from Codacy you must have <a href="../../organizations/roles-and-permissions-for-organizations/">administrator permissions</a> for that repository on your Git provider.</p>
+<h1 id="codacy-dev-tools">Codacy dev tools<a class="headerlink" href="#codacy-dev-tools" title="Permanent link">#</a></h1>
+<p>Codacy also works from outside the Codacy web app: from your terminal, your IDE, or your AI agent's tool-calling layer. This page lists the tools available for each of those entry points.</p>
+<div class="content-columns-wrapper">
+  <section class="content-link-column" aria-labelledby="dev-tools-options">
+    <h2 id="dev-tools-options">Available tools</h2>
+
+    <a class="content-link" href="../codacy-guardrails/codacy-guardrails-getting-started/">
+      <h3>Codacy Guardrails</h3>
+      <p>Scan AI-generated code for security and quality issues as it's written, and query your Codacy findings from your IDE's AI chat panel.</p>
+    </a>
+
+    <a class="content-link" href="../codacy-api/using-the-codacy-api/">
+      <h3>Codacy API</h3>
+      <p>Retrieve and analyze your Codacy data, and make a few configuration changes, programmatically.</p>
+    </a>
+
+    <a class="content-link" href="../codacy-cloud-cli/">
+      <h3>Codacy Cloud CLI</h3>
+      <p>Add repositories, review issues, and inspect pull requests from your terminal. Pair it with Codacy Skills to ask for the same in plain language from your AI assistant.</p>
+    </a>
+
+    <a class="content-link" href="../getting-started/integrating-codacy-with-visual-studio-code/">
+      <h3>Visual Studio Code extension</h3>
+      <p>Review the Codacy analysis for a pull request without leaving your editor.</p>
+    </a>
+
+    <a class="content-link" href="../getting-started/integrating-codacy-with-intellij-ides/">
+      <h3>IntelliJ plugin</h3>
+      <p>Review the Codacy analysis for a pull request from an IntelliJ-based IDE.</p>
+    </a>
+  </section>
 </div>
-<p>To delete your repository from Codacy:</p>
-<ol>
-<li>
-<p>Open your repository <strong>Settings</strong>, tab <strong>General</strong>.</p>
-</li>
-<li>
-<p>Click the button <strong>Remove repository</strong> and confirm that you want to remove the repository.</p>
-<p><img width="1280" height="545" decoding="async" alt="Removing your repository" src="../images/repository-remove.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For added security, after you remove the repository from Codacy you can delete from your Git provider the Codacy resources related to that repository to prevent their reuse:</p>
-<ul>
-<li>Webhooks</li>
-<li>SSH keys (GitLab and Bitbucket only)</li>
-</ul>
-</div>
-</li>
-</ol>
 
   
     
@@ -9078,7 +9054,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2024-02-19 15:49:05"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 19, 2024</span></time>
+    <time datetime="2026-08-13 12:28:54"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 13, 2026</span></time>
   </aside>
 
 
@@ -9103,10 +9079,10 @@
       <button type="button" data-feedback-send>Send feedback</button>
     </div>
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
-    <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Removing%20your%20repository%22">open an issue on GitHub</a>.</p>
+    <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Codacy%20dev%20tools%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/docs/edit/master/docs/repositories-configure/removing-your-repository.md">Edit this page on GitHub</a>
-      <a href="mailto:support@codacy.com?subject=Question%20regarding%20Removing%20your%20repository">Contact support</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/developer-tools/index.md">Edit this page on GitHub</a>
+      <a href="mailto:support@codacy.com?subject=Question%20regarding%20Codacy%20dev%20tools">Contact support</a>
     </p>
   </section>
   <script>
@@ -9144,8 +9120,8 @@
 
   
     <nav class="docs-page-nav" aria-label="Page navigation">
-      <a href="../codacy-configuration-file/"><span>Previous</span><strong>Codacy configuration file</strong></a>
-      <a href="../../organizations/what-are-organizations/" class="docs-page-nav__next"><span>Next</span><strong>What are organizations</strong></a>
+      <a href="../special-thanks/"><span>Previous</span><strong>Special thanks</strong></a>
+      <a href="../codacy-guardrails/codacy-guardrails-getting-started/" class="docs-page-nav__next"><span>Next</span><strong>Getting Started</strong></a>
     </nav>
   
 
@@ -9180,16 +9156,16 @@
   
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.suggest", "content.code.copy", "content.tabs.link", "navigation.path", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "content.code.copy", "content.tabs.link", "navigation.path", "navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
   <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3d46eedc-c17f-4ae6-8385-a62571296d54"></script>
 
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../assets/javascripts/version-select.js"></script>
+        <script src="../assets/javascripts/version-select.js"></script>
       
-        <script src="../../assets/javascripts/docs-theme.js"></script>
+        <script src="../assets/javascripts/docs-theme.js"></script>
       
     
   </body>
