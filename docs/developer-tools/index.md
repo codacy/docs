@@ -2,7 +2,7 @@
 description: Overview of how to use Codacy from outside the Codacy web app, through the API, Codacy Cloud CLI, IDE integrations, and Codacy Guardrails.
 ---
 
-# Codacy developer tools
+# Codacy dev tools
 
 Codacy also works from outside the Codacy web app: from your terminal, your IDE, or your AI agent's tool-calling layer. This page lists the tools available for each of those entry points.
 

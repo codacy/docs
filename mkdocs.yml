@@ -73,10 +73,11 @@ extra:
     # level == 2 handling in theme/partials/nav-item.html).
     sidebar_icons:
         "Documentation home": "home-outline"
-        "Developer tools home": "home-outline"
+        "Codacy dev tools": "settings-outline"
         "Getting started": "rocket-outline"
         "Codacy Guardrails": "shield-checkmark-outline"
         "Codacy Cloud CLI": "terminal-outline"
+        "IDE integrations": "share-social-outline"
         "Codacy AI": "sparkles-outline"
         "Repositories on Codacy": "folder-open-outline"
         "Configuring your repositories": "settings-outline"
@@ -740,7 +741,7 @@ nav:
                       - faq/troubleshooting/error-line-endings.md
           - special-thanks.md
     - Developer tools:
-          - Developer tools home: "developer-tools/index.md"
+          - Codacy dev tools: "developer-tools/index.md"
           - Codacy Guardrails:
                 - codacy-guardrails/codacy-guardrails-getting-started.md
                 - codacy-guardrails/codacy-guardrails-how-to-use.md
@@ -762,7 +763,7 @@ nav:
                       - codacy-api/examples/triggering-dast-scans.md
           - Codacy Cloud CLI:
                 - codacy-cloud-cli/index.md
-          - Integrating Codacy with your IDE:
+          - IDE integrations:
                 - getting-started/integrating-codacy-with-intellij-ides.md
                 - getting-started/integrating-codacy-with-visual-studio-code.md
     - Release notes:

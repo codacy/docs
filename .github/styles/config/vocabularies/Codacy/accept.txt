@@ -30,6 +30,7 @@ dartanalyzer
 deadcode
 Dependabot
 detekt
+dev
 Dockerfile
 endif
 ESLint
