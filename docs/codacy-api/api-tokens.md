@@ -43,7 +43,13 @@ When you have tokens created, you can view them inside the tokens table. By hove
 
 To delete an account API token, click the trash icon in the Actions column of the table. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
-Account API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as **Never**. Codacy recommends replacing them: create a new account API token with an expiration date, update every application or service that authenticates with the old token, and only then delete the token without an expiration date. Creating the replacement first prevents the applications still using the old token from failing to authenticate.
+Account API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as **Never**. Codacy recommends replacing them:
+
+1.  Create a new account API token with an expiration date.
+1.  Update every application or service that authenticates with the old token.
+1.  Delete the token without an expiration date.
+
+Creating the replacement first prevents the applications still using the old token from failing to authenticate.
 
 ## Generating and revoking repository API tokens {: id="repository-api-tokens"}
 
@@ -72,7 +78,11 @@ Codacy displays the value of the new token **only once**, immediately after you 
 ![A newly created repository API token, with its value displayed once](images/codacy-api-tokens-repository-created.png)
 
 !!! note
-    Repository API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as **Never**. Codacy recommends replacing them: create a new repository API token with an expiration date, update every application or service that authenticates with the old token, such as your CI pipelines, and only then delete the old tokens. You can delete them individually, or all at once using the **delete all tokens without expiration** shortcut in the banner.
+    Repository API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as **Never**. Codacy recommends replacing them:
+
+    1.  Create a new repository API token with an expiration date.
+    1.  Update every application or service that authenticates with the old token, such as your CI pipelines.
+    1.  Delete the old tokens, individually or all at once using the **delete all tokens without expiration** shortcut in the banner.
 
 ![Repository API tokens without an expiration date](images/codacy-api-tokens-repository-never-expires.png)
 
