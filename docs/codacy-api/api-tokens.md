@@ -9,7 +9,7 @@ Codacy provides **account** and **repository**-level API tokens that allow you t
 -   [Upload coverage data](../coverage-reporter/index.md) to Codacy
 -   Upload to Codacy the results of [running client-side analysis tools](../repositories-configure/local-analysis/client-side-tools.md)
 -   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests)
--   [Authenticate with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication) (account API tokens only — the Codacy Cloud CLI doesn't currently support repository API tokens)
+-   [Authenticate with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication)
 
 The sections below provide details about the two types of API tokens and instructions on how to generate and revoke them.
 
@@ -43,14 +43,7 @@ When you have tokens created, you can view them inside the tokens table. By hove
 
 To delete an account API token, click the trash icon in the Actions column of the table. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
-!!! important
-    Account API tokens created before expiration dates became mandatory keep working, and appear in the table with the expiration **Never**. Codacy recommends replacing them:
-
-    1.  Create a new account API token with an expiration date.
-    1.  Update every application or service that authenticates with the old token.
-    1.  Delete the token without an expiration date.
-
-    Create the replacement before deleting the old token, otherwise the applications still using it will fail to authenticate.
+Account API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as **Never**. Codacy recommends replacing them: create a new account API token with an expiration date, update every application or service that authenticates with the old token, and only then delete the token without an expiration date. Creating the replacement first prevents the applications still using the old token from failing to authenticate.
 
 ## Generating and revoking repository API tokens {: id="repository-api-tokens"}
 
@@ -78,16 +71,10 @@ Codacy displays the value of the new token **only once**, immediately after you 
 
 ![A newly created repository API token, with its value displayed once](images/codacy-api-tokens-repository-created.png)
 
-!!! important
-    Repository API tokens created before expiration dates became mandatory keep working without an expiration date — they aren't retroactively required to have one. They appear in the table with the expiration **Never**, and Codacy recommends replacing them:
+!!! note
+    Repository API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as **Never**. Codacy recommends replacing them: create a new repository API token with an expiration date, update every application or service that authenticates with the old token, such as your CI pipelines, and only then delete the old tokens. You can delete them individually, or all at once using the **delete all tokens without expiration** shortcut in the banner.
 
-    1.  Create a new repository API token with an expiration date.
-    1.  Update every application or service that authenticates with the old token, such as your CI pipelines.
-    1.  Delete the tokens without an expiration date, either individually or using the **delete all tokens without expiration** shortcut in the banner at the top of the page.
-
-    Create the replacements before deleting the old tokens, otherwise the applications still using them will fail to authenticate.
-
-    ![Repository API tokens without an expiration date](images/codacy-api-tokens-repository-never-expires.png)
+![Repository API tokens without an expiration date](images/codacy-api-tokens-repository-never-expires.png)
 
 When a repository API token expires, requests authenticated with it are rejected with a distinct "token expired" error, so you can tell an expired token apart from one that's invalid or was deleted.
 
