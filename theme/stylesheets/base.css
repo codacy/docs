@@ -1,6 +1,11 @@
 html { font-size: 100%; }
 
-html { scroll-padding-top: 5rem; scroll-behavior: smooth; }
+/* scroll-margin-top on headings (content.css) handles the sticky-header
+   offset for anchor jumps. A page-wide scroll-padding-top here would also
+   apply to focus()-triggered scrolling of anything inside the sticky header
+   itself (e.g. the search trigger), which sits within that reserved band and
+   would get nudged out of it — producing a large, jarring scroll on focus. */
+html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body { color: var(--docs-text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }

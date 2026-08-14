@@ -17,10 +17,10 @@
 {% macro render_content(nav_item, ref, level = none) %}
   {% set ref = ref or nav_item %}
   {% set section_icons = config.extra.sidebar_icons or {} %}
-  {% if level == 1 and section_icons.get(nav_item.title) %}
+  {% if (level == 1 or (level == 2 and "navigation.tabs" in features)) and section_icons.get(nav_item.title) %}
     {{ icon(section_icons.get(nav_item.title), "docs-nav-section-icon" ~ ("" if nav_item.children else " docs-nav-section-icon--standalone")) }}
   {% elif nav_item.meta and nav_item.meta.icon %}
-    {% include ".icons/" ~ nav_item.meta.icon ~ ".svg" %}
+    {{ icon(nav_item.meta.icon, "docs-nav-section-icon" ~ ("" if nav_item.children else " docs-nav-section-icon--standalone")) }}
   {% endif %}
   <span class="md-ellipsis">
     {{ render_title(ref) }}

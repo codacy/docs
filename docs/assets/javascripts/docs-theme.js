@@ -158,9 +158,24 @@ function initializeDocsTheme() {
 
             if (drawerToggle.checked) {
                 window.setTimeout(function () {
-                    var firstLink = drawer.querySelector(".md-nav__list a[href]");
+                    // With navigation.tabs, every tab's subtree stays mounted in the
+                    // drawer (Material slides the active one into view instead of
+                    // removing the rest). Opening the drawer reliably leaves
+                    // .md-sidebar__scrollwrap scrolled one panel-width to the right,
+                    // hiding the active tab's own list off-screen. Force it back to
+                    // the resting position before moving focus.
+                    const scrollwrap = drawer.querySelector(".md-sidebar__scrollwrap");
+                    if (scrollwrap) {
+                        scrollwrap.scrollLeft = 0;
+                    }
+
+                    // The first link in document order can belong to a tab that
+                    // isn't currently visible; focusing it without a scoped lookup
+                    // would re-trigger the same off-screen scroll. Prefer the
+                    // active tab's first link, and pass preventScroll as a backstop.
+                    const firstLink = drawer.querySelector(".md-nav__item--active > .md-nav .md-nav__list a[href]") || drawer.querySelector(".md-nav__list a[href]");
                     if (firstLink) {
-                        firstLink.focus();
+                        firstLink.focus({ preventScroll: true });
                     }
                 }, 0);
             } else {

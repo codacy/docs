@@ -32,3 +32,9 @@ tools/*.csv
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
+
+# Per-user Claude Code permission grants and scratch worktrees. Everything else in
+# .claude/ is the shared, committed docs-writing system and stays tracked.
+.claude/settings.local.json
+.claude/worktrees/
+.claude/plans/

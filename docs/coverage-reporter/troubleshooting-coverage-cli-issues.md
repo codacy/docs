@@ -101,7 +101,7 @@ If you get a `com.fasterxml.jackson.core.JsonParseException` error while uploadi
 
 There are some ways you can solve this:
 
--   Split your coverage reports into smaller files and [upload them to Codacy one at a time](../uploading-coverage-in-advanced-scenarios/#multiple-reports).
+-   Split your coverage reports into smaller files and [upload them to Codacy one at a time](uploading-coverage-in-advanced-scenarios.md#multiple-reports).
 
 -   **If you're using dotCover to generate coverage reports for your C# projects**, you should [exclude <span class="skip-vale">xUnit</span> files](https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd) from the coverage analysis as follows:
 

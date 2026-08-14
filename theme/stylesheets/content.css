@@ -1,12 +1,40 @@
 .md-content__inner { position: relative; padding-top: 1.25rem; padding-bottom: 3rem; }
+/* Material only gives .md-content__inner its right-hand gutter (margin-right:
+   1.2rem) via a `:not([hidden])` sidebar selector, so pages that hide the TOC
+   through `hide: - toc` (native `[hidden]` attribute) lose 0.4rem of margin and
+   end up wider than every other page. Restore it so widths stay consistent. */
+.md-sidebar--secondary[hidden] ~ .md-content > .md-content__inner { margin-right: 1.2rem; }
 .md-typeset { color: var(--docs-text-secondary); font-size: 1rem; line-height: 1.7; }
-.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 { color: var(--docs-text); font-weight: 700; letter-spacing: -.025em; }
+/* Offsets anchor jumps (TOC links, in-page #hash links) so headings don't land
+   under the sticky header. Scoped to headings rather than a page-wide
+   scroll-padding-top on <html>, which also caught focus() calls on elements
+   inside the header itself and caused a large scroll jump on search open. */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 { scroll-margin-top: 5rem; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5 { color: var(--docs-text); font-weight: 700; letter-spacing: -.025em; }
 .md-typeset h1 { margin: 0 0 1.5rem; font-size: 1.875rem; line-height: 1.25; }
 .md-typeset h2 { margin-top: 3rem; padding-top: .25rem; font-size: 1.5rem; line-height: 1.35; }
 .md-typeset h3 { margin-top: 2rem; font-size: 1.2rem; }
+.md-typeset h4 { margin: 1.75rem 0 .5rem; font-size: 1.05rem; line-height: 1.45; }
+.md-typeset h5 { margin: 1.5rem 0 .4rem; font-size: .95rem; line-height: 1.45; }
+/* Material ships `.md-typeset h2+h3{margin-top:.8em}`, which out-specifies the
+   plain h3 rule above and tightens exactly the stacked case that needs the room. */
+.md-typeset h2 + h3 { margin-top: 2rem; }
 .md-content__inner > h1 + p { color: var(--docs-text-secondary); font-size: 1.0625rem; line-height: 1.65; }
 .md-typeset a { color: var(--docs-link); font-weight: 500; text-decoration-thickness: 1px; text-underline-offset: .14em; }
 .md-typeset a:hover { color: var(--docs-link-hover); }
+/* Footnote-marker links inherit sup's browser-default font-size: smaller,
+   which shrinks the link's hit area to a few px on a side. Pad and pull back
+   with a matching negative margin so the tap target grows without shifting
+   surrounding text. Covers both markup orders: the footnotes extension emits
+   <sup><a>, hand-rolled footnote HTML elsewhere in the docs emits <a><sup>. */
+.md-typeset a sup, .md-typeset sup a { display: inline-block; padding: .35rem; margin: -.35rem; }
+/* A footnote referenced from many rows (common on this site's tool-support
+   tables) gets one back-reference link per usage from the footnotes
+   extension. Those render one per line instead of flowing inline, so a
+   footnote used 20+ times turns into a list item several times taller than
+   the page. Keep only the first jump-back link; the rest point to the same
+   definition anyway. */
+.md-typeset .footnote-backref ~ .footnote-backref { display: none; }
 .md-typeset code { padding: .14em .32em; border-radius: var(--docs-radius); background: var(--docs-bg-subtle); color: var(--docs-text); }
 
 .md-typeset :not(pre) > code { border: 1px solid var(--docs-border); }
@@ -51,14 +79,55 @@
 .md-typeset .admonition > :first-child:not(.admonition-title), .md-typeset details > :first-child:not(summary) { margin-top: 0; }
 .md-typeset .admonition > p, .md-typeset details > p { color: var(--docs-text-secondary); }
 .md-typeset .admonition > .admonition-title + p, .md-typeset details > summary + p { margin: 0; }
-.md-typeset .admonition > .admonition-title, .md-typeset details > summary { display: flex; gap: .6rem; align-items: flex-start; margin: 0 0 .3rem; padding: 0; background: transparent; color: var(--docs-text); font-size: .875rem; font-weight: 600; line-height: 1.45; list-style: none; }
+/* Hanging indent, not flex: titles carry inline markup (links, bold), and each of
+   those would otherwise become a separate flex item with a gap between the words. */
+.md-typeset .admonition > .admonition-title, .md-typeset details > summary { display: block; position: relative; margin: 0 0 .3rem; padding: 0 0 0 1.5rem; background: transparent; color: var(--docs-text); font-size: .875rem; font-weight: 600; line-height: 1.45; list-style: none; }
+/* Collapsible admonitions (`??? note "…"`). Material gives the summary a full-bleed
+   tinted band, a chevron off this theme's padding grid, and extra space under the body,
+   so an open collapsible doesn't match a static admonition. Flatten all three. The
+   `[class]` is there for specificity: pymdownx always puts the type on the element, and
+   plain `details > summary` loses to Material's own `[dir=ltr] .md-typeset summary`.
+   Right padding keeps the title clear of the chevron. */
+.md-typeset details[class] > summary { padding: 0 1.2rem 0 1.5rem; background: transparent; cursor: pointer; }
+.md-typeset details[class] > summary::after { top: .18rem; right: 0; width: .9rem; height: .9rem; background-color: var(--docs-text-secondary); }
+.md-typeset details[class] > summary:hover::after { background-color: var(--docs-text); }
+.md-typeset details[class] > summary:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }
+.md-typeset details[class]:focus-within { box-shadow: none; }
+html .md-typeset details[class] > :last-child { margin-bottom: 0; }
+/* Material zeroes the bottom padding of a closed details, because its summary carries
+   its own padding inside a full-bleed band. This theme's summary is flat, so restore the
+   box padding and drop the summary's bottom margin when nothing follows it — otherwise a
+   closed collapsible sits .3rem off its bottom border while the top keeps the full .7rem. */
+.md-typeset details[class]:not([open]) { padding-bottom: .7rem; }
+.md-typeset details[class]:not([open]) > summary { margin-bottom: 0; }
 .md-typeset .admonition > .admonition-title:only-child, .md-typeset details > summary:only-child { margin-bottom: 0; }
-.md-typeset .admonition > .admonition-title::before, .md-typeset details > summary::before { content: ""; position: static; display: block; flex: 0 0 .9rem; width: .9rem; height: .9rem; margin-top: .18rem; background-color: var(--docs-link); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
+.md-typeset .admonition > .admonition-title::before, .md-typeset details[class] > summary::before { content: ""; position: absolute; top: .18rem; left: 0; display: block; width: .9rem; height: .9rem; background-color: var(--docs-link); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
 .md-typeset .admonition.important > .admonition-title::before, .md-typeset details.important > summary::before { -webkit-mask-image: var(--md-admonition-icon--info); mask-image: var(--md-admonition-icon--info); }
 .md-typeset .admonition.info > .admonition-title::before, .md-typeset details.info > summary::before { background-color: #00b8d4; }
 .md-typeset .admonition.tip > .admonition-title::before, .md-typeset details.tip > summary::before, .md-typeset .admonition.success > .admonition-title::before, .md-typeset details.success > summary::before { background-color: var(--docs-success); }
 .md-typeset .admonition.warning > .admonition-title::before, .md-typeset details.warning > summary::before { background-color: var(--docs-warning); }
 .md-typeset .admonition.danger > .admonition-title::before, .md-typeset details.danger > summary::before { background-color: var(--docs-danger); }
+/* Untitled admonitions (`!!! note ""`) have no title element to hang the icon on,
+   so the icon moves onto the box itself instead of leaving an unlabelled colored block. */
+.md-typeset .admonition { --docs-admonition-icon: var(--md-admonition-icon--note); --docs-admonition-color: var(--docs-link); }
+.md-typeset .admonition.important { --docs-admonition-icon: var(--md-admonition-icon--info); }
+.md-typeset .admonition.info { --docs-admonition-icon: var(--md-admonition-icon--info); --docs-admonition-color: #00b8d4; }
+.md-typeset .admonition.tip { --docs-admonition-icon: var(--md-admonition-icon--tip); --docs-admonition-color: var(--docs-success); }
+.md-typeset .admonition.success { --docs-admonition-icon: var(--md-admonition-icon--success); --docs-admonition-color: var(--docs-success); }
+.md-typeset .admonition.warning { --docs-admonition-icon: var(--md-admonition-icon--warning); --docs-admonition-color: var(--docs-warning); }
+.md-typeset .admonition.danger { --docs-admonition-icon: var(--md-admonition-icon--danger); --docs-admonition-color: var(--docs-danger); }
+.md-typeset .admonition:not(:has(> .admonition-title)) { position: relative; padding-left: 2.4rem; }
+.md-typeset .admonition:not(:has(> .admonition-title))::before { content: ""; position: absolute; top: .88rem; left: .9rem; width: .9rem; height: .9rem; background-color: var(--docs-admonition-color); -webkit-mask-image: var(--docs-admonition-icon); mask-image: var(--docs-admonition-icon); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
+/* Per-type weight. `note` and `info` had no rule of their own and fell through to
+   Material's saturated palette, which left `note` — the most incidental type, and the
+   most used — with 1.76x the border contrast of `important`, the one readers must not
+   skip. These three mix toward `--docs-bg` rather than `--docs-border`: contrast is then
+   monotonic in the percentage, so the same numbers hold in both schemes.
+   Border contrast against the box, light / dark:
+   note 1.34/1.29 · info 1.58/2.98 · tip 1.69/3.23 · warning 1.75/3.72 · important 3.39/3.60 */
+.md-typeset .admonition.note, .md-typeset details.note { border-color: color-mix(in srgb, var(--docs-link) 22%, var(--docs-bg)); background: color-mix(in srgb, var(--docs-link) 3%, var(--docs-bg)); }
+.md-typeset .admonition.info, .md-typeset details.info { border-color: color-mix(in srgb, #00b8d4 55%, var(--docs-bg)); background: color-mix(in srgb, #00b8d4 5%, var(--docs-bg)); }
+.md-typeset .admonition.important, .md-typeset details.important { border-color: color-mix(in srgb, var(--docs-link) 78%, var(--docs-bg)); background: color-mix(in srgb, var(--docs-link) 7%, var(--docs-bg)); }
 .md-typeset .admonition.tip, .md-typeset details.tip, .md-typeset .admonition.success, .md-typeset details.success { border-color: color-mix(in srgb, var(--docs-success) 35%, var(--docs-border)); background: color-mix(in srgb, var(--docs-success) 6%, var(--docs-bg)); }
 .md-typeset .admonition.warning, .md-typeset details.warning { border-color: color-mix(in srgb, var(--docs-warning) 38%, var(--docs-border)); background: color-mix(in srgb, var(--docs-warning) 6%, var(--docs-bg)); }
 .md-typeset .admonition.danger, .md-typeset details.danger { border-color: color-mix(in srgb, var(--docs-danger) 35%, var(--docs-border)); background: color-mix(in srgb, var(--docs-danger) 6%, var(--docs-bg)); }

@@ -9,6 +9,7 @@ Bandit
 Bitbucket
 Bitnami
 Brakeman
+Bundler
 bundler-audit
 Checkov
 Checkstyle
@@ -30,6 +31,7 @@ dartanalyzer
 deadcode
 Dependabot
 detekt
+dev
 Dockerfile
 endif
 ESLint
@@ -54,15 +56,18 @@ jscpd
 JSHint
 JSP
 Junie
+lockfile
 markdownlint
 monorepo
 namespace
+npm
 OAuth
 onboarding
 Opengrep
 PHP_CodeSniffer
 PHP CS Fixer
 PHPUnit
+pipenv
 plaintext
 PMD
 Promtail
@@ -86,9 +91,11 @@ ShellCheck
 SonarC#
 SonarVB
 SpotBugs
+SQLFluff
 SQLint
 Staticcheck
 Stylelint
+subfolder
 SVGs
 SwiftLint
 Tailor

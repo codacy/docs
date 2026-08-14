@@ -1,4 +1,4 @@
-# How to customize the analysis rules for Codacy Guardrails
+# Customizing analysis rules
 
 By default, if no API token is provided in the [MCP Server setup](codacy-guardrails-getting-started.md/#3-install-mcp-server), Codacy uses a predefined configuration that includes all recommended rules (or [code patterns](../repositories-configure/configuring-code-patterns.md) that you can find on many parts of our product) from the supported built-in scanners.
 
@@ -10,6 +10,8 @@ You can configure your rules in one of two ways:
 -  Using [built-in scanner configuration files](#using-configuration-files)–for version-controlled setups.
 
 -  Using the [Codacy UI](#using-the-codacy-ui)–for quick, manual adjustments.
+
+Either way, Guardrails picks the change up in the `.codacy` configuration it maintains for your repository, so local analysis matches what you configured.
 
 !!! note
     If you're already using a configuration file, please we recommend you can follow the first way. Otherwise, the second way is the best for you, so you can configure directly in the Codacy platform.

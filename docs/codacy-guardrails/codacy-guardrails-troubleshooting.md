@@ -1,5 +1,18 @@
 # Troubleshooting
 
+## Codacy CLI
+
+### Diagnosing local analysis issues
+
+Whenever local analysis or Guardrails scanning isn't behaving as expected, the standalone [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) can tell you the state of your setup: your authentication status, your system information, and every analysis tool it knows about, along with whether each one is installed locally.
+
+The IDE extension bundles its own copy of the analyzer and doesn't put the `codacy-analysis` command on your `PATH`, so install the CLI first:
+
+```bash
+npm i -g @codacy/analysis-cli
+codacy-analysis info
+```
+
 ## Node
 
 ### Claude Desktop
@@ -17,8 +30,7 @@ npm install -g @codacy/codacy-mcp
       "command": "/Users/yourusername/.nvm/versions/node/vXX.X.X/bin/node",
       "args": ["/path-to/codacy-mcp/dist/index.js"],
       "env": {
-        "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>",
-        "CODACY_CLI_VERSION": "<VERSION>"
+        "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>"
       }
     }
   }
