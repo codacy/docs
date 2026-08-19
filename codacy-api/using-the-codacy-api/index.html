@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-05-21 09:06:48">
+    <meta http-equiv="last-modified" content="2026-08-19 14:09:57">
   
   
 
@@ -9213,8 +9213,12 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <p>Most API endpoints require that you authenticate using an API token. After <a href="../api-tokens/">obtaining the necessary tokens</a>, include them in your request headers using the format <code>api-token: &lt;your account API token&gt;</code> or <code>project-token: &lt;your repository API token&gt;</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently, all API v3 endpoints that require authentication must use <strong>account API tokens</strong>, while the API v2 endpoints require either <strong>account or repository API tokens</strong>.</p>
+<p>Most API v3 endpoints that require authentication must use an <strong>account API token</strong>. A <a href="../api-tokens/#repository-api-token-operations">smaller set of repository-scoped endpoints</a> also accept a <strong>repository API token</strong>, scoped to that single repository. All API v2 endpoints accept either an account or a repository API token.</p>
 <p>Performing <code>GET</code> requests for public repositories doesn't require authentication.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>New repository API tokens always have an expiration date (up to one year). A request authenticated with an expired repository API token is rejected with a distinct "token expired" error, rather than the generic error you'd get from an invalid or unknown token — see <a href="../api-tokens/#repository-api-tokens">repository API tokens</a>.</p>
 </div>
 <p>For example, to make a request to an API v3 endpoint that requires an account API token:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s1">&#39;https://api.codacy.com/api/v3/user/organizations/gh&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -9308,7 +9312,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-05-21 09:06:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 21, 2026</span></time>
+    <time datetime="2026-08-19 14:09:57"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2026</span></time>
   </aside>
 
 

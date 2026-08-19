@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-08-06 10:57:38">
+    <meta http-equiv="last-modified" content="2026-08-19 14:09:57">
   
   
 
@@ -9191,12 +9191,19 @@
 </code></pre></div>
 <p>Alternatively, you can build from source. See the <a href="https://github.com/codacy/codacy-cloud-cli">GitHub repository</a> for instructions.</p>
 <h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">#</a></h2>
-<p>Run <code>codacy login</code> and enter your API token when prompted. Codacy stores your credentials encrypted at <code>~/.codacy/credentials</code>.</p>
+<p>The CLI accepts both <a href="../codacy-api/api-tokens/#account-api-tokens">account API tokens</a> and <a href="../codacy-api/api-tokens/#repository-api-tokens">repository API tokens</a>.</p>
+<h3 id="account-api-tokens">Account API tokens<a class="headerlink" href="#account-api-tokens" title="Permanent link">#</a></h3>
+<p>Run <code>codacy login</code> and enter the token when prompted. Codacy stores your credentials encrypted at <code>~/.codacy/credentials</code>. Get the token under <strong>My Account &gt; Access Management &gt; API Tokens</strong> in Codacy.</p>
 <div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>login
 </code></pre></div>
 <p>For non-interactive environments such as CI/CD pipelines, set the <code>CODACY_API_TOKEN</code> environment variable instead. This takes precedence over stored credentials.</p>
-<p>Get your API token under <strong>My Account &gt; Access Management &gt; API Tokens</strong> in Codacy. See <a href="../codacy-api/api-tokens/">API tokens</a> for details.</p>
 <p>To remove your stored credentials, run <code>codacy logout</code>.</p>
+<h3 id="repository-api-tokens">Repository API tokens<a class="headerlink" href="#repository-api-tokens" title="Permanent link">#</a></h3>
+<p>Use the option <code>--repository-token</code> or set the <code>CODACY_PROJECT_TOKEN</code> environment variable. You can't use a repository API token with <code>codacy login</code>.</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>issues<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span>--repository-token<span class="w"> </span>&lt;token&gt;
+</code></pre></div>
+<p>Prefer a repository API token in CI/CD pipelines: unlike an account API token, it only grants access to a single repository. Because it authorizes <a href="../codacy-api/api-tokens/#repository-api-token-operations">a limited set of operations</a>, commands outside that set fail immediately instead of contacting Codacy. The command <code>codacy repository</code> works, but omits the pull request and coverage data, listing what it skipped under <code>unavailable</code> in its JSON output.</p>
+<p>When more than one credential is available, the CLI uses the first of the option <code>--repository-token</code>, <code>CODACY_PROJECT_TOKEN</code>, <code>CODACY_API_TOKEN</code>, and the credentials stored by <code>codacy login</code>.</p>
 <h2 id="install-the-codacy-skills">Install the Codacy Skills<a class="headerlink" href="#install-the-codacy-skills" title="Permanent link">#</a></h2>
 <p>The <a href="https://github.com/codacy/codacy-skills">Codacy Skills</a> let your AI assistant interact with your Codacy data in plain language, without needing to remember command syntax:</p>
 <ul>
@@ -9381,7 +9388,7 @@ codacy<span class="w"> </span>pull-request<span class="w"> </span>gh<span class=
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-08-06 10:57:38"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2026</span></time>
+    <time datetime="2026-08-19 14:09:57"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2026</span></time>
   </aside>
 
 

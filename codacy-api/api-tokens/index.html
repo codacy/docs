@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-05-21 09:06:48">
+    <meta http-equiv="last-modified" content="2026-08-19 14:09:57">
   
   
 
@@ -9156,35 +9156,80 @@
 <p>Click the button <strong>Create API token</strong> under <strong>Account API tokens</strong>.</p>
 </li>
 <li>
-<p>Select an expiration date from the modal options. You can select between a range of 7 days to 90 days, create a custom expiration date, or create a token with no expiration.</p>
+<p>Select an expiration date from the modal options. You can select 7, 30, or 90 days, or set a custom date up to a maximum of one year from creation.</p>
+<p><img width="1310" height="904" decoding="async" alt="Creating an account API token modal" src="../images/codacy-api-tokens-account-modal.png" /></p>
 </li>
 </ol>
-<p><img width="1272" height="857" decoding="async" alt="Creating an account API token" src="../images/codacy-api-tokens-account.png" /></p>
-<p><img width="656" height="520" decoding="async" loading="lazy" alt="Creating an account API token modal" src="../images/codacy-api-tokens-account-modal.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.</p>
 </div>
 <p>When you have tokens created, you can view them inside the tokens table. By hovering a token, you are able to copy its value.</p>
-<p><img width="985" height="345" decoding="async" loading="lazy" alt="Creating an account API token modal" src="../images/codacy-api-tokens-account-table.png" /></p>
+<p><img width="2196" height="728" decoding="async" loading="lazy" alt="The account API tokens table" src="../images/codacy-api-tokens-account-table.png" /></p>
 <p>To delete an account API token, click the trash icon in the Actions column of the table. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
+<p>Account API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as <strong>Never</strong>. Codacy recommends replacing them:</p>
+<ol>
+<li>Create a new account API token with an expiration date.</li>
+<li>Update every application or service that authenticates with the old token.</li>
+<li>Delete the token without an expiration date.</li>
+</ol>
+<p>Creating the replacement first prevents the applications still using the old token from failing to authenticate.</p>
 <h2 id="repository-api-tokens">Generating and revoking repository API tokens<a class="headerlink" href="#repository-api-tokens" title="Permanent link">#</a></h2>
-<p>Repository API tokens are defined on <strong>individual repositories</strong>. Each repository API token only authorizes access to the corresponding repository.</p>
+<p>Repository API tokens are defined on <strong>individual repositories</strong>. Each repository API token only authorizes access to the corresponding repository — it can't be used to access any other repository or organization data. On <strong>API v3</strong>, it's further restricted to the <a href="#repository-api-token-operations">operations listed below</a>; on the legacy <strong>API v2</strong>, a repository API token has full access to that repository's endpoints, with no such restriction.</p>
 <p>You can create new repository API tokens programmatically <a href="../examples/creating-repository-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
 <li>
-<p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
+<p>Open your repository <strong>Settings</strong>, tab <strong>API tokens</strong>.</p>
 </li>
 <li>
 <p>Click the button <strong>Create API token</strong> under <strong>Repository API tokens</strong>.</p>
+<ul>
+<li>Optionally give the token a name. Names may contain only letters, numbers, and dashes, up to 100 characters, and must be unique within the repository. If you don't set a name, Codacy generates one for you.</li>
+<li>Select an expiration date for the token. Repository API tokens must always have an expiration date, up to a maximum of one year from creation — there's no option to create a token that never expires.</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can create multiple (up to 100) API tokens per repository. This can be useful to have a more flexible control by revoking only a specific token.</p>
 </div>
-<p><img width="1052" height="224" decoding="async" loading="lazy" alt="Creating a repository API token" src="../images/codacy-api-tokens-repository.png" /></p>
+<p><img width="1262" height="1220" decoding="async" loading="lazy" alt="Creating a repository API token" src="../images/codacy-api-tokens-repository-modal.png" /></p>
+<p>Selecting <strong>Custom date</strong> lets you pick any date up to one year from today:</p>
+<p><img width="1298" height="1452" decoding="async" loading="lazy" alt="Setting a custom expiration date for a repository API token" src="../images/codacy-api-tokens-repository-modal-custom-date.png" /></p>
 </li>
 </ol>
-<p>To revoke a repository API token, click the <strong>X</strong> next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
+<p>Codacy displays the value of the new token <strong>only once</strong>, immediately after you create it. Copy it and store it somewhere safe before leaving the page — you won't be able to see it again. From then on, the tokens table shows only the name, expiration, and creation date of each token.</p>
+<p><img width="2560" height="1154" decoding="async" loading="lazy" alt="A newly created repository API token, with its value displayed once" src="../images/codacy-api-tokens-repository-created.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Repository API tokens created before expiration dates became mandatory still work, and appear in the table with the expiration set as <strong>Never</strong>. Codacy recommends replacing them:</p>
+<ol>
+<li>Create a new repository API token with an expiration date.</li>
+<li>Update every application or service that authenticates with the old token, such as your CI pipelines.</li>
+<li>Delete the old tokens, individually or all at once using the <strong>delete all tokens without expiration</strong> shortcut in the banner.</li>
+</ol>
+</div>
+<p><img width="2572" height="736" decoding="async" loading="lazy" alt="Repository API tokens without an expiration date" src="../images/codacy-api-tokens-repository-never-expires.png" /></p>
+<p>When a repository API token expires, requests authenticated with it are rejected with a distinct "token expired" error, so you can tell an expired token apart from one that's invalid or was deleted.</p>
+<p>To revoke a repository API token, click the trash icon in the <strong>Actions</strong> column of the table. To revoke several tokens at once, select them using the checkboxes and click <strong>Delete tokens</strong>:</p>
+<p><img width="2566" height="1024" decoding="async" loading="lazy" alt="Selecting multiple repository API tokens to delete them" src="../images/codacy-api-tokens-repository-bulk-delete.png" /></p>
+<p>After this, all applications or services using those tokens to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
+<h3 id="repository-api-token-operations">What repository API tokens can do on API v3<a class="headerlink" href="#repository-api-token-operations" title="Permanent link">#</a></h3>
+<p>On <strong>API v3</strong>, a repository API token authorizes only the following operations, and only on the repository it was created for. This restriction doesn't apply to <strong>API v2</strong>, where a repository API token can access any endpoint for its repository:</p>
+<ul>
+<li><a href="https://api.codacy.com/api/api-docs#getrepository">Get a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#getrepositorywithanalysis">Get a repository with analysis information</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#listrepositorytools">Get the analysis tools settings of a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#configuretool">Configure an analysis tool for a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#listrepositorytoolpatterns">Get the patterns configuration for a tool in a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#updaterepositorytoolpatterns">Update the patterns configuration for a tool in a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#toolpatternsoverview">Get the patterns overview for a tool in a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#getrepositorylanguages">Get the languages settings of a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#searchrepositoryissues">List issues in a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#issuesoverview">Get an overview of the issues in a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#listrepositorycommits">Return analysis results for the commits in a branch</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#reanalyzecommitbyid">Reanalyze a specific commit in a repository</a></li>
+<li><a href="https://api.codacy.com/api/api-docs#listignoredfiles">List ignored files in a repository</a></li>
+</ul>
+<p>For any other endpoint, including creating, listing, or revoking API tokens themselves, use an <a href="#account-api-tokens">account API token</a> instead.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../coverage-reporter/">Adding coverage to your repository</a></li>
@@ -9199,7 +9244,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-05-21 09:06:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 21, 2026</span></time>
+    <time datetime="2026-08-19 14:09:57"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2026</span></time>
   </aside>
 
 
