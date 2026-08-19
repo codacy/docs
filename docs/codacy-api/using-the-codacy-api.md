@@ -80,7 +80,7 @@ Most API endpoints require that you authenticate using an API token. After [obta
     Performing `GET` requests for public repositories doesn't require authentication.
 
 !!! note
-    Repository API tokens always have an expiration date (up to one year). A request authenticated with an expired repository API token is rejected with a distinct "token expired" error, rather than the generic error you'd get from an invalid or unknown token — see [repository API tokens](api-tokens.md#repository-api-tokens).
+    New repository API tokens always have an expiration date (up to one year). A request authenticated with an expired repository API token is rejected with a distinct "token expired" error, rather than the generic error you'd get from an invalid or unknown token — see [repository API tokens](api-tokens.md#repository-api-tokens).
 
 For example, to make a request to an API v3 endpoint that requires an account API token:
 
