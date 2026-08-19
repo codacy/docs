@@ -22,7 +22,11 @@ Alternatively, you can build from source. See the [GitHub repository](https://gi
 
 ## Authentication {: id="authentication"}
 
-Run `codacy login` and enter your API token when prompted. Codacy stores your credentials encrypted at `~/.codacy/credentials`.
+The CLI accepts both [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) and [repository API tokens](../codacy-api/api-tokens.md#repository-api-tokens).
+
+### Account API tokens
+
+Run `codacy login` and enter the token when prompted. Codacy stores your credentials encrypted at `~/.codacy/credentials`. Get the token under **My Account > Access Management > API Tokens** in Codacy.
 
 ```bash
 codacy login
@@ -30,9 +34,19 @@ codacy login
 
 For non-interactive environments such as CI/CD pipelines, set the `CODACY_API_TOKEN` environment variable instead. This takes precedence over stored credentials.
 
-Get your API token under **My Account > Access Management > API Tokens** in Codacy. See [API tokens](../codacy-api/api-tokens.md) for details.
-
 To remove your stored credentials, run `codacy logout`.
+
+### Repository API tokens
+
+Use the option `--repository-token` or set the `CODACY_PROJECT_TOKEN` environment variable. You can't use a repository API token with `codacy login`.
+
+```bash
+codacy issues gh my-org my-repo --repository-token <token>
+```
+
+Prefer a repository API token in CI/CD pipelines: unlike an account API token, it only grants access to a single repository. Because it authorizes [a limited set of operations](../codacy-api/api-tokens.md#repository-api-token-operations), commands outside that set fail immediately instead of contacting Codacy. The command `codacy repository` works, but omits the pull request and coverage data, listing what it skipped under `unavailable` in its JSON output.
+
+When more than one credential is available, the CLI uses the first of the option `--repository-token`, `CODACY_PROJECT_TOKEN`, `CODACY_API_TOKEN`, and the credentials stored by `codacy login`.
 
 ## Install the Codacy Skills {: id="install-the-codacy-skills"}
 

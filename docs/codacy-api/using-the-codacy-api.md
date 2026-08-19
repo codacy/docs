@@ -75,9 +75,12 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
 Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your repository API token>`.
 
 !!! note
-    Currently, all API v3 endpoints that require authentication must use **account API tokens**, while the API v2 endpoints require either **account or repository API tokens**.
+    Most API v3 endpoints that require authentication must use an **account API token**. A [smaller set of repository-scoped endpoints](api-tokens.md#repository-api-token-operations) also accept a **repository API token**, scoped to that single repository. All API v2 endpoints accept either an account or a repository API token.
 
     Performing `GET` requests for public repositories doesn't require authentication.
+
+!!! note
+    New repository API tokens always have an expiration date (up to one year). A request authenticated with an expired repository API token is rejected with a distinct "token expired" error, rather than the generic error you'd get from an invalid or unknown token — see [repository API tokens](api-tokens.md#repository-api-tokens).
 
 For example, to make a request to an API v3 endpoint that requires an account API token:
 
