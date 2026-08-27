@@ -126,3 +126,40 @@ Rules for the output:
 - To enrich the review, the git diff of the Pull Request as well as some related files' contents can be sent as context. No data is stored on our side, or used to train any models.
 - Prompts are neither stored nor visible to anyone.
 - As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.
+
+### Auto-configure repository {: id="auto-configure-repository"}
+
+{%
+    include-markdown "../assets/includes/paid.md"
+    start="<!--paid-feature-start-->"
+    end="<!--paid-feature-end-->"
+%}
+
+<!-- TODO: verify plan tier. The GA release checklist (OD-577) still had "is it only for paid?" as an open question at doc-writing time. -->
+
+_This feature uses an AI coding agent, and is strictly opt-in: it only runs when an organization admin starts it for a specific repository._
+
+Auto-configure repository sets up Codacy analysis for a repository without the manual steps in [Configuring your repository](../getting-started/configuring-your-repository.md). An AI agent reads the repository, then applies settings such as which tools and code patterns to enable, which paths to exclude, and how to configure each language — the same settings you could otherwise set by hand or through a [Codacy configuration file](../repositories-configure/codacy-configuration-file.md).
+
+**What happens during a run**
+
+1. Codacy clones the repository into an isolated environment, using credentials scoped and time-limited to that one run.
+2. An AI agent reviews the repository's structure, languages, and frameworks.
+3. The agent applies a Codacy configuration based on what it finds.
+4. Codacy re-analyzes the repository using the new configuration.
+
+**How to turn it on**
+
+1. Go to the repository's dashboard in Codacy.
+2. Select <!-- TODO: verify exact button/menu label and where it lives in the dashboard --> **Auto-configure repository**. Only organization admins see this option.
+3. Start a run, then follow its status (queued, running, successful, or failed) from the dashboard.
+4. Once a run finishes, select <!-- TODO: verify exact label --> **Review** to see a summary of what changed, including the languages and files the agent analyzed.
+
+**Notes**
+
+- Only organization admins can start a run.
+- Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.
+- Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.
+- You can start a new run at any time; it replaces the configuration from the previous run.
+- The agent only has access to the repository's code and to the credentials needed for that one run. Codacy discards both when the run ends.
+- Codacy does not use your code, repository contents, or comments to train external AI models. No customer code is incorporated into model training.
