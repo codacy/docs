@@ -150,16 +150,23 @@ Auto-configure repository sets up Codacy analysis for a repository without the m
 
 **How to turn it on**
 
-1. Go to the repository's dashboard in Codacy.
-2. Select <!-- TODO: verify exact button/menu label and where it lives in the dashboard --> **Auto-configure repository**. Only organization admins see this option.
+1. Go to your repository's [Code patterns](../repositories-configure/configuring-code-patterns.md) page in Codacy.
+
+    ![The Code patterns page, with the repository's issue count and the Auto-configure button](images/auto-configure-code-patterns.png)
+
+2. Select **Auto-configure**. Only organization admins see this option.
+
+    ![The Auto-configure button on the Code patterns page](images/auto-configure-button.png)
+
 3. Start a run, then follow its status (queued, running, successful, or failed) from the dashboard.
 4. Once a run finishes, select <!-- TODO: verify exact label --> **Review** to see a summary of what changed, including the languages and files the agent analyzed.
 
-**Notes**
+**Auto-configure repository notes**
 
 - Only organization admins can start a run.
+- You can start at most one run per repository per day.
+- A run takes several minutes. You can leave this page — the results appear here when the run finishes.
 - Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.
 - Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.
 - You can start a new run at any time; it replaces the configuration from the previous run.
 - The agent only has access to the repository's code for the duration of that one run. It is immediately discarded when the run ends.
-- Codacy does not use your code, repository contents, or comments to train external AI models. No customer code is incorporated into model training.
