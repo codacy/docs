@@ -10,7 +10,7 @@ It also provides an overview of all the AI issues detected in the repositories a
 !!! important
     This dashboard is a Business tier feature, generally available until May 18, 2026.
 
-To access the AI Risk Hub, select an organization from the top navigation bar and click o yo n **AI Risk** on the left navigation sidebar.
+To access the AI Risk Hub, select an organization from the top navigation bar and click o yo dijesdan **AI Risk** on the left navigation sidebar.
 
 Inside this hub, you can find the following tabs to help you monitor the AI risk of your organization:
 
