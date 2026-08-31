@@ -131,7 +131,7 @@ Rules for the output:
 
 _This feature uses an AI coding agent, and is strictly opt-in: it only runs when someone with permission to configure code patterns starts it for a specific repository._
 
-Auto-configure repository reviews a repository, then applies the same kind of tool and code pattern settings you could otherwise set by hand or through a [Codacy configuration file](../repositories-configure/codacy-configuration-file.md). It also recommends paths to exclude from analysis, which you review and apply yourself.
+Auto-configure reviews the repository, then applies the same kind of tool and code pattern settings you could otherwise set by hand or through a [Codacy configuration file](../repositories-configure/codacy-configuration-file.md). It also recommends paths to exclude from analysis, which you review and apply yourself.
 
 More details about [Auto-configure repository here](../repositories-configure/configuring-code-patterns.md#auto-configuring-your-repository).
 

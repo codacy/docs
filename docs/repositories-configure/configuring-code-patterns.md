@@ -42,7 +42,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
 ## Auto-configuring your repository {: id="auto-configuring-your-repository"}
 
-Instead of configuring tools and code patterns by hand, you can have an AI agent review your repository and apply settings for you. The agent applies the same kind of tool and code pattern settings described above — the same settings you could otherwise set through the Codacy UI or a [Codacy configuration file](codacy-configuration-file.md) — and recommends [paths to exclude](ignoring-files.md) from analysis, which you review and apply yourself. Auto-configure does not change patterns that come from a [coding standard](../organizations/using-coding-standards.md).
+Instead of configuring tools and code patterns by hand, you can have an AI agent review your repository and apply the settings for you. The agent applies the same kind of tool and code pattern settings described above — the same settings you could otherwise set through the Codacy UI or a [Codacy configuration file](codacy-configuration-file.md). It also recommends [paths to exclude](ignoring-files.md) from analysis, which you review and apply yourself. Auto-configure does not change patterns that come from a [coding standard](../organizations/using-coding-standards.md).
 
 There are two ways to run it.
 
@@ -64,18 +64,19 @@ There are two ways to run it.
 1.  Follow the run's status (queued, running, successful, or failed) on this page.
 1.  Once the run finishes, the same button reads **Review auto-configuration** — select it to see a summary of what changed, including any recommended paths to exclude.
 
-!!! note
-    -   You can start at most one run per repository per day.
-    -   A run takes several minutes. You can leave this page — the results appear here when the run finishes.
-    -   Your repository's metrics and issue counts may fluctuate while a run is in progress.
-    -   Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.
-    -   Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.
-    -   You can start a new run at any time; it replaces the configuration from the previous run.
-    -   The agent only has access to the repository's code for the duration of that one run. It is immediately discarded when the run ends.
+**Notes**
+
+-   You can start at most one run per repository per day.
+-   A run takes several minutes. You can leave this page — the results appear here when the run finishes.
+-   Your repository's metrics and issue counts may fluctuate while a run is in progress.
+-   Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.
+-   Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.
+-   You can start a new run at any time; it replaces the configuration from the previous run.
+-   The agent only has access to the repository's code for the duration of that one run. It is immediately discarded when the run ends.
 
 ### Running it with Codacy Skills {: id="running-it-with-codacy-skills"}
 
-If you'd rather run auto-configuration locally with your own AI agent, use the `configure-codacy` [Codacy Skill](../codacy-cloud-cli/index.md#install-the-codacy-skills) instead. This option is open-source and isn't limited to paid plans.
+If you'd rather run auto-configuration locally with your own AI agent, use the `configure-codacy` [skill](../codacy-cloud-cli/index.md#install-the-codacy-skills) instead. This option is open-source and isn't limited to paid plans.
 
 1.  [Install the Codacy Skills](../codacy-cloud-cli/index.md#install-the-codacy-skills).
 1.  Open a terminal in your repository's root directory and run the skill:
