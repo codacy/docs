@@ -72,7 +72,7 @@ There are two ways to run it.
 -   Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.
 -   Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.
 -   You can start a new run at any time; it replaces the configuration from the previous run.
--   The agent only has access to the repository's code for the duration of that one run. It is immediately discarded when the run ends.
+-   The agent only has access to the repository's code during that one run. It's immediately discarded when the run ends.
 
 ### Running it with Codacy Skills {: id="running-it-with-codacy-skills"}
 
