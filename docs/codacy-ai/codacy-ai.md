@@ -129,44 +129,12 @@ Rules for the output:
 
 ### Auto-configure repository {: id="auto-configure-repository"}
 
-{%
-    include-markdown "../assets/includes/paid.md"
-    start="<!--paid-feature-start-->"
-    end="<!--paid-feature-end-->"
-%}
+_This feature uses an AI coding agent, and is strictly opt-in: it only runs when someone with permission to configure code patterns starts it for a specific repository._
 
-<!-- TODO: verify plan tier. The GA release checklist (OD-577) still had "is it only for paid?" as an open question at doc-writing time. -->
+Auto-configure repository reviews a repository, then applies the same kind of tool and code pattern settings you could otherwise set by hand or through a [Codacy configuration file](../repositories-configure/codacy-configuration-file.md). It also recommends paths to exclude from analysis, which you review and apply yourself.
 
-_This feature uses an AI coding agent, and is strictly opt-in: it only runs when an organization admin starts it for a specific repository._
+More details about [Auto-configure repository here](../repositories-configure/configuring-code-patterns.md#auto-configuring-your-repository).
 
-Auto-configure repository sets up Codacy analysis for a repository without the manual steps in [Configuring your repository](../getting-started/configuring-your-repository.md). An AI agent reads the repository, then applies settings such as which tools and code patterns to enable, which paths to exclude, and how to configure each language — the same settings you could otherwise set by hand or through a [Codacy configuration file](../repositories-configure/codacy-configuration-file.md).
+**Notes**
 
-**What happens during a run**
-
-1. Codacy clones the repository into an isolated environment, using credentials scoped and time-limited to that one run.
-2. An AI agent reviews the repository's structure, languages, and frameworks.
-3. The agent applies a Codacy configuration based on what it finds.
-4. Codacy re-analyzes the repository using the new configuration.
-
-**How to turn it on**
-
-1. Go to your repository's [Code patterns](../repositories-configure/configuring-code-patterns.md) page in Codacy.
-
-    ![The Code patterns page, with the repository's issue count and the Auto-configure button](images/auto-configure-code-patterns.png)
-
-2. Select **Auto-configure**. Only organization admins see this option.
-
-    ![The Auto-configure button on the Code patterns page](images/auto-configure-button.png)
-
-3. Start a run, then follow its status (queued, running, successful, or failed) from the dashboard.
-4. Once a run finishes, select <!-- TODO: verify exact label --> **Review** to see a summary of what changed, including the languages and files the agent analyzed.
-
-**Auto-configure repository notes**
-
-- Only organization admins can start a run.
-- You can start at most one run per repository per day.
-- A run takes several minutes. You can leave this page — the results appear here when the run finishes.
-- Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.
-- Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.
-- You can start a new run at any time; it replaces the configuration from the previous run.
-- The agent only has access to the repository's code for the duration of that one run. It is immediately discarded when the run ends.
+- Codacy does not use your code, repository contents, or comments to train external AI models. No customer code is incorporated into model training.
