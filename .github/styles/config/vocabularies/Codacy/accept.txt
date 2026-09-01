@@ -116,3 +116,4 @@ Visualforce
 VSCode
 webserver
 Xcode
+Oxlint
