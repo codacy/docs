@@ -9,3 +9,13 @@ action:
     - simple
 tokens:
   - 'auto-\w+'
+# "Auto-configure"/"Auto-configuration" is Codacy's own hyphenated feature and
+# button name, verified against the shipped product UI — not a style choice
+# this rule should flag.
+exceptions:
+  - Auto-configure
+  - Auto-configuring
+  - Auto-configuration
+  - auto-configure
+  - auto-configuring
+  - auto-configuration

@@ -9,6 +9,7 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:
 
 -   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Auto-configuring your repository](#auto-configuring-your-repository)
 -   [Discover code patterns across all tools](#discover-code-patterns-across-all-tools)
 -   [Customizing applied coding standards](#using-your-own-tool-configuration-files)
 -   [Customizing patterns when following coding standards](#customizing-patterns-following-standards)
@@ -38,6 +39,53 @@ To configure the tools and code patterns for a repository using the Codacy UI:
     ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
+
+## Auto-configuring your repository {: id="auto-configuring-your-repository"}
+
+Instead of configuring tools and code patterns by hand, you can have an AI agent review your repository and apply the settings for you. The agent applies the same kind of tool and code pattern settings described above — the same settings you could otherwise set through the Codacy UI or a [Codacy configuration file](codacy-configuration-file.md). It also recommends [paths to exclude](ignoring-files.md) from analysis, which you review and apply yourself. Auto-configure does not change patterns that come from a [coding standard](../organizations/using-coding-standards.md).
+
+There are two ways to run it.
+
+### Running it from Codacy {: id="running-it-from-codacy"}
+
+{%
+    include-markdown "../assets/includes/paid.md"
+    start="<!--paid-feature-start-->"
+    end="<!--paid-feature-end-->"
+%}
+
+1.  On your repository's **Code patterns** page, select **Auto-configure**.
+
+    ![The Code patterns page, with the repository's issue count and the Auto-configure button](images/auto-configure-code-patterns.png)
+
+    ![The Auto-configure button on the Code patterns page](images/auto-configure-button.png)
+
+1.  In the dialog, on the **Run here** tab, select **Run auto-configure**.
+1.  Follow the run's status (queued, running, successful, or failed) on this page.
+1.  Once the run finishes, the same button reads **Review auto-configuration** — select it to see a summary of what changed, including any recommended paths to exclude.
+
+**Notes**
+
+-   You can start at most one run per repository per day.
+-   A run takes several minutes. You can leave this page — the results appear here when the run finishes.
+-   Your repository's metrics and issue counts may fluctuate while a run is in progress.
+-   Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.
+-   Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.
+-   You can start a new run at any time; it replaces the configuration from the previous run.
+-   The agent only has access to the repository's code during that one run. It's immediately discarded when the run ends.
+
+### Running it with Codacy Skills {: id="running-it-with-codacy-skills"}
+
+If you'd rather run auto-configuration locally with your own AI agent, use the `configure-codacy` [skill](../codacy-cloud-cli/index.md#install-the-codacy-skills) instead. This option is open-source and isn't limited to paid plans.
+
+1.  [Install the Codacy Skills](../codacy-cloud-cli/index.md#install-the-codacy-skills).
+1.  Open a terminal in your repository's root directory and run the skill:
+
+    ```bash
+    claude /configure-codacy
+    ```
+
+    The configuration process may take a while.
 
 ## Discover code patterns across all tools {: id="discover-code-patterns-across-all-tools"}
 
