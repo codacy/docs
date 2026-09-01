@@ -9,7 +9,7 @@ rss_href: /feed_rss_created.xml
 
 ## Oxlint
 
-We're excited to announce support for [Oxlint](https://github.com/oxc-project/oxc), a fast Rust-based linter for JavaScript and TypeScript from the Oxc project. With this addition, Codacy can now automatically analyze your JavaScript and TypeScript projects for correctness, style, best-practice issues (among other categories) reporting them directly in your dashboard.
+We're excited to announce support for [Oxlint](https://github.com/oxc-project/oxc), a fast Rust-based linter for JavaScript and TypeScript from the Oxc project. With this addition, Codacy can now automatically analyze your JavaScript and TypeScript projects for correctness, style, and best-practice issues (among other categories), reporting them directly in your dashboard.
 
 **Why it matters:**
 

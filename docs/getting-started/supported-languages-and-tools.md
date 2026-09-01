@@ -332,7 +332,8 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 | <a href="https://github.com/hadolint/hadolint">Hadolint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-hadolint">codacy/codacy-hadolint</a> |
 | <a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-jackson-linter">codacy/codacy-jackson-linter</a> |
 | <a href="https://github.com/terryyin/lizard">Lizard</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-lizard">codacy/codacy-lizard</a> |
-| <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-markdownlint">codacy/codacy-markdownlint</a> |
+| <a href="https://github.com/DavidAnson/markdownlint">Markdownlint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-markdownlint">codacy/codacy-markdownlint</a> |
+| <a href="https://github.com/oxc-project/oxc">Oxlint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-oxlint">codacy/codacy-oxlint</a> |
 | <a href="https://github.com/codacy/codacy-php-cs-fixer">PHP CS Fixer</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-php-cs-fixer">codacy/codacy-php-cs-fixer</a> |
 | <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-codesniffer">codacy/codacy-codesniffer</a> |
 | <a href="https://phpmd.org/">PHP Mess Detector</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-phpmd">codacy/codacy-phpmd</a> |
