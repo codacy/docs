@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-08-04 13:55:13">
+    <meta http-equiv="last-modified" content="2026-09-01 10:41:07">
   
   
 
@@ -921,6 +921,15 @@
     <span class="md-ellipsis">
       
         Configuring tools and code patterns using the Codacy UI
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#auto-configuring-your-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-configuring your repository
       
     </span>
   </a>
@@ -9079,6 +9088,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#auto-configuring-your-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-configuring your repository
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#discover-code-patterns-across-all-tools" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9187,6 +9205,7 @@
 <p>By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:</p>
 <ul>
 <li><a href="#configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI</a></li>
+<li><a href="#auto-configuring-your-repository">Auto-configuring your repository</a></li>
 <li><a href="#discover-code-patterns-across-all-tools">Discover code patterns across all tools</a></li>
 <li><a href="#using-your-own-tool-configuration-files">Customizing applied coding standards</a></li>
 <li><a href="#customizing-patterns-following-standards">Customizing patterns when following coding standards</a></li>
@@ -9221,6 +9240,46 @@
 </li>
 <li>
 <p>Optionally, to take the changes into account immediately, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyze the repository manually</a>. Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.</p>
+</li>
+</ol>
+<h2 id="auto-configuring-your-repository">Auto-configuring your repository<a class="headerlink" href="#auto-configuring-your-repository" title="Permanent link">#</a></h2>
+<p>Instead of configuring tools and code patterns by hand, you can have an AI agent review your repository and apply the settings for you. The agent applies the same kind of tool and code pattern settings described above — the same settings you could otherwise set through the Codacy UI or a <a href="../codacy-configuration-file/">Codacy configuration file</a>. It also recommends <a href="../ignoring-files/">paths to exclude</a> from analysis, which you review and apply yourself. Auto-configure does not change patterns that come from a <a href="../../organizations/using-coding-standards/">coding standard</a>.</p>
+<p>There are two ways to run it.</p>
+<h3 id="running-it-from-codacy">Running it from Codacy<a class="headerlink" href="#running-it-from-codacy" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">This is a <a href="https://www.codacy.com/pricing">paid feature</a></p>
+</div>
+<ol>
+<li>
+<p>On your repository's <strong>Code patterns</strong> page, select <strong>Auto-configure</strong>.</p>
+<p><img width="1400" height="858" decoding="async" loading="lazy" alt="The Code patterns page, with the repository's issue count and the Auto-configure button" src="../images/auto-configure-code-patterns.png" /></p>
+<p><img width="1568" height="93" decoding="async" loading="lazy" alt="The Auto-configure button on the Code patterns page" src="../images/auto-configure-button.png" /></p>
+</li>
+<li>
+<p>In the dialog, on the <strong>Run here</strong> tab, select <strong>Run auto-configure</strong>.</p>
+</li>
+<li>Follow the run's status (queued, running, successful, or failed) on this page.</li>
+<li>Once the run finishes, the same button reads <strong>Review auto-configuration</strong> — select it to see a summary of what changed, including any recommended paths to exclude.</li>
+</ol>
+<p><strong>Notes</strong></p>
+<ul>
+<li>You can start at most one run per repository per day.</li>
+<li>A run takes several minutes. You can leave this page — the results appear here when the run finishes.</li>
+<li>Your repository's metrics and issue counts may fluctuate while a run is in progress.</li>
+<li>Codacy limits how many runs happen at the same time, both for the organization and across Codacy, so runs stay fast for everyone. If you start a run while one is already queued or running for the same repository, Codacy queues it instead of starting it immediately.</li>
+<li>Each run has a fixed amount of time and AI usage it can use, so a run always finishes or fails instead of continuing indefinitely.</li>
+<li>You can start a new run at any time; it replaces the configuration from the previous run.</li>
+<li>The agent only has access to the repository's code during that one run. It's immediately discarded when the run ends.</li>
+</ul>
+<h3 id="running-it-with-codacy-skills">Running it with Codacy Skills<a class="headerlink" href="#running-it-with-codacy-skills" title="Permanent link">#</a></h3>
+<p>If you'd rather run auto-configuration locally with your own AI agent, use the <code>configure-codacy</code> <a href="../../codacy-cloud-cli/#install-the-codacy-skills">skill</a> instead. This option is open-source and isn't limited to paid plans.</p>
+<ol>
+<li><a href="../../codacy-cloud-cli/#install-the-codacy-skills">Install the Codacy Skills</a>.</li>
+<li>
+<p>Open a terminal in your repository's root directory and run the skill:</p>
+<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>/configure-codacy
+</code></pre></div>
+<p>The configuration process may take a while.</p>
 </li>
 </ol>
 <h2 id="discover-code-patterns-across-all-tools">Discover code patterns across all tools<a class="headerlink" href="#discover-code-patterns-across-all-tools" title="Permanent link">#</a></h2>
@@ -9530,7 +9589,7 @@ You can add extra tools and patterns, if these are not enabled by any applied co
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-08-04 13:55:13"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 4, 2026</span></time>
+    <time datetime="2026-09-01 10:41:07"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 1, 2026</span></time>
   </aside>
 
 
