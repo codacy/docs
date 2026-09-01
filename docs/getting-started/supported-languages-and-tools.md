@@ -103,7 +103,7 @@ See how Codacy calculates [static analysis issues](../faq/code-analysis/which-me
 | Go | <a href="https://gitlab.com/opennota/check">aligncheck</a> [^client-side], <a href="https://github.com/tsenart/deadcode">deadcode</a> [^client-side], <a href="https://github.com/securego/gosec">Gosec</a> [^client-side], <a href="https://github.com/mgechev/revive">Revive</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep], <a href="https://staticcheck.io/">Staticcheck</a> [^client-side], <a href="https://github.com/golangci/golangci-lint">GolangCI Lint</a>[^client-side] |
 | Groovy | <a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a> |
 | Java | <a href="https://checkstyle.sourceforge.io/">Checkstyle</a>, <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep], <a href="https://spotbugs.github.io/">SpotBugs</a> [^client-side] |
-| JavaScript | <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
+| JavaScript | <a href="https://github.com/oxc-project/oxc">Oxlint</a>, <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | JSON | <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a> |
 | JSP | <a href="https://pmd.github.io/">PMD</a> |
 | Kotlin | <a href="https://github.com/detekt/detekt">detekt</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep], <a href="https://pmd.github.io">PMD</a> |
@@ -127,7 +127,7 @@ See how Codacy calculates [static analysis issues](../faq/code-analysis/which-me
 | SQL | <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/purcell/sqlint">SQLint</a>, <a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a>, <a href="https://github.com/sqlfluff/sqlfluff">SQLFluff</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | Terraform | <a href="https://github.com/bridgecrewio/checkov/">Checkov</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | Transact-SQL | <a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a> |
-| TypeScript | <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
+| TypeScript | <a href="https://github.com/oxc-project/oxc">Oxlint</a>, <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | Unity | <a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> [^client-side] |
 | Velocity | <a href="https://pmd.github.io/">PMD</a> |
 | Visual Basic | <a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a> |

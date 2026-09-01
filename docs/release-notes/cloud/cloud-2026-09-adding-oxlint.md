@@ -20,7 +20,7 @@ We're excited to announce support for [Oxlint](https://github.com/oxc-project/ox
 
 - Oxlint runs as a fully integrated Codacy engine, so there's nothing to install or configure locally.
 - Simply enable the tool in your repository settings and Codacy will run it automatically as part of your regular analysis.
-- You can configure rules directly through the Codacy UI, or use your repository's own configuration file (`.oxlintrc.json`,`.oxlintrc.jsonc`,`oxlint.config.json` or `oxlint.config.jsonc`).
+- You can configure rules directly through the Codacy UI, or use your repository's own configuration file (`.oxlintrc.json`, `.oxlintrc.jsonc`, `oxlint.config.json`, or `oxlint.config.jsonc`).
 
 **To get started:**
 
