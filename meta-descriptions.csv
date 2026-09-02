@@ -201,6 +201,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-2026-07-adding-phpcsfixer-chec
 https://docs.codacy.com/release-notes/cloud/cloud-2026-07-adding-shellcheck-config-file/,"We’ve upgraded how Shellcheck works on Codacy! While you previously had to configure Shellcheck analysis directly through the Codacy UI, you can now manage your settings using a configuration file."
 https://docs.codacy.com/release-notes/cloud/cloud-2026-07-remove-codesniffer-packages/,"We are preparing to upgrade our PHP CodeSniffer tool to the latest version. This update will bring vital performance improvements, better syntax parsing, and support for the latest PHP features."
 https://docs.codacy.com/release-notes/cloud/cloud-2026-07/,Release notes for Codacy Cloud July 2026.
+https://docs.codacy.com/release-notes/cloud/cloud-2026-08/,Release notes for Codacy Cloud August 2026.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
