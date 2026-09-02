@@ -775,6 +775,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2026:
+                      - release-notes/cloud/cloud-2026-09-adding-oxlint.md
                       - release-notes/cloud/cloud-2026-08.md
                       - release-notes/cloud/cloud-2026-07.md
                       - release-notes/cloud/cloud-2026-07-adding-shellcheck-config-file.md

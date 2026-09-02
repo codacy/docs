@@ -247,6 +247,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><code>.semgrep.yaml</code></td>
     <td></td>
   </tr>
+    <tr>
+    <td>Oxlint</td>
+    <td>JavaScript, TypeScript</td>
+    <td><code>.oxlintrc.json</code>, <code>.oxlintrc.jsonc</code>, <code>oxlint.config.json</code>, <code>oxlint.config.jsonc</code></td>
+    <td></td>
+  </tr>
   <tr>
     <td>PHP CS Fixer</td>
     <td>PHP</td>

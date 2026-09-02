@@ -103,7 +103,7 @@ See how Codacy calculates [static analysis issues](../faq/code-analysis/which-me
 | Go | <a href="https://gitlab.com/opennota/check">aligncheck</a> [^client-side], <a href="https://github.com/tsenart/deadcode">deadcode</a> [^client-side], <a href="https://github.com/securego/gosec">Gosec</a> [^client-side], <a href="https://github.com/mgechev/revive">Revive</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep], <a href="https://staticcheck.io/">Staticcheck</a> [^client-side], <a href="https://github.com/golangci/golangci-lint">GolangCI Lint</a>[^client-side] |
 | Groovy | <a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a> |
 | Java | <a href="https://checkstyle.sourceforge.io/">Checkstyle</a>, <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep], <a href="https://spotbugs.github.io/">SpotBugs</a> [^client-side] |
-| JavaScript | <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
+| JavaScript | <a href="https://github.com/oxc-project/oxc">Oxlint</a>, <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | JSON | <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a> |
 | JSP | <a href="https://pmd.github.io/">PMD</a> |
 | Kotlin | <a href="https://github.com/detekt/detekt">detekt</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep], <a href="https://pmd.github.io">PMD</a> |
@@ -127,7 +127,7 @@ See how Codacy calculates [static analysis issues](../faq/code-analysis/which-me
 | SQL | <a href="https://pmd.github.io/">PMD</a>, <a href="https://github.com/purcell/sqlint">SQLint</a>, <a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a>, <a href="https://github.com/sqlfluff/sqlfluff">SQLFluff</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | Terraform | <a href="https://github.com/bridgecrewio/checkov/">Checkov</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | Transact-SQL | <a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a> |
-| TypeScript | <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
+| TypeScript | <a href="https://github.com/oxc-project/oxc">Oxlint</a>, <a href="https://biomejs.dev/">BiomeJS</a>, <a href="https://eslint.org/">ESLint</a>, <a href="https://github.com/opengrep/opengrep/">Opengrep</a> [^opengrep] |
 | Unity | <a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> [^client-side] |
 | Velocity | <a href="https://pmd.github.io/">PMD</a> |
 | Visual Basic | <a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a> |
@@ -332,7 +332,8 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 | <a href="https://github.com/hadolint/hadolint">Hadolint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-hadolint">codacy/codacy-hadolint</a> |
 | <a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-jackson-linter">codacy/codacy-jackson-linter</a> |
 | <a href="https://github.com/terryyin/lizard">Lizard</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-lizard">codacy/codacy-lizard</a> |
-| <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-markdownlint">codacy/codacy-markdownlint</a> |
+| <a href="https://github.com/DavidAnson/markdownlint">Markdownlint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-markdownlint">codacy/codacy-markdownlint</a> |
+| <a href="https://github.com/oxc-project/oxc">Oxlint</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-oxlint">codacy/codacy-oxlint</a> |
 | <a href="https://github.com/codacy/codacy-php-cs-fixer">PHP CS Fixer</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-php-cs-fixer">codacy/codacy-php-cs-fixer</a> |
 | <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-codesniffer">codacy/codacy-codesniffer</a> |
 | <a href="https://phpmd.org/">PHP Mess Detector</a> | <a class="skip-vale" href="https://github.com/codacy/codacy-phpmd">codacy/codacy-phpmd</a> |

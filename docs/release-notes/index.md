@@ -21,6 +21,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 ### 2026 {.release-series}
 
 
+-   [Adding Oxlint as new supported tool September, 2026](cloud/cloud-2026-09-adding-oxlint.md)
 -   [Cloud August 2026](cloud/cloud-2026-08.md)
 -   [Cloud July 2026](cloud/cloud-2026-07.md)
 -   [Support for Shellcheck configuration file - July, 2026](cloud/cloud-2026-07-adding-shellcheck-config-file.md)
