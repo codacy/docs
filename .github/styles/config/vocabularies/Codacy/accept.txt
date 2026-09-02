@@ -119,3 +119,5 @@ Xcode
 sourceId
 resync
 autoconfig
+Oxlint
+Oxc
