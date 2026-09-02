@@ -6,15 +6,20 @@ rss_href: /feed_rss_created.xml
 
 # Adding Oxlint as new supported tool – September 2026
 
-
-## Oxlint
-
 We're excited to announce support for [Oxlint](https://github.com/oxc-project/oxc), a fast Rust-based linter for JavaScript and TypeScript from the Oxc project. With this addition, Codacy can now automatically analyze your JavaScript and TypeScript projects for correctness, style, and best-practice issues (among other categories), reporting them directly in your dashboard.
 
 **Why it matters:**
 
-- Oxlint is built for speed, running significantly faster than traditional JS/TS linters.
-- It covers a broad set of rules out of the box, including many equivalents to popular ESLint rules and plugins, so you can catch common issues without heavy configuration.
+* Oxlint is built for speed, running significantly faster than traditional JS/TS linters.
+* It covers a broad set of rules out of the box, including many equivalents to popular ESLint rules and plugins, so you can catch common issues without heavy configuration, like:
+    *  ESLint (core rules)
+    *  typescript-eslint
+    *  React Ecosystem (react, react-hooks, react-refresh, react-perf)
+    *  @next/eslint-plugin-next
+    *  eslint-plugin-unicorn
+    *  Testing (jest, vitest)
+    *  eslint-plugin-vue
+    *  Additional Standards: import, jsdoc, jsx-a11y, n (Node), and promise
 
 **How it works:**
 
