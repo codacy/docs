@@ -116,3 +116,6 @@ Visualforce
 VSCode
 webserver
 Xcode
+sourceId
+resync
+autoconfig
