@@ -2,9 +2,6 @@
 
 On every analysis of your repository's default branch, Codacy detects your repository's stack: its languages, frameworks, and libraries. Codacy uses this stack to make code pattern configuration relevant to what your repository actually contains, rather than to its languages alone.
 
-!!! important
-    This page describes designed, not yet released behavior. As of 2026-09-07 the Code patterns page, the Issues page, and the coding-standard repository-selection page in the `codacy` GitHub org show none of this — despite the underlying Linear issues showing Done. Copy and layout below are taken from the [Stack-based filters](https://www.figma.com/design/D5zbKuhoZ9ydIHptHhox4z/Stack-based-filters?node-id=4107-17591) design handoff. Hold publishing until Auto-Configuration (Odin) confirms this has shipped, then re-verify the copy against the live UI before merging.
-
 ## Where you'll see it
 
 -   **Code patterns page:** a pattern whose framework isn't part of your repository's stack shows a warning icon next to its name. Hovering it explains why, for example: *"React wasn't detected in this repository. This pattern may report false positives."* A **Stack compatible** filter lets you show only patterns that match your stack.
