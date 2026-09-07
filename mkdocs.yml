@@ -658,6 +658,7 @@ nav:
                 - repositories/pull-requests.md
           - Configuring your repositories:
                 - repositories-configure/configuring-code-patterns.md
+                - repositories-configure/repository-stack-detection.md
                 - repositories-configure/managing-branches.md
                 - Managing integrations:
                       - repositories-configure/integrations/github-integration.md
