@@ -1,4 +1,4 @@
-# Repository coverage status
+# How does Codacy determine if a repository has coverage?
 
 Codacy classifies each repository's coverage into one of four statuses, based on whether the most recent commit on the default branch has coverage data.
 
@@ -18,6 +18,6 @@ A repository counts as having coverage when its status is Up to date or Waiting 
 
 ## See also
 
--   [Coverage page](coverage.md)
--   [Adding coverage to your repository](../coverage-reporter/index.md)
--   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
+-   [Coverage page](../../repositories/coverage.md)
+-   [Adding coverage to your repository](../../coverage-reporter/index.md)
+-   [Why does Codacy show unexpected coverage changes?](why-does-codacy-show-unexpected-coverage-changes.md)

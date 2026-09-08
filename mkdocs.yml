@@ -655,7 +655,6 @@ nav:
                 - repositories/files.md
                 - repositories/issues.md
                 - repositories/coverage.md
-                - repositories/repository-coverage-status.md
                 - repositories/pull-requests.md
           - Configuring your repositories:
                 - repositories-configure/configuring-code-patterns.md
@@ -729,6 +728,7 @@ nav:
                       - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - Code analysis:
                       - faq/code-analysis/which-metrics-does-codacy-calculate.md
+                      - faq/code-analysis/how-does-codacy-determine-if-a-repository-has-coverage.md
                       - faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md
                       - faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md
                       - faq/code-analysis/does-codacy-check-for-dependencies.md
