@@ -7,19 +7,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Instructions on how to run aligncheck as a client-side tool on Codacy.">
+        <meta name="description" content="Codacy classifies each repository&#x27;s coverage into one of four statuses, based on whether the most recent commit on the default branch has coverage data.">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/local-analysis/running-aligncheck/">
+        <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/how-does-codacy-determine-if-a-repository-has-coverage/">
       
       
-        <link rel="prev" href="../client-side-tools/">
+        <link rel="prev" href="../which-metrics-does-codacy-calculate/">
       
       
-        <link rel="next" href="../running-dartanalyzer/">
+        <link rel="next" href="../why-does-codacy-show-unexpected-coverage-changes/">
       
       
         
@@ -32,13 +32,13 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-08-10 16:34:03">
+    <meta http-equiv="last-modified" content="2026-09-08 14:02:55">
   
   
 
     
       
-        <title>Running aligncheck - Codacy docs</title>
+        <title>How does Codacy determine if a repository has coverage? - Codacy docs</title>
       
     
     
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#running-aligncheck" class="md-skip">
+        <a href="#how-does-codacy-determine-if-a-repository-has-coverage" class="md-skip">
           Skip to content
         </a>
       
@@ -833,11 +833,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
         
           
           <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
@@ -861,7 +861,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_5"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Configuring your repositories
@@ -873,7 +873,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../configuring-code-patterns/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/configuring-code-patterns/" class="md-nav__link">
   
   
   
@@ -894,7 +894,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../managing-branches/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/managing-branches/" class="md-nav__link">
   
   
   
@@ -961,7 +961,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../integrations/github-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/integrations/github-integration/" class="md-nav__link">
   
   
   
@@ -982,7 +982,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../integrations/gitlab-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/integrations/gitlab-integration/" class="md-nav__link">
   
   
   
@@ -1003,7 +1003,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../integrations/bitbucket-integration/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/integrations/bitbucket-integration/" class="md-nav__link">
   
   
   
@@ -1024,7 +1024,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../integrations/post-commit-hooks/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/integrations/post-commit-hooks/" class="md-nav__link">
   
   
   
@@ -1051,7 +1051,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../ignoring-files/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/ignoring-files/" class="md-nav__link">
   
   
   
@@ -1072,7 +1072,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../languages/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/languages/" class="md-nav__link">
   
   
   
@@ -1093,7 +1093,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../adjusting-quality-gates/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/adjusting-quality-gates/" class="md-nav__link">
   
   
   
@@ -1114,7 +1114,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../adjusting-quality-goals/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/adjusting-quality-goals/" class="md-nav__link">
   
   
   
@@ -1279,11 +1279,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_9" >
         
           
           <label class="md-nav__link" for="__nav_1_5_9" id="__nav_1_5_9_label" tabindex="0">
@@ -1305,7 +1305,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_5_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_5_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_5_9"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Local analysis
@@ -1317,7 +1317,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../client-side-tools/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/local-analysis/client-side-tools/" class="md-nav__link">
   
   
   
@@ -1338,12 +1338,7 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+    <li class="md-nav__item"><a href="../../../repositories-configure/local-analysis/running-aligncheck/" class="md-nav__link">
   
   
   
@@ -1357,50 +1352,14 @@
   </span>
   
   
-<span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span></label>
-      <a href="./" class="md-nav__link md-nav__link--active">
-  
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Running aligncheck
-  
-
-    
-  </span>
-  
-  
-</a>
-      
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
-  <a href="#advanced-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced configuration
-      
-    </span>
-  </a>
-  
-</li></ul>
-  
-</nav>
-    </li>
+</a></li>
   
 
   
   
   
   
-    <li class="md-nav__item"><a href="../running-dartanalyzer/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/local-analysis/running-dartanalyzer/" class="md-nav__link">
   
   
   
@@ -1421,7 +1380,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../running-deadcode/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/local-analysis/running-deadcode/" class="md-nav__link">
   
   
   
@@ -1442,7 +1401,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../running-spotbugs/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/local-analysis/running-spotbugs/" class="md-nav__link">
   
   
   
@@ -1463,7 +1422,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../running-eslint/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/local-analysis/running-eslint/" class="md-nav__link">
   
   
   
@@ -1490,7 +1449,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../using-submodules/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/using-submodules/" class="md-nav__link">
   
   
   
@@ -1511,7 +1470,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../codacy-configuration-file/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/codacy-configuration-file/" class="md-nav__link">
   
   
   
@@ -1532,7 +1491,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../removing-your-repository/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../repositories-configure/removing-your-repository/" class="md-nav__link">
   
   
   
@@ -3050,11 +3009,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" checked>
         
           
           <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
@@ -3078,7 +3037,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_10"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Troubleshooting and FAQs
@@ -3136,7 +3095,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/which-platforms-and-technologies-does-codacy-support/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/which-platforms-and-technologies-does-codacy-support/" class="md-nav__link">
   
   
   
@@ -3157,7 +3116,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-does-codacy-support-github-enterprise/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-does-codacy-support-github-enterprise/" class="md-nav__link">
   
   
   
@@ -3178,7 +3137,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-does-codacy-support-gitlab-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-does-codacy-support-gitlab-cloud/" class="md-nav__link">
   
   
   
@@ -3199,7 +3158,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-does-codacy-support-gitlab-enterprise/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-does-codacy-support-gitlab-enterprise/" class="md-nav__link">
   
   
   
@@ -3220,7 +3179,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-does-codacy-support-bitbucket-cloud/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-does-codacy-support-bitbucket-cloud/" class="md-nav__link">
   
   
   
@@ -3241,7 +3200,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-does-codacy-support-bitbucket-server/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-does-codacy-support-bitbucket-server/" class="md-nav__link">
   
   
   
@@ -3262,7 +3221,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-does-codacy-keep-my-data-secure/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-does-codacy-keep-my-data-secure/" class="md-nav__link">
   
   
   
@@ -3283,7 +3242,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-does-codacy-protect-my-privacy/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-does-codacy-protect-my-privacy/" class="md-nav__link">
   
   
   
@@ -3304,7 +3263,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/does-codacy-keep-audit-logs/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/does-codacy-keep-audit-logs/" class="md-nav__link">
   
   
   
@@ -3325,7 +3284,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" class="md-nav__link">
   
   
   
@@ -3346,7 +3305,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/general/how-can-i-change-or-cancel-my-plan/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../general/how-can-i-change-or-cancel-my-plan/" class="md-nav__link">
   
   
   
@@ -3419,7 +3378,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/repositories/how-do-i-reanalyze-my-repository/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../repositories/how-do-i-reanalyze-my-repository/" class="md-nav__link">
   
   
   
@@ -3440,7 +3399,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/repositories/i-renamed-my-repository-on-the-git-provider/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../repositories/i-renamed-my-repository-on-the-git-provider/" class="md-nav__link">
   
   
   
@@ -3475,11 +3434,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_3" checked>
         
           
           <label class="md-nav__link" for="__nav_1_10_3" id="__nav_1_10_3_label" tabindex="0">
@@ -3501,7 +3460,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_10_3"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Code analysis
@@ -3513,7 +3472,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/which-metrics-does-codacy-calculate/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../which-metrics-does-codacy-calculate/" class="md-nav__link">
   
   
   
@@ -3534,7 +3493,12 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/how-does-codacy-determine-if-a-repository-has-coverage/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      <label class="md-nav__link md-nav__link--active" for="__toc">
   
   
   
@@ -3548,14 +3512,59 @@
   </span>
   
   
-</a></li>
+<span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span></label>
+      <a href="./" class="md-nav__link md-nav__link--active">
+  
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How does Codacy determine if a repository has coverage?
+  
+
+    
+  </span>
+  
+  
+</a>
+      
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#the-four-coverage-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The four coverage statuses
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See also
+      
+    </span>
+  </a>
+  
+</li></ul>
+  
+</nav>
+    </li>
   
 
   
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../why-does-codacy-show-unexpected-coverage-changes/" class="md-nav__link">
   
   
   
@@ -3576,7 +3585,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../does-codacy-place-limits-on-the-code-analysis/" class="md-nav__link">
   
   
   
@@ -3597,7 +3606,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/does-codacy-check-for-dependencies/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../does-codacy-check-for-dependencies/" class="md-nav__link">
   
   
   
@@ -3618,7 +3627,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../how-long-does-it-take-for-my-repository-to-be-analyzed/" class="md-nav__link">
   
   
   
@@ -3639,7 +3648,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/how-to-skip-an-analysis/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../how-to-skip-an-analysis/" class="md-nav__link">
   
   
   
@@ -3660,7 +3669,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/can-i-bypass-codacy-status-check/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../can-i-bypass-codacy-status-check/" class="md-nav__link">
   
   
   
@@ -3681,7 +3690,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../how-to-configure-php-codesniffer-coding-standards/" class="md-nav__link">
   
   
   
@@ -3754,7 +3763,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/why-cant-i-see-my-organization/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/why-cant-i-see-my-organization/" class="md-nav__link">
   
   
   
@@ -3775,7 +3784,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" class="md-nav__link">
   
   
   
@@ -3796,7 +3805,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/why-arent-duplication-metrics-being-calculated/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/why-arent-duplication-metrics-being-calculated/" class="md-nav__link">
   
   
   
@@ -3817,7 +3826,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/why-isnt-my-public-repository-being-analyzed/" class="md-nav__link">
   
   
   
@@ -3838,7 +3847,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/not-a-member-of-the-organization/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/not-a-member-of-the-organization/" class="md-nav__link">
   
   
   
@@ -3859,7 +3868,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/we-no-longer-have-access-to-this-repository/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/we-no-longer-have-access-to-this-repository/" class="md-nav__link">
   
   
   
@@ -3880,7 +3889,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/why-is-my-file-over-150-kb-missing/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/why-is-my-file-over-150-kb-missing/" class="md-nav__link">
   
   
   
@@ -3901,7 +3910,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../faq/troubleshooting/error-line-endings/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../troubleshooting/error-line-endings/" class="md-nav__link">
   
   
   
@@ -9088,10 +9097,19 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
-  <a href="#advanced-configuration" class="md-nav__link">
+  <a href="#the-four-coverage-statuses" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Advanced configuration
+        The four coverage statuses
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See also
       
     </span>
   </a>
@@ -9133,9 +9151,17 @@
   
     
     
-      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../../configuring-code-patterns/" class="md-path__link">
-  <span class="md-ellipsis">Configuring your repositories</span>
+      
+  
+  
+    
+    
+      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../../general/which-platforms-and-technologies-does-codacy-support/" class="md-path__link">
+  <span class="md-ellipsis">Troubleshooting and FAQs</span>
 </a></li>
+    
+  
+
     
   
 
@@ -9145,8 +9171,8 @@
   
     
     
-      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../client-side-tools/" class="md-path__link">
-  <span class="md-ellipsis">Local analysis</span>
+      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../which-metrics-does-codacy-calculate/" class="md-path__link">
+  <span class="md-ellipsis">Code analysis</span>
 </a></li>
     
   
@@ -9165,67 +9191,51 @@
 
 
 
-<h1 id="running-aligncheck">Running aligncheck<a class="headerlink" href="#running-aligncheck" title="Permanent link">#</a></h1>
-<p>To run aligncheck as a <a href="../client-side-tools/">client-side tool</a>:</p>
+<h1 id="how-does-codacy-determine-if-a-repository-has-coverage">How does Codacy determine if a repository has coverage?<a class="headerlink" href="#how-does-codacy-determine-if-a-repository-has-coverage" title="Permanent link">#</a></h1>
+<p>Codacy classifies each repository's coverage into one of four statuses, based on whether the most recent commit on the default branch has coverage data.</p>
+<h2 id="the-four-coverage-statuses">The four coverage statuses<a class="headerlink" href="#the-four-coverage-statuses" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+<th>Has coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No coverage</td>
+<td>The repository has never received a coverage report.</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Up to date</td>
+<td>The latest commit on the default branch has coverage data.</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Waiting for coverage</td>
+<td>The latest commit doesn't have coverage data yet, but a previous commit on the default branch did. Codacy keeps showing the last known values while it waits for new results.</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Stopped receiving coverage</td>
+<td>No recent commit on the default branch has coverage data, even though the repository used to report it.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>A repository counts as having coverage when its status is Up to date or Waiting for coverage.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This page uses the legacy <code>codacy-analysis-cli</code> command: <a href="../client-side-tools/#client-side-tools">a different, older tool</a> from the <code>codacy-analysis</code> CLI used elsewhere in these docs.</p>
+<p>Coverage status only considers commits on your repository's default branch. Coverage reports uploaded for other branches don't affect it.</p>
 </div>
-<ol>
-<li>
-<p><a href="../../configuring-code-patterns/">Enable aligncheck</a> and configure the corresponding code patterns on your repository <strong>Code patterns</strong> page.</p>
-</li>
-<li>
-<p>Enable <strong>Run analysis on your build server</strong> on your repository <strong>Settings</strong>, tab <strong>General</strong>, <strong>Repository analysis on your server</strong>.</p>
-<p>This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.</p>
-<p><img width="1280" height="721" decoding="async" alt="Run analysis on your build server" src="../images/run-analysis-through-build-server.png" /></p>
-</li>
-<li>
-<p>Set up an API token to authenticate on Codacy:</p>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
-<li>
-<p><strong>If you're setting up one repository</strong>, <a href="../../../codacy-api/api-tokens/#repository-api-tokens">obtain a repository API token</a> and set the following environment variable to specify your repository API token:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>repository<span class="w"> </span>API<span class="w"> </span>token&gt;
-</code></pre></div>
-</li>
-<li>
-<p><strong>If you're setting up multiple repositories</strong>, <a href="../../../codacy-api/api-tokens/#account-api-tokens">obtain an account API Token</a> and set the following environment variable to specify the account API token:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>account<span class="w"> </span>API<span class="w"> </span>token&gt;
-</code></pre></div>
-</li>
+<li><a href="../../../repositories/coverage/">Coverage page</a></li>
+<li><a href="../../../coverage-reporter/">Adding coverage to your repository</a></li>
+<li><a href="../why-does-codacy-show-unexpected-coverage-changes/">Why does Codacy show unexpected coverage changes?</a></li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Never write API tokens to your configuration files</strong> and keep your API tokens well protected, as they grant owner permissions to your projects on Codacy.</p>
-<p>It's a best practice to store API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.</p>
-</div>
-</li>
-<li>
-<p><strong>If you're using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your<span class="w"> </span>Codacy<span class="w"> </span>instance<span class="w"> </span>URL&gt;
-</code></pre></div>
-</li>
-<li>
-<p>Download and run the <a href="https://github.com/codacy/codacy-analysis-cli#install">Codacy Analysis CLI</a> on the root of the repository, specifying the tool aligncheck.</p>
-<div class="highlight"><pre><span></span><code>codacy-analysis-cli<span class="w"> </span>analyze<span class="w"> </span>--tool<span class="w"> </span>aligncheck<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--allow-network<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--upload<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--verbose
-</code></pre></div>
-<p><strong>If you're using an account API token</strong>, you must also provide the flags <code>--provider</code>, <code>--username</code>, and <code>--project</code>. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:</p>
-<div class="highlight"><pre><span></span><code>codacy-analysis-cli<span class="w"> </span>analyze<span class="w"> </span>--provider<span class="w"> </span>&lt;gh,<span class="w"> </span>ghe,<span class="w"> </span>gl,<span class="w"> </span>gle,<span class="w"> </span>bb,<span class="w"> </span>or<span class="w"> </span>bbe&gt;<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--username<span class="w"> </span>&lt;name<span class="w"> </span>of<span class="w"> </span>your<span class="w"> </span>Codacy<span class="w"> </span>organization&gt;<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--project<span class="w"> </span>&lt;name<span class="w"> </span>of<span class="w"> </span>your<span class="w"> </span>repository&gt;<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--tool<span class="w"> </span>aligncheck<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--allow-network<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--upload<span class="w"> </span><span class="se">\</span>
-<span class="w">                            </span>--verbose
-</code></pre></div>
-</li>
-</ol>
-<p>The Codacy Analysis CLI runs aligncheck on your repository and uploads the results to Codacy so you can use them in your workflow.</p>
-<h2 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">#</a></h2>
-<p>See the available <a href="https://github.com/codacy/codacy-analysis-cli#configuration">Codacy Analysis CLI configuration flags</a> to configure running aligncheck in more advanced scenarios.</p>
 
   
     
@@ -9234,7 +9244,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-08-10 16:34:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 10, 2026</span></time>
+    <time datetime="2026-09-08 14:02:55"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 8, 2026</span></time>
   </aside>
 
 
@@ -9259,10 +9269,10 @@
       <button type="button" data-feedback-send>Send feedback</button>
     </div>
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
-    <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Running%20aligncheck%22">open an issue on GitHub</a>.</p>
+    <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22How%20does%20Codacy%20determine%20if%20a%20repository%20has%20coverage%3F%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/docs/edit/master/docs/repositories-configure/local-analysis/running-aligncheck.md">Edit this page on GitHub</a>
-      <a href="mailto:support@codacy.com?subject=Question%20regarding%20Running%20aligncheck">Contact support</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/faq/code-analysis/how-does-codacy-determine-if-a-repository-has-coverage.md">Edit this page on GitHub</a>
+      <a href="mailto:support@codacy.com?subject=Question%20regarding%20How%20does%20Codacy%20determine%20if%20a%20repository%20has%20coverage%3F">Contact support</a>
     </p>
   </section>
   <script>
@@ -9300,8 +9310,8 @@
 
   
     <nav class="docs-page-nav" aria-label="Page navigation">
-      <a href="../client-side-tools/"><span>Previous</span><strong>Client-side tools</strong></a>
-      <a href="../running-dartanalyzer/" class="docs-page-nav__next"><span>Next</span><strong>Running Dart Analyzer</strong></a>
+      <a href="../which-metrics-does-codacy-calculate/"><span>Previous</span><strong>Which metrics does Codacy calculate?</strong></a>
+      <a href="../why-does-codacy-show-unexpected-coverage-changes/" class="docs-page-nav__next"><span>Next</span><strong>Why does Codacy show unexpected coverage changes?</strong></a>
     </nav>
   
 
