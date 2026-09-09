@@ -86,11 +86,13 @@ gemini extensions install https://github.com/codacy/codacy-skills.git --consent
 
 ## Keep the skills up to date
 
-The skills change as the CLIs gain commands, so update them periodically:
+The skills change as the CLIs gain commands, so update them periodically. How you do that depends on how you installed them:
 
 -   **Claude Code:** `claude plugin update`
+-   **Claude.ai:** download and upload the skill folder again, replacing the existing one
 -   **OpenAI Codex:** `git -C ~/.codacy-skills pull`
--   **Claude.ai:** download and upload the skill folder again
+-   **GitHub Copilot:** download `AGENTS.md` again and merge it into yours. The install copies the file into your repository rather than linking to it, so it never updates on its own.
+-   **Gemini CLI:** `gemini extensions update codacy-skills`. Restart the CLI afterward for the change to take effect.
 
 ## What you can ask for
 
