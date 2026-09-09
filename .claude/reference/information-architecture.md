@@ -28,29 +28,15 @@ Guardrails interleaves CLI setup and MCP setup as one continuous flow inside a s
 
 ## Codacy Skills' home
 
-**Superseded, 2026-09-09.** Codacy Skills gets its own section under "Developer tools", as a sibling of "Codacy CLIs" — not a subsection of the Codacy Cloud CLI page.
+Codacy Skills is its own section under "Developer tools", a sibling of "Codacy CLIs" — not a subsection of any single tool's page.
 
-The earlier decision filed Skills under Codacy Cloud CLI on the grounds that it was "a natural-language wrapper around Codacy Cloud CLI specifically". That premise doesn't hold against [`codacy/codacy-skills`](https://github.com/codacy/codacy-skills). Six skills ship there, and only one of them wraps the Cloud CLI:
+The test is **how many things a family of skills spans**. Skills is a set, not a feature of one tool: some members drive the Codacy Cloud CLI, some the Codacy Analysis CLI, some both, and some neither. Nesting the set under one of its members misdescribes the rest and leaves them unnamed anywhere on the site. That reasoning holds however many skills ship and whatever they cover — check the current set in [`codacy/codacy-skills`](https://github.com/codacy/codacy-skills) rather than assuming a count.
 
-| Skill | Drives |
-|---|---|
-| `codacy-cloud-cli` | Codacy Cloud CLI |
-| `configure-codacy-cloud` | Cloud CLI, plus the Analysis CLI for config files |
-| `codacy-code-review` | Both CLIs |
-| `configure-codacy` | Analysis CLI first, Cloud CLI to check the repo is on Codacy |
-| `codacy-analysis-cli` | Codacy Analysis CLI only |
-| `setup-coverage` | Neither — coverage tooling and CI |
+The tab is not in question: Skills passes the direction-of-consumption test above, since the reader's own agent is the caller. Only the level within the tab was ever the argument.
 
-Three of the six center on the Codacy Analysis CLI, which has no page anywhere under `docs/`, and two need no Cloud CLI at all. Filing all six under the Cloud CLI page misdescribes them and leaves five of the six named nowhere on the site.
+One durable constraint if the page ever moves again: **`codacy-cloud-cli/index.md` must keep its `#install-the-codacy-skills` anchor.** Skills lived on that page first, and inbound links from the product UI, blog, and support macros are invisible to every check in this repo. Leave the heading and its explicit `{: id=...}` in place as a pointer, whatever the page it points at.
 
-Skills still passes the direction-of-consumption test for "Developer tools" — the reader's own agent is the caller — so the tab is unchanged. Only the level within it moves.
-
-Two constraints on carrying this out:
-
-- **Keep `#install-the-codacy-skills` alive on `codacy-cloud-cli/index.md`.** Four inbound links inside this repo point at it, and the product UI, blog, and support macros are invisible to any check here. Leave the heading and its explicit `{: id=...}` in place as a pointer to the new page rather than deleting it.
-- **The Analysis CLI gap is separate work.** Documenting it would also fix "Codacy CLIs" being a plural section holding one page. Don't let it ride along with the Skills page.
-
-Related: the standalone-page request came from marketing, which makes the *prominence* half of this a positioning call — see "A structural move can still be the wrong call for reasons outside IA" below.
+Two things this decision deliberately does not settle. Whether the Codacy Analysis CLI gets its own page is a separate question — answering it would also resolve "Codacy CLIs" being a plural section, and neither depends on where Skills lives. And the prominence of a standalone section is a positioning call rather than a structural one, per the section below.
 
 ## A structural move can still be the wrong call for reasons outside IA
 
