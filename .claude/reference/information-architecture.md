@@ -30,13 +30,7 @@ Guardrails interleaves CLI setup and MCP setup as one continuous flow inside a s
 
 Codacy Skills is its own section under "Developer tools", a sibling of "Codacy CLIs" — not a subsection of any single tool's page.
 
-The test is **how many things a family of skills spans**. Skills is a set, not a feature of one tool: some members drive the Codacy Cloud CLI, some the Codacy Analysis CLI, some both, and some neither. Nesting the set under one of its members misdescribes the rest and leaves them unnamed anywhere on the site. That reasoning holds however many skills ship and whatever they cover — check the current set in [`codacy/codacy-skills`](https://github.com/codacy/codacy-skills) rather than assuming a count.
-
-The tab is not in question: Skills passes the direction-of-consumption test above, since the reader's own agent is the caller. Only the level within the tab was ever the argument.
-
-One durable constraint if the page ever moves again: **`codacy-cloud-cli/index.md` must keep its `#install-the-codacy-skills` anchor.** Skills lived on that page first, and inbound links from the product UI, blog, and support macros are invisible to every check in this repo. Leave the heading and its explicit `{: id=...}` in place as a pointer, whatever the page it points at.
-
-Two things this decision deliberately does not settle. Whether the Codacy Analysis CLI gets its own page is a separate question — answering it would also resolve "Codacy CLIs" being a plural section, and neither depends on where Skills lives. And the prominence of a standalone section is a positioning call rather than a structural one, per the section below.
+Skills is a set, not a feature of one tool: some members drive the Codacy Cloud CLI, some the Codacy Analysis CLI, some both, and some neither. Nesting the set under one of its members misdescribes the rest. The tab itself was never in question — Skills passes the direction-of-consumption test above, since the reader's own agent is the caller.
 
 ## A structural move can still be the wrong call for reasons outside IA
 
