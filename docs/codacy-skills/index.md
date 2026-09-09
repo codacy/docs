@@ -10,14 +10,14 @@ The skills are open source under the MIT license and live in the [`codacy/codacy
 
 ## Available skills
 
-| Skill | What it does | Needs |
-|---|---|---|
-| `codacy-cloud-cli` | Queries repositories, issues, security findings, pull requests, tools, and patterns on Codacy Cloud | Codacy Cloud CLI |
-| `codacy-code-review` | Adds Codacy issues, security findings, coverage, and duplication to a pull request review | Both CLIs |
-| `codacy-analysis-cli` | Runs static analysis locally, without sending your code to Codacy | Codacy Analysis CLI |
-| `configure-codacy` | Discovers your project's stack, enables the tools and patterns that fit it, and cuts noise from the results | Both CLIs |
-| `configure-codacy-cloud` | Tunes the configuration of a repository already analyzed on Codacy, without running local analysis | Both CLIs |
-| `setup-coverage` | Detects your test framework and CI, then adds what's missing to generate and upload coverage reports | A repository on Codacy |
+| Skill | What it does |
+|---|---|
+| [`codacy-cloud-cli`](https://github.com/codacy/codacy-skills/blob/master/skills/codacy-cloud-cli/SKILL.md) | Queries repositories, issues, security findings, pull requests, tools, and patterns on Codacy Cloud |
+| [`codacy-code-review`](https://github.com/codacy/codacy-skills/blob/master/skills/codacy-code-review/SKILL.md) | Adds Codacy issues, security findings, coverage, and duplication to a pull request review |
+| [`codacy-analysis-cli`](https://github.com/codacy/codacy-skills/blob/master/skills/codacy-analysis-cli/SKILL.md) | Runs static analysis locally, without sending your code to Codacy |
+| [`configure-codacy`](https://github.com/codacy/codacy-skills/blob/master/skills/configure-codacy/SKILL.md) | Discovers your project's stack, enables the tools and patterns that fit it, and cuts noise from the results |
+| [`configure-codacy-cloud`](https://github.com/codacy/codacy-skills/blob/master/skills/configure-codacy-cloud/SKILL.md) | Tunes the configuration of a repository already analyzed on Codacy, without running local analysis |
+| [`setup-coverage`](https://github.com/codacy/codacy-skills/blob/master/skills/setup-coverage/SKILL.md) | Detects your test framework and CI, then adds what's missing to generate and upload coverage reports |
 
 The skills work together. Ask your assistant to review a pull request and it uses `codacy-code-review`, which in turn reaches for the two CLI skills to get local analysis and cloud coverage data.
 
@@ -26,12 +26,14 @@ The skills work together. Ask your assistant to review a pull request and it use
 
 ## Requirements
 
-Install the CLIs the skills you want depend on:
+Most skills use both CLIs. Install them with:
 
 ```bash
 npm install -g @codacy/codacy-cloud-cli
 npm install -g @codacy/analysis-cli
 ```
+
+`codacy-cloud-cli` needs only the Codacy Cloud CLI and `codacy-analysis-cli` only the Codacy Analysis CLI. `setup-coverage` also needs the repository to be added to Codacy.
 
 Then authenticate. Run `codacy login` and paste an [account API token](../codacy-api/api-tokens.md#account-api-tokens), or set the `CODACY_API_TOKEN` environment variable for non-interactive environments. Both CLIs read the same credentials from `~/.codacy/credentials`, so a single login covers both.
 
