@@ -14,6 +14,7 @@ bundler-audit
 Checkov
 Checkstyle
 Clang-Tidy
+CLIs
 cloc
 CloudFormation
 Cobertura

@@ -77,6 +77,7 @@ extra:
         "Getting started": "rocket-outline"
         "Codacy Guardrails": "shield-checkmark-outline"
         "Codacy CLIs": "terminal-outline"
+        "Codacy Skills": "document-text-outline"
         "IDE integrations": "share-social-outline"
         "Codacy AI": "sparkles-outline"
         "Repositories on Codacy": "folder-open-outline"
@@ -769,6 +770,8 @@ nav:
                       - codacy-api/examples/triggering-dast-scans.md
           - Codacy CLIs:
                 - codacy-cloud-cli/index.md
+          - Codacy Skills:
+                - codacy-skills/index.md
           - IDE integrations:
                 - getting-started/integrating-codacy-with-visual-studio-code.md
                 - getting-started/integrating-codacy-with-intellij-ides.md
