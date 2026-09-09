@@ -259,7 +259,7 @@ Feed both outputs to Claude Code (with the Codacy skill installed) to decide wha
 
 ### Audit affected functions across one or multiple repositories {: id="affected-functions-scale"}
 
-The [affected functions](#affected-functions) shown for a single finding tell you whether one vulnerable dependency is reachable. To check vulnerable dependencies across one or multiple repositories at once, [install the Codacy Skills](../codacy-skills/index.md) — the `codacy-cloud-cli` skill already knows how to pull SCA findings for one or more repositories, tell direct from transitive dependencies apart, and check whether the affected functions are actually used.
+The [affected functions](#affected-functions) shown for a single finding tell you whether one vulnerable dependency is reachable. To check vulnerable dependencies across one or multiple repositories at once, [install the Codacy Skills](../codacy-skills/index.md). The `codacy-cloud-cli` skill already knows how to pull SCA findings for one or more repositories, tell direct from transitive dependencies apart, and check whether the affected functions are actually used.
 
 With the skill installed and local checkouts of the repositories you want to cover, ask your assistant directly, for example:
 

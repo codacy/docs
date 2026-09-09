@@ -6,7 +6,7 @@ description: Install the Codacy Skills to let your AI assistant query your Codac
 
 The Codacy Skills teach your AI coding assistant how to drive Codacy: they tell it which command to run, how to read the output, and what to do next. You describe what you want in plain language instead of remembering command syntax.
 
-The skills are open source under the MIT license and live in the [codacy/codacy-skills](https://github.com/codacy/codacy-skills) repository. They follow the [Agent Skills](https://agentskills.io/) standard, so they work with Claude Code, Claude.ai, OpenAI Codex, GitHub Copilot, Gemini CLI, and any other assistant that supports it.
+The skills are open source under the MIT license and live in the [`codacy/codacy-skills`](https://github.com/codacy/codacy-skills) repository. They follow the [Agent Skills](https://agentskills.io/) standard, so they work with Claude Code, Claude.ai, OpenAI Codex, GitHub Copilot, Gemini CLI, and any other assistant that supports it.
 
 ## Available skills
 
@@ -22,7 +22,7 @@ The skills are open source under the MIT license and live in the [codacy/codacy-
 The skills work together. Ask your assistant to review a pull request and it uses `codacy-code-review`, which in turn reaches for the two CLI skills to get local analysis and cloud coverage data.
 
 !!! note
-    The Codacy Cloud CLI (`codacy`) and the Codacy Analysis CLI (`codacy-analysis`) are different tools. The Cloud CLI queries your data on Codacy; the Analysis CLI runs analyzers on your machine.
+    The Codacy Cloud CLI (`codacy`) and the Codacy Analysis CLI (`codacy-analysis`) are different tools. Use `codacy` to query your data on Codacy, and `codacy-analysis` to run analyzers on your machine.
 
 ## Requirements
 
@@ -56,7 +56,7 @@ Download the folder of the skill you want from the repository, zip it, and uploa
 
 ### OpenAI Codex
 
-Codex discovers skills from an `.agents/skills/` directory. The repository already points at each skill from that path, so cloning it is enough:
+Codex discovers skills from an `.agents/skills/` directory. The repository already points at each skill from that path, so cloning the repository is enough:
 
 ```bash
 git clone https://github.com/codacy/codacy-skills ~/.codacy-skills
