@@ -44,6 +44,7 @@ https://docs.codacy.com/codacy-guardrails/codacy-guardrails-how-to-configure-rul
 https://docs.codacy.com/codacy-guardrails/codacy-guardrails-how-to-use/,Documentation for the Codacy automated code review tool.
 https://docs.codacy.com/codacy-guardrails/codacy-guardrails-limitations/,Documentation for the Codacy automated code review tool.
 https://docs.codacy.com/codacy-guardrails/codacy-guardrails-troubleshooting/,Documentation for the Codacy automated code review tool.
+https://docs.codacy.com/codacy-skills/,"Install the Codacy Skills to let your AI assistant query your Codacy data, review pull requests, configure analysis, and set up coverage in plain language."
 https://docs.codacy.com/coverage-reporter/,Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.
 https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/,"There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, using a GitHub Action or CircleCI orb, downloading a binary for your operating system, or building the binary from source."
 https://docs.codacy.com/coverage-reporter/troubleshooting-coverage-cli-issues/,Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.
