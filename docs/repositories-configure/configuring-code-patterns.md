@@ -76,9 +76,9 @@ There are two ways to run it.
 
 ### Running it with Codacy Skills {: id="running-it-with-codacy-skills"}
 
-If you'd rather run auto-configuration locally with your own AI agent, use the `configure-codacy` [skill](../codacy-cloud-cli/index.md#install-the-codacy-skills) instead. This option is open-source and isn't limited to paid plans.
+If you'd rather run auto-configuration locally with your own AI agent, use the `configure-codacy` [skill](../codacy-skills/index.md) instead. This option is open-source and isn't limited to paid plans.
 
-1.  [Install the Codacy Skills](../codacy-cloud-cli/index.md#install-the-codacy-skills).
+1.  [Install the Codacy Skills](../codacy-skills/index.md#install-the-skills).
 1.  Open a terminal in your repository's root directory and run the skill:
 
     ```bash

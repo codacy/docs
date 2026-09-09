@@ -6,7 +6,7 @@ description: Install and use the Codacy Cloud CLI to manage your repositories, i
 
 The Codacy Cloud CLI gives you a fast terminal interface to your Codacy data. Add repositories, review issues, investigate security findings, inspect pull requests, and configure tools—all without opening a browser.
 
-Pair it with [Codacy Skills](#install-the-codacy-skills) to interact with your Codacy data in plain language directly from your AI assistant.
+Pair it with the [Codacy Skills](../codacy-skills/index.md) to interact with your Codacy data in plain language directly from your AI assistant.
 
 <div style="position: relative; padding-bottom: 61.224489795918366%; height: 0;"><iframe src="https://www.loom.com/embed/1960b3f07f2c419682a1e22e2b2928d1" title="Codacy Cloud CLI overview video" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
 
@@ -50,22 +50,16 @@ When more than one credential is available, the CLI uses the first of the option
 
 ## Install the Codacy Skills {: id="install-the-codacy-skills"}
 
-The [Codacy Skills](https://github.com/codacy/codacy-skills) let your AI assistant interact with your Codacy data in plain language, without needing to remember command syntax:
+The [Codacy Skills](../codacy-skills/index.md) let your AI assistant interact with your Codacy data in plain language, without needing to remember command syntax. The `codacy-cloud-cli` skill covers this CLI; five other skills cover local analysis, pull request review, configuration, and coverage.
 
-- "Show me the critical security findings in my org"
-- "What issues were introduced in PR #42?"
-- "Ignore all false positives in the last pull request"
-
-**Claude Code** (recommended):
+For Claude Code:
 
 ```bash
 claude plugin marketplace add codacy/codacy-skills
 claude plugin install codacy-skills@codacy
 ```
 
-**Claude.ai**: download the skill folder, zip it, and upload it under **Settings > Capabilities > Skills**.
-
-If you use a different AI assistant, visit the [Codacy Skills repository](https://github.com/codacy/codacy-skills) to install the skills directly.
+See [Codacy Skills](../codacy-skills/index.md#install-the-skills) for the other assistants.
 
 ## What you can do
 
@@ -265,7 +259,7 @@ Feed both outputs to Claude Code (with the Codacy skill installed) to decide wha
 
 ### Audit affected functions across one or multiple repositories {: id="affected-functions-scale"}
 
-The [affected functions](#affected-functions) shown for a single finding tell you whether one vulnerable dependency is reachable. To check vulnerable dependencies across one or multiple repositories at once, [install the Codacy Skills](#install-the-codacy-skills) — the `codacy-cloud-cli` skill already knows how to pull SCA findings for one or more repositories, tell direct from transitive dependencies apart, and check whether the affected functions are actually used.
+The [affected functions](#affected-functions) shown for a single finding tell you whether one vulnerable dependency is reachable. To check vulnerable dependencies across one or multiple repositories at once, [install the Codacy Skills](../codacy-skills/index.md) — the `codacy-cloud-cli` skill already knows how to pull SCA findings for one or more repositories, tell direct from transitive dependencies apart, and check whether the affected functions are actually used.
 
 With the skill installed and local checkouts of the repositories you want to cover, ask your assistant directly, for example:
 
@@ -297,7 +291,7 @@ From there, pipe the JSON output to `jq`, post results as PR comments with the [
 ## See also
 
 - [Codacy Cloud CLI on GitHub](https://github.com/codacy/codacy-cloud-cli)
-- [Codacy Skills on GitHub](https://github.com/codacy/codacy-skills)
+- [Codacy Skills](../codacy-skills/index.md)
 - [API tokens](../codacy-api/api-tokens.md)
 - [Using the Codacy API](../codacy-api/using-the-codacy-api.md)
 - [GitHub integration and AI Reviewer](../repositories-configure/integrations/github-integration.md#ai-reviewer)

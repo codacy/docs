@@ -28,7 +28,29 @@ Guardrails interleaves CLI setup and MCP setup as one continuous flow inside a s
 
 ## Codacy Skills' home
 
-Skills is a natural-language wrapper around Codacy Cloud CLI specifically, not general-purpose agent access to all of Codacy — the CLI's own page already frames it that way ("Pair it with Codacy Skills to interact with your Codacy data in plain language"). It belongs under Codacy Cloud CLI, not in a standalone agent-tools section.
+**Superseded, 2026-09-09.** Codacy Skills gets its own section under "Developer tools", as a sibling of "Codacy CLIs" — not a subsection of the Codacy Cloud CLI page.
+
+The earlier decision filed Skills under Codacy Cloud CLI on the grounds that it was "a natural-language wrapper around Codacy Cloud CLI specifically". That premise doesn't hold against [`codacy/codacy-skills`](https://github.com/codacy/codacy-skills). Six skills ship there, and only one of them wraps the Cloud CLI:
+
+| Skill | Drives |
+|---|---|
+| `codacy-cloud-cli` | Codacy Cloud CLI |
+| `configure-codacy-cloud` | Cloud CLI, plus the Analysis CLI for config files |
+| `codacy-code-review` | Both CLIs |
+| `configure-codacy` | Analysis CLI first, Cloud CLI to check the repo is on Codacy |
+| `codacy-analysis-cli` | Codacy Analysis CLI only |
+| `setup-coverage` | Neither — coverage tooling and CI |
+
+Three of the six center on the Codacy Analysis CLI, which has no page anywhere under `docs/`, and two need no Cloud CLI at all. Filing all six under the Cloud CLI page misdescribes them and leaves five of the six named nowhere on the site.
+
+Skills still passes the direction-of-consumption test for "Developer tools" — the reader's own agent is the caller — so the tab is unchanged. Only the level within it moves.
+
+Two constraints on carrying this out:
+
+- **Keep `#install-the-codacy-skills` alive on `codacy-cloud-cli/index.md`.** Four inbound links inside this repo point at it, and the product UI, blog, and support macros are invisible to any check here. Leave the heading and its explicit `{: id=...}` in place as a pointer to the new page rather than deleting it.
+- **The Analysis CLI gap is separate work.** Documenting it would also fix "Codacy CLIs" being a plural section holding one page. Don't let it ride along with the Skills page.
+
+Related: the standalone-page request came from marketing, which makes the *prominence* half of this a positioning call — see "A structural move can still be the wrong call for reasons outside IA" below.
 
 ## A structural move can still be the wrong call for reasons outside IA
 
