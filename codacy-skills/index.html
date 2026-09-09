@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-09 13:19:18">
+    <meta http-equiv="last-modified" content="2026-09-09 13:54:13">
   
   
 
@@ -9348,39 +9348,32 @@
 <tr>
 <th>Skill</th>
 <th>What it does</th>
-<th>Needs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>codacy-cloud-cli</code></td>
+<td><a href="https://github.com/codacy/codacy-skills/blob/master/skills/codacy-cloud-cli/SKILL.md"><code>codacy-cloud-cli</code></a></td>
 <td>Queries repositories, issues, security findings, pull requests, tools, and patterns on Codacy Cloud</td>
-<td>Codacy Cloud CLI</td>
 </tr>
 <tr>
-<td><code>codacy-code-review</code></td>
+<td><a href="https://github.com/codacy/codacy-skills/blob/master/skills/codacy-code-review/SKILL.md"><code>codacy-code-review</code></a></td>
 <td>Adds Codacy issues, security findings, coverage, and duplication to a pull request review</td>
-<td>Both CLIs</td>
 </tr>
 <tr>
-<td><code>codacy-analysis-cli</code></td>
+<td><a href="https://github.com/codacy/codacy-skills/blob/master/skills/codacy-analysis-cli/SKILL.md"><code>codacy-analysis-cli</code></a></td>
 <td>Runs static analysis locally, without sending your code to Codacy</td>
-<td>Codacy Analysis CLI</td>
 </tr>
 <tr>
-<td><code>configure-codacy</code></td>
+<td><a href="https://github.com/codacy/codacy-skills/blob/master/skills/configure-codacy/SKILL.md"><code>configure-codacy</code></a></td>
 <td>Discovers your project's stack, enables the tools and patterns that fit it, and cuts noise from the results</td>
-<td>Both CLIs</td>
 </tr>
 <tr>
-<td><code>configure-codacy-cloud</code></td>
+<td><a href="https://github.com/codacy/codacy-skills/blob/master/skills/configure-codacy-cloud/SKILL.md"><code>configure-codacy-cloud</code></a></td>
 <td>Tunes the configuration of a repository already analyzed on Codacy, without running local analysis</td>
-<td>Both CLIs</td>
 </tr>
 <tr>
-<td><code>setup-coverage</code></td>
+<td><a href="https://github.com/codacy/codacy-skills/blob/master/skills/setup-coverage/SKILL.md"><code>setup-coverage</code></a></td>
 <td>Detects your test framework and CI, then adds what's missing to generate and upload coverage reports</td>
-<td>A repository on Codacy</td>
 </tr>
 </tbody>
 </table>
@@ -9390,10 +9383,11 @@
 <p>The Codacy Cloud CLI (<code>codacy</code>) and the Codacy Analysis CLI (<code>codacy-analysis</code>) are different tools. Use <code>codacy</code> to query your data on Codacy, and <code>codacy-analysis</code> to run analyzers on your machine.</p>
 </div>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">#</a></h2>
-<p>Install the CLIs the skills you want depend on:</p>
+<p>Most skills use both CLIs. Install them with:</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@codacy/codacy-cloud-cli
 npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@codacy/analysis-cli
 </code></pre></div>
+<p><code>codacy-cloud-cli</code> needs only the Codacy Cloud CLI and <code>codacy-analysis-cli</code> only the Codacy Analysis CLI. <code>setup-coverage</code> also needs the repository to be added to Codacy.</p>
 <p>Then authenticate. Run <code>codacy login</code> and paste an <a href="../codacy-api/api-tokens/#account-api-tokens">account API token</a>, or set the <code>CODACY_API_TOKEN</code> environment variable for non-interactive environments. Both CLIs read the same credentials from <code>~/.codacy/credentials</code>, so a single login covers both.</p>
 <p>See <a href="../codacy-cloud-cli/#authentication">Codacy Cloud CLI</a> for the full set of authentication options, including repository API tokens.</p>
 <h2 id="install-the-skills">Install the skills<a class="headerlink" href="#install-the-skills" title="Permanent link">#</a></h2>
@@ -9463,7 +9457,7 @@ Set up coverage reporting for this repository
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-09 13:19:18"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2026</span></time>
+    <time datetime="2026-09-09 13:54:13"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2026</span></time>
   </aside>
 
 
