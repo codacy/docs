@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-10 13:12:41">
+    <meta http-equiv="last-modified" content="2026-09-10 14:30:25">
   
   
 
@@ -4647,6 +4647,27 @@
 </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+  
+  
+  
+  
+    <li class="md-nav__item"><a href="../../codacy-analysis-cli/" class="md-nav__link">
+  
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codacy Analysis CLI
+  
+
+    
+  </span>
+  
+  
+</a></li>
+  
+
   
   
   
@@ -9478,7 +9499,7 @@
 <li><code>codacy.config.json</code> and <code>codacy.config.baseline.json</code>: which built-in scanners and rules run on your repository</li>
 <li><code>generated/</code>: the per-scanner configuration files derived from them at analysis time</li>
 </ul>
-<p>These files belong to the <a href="https://www.npmjs.com/package/@codacy/analysis-cli">Codacy Analysis CLI</a> that the extension bundles, and the extension writes and updates them for you. To change which rules run, <a href="../codacy-guardrails-how-to-configure-rules/">customize them on Codacy Cloud</a> rather than editing these files.</p>
+<p>These files belong to the <a href="../../codacy-analysis-cli/">Codacy Analysis CLI</a> that the extension bundles, and the extension writes and updates them for you. To change which rules run, <a href="../codacy-guardrails-how-to-configure-rules/">customize them on Codacy Cloud</a> rather than editing these files.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Commit <code>codacy.config.json</code> and <code>codacy.config.baseline.json</code> so your team analyzes against the same configuration. The CLI already keeps the <code>generated/</code> subfolder out of version control for you, via a <code>.codacy/.gitignore</code> file.</p>
@@ -9506,7 +9527,7 @@
 <h2 id="how-to-install-manually">How to install - Manually (VSCode)<a class="headerlink" href="#how-to-install-manually" title="Permanent link">#</a></h2>
 <h3 id="install-cli">1.  Install and activate the Codacy CLI for local analysis<a class="headerlink" href="#install-cli" title="Permanent link">#</a></h3>
 <h4 id="download">Download<a class="headerlink" href="#download" title="Permanent link">#</a></h4>
-<p>The Codacy Analysis CLI is distributed as an npm package and installs the same way on macOS, Linux, and Windows:</p>
+<p>The Codacy Analysis CLI is distributed as an npm package and installs the same way on macOS, Linux, and Windows. See <a href="../../codacy-analysis-cli/">Codacy Analysis CLI</a> for its full command reference.</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@codacy/analysis-cli
 </code></pre></div>
 <h4 id="initialization">Initialization<a class="headerlink" href="#initialization" title="Permanent link">#</a></h4>
@@ -9694,7 +9715,7 @@ codacy-analysis<span class="w"> </span>init<span class="w"> </span>--remote<span
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-10 13:12:41"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2026</span></time>
+    <time datetime="2026-09-10 14:30:25"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2026</span></time>
   </aside>
 
 
