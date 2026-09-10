@@ -39,14 +39,36 @@ Codacy Guardrails supports Visual Studio Code, Cursor, and Windsurf.
 
 ### Built-in Scanners
 
-- Trivy
-- Semgrep
+- Agentlinter
+- Bandit
+- Biome
+- Brakeman
+- Checkov
+- Checkstyle
+- Cppcheck
+- detekt
 - ESLint
-- Pylint
-- PMD
-- dartanalyzer
+- Flawfinder
+- Hadolint
+- Jackson Linter
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
+- markdownlint
+- Opengrep
+- PMD
+- Prospector
+- Pylint
+- Reek
 - Revive
+- RuboCop
+- Ruff
+- Scalastyle
+- ShellCheck
+- Spectral
+- SQLFluff
+- SQLint
+- Stylelint
+- SwiftLint
+- Trivy
 
 ## How to install - Quick Guide (VSCode) {: id="how-to-install-quick-guide"}
 
@@ -254,7 +276,7 @@ Codacy Guardrails supports IntelliJ IDEA, PyCharm, PhpStorm, and other IDEs in t
 ### Built-in Scanners
 
 - Trivy
-- Semgrep
+- Opengrep
 - ESLint
 - Pylint
 - PMD
