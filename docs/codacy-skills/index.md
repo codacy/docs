@@ -12,9 +12,9 @@ The skills are open source under the MIT license and live in the [`codacy/codacy
 
 | Skill | What it does | Needs |
 |---|---|---|
-| `codacy-cloud-cli` | Queries repositories, issues, security findings, pull requests, tools, and patterns on Codacy Cloud | Codacy Cloud CLI |
+| `codacy-cloud-cli` | Queries repositories, issues, security findings, pull requests, tools, and patterns on Codacy Cloud | [Codacy Cloud CLI](../codacy-cloud-cli/index.md) |
 | `codacy-code-review` | Adds Codacy issues, security findings, coverage, and duplication to a pull request review | Both CLIs |
-| `codacy-analysis-cli` | Runs static analysis locally, without sending your code to Codacy | Codacy Analysis CLI |
+| `codacy-analysis-cli` | Runs static analysis locally, without sending your code to Codacy | [Codacy Analysis CLI](../codacy-analysis-cli/index.md) |
 | `configure-codacy` | Discovers your project's stack, enables the tools and patterns that fit it, and cuts noise from the results | Both CLIs |
 | `configure-codacy-cloud` | Tunes the configuration of a repository already analyzed on Codacy, without running local analysis | Both CLIs |
 | `setup-coverage` | Detects your test framework and CI, then adds what's missing to generate and upload coverage reports | A repository on Codacy |
@@ -35,7 +35,7 @@ npm install -g @codacy/analysis-cli
 
 Then authenticate. Run `codacy login` and paste an [account API token](../codacy-api/api-tokens.md#account-api-tokens), or set the `CODACY_API_TOKEN` environment variable for non-interactive environments. Both CLIs read the same credentials from `~/.codacy/credentials`, so a single login covers both.
 
-See [Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication) for the full set of authentication options, including repository API tokens.
+See [Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication) and [Codacy Analysis CLI](../codacy-analysis-cli/index.md#authentication) for the full set of authentication options, including repository API tokens.
 
 ## Install the skills
 
