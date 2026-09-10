@@ -16,6 +16,27 @@ Pair it with the [Codacy Skills](../codacy-skills/index.md) to run local analysi
 -   Node.js 20 or later
 -   git — the CLI resolves paths against the repository root, and the [git-aware flags](#scope-the-analysis) read your branch and staging area
 
+From there, what you run depends on one thing: whether the repository is already on Codacy.
+
+**If your repository is on Codacy**, pull its configuration down. Local results then match what Codacy reports on your pull requests, which is usually the reason for running the CLI at all:
+
+```bash
+npm i -g @codacy/analysis-cli
+codacy-analysis login
+codacy-analysis init --remote gh my-org my-repo
+codacy-analysis analyze --install-dependencies
+```
+
+**If it isn't**, let the CLI detect your stack and pick the rules. No token, no account, and nothing leaves your machine:
+
+```bash
+npm i -g @codacy/analysis-cli
+codacy-analysis init --auto
+codacy-analysis analyze --install-dependencies
+```
+
+The rest of this page covers each of those steps on its own, and the flags worth knowing once the first run works.
+
 ## Installation
 
 The CLI is published on npm and installs the same way on macOS, Linux, and Windows:
@@ -54,54 +75,61 @@ codacy-analysis init --remote gh my-org my-repo --repository-token <token>
 
 {% include-markdown "../assets/includes/api-token-warning.md" %}
 
-## Codacy Self-hosted
+## Choose which rules run {: id="configure-your-repository"}
 
-Point the CLI at your own instance with `CODACY_API_BASE_URL`. The `upload` command talks to a different endpoint from the rest of the CLI and reads its own variable, so set both:
-
-```bash
-export CODACY_API_BASE_URL=<your Codacy instance API URL>
-export CODACY_RESULTS_API_BASE_URL=<your Codacy instance results API URL>
-```
-
-## Configure your repository {: id="configure-your-repository"}
-
-`init` writes `.codacy/codacy.config.json`, which records the tools and patterns that run. `analyze` reads it, so run `init` once per repository before analyzing.
-
-Which mode you pick decides where the configuration comes from:
-
-```bash
-# Detect languages from the tool configuration files already in the repository
-codacy-analysis init
-
-# Detect the stack and select patterns per detected framework
-codacy-analysis init --auto
-
-# Same, narrowed to specific severities and categories
-codacy-analysis init --auto Critical,High,Security
-
-# Add Codacy's default patterns on top — no token needed
-codacy-analysis init --default
-
-# Fetch the configuration of a repository on Codacy, so local results match it
-codacy-analysis init --remote gh my-org my-repo
-```
-
-The modes are mutually exclusive. `init --remote` takes your provider (`gh` for GitHub, `gl` for GitLab, or `bb` for Bitbucket), organization, and repository name, and needs [authentication](#authentication); the others don't. If you want both the stack `--auto` detects and the rules your repository enforces on Codacy, see [analyzing against your stack and your Codacy Cloud rules](#merge-auto-and-remote).
+`init` writes `.codacy/codacy.config.json`, which records the tools and patterns that run. `analyze` reads it, so run `init` once per repository before analyzing. The modes below are mutually exclusive: each one is a different answer to where the configuration comes from.
 
 Alongside it, `init` writes `codacy.config.baseline.json`, which records what the generator last produced, and a `.codacy/.gitignore` that keeps the derived `generated/` folder out of version control. Commit both JSON files so your team analyzes against the same configuration.
 
-To bring an existing configuration up to date with your current stack:
+### If your repository is on Codacy
+
+`init --remote` fetches the configuration Codacy already holds, so local analysis applies the same code patterns and coding standards as your pull requests:
+
+```bash
+codacy-analysis init --remote gh my-org my-repo
+```
+
+It takes your provider — `gh` for GitHub, `gl` for GitLab, or `bb` for Bitbucket — then your organization and repository name, and it needs [authentication](#authentication).
+
+If you want the rules Codacy enforces as well as the tools the CLI detects locally, you can have both: see [analyzing against your stack and your Codacy Cloud rules](#merge-auto-and-remote).
+
+### If your repository isn't on Codacy
+
+`init --auto` discovers your languages and frameworks and selects patterns to match, enabling framework-specific rules only when it finds the corresponding dependency. This is the mode to reach for:
+
+```bash
+codacy-analysis init --auto
+```
+
+Narrow it with comma-separated severities and categories when a full run reports more than you want to act on:
+
+```bash
+codacy-analysis init --auto Critical,High,Security
+```
+
+Two narrower modes exist for cases `--auto` doesn't fit. Bare `init` configures only the tools that already have a configuration file in the repository, and `init --default` adds Codacy's default patterns from the public API, which needs no token:
+
+```bash
+codacy-analysis init
+codacy-analysis init --default
+```
+
+### Keep the configuration current
+
+As your stack changes, bring the configuration along with it:
 
 ```bash
 codacy-analysis update-config
 ```
 
-By default this is incremental: patterns you disabled stay disabled and your parameters and excludes survive, while tools and patterns for newly detected languages and frameworks are added. Add `--reset` to regenerate from scratch and discard your edits. Configurations created with `init --remote` are always re-synced in full, because Codacy Cloud is authoritative for them.
+By default this is incremental: patterns you disabled stay disabled and your parameters and excludes survive, while tools and patterns for newly detected languages and frameworks are added. Add `--reset` to regenerate from scratch and discard your edits.
+
+Configurations created with `init --remote` are always re-synced in full, because Codacy Cloud is authoritative for them. Local edits to those are discarded, which is the trade for staying in step with the UI.
 
 !!! note
     `init` and `update-config` read the `exclude_paths` in your [Codacy configuration file](../repositories-configure/codacy-configuration-file.md) and record them in `codacy.config.json`, which is where `analyze` reads them from. Editing `.codacy.yaml` on its own doesn't change what `analyze` covers — run `update-config` afterward.
 
-## Run an analysis
+## Analyze
 
 With the configuration in place, analyze the repository:
 
@@ -109,7 +137,7 @@ With the configuration in place, analyze the repository:
 codacy-analysis analyze
 ```
 
-Some analyzers ship inside the npm package; the rest are downloaded on demand. `--install-dependencies` fetches the missing ones into `~/.codacy`, where they're reused across every repository on the machine, and then runs the analysis:
+Some analyzers ship inside the npm package; the rest are downloaded on demand. On a first run, use `--install-dependencies`, which fetches the missing ones and then runs the analysis. They go to `~/.codacy`, so every repository on the machine reuses them:
 
 ```bash
 codacy-analysis analyze --install-dependencies
@@ -122,6 +150,8 @@ codacy-analysis analyze --inspect
 ```
 
 `--inspect`, `--install-dependencies`, and `--fail-if-missing` are mutually exclusive — passing two of them exits `2` without analyzing.
+
+### Read the results
 
 `analyze` prints text by default. Use `--output-format` for machine-readable output, and `--output` to write it to a file:
 
@@ -164,7 +194,7 @@ codacy-analysis analyze --files "**/*.py" --files "**/*.rs"
 The git-aware flags scope the run to what changed. They're mutually exclusive:
 
 ```bash
-# Files in the git staging area — the flag to use in a pre-commit hook
+# Files in the git staging area
 codacy-analysis analyze --staged
 
 # Files changed against the default branch, or against a base branch you name
@@ -175,7 +205,7 @@ codacy-analysis analyze --diff develop
 codacy-analysis analyze --pr
 ```
 
-Combining a git flag with `--files` analyzes the intersection of the two.
+`--staged` is the one to put in a pre-commit hook: it exits `1` when it finds anything, which is all the hook needs to block the commit. Combining a git flag with `--files` analyzes the intersection of the two, which keeps a hook down to the analyzers that matter for the files you touch.
 
 ### Tune the run
 
@@ -212,7 +242,7 @@ codacy-analysis upload results.sarif --repository gh my-org my-repo --commit <sh
 !!! tip
     For Codacy to wait for these results before it resumes analyzing your commits, enable **Run analysis on your build server** on your repository **Settings**, tab **General**, **Repository analysis on your server**.
 
-## Inspect your stack
+## Inspect and combine configurations
 
 `discover` reports the languages, frameworks, libraries, and notable files the CLI finds, which is what `init --auto` bases its selection on:
 
@@ -222,8 +252,6 @@ codacy-analysis discover --output-format json
 ```
 
 It applies your `exclude_paths` by default. Add `--no-exclude` to see the unfiltered scan.
-
-## Combine configuration files
 
 `config` performs set operations on the tools and patterns of two configuration files and writes the result to the destination, leaving the source untouched. Use it to keep a configuration synced from Codacy Cloud while testing a variant beside it:
 
@@ -267,48 +295,7 @@ The merged file keeps `source: auto` in its metadata, so [`update-config`](#conf
 !!! note
     Merging copies the Codacy Cloud rules once. `update-config` re-reads your stack, but it doesn't go back to Codacy for a configuration whose `source` is `auto` — so when the rules change on Codacy Cloud, re-run `init --remote --config-file .codacy/remote.json` and merge again.
 
-### Scan a repository that isn't on Codacy
-
-No token, no account, and nothing leaves the machine:
-
-```bash
-codacy-analysis init --auto
-codacy-analysis analyze --install-dependencies
-```
-
-### Check your own changes before you commit
-
-```bash
-codacy-analysis analyze --staged
-```
-
-This exits `1` when it finds anything, which is all a pre-commit hook needs to block the commit. Add `--tool` to keep the hook to the analyzers that matter for the files you touch.
-
-### Reproduce what Codacy Cloud sees
-
-```bash
-codacy-analysis login
-codacy-analysis init --remote gh my-org my-repo
-codacy-analysis analyze --install-dependencies
-```
-
-Here `update-config` re-syncs the configuration in full rather than incrementally, because Codacy Cloud is authoritative for it. Local edits to the file are discarded, which is the trade for staying in step with the UI.
-
-## Run behind a proxy
-
-All outbound requests — Codacy API calls and analyzer downloads alike — honor the standard proxy variables:
-
-```bash
-export HTTPS_PROXY=http://proxy.corp:8080
-export NO_PROXY=app.codacy.com,.internal
-export SSL_CERT_FILE=/path/to/corporate-ca.pem
-```
-
-Trust your organization's CA through `SSL_CERT_FILE` or `NODE_EXTRA_CA_CERTS` rather than disabling TLS verification. A misconfigured bundle fails with an explicit error.
-
-The update-available check uses a separate network stack that ignores these variables. Behind a strict proxy, turn it off with `CODACY_DISABLE_UPDATE_CHECK=1`.
-
-## Use the CLI in CI
+### Use the CLI in CI
 
 Install the CLI as a step and pass a repository API token as a secret:
 
@@ -329,6 +316,27 @@ Install the CLI as a step and pass a repository API token as a secret:
 {% endraw %}
 
 To gate a pull request on the analysis rather than only reporting it, drop the `upload` step and let the exit code of `analyze --diff` fail the job.
+
+## Network and Codacy Self-hosted
+
+On Codacy Self-hosted, point the CLI at your own instance with `CODACY_API_BASE_URL`. The `upload` command talks to a different endpoint from the rest of the CLI and reads its own variable, so set both:
+
+```bash
+export CODACY_API_BASE_URL=<your Codacy instance API URL>
+export CODACY_RESULTS_API_BASE_URL=<your Codacy instance results API URL>
+```
+
+All outbound requests — Codacy API calls and analyzer downloads alike — honor the standard proxy variables:
+
+```bash
+export HTTPS_PROXY=http://proxy.corp:8080
+export NO_PROXY=app.codacy.com,.internal
+export SSL_CERT_FILE=/path/to/corporate-ca.pem
+```
+
+Trust your organization's CA through `SSL_CERT_FILE` or `NODE_EXTRA_CA_CERTS` rather than disabling TLS verification. A misconfigured bundle fails with an explicit error.
+
+The update-available check uses a separate network stack that ignores these variables. Behind a strict proxy, turn it off with `CODACY_DISABLE_UPDATE_CHECK=1`.
 
 ## See also
 
