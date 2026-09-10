@@ -239,9 +239,6 @@ With an account API token instead of a repository API token, name the repository
 codacy-analysis upload results.sarif --repository gh my-org my-repo --commit <sha>
 ```
 
-!!! tip
-    For Codacy to wait for these results before it resumes analyzing your commits, enable **Run analysis on your build server** on your repository **Settings**, tab **General**, **Repository analysis on your server**.
-
 ## Inspect and combine configurations
 
 `discover` reports the languages, frameworks, libraries, and notable files the CLI finds, which is what `init --auto` bases its selection on:
@@ -314,6 +311,9 @@ Install the CLI as a step and pass a repository API token as a secret:
       codacy-analysis upload results.sarif
 ```
 {% endraw %}
+
+!!! tip
+    For Codacy to wait for the uploaded results before it resumes analyzing your commits, enable **Run analysis on your build server** on your repository **Settings**, tab **General**, **Repository analysis on your server**.
 
 To gate a pull request on the analysis rather than only reporting it, drop the `upload` step and let the exit code of `analyze --diff` fail the job.
 
