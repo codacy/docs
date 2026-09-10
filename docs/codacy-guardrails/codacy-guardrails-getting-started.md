@@ -97,7 +97,7 @@ It will create a folder in your local repository called **.codacy** with all nee
 -   `codacy.config.json` and `codacy.config.baseline.json`: which built-in scanners and rules run on your repository
 -   `generated/`: the per-scanner configuration files derived from them at analysis time
 
-These files belong to the [Codacy Analysis CLI](https://www.npmjs.com/package/@codacy/analysis-cli) that the extension bundles, and the extension writes and updates them for you. To change which rules run, [customize them on Codacy Cloud](codacy-guardrails-how-to-configure-rules.md) rather than editing these files.
+These files belong to the [Codacy Analysis CLI](../codacy-analysis-cli/index.md) that the extension bundles, and the extension writes and updates them for you. To change which rules run, [customize them on Codacy Cloud](codacy-guardrails-how-to-configure-rules.md) rather than editing these files.
 
 !!! note
     Commit `codacy.config.json` and `codacy.config.baseline.json` so your team analyzes against the same configuration. The CLI already keeps the `generated/` subfolder out of version control for you, via a `.codacy/.gitignore` file.
@@ -133,7 +133,7 @@ You can later generate the instructions manually from the Guardrails section of 
 
 #### Download
 
-The Codacy Analysis CLI is distributed as an npm package and installs the same way on macOS, Linux, and Windows:
+The Codacy Analysis CLI is distributed as an npm package and installs the same way on macOS, Linux, and Windows. See [Codacy Analysis CLI](../codacy-analysis-cli/index.md) for its full command reference.
 
 ```bash
 npm i -g @codacy/analysis-cli

@@ -33,11 +33,11 @@ npm install -g @codacy/codacy-cloud-cli
 npm install -g @codacy/analysis-cli
 ```
 
-`codacy-cloud-cli` needs only the Codacy Cloud CLI and `codacy-analysis-cli` only the Codacy Analysis CLI. `setup-coverage` also needs the repository to be added to Codacy.
+`codacy-cloud-cli` needs only the [Codacy Cloud CLI](../codacy-cloud-cli/index.md) and `codacy-analysis-cli` only the [Codacy Analysis CLI](../codacy-analysis-cli/index.md). `setup-coverage` also needs the repository to be added to Codacy.
 
 Then authenticate. Run `codacy login` and paste an [account API token](../codacy-api/api-tokens.md#account-api-tokens), or set the `CODACY_API_TOKEN` environment variable for non-interactive environments. Both CLIs read the same credentials from `~/.codacy/credentials`, so a single login covers both.
 
-See [Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication) for the full set of authentication options, including repository API tokens.
+See [Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication) and [Codacy Analysis CLI](../codacy-analysis-cli/index.md#authentication) for the full set of authentication options, including repository API tokens.
 
 ## Install the skills
 

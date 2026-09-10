@@ -4,7 +4,7 @@
 
 ### Diagnosing local analysis issues
 
-Whenever local analysis or Guardrails scanning isn't behaving as expected, the standalone [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) can tell you the state of your setup: your authentication status, your system information, and every analysis tool it knows about, along with whether each one is installed locally.
+Whenever local analysis or Guardrails scanning isn't behaving as expected, the standalone [Codacy Analysis CLI](../codacy-analysis-cli/index.md) can tell you the state of your setup: your authentication status, your system information, and every analysis tool it knows about, along with whether each one is installed locally.
 
 The IDE extension bundles its own copy of the analyzer and doesn't put the `codacy-analysis` command on your `PATH`, so install the CLI first:
 

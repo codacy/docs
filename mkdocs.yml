@@ -769,6 +769,7 @@ nav:
                       - codacy-api/examples/uploading-dast-results.md
                       - codacy-api/examples/triggering-dast-scans.md
           - Codacy CLIs:
+                - codacy-analysis-cli/index.md
                 - codacy-cloud-cli/index.md
           - Codacy Skills:
                 - codacy-skills/index.md

@@ -289,6 +289,7 @@ From there, pipe the JSON output to `jq`, post results as PR comments with the [
 ## See also
 
 - [Codacy Cloud CLI on GitHub](https://github.com/codacy/codacy-cloud-cli)
+- [Codacy Analysis CLI](../codacy-analysis-cli/index.md)
 - [Codacy Skills](../codacy-skills/index.md)
 - [API tokens](../codacy-api/api-tokens.md)
 - [Using the Codacy API](../codacy-api/using-the-codacy-api.md)
