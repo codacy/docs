@@ -18,7 +18,7 @@ To run ESLint as a [client-side tool](client-side-tools.md):
 
 ## Manual configuration
 
-Install the Codacy Analysis CLI and initialize the repository. Initialization writes `.codacy/codacy.config.json`, which `analyze` requires: pulling it from Codacy Cloud with `init --remote` means the local run uses the same ESLint patterns as your repository's **Code patterns** page.
+Install the [Codacy Analysis CLI](../../codacy-analysis-cli/index.md) and initialize the repository. Initialization writes `.codacy/codacy.config.json`, which `analyze` requires: pulling it from Codacy Cloud with `init --remote` means the local run uses the same ESLint patterns as your repository's **Code patterns** page.
 
 ```bash
 npm i -g @codacy/analysis-cli

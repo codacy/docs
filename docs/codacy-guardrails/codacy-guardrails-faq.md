@@ -34,7 +34,7 @@ Codacy Guardrails isn't a large language model, but an IDE extension that uses a
 ## When I change some analysis configuration in the UI, is it automatically applied to Guardrails?
 Not immediately, but you don't have to do anything special either. For a repository connected to Codacy Cloud, Guardrails re-syncs your local configuration in the background whenever you add a new file to the repository, pulling a fresh copy of your patterns from Codacy Cloud. Changes you make in the UI are picked up on that next sync.
 
-To force the sync right away, you can run the standalone [Codacy Analysis CLI](codacy-guardrails-getting-started.md#install-cli) in your repository:
+To force the sync right away, you can run the standalone [Codacy Analysis CLI](../codacy-analysis-cli/index.md) in your repository:
 
 ``` bash
 npm i -g @codacy/analysis-cli

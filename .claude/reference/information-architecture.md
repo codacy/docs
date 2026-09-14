@@ -20,19 +20,21 @@ Both involve AI; the test is **who's calling whom**, not whether the word "AI" a
 
 `organizations/ai-risk-hub.md` is neither bucket despite the name — it's governance over AI-generated code risk in the reader's own repositories, correctly filed under Organizations.
 
-## Why Codacy Guardrails counts as a developer tool, not just an IDE extension
+## Why Codacy Guardrails counts as a developer tool
 
-The nav title "(IDE Extension)" on this section describes one delivery path, not the product. `codacy-guardrails-getting-started.md`'s "How to install - Manually" section sets up the identical capability — Analysis CLI, MCP Server, AI rules — with no IDE extension involved. Guardrails passes the direction-of-consumption test on its own terms, independent of how it's installed.
+Guardrails passes the direction-of-consumption test on its own terms, whatever its delivery path. Its manual install sets up the same capability — Analysis CLI, MCP Server, AI rules — with no IDE extension involved, so don't refile it as an IDE integration on the strength of one install path.
 
-Guardrails interleaves CLI setup and MCP setup as one continuous flow inside a single page, in service of one outcome. Don't split that content to file separate pieces under generic "CLIs" or "MCP" sections — the split breaks the page's `#install-cli` / `#install-mcp-server` anchors for any inbound link outside this repo (product UI, blog, support macros), and there's no config-level fix for an anchor that moves to a different page. Move the whole section as one unit; don't extract from it.
+Its setup content is one continuous flow inside a single page. Don't split it to file pieces under generic "CLIs" or "MCP" sections: that breaks the page's `#install-cli` and `#install-mcp-server` anchors for inbound links outside this repo, and an anchor that moves to another page has no config-level fix. Move the section as a unit; don't extract from it.
 
 ## Codacy Skills' home
 
-Skills is a natural-language wrapper around Codacy Cloud CLI specifically, not general-purpose agent access to all of Codacy — the CLI's own page already frames it that way ("Pair it with Codacy Skills to interact with your Codacy data in plain language"). It belongs under Codacy Cloud CLI, not in a standalone agent-tools section.
+Codacy Skills is its own section under "Developer tools", a sibling of "Codacy CLIs" — not a subsection of any single tool's page.
+
+Skills is a set, not a feature of one tool: some members drive the Codacy Cloud CLI, some the Codacy Analysis CLI, some both, and some neither. Nesting the set under one of its members misdescribes the rest. The tab itself was never in question — Skills passes the direction-of-consumption test above, since the reader's own agent is the caller.
 
 ## A structural move can still be the wrong call for reasons outside IA
 
-Guardrails currently sits prominently under "Getting started" with active marketing behind it (a blog-post CTA). Relocating it into "Developer tools" is IA-correct by the test above, but it's also a visibility change for a product someone may be actively driving signups to. That's a positioning call, not a structure call — flag it to whoever owns that placement rather than deciding it here.
+Where a section sits sets how visible it is, and a product with marketing driving signups to it may be placed for that reason rather than for IA. When a move is IA-correct but changes prominence, flag it to whoever owns the placement instead of deciding it here.
 
 ## See also
 

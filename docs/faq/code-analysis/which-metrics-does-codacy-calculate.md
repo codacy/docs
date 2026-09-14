@@ -157,5 +157,6 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 ## See also
 
 -   [Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs](https://blog.codacy.com/diff-coverage/)
+-   [How does Codacy determine if a repository has coverage?](how-does-codacy-determine-if-a-repository-has-coverage.md)
 -   [Why does Codacy show unexpected coverage changes?](why-does-codacy-show-unexpected-coverage-changes.md)
 -   [Does Codacy place limits on the code analysis?](does-codacy-place-limits-on-the-code-analysis.md)

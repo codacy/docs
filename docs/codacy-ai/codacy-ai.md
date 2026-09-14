@@ -126,3 +126,15 @@ Rules for the output:
 - To enrich the review, the git diff of the Pull Request as well as some related files' contents can be sent as context. No data is stored on our side, or used to train any models.
 - Prompts are neither stored nor visible to anyone.
 - As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.
+
+### Auto-configure repository {: id="auto-configure-repository"}
+
+_This feature uses an AI coding agent, and is strictly opt-in: it only runs when someone with permission to configure code patterns starts it for a specific repository._
+
+Auto-configure reviews the repository, then applies the same kind of tool and code pattern settings you could otherwise set by hand or through a [Codacy configuration file](../repositories-configure/codacy-configuration-file.md). It also recommends paths to exclude from analysis, which you review and apply yourself.
+
+More details about [Auto-configure repository here](../repositories-configure/configuring-code-patterns.md#auto-configuring-your-repository).
+
+**Notes**
+
+- Codacy does not use your code, repository contents, or comments to train external AI models. No customer code is incorporated into model training.

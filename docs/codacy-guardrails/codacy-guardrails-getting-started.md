@@ -39,14 +39,38 @@ Codacy Guardrails supports Visual Studio Code, Cursor, and Windsurf.
 
 ### Built-in Scanners
 
-- Trivy
-- Semgrep
+- Agentlinter
+- Bandit
+- Biome
+- Brakeman
+- Checkov
+- Checkstyle
+- Cppcheck
+- detekt
 - ESLint
-- Pylint
+- Flawfinder
+- Hadolint
+- Jackson Linter
+- Lizard
+- markdownlint
+- Opengrep
 - PMD
-- dartanalyzer
-- [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
+- Prospector
+- Pylint
+- Reek
 - Revive
+- RuboCop
+- Ruff
+- Scalastyle
+- ShellCheck
+- Spectral
+- SQLFluff
+- SQLint
+- Stylelint
+- SwiftLint
+- Trivy
+
+For what each tool checks and the languages it covers, see [Supported languages and tools](../getting-started/supported-languages-and-tools.md).
 
 ## How to install - Quick Guide (VSCode) {: id="how-to-install-quick-guide"}
 
@@ -73,7 +97,7 @@ It will create a folder in your local repository called **.codacy** with all nee
 -   `codacy.config.json` and `codacy.config.baseline.json`: which built-in scanners and rules run on your repository
 -   `generated/`: the per-scanner configuration files derived from them at analysis time
 
-These files belong to the [Codacy Analysis CLI](https://www.npmjs.com/package/@codacy/analysis-cli) that the extension bundles, and the extension writes and updates them for you. To change which rules run, [customize them on Codacy Cloud](codacy-guardrails-how-to-configure-rules.md) rather than editing these files.
+These files belong to the [Codacy Analysis CLI](../codacy-analysis-cli/index.md) that the extension bundles, and the extension writes and updates them for you. To change which rules run, [customize them on Codacy Cloud](codacy-guardrails-how-to-configure-rules.md) rather than editing these files.
 
 !!! note
     Commit `codacy.config.json` and `codacy.config.baseline.json` so your team analyzes against the same configuration. The CLI already keeps the `generated/` subfolder out of version control for you, via a `.codacy/.gitignore` file.
@@ -109,7 +133,7 @@ You can later generate the instructions manually from the Guardrails section of 
 
 #### Download
 
-The Codacy Analysis CLI is distributed as an npm package and installs the same way on macOS, Linux, and Windows:
+The Codacy Analysis CLI is distributed as an npm package and installs the same way on macOS, Linux, and Windows. See [Codacy Analysis CLI](../codacy-analysis-cli/index.md) for its full command reference.
 
 ```bash
 npm i -g @codacy/analysis-cli
@@ -254,13 +278,15 @@ Codacy Guardrails supports IntelliJ IDEA, PyCharm, PhpStorm, and other IDEs in t
 ### Built-in Scanners
 
 - Trivy
-- Semgrep
+- Opengrep
 - ESLint
 - Pylint
 - PMD
 - dartanalyzer
-- [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
+- Lizard
 - Revive
+
+For what each tool checks and the languages it covers, see [Supported languages and tools](../getting-started/supported-languages-and-tools.md).
 
 ## How to install - WSL (JetBrains) {: id="how-to-install-wsl"}
 

@@ -22,7 +22,12 @@ Codacy also works from outside the Codacy web app: from your terminal, your IDE,
 
     <a class="content-link" href="../codacy-cloud-cli/">
       <h3>Codacy Cloud CLI</h3>
-      <p>Add repositories, review issues, and inspect pull requests from your terminal. Pair it with Codacy Skills to ask for the same in plain language from your AI assistant.</p>
+      <p>Add repositories, review issues, and inspect pull requests from your terminal.</p>
+    </a>
+
+    <a class="content-link" href="../codacy-skills/">
+      <h3>Codacy Skills</h3>
+      <p>Teach your AI assistant to run the Codacy CLIs, so you can ask for issues, reviews, configuration, and coverage in plain language.</p>
     </a>
 
     <a class="content-link" href="../getting-started/integrating-codacy-with-visual-studio-code/">
