@@ -85,7 +85,7 @@ Use the options in the menu of each issue to:
 
 -   **Ignore the file** where the issue was detected.
 
-    Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the [Ignored Files tab](../repositories-configure/ignoring-files.md) in your repository settings.
+    Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the **Ignored** tab on your repository's Files page. See [Ignoring files](../repositories-configure/ignoring-files.md).
 
 <table>
   <tr>
