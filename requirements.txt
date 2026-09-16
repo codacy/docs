@@ -7,7 +7,7 @@ defusedxml==0.7.1
 
 # Markdown extensions
 Pygments==2.18.0
-pymdown-extensions==10.11.2
+pymdown-extensions==10.12
 
 # MkDocs plugins
 mkdocs-exclude-search==0.6.6
