@@ -4,6 +4,43 @@
 
 Integrate Jira with Codacy to be able to create Jira tickets directly from Codacy findings, and import your Jira issues for [Security and risk management](../managing-security-and-risk.md) to manage them all in one place as security items.
 
+## What permissions does Codacy need from my account?
+
+Codacy requests only the necessary [permissions/scopes from your Atlassian account](https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/) to collect and create issues in your Jira instance and [keeps your information secure](https://security.codacy.com/). See below the detailed list of permissions.
+
+<table>
+  <colgroup>
+    <col width="25%"/>
+    <col width="75%"/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Classic scope</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>read:jira-user</code></td>
+      <td>Codacy retrieves the Atlassian account ID and email of the user installing the integration.</td>
+    </tr>
+    <tr>
+      <td><code>read:jira-work</code> and <code>write:jira-work</code></td>
+      <td>
+        Codacy retrieves issue details and metadata, and project details, to enable:
+        <ul>
+          <li>Creating Codacy security findings from Jira issues.</li>
+          <li>Creating and managing issues in Jira from Codacy.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><code>manage:jira-webhook</code></td>
+      <td>Codacy creates webhooks to be notified of changes in the issues it's managing.</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Installing the Jira integration
 
 To install the Jira integration:
