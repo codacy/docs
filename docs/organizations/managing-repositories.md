@@ -48,6 +48,9 @@ To add new repositories to Codacy:
 
 Although Codacy immediately starts analyzing newly added repositories, they display empty metrics until the first analysis returns results.
 
+!!! note
+    When adding a repository, Codacy automatically analyzes pull requests that had activity in the last 15 days. To analyze older pull requests, you can [trigger a reanalysis manually](../faq/repositories/how-do-i-reanalyze-my-repository.md).
+
 ![Waiting for first analysis results](images/repositories-analyzing.png)
 
 ## Following or unfollowing a repository {: id="follow-unfollow"}
