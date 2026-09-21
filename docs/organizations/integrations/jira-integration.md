@@ -2,13 +2,13 @@
 
 !!! info "This integration is only available for Jira Cloud"
 
-Integrate Jira with Codacy to be able to create Jira tickets directly from Codacy findings, and import your Jira issues for [Security and risk management](../managing-security-and-risk.md) to manage them all in one place as security items.
+Integrate Jira with Codacy to be able to create Jira tickets directly from Codacy findings, and import your Jira issues for [Security and risk management](../../security/index.md) to manage them all in one place as security items.
 
 ## Installing the Jira integration
 
 To install the Jira integration:
 
-1.  On Jira, add the label **security** (case-insensitive) to the issues you wish to import and confirm that they use [the right Jira priorities to correctly map to item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
+1.  On Jira, add the label **security** (case-insensitive) to the issues you wish to import and confirm that they use [the right Jira priorities to correctly map to item severities](../../security/findings.md#item-severities-and-deadlines).
 
     !!! tip
         Add the **security** label as a default to all new Jira issues that track security-related work in your organization.
@@ -24,7 +24,7 @@ To install the Jira integration:
 
 After installing, Codacy imports all open Jira issues labeled **security** and created up to 90 days before the integration and then retrieves updates from Jira once a day.
 
-For more information on how this integration works, see [how Codacy manages security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
+For more information on how this integration works, see [how Codacy manages security items](../../security/findings.md#opening-and-closing-items) and [how Codacy assigns security item severities](../../security/findings.md#item-severities-and-deadlines).
 
 ## Uninstalling the Jira integration
 
