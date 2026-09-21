@@ -4,7 +4,7 @@ The Security and risk management feature helps you <span class="skip-vale">quick
 
 Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:
 
-<div class="topic-row">
+<div class="topic-row topic-row--2col">
   <a class="topic-card" href="#dashboard">
     <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path d="M32 32v432a16 16 0 0016 16h432" stroke-linecap="round" stroke-linejoin="round"/><rect x="96" y="224" width="80" height="192" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="240" y="176" width="80" height="240" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="383.64" y="112" width="80" height="304" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
     <div class="tc-content">
@@ -16,7 +16,7 @@ Under Security and risk management, you can find the following pages to help you
     <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path stroke-linecap="round" stroke-linejoin="round" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80" cy="256" r="16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80" cy="368" r="16" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
     <div class="tc-content">
       <h3>Findings</h3>
-      <p>Review and prioritize findings, inspect dependency chains, check affected functions, and ignore or export findings. Also covers how Codacy opens and closes findings, and the severities, deadlines, and statuses it assigns them.</p>
+      <p>Review and prioritize findings, inspect dependency chains and affected functions, and track the deadlines and statuses Codacy assigns them.</p>
     </div>
   </a>
   <a class="topic-card" href="dependencies/">
