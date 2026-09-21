@@ -71,7 +71,7 @@ allowfullscreen>
 
 Each organization can have up to **6 active scan targets**. If you need additional capacity, contact your customer success representative.
 
-Scans are triggered manually through the UI and are queued before execution. You can queue one single scan per target — it will run sequentially. There is no limit to the number of scans you can run on a target, in order to support your deployment needs.
+Scans are triggered manually through the UI and are queued before execution. You can queue one single scan per target—it will run sequentially. There is no limit to the number of scans you can run on a target, in order to support your deployment needs.
 
 Once a scan completes, results will be available under the **Findings** tab. Use the **Scan types > DAST/App scanning** filter to view relevant findings.
 
@@ -87,7 +87,7 @@ Once a scan completes, results will be available under the **Findings** tab. Use
 ## Findings results for your DAST scans
 
 As previously mentioned, once a scan completes, results will be available under the **Findings** tab. Use the **Scan types > DAST/App scanning** filter to view relevant findings.
-Additionaly, you can click on a configured target to expand all of that target's results.
+Additionally, you can click on a configured target to expand all that target's results.
 
 ![DAST target results](images/security-risk-management-app-scanning-see-results.png)
 

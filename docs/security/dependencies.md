@@ -9,7 +9,7 @@ The **Security and risk management Dependencies** page displays a unified view o
 
 Proactive SCA uses **Trivy** as its scanning tool. For daily re-scans to produce results on a repository, **both** conditions must be met:
 
-1. The **Trivy tool** is enabled — either through a [coding standard](../organizations/using-coding-standards.md) applied to the repository, or directly via the repository's [Code patterns settings](../repositories-configure/configuring-code-patterns.md).
+1. The **Trivy tool** is enabled—either through a [coding standard](../organizations/using-coding-standards.md) applied to the repository, or directly via the repository's [Code patterns settings](../repositories-configure/configuring-code-patterns.md).
 2. At least one **Trivy vulnerability pattern** is enabled:
     -   `Trivy_vulnerability_critical`
     -   `Trivy_vulnerability_high`

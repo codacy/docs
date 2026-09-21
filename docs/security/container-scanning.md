@@ -36,7 +36,7 @@ In order to do that, you need to:
 When CI/CD is configured:
 
 - Images pushed through your pipeline are automatically detected
-- New tags are picked up as they are published
+- New tags are picked up as they're published
 - Scans are scheduled automatically
 
 This is the recommended setup for continuous coverage.
@@ -84,7 +84,7 @@ Once a tag is scanned, you can click on the `check findings` link to access the 
 
 !!! important
     Findings are tied to specific image tags. To resolve a finding, "bump" the tag to a newer version if a fixed version exists (if not, a downgrade or an alternative image may be required). 
-    For dynamic tags such as `latest`, Codacy will automatically close findings that are no longer present in the current analysis. If you use static tags, you will need to delete tags that are no longer used, as we have a limit of 1000 tags per organization.
+    For dynamic tags such as `latest`, Codacy will automatically close findings that are no longer present in the current analysis. If you use static tags, you will need to delete tags that are no longer used, as there's a limit of 1000 tags per organization.
 
 ## Deleting container image files from Codacy
 
@@ -97,12 +97,12 @@ What happens when you delete an image:
 - Scan history and results for that image are removed
 
 !!! important
-    This action cannot be undone.
+    This action can't be undone.
     You can also delete a specific tag inside an image card.
 
 ## No results yet
 
-If there is no last analysis date for an image tag, it means that the SBOM file was received but the scan has not been completed yet. The most likely scenario is that an analysis hasn't been executed yet.
+If there is no last analysis date for an image tag, it means that the SBOM file was received but the scan hasn't been completed yet. The most likely scenario is that an analysis hasn't been executed yet.
 
 !!! note
     Remember that scans run nightly (UTC). If you just uploaded the SBOM file, but need results immediately, consider using our [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to run a local analysis to scan for any issues.

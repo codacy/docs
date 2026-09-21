@@ -31,15 +31,15 @@ Click **Check if you're affected** to copy a ready-made prompt for your AI codin
     This is a signal, not a guarantee. Review your coding assistant's findings before upgrading a dependency or ignoring a finding.
 
 !!! note
-    Not every advisory lists specific affected functions — some vulnerabilities (for example, configuration issues) aren't tied to specific functions, so this section doesn't appear for every finding.
+    Not every advisory lists specific affected functions—some vulnerabilities (for example, configuration issues) aren't tied to specific functions, so this section doesn't appear for every finding.
 
-Affected functions are also available from the terminal — see [checking affected functions with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#affected-functions).
+Affected functions are also available from the terminal—see [checking affected functions with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#affected-functions).
 
 To review reachable dependencies across one or multiple repositories at once, instead of one finding at a time, see [auditing affected functions across one or multiple repositories](../codacy-cloud-cli/index.md#affected-functions-scale) with the Codacy Cloud CLI.
 
 ### Severity changes {: id="severity-changes"}
 
-The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
+The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy isn't in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
@@ -57,7 +57,7 @@ You can ignore a finding using the context menu both in the findings list page a
 
 From an organization standpoint, ignoring a finding means that you accept the risk it poses and you're not planning on addressing the issue.
 
-From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the [overview page](index.md#dashboard) page. Note that the [Open Findings history](index.md#open-findings-history) chart will only be changed at the start of next week.
+From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the [overview page](index.md#dashboard). Note that the [Open Findings history](index.md#open-findings-history) chart will only be changed at the start of next week.
 
 !!! info "[Jira](../organizations/integrations/jira-integration.md) findings can't be ignored in Codacy. You should closed the issue directly in Jira."
 
@@ -101,7 +101,10 @@ Codacy closes a finding when the source platform stops detecting the associated 
 
 The following section details when Codacy opens and closes findings for each supported platform.
 
+<!-- The lowercase "codacy" below is inside a preserved legacy anchor slug, so it is markup rather than prose. -->
+<!-- vale Vale.Terms = NO -->
 ### How Codacy manages findings detected on Git repositories {: id="opening-and-closing-codacy-items"}
+<!-- vale Vale.Terms = YES -->
 
 !!! note
     To make sure that Codacy detects security issues correctly:
@@ -125,10 +128,13 @@ Codacy closes a finding in either of the following cases:
 
 SCA findings behave like other Git repository findings. Codacy opens a finding whenever a commit to the default branch is analyzed and a vulnerable dependency is detected, and closes it when the dependency is no longer detected.
 
-On the Business plan, Codacy also runs [daily re-scans](dependencies.md#proactive-sca-requirements) across all repositories — so newly discovered vulnerabilities are surfaced even without a new commit. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) if you're interested in upgrading.
+On the Business plan, Codacy also runs [daily re-scans](dependencies.md#proactive-sca-requirements) across all repositories—so newly discovered vulnerabilities are surfaced even without a new commit. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) if you're interested in upgrading.
 
 
+<!-- The lowercase "jira" below is inside a preserved legacy anchor slug, so it is markup rather than prose. -->
+<!-- vale Vale.Terms = NO -->
 ### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
+<!-- vale Vale.Terms = YES -->
 
 !!! note
     -   For Codacy to detect Jira issues, you must [integrate Jira with Security and risk management](../organizations/integrations/jira-integration.md).

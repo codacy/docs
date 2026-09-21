@@ -37,7 +37,7 @@ To limit the information displayed in each panel, use the filter drop-down above
 
 ### Open findings overview
 
-The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
+The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you <span class="skip-vale">quickly</span> assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
 
 Within this same panel, an additional visualization shows the relative distribution of open findings by status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
@@ -135,7 +135,7 @@ The following table lists the available scan types and their descriptions:
 | Scan type                         | Description                                                                                                                    |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (**SAST**).   |
-| **Software Composition Analysis** | Analysis of external libraries and packages for malicious intent, vulnerabilities or outdated versions.                                          |
+| **Software Composition Analysis** | Analysis of external libraries and packages for malicious intent, vulnerabilities, or outdated versions.                                          |
 | **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                         |
 | **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                             |
 | **Penetration Testing**           | Results from [penetration testing](findings.md#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code.   |
@@ -360,4 +360,4 @@ Security and risk management supports checking the languages and infrastructure-
 <sup><span id="yaml-only">1</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
 <sup><span id="client-side">2</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="spotbugs-plugin">3</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
-<sup><span id="eslint-plugin">4</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
+<sup><span id="eslint-plugin">4</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [`xss`](https://www.npmjs.com/package/eslint-plugin-xss).  
