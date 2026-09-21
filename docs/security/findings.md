@@ -1,4 +1,4 @@
-# Findings {: id="item-list"}
+# Findings
 
 The **Security and risk management findings** page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by **Latest findings** found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest. Use this page to review and prioritize findings and track the progress of your security efforts.
 
@@ -63,11 +63,11 @@ From Codacy's standpoint, ignoring a finding means it will be removed from the m
 
 !!! important "Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
 
-You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Statuses** dropdown. You can assess which status a finding has at his overview, on the right top corner.
+You can still see **Ignored** findings in the [findings list](#findings), by filtering for the **Ignored** status in the **Statuses** dropdown. You can assess which status a finding has at his overview, on the right top corner.
 
 ![Security and risk management finding unignore list](images/security-risk-management-finding-unignore-list.png)
 
-An Ignored finding can be **unignored** directly from the [findings list](#item-list) or by going to the same menu in the finding details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.
+An Ignored finding can be **unignored** directly from the [findings list](#findings) or by going to the same menu in the finding details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.
 
 Unignoring a finding reverts the effects of ignoring it.
 

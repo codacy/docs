@@ -1,4 +1,4 @@
-# App scanning {: id="app-scanning"}
+# App scanning
 
 !!! important
     App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.

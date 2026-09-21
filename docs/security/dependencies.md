@@ -1,4 +1,4 @@
-# Dependencies {: id="dependencies-list"}
+# Dependencies
 
 !!! important
     The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, [talk to us](https://start-chat.com/slack/codacy/rmbTzb).

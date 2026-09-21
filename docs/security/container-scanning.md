@@ -1,4 +1,4 @@
-# Container scanning {: id="container-scanning"}
+# Container scanning
 
 Container Scanning is a technique to scan your container image's dependencies for known vulnerabilities. The **Security and risk management > Container scanning** page allows you to set up scans that run automatically every night, and surface actionable security findings as new vulnerabilities get discovered.
 
