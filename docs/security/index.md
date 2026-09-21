@@ -4,11 +4,43 @@ The Security and risk management feature helps you <span class="skip-vale">quick
 
 Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:
 
--   [Overview](#dashboard)
--   [Findings](findings.md)
--   [Dependencies](dependencies.md)
--   [App scanning](app-scanning.md)
--   [Container scanning](container-scanning.md)
+<div class="topic-row">
+  <a class="topic-card" href="#dashboard">
+    <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path d="M32 32v432a16 16 0 0016 16h432" stroke-linecap="round" stroke-linejoin="round"/><rect x="96" y="224" width="80" height="192" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="240" y="176" width="80" height="240" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="383.64" y="112" width="80" height="304" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="tc-content">
+      <h3>Overview</h3>
+      <p>The security posture of your organization: open findings by severity, scan type distribution, resolution history, and your highest-risk repositories.</p>
+    </div>
+  </a>
+  <a class="topic-card" href="findings/">
+    <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path stroke-linecap="round" stroke-linejoin="round" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80" cy="256" r="16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80" cy="368" r="16" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="tc-content">
+      <h3>Findings</h3>
+      <p>Review and prioritize findings, inspect dependency chains, check affected functions, and ignore or export findings. Also covers how Codacy opens and closes findings, and the severities, deadlines, and statuses it assigns them.</p>
+    </div>
+  </a>
+  <a class="topic-card" href="dependencies/">
+    <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path d="M434.8 137.65l-149.36-68.1c-16.19-7.4-42.69-7.4-58.88 0L77.3 137.65c-17.6 8-17.6 21.09 0 29.09l148 67.5c16.89 7.7 44.69 7.7 61.58 0l148-67.5c17.52-8 17.52-21.1-.08-29.09zM160 308.52l-82.7 37.11c-17.6 8-17.6 21.1 0 29.1l148 67.5c16.89 7.69 44.69 7.69 61.58 0l148-67.5c17.6-8 17.6-21.1 0-29.1l-79.94-38.47" stroke-linecap="round" stroke-linejoin="round"/><path d="M160 204.48l-82.8 37.16c-17.6 8-17.6 21.1 0 29.1l148 67.49c16.89 7.7 44.69 7.7 61.58 0l148-67.49c17.7-8 17.7-21.1.1-29.1L352 204.48" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="tc-content">
+      <h3>Dependencies</h3>
+      <p>The dependencies used across your repositories, populated by daily SCA re-scans, with OSSF Scorecard data for each one.</p>
+    </div>
+  </a>
+  <a class="topic-card" href="app-scanning/">
+    <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><rect x="64" y="176" width="384" height="256" rx="28.87" ry="28.87" stroke-linejoin="round"/><path stroke-linecap="round" stroke-miterlimit="10" d="M144 80h224M112 128h288"/></svg></div>
+    <div class="tc-content">
+      <h3>App scanning</h3>
+      <p>Dynamic Application Security Testing for web applications and APIs: create scan targets and run scans against running code.</p>
+    </div>
+  </a>
+  <a class="topic-card" href="container-scanning/">
+    <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path d="M448 341.37V170.61A32 32 0 00432.11 143l-152-88.46a47.94 47.94 0 00-48.24 0L79.89 143A32 32 0 0064 170.61v170.76A32 32 0 0079.89 369l152 88.46a48 48 0 0048.24 0l152-88.46A32 32 0 00448 341.37z" stroke-linecap="round" stroke-linejoin="round"/><path stroke-linecap="round" stroke-linejoin="round" d="M69 153.99l187 110 187-110M256 463.99v-200"/></svg></div>
+    <div class="tc-content">
+      <h3>Container scanning</h3>
+      <p>Nightly scans of your container images, set up through your CI/CD pipeline or by uploading an SBOM manually.</p>
+    </div>
+  </a>
+</div>
 
 In addition, on these pages, you can [share filtered views of findings](findings.md#sharing-filtered-view), [export findings as a CSV file](findings.md#exporting-the-security-item-list), and [review severity rules and integration settings](findings.md#reviewing-settings)
 
