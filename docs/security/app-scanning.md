@@ -1,7 +1,7 @@
 # App scanning
 
 !!! important
-    App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+    App scanning is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, [talk to us](https://start-chat.com/slack/codacy/rmbTzb).
 
 The **Security and risk management > App scanning** page allows organizations to scan Web Applications and APIs for security vulnerabilities. This feature is part of Codacy's Dynamic Application Security Testing (DAST) capabilities, powered by ZAP.
 
