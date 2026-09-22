@@ -47,7 +47,7 @@ The form also accepts two optional fields:
 -   **environment:** Environment where the image is deployed, such as `production`. It appears in the tag list.
 
 !!! important
-    The tag you send in the `tag` field must match the tag recorded inside the SBOM, or the upload is rejected with `400 Bad Request` and the message `SBOM tag mismatch: expected <x>, found <y>`. Tools differ in where they write the image reference: Trivy writes the full `name:tag` into the SBOM's component name, while some other generators write the name and the tag separately. Check what your generator produces before scripting this.
+    The tag you send in the `tag` field must match the tag recorded inside the SBOM, or the upload is rejected with `400 Bad Request` and the message `SBOM tag mismatch: expected <x>, found <y>`. Tools differ in where they write the image reference: Trivy writes the full `name:tag` into the component name inside the SBOM, while some other generators write the name and the tag in different fields. Check what your generator produces before scripting this.
 
 ## Listing the image tags you have uploaded
 
@@ -70,7 +70,7 @@ curl -X DELETE https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGAN
   -H 'api-token: <API_KEY>'
 ```
 
-Deleting a tag removes its scan history and findings. To delete an image and all of its tags at once, call the same endpoint without the `/tags/<TAG>` segment.
+Deleting a tag removes its scan history and findings. To delete an image and all its tags at once, call the same endpoint without the `/tags/<TAG>` segment.
 
 !!! important
     When your organization is at the limit, the upload fails with the message `Organization has reached the maximum limit of 1000 image SBOMs`. The tags you already have keep being scanned every day, so nothing else reports the problem. Match on the message rather than the status code, which is being made more specific.
