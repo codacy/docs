@@ -83,6 +83,7 @@ extra:
         "Repositories on Codacy": "folder-open-outline"
         "Configuring your repositories": "settings-outline"
         "Organizations": "people-outline"
+        "Security": "shield-checkmark-outline"
         "Enterprise Cloud": "business-outline"
         "Your account": "person-circle-outline"
         "Codacy API": "code-slash-outline"
@@ -205,8 +206,8 @@ plugins:
               "hc/en-us/articles/115000488285-Slack.md": "organizations/integrations/slack-integration.md"
               "hc/en-us/articles/115000566729.md": "repositories-configure/ignoring-files.md"
               "hc/en-us/articles/115000566729-How-do-I-ignore-files-that-are-not-in-master-branch-.md": "repositories-configure/ignoring-files.md"
-              "hc/en-us/articles/115000723329.md": "organizations/managing-security-and-risk.md"
-              "hc/en-us/articles/115000723329-Security-Dashboard.md": "organizations/managing-security-and-risk.md"
+              "hc/en-us/articles/115000723329.md": "security/index.md"
+              "hc/en-us/articles/115000723329-Security-Dashboard.md": "security/index.md"
               "hc/en-us/articles/115000947569.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "hc/en-us/articles/115000947569-Code-Standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "hc/en-us/articles/115001853565.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
@@ -563,7 +564,7 @@ plugins:
               "organizations/organization-dashboard-overview.md": "organizations/reporting/organization-overview.md"
               "repositories/repository-dashboard-overview.md": "repositories/repository-dashboard.md"
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "index.md"
-              "repositories/security-dashboard.md": "organizations/managing-security-and-risk.md"
+              "repositories/security-dashboard.md": "security/index.md"
               "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
@@ -634,9 +635,10 @@ plugins:
               "repositories-configure/adjusting-quality-settings.md": "repositories-configure/adjusting-quality-gates.md"
               "organizations/configuring-default-git-provider-integration-settings.md": "organizations/integrations/default-git-provider-integration-settings.md"
               "codacy-api/examples/creating-project-api-tokens-programmatically.md": "codacy-api/examples/creating-repository-api-tokens-programmatically.md"
-              "repositories/security-monitor.md": "organizations/managing-security-and-risk.md"
+              "repositories/security-monitor.md": "security/index.md"
               "organizations/copying-code-patterns-between-repositories.md": "organizations/using-coding-standards.md"
               "repositories-configure/file-extensions.md": "repositories-configure/languages.md"
+              "organizations/managing-security-and-risk.md": "security/index.md"
 
 nav:
     - Documentation:
@@ -699,11 +701,16 @@ nav:
                       - organizations/integrations/default-git-provider-integration-settings.md
                       - Slack integration for Security issues: organizations/integrations/slack-integration.md
                       - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
-                - organizations/managing-security-and-risk.md
                 - organizations/managing-people.md
                 - organizations/audit-logs-for-organizations.md
                 - organizations/roles-and-permissions-for-organizations.md
                 - organizations/changing-your-plan-and-billing.md
+          - Security:
+                - security/index.md
+                - security/findings.md
+                - security/dependencies.md
+                - security/app-scanning.md
+                - security/container-scanning.md
           - Enterprise Cloud:
                 - enterprise-cloud/github-enterprise-cloud.md
           - Your account:

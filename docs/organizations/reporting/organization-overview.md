@@ -53,7 +53,7 @@ Some metrics depend on your billing plan and use plan-specific calculations. For
 | Complexity | All plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity) |
 | Duplication | All plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication) |
 | Coverage | All plans <a href="#coverage-note"><sup>1</sup></a> | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage) |
-| Security | All plans | [More details](../managing-security-and-risk.md) |
+| Security | All plans | [More details](../../security/index.md) |
 
 
 !!! important

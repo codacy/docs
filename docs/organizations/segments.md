@@ -11,7 +11,7 @@ Segments are dimensions that Codacy reads from your provider that organizes repo
 
 ## Where can Segments be utilised?
 - [Repository list](managing-repositories.md#provider-segments) 
-- [Security & Management Risk](managing-security-and-risk.md)
+- [Security & Management Risk](../security/index.md)
 
 ## Enabling Segments {: id="enabling-segments"}
 To enable Segments, an initial sync between your provider and Codacy needs to happen. Once completed, you can use Segments to better locate and organize repositories within Codacy.

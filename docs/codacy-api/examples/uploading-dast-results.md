@@ -4,7 +4,7 @@ description: Instructions on how to upload DAST results to Codacy using the API.
 
 # Uploading DAST results to Codacy
 
-To ensure the security of your web applications, Codacy allows you to upload DAST (dynamic application security testing) results from [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) directly to Codacy and monitor them as findings under [Security and risk management](../../organizations/managing-security-and-risk.md).
+To ensure the security of your web applications, Codacy allows you to upload DAST (dynamic application security testing) results from [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) directly to Codacy and monitor them as findings under [Security and risk management](../../security/index.md).
 
 ## Uploading results to Codacy
 

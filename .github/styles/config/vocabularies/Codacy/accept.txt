@@ -108,8 +108,6 @@ TSQLLint
 unassigns
 unfollow
 unignore
-Unignoring
-unignoring
 unignored
 unreferenced
 vacuumdb
@@ -123,3 +121,11 @@ resync
 autoconfig
 Oxlint
 Oxc
+APIs
+CVEs
+SBOMs
+SLAs
+auditable
+misconfigured
+misconfigurations
+[Uu]nignoring

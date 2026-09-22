@@ -10,9 +10,12 @@
 .content-link h3, .topic-card h3 { margin: 0 0 .35rem; color: var(--docs-text); font-size: .92rem; font-weight: 600; letter-spacing: -.01em; line-height: 1.4; }
 .content-link p, .topic-card p { margin: 0; color: var(--docs-text-secondary); font-size: .82rem; font-weight: 400; line-height: 1.55; }
 .topic-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
+.topic-row--2col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.topic-row--2col .topic-card:last-child { grid-column: 1 / -1; }
 .md-typeset .topic-card { padding-top: 1rem; }
 .tc-icon { display: grid; width: 2.25rem; height: 2.25rem; place-items: center; margin-bottom: .9rem; border-radius: var(--docs-radius); background: var(--docs-bg-brand); }
 .tc-icon img { width: 1.25rem; height: 1.25rem; margin: 0 !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+.tc-icon svg { width: 1.25rem; height: 1.25rem; color: var(--docs-link); }
 .md-main__inner:has(.content-columns-wrapper) .md-sidebar--secondary { display: none; }
 .md-main__inner:has(.content-columns-wrapper) .docs-page-nav { display: flex; justify-content: flex-end; margin-top: 2rem; padding-top: 1rem; }
 .md-main__inner:has(.content-columns-wrapper) .docs-page-nav a { min-height: 0; padding: .5rem 0; border: 0; background: transparent; }
