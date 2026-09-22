@@ -78,6 +78,9 @@ This is the recommended setup for continuous coverage.
 
 These examples use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2), which generates the SBOM from your image and uploads it in a single command. They assume you have already set `CODACY_API_TOKEN` as described above.
 
+!!! note
+    Already generating SBOMs with another tool? [Upload them via the API.](../codacy-api/examples/uploading-container-image-sboms.md)
+
 Install the CLI once per pipeline run:
 
 ```bash

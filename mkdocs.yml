@@ -774,6 +774,7 @@ nav:
                       - codacy-api/examples/obtaining-current-issues-in-repositories.md
                       - codacy-api/examples/identifying-commits-without-coverage-data.md
                       - codacy-api/examples/uploading-dast-results.md
+                      - codacy-api/examples/uploading-container-image-sboms.md
                       - codacy-api/examples/triggering-dast-scans.md
           - Codacy CLIs:
                 - codacy-analysis-cli/index.md
