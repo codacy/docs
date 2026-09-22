@@ -6,7 +6,7 @@ description: Instructions on how to upload container image SBOMs to Codacy using
 
 Codacy scans your container images for known vulnerabilities from an SBOM (Software Bill of Materials) that you upload. If your pipeline already produces an SBOM, or you generate one with a tool other than the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2), you can upload it directly through the API and monitor the results as findings under [Container scanning](../../security/container-scanning.md).
 
-Before you automate this, read [how tagging affects your findings](../../security/container-scanning.md#how-tagging-affects-your-findings). The tag you upload to decides whether Codacy keeps one set of findings for the image or starts a new set with every release, and it is the choice that is hardest to reverse.
+Before you automate this, read [how tagging affects your findings](../../security/container-scanning.md#how-tagging-affects-your-findings). The tag you upload to decides whether Codacy keeps one set of findings for the image or starts a new set with every release, and it's the choice that's hardest to reverse.
 
 ## Uploading an SBOM to Codacy
 
@@ -63,7 +63,7 @@ The endpoint returns at most 100 tags per request and paginates with a cursor. S
 
 ## Deleting an image tag
 
-Your organization can hold 1,000 image tags in total. Once you reach that limit, Codacy stops accepting image tags it has not seen before, so a pipeline that uploads a new tag on every release stops being scanned. To make room, delete the tags for releases you no longer support using [<span class="skip-vale">deleteImageTag</span>](https://app.codacy.com/api/api-docs#deleteimagetag):
+Your organization can hold 1,000 image tags in total. Once you reach that limit, Codacy stops accepting image tags it hasn't seen before, so a pipeline that uploads a new tag on every release stops being scanned. To make room, delete the tags for releases you no longer support using [<span class="skip-vale">deleteImageTag</span>](https://app.codacy.com/api/api-docs#deleteimagetag):
 
 ```bash
 curl -X DELETE https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/image-sboms/<IMAGE_NAME>/tags/<TAG> \

@@ -212,7 +212,7 @@ codacy image gh my-org my-service --delete
 
 ### Keep container image tags under the organization limit {: id="keep-latest"}
 
-An organization can hold 1000 image tags in total. Once it reaches that limit, Codacy stops accepting image tags it has not seen before, so a pipeline that uploads a new tag on every release stops being scanned. See [how tagging affects your findings](../security/container-scanning.md#how-tagging-affects-your-findings).
+An organization can hold 1000 image tags in total. Once it reaches that limit, Codacy stops accepting image tags it hasn't seen before, so a pipeline that uploads a new tag on every release stops being scanned. See [how tagging affects your findings](../security/container-scanning.md#how-tagging-affects-your-findings).
 
 `--keep-latest` deletes the older tags of an image, keeping the most recently uploaded ones. Run it as the cleanup step of a release pipeline, **before** the upload, so that the space is freed before the new tag needs it:
 

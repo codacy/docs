@@ -24,7 +24,7 @@ No manual action is required to trigger scans after the initial setup.
 
 ## How tagging affects your findings
 
-Codacy keeps a separate set of findings for every image tag you upload, and scans each of those tags once a day. The tag you upload to therefore decides how your findings behave over time, and it is the setup choice that is hardest to reverse: findings you have already accumulated stay on the tags that produced them.
+Codacy keeps a separate set of findings for every image tag you upload, and scans each of those tags once a day. The tag you upload to therefore decides how your findings behave over time, and it's the setup choice that's hardest to reverse: findings you have already accumulated stay on the tags that produced them.
 
 You have two options:
 
@@ -46,15 +46,15 @@ Upload to a single tag unless you need a per-release record of what shipped.
 
 ### What the image tag limit does
 
-Your organization can hold 1,000 image tags in total, counted across all your images. Uploading again to a tag Codacy already holds does not count against the limit, so an organization that uploads every image to a single rolling tag can stay under it indefinitely.
+Your organization can hold 1,000 image tags in total, counted across all your images. Uploading again to a tag Codacy already holds doesn't count against the limit, so an organization that uploads every image to a single rolling tag can stay under it indefinitely.
 
-Once you reach the limit, Codacy stops accepting image tags it has not seen before. The tags you already have keep being scanned every day, so the images list still looks healthy, but the release you just shipped is not scanned at all. The only signal is the error returned to your pipeline.
+Once you reach the limit, Codacy stops accepting image tags it hasn't seen before. The tags you already have keep being scanned every day, so the images list still looks healthy, but the release you just shipped isn't scanned at all. The only signal is the error returned to your pipeline.
 
 To make room, delete the image tags for releases you no longer support. You can delete a single tag from the tag list of an image, or delete an image to remove all its tags at once. To prune tags automatically as part of a pipeline, use the [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest).
 
 ### Reducing findings on an image that already has many tags
 
-Changing the tag your pipeline uploads to does not change the findings you already have. The tags you accumulated keep their own findings, and Codacy keeps scanning every one of them every night, so the finding count stays where it is until you remove the tags behind it.
+Changing the tag your pipeline uploads to doesn't change the findings you already have. The tags you accumulated keep their own findings, and Codacy keeps scanning every one of them every night, so the finding count stays put until you remove the tags behind it.
 
 To bring an image back under control:
 
@@ -85,9 +85,13 @@ To bring an image back under control:
 Deleting a tag deletes the findings recorded against it, along with its scan history. The finding counts drop once the deletions have been processed, which happens shortly after the command returns rather than immediately. Keep the tags for the releases you still run in production, since those are the findings that describe something you are actually exposed to.
 
 !!! important
-    Deleting an image tag cannot be undone. Start with `--dry-run`, and keep the tags for every release you still support.
+    Deleting an image tag can't be undone. Start with `--dry-run`, and keep the tags for every release you still support.
 
-Tags accumulate per image, so find the images responsible before you start. `codacy images gh <organization>` lists every image in the organization, and usually a small number of them account for most of the tags.
+Tags accumulate per image, so find the images responsible before you start. Usually a small number of them account for most of the tags:
+
+```bash
+codacy images gh "${ORGANIZATION_NAME}"
+```
 
 ## Container scanning setup
 
@@ -162,7 +166,7 @@ codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
   "${IMAGE_NAME}:${IMAGE_VERSION}"
 ```
 
-Every release adds an image tag, so clean up on every run to stay under your organization limit. Put the cleanup **before** the upload: at the limit the upload is rejected, so a pipeline that uploads first and cleans up later stops making progress. Add `--dry-run` to see which tags would go without deleting anything.
+Every release adds an image tag, so clean up on every run to stay under your organization limit. Put the cleanup **before** the upload: at the limit the upload is rejected, so a pipeline that uploads first and cleans up later can't make progress. Add `--dry-run` to see which tags would go without deleting anything.
 
 The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest) reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later.
 
