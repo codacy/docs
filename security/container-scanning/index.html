@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 10:12:15">
+    <meta http-equiv="last-modified" content="2026-09-22 13:54:57">
   
   
 
@@ -2192,6 +2192,15 @@
     <span class="md-ellipsis">
       
         How our container image scanning Works
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#how-tagging-affects-your-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How tagging affects your findings
       
     </span>
   </a>
@@ -4659,6 +4668,27 @@
     
   
     Uploading DAST results to Codacy
+  
+
+    
+  </span>
+  
+  
+</a></li>
+  
+
+  
+  
+  
+  
+    <li class="md-nav__item"><a href="../../codacy-api/examples/uploading-container-image-sboms/" class="md-nav__link">
+  
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uploading container image SBOMs to Codacy
   
 
     
@@ -9388,6 +9418,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#how-tagging-affects-your-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How tagging affects your findings
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#container-scanning-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9500,6 +9539,95 @@
 <li>Scans are executed every night (UTC) and the findings are updated automatically</li>
 </ol>
 <p>No manual action is required to trigger scans after the initial setup.</p>
+<h2 id="how-tagging-affects-your-findings">How tagging affects your findings<a class="headerlink" href="#how-tagging-affects-your-findings" title="Permanent link">#</a></h2>
+<p>Codacy keeps a separate set of findings for every image tag you upload, and scans each of those tags once a day. The tag you upload to therefore decides how your findings behave over time, and it's the setup choice that's hardest to reverse: findings you have already accumulated stay on the tags that produced them.</p>
+<p>You have two options:</p>
+<ul>
+<li><strong>One list, kept up to date.</strong> Upload every build to the same tag, such as <code>prod</code>. Each upload replaces the last, so vulnerabilities you fix close automatically and your dismissals and owners carry over. <a href="#example-one-list">See the pipeline example</a>.</li>
+<li><strong>A separate list per release.</strong> Upload each build to a new tag, such as <code>1.4.2</code>. Every release starts its own set of findings, so a vulnerability you fixed in your newest release stays open on the older ones. <a href="#example-per-release">See the pipeline example</a>.</li>
+</ul>
+<p>This changes what Codacy scans, not what you deploy. You can keep deploying from an immutable tag or a digest while pointing Codacy at a single rolling tag.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>One list, kept up to date</th>
+<th>A separate list per release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Findings across releases</td>
+<td>The same findings are updated</td>
+<td>A new set every release</td>
+</tr>
+<tr>
+<td>A vulnerability you fixed</td>
+<td>Closes automatically</td>
+<td>Stays open on the older tags</td>
+</tr>
+<tr>
+<td>Dismissals and owners</td>
+<td>Carry over to the next upload</td>
+<td>Reset on every release</td>
+</tr>
+<tr>
+<td>SLA and MTTR</td>
+<td>Measured across the life of the image</td>
+<td>Restart with every release</td>
+</tr>
+<tr>
+<td>Which build introduced a vulnerability</td>
+<td>Not recorded</td>
+<td>Recorded exactly</td>
+</tr>
+<tr>
+<td>Image tags stored</td>
+<td>One per image</td>
+<td>One per release</td>
+</tr>
+</tbody>
+</table>
+<p>Upload to a single tag unless you need a per-release record of what shipped.</p>
+<h3 id="what-the-image-tag-limit-does">What the image tag limit does<a class="headerlink" href="#what-the-image-tag-limit-does" title="Permanent link">#</a></h3>
+<p>Your organization can hold 1,000 image tags in total, counted across all your images. Uploading again to a tag Codacy already holds doesn't count against the limit, so an organization that uploads every image to a single rolling tag can stay under it indefinitely.</p>
+<p>Once you reach the limit, Codacy stops accepting image tags it hasn't seen before. The tags you already have keep being scanned every day, so the images list still looks healthy, but the release you just shipped isn't scanned at all. The only signal is the error returned to your pipeline.</p>
+<p>To make room, delete the image tags for releases you no longer support. You can delete a single tag from the tag list of an image, or delete an image to remove all its tags at once. To prune tags automatically as part of a pipeline, use the <a href="../../codacy-cloud-cli/#keep-latest">Codacy Cloud CLI</a>.</p>
+<h3 id="reducing-findings-on-an-image-that-already-has-many-tags">Reducing findings on an image that already has many tags<a class="headerlink" href="#reducing-findings-on-an-image-that-already-has-many-tags" title="Permanent link">#</a></h3>
+<p>Changing the tag your pipeline uploads to doesn't change the findings you already have. The tags you accumulated keep their own findings, and Codacy keeps scanning every one of them every night, so the finding count stays put until you remove the tags behind it.</p>
+<p>To bring an image back under control:</p>
+<ol>
+<li>
+<p>Point your pipeline at a single tag, following <a href="#how-tagging-affects-your-findings">one list, kept up to date</a>. New releases now update one set of findings instead of starting another.</p>
+</li>
+<li>
+<p>List the tags Codacy holds for the image, so you know what you are working with. The <a href="../../codacy-cloud-cli/#manage-container-images">Codacy Cloud CLI</a> needs an <a href="../../codacy-api/api-tokens/#account-api-tokens">account API token</a>, from <code>codacy login</code> or the <code>CODACY_API_TOKEN</code> environment variable:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+
+codacy<span class="w"> </span>image<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>--limit<span class="w"> </span><span class="m">1000</span>
+</code></pre></div>
+</li>
+<li>
+<p>Check what a cleanup would remove, without removing anything:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>image<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--delete<span class="w"> </span>--keep-latest<span class="w"> </span><span class="m">10</span><span class="w"> </span>--dry-run
+</code></pre></div>
+</li>
+<li>
+<p>Delete the tags for releases you no longer support:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>image<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--delete<span class="w"> </span>--keep-latest<span class="w"> </span><span class="m">10</span>
+</code></pre></div>
+</li>
+</ol>
+<p>Deleting a tag deletes the findings recorded against it, along with its scan history. The finding counts drop once the deletions have been processed, which happens shortly after the command returns rather than immediately. Keep the tags for the releases you still run in production, since those are the findings that describe something you are actually exposed to.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Deleting an image tag can't be undone. Start with <code>--dry-run</code>, and keep the tags for every release you still support.</p>
+</div>
+<p>Tags accumulate per image, so find the images responsible before you start. Usually a small number of them account for most of the tags:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>images<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
 <h2 id="container-scanning-setup">Container scanning setup<a class="headerlink" href="#container-scanning-setup" title="Permanent link">#</a></h2>
 <p>You can set up container scanning in one of two ways: by connecting your CI/CD pipeline or by manually uploading your image SBOM. Once configured, your image dependencies are scanned daily and results will appear in the Image card list.</p>
 <h3 id="cicd-integration">CI/CD integration<a class="headerlink" href="#cicd-integration" title="Permanent link">#</a></h3>
@@ -9512,11 +9640,114 @@
 </ol>
 <p>When CI/CD is configured:</p>
 <ul>
-<li>Images pushed through your pipeline are automatically detected</li>
-<li>New tags are picked up as they're published</li>
-<li>Scans are scheduled automatically</li>
+<li>Every pipeline run uploads an SBOM for the image and tag you name in the command</li>
+<li>Codacy scans each image tag you have uploaded once per day</li>
+<li>No manual action is required between releases</li>
 </ul>
 <p>This is the recommended setup for continuous coverage.</p>
+<h4 id="example-pipeline-steps">Example pipeline steps<a class="headerlink" href="#example-pipeline-steps" title="Permanent link">#</a></h4>
+<p>These examples use the <a href="https://github.com/codacy/codacy-cli-v2">Codacy CLI v2</a>, which generates the SBOM from your image and uploads it in a single command. They assume you have already set <code>CODACY_API_TOKEN</code> as described above.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Already generating SBOMs with another tool? <a href="../../codacy-api/examples/uploading-container-image-sboms/">Upload them via the API.</a></p>
+</div>
+<p>Install the CLI once per pipeline run:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/codacy/codacy-cli-v2/main/codacy-cli.sh<span class="w"> </span>-o<span class="w"> </span>codacy-cli.sh
+chmod<span class="w"> </span>+x<span class="w"> </span>codacy-cli.sh
+./codacy-cli.sh<span class="w"> </span>init
+</code></pre></div>
+<p><code>upload-sbom</code> reads a Codacy configuration from the working directory, which is what <code>init</code> creates. Without it the upload stops with <code>No configuration file was found, execute init command first.</code></p>
+<h4 id="example-one-list">Example: one list, kept up to date<a class="headerlink" href="#example-one-list" title="Permanent link">#</a></h4>
+<p>For <a href="#how-tagging-affects-your-findings">one list of findings, kept up to date</a>, point your rolling tag at the image you just built and upload that:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>tag<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">:</span><span class="si">${</span><span class="nv">IMAGE_VERSION</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">:prod&quot;</span>
+
+./codacy-cli.sh<span class="w"> </span>upload-sbom<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-a<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">CODACY_API_TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span>gh<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-o<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-r<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">REPOSITORY_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span>production<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">:prod&quot;</span>
+</code></pre></div>
+<p>The <code>docker tag</code> alias stays on the build machine and is never pushed. Without it the CLI resolves <code>prod</code> against your registry and scans whatever that tag points at there, rather than the image your pipeline just built.</p>
+<h4 id="example-per-release">Example: a separate list per release<a class="headerlink" href="#example-per-release" title="Permanent link">#</a></h4>
+<p>For <a href="#how-tagging-affects-your-findings">a separate list per release</a>, delete the tags you no longer need and then upload the release tag:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span><span class="s2">&quot;@codacy/codacy-cloud-cli&quot;</span>
+
+<span class="c1"># Keep the 10 most recently uploaded tags, delete the rest</span>
+codacy<span class="w"> </span>image<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--delete<span class="w"> </span>--keep-latest<span class="w"> </span><span class="m">10</span><span class="w"> </span>--skip-confirmation
+
+./codacy-cli.sh<span class="w"> </span>upload-sbom<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-a<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">CODACY_API_TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span>gh<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-o<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-r<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">REPOSITORY_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span>production<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">:</span><span class="si">${</span><span class="nv">IMAGE_VERSION</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>Every release adds an image tag, so clean up on every run to stay under your organization limit. Put the cleanup <strong>before</strong> the upload: at the limit the upload is rejected, so a pipeline that uploads first and cleans up later can't make progress. Add <code>--dry-run</code> to see which tags would go without deleting anything.</p>
+<p>The <a href="../../codacy-cloud-cli/#keep-latest">Codacy Cloud CLI</a> reads the same <code>CODACY_API_TOKEN</code> you set in step 1, and needs version 1.12.1 or later.</p>
+<p>Both examples use these placeholders. Replace them with your own values:</p>
+<ul>
+<li><strong>CODACY_API_TOKEN:</strong> <a href="../../codacy-api/api-tokens/#account-api-tokens">Account API token</a> used to authenticate on Codacy, set as described in step 1 of the setup page.</li>
+<li>
+<p><strong><code>-p</code>:</strong> Git provider hosting the organization, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Git provider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gh</code></td>
+<td>GitHub Cloud</td>
+</tr>
+<tr>
+<td><code>gl</code></td>
+<td>GitLab Cloud</td>
+</tr>
+<tr>
+<td><code>bb</code></td>
+<td>Bitbucket Cloud</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>ORGANIZATION_NAME:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>.</p>
+</li>
+<li><strong>IMAGE_NAME:</strong> Name of the container image, without a tag. For example, <code>myapp</code>.</li>
+<li><strong>IMAGE_VERSION:</strong> The tag your pipeline built, such as <code>1.4.2</code>. Only used by the per-release example.</li>
+<li><strong>REPOSITORY_NAME:</strong> Optional. Name of the repository to associate the image with, so findings link back to it.</li>
+<li><strong><code>-e</code>:</strong> Optional. Environment where the image is deployed, such as <code>production</code>. It appears in the tag list.</li>
+</ul>
+<h4 id="if-your-pipeline-already-produces-an-sbom">If your pipeline already produces an SBOM<a class="headerlink" href="#if-your-pipeline-already-produces-an-sbom" title="Permanent link">#</a></h4>
+<p>The examples above use the Codacy CLI v2 because it generates the SBOM and uploads it in one step. If your pipeline already produces an SBOM in CycloneDX or SPDX format, upload that file directly with the <a href="../../codacy-cloud-cli/#manage-container-images">Codacy Cloud CLI</a> instead. It reads the same <code>CODACY_API_TOKEN</code> you set in step 1, and needs version 1.12.1 or later.</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span><span class="s2">&quot;@codacy/codacy-cloud-cli&quot;</span>
+
+<span class="c1"># Uses the CODACY_API_TOKEN you set in step 1.</span>
+</code></pre></div>
+<p>To keep one list of findings, upload every release to the same tag:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>image<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tag<span class="w"> </span>prod<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--upload<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SBOM_FILE</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--environment<span class="w"> </span>production<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--repository<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">REPOSITORY_NAME</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>To keep a separate list per release, clean up first and then upload under the release tag:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>image<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--delete<span class="w"> </span>--keep-latest<span class="w"> </span><span class="m">10</span><span class="w"> </span>--skip-confirmation
+
+codacy<span class="w"> </span>image<span class="w"> </span>gh<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ORGANIZATION_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_NAME</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tag<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IMAGE_VERSION</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--upload<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SBOM_FILE</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--environment<span class="w"> </span>production<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--repository<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">REPOSITORY_NAME</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>This path never resolves the image itself, so it needs no <code>docker tag</code> alias: it attaches the SBOM file you name to the tag you name.</p>
 <h3 id="manual-upload">Manual upload<a class="headerlink" href="#manual-upload" title="Permanent link">#</a></h3>
 <p>You can also manually upload your container's Software Bill of Materials (SBOM) in CycloneDX or SPDX format.</p>
 <p><img width="936" height="810" decoding="async" loading="lazy" alt="Security and risk management manually import container SBOM" src="../images/security-risk-management-container-upload-manually.png" /></p>
@@ -9526,6 +9757,7 @@
 <li>Add the image tag;</li>
 <li>Upload your SBOM file (environment and repository fields are optional).</li>
 </ol>
+<p>Reuse a tag and each upload replaces the last. A new tag starts its own set of findings, so choose it with care: see <a href="#how-tagging-affects-your-findings">How tagging affects your findings</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can use the <a href="https://github.com/codacy/codacy-cli-v2">Codacy CLI v2</a> to generate and upload your SBOM file to Codacy.</p>
@@ -9551,9 +9783,9 @@
 <p>Once a tag is scanned, you can click on the <code>check findings</code> link to access the findings page filtered by the respective results.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Findings are tied to specific image tags. To resolve a finding, "bump" the tag to a newer version if a fixed version exists (if not, a downgrade or an alternative image may be required). 
-For dynamic tags such as <code>latest</code>, Codacy will automatically close findings that are no longer present in the current analysis. If you use static tags, you will need to delete tags that are no longer used, as there's a limit of 1000 tags per organization.</p>
+<p>Findings are tied to a specific image tag. To resolve one, upload an image where the dependency is fixed, usually by bumping it to a newer version. Where no fix exists, a downgrade or an alternative base image may be required.</p>
 </div>
+<p>Whether that fix also closes the finding on your other tags depends on how you tag your images. See <a href="#how-tagging-affects-your-findings">How tagging affects your findings</a>.</p>
 <h2 id="deleting-container-image-files-from-codacy">Deleting container image files from Codacy<a class="headerlink" href="#deleting-container-image-files-from-codacy" title="Permanent link">#</a></h2>
 <p><img width="1313" height="537" decoding="async" loading="lazy" alt="Security and risk management delete container SBOM" src="../images/security-risk-management-container-delete-image.png" /></p>
 <p>What happens when you delete an image:</p>
@@ -9581,7 +9813,7 @@ You can also delete a specific tag inside an image card.</p>
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 10:12:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
+    <time datetime="2026-09-22 13:54:57"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
   </aside>
 
 

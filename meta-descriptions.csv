@@ -37,6 +37,7 @@ https://docs.codacy.com/codacy-api/examples/identifying-commits-without-coverage
 https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/,Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.
 https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/,Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.
 https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/,Instructions on how to trigger DAST/App using the API.
+https://docs.codacy.com/codacy-api/examples/uploading-container-image-sboms/,"Instructions on how to upload container image SBOMs to Codacy using the API, and how to list and delete image tags."
 https://docs.codacy.com/codacy-api/examples/uploading-dast-results/,Instructions on how to upload DAST results to Codacy using the API.
 https://docs.codacy.com/codacy-cloud-cli/,"Install and use the Codacy Cloud CLI to manage your repositories, issues, security findings, pull requests, and tool configurations directly from your terminal."
 https://docs.codacy.com/codacy-guardrails/codacy-guardrails-faq/,Documentation for the Codacy automated code review tool.

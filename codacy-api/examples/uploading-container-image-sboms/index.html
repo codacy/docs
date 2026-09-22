@@ -7,19 +7,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Release notes for Codacy Cloud September 2024.">
+        <meta name="description" content="Instructions on how to upload container image SBOMs to Codacy using the API, and how to list and delete image tags.">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2024-09/">
+        <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/uploading-container-image-sboms/">
       
       
-        <link rel="prev" href="../cloud-2024-10/">
+        <link rel="prev" href="../uploading-dast-results/">
       
       
-        <link rel="next" href="../cloud-2024-09-adding-eslint9-and-pmd7/">
+        <link rel="next" href="../triggering-dast-scans/">
       
       
         
@@ -32,13 +32,13 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2024-10-09 14:49:30">
+    <meta http-equiv="last-modified" content="2026-09-22 13:54:57">
   
   
 
     
       
-        <title>Cloud September 2024 - Codacy docs</title>
+        <title>Uploading container image SBOMs to Codacy - Codacy docs</title>
       
     
     
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cloud-september-2024" class="md-skip">
+        <a href="#uploading-container-image-sboms-to-codacy" class="md-skip">
           Skip to content
         </a>
       
@@ -241,10 +241,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../../developer-tools/" class="md-tabs__link">
           
   
@@ -261,13 +263,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../release-notes/" class="md-tabs__link">
           
   
   
@@ -4071,14 +4071,14 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -4097,7 +4097,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Developer tools
@@ -4320,11 +4320,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -4348,7 +4348,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Codacy API
@@ -4360,7 +4360,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/using-the-codacy-api/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../using-the-codacy-api/" class="md-nav__link">
   
   
   
@@ -4381,7 +4381,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/api-tokens/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../api-tokens/" class="md-nav__link">
   
   
   
@@ -4410,11 +4410,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
@@ -4436,7 +4436,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3_3"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Examples
@@ -4448,7 +4448,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/adding-people-to-codacy-programmatically/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../adding-people-to-codacy-programmatically/" class="md-nav__link">
   
   
   
@@ -4469,7 +4469,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/adding-repositories-to-codacy-programmatically/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../adding-repositories-to-codacy-programmatically/" class="md-nav__link">
   
   
   
@@ -4490,7 +4490,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/creating-repository-api-tokens-programmatically/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../creating-repository-api-tokens-programmatically/" class="md-nav__link">
   
   
   
@@ -4511,7 +4511,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../obtaining-code-quality-metrics-for-files/" class="md-nav__link">
   
   
   
@@ -4532,7 +4532,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/obtaining-current-issues-in-repositories/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../obtaining-current-issues-in-repositories/" class="md-nav__link">
   
   
   
@@ -4553,7 +4553,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/identifying-commits-without-coverage-data/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../identifying-commits-without-coverage-data/" class="md-nav__link">
   
   
   
@@ -4574,7 +4574,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/uploading-dast-results/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../uploading-dast-results/" class="md-nav__link">
   
   
   
@@ -4595,7 +4595,12 @@
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/uploading-container-image-sboms/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      <label class="md-nav__link md-nav__link--active" for="__toc">
   
   
   
@@ -4609,14 +4614,77 @@
   </span>
   
   
-</a></li>
+<span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span></label>
+      <a href="./" class="md-nav__link md-nav__link--active">
+  
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uploading container image SBOMs to Codacy
+  
+
+    
+  </span>
+  
+  
+</a>
+      
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#uploading-an-sbom-to-codacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uploading an SBOM to Codacy
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#listing-the-image-tags-you-have-uploaded" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing the image tags you have uploaded
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#deleting-an-image-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting an image tag
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#example-uploading-an-sbom-from-your-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: uploading an SBOM from your pipeline
+      
+    </span>
+  </a>
+  
+</li></ul>
+  
+</nav>
+    </li>
   
 
   
   
   
   
-    <li class="md-nav__item"><a href="../../../codacy-api/examples/triggering-dast-scans/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../triggering-dast-scans/" class="md-nav__link">
   
   
   
@@ -4933,14 +5001,14 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -4959,7 +5027,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Release notes
@@ -4971,7 +5039,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/" class="md-nav__link">
   
   
   
@@ -5002,11 +5070,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -5030,7 +5098,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     Cloud
@@ -5088,7 +5156,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-09-adding-oxlint/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-09-adding-oxlint/" class="md-nav__link">
   
   
   
@@ -5109,7 +5177,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-08/" class="md-nav__link">
   
   
   
@@ -5130,7 +5198,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-07/" class="md-nav__link">
   
   
   
@@ -5151,7 +5219,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-07-adding-shellcheck-config-file/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-07-adding-shellcheck-config-file/" class="md-nav__link">
   
   
   
@@ -5172,7 +5240,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-07-adding-phpcsfixer-checkov-config-files/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files/" class="md-nav__link">
   
   
   
@@ -5193,7 +5261,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-07-remove-codesniffer-packages/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-07-remove-codesniffer-packages/" class="md-nav__link">
   
   
   
@@ -5214,7 +5282,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-06/" class="md-nav__link">
   
   
   
@@ -5235,7 +5303,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-05/" class="md-nav__link">
   
   
   
@@ -5256,7 +5324,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-04/" class="md-nav__link">
   
   
   
@@ -5277,7 +5345,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-03/" class="md-nav__link">
   
   
   
@@ -5298,7 +5366,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-03-github-integration-settings-changes/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-03-github-integration-settings-changes/" class="md-nav__link">
   
   
   
@@ -5319,7 +5387,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-02/" class="md-nav__link">
   
   
   
@@ -5340,7 +5408,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-02-migrating-semgrep/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-02-migrating-semgrep/" class="md-nav__link">
   
   
   
@@ -5361,7 +5429,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-01/" class="md-nav__link">
   
   
   
@@ -5382,7 +5450,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2026-01-adding-golangci-lint/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2026-01-adding-golangci-lint/" class="md-nav__link">
   
   
   
@@ -5455,7 +5523,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-12/" class="md-nav__link">
   
   
   
@@ -5476,7 +5544,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-11/" class="md-nav__link">
   
   
   
@@ -5497,7 +5565,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-10/" class="md-nav__link">
   
   
   
@@ -5518,7 +5586,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-09/" class="md-nav__link">
   
   
   
@@ -5539,7 +5607,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-08/" class="md-nav__link">
   
   
   
@@ -5560,7 +5628,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-07/" class="md-nav__link">
   
   
   
@@ -5581,7 +5649,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-06/" class="md-nav__link">
   
   
   
@@ -5602,7 +5670,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-06-adding-sqlfluff-reek/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek/" class="md-nav__link">
   
   
   
@@ -5623,7 +5691,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-05/" class="md-nav__link">
   
   
   
@@ -5644,7 +5712,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-04/" class="md-nav__link">
   
   
   
@@ -5665,7 +5733,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-03/" class="md-nav__link">
   
   
   
@@ -5686,7 +5754,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-02-adding-ruff-lizard/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-02-adding-ruff-lizard/" class="md-nav__link">
   
   
   
@@ -5707,7 +5775,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-02/" class="md-nav__link">
   
   
   
@@ -5728,7 +5796,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2025-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2025-01/" class="md-nav__link">
   
   
   
@@ -5763,11 +5831,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
         
           
           <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
@@ -5789,7 +5857,7 @@
             <span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2_3"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>
   
     2024
@@ -5801,7 +5869,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-12/" class="md-nav__link">
   
   
   
@@ -5822,7 +5890,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-11/" class="md-nav__link">
   
   
   
@@ -5843,7 +5911,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-10/" class="md-nav__link">
   
   
   
@@ -5864,12 +5932,7 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-09/" class="md-nav__link">
   
   
   
@@ -5883,68 +5946,14 @@
   </span>
   
   
-<span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></span></label>
-      <a href="./" class="md-nav__link md-nav__link--active">
-  
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cloud September 2024
-  
-
-    
-  </span>
-  
-  
-</a>
-      
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
-  <a href="#product-enhancements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Product enhancements
-      
-    </span>
-  </a>
-  
-</li><li class="md-nav__item">
-  <a href="#bug-fixes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bug fixes
-      
-    </span>
-  </a>
-  
-</li><li class="md-nav__item">
-  <a href="#tool-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tool updates
-      
-    </span>
-  </a>
-  
-</li></ul>
-  
-</nav>
-    </li>
+</a></li>
   
 
   
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-09-adding-eslint9-and-pmd7/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7/" class="md-nav__link">
   
   
   
@@ -5965,7 +5974,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-08/" class="md-nav__link">
   
   
   
@@ -5986,7 +5995,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-07/" class="md-nav__link">
   
   
   
@@ -6007,7 +6016,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-06/" class="md-nav__link">
   
   
   
@@ -6028,7 +6037,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-05/" class="md-nav__link">
   
   
   
@@ -6049,7 +6058,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-04/" class="md-nav__link">
   
   
   
@@ -6070,7 +6079,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-03/" class="md-nav__link">
   
   
   
@@ -6091,7 +6100,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-02/" class="md-nav__link">
   
   
   
@@ -6112,7 +6121,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-01/" class="md-nav__link">
   
   
   
@@ -6133,7 +6142,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/" class="md-nav__link">
   
   
   
@@ -6206,7 +6215,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-12/" class="md-nav__link">
   
   
   
@@ -6227,7 +6236,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-11/" class="md-nav__link">
   
   
   
@@ -6248,7 +6257,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-11-23-new-coverage-engine-status-checks/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/" class="md-nav__link">
   
   
   
@@ -6269,7 +6278,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal/" class="md-nav__link">
   
   
   
@@ -6290,7 +6299,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-10/" class="md-nav__link">
   
   
   
@@ -6311,7 +6320,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/" class="md-nav__link">
   
   
   
@@ -6332,7 +6341,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-10-13-bundler-audit-deprecation/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation/" class="md-nav__link">
   
   
   
@@ -6353,7 +6362,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-09/" class="md-nav__link">
   
   
   
@@ -6374,7 +6383,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-08/" class="md-nav__link">
   
   
   
@@ -6395,7 +6404,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-07/" class="md-nav__link">
   
   
   
@@ -6416,7 +6425,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-06/" class="md-nav__link">
   
   
   
@@ -6437,7 +6446,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-05/" class="md-nav__link">
   
   
   
@@ -6458,7 +6467,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-04/" class="md-nav__link">
   
   
   
@@ -6479,7 +6488,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-03/" class="md-nav__link">
   
   
   
@@ -6500,7 +6509,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-02/" class="md-nav__link">
   
   
   
@@ -6521,7 +6530,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2023-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2023-01/" class="md-nav__link">
   
   
   
@@ -6594,7 +6603,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-12/" class="md-nav__link">
   
   
   
@@ -6615,7 +6624,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-11/" class="md-nav__link">
   
   
   
@@ -6636,7 +6645,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-10/" class="md-nav__link">
   
   
   
@@ -6657,7 +6666,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-09/" class="md-nav__link">
   
   
   
@@ -6678,7 +6687,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-08/" class="md-nav__link">
   
   
   
@@ -6699,7 +6708,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-07/" class="md-nav__link">
   
   
   
@@ -6720,7 +6729,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-06/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-06/" class="md-nav__link">
   
   
   
@@ -6741,7 +6750,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-05/" class="md-nav__link">
   
   
   
@@ -6762,7 +6771,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-04/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-04/" class="md-nav__link">
   
   
   
@@ -6783,7 +6792,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-03/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-03/" class="md-nav__link">
   
   
   
@@ -6804,7 +6813,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-03-31-adding-eslint8/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-03-31-adding-eslint8/" class="md-nav__link">
   
   
   
@@ -6825,7 +6834,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-02/" class="md-nav__link">
   
   
   
@@ -6846,7 +6855,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-02-16-pmd-legacy-removal/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/" class="md-nav__link">
   
   
   
@@ -6867,7 +6876,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2022-01/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2022-01/" class="md-nav__link">
   
   
   
@@ -6940,7 +6949,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2021-12/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2021-12/" class="md-nav__link">
   
   
   
@@ -6961,7 +6970,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2021-11/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2021-11/" class="md-nav__link">
   
   
   
@@ -6982,7 +6991,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2021-10/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2021-10/" class="md-nav__link">
   
   
   
@@ -7003,7 +7012,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2021-09/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2021-09/" class="md-nav__link">
   
   
   
@@ -7024,7 +7033,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2021-11-02-legacy-organizations/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" class="md-nav__link">
   
   
   
@@ -7045,7 +7054,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2021-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2021-08/" class="md-nav__link">
   
   
   
@@ -7066,7 +7075,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2021-07-03-scheduled-db-maintenance/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" class="md-nav__link">
   
   
   
@@ -7139,7 +7148,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" class="md-nav__link">
   
   
   
@@ -7160,7 +7169,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" class="md-nav__link">
   
   
   
@@ -7181,7 +7190,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2020-02-github-apps/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2020-02-github-apps/" class="md-nav__link">
   
   
   
@@ -7254,7 +7263,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-11-15/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-11-15/" class="md-nav__link">
   
   
   
@@ -7275,7 +7284,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-10-30/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-10-30/" class="md-nav__link">
   
   
   
@@ -7296,7 +7305,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-09-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-09-05/" class="md-nav__link">
   
   
   
@@ -7317,7 +7326,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-08-07/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-08-07/" class="md-nav__link">
   
   
   
@@ -7338,7 +7347,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-06-18/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-06-18/" class="md-nav__link">
   
   
   
@@ -7359,7 +7368,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-05-20/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-05-20/" class="md-nav__link">
   
   
   
@@ -7380,7 +7389,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-05-05/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-05-05/" class="md-nav__link">
   
   
   
@@ -7401,7 +7410,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-04-08/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-04-08/" class="md-nav__link">
   
   
   
@@ -7422,7 +7431,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-03-29/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-03-29/" class="md-nav__link">
   
   
   
@@ -7443,7 +7452,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-02-18-bitbucket-changes/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" class="md-nav__link">
   
   
   
@@ -7464,7 +7473,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2019-01-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2019-01-02/" class="md-nav__link">
   
   
   
@@ -7537,7 +7546,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2018-11-16/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2018-11-16/" class="md-nav__link">
   
   
   
@@ -7558,7 +7567,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2018-11-02/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2018-11-02/" class="md-nav__link">
   
   
   
@@ -7579,7 +7588,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2018-10-19/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2018-10-19/" class="md-nav__link">
   
   
   
@@ -7600,7 +7609,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../cloud-2018-07-23/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/cloud/cloud-2018-07-23/" class="md-nav__link">
   
   
   
@@ -7727,7 +7736,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v16.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v16.0.0/" class="md-nav__link">
   
   
   
@@ -7800,7 +7809,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v15.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v15.0.0/" class="md-nav__link">
   
   
   
@@ -7873,7 +7882,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v14.1.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v14.1.1/" class="md-nav__link">
   
   
   
@@ -7894,7 +7903,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v14.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v14.0.0/" class="md-nav__link">
   
   
   
@@ -7967,7 +7976,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v13.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v13.0.0/" class="md-nav__link">
   
   
   
@@ -8040,7 +8049,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v12.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v12.0.0/" class="md-nav__link">
   
   
   
@@ -8113,7 +8122,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v11.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v11.0.0/" class="md-nav__link">
   
   
   
@@ -8186,7 +8195,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v10.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v10.0.0/" class="md-nav__link">
   
   
   
@@ -8259,7 +8268,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v9.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v9.0.0/" class="md-nav__link">
   
   
   
@@ -8332,7 +8341,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v8.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v8.1.0/" class="md-nav__link">
   
   
   
@@ -8353,7 +8362,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v8.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v8.0.0/" class="md-nav__link">
   
   
   
@@ -8426,7 +8435,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v7.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v7.0.0/" class="md-nav__link">
   
   
   
@@ -8499,7 +8508,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v6.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v6.0.0/" class="md-nav__link">
   
   
   
@@ -8572,7 +8581,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v5.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v5.1.0/" class="md-nav__link">
   
   
   
@@ -8593,7 +8602,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v5.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v5.0.0/" class="md-nav__link">
   
   
   
@@ -8666,7 +8675,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v4.4.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v4.4.0/" class="md-nav__link">
   
   
   
@@ -8687,7 +8696,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v4.3.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v4.3.0/" class="md-nav__link">
   
   
   
@@ -8708,7 +8717,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v4.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v4.2.0/" class="md-nav__link">
   
   
   
@@ -8729,7 +8738,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v4.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v4.1.0/" class="md-nav__link">
   
   
   
@@ -8750,7 +8759,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v4.0.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v4.0.1/" class="md-nav__link">
   
   
   
@@ -8771,7 +8780,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v4.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v4.0.0/" class="md-nav__link">
   
   
   
@@ -8844,7 +8853,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v3.5.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v3.5.1/" class="md-nav__link">
   
   
   
@@ -8865,7 +8874,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v3.5.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v3.5.0/" class="md-nav__link">
   
   
   
@@ -8886,7 +8895,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v3.4.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v3.4.0/" class="md-nav__link">
   
   
   
@@ -8907,7 +8916,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v3.3.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v3.3.0/" class="md-nav__link">
   
   
   
@@ -8928,7 +8937,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v3.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v3.2.0/" class="md-nav__link">
   
   
   
@@ -8949,7 +8958,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v3.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v3.1.0/" class="md-nav__link">
   
   
   
@@ -8970,7 +8979,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v3.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v3.0.0/" class="md-nav__link">
   
   
   
@@ -9043,7 +9052,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v2.2.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v2.2.1/" class="md-nav__link">
   
   
   
@@ -9064,7 +9073,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v2.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v2.2.0/" class="md-nav__link">
   
   
   
@@ -9085,7 +9094,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v2.1.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v2.1.1/" class="md-nav__link">
   
   
   
@@ -9106,7 +9115,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v2.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v2.1.0/" class="md-nav__link">
   
   
   
@@ -9127,7 +9136,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v2.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v2.0.0/" class="md-nav__link">
   
   
   
@@ -9200,7 +9209,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v1.5.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v1.5.0/" class="md-nav__link">
   
   
   
@@ -9221,7 +9230,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v1.4.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v1.4.0/" class="md-nav__link">
   
   
   
@@ -9242,7 +9251,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v1.3.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v1.3.0/" class="md-nav__link">
   
   
   
@@ -9263,7 +9272,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v1.2.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v1.2.0/" class="md-nav__link">
   
   
   
@@ -9284,7 +9293,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v1.1.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v1.1.0/" class="md-nav__link">
   
   
   
@@ -9305,7 +9314,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v1.0.1/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v1.0.1/" class="md-nav__link">
   
   
   
@@ -9326,7 +9335,7 @@
   
   
   
-    <li class="md-nav__item"><a href="../../self-hosted/self-hosted-v1.0.0/" class="md-nav__link">
+    <li class="md-nav__item"><a href="../../../release-notes/self-hosted/self-hosted-v1.0.0/" class="md-nav__link">
   
   
   
@@ -9382,28 +9391,37 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
-  <a href="#product-enhancements" class="md-nav__link">
+  <a href="#uploading-an-sbom-to-codacy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Product enhancements
+        Uploading an SBOM to Codacy
       
     </span>
   </a>
   
 </li><li class="md-nav__item">
-  <a href="#bug-fixes" class="md-nav__link">
+  <a href="#listing-the-image-tags-you-have-uploaded" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bug fixes
+        Listing the image tags you have uploaded
       
     </span>
   </a>
   
 </li><li class="md-nav__item">
-  <a href="#tool-updates" class="md-nav__link">
+  <a href="#deleting-an-image-tag" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tool updates
+        Deleting an image tag
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#example-uploading-an-sbom-from-your-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: uploading an SBOM from your pipeline
       
     </span>
   </a>
@@ -9433,8 +9451,8 @@
   
     
     
-      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../../" class="md-path__link">
-  <span class="md-ellipsis">Release notes</span>
+      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../../../developer-tools/" class="md-path__link">
+  <span class="md-ellipsis">Developer tools</span>
 </a></li>
     
   
@@ -9445,17 +9463,9 @@
   
     
     
-      
-  
-  
-    
-    
-      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../cloud-2026-09-adding-oxlint/" class="md-path__link">
-  <span class="md-ellipsis">Cloud</span>
+      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../../using-the-codacy-api/" class="md-path__link">
+  <span class="md-ellipsis">Codacy API</span>
 </a></li>
-    
-  
-
     
   
 
@@ -9465,8 +9475,8 @@
   
     
     
-      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../cloud-2024-12/" class="md-path__link">
-  <span class="md-ellipsis">2024</span>
+      <li class="md-path__item"><svg class="docs-icon docs-ionicon docs-ionicon--breadcrumb" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg><a href="../adding-people-to-codacy-programmatically/" class="md-path__link">
+  <span class="md-ellipsis">Examples</span>
 </a></li>
     
   
@@ -9485,33 +9495,115 @@
 
 
 
-<h1 id="cloud-september-2024">Cloud September 2024<a class="headerlink" href="#cloud-september-2024" title="Permanent link">#</a></h1>
-<p>These release notes are for the Codacy Cloud updates during September 2024.</p>
-<p>📢 <a href="https://roadmap.codacy.com">Visit the Codacy roadmap</a> and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!</p>
-<h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
+<h1 id="uploading-container-image-sboms-to-codacy">Uploading container image SBOMs to Codacy<a class="headerlink" href="#uploading-container-image-sboms-to-codacy" title="Permanent link">#</a></h1>
+<p>Codacy scans your container images for known vulnerabilities from an SBOM (Software Bill of Materials) that you upload. If your pipeline already produces an SBOM, or you generate one with a tool other than the <a href="https://github.com/codacy/codacy-cli-v2">Codacy CLI v2</a>, you can upload it directly through the API and monitor the results as findings under <a href="../../../security/container-scanning/">Container scanning</a>.</p>
+<p>Before you automate this, read <a href="../../../security/container-scanning/#how-tagging-affects-your-findings">how tagging affects your findings</a>. The tag you upload to decides whether Codacy keeps one set of findings for the image or starts a new set with every release, and it's the choice that's hardest to reverse.</p>
+<h2 id="uploading-an-sbom-to-codacy">Uploading an SBOM to Codacy<a class="headerlink" href="#uploading-an-sbom-to-codacy" title="Permanent link">#</a></h2>
+<ol>
+<li>
+<p>Generate an SBOM of your container image in CycloneDX or SPDX format, using the tool of your choice.</p>
+</li>
+<li>
+<p>Upload it to Codacy using the API endpoint <a href="https://app.codacy.com/api/api-docs#uploadimagesbom"><span class="skip-vale">uploadImageSbom</span></a>:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/image-sboms<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: multipart/form-data&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-F<span class="w"> </span><span class="s1">&#39;sbom=@&lt;SBOM_PATH&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-F<span class="w"> </span><span class="s1">&#39;imageName=&lt;IMAGE_NAME&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-F<span class="w"> </span><span class="s1">&#39;tag=&lt;TAG&gt;&#39;</span>
+</code></pre></div>
+<p>A successful upload returns <code>204 No Content</code>. The image is scanned on the next nightly run, not immediately.</p>
+</li>
+</ol>
+<p>Replace the placeholders with your own values:</p>
 <ul>
-<li>Jscpd supports new languages: Rust, CoffeeScript, Objective C, Elixir, Groovy, and VisualBasic (TCE-1021)</li>
-<li>The issue card now shows next to the code pattern, the source of the configuration requiring that pattern: repository rules, coding standards, or configuration file (ALA-1231)</li>
-<li>When applying multiple coding standards to the same repository, if a conflict between parameters in the same enforced pattern is found, it shows a warning on the repository code patterns page (ALA-1232)</li>
-<li>In the repository code patterns show a tooltip in enforced tools and patterns with the names of the Coding Standards that require those tools or patterns (ALA-1230)</li>
-<li>Revamped coverage: deleted old coverage pages and added a new repository page for coverage with new insights (CY-7340)</li>
-<li>Changed the order by the findings list of SRM are sorted, which means now they're sorted by first detected (TAROT-2822)</li>
-<li>Readability improvements in the tooltip of the 'Open findings (last 3 months)' chart in the SRM tab (TAROT-2825)</li>
-<li>Added new field with open findings of the current week on the first widget of SRM overview page (TAROT-2823)</li>
+<li><strong>API_KEY:</strong> <a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
+<li>
+<p><strong>GIT_PROVIDER:</strong> Git provider hosting the organization, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Git provider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gh</code></td>
+<td>GitHub Cloud</td>
+</tr>
+<tr>
+<td><code>gl</code></td>
+<td>GitLab Cloud</td>
+</tr>
+<tr>
+<td><code>bb</code></td>
+<td>Bitbucket Cloud</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>.</p>
+</li>
+<li><strong>SBOM_PATH:</strong> Path to the file containing the SBOM.</li>
+<li><strong>IMAGE_NAME:</strong> Name of the container image, without a tag. For example, <code>myapp</code>.</li>
+<li><strong>TAG:</strong> Tag to record the findings against. For example, <code>prod</code> or <code>1.4.2</code>.</li>
 </ul>
-<h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
+<p>The form also accepts two optional fields:</p>
 <ul>
-<li>Fixed a problem where an analysis could have extra Patterns enabled when using a coding standard alongside repository-level customizations (ALA-1247)</li>
-<li>Fixed a bug where some tools could be missing, if 'back' and 'next' actions would be performed multiple times in a row while editing a coding standard (ALA-1239)</li>
-<li>Fixed an issue where existing DAST findings (in the SRM tab) for a given host would be closed if a DAST report for a different host was submitted (TAROT-2807)</li>
+<li><strong>repositoryName:</strong> Repository to associate the image with, so findings link back to it.</li>
+<li><strong>environment:</strong> Environment where the image is deployed, such as <code>production</code>. It appears in the tag list.</li>
 </ul>
-<h2 id="tool-updates">Tool updates<a class="headerlink" href="#tool-updates" title="Permanent link">#</a></h2>
-<ul>
-<li><strong>Detekt</strong> has a new version: <strong>1.23.7</strong> ( updated from 1.23.5 )</li>
-<li><strong>Spotbugs</strong> has a new version: <strong>4.8.4</strong> ( updated from 4.8.3 )</li>
-<li><strong>TSQLlint</strong> has a new version: <strong>1.15.3</strong> ( updated from 1.11.1 )</li>
-<li><strong>Trivy</strong> has a new version: <strong>0.55.2</strong> ( updated from 0.54.1 )</li>
-</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The tag you send in the <code>tag</code> field must match the tag recorded inside the SBOM, or the upload is rejected with <code>400 Bad Request</code> and the message <code>SBOM tag mismatch: expected &lt;x&gt;, found &lt;y&gt;</code>. Tools differ in where they write the image reference: Trivy writes the full <code>name:tag</code> into the component name inside the SBOM, while some other generators write the name and the tag in different fields. Check what your generator produces before scripting this.</p>
+</div>
+<h2 id="listing-the-image-tags-you-have-uploaded">Listing the image tags you have uploaded<a class="headerlink" href="#listing-the-image-tags-you-have-uploaded" title="Permanent link">#</a></h2>
+<p>To retrieve the tags Codacy holds for an image, use the endpoint <a href="https://app.codacy.com/api/api-docs#listimagetags"><span class="skip-vale">listImageTags</span></a>:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s1">&#39;https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/images/&lt;IMAGE_NAME&gt;/tags?limit=100&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Accept: application/json&#39;</span>
+</code></pre></div>
+<p>The endpoint returns at most 100 tags per request and paginates with a cursor. See <a href="../../using-the-codacy-api/#using-pagination">using pagination</a> to retrieve the remaining pages.</p>
+<h2 id="deleting-an-image-tag">Deleting an image tag<a class="headerlink" href="#deleting-an-image-tag" title="Permanent link">#</a></h2>
+<p>Your organization can hold 1,000 image tags in total. Once you reach that limit, Codacy stops accepting image tags it hasn't seen before, so a pipeline that uploads a new tag on every release stops being scanned. To make room, delete the tags for releases you no longer support using <a href="https://app.codacy.com/api/api-docs#deleteimagetag"><span class="skip-vale">deleteImageTag</span></a>:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>DELETE<span class="w"> </span>https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/image-sboms/&lt;IMAGE_NAME&gt;/tags/&lt;TAG&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span>
+</code></pre></div>
+<p>Deleting a tag removes its scan history and findings. To delete an image and all its tags at once, call the same endpoint without the <code>/tags/&lt;TAG&gt;</code> segment.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To prune tags on a schedule rather than one at a time, the <a href="../../../codacy-cloud-cli/#keep-latest">Codacy Cloud CLI</a> does this in one command: <code>codacy image gh my-org my-service --delete --keep-latest 10</code>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>When your organization is at the limit, the upload fails with the message <code>Organization has reached the maximum limit of 1000 image SBOMs</code>. The tags you already have keep being scanned every day, so nothing else reports the problem. Match on the message rather than the status code, which is being made more specific.</p>
+</div>
+<h2 id="example-uploading-an-sbom-from-your-pipeline">Example: uploading an SBOM from your pipeline<a class="headerlink" href="#example-uploading-an-sbom-from-your-pipeline" title="Permanent link">#</a></h2>
+<p>Use this example Bash script to upload an image SBOM to Codacy. This example can be adapted to fit your specific needs.</p>
+<p>The example script:</p>
+<ol>
+<li>Defines the <a href="../../api-tokens/#account-api-tokens">API token</a> used to authenticate on the Codacy API.</li>
+<li>Defines the image name and the tag to record the findings against.</li>
+<li>Calls the endpoint <a href="https://app.codacy.com/api/api-docs#uploadimagesbom"><span class="skip-vale">uploadImageSbom</span></a> to upload the SBOM.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your API token&gt;&quot;</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span><span class="w"> </span><span class="c1"># e.g., gh for GitHub</span>
+<span class="nv">ORGANIZATION_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
+<span class="nv">IMAGE_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;your image name&gt;&quot;</span><span class="w">     </span><span class="c1"># e.g., myapp</span>
+<span class="nv">IMAGE_TAG</span><span class="o">=</span><span class="s2">&quot;prod&quot;</span><span class="w">                   </span><span class="c1"># one tag, reused every release</span>
+<span class="nv">SBOM_FILE_PATH</span><span class="o">=</span><span class="s2">&quot;sbom.cyclonedx.json&quot;</span>
+
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION_NAME</span><span class="s2">/image-sboms&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: multipart/form-data&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-F<span class="w"> </span><span class="s2">&quot;sbom=@</span><span class="nv">$SBOM_FILE_PATH</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-F<span class="w"> </span><span class="s2">&quot;imageName=</span><span class="nv">$IMAGE_NAME</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-F<span class="w"> </span><span class="s2">&quot;tag=</span><span class="nv">$IMAGE_TAG</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-F<span class="w"> </span><span class="s2">&quot;environment=production&quot;</span>
+</code></pre></div>
+<p>To record a separate set of findings per release, set <code>IMAGE_TAG</code> to the version your pipeline built instead, and delete the tags you no longer support so you stay under your organization limit.</p>
 
   
     
@@ -9520,7 +9612,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2024-10-09 14:49:30"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 9, 2024</span></time>
+    <time datetime="2026-09-22 13:54:57"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
   </aside>
 
 
@@ -9545,10 +9637,10 @@
       <button type="button" data-feedback-send>Send feedback</button>
     </div>
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
-    <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Cloud%20September%202024%22">open an issue on GitHub</a>.</p>
+    <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Uploading%20container%20image%20SBOMs%20to%20Codacy%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/docs/edit/master/docs/release-notes/cloud/cloud-2024-09.md">Edit this page on GitHub</a>
-      <a href="mailto:support@codacy.com?subject=Question%20regarding%20Cloud%20September%202024">Contact support</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/codacy-api/examples/uploading-container-image-sboms.md">Edit this page on GitHub</a>
+      <a href="mailto:support@codacy.com?subject=Question%20regarding%20Uploading%20container%20image%20SBOMs%20to%20Codacy">Contact support</a>
     </p>
   </section>
   <script>
@@ -9586,8 +9678,8 @@
 
   
     <nav class="docs-page-nav" aria-label="Page navigation">
-      <a href="../cloud-2024-10/"><span>Previous</span><strong>Cloud October 2024</strong></a>
-      <a href="../cloud-2024-09-adding-eslint9-and-pmd7/" class="docs-page-nav__next"><span>Next</span><strong>Adding ESLint 9 and PMD 7 as new supported tools September, 2024</strong></a>
+      <a href="../uploading-dast-results/"><span>Previous</span><strong>Uploading DAST results to Codacy</strong></a>
+      <a href="../triggering-dast-scans/" class="docs-page-nav__next"><span>Next</span><strong>Trigger Dynamic Application Security Testing (DAST) scans</strong></a>
     </nav>
   
 
