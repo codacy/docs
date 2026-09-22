@@ -52,6 +52,43 @@ Once you reach the limit, Codacy stops accepting image tags it has not seen befo
 
 To make room, delete the image tags for releases you no longer support. You can delete a single tag from the tag list of an image, or delete an image to remove all its tags at once. To prune tags automatically as part of a pipeline, use the [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest).
 
+### Reducing findings on an image that already has many tags
+
+Changing the tag your pipeline uploads to does not change the findings you already have. The tags you accumulated keep their own findings, and Codacy keeps scanning every one of them every night, so the finding count stays where it is until you remove the tags behind it.
+
+To bring an image back under control:
+
+1.  Point your pipeline at a single tag, following [one list, kept up to date](#how-tagging-affects-your-findings). New releases now update one set of findings instead of starting another.
+
+1.  List the tags Codacy holds for the image, so you know what you are working with. The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#manage-container-images) needs an [account API token](../codacy-api/api-tokens.md#account-api-tokens), from `codacy login` or the `CODACY_API_TOKEN` environment variable:
+
+    ```bash
+    export CODACY_API_TOKEN="<your account API token>"
+
+    codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" --limit 1000
+    ```
+
+1.  Check what a cleanup would remove, without removing anything:
+
+    ```bash
+    codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
+      --delete --keep-latest 10 --dry-run
+    ```
+
+1.  Delete the tags for releases you no longer support:
+
+    ```bash
+    codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
+      --delete --keep-latest 10
+    ```
+
+Deleting a tag deletes the findings recorded against it, along with its scan history. The finding counts drop once the deletions have been processed, which happens shortly after the command returns rather than immediately. Keep the tags for the releases you still run in production, since those are the findings that describe something you are actually exposed to.
+
+!!! important
+    Deleting an image tag cannot be undone. Start with `--dry-run`, and keep the tags for every release you still support.
+
+Tags accumulate per image, so find the images responsible before you start. `codacy images gh <organization>` lists every image in the organization, and usually a small number of them account for most of the tags.
+
 ## Container scanning setup
 
 You can set up container scanning in one of two ways: by connecting your CI/CD pipeline or by manually uploading your image SBOM. Once configured, your image dependencies are scanned daily and results will appear in the Image card list.
@@ -127,7 +164,7 @@ codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
 
 Every release adds an image tag, so clean up on every run to stay under your organization limit. Put the cleanup **before** the upload: at the limit the upload is rejected, so a pipeline that uploads first and cleans up later stops making progress. Add `--dry-run` to see which tags would go without deleting anything.
 
-The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest) reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later. It can also upload the SBOM itself with `--upload`, if your pipeline already produces one.
+The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest) reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later.
 
 Replace the placeholders with your own values:
 
@@ -145,6 +182,41 @@ Replace the placeholders with your own values:
 -   **IMAGE_VERSION:** The tag your pipeline built, such as `1.4.2`. Only used by the per-release example.
 -   **REPOSITORY_NAME:** Optional. Name of the repository to associate the image with, so findings link back to it.
 -   **`-e`:** Optional. Environment where the image is deployed, such as `production`. It appears in the tag list.
+
+#### If your pipeline already produces an SBOM
+
+The examples above use the Codacy CLI v2 because it generates the SBOM and uploads it in one step. If your pipeline already produces an SBOM in CycloneDX or SPDX format, upload that file directly with the [Codacy Cloud CLI](../codacy-cloud-cli/index.md#manage-container-images) instead. It reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later.
+
+```bash
+npm install -g "@codacy/codacy-cloud-cli"
+
+# Uses the CODACY_API_TOKEN you set in step 1.
+```
+
+To keep one list of findings, upload every release to the same tag:
+
+```bash
+codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
+  --tag prod \
+  --upload "${SBOM_FILE}" \
+  --environment production \
+  --repository "${REPOSITORY_NAME}"
+```
+
+To keep a separate list per release, clean up first and then upload under the release tag:
+
+```bash
+codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
+  --delete --keep-latest 10 --skip-confirmation
+
+codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
+  --tag "${IMAGE_VERSION}" \
+  --upload "${SBOM_FILE}" \
+  --environment production \
+  --repository "${REPOSITORY_NAME}"
+```
+
+This path never resolves the image itself, so it needs no `docker tag` alias: it attaches the SBOM file you name to the tag you name.
 
 ### Manual upload
 You can also manually upload your container's Software Bill of Materials (SBOM) in CycloneDX or SPDX format.
