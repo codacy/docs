@@ -173,7 +173,7 @@ This information is also included when using `--output json`.
 List the container images with SBOMs uploaded to an organization, inspect an image's tags, upload an SBOM, and delete tags you no longer need. These commands require an [account API token](../codacy-api/api-tokens.md#account-api-tokens), because they read organization-level data.
 
 !!! note
-    Available from Codacy Cloud CLI 1.12.0.
+    Available from Codacy Cloud CLI 1.12.1.
 
 ```bash
 # List the images in an organization, with their latest tag

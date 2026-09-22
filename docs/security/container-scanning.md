@@ -172,7 +172,7 @@ codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
 
 Every release adds an image tag, so clean up on every run to stay under your organization limit. Put the cleanup **before** the upload: at the limit the upload is rejected, so a pipeline that uploads first and cleans up later can't make progress. Add `--dry-run` to see which tags would go without deleting anything.
 
-The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest) reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later.
+The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest) reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.1 or later.
 
 Both examples use these placeholders. Replace them with your own values:
 
@@ -193,7 +193,7 @@ Both examples use these placeholders. Replace them with your own values:
 
 #### If your pipeline already produces an SBOM
 
-The examples above use the Codacy CLI v2 because it generates the SBOM and uploads it in one step. If your pipeline already produces an SBOM in CycloneDX or SPDX format, upload that file directly with the [Codacy Cloud CLI](../codacy-cloud-cli/index.md#manage-container-images) instead. It reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later.
+The examples above use the Codacy CLI v2 because it generates the SBOM and uploads it in one step. If your pipeline already produces an SBOM in CycloneDX or SPDX format, upload that file directly with the [Codacy Cloud CLI](../codacy-cloud-cli/index.md#manage-container-images) instead. It reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.1 or later.
 
 ```bash
 npm install -g "@codacy/codacy-cloud-cli"
