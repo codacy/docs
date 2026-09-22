@@ -168,6 +168,67 @@ This information is also included when using `--output json`.
 !!! note
     Not every advisory lists specific affected functions — this section only appears when Codacy has identified them.
 
+### Manage container images {: id="manage-container-images"}
+
+List the container images with SBOMs uploaded to an organization, inspect an image's tags, upload an SBOM, and delete tags you no longer need. These commands require an [account API token](../codacy-api/api-tokens.md#account-api-tokens), because they read organization-level data.
+
+!!! note
+    Available from Codacy Cloud CLI 1.12.0.
+
+```bash
+# List the images in an organization, with their latest tag
+codacy images gh my-org
+
+# List an image's tags, with environment, repository, and analysis dates
+codacy image gh my-org my-service
+
+# Show a single tag
+codacy image gh my-org my-service --tag 1.2.3
+```
+
+Both commands return 100 results by default. Use `--limit` to raise that, up to 1000.
+
+Upload an SBOM your pipeline already produced, in SPDX or CycloneDX format:
+
+```bash
+codacy image gh my-org my-service --tag 1.2.3 --upload ./sbom.json
+
+# Record where the image runs and which repository it belongs to
+codacy image gh my-org my-service --tag prod --upload ./sbom.json \
+  --environment production --repository my-repo
+```
+
+The file is checked before the request, so a wrong path or an empty file fails immediately.
+
+Delete a single tag, or the whole image:
+
+```bash
+# One tag
+codacy image gh my-org my-service --tag 1.2.3 --delete
+
+# Every tag of the image
+codacy image gh my-org my-service --delete
+```
+
+### Keep container image tags under the organization limit {: id="keep-latest"}
+
+An organization can hold 1000 image tags in total. Once it reaches that limit, Codacy stops accepting image tags it has not seen before, so a pipeline that uploads a new tag on every release stops being scanned. See [how tagging affects your findings](../security/container-scanning.md#how-tagging-affects-your-findings).
+
+`--keep-latest` deletes the older tags of an image, keeping the most recently uploaded ones. Run it as the cleanup step of a release pipeline, **before** the upload, so that the space is freed before the new tag needs it:
+
+```bash
+# Show what would be deleted, delete nothing
+codacy image gh my-org my-service --delete --keep-latest 10 --dry-run
+
+# Delete, without prompting — for CI
+codacy image gh my-org my-service --delete --keep-latest 10 --skip-confirmation
+```
+
+Deletes run one at a time and continue past failures, so a partial cleanup still frees space. Under `--output json` the command emits a single object listing the tags in `deleted` and the ones that failed in `failures`, and exits non-zero if any tag failed.
+
+!!! important
+    The organization limit counts image-and-tag pairs, while `--keep-latest` applies per image. Keeping 10 tags across 212 images is 2120 tags against a limit of 1000. The command warns when the number you ask for would exceed the limit across every image in the organization, and says what the limit allows per image instead.
+
 ### List and filter pull requests
 
 ```bash

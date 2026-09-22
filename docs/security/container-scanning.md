@@ -50,7 +50,7 @@ Your organization can hold 1,000 image tags in total, counted across all your im
 
 Once you reach the limit, Codacy stops accepting image tags it has not seen before. The tags you already have keep being scanned every day, so the images list still looks healthy, but the release you just shipped is not scanned at all. The only signal is the error returned to your pipeline.
 
-To make room, delete the image tags for releases you no longer support. You can delete a single tag from the tag list of an image, or delete an image to remove all its tags at once.
+To make room, delete the image tags for releases you no longer support. You can delete a single tag from the tag list of an image, or delete an image to remove all its tags at once. To prune tags automatically as part of a pipeline, use the [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest).
 
 ## Container scanning setup
 
@@ -107,9 +107,15 @@ docker tag "${IMAGE_NAME}:${IMAGE_VERSION}" "${IMAGE_NAME}:prod"
 
 The `docker tag` alias stays on the build machine and is never pushed. Without it the CLI resolves `prod` against your registry and scans whatever that tag points at there, rather than the image your pipeline just built.
 
-To keep [a separate list per release](#how-tagging-affects-your-findings), upload the release tag instead:
+To keep [a separate list per release](#how-tagging-affects-your-findings), delete the tags you no longer need and then upload the release tag:
 
 ```bash
+npm install -g "@codacy/codacy-cloud-cli"
+
+# Keep the 10 most recently uploaded tags, delete the rest
+codacy image gh "${ORGANIZATION_NAME}" "${IMAGE_NAME}" \
+  --delete --keep-latest 10 --skip-confirmation
+
 ./codacy-cli.sh upload-sbom \
   -a "${CODACY_API_TOKEN}" \
   -p gh \
@@ -119,7 +125,9 @@ To keep [a separate list per release](#how-tagging-affects-your-findings), uploa
   "${IMAGE_NAME}:${IMAGE_VERSION}"
 ```
 
-Every release adds an image tag, so delete the tags for releases you no longer support to stay under your organization limit.
+Every release adds an image tag, so clean up on every run to stay under your organization limit. Put the cleanup **before** the upload: at the limit the upload is rejected, so a pipeline that uploads first and cleans up later stops making progress. Add `--dry-run` to see which tags would go without deleting anything.
+
+The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest) reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later. It can also upload the SBOM itself with `--upload`, if your pipeline already produces one.
 
 Replace the placeholders with your own values:
 

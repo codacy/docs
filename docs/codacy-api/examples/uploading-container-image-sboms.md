@@ -72,6 +72,9 @@ curl -X DELETE https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGAN
 
 Deleting a tag removes its scan history and findings. To delete an image and all its tags at once, call the same endpoint without the `/tags/<TAG>` segment.
 
+!!! tip
+    To prune tags on a schedule rather than one at a time, the [Codacy Cloud CLI](../../codacy-cloud-cli/index.md#keep-latest) does this in one command: `codacy image gh my-org my-service --delete --keep-latest 10`.
+
 !!! important
     When your organization is at the limit, the upload fails with the message `Organization has reached the maximum limit of 1000 image SBOMs`. The tags you already have keep being scanned every day, so nothing else reports the problem. Match on the message rather than the status code, which is being made more specific.
 
