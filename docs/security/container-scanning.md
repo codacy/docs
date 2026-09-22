@@ -28,8 +28,8 @@ Codacy keeps a separate set of findings for every image tag you upload, and scan
 
 You have two options:
 
-- **One list, kept up to date.** Upload every build to the same tag, such as `prod`. Each upload replaces the last, so vulnerabilities you fix close automatically and your dismissals and owners carry over.
-- **A separate list per release.** Upload each build to a new tag, such as `1.4.2`. Every release starts its own set of findings, so a vulnerability you fixed in your newest release stays open on the older ones.
+- **One list, kept up to date.** Upload every build to the same tag, such as `prod`. Each upload replaces the last, so vulnerabilities you fix close automatically and your dismissals and owners carry over. [See the pipeline example](#example-one-list).
+- **A separate list per release.** Upload each build to a new tag, such as `1.4.2`. Every release starts its own set of findings, so a vulnerability you fixed in your newest release stays open on the older ones. [See the pipeline example](#example-per-release).
 
 This changes what Codacy scans, not what you deploy. You can keep deploying from an immutable tag or a digest while pointing Codacy at a single rolling tag.
 
@@ -132,7 +132,9 @@ chmod +x codacy-cli.sh
 
 `upload-sbom` reads a Codacy configuration from the working directory, which is what `init` creates. Without it the upload stops with `No configuration file was found, execute init command first.`
 
-To keep [one list of findings, kept up to date](#how-tagging-affects-your-findings), point your rolling tag at the image you just built and upload that:
+#### Example: one list, kept up to date {: id="example-one-list"}
+
+For [one list of findings, kept up to date](#how-tagging-affects-your-findings), point your rolling tag at the image you just built and upload that:
 
 ```bash
 docker tag "${IMAGE_NAME}:${IMAGE_VERSION}" "${IMAGE_NAME}:prod"
@@ -148,7 +150,9 @@ docker tag "${IMAGE_NAME}:${IMAGE_VERSION}" "${IMAGE_NAME}:prod"
 
 The `docker tag` alias stays on the build machine and is never pushed. Without it the CLI resolves `prod` against your registry and scans whatever that tag points at there, rather than the image your pipeline just built.
 
-To keep [a separate list per release](#how-tagging-affects-your-findings), delete the tags you no longer need and then upload the release tag:
+#### Example: a separate list per release {: id="example-per-release"}
+
+For [a separate list per release](#how-tagging-affects-your-findings), delete the tags you no longer need and then upload the release tag:
 
 ```bash
 npm install -g "@codacy/codacy-cloud-cli"
@@ -170,7 +174,7 @@ Every release adds an image tag, so clean up on every run to stay under your org
 
 The [Codacy Cloud CLI](../codacy-cloud-cli/index.md#keep-latest) reads the same `CODACY_API_TOKEN` you set in step 1, and needs version 1.12.0 or later.
 
-Replace the placeholders with your own values:
+Both examples use these placeholders. Replace them with your own values:
 
 -   **CODACY_API_TOKEN:** [Account API token](../codacy-api/api-tokens.md#account-api-tokens) used to authenticate on Codacy, set as described in step 1 of the setup page.
 -   **`-p`:** Git provider hosting the organization, using one of the values in the table below. For example, `gh` for GitHub Cloud.
