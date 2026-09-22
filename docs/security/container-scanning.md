@@ -22,6 +22,36 @@ The security tool analyzes your uploaded SBOM (Software Bill of Materials) files
 
 No manual action is required to trigger scans after the initial setup.
 
+## How tagging affects your findings
+
+Codacy keeps a separate set of findings for every image tag you upload, and scans each of those tags once a day. The tag you upload to therefore decides how your findings behave over time, and it is the setup choice that is hardest to reverse: findings you have already accumulated stay on the tags that produced them.
+
+You have two options:
+
+- **One list, kept up to date.** Upload every build to the same tag, such as `prod`. Each upload replaces the last, so vulnerabilities you fix close automatically and your dismissals and owners carry over.
+- **A separate list per release.** Upload each build to a new tag, such as `1.4.2`. Every release starts its own set of findings, so a vulnerability you fixed in your newest release stays open on the older ones.
+
+This changes what Codacy scans, not what you deploy. You can keep deploying from an immutable tag or a digest while pointing Codacy at a single rolling tag.
+
+|  | One list, kept up to date | A separate list per release |
+| --- | --- | --- |
+| Findings across releases | The same findings are updated | A new set every release |
+| A vulnerability you fixed | Closes automatically | Stays open on the older tags |
+| Dismissals and owners | Carry over to the next upload | Reset on every release |
+| SLA and MTTR | Measured across the life of the image | Restart with every release |
+| Which build introduced a vulnerability | Not recorded | Recorded exactly |
+| Image tags stored | One per image | One per release |
+
+Upload to a single tag unless you need a per-release record of what shipped.
+
+### What the image tag limit does
+
+Your organization can hold 1,000 image tags in total, counted across all your images. Uploading again to a tag Codacy already holds does not count against the limit, so an organization that uploads every image to a single rolling tag can stay under it indefinitely.
+
+Once you reach the limit, Codacy stops accepting image tags it has not seen before. The tags you already have keep being scanned every day, so the images list still looks healthy, but the release you just shipped is not scanned at all. The only signal is the error returned to your pipeline.
+
+To make room, delete the image tags for releases you no longer support. You can delete a single tag from the tag list of an image, or delete an image to remove all its tags at once.
+
 ## Container scanning setup
 
 You can set up container scanning in one of two ways: by connecting your CI/CD pipeline or by manually uploading your image SBOM. Once configured, your image dependencies are scanned daily and results will appear in the Image card list.
@@ -38,11 +68,57 @@ In order to do that, you need to:
 
 When CI/CD is configured:
 
-- Images pushed through your pipeline are automatically detected
-- New tags are picked up as they're published
-- Scans are scheduled automatically
+- Every pipeline run uploads an SBOM for the image and tag you name in the command
+- Codacy scans each image tag you have uploaded once per day
+- No manual action is required between releases
 
 This is the recommended setup for continuous coverage.
+
+#### Example pipeline steps
+
+These examples use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2), which generates the SBOM from your image and uploads it in a single command. They assume you have already set `CODACY_API_TOKEN` as described above.
+
+Install the CLI once per pipeline run:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/codacy/codacy-cli-v2/main/codacy-cli.sh -o codacy-cli.sh
+chmod +x codacy-cli.sh
+./codacy-cli.sh init
+```
+
+`upload-sbom` reads a Codacy configuration from the working directory, which is what `init` creates. Without it the upload stops with `No configuration file was found, execute init command first.`
+
+To keep [one list of findings, kept up to date](#how-tagging-affects-your-findings), point your rolling tag at the image you just built and upload that:
+
+```bash
+docker tag "${IMAGE_NAME}:${IMAGE_VERSION}" "${IMAGE_NAME}:prod"
+
+./codacy-cli.sh upload-sbom \
+  -a "${CODACY_API_TOKEN}" \
+  -p gh \
+  -o "${ORGANIZATION_NAME}" \
+  -r "${REPOSITORY_NAME}" \
+  -e production \
+  "${IMAGE_NAME}:prod"
+```
+
+The `docker tag` alias stays on the build machine and is never pushed. Without it the CLI resolves `prod` against your registry and scans whatever that tag points at there, rather than the image your pipeline just built.
+
+To keep [a separate list per release](#how-tagging-affects-your-findings), upload the release tag instead:
+
+```bash
+./codacy-cli.sh upload-sbom \
+  -a "${CODACY_API_TOKEN}" \
+  -p gh \
+  -o "${ORGANIZATION_NAME}" \
+  -r "${REPOSITORY_NAME}" \
+  -e production \
+  "${IMAGE_NAME}:${IMAGE_VERSION}"
+```
+
+Every release adds an image tag, so delete the tags for releases you no longer support to stay under your organization limit.
+
+Replace `gh` with `gl` for GitLab or `bb` for Bitbucket. The `-r` and `-e` options are optional.
 
 ### Manual upload
 You can also manually upload your container's Software Bill of Materials (SBOM) in CycloneDX or SPDX format.
@@ -54,6 +130,8 @@ To manually upload an image SBOM, you need to:
 1. Add the image name;
 2. Add the image tag;
 3. Upload your SBOM file (environment and repository fields are optional).
+
+Reuse a tag and each upload replaces the last. A new tag starts its own set of findings, so choose it with care: see [How tagging affects your findings](#how-tagging-affects-your-findings).
 
 !!! note
     You can use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to generate and upload your SBOM file to Codacy.
@@ -86,8 +164,9 @@ For the image tags, the list is sorted by latest uploaded, and the information i
 Once a tag is scanned, you can click on the `check findings` link to access the findings page filtered by the respective results.
 
 !!! important
-    Findings are tied to specific image tags. To resolve a finding, "bump" the tag to a newer version if a fixed version exists (if not, a downgrade or an alternative image may be required). 
-    For dynamic tags such as `latest`, Codacy will automatically close findings that are no longer present in the current analysis. If you use static tags, you will need to delete tags that are no longer used, as there's a limit of 1000 tags per organization.
+    Findings are tied to a specific image tag. To resolve one, upload an image where the dependency is fixed, usually by bumping it to a newer version. Where no fix exists, a downgrade or an alternative base image may be required.
+
+Whether that fix also closes the finding on your other tags depends on how you tag your images. See [How tagging affects your findings](#how-tagging-affects-your-findings).
 
 ## Deleting container image files from Codacy
 
