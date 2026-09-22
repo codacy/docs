@@ -118,7 +118,22 @@ To keep [a separate list per release](#how-tagging-affects-your-findings), uploa
 
 Every release adds an image tag, so delete the tags for releases you no longer support to stay under your organization limit.
 
-Replace `gh` with `gl` for GitLab or `bb` for Bitbucket. The `-r` and `-e` options are optional.
+Replace the placeholders with your own values:
+
+-   **CODACY_API_TOKEN:** [Account API token](../codacy-api/api-tokens.md#account-api-tokens) used to authenticate on Codacy, set as described in step 1 of the setup page.
+-   **`-p`:** Git provider hosting the organization, using one of the values in the table below. For example, `gh` for GitHub Cloud.
+
+    | Value | Git provider    |
+    |-------|-----------------|
+    | `gh`  | GitHub Cloud    |
+    | `gl`  | GitLab Cloud    |
+    | `bb`  | Bitbucket Cloud |
+
+-   **ORGANIZATION_NAME:** Name of the organization on the Git provider. For example, `codacy`.
+-   **IMAGE_NAME:** Name of the container image, without a tag. For example, `myapp`.
+-   **IMAGE_VERSION:** The tag your pipeline built, such as `1.4.2`. Only used by the per-release example.
+-   **REPOSITORY_NAME:** Optional. Name of the repository to associate the image with, so findings link back to it.
+-   **`-e`:** Optional. Environment where the image is deployed, such as `production`. It appears in the tag list.
 
 ### Manual upload
 You can also manually upload your container's Software Bill of Materials (SBOM) in CycloneDX or SPDX format.
