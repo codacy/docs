@@ -41,6 +41,22 @@ You're also able to click any dependency to find out more information about it.
 
  The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>1</sup></a> applied to any particular version of that dependency, and the [OSSF Scorecard](#ossf-scorecard) security assessment.
 
+## Exporting an SBOM
+
+You can export the Software Bill of Materials (SBOM) for a specific repository from the Dependencies page. Codacy generates the export in CycloneDX format, covering the repository's latest scanned dependencies.
+
+<!-- TODO: verify screenshot of the Export SBOM modal -->
+
+To export an SBOM:
+
+1. On the Dependencies page, click **Export** in the top-right corner.
+2. Select **Export SBOM**.
+3. In the **Export SBOM** modal, select a repository from the **Repository** dropdown.
+4. Click **Export** to download the SBOM as a JSON file.
+
+!!! note
+    SBOM export is only available for repositories with dependency findings. If the repository you select has none, the modal asks you to pick a different one.
+
 ## OSSF Scorecard {: id="ossf-scorecard"}
 
 The **OSSF Scorecard** feature provides additional security insights for your dependencies by displaying security assessment data from the Open Source Security Foundation (OSSF) Scorecard project.
