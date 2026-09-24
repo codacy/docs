@@ -45,8 +45,6 @@ You're also able to click any dependency to find out more information about it.
 
 You can export the Software Bill of Materials (SBOM) for a specific repository from the Dependencies page. Codacy generates the export in CycloneDX format, covering the repository's latest scanned dependencies.
 
-<!-- TODO: verify screenshot of the Export SBOM modal -->
-
 To export an SBOM:
 
 1. On the Dependencies page, click **Export** in the top-right corner.
