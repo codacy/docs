@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 10:12:15">
+    <meta http-equiv="last-modified" content="2026-09-24 10:27:53">
   
   
 
@@ -2159,6 +2159,15 @@
     <span class="md-ellipsis">
       
         Viewing your dependencies
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#exporting-an-sbom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exporting an SBOM
       
     </span>
   </a>
@@ -9400,6 +9409,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#exporting-an-sbom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exporting an SBOM
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#ossf-scorecard" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9501,6 +9519,19 @@
 <p>You're also able to click any dependency to find out more information about it.</p>
 <p><img width="1740" height="852" decoding="async" loading="lazy" alt="Security and risk management dependency page" src="../images/security-risk-management-dependencies-single.png" /></p>
 <p>The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>1</sup></a> applied to any particular version of that dependency, and the <a href="#ossf-scorecard">OSSF Scorecard</a> security assessment.</p>
+<h2 id="exporting-an-sbom">Exporting an SBOM<a class="headerlink" href="#exporting-an-sbom" title="Permanent link">#</a></h2>
+<p>You can export the Software Bill of Materials (SBOM) for a specific repository from the Dependencies page. Codacy generates the export in CycloneDX format, covering the repository's latest scanned dependencies.</p>
+<p>To export an SBOM:</p>
+<ol>
+<li>On the Dependencies page, click <strong>Export</strong> in the top-right corner.</li>
+<li>Select <strong>Export SBOM</strong>.</li>
+<li>In the <strong>Export SBOM</strong> modal, select a repository from the <strong>Repository</strong> dropdown.</li>
+<li>Click <strong>Export</strong> to download the SBOM as a JSON file.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>SBOM export is only available for repositories with dependency findings. If the repository you select has none, the modal asks you to pick a different one.</p>
+</div>
 <h2 id="ossf-scorecard">OSSF Scorecard<a class="headerlink" href="#ossf-scorecard" title="Permanent link">#</a></h2>
 <p>The <strong>OSSF Scorecard</strong> feature provides additional security insights for your dependencies by displaying security assessment data from the Open Source Security Foundation (OSSF) Scorecard project.</p>
 <p>The OSSF Scorecard is an automated tool that evaluates open source repositories against a comprehensive set of security best practices. It performs various checks on a dependency's repository to assess whether the project follows security best practices and helps determine if the dependency is safe for consumption.</p>
@@ -9529,7 +9560,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 10:12:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
+    <time datetime="2026-09-24 10:27:53"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 24, 2026</span></time>
   </aside>
 
 
