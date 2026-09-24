@@ -10,7 +10,9 @@ description: Configure webhook endpoints to receive a real-time HTTP notificatio
     end="<!--paid-feature-business-end-->"
 %}
 
-Webhooks let Codacy push a real-time HTTP notification to an endpoint you control whenever Codacy finishes analyzing a branch or a pull request, instead of you having to poll the Codacy API for updates. Once you add an endpoint, Codacy posts events from every repository of your organization to it. If your organization doesn't have access to webhooks yet, [talk to us](https://start-chat.com/slack/codacy/rmbTzb) about upgrading.
+Webhooks let Codacy push a real-time HTTP notification to an endpoint you control whenever Codacy finishes analyzing a branch or a pull request, instead of you having to poll the Codacy API for updates. Once you add an endpoint, Codacy posts events from every repository of your organization to it.
+
+If your organization doesn't have access to webhooks yet, the **Webhooks** page shows an upgrade prompt instead of your endpoints. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) about upgrading.
 
 ## Adding a webhook endpoint {: id="adding-a-webhook-endpoint"}
 
@@ -97,6 +99,7 @@ Verify that a delivery came from Codacy by recomputing its signature and compari
 
 -   Codacy waits 10 seconds for your endpoint to respond. A timeout or a non-2xx response drops the delivery — Codacy doesn't retry it.
 -   Codacy can send more than one delivery for the same commit, for example after a reanalysis. Each delivery has a distinct `X-Codacy-Delivery` value, so if you need to avoid processing the same commit twice, treat deliveries with the same `commitSha` as duplicates instead.
+-   Codacy doesn't keep a delivery log or let you resend a delivery. Log deliveries on your own endpoint if you need a record of what Codacy sent.
 
 ## See also
 
