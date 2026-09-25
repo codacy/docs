@@ -129,9 +129,6 @@ Rules for the output:
 
 ### Auto-configure repository {: id="auto-configure-repository"}
 
-!!! note
-    Auto-configure from Codacy is only available for repositories hosted on GitHub. GitLab and Bitbucket repositories can still run it locally with [Codacy Skills](../repositories-configure/configuring-code-patterns.md#running-it-with-codacy-skills).
-
 _This feature uses an AI coding agent, and is strictly opt-in: it only runs when someone with permission to configure code patterns starts it for a specific repository._
 
 Auto-configure reviews the repository, then applies the same kind of tool and code pattern settings you could otherwise set by hand or through a [Codacy configuration file](../repositories-configure/codacy-configuration-file.md). It also recommends paths to exclude from analysis, which you review and apply yourself.
