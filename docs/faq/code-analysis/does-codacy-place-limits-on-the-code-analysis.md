@@ -67,7 +67,7 @@ Codacy limits the number of comments for reporting found issues on pull requests
 <td>15 days</td>
 <td>
 Codacy doesn't automatically analyze pull requests that haven't been updated in the last 15 days, focusing the analysis on the work that is currently active. This also applies to the pull requests that are already open when you add a repository to Codacy.<br/><br/>
-You can still analyze one of these pull requests by <a href="../../repositories/how-do-i-reanalyze-my-repository/#reanalyzing-a-pull-request">reanalyzing it</a>, or pushing a new commit to the pull request.<br/><br/>
+You can still analyze one of these pull requests by <a href="../../repositories/how-do-i-reanalyze-my-repository/#reanalyzing-a-pull-request">reanalyzing it manually</a>, or pushing a new commit to the pull request.<br/><br/>
 See <a href="../../troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/#stale-pull-requests">Why did Codacy stop commenting on pull requests?</a>
 </td>
 </tr>
