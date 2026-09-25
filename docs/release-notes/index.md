@@ -22,19 +22,19 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 
 -   [Adding Oxlint as new supported tool September, 2026](cloud/cloud-2026-09-adding-oxlint.md)
--   [Cloud August 2026](cloud/cloud-2026-08.md)
--   [Cloud July 2026](cloud/cloud-2026-07.md)
+-   [Cloud August 2026](cloud/cloud-2026-08.md) — Repository tokens for API v3, now fully supported end-to-end
+-   [Cloud July 2026](cloud/cloud-2026-07.md) — Folder-level quality metrics for browsing a repository by directory
 -   [Support for Shellcheck configuration file - July, 2026](cloud/cloud-2026-07-adding-shellcheck-config-file.md)
 -   [Adding PHP CS Fixer and support to Checkov configuration files July, 2026](cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files.md)
 -   [PHP_CodeSniffer Upgrade and Legacy Package Deprecations July, 2026](cloud/cloud-2026-07-remove-codesniffer-packages.md)
--   [Cloud June 2026](cloud/cloud-2026-06.md)
--   [Cloud May 2026](cloud/cloud-2026-05.md)
--   [Cloud April 2026](cloud/cloud-2026-04.md)
--   [Cloud March 2026](cloud/cloud-2026-03.md)
+-   [Cloud June 2026](cloud/cloud-2026-06.md) — Dependency chain visibility for vulnerable dependencies
+-   [Cloud May 2026](cloud/cloud-2026-05.md) — The PR reviewer no longer runs automatically on draft pull requests
+-   [Cloud April 2026](cloud/cloud-2026-04.md) — The AI Reviewer now factors in earlier PR comments
+-   [Cloud March 2026](cloud/cloud-2026-03.md) — The AI reviewer now masks secrets in code before it reaches AI models
 -   [Changes to GitHub integration settings March, 2026](cloud/cloud-2026-03-github-integration-settings-changes.md)
--   [Cloud February 2026](cloud/cloud-2026-02.md)
+-   [Cloud February 2026](cloud/cloud-2026-02.md) — Migration from Semgrep to Opengrep
 -   [Semgrep to Opengrep migration February, 2026](cloud/cloud-2026-02-migrating-semgrep.md)
--   [Cloud January 2026](cloud/cloud-2026-01.md)
+-   [Cloud January 2026](cloud/cloud-2026-01.md) — New GolangCI-Lint integration
 -   [Adding GolangCI-Lint as new supported tool January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md)
 
 ### 2025 {.release-series}
