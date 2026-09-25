@@ -6,6 +6,7 @@ rss_href: /feed_rss_created.xml
 
 # Adding GolangCI-Lint as new supported tool – January 2026
 
+**GolangCI-Lint (client-side):** Run GolangCI-Lint locally on your Go projects and upload the results to Codacy for analysis and reporting.
 
 ## GolangCI-Lint (Client-side Go tool)
 

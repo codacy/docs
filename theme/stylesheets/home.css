@@ -23,10 +23,16 @@
 
 .md-content article.md-typeset:has(#codacy-release-notes) .release-series { margin: 2rem 0 .45rem; padding: 0; color: var(--docs-text); font-size: .8rem; font-weight: 700; letter-spacing: .035em; line-height: 1.4; text-transform: uppercase; }
 .md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul { margin: 0 0 1.75rem; padding: 0; border-top: 1px solid var(--docs-border); list-style: none; }
-.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li { position: relative; margin: 0; padding: .58rem .65rem .58rem 1.35rem; border-bottom: 1px solid var(--docs-border); color: var(--docs-text-tertiary); font-size: .875rem; line-height: 1.5; transition: background-color .12s ease; }
-.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li::before { position: absolute; top: 1.05rem; left: .55rem; width: .28rem; height: .28rem; border-radius: 50%; background: var(--docs-border-strong); content: ""; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li { position: relative; margin: 0; padding: .58rem .65rem; border-bottom: 1px solid var(--docs-border); color: var(--docs-text-tertiary); font-size: .875rem; line-height: 1.5; transition: background-color .12s ease; }
 .md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:hover { background: var(--docs-bg-secondary); }
 .md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul a { color: var(--docs-text-secondary); font-weight: 500; text-decoration: none; }
 .md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul a:hover { color: var(--docs-link); }
+/* Entries carrying a digest highlight (see docs/release-notes/index.md) get a
+   two-column layout, a period label beside its digest, so a reader can scan what
+   shipped without opening every page — the rest of the list stays a plain row. */
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:has(.release-digest__body) { display: grid; grid-template-columns: minmax(8.5rem, 11rem) minmax(0, 1fr); column-gap: 1rem; padding: .85rem .65rem; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:has(.release-digest__body) > a { color: var(--docs-text); }
+.release-digest__body { color: var(--docs-text-secondary); }
+.release-digest__body strong { color: var(--docs-text); font-weight: 600; }
 .md-typeset #tool-versions + ul, .md-typeset #tool-versions + p + ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; margin-top: 1rem; font-size: .875rem; line-height: 1.5; }
 .md-typeset #tool-versions + ul > li, .md-typeset #tool-versions + p + ul > li { margin: .18rem 0; break-inside: avoid; }

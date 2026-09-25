@@ -6,6 +6,7 @@ rss_href: /feed_rss_created.xml
 
 # Adding PHP CS Fixer as new supported tool – July 2026
 
+**PHP CS Fixer and Checkov configuration files:** PHP CS Fixer joins Codacy's supported tools for PHP style violations, and Checkov analysis can now be configured with a `.checkov.yaml` or `.checkov.yml` file in your repository.
 
 ## PHP CS Fixer
 
