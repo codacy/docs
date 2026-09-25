@@ -9,7 +9,7 @@ We are preparing to upgrade our PHP CodeSniffer tool to the latest version. This
 
 We know how important your current workflows and rule configurations are. However, to successfully complete this upgrade, we have encountered hard compatibility constraints with several older, unmaintained coding standard packages. To move forward, we must officially remove support for these legacy packages and their associated rules.
 
-<!--highlight-->**PHP_CodeSniffer upgrade:** PHP_CodeSniffer is upgrading to its latest version, which drops support for several unmaintained coding standard packages, including the WordPress-VIP, Magento, and PHPCS Security Audit rule sets.<!--/highlight-->
+**PHP_CodeSniffer upgrade:** PHP_CodeSniffer is upgrading to its latest version, which drops support for several unmaintained coding standard packages, including the WordPress-VIP, Magento, and PHPCS Security Audit rule sets.
 
 ## Packages Being Removed
 

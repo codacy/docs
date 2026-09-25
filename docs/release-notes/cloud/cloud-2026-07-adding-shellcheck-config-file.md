@@ -7,7 +7,7 @@ rss_href: /feed_rss_created.xml
 
 We’ve upgraded how Shellcheck works on Codacy! While you previously had to configure Shellcheck analysis directly through the Codacy UI, you can now manage your settings using a configuration file.
 
-<!--highlight-->**Shellcheck configuration files:** You can now manage Shellcheck settings with a `.shellcheckrc` file in your repository instead of configuring analysis directly through the Codacy UI.<!--/highlight-->
+**Shellcheck configuration files:** You can now manage Shellcheck settings with a `.shellcheckrc` file in your repository instead of configuring analysis directly through the Codacy UI.
 
 Codacy will automatically apply your rules during analysis once you set it up.
 Here is how to get started:

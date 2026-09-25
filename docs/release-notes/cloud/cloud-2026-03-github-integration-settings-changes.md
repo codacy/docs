@@ -9,7 +9,7 @@ rss_href: /feed_rss_created.xml
 
 We are making two changes to the GitHub integration settings over the coming weeks. Both are handled automatically - you don't need to take any action.
 
-<!--highlight-->**GitHub integration changes:** AI-enhanced comments (Beta) are being replaced by the AI Reviewer on March 17, 2026, and the Coverage summary setting is being folded into the Pull request review comment — both migrations happen automatically.<!--/highlight-->
+**GitHub integration changes:** AI-enhanced comments (Beta) are being replaced by the AI Reviewer on March 17, 2026, and the Coverage summary setting is being folded into the Pull request review comment — both migrations happen automatically.
 
 -   [**AI-enhanced comments (Beta) being deprecated for GitHub**](#ai-enhanced-comments) — AI-enhanced comments are being replaced by the [AI Reviewer](../../codacy-ai/codacy-ai.md#pr-reviewer) on March 17, 2026.
 -   [**Coverage summary moving to Pull request review**](#coverage-summary) — the Coverage summary setting is being removed; coverage data will soon be included in the Pull request review comment.

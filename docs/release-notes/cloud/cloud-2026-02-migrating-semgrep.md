@@ -6,7 +6,7 @@ rss_href: /feed_rss_created.xml
 
 # Semgrep to Opengrep migration – February 2026
 
-<!--highlight-->**Semgrep to Opengrep:** Following licensing changes to Semgrep, Codacy switched to Opengrep as a 1:1 replacement, preserving all existing patterns, issue history, and configuration.<!--/highlight-->
+**Semgrep to Opengrep:** Following licensing changes to Semgrep, Codacy switched to Opengrep as a 1:1 replacement, preserving all existing patterns, issue history, and configuration.
 
 As we previously discussed on our [blog](https://blog.codacy.com/opengrep-vs-semgrep), there have been licensing changes to Semgrep, and Opengrep has emerged as an open-source fork of the Semgrep engine. To ensure your continued access to the existing patterns we have switched to Opengrep.
 
