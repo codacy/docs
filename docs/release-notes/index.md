@@ -21,21 +21,21 @@ For product updates that are in progress or planned [visit the Codacy public roa
 ### 2026 {.release-series}
 
 
--   [Adding Oxlint as new supported tool September, 2026](cloud/cloud-2026-09-adding-oxlint.md)
+-   [Adding Oxlint as new supported tool September, 2026](cloud/cloud-2026-09-adding-oxlint.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-09-adding-oxlint.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud August 2026](cloud/cloud-2026-08.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-08.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud July 2026](cloud/cloud-2026-07.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-07.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
--   [Support for Shellcheck configuration file - July, 2026](cloud/cloud-2026-07-adding-shellcheck-config-file.md)
--   [Adding PHP CS Fixer and support to Checkov configuration files July, 2026](cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files.md)
--   [PHP_CodeSniffer Upgrade and Legacy Package Deprecations July, 2026](cloud/cloud-2026-07-remove-codesniffer-packages.md)
+-   [Support for Shellcheck configuration file - July, 2026](cloud/cloud-2026-07-adding-shellcheck-config-file.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-07-adding-shellcheck-config-file.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
+-   [Adding PHP CS Fixer and support to Checkov configuration files July, 2026](cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-07-adding-phpcsfixer-checkov-config-files.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
+-   [PHP_CodeSniffer Upgrade and Legacy Package Deprecations July, 2026](cloud/cloud-2026-07-remove-codesniffer-packages.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-07-remove-codesniffer-packages.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud June 2026](cloud/cloud-2026-06.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-06.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud May 2026](cloud/cloud-2026-05.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-05.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud April 2026](cloud/cloud-2026-04.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-04.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud March 2026](cloud/cloud-2026-03.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-03.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
--   [Changes to GitHub integration settings March, 2026](cloud/cloud-2026-03-github-integration-settings-changes.md)
+-   [Changes to GitHub integration settings March, 2026](cloud/cloud-2026-03-github-integration-settings-changes.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-03-github-integration-settings-changes.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud February 2026](cloud/cloud-2026-02.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-02.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
--   [Semgrep to Opengrep migration February, 2026](cloud/cloud-2026-02-migrating-semgrep.md)
+-   [Semgrep to Opengrep migration February, 2026](cloud/cloud-2026-02-migrating-semgrep.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-02-migrating-semgrep.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 -   [Cloud January 2026](cloud/cloud-2026-01.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-01.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
--   [Adding GolangCI-Lint as new supported tool January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md)
+-   [Adding GolangCI-Lint as new supported tool January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md) <span class="release-digest__body">— {% include-markdown "./cloud/cloud-2026-01-adding-golangci-lint.md" start="<!--highlight-->" end="<!--/highlight-->" %}</span>
 
 ### 2025 {.release-series}
 
