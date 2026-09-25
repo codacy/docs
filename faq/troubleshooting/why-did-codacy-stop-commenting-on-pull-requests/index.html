@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-04-02 14:05:52">
+    <meta http-equiv="last-modified" content="2026-09-25 08:52:29">
   
   
 
@@ -3916,6 +3916,15 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#stale-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull request not updated in the last 15 days
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#outdated-app-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9382,6 +9391,15 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#stale-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull request not updated in the last 15 days
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#outdated-app-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9486,6 +9504,29 @@
 
 
 <h1 id="why-did-codacy-stop-commenting-on-pull-requests">Why did Codacy stop commenting on pull requests?<a class="headerlink" href="#why-did-codacy-stop-commenting-on-pull-requests" title="Permanent link">#</a></h1>
+<h2 id="stale-pull-requests">Pull request not updated in the last 15 days<a class="headerlink" href="#stale-pull-requests" title="Permanent link">#</a></h2>
+<p>Codacy doesn't automatically analyze or comment on pull requests that haven't been updated in the
+last 15 days, focusing the analysis on the work that is currently active.</p>
+<p>This is based on the date the pull request was last updated on your Git provider, and not on the
+date it was created. A pull request that was opened a long time ago but received a recent update is
+still analyzed.</p>
+<p>To have Codacy analyze one of these pull requests, do one of the following:</p>
+<ul>
+<li>
+<p><a href="../../repositories/how-do-i-reanalyze-my-repository/#reanalyzing-a-pull-request">Reanalyze the pull request</a>
+    from the <strong>Pull Requests</strong> page. Reanalysis works regardless of how long ago the pull request
+    was updated.</p>
+</li>
+<li>
+<p>Push a new commit to the pull request, which updates it on your Git provider and brings it back
+    into the 15-day window.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This also applies to the pull requests that are already open when you add a repository to
+Codacy: the ones that haven't been updated in the last 15 days aren't analyzed automatically.</p>
+</div>
 <h2 id="outdated-app-permissions">Outdated app permissions<a class="headerlink" href="#outdated-app-permissions" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">This section applies to Codacy Coverage on GitHub</p>
@@ -9540,6 +9581,8 @@
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../we-no-longer-have-access-to-this-repository/">We no longer have access to this repository, check your SSH keys</a></li>
+<li><a href="../../code-analysis/does-codacy-place-limits-on-the-code-analysis/">Does Codacy place limits on the code analysis?</a></li>
+<li><a href="../../repositories/how-do-i-reanalyze-my-repository/">How do I reanalyze my repository?</a></li>
 </ul>
 
   
@@ -9549,7 +9592,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-04-02 14:05:52"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 2, 2026</span></time>
+    <time datetime="2026-09-25 08:52:29"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2026</span></time>
   </aside>
 
 
