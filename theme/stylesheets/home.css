@@ -31,7 +31,7 @@
    two-column layout, a period label beside its digest, so a reader can scan what
    shipped without opening every page — the rest of the list stays a plain row. */
 .md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:has(.release-digest__body) { display: grid; grid-template-columns: minmax(8.5rem, 11rem) minmax(0, 1fr); column-gap: 1rem; padding: .85rem .65rem; }
-.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:has(.release-digest__body) > a { color: var(--docs-text); font-weight: 600; }
+.md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:has(.release-digest__body) > a { color: var(--docs-text); }
 .release-digest__body { color: var(--docs-text-secondary); }
 .release-digest__body strong { color: var(--docs-text); font-weight: 600; }
 .md-typeset #tool-versions + ul, .md-typeset #tool-versions + p + ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; margin-top: 1rem; font-size: .875rem; line-height: 1.5; }
