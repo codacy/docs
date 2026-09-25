@@ -42,7 +42,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 
 {% include-markdown "../assets/includes/admin-access-info.md" %}
 
-To grant an organization member additional permissions, you can assign that member the organization manager role. This role isn't influenced by a member's Git provider role.
+To grant an organization member additional organization-level permissions, you can assign that member the organization manager role. This role isn't influenced by a member's Git provider role, and it doesn't change what the member can do on each repository: on repositories, the member keeps the permissions of their Codacy role for that repository.
 
 To review the additional permissions granted by the organization manager role, see [Organization manager](#organization-manager).
 
@@ -133,16 +133,16 @@ The table below compares what each Codacy role is allowed to do. These permissio
   </thead>
   <tbody>
     <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes</td><td class="yes">Yes<sup>1</sup></td></tr>
-    <tr><td>View and follow private repository</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>View and follow private repository</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
     <tr><td>Access Security and risk management</td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Add and remove repository</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes<sup>3</sup></td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Add and remove repository</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes<sup>3</sup></td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
     <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
@@ -154,7 +154,8 @@ The table below compares what each Codacy role is allowed to do. These permissio
 <sup>1</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
 <sup>2</sup>: These users can only see security items originating from Codacy repositories that they follow.  
 <sup>3</sup>: On GitHub, requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.  
-<sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only on [Business plan](https://www.codacy.com/pricing).
+<sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only on [Business plan](https://www.codacy.com/pricing).  
+<sup>5</sup>: The organization manager role doesn't grant permissions on repositories. For each repository, organization managers have the same permissions as their Codacy role for that repository (read, write, or admin), which depends on their role on the Git provider. If they can't access a repository on the Git provider, they can't perform these operations on that repository.
 
 ## See also
 
