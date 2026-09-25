@@ -48,8 +48,6 @@ There are two ways to run it.
 
 ### Running it from Codacy {: id="running-it-from-codacy"}
 
-Auto-configure from Codacy is only available for repositories hosted on GitHub. If your repository is on GitLab or Bitbucket, run auto-configuration locally with [Codacy Skills](#running-it-with-codacy-skills) instead.
-
 {%
     include-markdown "../assets/includes/paid.md"
     start="<!--paid-feature-start-->"
