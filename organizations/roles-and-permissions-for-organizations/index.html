@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-08-12 15:09:30">
+    <meta http-equiv="last-modified" content="2026-09-25 11:00:15">
   
   
 
@@ -9570,7 +9570,7 @@
 <div class="admonition info">
 <p class="admonition-title">Only organization admins can update this setting</p>
 </div>
-<p>To grant an organization member additional permissions, you can assign that member the organization manager role. This role isn't influenced by a member's Git provider role.</p>
+<p>To grant an organization member additional organization-level permissions, you can assign that member the organization manager role. This role isn't influenced by a member's Git provider role, and it doesn't change what the member can do on each repository: on repositories, the member keeps the permissions of their Codacy role for that repository.</p>
 <p>To review the additional permissions granted by the organization manager role, see <a href="#organization-manager">Organization manager</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -9719,16 +9719,16 @@
   </thead>
   <tbody>
     <tr><td>Join organization</td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes<sup>1</sup></td><td class="yes">Yes</td><td class="yes">Yes<sup>1</sup></td></tr>
-    <tr><td>View and follow private repository</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>View and follow private repository</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
     <tr><td>Access Security and risk management</td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes<sup>2</sup></td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Access AI Risk Hub Overview</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Access AI Risk Hub AI assets and Tools &amp; workflows</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
-    <tr><td>Add and remove repository</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes<sup>3</sup></td><td class="maybe">Inherits original permission</td><td class="yes">Yes</td></tr>
+    <tr><td>Ignore issues and files, configure code patterns, reanalyze branches and pull requests</td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Upload coverage using an account API token, see the coverage report logs</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository Git provider integration settings</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository quality gates and goals</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Configure repository to run analysis on a local build server, manage repository API tokens</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
+    <tr><td>Add and remove repository</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes<sup>3</sup></td><td class="maybe">Inherits original permission<sup>5</sup></td><td class="yes">Yes</td></tr>
     <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
@@ -9740,7 +9740,8 @@
 <p><sup>1</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
 <sup>2</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
 <sup>3</sup>: On GitHub, requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.<br />
-<sup>4</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.</p>
+<sup>4</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.<br />
+<sup>5</sup>: The organization manager role doesn't grant permissions on repositories. For each repository, organization managers have the same permissions as their Codacy role for that repository (read, write, or admin), which depends on their role on the Git provider. If they can't access a repository on the Git provider, they can't perform these operations on that repository.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../managing-people/">Managing people</a></li>
@@ -9780,7 +9781,7 @@ th:nth-child(1), td:nth-child(1) {
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-08-12 15:09:30"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 12, 2026</span></time>
+    <time datetime="2026-09-25 11:00:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2026</span></time>
   </aside>
 
 
