@@ -180,6 +180,7 @@
   .topic-row .topic-card:last-child { grid-column: auto; }
   .md-typeset #tool-versions + ul, .md-typeset #tool-versions + p + ul { grid-template-columns: 1fr; }
   .md-typeset .nav-multistep ol { grid-template-columns: 1fr; }
+  .md-content article.md-typeset:has(#codacy-release-notes) .release-series + ul > li:has(.release-digest__body) { grid-template-columns: 1fr; row-gap: .25rem; }
 }
 @media screen and (max-width: 27rem) {
   .md-header__button.md-logo { width: 2rem; padding: .25rem; }
