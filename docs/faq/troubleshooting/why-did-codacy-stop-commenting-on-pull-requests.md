@@ -1,5 +1,27 @@
 # Why did Codacy stop commenting on pull requests?
 
+## Pull request not updated in the last 15 days {: id="stale-pull-requests"}
+
+Codacy doesn't automatically analyze or comment on pull requests that haven't been updated in the
+last 15 days, focusing the analysis on the work that is currently active.
+
+This is based on the date the pull request was last updated on your Git provider, and not on the
+date it was created. A pull request that was opened a long time ago but received a recent update is
+still analyzed.
+
+To have Codacy analyze one of these pull requests, do one of the following:
+
+-   [Reanalyze the pull request](../repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-pull-request)
+    from the **Pull Requests** page. Reanalysis works regardless of how long ago the pull request
+    was updated.
+
+-   Push a new commit to the pull request, which updates it on your Git provider and brings it back
+    into the 15-day window.
+
+!!! note
+    This also applies to the pull requests that are already open when you add a repository to
+    Codacy: the ones that haven't been updated in the last 15 days aren't analyzed automatically.
+
 ## Outdated app permissions
 
 !!! info "This section applies to Codacy Coverage on GitHub"
@@ -46,3 +68,5 @@ To fix this issue and avoid future disruptions, refresh the GitLab or Bitbucket 
 ## See also
 
 -   [We no longer have access to this repository, check your SSH keys](we-no-longer-have-access-to-this-repository.md)
+-   [Does Codacy place limits on the code analysis?](../code-analysis/does-codacy-place-limits-on-the-code-analysis.md)
+-   [How do I reanalyze my repository?](../repositories/how-do-i-reanalyze-my-repository.md)

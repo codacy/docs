@@ -9,6 +9,11 @@ The **Pull Requests page** displays an overview of the pull requests in your rep
 
 By default, the page lists open pull requests, but you can click the **Closed** tab at the top of the list to display the closed pull requests.
 
+!!! note
+    Codacy doesn't automatically analyze pull requests that haven't been updated in the last 15
+    days. You can still analyze them by
+    [reanalyzing the pull request](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-pull-request), or pushing a new commit to it.
+
 ![Pull Requests page](images/pull-requests.png)
 
 ## Filtering pull requests {: id="filtering"}
