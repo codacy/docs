@@ -12,70 +12,31 @@ description: Configure webhook endpoints to receive a real-time HTTP notificatio
 
 Webhooks let Codacy push a real-time HTTP notification to an endpoint you control whenever Codacy finishes analyzing a branch or a pull request, instead of you having to poll the Codacy API for updates. Once you add an endpoint, Codacy posts events from every repository of your organization to it.
 
-Adding and managing webhook endpoints currently requires calling the [Codacy API](../../codacy-api/using-the-codacy-api.md) directly, using an [account API token](../../codacy-api/api-tokens.md).
+If your organization doesn't have access to webhooks yet, the **Webhooks** page shows an upgrade prompt instead of your endpoints. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) about upgrading.
 
 ## Adding a webhook endpoint {: id="adding-a-webhook-endpoint"}
 
 Only an organization admin or [organization manager](../roles-and-permissions-for-organizations.md#organization-manager) can add a webhook endpoint. An organization has a maximum of 10 webhook endpoints.
 
-Call [`createWebhookEndpoint`](https://api.codacy.com/api/api-docs#createwebhookendpoint) with the HTTPS URL that should receive the webhook deliveries. Codacy only posts to `https://` URLs.
+To add a webhook endpoint:
 
-```bash
-curl -X POST 'https://api.codacy.com/api/v3/organizations/gh/my-organization/integrations/webhooks' \
-     -H 'api-token: <your account API token>' \
-     -H 'Content-Type: application/json' \
-     -d '{"url": "https://example.com/webhooks/codacy"}'
-```
+1.  Open your organization **Integrations**, page **Webhooks**.
+1.  Click **Add endpoint**.
+1.  Enter the HTTPS URL that should receive the webhook deliveries, then save. Codacy only posts to `https://` URLs.
 
-Codacy generates a signing secret for the new endpoint and returns it once, in the response:
-
-```json
-{
-  "id": "80f64371-e6bc-4d9b-b022-7c873cc5e39f",
-  "url": "https://example.com/webhooks/codacy",
-  "createdAt": "2026-09-17T09:10:00Z",
-  "secret": "3n8fVhZ2k9m1QpXeYtR7wLdCsUbGjNoA"
-}
-```
-
-Copy and store the `secret` somewhere safe — you need it to [verify deliveries](#verifying-a-delivery), and Codacy doesn't return it again.
+Codacy generates a signing secret for the new endpoint and shows it once. Copy and store the secret somewhere safe — you need it to [verify deliveries](#verifying-a-delivery), and Codacy doesn't show it again.
 
 !!! warning
-    Codacy doesn't let you retrieve or regenerate the secret of an existing endpoint. If you lose it, delete the endpoint and add it again to get a new one.
-
-If your organization doesn't have webhooks enabled, this request fails with an HTTP 403 error. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) about upgrading.
+    Codacy doesn't let you view or regenerate the secret of an existing endpoint. If you lose it, delete the endpoint and add it again to get a new one.
 
 ## Managing webhook endpoints {: id="managing-webhook-endpoints"}
 
-Call [`listWebhookEndpoints`](https://api.codacy.com/api/api-docs#listwebhookendpoints) to see the endpoints configured for your organization:
-
-```bash
-curl -X GET 'https://api.codacy.com/api/v3/organizations/gh/my-organization/integrations/webhooks' \
-     -H 'api-token: <your account API token>'
-```
-
-```json
-{
-  "data": [
-    {
-      "id": "80f64371-e6bc-4d9b-b022-7c873cc5e39f",
-      "url": "https://example.com/webhooks/codacy",
-      "createdAt": "2026-09-17T09:10:00Z"
-    }
-  ],
-  "count": 1,
-  "limit": 10
-}
-```
-
-You can't edit an existing endpoint or rotate its secret — delete the endpoint and add a new one instead. Call [`deleteWebhookEndpoint`](https://api.codacy.com/api/api-docs#deletewebhookendpoint) with the endpoint's `id`:
-
-```bash
-curl -X DELETE 'https://api.codacy.com/api/v3/organizations/gh/my-organization/integrations/webhooks/80f64371-e6bc-4d9b-b022-7c873cc5e39f' \
-     -H 'api-token: <your account API token>'
-```
+The **Webhooks** page lists the endpoints configured for your organization. You can't edit an existing endpoint or rotate its secret — delete the endpoint and add a new one instead.
 
 Deleting an endpoint stops Codacy from posting to it immediately.
+
+!!! tip
+    You can also add, list, and delete webhook endpoints using the [Codacy API](../../codacy-api/using-the-codacy-api.md) — call `createWebhookEndpoint`, `listWebhookEndpoints`, or `deleteWebhookEndpoint`.
 
 ## Events sent to your endpoint {: id="events-sent-to-your-endpoint"}
 
