@@ -146,6 +146,7 @@ The table below compares what each Codacy role is allowed to do. These permissio
     <tr><td>Manage organization gate policies and coding standards</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Configure organization default settings for Git provider integration</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Obtain audit logs for organization events<sup>4</sup></td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+    <tr><td>Add and manage organization webhook endpoints<sup>6</sup></td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Invite and accept members, modify billing</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
     <tr><td>Assign and revoke the organization manager role</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
   </tbody>
@@ -155,7 +156,8 @@ The table below compares what each Codacy role is allowed to do. These permissio
 <sup>2</sup>: These users can only see security items originating from Codacy repositories that they follow.  
 <sup>3</sup>: On GitHub, requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.  
 <sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only on [Business plan](https://www.codacy.com/pricing).  
-<sup>5</sup>: The organization manager role doesn't grant permissions on repositories. For each repository, organization managers have the same permissions as their Codacy role for that repository (read, write, or admin), which depends on their role on the Git provider. If they can't access a repository on the Git provider, they can't perform these operations on that repository.
+<sup>5</sup>: The organization manager role doesn't grant permissions on repositories. For each repository, organization managers have the same permissions as their Codacy role for that repository (read, write, or admin), which depends on their role on the Git provider. If they can't access a repository on the Git provider, they can't perform these operations on that repository.  
+<sup>6</sup>: [Webhooks](./integrations/webhooks.md) are available only on [Business plan](https://www.codacy.com/pricing).
 
 ## See also
 
