@@ -701,6 +701,7 @@ nav:
                       - organizations/integrations/default-git-provider-integration-settings.md
                       - Slack integration for Security issues: organizations/integrations/slack-integration.md
                       - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
+                      - organizations/integrations/webhooks.md
                 - organizations/managing-people.md
                 - organizations/audit-logs-for-organizations.md
                 - organizations/roles-and-permissions-for-organizations.md
