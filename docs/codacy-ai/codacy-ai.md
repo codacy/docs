@@ -61,6 +61,20 @@ More details about [False Positives here](../repositories/commits.md#false-posit
 - Prompts are neither stored nor visible to anyone.
 - As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.
 
+#### Which issues are triaged
+
+Codacy triages issues based on their [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues):
+
+- Issues in the **Security** and **Error prone** categories are always triaged, at any severity.
+- Issues in the **Code style**, **Code complexity**, **Documentation**, and **Comprehensibility** categories are never triaged.
+- Issues in the remaining categories are also triaged, except the ones that have **minor** severity. 
+
+Also note that:
+
+- There's a limit to the number of files per commit and issues per file. In this scenario, Security and Error prone issues are triaged first, and within each, higher severities get prioritized.
+- Very large files are excluded from triaging.
+- Issues that already have a triage result aren't triaged again.
+
 <div id="pr-reviewer"></div>
 
 ### AI Reviewer
