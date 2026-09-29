@@ -114,7 +114,9 @@ SVGs
 SwiftLint
 Tailor
 tooltip
-triage
+triaged
+triages
+triaging
 Trivy
 TSLint
 TSQLLint
