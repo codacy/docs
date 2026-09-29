@@ -144,7 +144,7 @@ Verify that a delivery came from Codacy by recomputing its signature and compari
 
 ## Delivery behavior {: id="delivery-behavior"}
 
--   Codacy waits 10 seconds for your endpoint to respond. A `5xx` response or a timeout is retried up to 2 more times with exponential backoff, waiting about 1 second before the first retry and about 2 seconds before the second, each with random jitter. A `4xx` response drops the delivery immediately, without a retry.
+-   Codacy waits 10 seconds for your endpoint to respond. A `5xx` response or a timeout is retried up to 2 more times with exponential backoff, waiting about 1 second before the first retry and about 5 seconds before the second, each with random jitter. A `4xx` response drops the delivery immediately, without a retry.
 -   A retry reuses the same `X-Codacy-Delivery` value as the original attempt, so treat retries with the same value as duplicates.
 -   Codacy can also send more than one delivery for the same commit for other reasons, for example a reanalysis. Each of those deliveries has a distinct `X-Codacy-Delivery` value, so if you need to avoid processing the same commit twice, treat deliveries with the same `commitSha` as duplicates instead.
 -   Codacy doesn't keep a delivery log or let you resend a delivery. Log deliveries on your own endpoint if you need a record of what Codacy sent.
