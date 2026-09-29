@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-25 10:43:05">
+    <meta http-equiv="last-modified" content="2026-09-29 10:51:35">
   
   
 
@@ -9496,6 +9496,19 @@
 <li>Prompts are neither stored nor visible to anyone.</li>
 <li>As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.</li>
 </ul>
+<h4 id="which-issues-are-triaged">Which issues are triaged<a class="headerlink" href="#which-issues-are-triaged" title="Permanent link">#</a></h4>
+<p>Codacy triages issues based on their <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">issue category</a>:</p>
+<ul>
+<li>Issues in the <strong>Security</strong> and <strong>Error prone</strong> categories are always triaged, at any severity.</li>
+<li>Issues in the <strong>Code style</strong>, <strong>Code complexity</strong>, <strong>Documentation</strong>, and <strong>Comprehensibility</strong> categories are never triaged.</li>
+<li>Issues in the remaining categories are also triaged, except the ones that have <strong>minor</strong> severity. </li>
+</ul>
+<p>Also note that:</p>
+<ul>
+<li>There's a limit to the number of files per commit and issues per file. In this scenario, Security and Error prone issues are triaged first, and within each, higher severities get prioritized.</li>
+<li>Files larger than 150 KB are excluded from triaging, because Codacy <a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">doesn't analyze them</a>.</li>
+<li>Issues that already have a triage result aren't triaged again.</li>
+</ul>
 <div id="pr-reviewer"></div>
 
 <h3 id="ai-reviewer">AI Reviewer<a class="headerlink" href="#ai-reviewer" title="Permanent link">#</a></h3>
@@ -9564,7 +9577,7 @@ Rules for the output:
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-25 10:43:05"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2026</span></time>
+    <time datetime="2026-09-29 10:51:35"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 29, 2026</span></time>
   </aside>
 
 
