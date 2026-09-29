@@ -72,7 +72,7 @@ Codacy triages issues based on their [issue category](../faq/code-analysis/which
 Also note that:
 
 - There's a limit to the number of files per commit and issues per file. In this scenario, Security and Error prone issues are triaged first, and within each, higher severities get prioritized.
-- Very large files are excluded from triaging.
+- Files larger than 150 KB are excluded from triaging, because Codacy [doesn't analyze them](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md).
 - Issues that already have a triage result aren't triaged again.
 
 <div id="pr-reviewer"></div>
