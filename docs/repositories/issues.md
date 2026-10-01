@@ -21,6 +21,8 @@ Click the title of an issue card to expand it and see the following information:
 
 ![Issue details](images/issues-detail.png)
 
+For issues that report an insecure dependency, the card also shows the [dependency chain](../security/findings.md#dependency-chain): the path from a direct dependency in your manifest to the vulnerable package, followed by the fixed version. Direct dependencies are labeled **Direct**.
+
 ## Filtering issues
 
 Filter the list of issues to find specific issues, such as the issues with the highest severity or security issues.

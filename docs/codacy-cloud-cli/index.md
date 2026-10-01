@@ -168,6 +168,21 @@ This information is also included when using `--output json`.
 !!! note
     Not every advisory lists specific affected functions — this section only appears when Codacy has identified them.
 
+### See how a vulnerable dependency is introduced {: id="dependency-chains"}
+
+For issues on insecure dependencies, `codacy issue` shows the [dependency chains](../security/findings.md#dependency-chain) that lead to the vulnerable package and the version that fixes it:
+
+```bash
+codacy issue gh my-org my-repo <issueId>
+```
+
+```
+Transitive - npm/stylelint-suitcss@5.0.0 → npm/postcss-selector-parser@6.1.2 (Fixed in 6.1.3)
+           - npm/stylelint-suitcss@5.0.0 → ... 2 more ... → npm/postcss-selector-parser@6.1.2 (Fixed in 6.1.3)
+```
+
+The JSON output (`--output json`) includes the full chains in `dependencyChains`, one array of packages per chain, and the fixed versions in `fixedVersion`.
+
 ### Manage container images {: id="manage-container-images"}
 
 List the container images with SBOMs uploaded to an organization, inspect an image's tags, upload an SBOM, and delete tags you no longer need. These commands require an [account API token](../codacy-api/api-tokens.md#account-api-tokens), because they read organization-level data.
