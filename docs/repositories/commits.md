@@ -109,6 +109,8 @@ If your commit includes issues detected as false positives, an **Ignore all fals
 
 For more details on managing false positives, see [Managing system-detected false positives](issues.md#managing-system-detected-false-positives).
 
+Not every issue is checked for false positives. To see which issues Codacy checks, see [Which issues are triaged](../codacy-ai/codacy-ai.md#which-issues-are-triaged).
+
 ![Detected false positives](images/pull-requests-false-positives.png)
 
 During a pull request analysis, if Codacy identifies issues that appear to be false positives, 
