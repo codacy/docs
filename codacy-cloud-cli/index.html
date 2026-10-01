@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 13:54:57">
+    <meta http-equiv="last-modified" content="2026-10-01 09:07:51">
   
   
 
@@ -9618,6 +9618,14 @@ Published: 2024-03-08
 <p class="admonition-title">Note</p>
 <p>Not every advisory lists specific affected functions — this section only appears when Codacy has identified them.</p>
 </div>
+<h3 id="dependency-chains">See how a vulnerable dependency is introduced<a class="headerlink" href="#dependency-chains" title="Permanent link">#</a></h3>
+<p>For issues on insecure dependencies, <code>codacy issue</code> shows the <a href="../security/findings/#dependency-chain">dependency chains</a> that lead to the vulnerable package and the version that fixes it:</p>
+<div class="highlight"><pre><span></span><code>codacy<span class="w"> </span>issue<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span>&lt;issueId&gt;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Transitive - npm/stylelint-suitcss@5.0.0 → npm/postcss-selector-parser@6.1.2 (Fixed in 6.1.3)
+           - npm/stylelint-suitcss@5.0.0 → ... 2 more ... → npm/postcss-selector-parser@6.1.2 (Fixed in 6.1.3)
+</code></pre></div>
+<p>The JSON output (<code>--output json</code>) includes the full chains in <code>dependencyChains</code>, one array of packages per chain, and the fixed versions in <code>fixedVersion</code>.</p>
 <h3 id="manage-container-images">Manage container images<a class="headerlink" href="#manage-container-images" title="Permanent link">#</a></h3>
 <p>List the container images with SBOMs uploaded to an organization, inspect an image's tags, upload an SBOM, and delete tags you no longer need. These commands require an <a href="../codacy-api/api-tokens/#account-api-tokens">account API token</a>, because they read organization-level data.</p>
 <div class="admonition note">
@@ -9765,7 +9773,7 @@ codacy<span class="w"> </span>pull-request<span class="w"> </span>gh<span class=
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 13:54:57"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
+    <time datetime="2026-10-01 09:07:51"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 1, 2026</span></time>
   </aside>
 
 
