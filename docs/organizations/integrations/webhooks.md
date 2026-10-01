@@ -95,7 +95,7 @@ curl -X DELETE 'https://api.codacy.com/api/v3/organizations/gh/my-organization/i
 
 Codacy sends the `quality.analysis.completed` event to every webhook endpoint of your organization when:
 
--   **A branch analysis finishes.** Codacy finished analyzing the newest commit of an enabled branch. Only the newest commit on a branch triggers a delivery, and reanalyzing that commit sends a new delivery.
+-   **A branch analysis finishes.** Codacy finished analyzing a commit on an enabled branch. Codacy sends one delivery for each enabled branch that contains the commit, and reanalyzing a commit sends a new delivery.
 -   **A pull request analysis finishes.**
 
 Codacy sends the event regardless of the analysis outcome, not only when it succeeds. Check the body's `status` field for the outcome.
