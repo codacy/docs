@@ -27,7 +27,7 @@ Codacy generates a signing secret for the new endpoint and shows it once, in a c
 !!! warning
     Codacy doesn't let you view or regenerate the secret of an existing endpoint. If you lose it, delete the endpoint and add it again to get a new one.
 
-Codacy doesn't send a test event when you add an endpoint. To see your first delivery, reanalyze a commit on an enabled branch.
+To test your endpoint and see a first delivery, reanalyze a commit on an enabled branch.
 
 If your organization doesn't have access to webhooks yet, the **Webhooks** page shows an upgrade prompt instead. [Talk to us](https://start-chat.com/slack/codacy/rmbTzb) about upgrading. If your organization loses access later, Codacy stops sending deliveries but keeps your endpoints, and they resume with the same signing secrets when access returns.
 
