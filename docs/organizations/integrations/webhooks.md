@@ -123,17 +123,7 @@ The ID alone isn't enough to handle a delivery. You also need the signing secret
 }
 ```
 
-To build the dictionary:
-
-1.  Call [`listUserOrganizations`](https://api.codacy.com/api/api-docs#listuserorganizations) with an [account API token](../../codacy-api/api-tokens.md#account-api-tokens) to list the organizations you belong to:
-
-    ```bash
-    curl -X GET 'https://api.codacy.com/api/v3/user/organizations' \
-         -H 'api-token: <your account API token>'
-    ```
-
-1.  For each organization in the response, use its `identifier` as the key, and its `provider` and `name` as the values. Skip any entry without an `identifier`, because that organization isn't on Codacy yet. The endpoint returns results in batches, so follow the [pagination cursor](../../codacy-api/using-the-codacy-api.md#using-pagination) until you have them all.
-1.  When you [add a webhook endpoint](#adding-a-webhook-endpoint), store its signing secret in the entry of its organization. Codacy shows the secret once and generates a different one for each endpoint, so treat it like any other credential.
+If you need help mapping the IDs, call [`listUserOrganizations`](https://api.codacy.com/api/api-docs#listuserorganizations) with an [account API token](../../codacy-api/api-tokens.md#account-api-tokens). It returns each organization's `identifier` (the `organization.id` in the payload), `provider`, and `name`. The signing secret comes from the endpoint, and Codacy shows it only once when you [add the endpoint](#adding-a-webhook-endpoint).
 
 When a delivery arrives:
 
