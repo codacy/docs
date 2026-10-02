@@ -16,7 +16,7 @@ Webhooks let Codacy push a real-time HTTP notification to an endpoint you contro
 
 Only an organization admin or [organization manager](../roles-and-permissions-for-organizations.md#organization-manager) can add a webhook endpoint. An organization has a maximum of 10 webhook endpoints.
 
-The URL must use `https://` and be reachable from the public internet. Codacy rejects a host that doesn't resolve or that resolves to a private or local network address. If you receive events from more than one organization, [plan your URLs first](#receiving-events-from-more-than-one-organization).
+The URL must use `https://` and be reachable from the public internet. Codacy rejects a host that doesn't resolve or that resolves to a private or local network address. If you receive events from more than one organization, see [how to tell them apart](#receiving-events-from-more-than-one-organization).
 
 To add a webhook endpoint:
 
@@ -35,7 +35,7 @@ If your organization doesn't have access to webhooks yet, the **Webhooks** page 
 
 The **Webhooks** page lists the endpoints configured for your organization.
 
-You can't edit an existing endpoint or rotate its secret — delete the endpoint and add a new one instead. To delete an endpoint, click the **Delete** icon on its row and confirm. Deleting an endpoint stops Codacy from posting to it immediately and destroys its signing secret.
+You can't edit an existing endpoint or rotate its secret. Delete the endpoint and add a new one instead. To delete an endpoint, click the **Delete** icon on its row and confirm. Deleting an endpoint stops Codacy from posting to it immediately and destroys its signing secret.
 
 Once the organization reaches 10 endpoints, **Add endpoint** is disabled. Delete an endpoint to add another one.
 
@@ -62,10 +62,10 @@ Each delivery is an HTTP `POST` request with a JSON body and these headers:
 | Header | Description |
 |---|---|
 | `X-Codacy-Event` | The event type, always `quality.analysis.completed`. |
-| `X-Codacy-Delivery` | A UUID that uniquely identifies this delivery. A retry of the same delivery reuses it — see [delivery behavior](#delivery-behavior). |
+| `X-Codacy-Delivery` | A UUID that uniquely identifies this delivery. A retry of the same delivery reuses it. See [delivery behavior](#delivery-behavior). |
 | `X-Codacy-Signature` | The [HMAC-SHA256 signature](#verifying-a-delivery) of the request body, in the form `sha256=<hex-encoded hash>`. |
 
-The body identifies the repository, the commit, and either the branch or the pull request. It doesn't identify your organization or include the analysis results.
+The body identifies the organization, the repository, the commit, and either the branch or the pull request. It doesn't include the analysis results.
 
 Branch analysis finished:
 
@@ -73,6 +73,7 @@ Branch analysis finished:
 {
   "event": "quality.analysis.completed",
   "repository": { "name": "engine" },
+  "organization": { "id": 123456 },
   "target": { "type": "branch", "value": "master" },
   "commitSha": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345678",
   "status": "success",
@@ -86,6 +87,7 @@ Pull request analysis finished:
 {
   "event": "quality.analysis.completed",
   "repository": { "name": "engine" },
+  "organization": { "id": 123456 },
   "target": { "type": "pullRequest", "value": "464" },
   "commitSha": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345678",
   "status": "success",
@@ -93,11 +95,12 @@ Pull request analysis finished:
 }
 ```
 
--   **`target.type`** is `branch` for a branch analysis or `pullRequest` for a pull request analysis. `target.value` is always a string — the branch name, or the pull request number.
--   **`status`** is `success`, `partial_success`, or `failure` — whether all, some, or none of the analysis tasks completed. With `partial_success`, Codacy has results only for the tasks that completed, so issue counts and metrics can be lower than a full analysis would report. The payload doesn't say which tasks failed, so check the analysis in Codacy before you rely on its results. The `status` belongs to one analysis, so the branch and pull request deliveries for the same commit can differ.
+-   **`organization.id`** is the Codacy ID of the organization the delivery belongs to, as a JSON number. The payload doesn't include the organization name or its Git provider. To look them up, see [receiving events from more than one organization](#receiving-events-from-more-than-one-organization).
+-   **`target.type`** is `branch` for a branch analysis or `pullRequest` for a pull request analysis. `target.value` is always a string: the branch name or the pull request number.
+-   **`status`** is `success`, `partial_success`, or `failure`, depending on whether all, some, or none of the analysis tools completed. With `partial_success`, Codacy reports results only from the tools that completed, so issue counts and metrics can be lower than a full analysis would report. A single failed tool is enough to cause it, while `failure` needs every tool to fail. The payload doesn't say which tool failed. If you keep seeing `partial_success`, click **View logs** on the [pull request](../../repositories/pull-requests.md#viewing-analysis-logs) or [commit](../../repositories/commits.md#viewing-analysis-logs) page to find out. The `status` belongs to one analysis, so the branch and pull request deliveries for the same commit can differ.
 -   **`timestamp`** is when the analysis finished, as an ISO 8601 UTC timestamp to the second (`2025-09-17T23:00:00Z`). A retry sends the same value as the original attempt. There's no separate timestamp header: the signature covers the whole body, so verify this field instead of a header if you need to reject stale deliveries.
 
-Codacy doesn't include an issue list or a link to the analysis result in the payload. Use the [Codacy API](../../codacy-api/using-the-codacy-api.md) to look up the analysis details for the commit or pull request, for example [`listPullRequestIssues`](https://api.codacy.com/api/api-docs#listpullrequestissues) or [`listCommitDeltaIssues`](https://api.codacy.com/api/api-docs#listcommitdeltaissues). To tell which organization a delivery belongs to, see [receiving events from more than one organization](#receiving-events-from-more-than-one-organization).
+Codacy doesn't include an issue list or a link to the analysis result in the payload. Use the [Codacy API](../../codacy-api/using-the-codacy-api.md) to look up the analysis details for the commit or pull request, for example [`listPullRequestIssues`](https://api.codacy.com/api/api-docs#listpullrequestissues) or [`listCommitDeltaIssues`](https://api.codacy.com/api/api-docs#listcommitdeltaissues). These endpoints identify an organization by its Git provider and name, not by the `organization.id` in the payload, so [keep a lookup from the ID to both](#receiving-events-from-more-than-one-organization).
 
 ## Verifying a delivery {: id="verifying-a-delivery"}
 
@@ -110,16 +113,33 @@ Verify that a delivery came from Codacy by recomputing its signature and compari
 
 ## Receiving events from more than one organization {: id="receiving-events-from-more-than-one-organization"}
 
-The payload doesn't include the organization or its Git provider. Each webhook endpoint belongs to one organization, so you tell organizations apart by the endpoint. If you have a single organization, you don't need to do anything.
+Each delivery carries the Codacy ID of its organization in `organization.id`, so you can send the events of several organizations to the same URL and tell them apart when they arrive. If you have a single organization, you don't need to do anything.
 
-If you receive events from more than one organization, choose one of these options before you add the endpoints, because you can't [edit an existing endpoint](#managing-webhook-endpoints).
+The ID alone isn't enough to handle a delivery. You also need the signing secret to verify it, and the organization's Git provider and name to look up the analysis with the [Codacy API](../../codacy-api/using-the-codacy-api.md). Keep a dictionary that maps each organization ID to those three values:
 
--   **Give each organization its own URL.** Add the organization to the path of the **Payload URL**, for example `https://example.com/webhooks/codacy/my-organization`. Your server reads the organization from the request URL and verifies the signature with that organization's secret. Use this option when you can, because you check one secret for each delivery. Don't skip the signature check: the URL isn't part of the signed body, so only the signature proves that the delivery came from Codacy.
--   **Use one URL for all organizations and match the signature.** Every endpoint has its own signing secret. Compute the signature of the delivery with the secret of each of your endpoints. The secret that produces the value in `X-Codacy-Signature` tells you which organization sent it. Reject the delivery if none of them match.
+```json
+{
+  "123456": { "provider": "gh", "name": "my-organization", "secret": "<signing secret>" }
+}
+```
 
-Don't use `repository.name` or `commitSha` to identify the organization. Different organizations can have repositories with the same name, and the same commit can exist in several repositories.
+To build the dictionary:
 
-Once you know the organization, use its Git provider and name to look up the analysis with the [Codacy API](../../codacy-api/using-the-codacy-api.md). Store both next to the secret when you add the endpoint.
+1.  Call [`listUserOrganizations`](https://api.codacy.com/api/api-docs#listuserorganizations) with an [account API token](../../codacy-api/api-tokens.md#account-api-tokens) to list the organizations you belong to:
+
+    ```bash
+    curl -X GET 'https://api.codacy.com/api/v3/user/organizations' \
+         -H 'api-token: <your account API token>'
+    ```
+
+1.  For each organization in the response, use its `identifier` as the key, and its `provider` and `name` as the values. Skip any entry without an `identifier`, because that organization isn't on Codacy yet. The endpoint returns results in batches, so follow the [pagination cursor](../../codacy-api/using-the-codacy-api.md#using-pagination) until you have them all.
+1.  When you [add a webhook endpoint](#adding-a-webhook-endpoint), store its signing secret in the entry of its organization. Codacy shows the secret once and generates a different one for each endpoint, so treat it like any other credential.
+
+When a delivery arrives:
+
+1.  Read `organization.id` from the body and look it up in the dictionary. Reject the delivery if the ID isn't there.
+1.  [Verify the signature](#verifying-a-delivery) with the secret from that entry, and reject the delivery if it doesn't match. The ID only selects the secret, so don't trust it or any other field until the signature matches.
+1.  Use the `provider` and `name` from the entry to call the Codacy API.
 
 ## Delivery behavior {: id="delivery-behavior"}
 
@@ -133,7 +153,7 @@ Codacy can send more than one delivery for the same commit. Use this table to te
 | The commit is on more than one enabled branch, or also belongs to a pull request | Same `commitSha`, different `target.value` or `target.type` | Not duplicates. Use `target` to tell them apart |
 | The commit was reanalyzed | New `X-Codacy-Delivery` and a later `timestamp`, same `repository.name`, `target`, and `commitSha` | Keep the delivery with the latest `timestamp` |
 
-Deliveries that match on `repository.name`, `target.type`, `target.value`, `commitSha`, and `timestamp` are duplicates. To keep only the latest result for a commit, match on the first four and keep the delivery with the latest `timestamp`. Don't match on `commitSha` alone. If you share one URL between organizations, add the organization to the match.
+Deliveries that match on `repository.name`, `target.type`, `target.value`, `commitSha`, and `timestamp` are duplicates. To keep only the latest result for a commit, match on the first four and keep the delivery with the latest `timestamp`. Don't match on `commitSha` alone. If you share one URL between organizations, include `organization.id` in the match.
 
 -   Codacy resolves the host of your endpoint before every delivery. If the host doesn't resolve, or resolves to a private or local network address, Codacy drops the delivery without a retry.
 -   Codacy doesn't guarantee delivery. Retries happen within seconds of each other, so Codacy drops deliveries sent while your endpoint is down for longer than that. Codacy keeps no delivery log and doesn't let you resend a delivery. Log deliveries on your own endpoint if you need a record of what Codacy sent, and check the Codacy API periodically for analyses you didn't receive.
