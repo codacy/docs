@@ -146,7 +146,7 @@ Codacy can send more than one delivery for the same commit. Use this table to te
 Deliveries that match on `repository.name`, `target.type`, `target.value`, `commitSha`, and `timestamp` are duplicates. To keep only the latest result for a commit, match on the first four and keep the delivery with the latest `timestamp`. Don't match on `commitSha` alone. If you share one URL between organizations, include `organization.id` in the match.
 
 -   Codacy resolves the host of your endpoint before every delivery. If the host doesn't resolve, or resolves to a private or local network address, Codacy drops the delivery without a retry.
--   Codacy doesn't guarantee delivery. Retries happen within seconds of each other, so Codacy drops deliveries sent while your endpoint is down for longer than that. Codacy keeps no delivery log and doesn't let you resend a delivery. Log deliveries on your own endpoint if you need a record of what Codacy sent, and check the Codacy API periodically for analyses you didn't receive.
+-   Codacy drops a delivery that still fails after the last retry, and doesn't support delivery logs or resending deliveries yet. You can log deliveries on your own endpoint if you need a record, and use the Codacy API to get info from past analysis.
 -   Deliveries can arrive out of order, for example when a retry delays one of them. Use `timestamp` to order deliveries for the same repository.
 
 ## See also
