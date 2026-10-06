@@ -1,5 +1,5 @@
 ---
-description: Configure webhook endpoints to receive a real-time HTTP notification whenever Codacy finishes analyzing a branch or a pull request in your organization.
+description: Configure webhook endpoints to receive a real-time HTTP notification whenever Codacy finishes the quality analysis of a branch or a pull request in your organization.
 ---
 
 # Webhooks
@@ -10,7 +10,7 @@ description: Configure webhook endpoints to receive a real-time HTTP notificatio
     end="<!--paid-feature-business-end-->"
 %}
 
-Webhooks let Codacy push a real-time HTTP notification to an endpoint you control whenever Codacy finishes analyzing a branch or a pull request, instead of you having to poll the Codacy API for updates. Once you add an endpoint, Codacy posts events from every repository of your organization to it.
+Webhooks let Codacy push a real-time HTTP notification to an endpoint you control whenever Codacy finishes the quality analysis of a branch or a pull request, instead of you having to poll the Codacy API for updates. Once you add an endpoint, Codacy posts events from every repository of your organization to it.
 
 ## Adding a webhook endpoint {: id="adding-a-webhook-endpoint"}
 
@@ -54,6 +54,15 @@ Codacy sends the `quality.analysis.completed` event to every webhook endpoint of
 Codacy sends the event regardless of the analysis outcome, not only when it succeeds. Check the body's `status` field for the outcome.
 
 Codacy sends one copy of each event to every webhook endpoint of your organization, and there's no way to filter by repository or branch.
+
+## What the event doesn't cover {: id="what-the-event-doesnt-cover"}
+
+`quality.analysis.completed` reports the outcome of Codacy's quality analysis, including SAST and SCA. It doesn't report the outcome of:
+
+-   **Coverage analysis.** Codacy processes the coverage data you upload apart from the quality analysis, so the event doesn't tell you whether Codacy received or processed coverage for a commit, and `status` doesn't reflect it. Codacy doesn't send a webhook event for coverage analysis yet.
+-   **DAST and container scanning.**
+
+To check whether Codacy received the coverage data for a pull request, call [`getPullRequestCoverageReports`](https://api.codacy.com/api/api-docs#getpullrequestcoveragereports). See [identifying commits without coverage data](../../codacy-api/examples/identifying-commits-without-coverage-data.md) for an example.
 
 ## Delivery payload {: id="delivery-payload"}
 
