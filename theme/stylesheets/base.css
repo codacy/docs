@@ -1,6 +1,6 @@
 html { font-size: 100%; }
 
-/* scroll-margin-top on headings (content.css) handles the sticky-header
+/* scroll-margin-top on content elements (content.css) handles the sticky-header
    offset for anchor jumps. A page-wide scroll-padding-top here would also
    apply to focus()-triggered scrolling of anything inside the sticky header
    itself (e.g. the search trigger), which sits within that reserved band and
