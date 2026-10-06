@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Configure webhook endpoints to receive a real-time HTTP notification whenever Codacy finishes analyzing a branch or a pull request in your organization.">
+        <meta name="description" content="Configure webhook endpoints to receive a real-time HTTP notification whenever Codacy finishes the quality analysis of a branch or a pull request in your organization.">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-10-02 10:33:18">
+    <meta http-equiv="last-modified" content="2026-10-06 08:44:40">
   
   
 
@@ -1982,6 +1982,15 @@
     <span class="md-ellipsis">
       
         Events sent to your endpoint
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#what-the-event-doesnt-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the event doesn't cover
       
     </span>
   </a>
@@ -9496,6 +9505,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#what-the-event-doesnt-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the event doesn't cover
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#delivery-payload" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9613,7 +9631,7 @@
 <div class="admonition info">
 <p class="admonition-title">This feature is <a href="https://www.codacy.com/pricing">only available on Business plan</a></p>
 </div>
-<p>Webhooks let Codacy push a real-time HTTP notification to an endpoint you control whenever Codacy finishes analyzing a branch or a pull request, instead of you having to poll the Codacy API for updates. Once you add an endpoint, Codacy posts events from every repository of your organization to it.</p>
+<p>Webhooks let Codacy push a real-time HTTP notification to an endpoint you control whenever Codacy finishes the quality analysis of a branch or a pull request, instead of you having to poll the Codacy API for updates. Once you add an endpoint, Codacy posts events from every repository of your organization to it.</p>
 <h2 id="adding-a-webhook-endpoint">Adding a webhook endpoint<a class="headerlink" href="#adding-a-webhook-endpoint" title="Permanent link">#</a></h2>
 <p>Only an organization admin or <a href="../../roles-and-permissions-for-organizations/#organization-manager">organization manager</a> can add a webhook endpoint. An organization has a maximum of 10 webhook endpoints.</p>
 <p>The URL must use <code>https://</code> and be reachable from the public internet. Codacy rejects a host that doesn't resolve or that resolves to a private or local network address. If you receive events from more than one organization, see <a href="#receiving-events-from-more-than-one-organization">how to tell them apart</a>.</p>
@@ -9647,6 +9665,13 @@
 </ul>
 <p>Codacy sends the event regardless of the analysis outcome, not only when it succeeds. Check the body's <code>status</code> field for the outcome.</p>
 <p>Codacy sends one copy of each event to every webhook endpoint of your organization, and there's no way to filter by repository or branch.</p>
+<h2 id="what-the-event-doesnt-cover">What the event doesn't cover<a class="headerlink" href="#what-the-event-doesnt-cover" title="Permanent link">#</a></h2>
+<p><code>quality.analysis.completed</code> reports the outcome of Codacy's quality analysis, including SAST and SCA. SCA runs send their own deliveries, see <a href="#delivery-behavior">delivery behavior</a>. The event doesn't report the outcome of:</p>
+<ul>
+<li><strong>Coverage analysis.</strong> Codacy processes the coverage data you upload apart from the quality analysis, so the event doesn't tell you whether Codacy received or processed coverage for a commit, and <code>status</code> doesn't reflect it. Codacy doesn't send a webhook event for coverage analysis yet.</li>
+<li><strong>DAST and container scanning.</strong></li>
+</ul>
+<p>To check whether Codacy received the coverage data for a pull request, call <a href="https://api.codacy.com/api/api-docs#getpullrequestcoveragereports"><code>getPullRequestCoverageReports</code></a>. See <a href="../../../codacy-api/examples/identifying-commits-without-coverage-data/">identifying commits without coverage data</a> for an example.</p>
 <h2 id="delivery-payload">Delivery payload<a class="headerlink" href="#delivery-payload" title="Permanent link">#</a></h2>
 <p>Each delivery is an HTTP <code>POST</code> request with a JSON body and these headers:</p>
 <table>
@@ -9750,9 +9775,18 @@
 <td>New <code>X-Codacy-Delivery</code> and a later <code>timestamp</code>, same <code>repository.name</code>, <code>target</code>, and <code>commitSha</code></td>
 <td>Keep the delivery with the latest <code>timestamp</code></td>
 </tr>
+<tr>
+<td>SCA ran on the commit</td>
+<td>Same as a reanalysis. Nothing in the payload says the delivery comes from SCA</td>
+<td>If your organization uses SCA, see the note below before you keep only the latest delivery</td>
+</tr>
 </tbody>
 </table>
 <p>Deliveries that match on <code>repository.name</code>, <code>target.type</code>, <code>target.value</code>, <code>commitSha</code>, and <code>timestamp</code> are duplicates. To keep only the latest result for a commit, match on the first four and keep the delivery with the latest <code>timestamp</code>. Don't match on <code>commitSha</code> alone. If you share one URL between organizations, include <code>organization.id</code> in the match.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If your organization uses SCA, review how your integration handles several deliveries for the same commit before you rely on webhook data. Besides the analysis of a commit, Codacy runs SCA on the head commit of the main branch of each repository with SCA enabled, and that run sends its own <code>quality.analysis.completed</code> delivery for the commit. The <code>status</code> of that delivery reflects only the SCA run, and nothing in the payload tells it apart from a reanalysis. If you keep the delivery with the latest <code>timestamp</code>, the SCA delivery can replace the result of the quality analysis. Use the <a href="../../../codacy-api/using-the-codacy-api/">Codacy API</a> to look up the analysis results when the difference matters.</p>
+</div>
 <ul>
 <li>Codacy resolves the host of your endpoint before every delivery. If the host doesn't resolve, or resolves to a private or local network address, Codacy drops the delivery without a retry.</li>
 <li>Codacy drops a delivery that still fails after the last retry, and doesn't support delivery logs or resending deliveries yet. You can log deliveries on your own endpoint if you need a record, and use the Codacy API to get info from past analysis.</li>
@@ -9772,7 +9806,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-10-02 10:33:18"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2026</span></time>
+    <time datetime="2026-10-06 08:44:40"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 6, 2026</span></time>
   </aside>
 
 
