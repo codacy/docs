@@ -57,7 +57,7 @@ Codacy sends one copy of each event to every webhook endpoint of your organizati
 
 ## What the event doesn't cover {: id="what-the-event-doesnt-cover"}
 
-`quality.analysis.completed` reports the outcome of Codacy's quality analysis, including SAST and SCA. It doesn't report the outcome of:
+`quality.analysis.completed` reports the outcome of Codacy's quality analysis, including SAST and SCA. SCA runs send their own deliveries, see [delivery behavior](#delivery-behavior). The event doesn't report the outcome of:
 
 -   **Coverage analysis.** Codacy processes the coverage data you upload apart from the quality analysis, so the event doesn't tell you whether Codacy received or processed coverage for a commit, and `status` doesn't reflect it. Codacy doesn't send a webhook event for coverage analysis yet.
 -   **DAST and container scanning.**
@@ -151,8 +151,12 @@ Codacy can send more than one delivery for the same commit. Use this table to te
 | Your endpoint failed and Codacy retried | Same `X-Codacy-Delivery` | Ignore it if you already processed that ID |
 | The commit is on more than one enabled branch, or also belongs to a pull request | Same `commitSha`, different `target.value` or `target.type` | Not duplicates. Use `target` to tell them apart |
 | The commit was reanalyzed | New `X-Codacy-Delivery` and a later `timestamp`, same `repository.name`, `target`, and `commitSha` | Keep the delivery with the latest `timestamp` |
+| SCA ran on the commit | Same as a reanalysis. Nothing in the payload says the delivery comes from SCA | If your organization uses SCA, see the note below before you keep only the latest delivery |
 
 Deliveries that match on `repository.name`, `target.type`, `target.value`, `commitSha`, and `timestamp` are duplicates. To keep only the latest result for a commit, match on the first four and keep the delivery with the latest `timestamp`. Don't match on `commitSha` alone. If you share one URL between organizations, include `organization.id` in the match.
+
+!!! important
+    If your organization uses SCA, review how your integration handles several deliveries for the same commit before you rely on webhook data. Besides the analysis of a commit, Codacy runs SCA on the head commit of the main branch of each repository with SCA enabled, and that run sends its own `quality.analysis.completed` delivery for the commit. The `status` of that delivery reflects only the SCA run, and nothing in the payload tells it apart from a reanalysis. If you keep the delivery with the latest `timestamp`, the SCA delivery can replace the result of the quality analysis. Use the [Codacy API](../../codacy-api/using-the-codacy-api.md) to look up the analysis results when the difference matters.
 
 -   Codacy resolves the host of your endpoint before every delivery. If the host doesn't resolve, or resolves to a private or local network address, Codacy drops the delivery without a retry.
 -   Codacy drops a delivery that still fails after the last retry, and doesn't support delivery logs or resending deliveries yet. You can log deliveries on your own endpoint if you need a record, and use the Codacy API to get info from past analysis.
