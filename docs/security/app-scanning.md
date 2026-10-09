@@ -69,7 +69,7 @@ allowfullscreen>
   </iframe>
 </div>
 
-Each organization can have up to **6 active scan targets**. If you need additional capacity, contact your customer success representative.
+Each organization can have up to **6 active scan targets** by default. If you need more targets, click **Talk to us** on the **App scanning** tab or contact your customer success representative. The tab shows your usage as "Using X out of Y available targets."
 
 Scans are triggered manually through the UI and are queued before execution. You can queue one single scan per target—it will run sequentially. There is no limit to the number of scans you can run on a target, in order to support your deployment needs.
 
