@@ -1,0 +1,153 @@
+# Verity — Standard Template
+# YAML skeleton used by /verity-setup to generate .verity/standard.yaml
+# All fields with empty values are populated during synthesis.
+# See STANDARDS-SPEC.md section 2 for the full schema.
+
+version: "1.0.0"
+created_by: ""
+
+# Project metadata — populated from codebase analysis
+knowledge_spec:
+  project_name: ""
+  languages: []
+  frameworks: []
+  architecture: ""     # monorepo | monolith | microservices
+  build_system: ""     # npm | yarn | pnpm | pip | go | maven | gradle
+  test_framework: ""   # vitest | jest | pytest | go test | junit
+
+# Quality assessment dimensions (always 4)
+# Thresholds from patterns-reference.yaml, adjusted per codebase
+quality_dimensions:
+  - id: comprehensibility
+    description: "Code readable in one context load"
+    signals:
+      - metric: file_length
+        threshold: 300
+        unit: lines
+        rationale: "AI context windows degrade on large files"
+      - metric: cyclomatic_complexity
+        threshold: 15
+        unit: per_function
+        rationale: "Complexity-aware feedback improves AI performance by 35.71%"
+      - metric: function_length
+        threshold: 50
+        unit: lines
+        rationale: "Short functions are easier for agents to modify safely"
+      - metric: naming_quality
+        tool: ai
+        rationale: "Descriptive names improve AI comprehension by 2x"
+
+  - id: modularity
+    description: "Modify one concern without touching 3+ files"
+    signals:
+      - metric: single_responsibility
+        tool: ai
+        rationale: "AI performance drops sharply at 3+ files per change"
+      - metric: shallow_abstractions
+        tool: ai
+        rationale: "LLMs struggle with deep inheritance hierarchies"
+
+  - id: type_safety
+    description: "Type system catches errors before runtime"
+    signals: []  # Populated per-language during synthesis
+
+  - id: test_adequacy
+    description: "Tests define expected behavior for agents"
+    signals:
+      - metric: test_coverage
+        threshold: 80
+        unit: percent
+        ai_threshold: 90
+        rationale: "90% recommended for AI-generated code"
+      - metric: test_quality
+        tool: ai
+        rationale: "Tests are the primary safety net for AI agents"
+
+# Security patterns (CWE-mapped, always all 7)
+security_patterns:
+  - id: no-hardcoded-secrets
+    description: "No secrets, API keys, passwords, or tokens in source code"
+    severity: critical
+    cwe: [CWE-798]
+    enforced_by: []  # Populated with Trivy/Semgrep during synthesis
+
+  - id: input-sanitization
+    description: "All user input validated and sanitized before use"
+    severity: critical
+    cwe: [CWE-20, CWE-80, CWE-89, CWE-117]
+    enforced_by: []
+
+  - id: parameterized-queries
+    description: "Database queries use parameters, never string concatenation"
+    severity: critical
+    cwe: [CWE-89]
+    enforced_by: []
+
+  - id: dependency-verification
+    description: "No known-vulnerable dependencies"
+    severity: high
+    cwe: [CWE-1395]
+    enforced_by: []
+
+  - id: no-unsafe-deserialization
+    description: "No unsafe deserialization of untrusted data"
+    severity: high
+    cwe: [CWE-502]
+    enforced_by: []
+
+  - id: access-control-checks
+    description: "Authorization verified on all sensitive operations"
+    severity: high
+    cwe: [CWE-639]
+    enforced_by: []  # AI-only — requires business context
+
+  - id: config-file-integrity
+    description: "Configuration files not manipulable by untrusted input"
+    severity: high
+    cwe: [CWE-15]
+    enforced_by: []  # AI-only
+
+# Project-specific patterns (2-5, synthesized during setup)
+custom_patterns: []
+# Example:
+#   - id: auth-middleware-required
+#     description: "All API routes must use authentication middleware"
+#     severity: high
+#     enforced_by: []
+#     rationale: "Project uses express with JWT auth"
+
+# Process constraints
+process_constraints:
+  self_healing_limit: 2    # Max fix-recheck iterations (research: degradation after 2)
+  analysis_mode: balanced  # lightweight | balanced | thorough
+
+  # Knowledge system (KNOWLEDGE-SYSTEM-PRD §4, §8, §9)
+  compound_enabled: true                    # master switch: graph + extractor + feedback suppressions
+  memory_graph_enabled: true                # 8-domain graph; false falls back to flat lesson-selector
+  memory_graph_budget_tokens: 2000          # tokens reserved for graph-walk injection into the reviewer prompt
+  knowledge_injection_budget_tokens: 2000   # tokens reserved for UserPromptSubmit (Path A) injection
+  finding_autosuppress_threshold: 2         # user "false positive" votes before auto-suppressing a pattern
+
+  # Intent alignment (INTENT-ANALYSIS-PRD)
+  intent_fail_threshold: 4                  # intent score at or below → FAIL
+  intent_warn_threshold: 7                  # intent score at or below → WARN
+
+  exclude_paths:
+    - node_modules
+    - dist
+    - build
+    - .git
+    - vendor
+    - __pycache__
+    - .next
+    - coverage
+
+# Tool configuration (populated during synthesis based on detected languages)
+tool_configuration: {}
+# Example:
+#   eslint:
+#     enabled: true
+#     config_file: ".verity/tools/eslint.config.mjs"
+#   semgrep:
+#     enabled: true
+#     rulesets: ["p/security-audit", "p/typescript"]

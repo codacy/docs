@@ -1,0 +1,614 @@
+# Verity — Patterns Reference
+# Research-backed catalog used by /verity-setup to synthesize project Standards.
+# This is NOT a Standard — it is the reference from which Standards are built.
+
+# =============================================================================
+# 1. Quality Dimensions (always 4)
+# =============================================================================
+
+quality_dimensions:
+  - id: comprehensibility
+    description: "Code readable in one context load"
+    signals:
+      - metric: file_length
+        threshold: 300
+        unit: lines
+        rationale: "AI context windows degrade on large files (>300 lines ~ 3,000 tokens)"
+        source: "Stanford 'Lost in the Middle' — >30% accuracy drop for mid-context info"
+      - metric: cyclomatic_complexity
+        threshold: 15
+        unit: per_function
+        rationale: "Complexity-aware feedback improves AI Pass@1 by 35.71%"
+        source: "Multiple studies on CCN and LLM performance"
+      - metric: function_length
+        threshold: 50
+        unit: lines
+        rationale: "Short functions are easier for agents to modify safely"
+      - metric: naming_quality
+        tool: ai
+        rationale: "Descriptive names: 34.2% AI match rate vs 16.6% obfuscated (r=0.945)"
+        source: "JetBrains AI-Friendly Code Report"
+
+  - id: modularity
+    description: "Modify one concern without touching 3+ files"
+    signals:
+      - metric: single_responsibility
+        tool: ai
+        rationale: "AI performance drops sharply at 3+ files requiring modification"
+        source: "CodeScene, JetBrains, Factory.ai, Marmelab consensus"
+      - metric: shallow_abstractions
+        tool: ai
+        rationale: "LLMs achieve only 38.81% accuracy on design pattern recognition"
+        source: "Deep inheritance vs shallow composition studies"
+
+  - id: type_safety
+    description: "Type system catches errors before runtime"
+    signals:
+      - metric: strict_types
+        languages: [typescript, python]
+        rationale: ">50% reduction in compilation errors with type constraints"
+        source: "ETH Zurich type annotation study"
+        rules_by_language:
+          typescript:
+            tool: eslint
+            rules:
+              - "@typescript-eslint/no-explicit-any"
+              - "@typescript-eslint/explicit-function-return-type"
+          python:
+            tool: ruff
+            rules:
+              - "ANN001"  # missing type annotation for function argument
+              - "ANN201"  # missing return type annotation
+
+  - id: test_adequacy
+    description: "Tests define expected behavior for agents"
+    signals:
+      - metric: test_coverage
+        threshold: 80
+        unit: percent
+        ai_threshold: 90
+        rationale: "SonarQube recommends 90% for AI-generated code (vs 80% human)"
+        source: "SonarQube AI code quality guidelines"
+      - metric: test_quality
+        tool: ai
+        rationale: "Tests are the primary safety net for AI agents"
+        source: "OpenObserve: AI test agents grew 380 to 700+ tests, 85% flaky reduction"
+
+# =============================================================================
+# 2. Security Patterns (always all 7)
+# =============================================================================
+
+security_patterns:
+  # --- Critical severity (tool-enforceable) ---
+
+  - id: no-hardcoded-secrets
+    description: "No secrets, API keys, passwords, or tokens in source code"
+    severity: critical
+    cwe: [CWE-798]
+    enforced_by:
+      - tool: Trivy
+        config:
+          scanners: [secret]
+      - tool: Semgrep
+        rules: [generic.secrets]
+    secrets_patterns:
+      - name: AWS Access Key
+        pattern: 'AKIA[0-9A-Z]{16}'
+      - name: AWS Secret Key
+        pattern: '(?i)aws_secret_access_key\s*[:=]\s*[A-Za-z0-9/+=]{40}'
+      - name: GitHub Token
+        pattern: '(ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9_]{36,}'
+      - name: Generic API Key
+        pattern: '(?i)(api[_-]?key|apikey|api[_-]?secret)\s*[:=]\s*[''""][A-Za-z0-9+/=]{20,}[''""]'
+      - name: Database URL
+        pattern: '(postgres|mysql|mongodb|redis)://[^\s''"]{10,}'
+      - name: Private Key
+        pattern: '-----BEGIN (RSA |EC |DSA )?PRIVATE KEY-----'
+      - name: JWT Secret
+        pattern: '(?i)(jwt[_-]?secret|jwt[_-]?key)\s*[:=]\s*[''""][^''"]{8,}[''""]'
+      - name: Slack Token
+        pattern: 'xox[bpors]-[0-9]{10,}-[A-Za-z0-9-]+'
+      - name: Stripe Key
+        pattern: '(sk|pk)_(test|live)_[A-Za-z0-9]{24,}'
+
+  - id: input-sanitization
+    description: "All user input validated and sanitized before use"
+    severity: critical
+    cwe: [CWE-20, CWE-80, CWE-89, CWE-117]
+    enforced_by:
+      - tool: Semgrep
+        rules:
+          - typescript.express.security
+          - python.flask.security
+          - python.django.security
+
+  - id: parameterized-queries
+    description: "Database queries use parameters, never string concatenation"
+    severity: critical
+    cwe: [CWE-89]
+    enforced_by:
+      - tool: Semgrep
+        rules:
+          - javascript.lang.security.audit.sqli
+          - python.lang.security.audit.sqli
+
+  # --- High severity (mixed tool + AI) ---
+
+  - id: dependency-verification
+    description: "No known-vulnerable dependencies"
+    severity: high
+    cwe: [CWE-1395]
+    enforced_by:
+      - tool: Trivy
+        config:
+          scanners: [vuln]
+          severity: [HIGH, CRITICAL]
+
+  - id: no-unsafe-deserialization
+    description: "No unsafe deserialization of untrusted data"
+    severity: high
+    cwe: [CWE-502]
+    enforced_by:
+      - tool: Semgrep
+        rules:
+          - python.lang.security.deserialization
+          - java.lang.security.deserialization
+
+  - id: access-control-checks
+    description: "Authorization verified on all sensitive operations"
+    severity: high
+    cwe: [CWE-639]
+    enforced_by: []  # AI-only — requires business context
+
+  - id: config-file-integrity
+    description: "Configuration files not manipulable by untrusted input"
+    severity: high
+    cwe: [CWE-15]
+    enforced_by: []  # AI-only
+
+# =============================================================================
+# 3. Language-Specific Security Anti-Patterns
+# =============================================================================
+
+language_security_patterns:
+  typescript:
+    - pattern: "eval()"
+      risk: "Arbitrary code execution"
+      cwe: CWE-94
+    - pattern: "innerHTML ="
+      risk: "Cross-site scripting (XSS)"
+      cwe: CWE-79
+    - pattern: "child_process.exec()"
+      risk: "Command injection"
+      cwe: CWE-78
+    - pattern: "new Function()"
+      risk: "Dynamic code generation"
+      cwe: CWE-94
+    - pattern: "document.write()"
+      risk: "DOM-based XSS"
+      cwe: CWE-79
+    - pattern: "String concatenation in SQL"
+      risk: "SQL injection"
+      cwe: CWE-89
+
+  python:
+    - pattern: "exec() / eval()"
+      risk: "Arbitrary code execution"
+      cwe: CWE-94
+    - pattern: "pickle.loads()"
+      risk: "Unsafe deserialization"
+      cwe: CWE-502
+    - pattern: "subprocess(shell=True)"
+      risk: "Command injection"
+      cwe: CWE-78
+    - pattern: "yaml.load() without SafeLoader"
+      risk: "Unsafe YAML deserialization"
+      cwe: CWE-502
+    - pattern: "os.system()"
+      risk: "Command injection"
+      cwe: CWE-78
+    - pattern: "f-string in SQL"
+      risk: "SQL injection"
+      cwe: CWE-89
+
+  go:
+    - pattern: "fmt.Sprintf in SQL"
+      risk: "SQL injection"
+      cwe: CWE-89
+    - pattern: "exec.Command with user input"
+      risk: "Command injection"
+      cwe: CWE-78
+    - pattern: "template.HTML()"
+      risk: "XSS via unescaped HTML"
+      cwe: CWE-79
+    - pattern: "net/http without TLS"
+      risk: "Cleartext transmission"
+      cwe: CWE-319
+
+  java:
+    - pattern: "Runtime.exec()"
+      risk: "Command injection"
+      cwe: CWE-78
+    - pattern: "ObjectInputStream.readObject()"
+      risk: "Unsafe deserialization"
+      cwe: CWE-502
+    - pattern: "Statement.execute() with concatenation"
+      risk: "SQL injection"
+      cwe: CWE-89
+    - pattern: "XMLParser without disabling external entities"
+      risk: "XXE injection"
+      cwe: CWE-611
+
+# =============================================================================
+# 4. Critical File Patterns (paths deserving deeper review)
+# =============================================================================
+
+critical_file_patterns:
+  - "auth/**"
+  - "middleware/**"
+  - "config/**"
+  - ".env*"
+  - "Dockerfile*"
+  - "docker-compose*"
+  - "migrations/**"
+  - "api/**"
+  - "routes/**"
+  - "security/**"
+  - "crypto/**"
+  - "**/secrets*"
+  - "**/credentials*"
+  - "*.pem"
+  - "*.key"
+
+# =============================================================================
+# 5. OWASP Top 10 (2021) Mapping
+# =============================================================================
+
+owasp_mapping:
+  A01_Broken_Access_Control:
+    standard_patterns: [access-control-checks]
+    description: "Missing or improper authorization checks"
+
+  A02_Cryptographic_Failures:
+    standard_patterns: [no-hardcoded-secrets, config-file-integrity]
+    description: "Weak crypto, exposed secrets, insecure transmission"
+
+  A03_Injection:
+    standard_patterns: [parameterized-queries, input-sanitization]
+    description: "SQL, NoSQL, OS, LDAP injection"
+
+  A04_Insecure_Design:
+    standard_patterns: [access-control-checks]
+    description: "Missing security controls in design"
+
+  A05_Security_Misconfiguration:
+    standard_patterns: [config-file-integrity, dependency-verification]
+    description: "Default configs, unnecessary features, missing hardening"
+
+  A06_Vulnerable_Components:
+    standard_patterns: [dependency-verification]
+    description: "Known CVEs in dependencies"
+
+  A07_Auth_Failures:
+    standard_patterns: [access-control-checks, no-hardcoded-secrets]
+    description: "Broken authentication, weak credentials"
+
+  A08_Software_Integrity:
+    standard_patterns: [dependency-verification, no-unsafe-deserialization]
+    description: "Untrusted data deserialization, compromised dependencies"
+
+  A09_Logging_Failures:
+    standard_patterns: [input-sanitization]
+    description: "Insufficient logging, log injection"
+
+  A10_SSRF:
+    standard_patterns: [input-sanitization]
+    description: "Server-side request forgery"
+
+# =============================================================================
+# 6. Tool Recommendations by Language
+#    Adapter IDs match @codacy/analysis-cli (from CODACY-ANALYSIS-CLI.md)
+# =============================================================================
+
+tool_recommendations:
+  typescript:
+    lightweight: [Trivy]
+    balanced: [ESLint9, Semgrep, Trivy]
+    thorough: [ESLint9, Semgrep, Trivy, Lizard]
+
+  javascript:
+    lightweight: [Trivy]
+    balanced: [ESLint9, Semgrep, Trivy]
+    thorough: [ESLint9, Semgrep, Trivy, Lizard]
+
+  python:
+    lightweight: [Trivy]
+    balanced: [Ruff, Semgrep, Trivy]
+    thorough: [Ruff, Semgrep, Bandit, Trivy, Lizard]
+
+  go:
+    lightweight: [Trivy]
+    balanced: [Semgrep, Trivy]
+    thorough: [Semgrep, Trivy, Lizard]
+
+  java:
+    lightweight: [Trivy]
+    balanced: [PMD7, Semgrep, Trivy]
+    thorough: [PMD7, Checkstyle, Semgrep, Trivy, Lizard]
+
+  kotlin:
+    lightweight: [Trivy]
+    balanced: [detekt, Semgrep, Trivy]
+    thorough: [detekt, Semgrep, Trivy]
+
+  ruby:
+    lightweight: [Trivy]
+    balanced: [Semgrep, Trivy]
+    thorough: [Semgrep, Trivy, Lizard]
+
+  rust:
+    lightweight: [Trivy]
+    balanced: [Semgrep, Trivy]
+    thorough: [Semgrep, Trivy]
+
+  c:
+    lightweight: [Trivy]
+    balanced: [cppcheck, Semgrep, Trivy]
+    thorough: [cppcheck, flawfinder, Semgrep, Trivy, Lizard]
+
+  cpp:
+    lightweight: [Trivy]
+    balanced: [cppcheck, Semgrep, Trivy]
+    thorough: [cppcheck, flawfinder, Semgrep, Trivy, Lizard]
+
+  shell:
+    lightweight: []
+    balanced: [shellcheck]
+    thorough: [shellcheck]
+
+  dockerfile:
+    lightweight: [Trivy]
+    balanced: [Hadolint, Trivy]
+    thorough: [Hadolint, Trivy]
+
+# =============================================================================
+# 7. Analysis Modes
+# =============================================================================
+
+analysis_modes:
+  lightweight:
+    description: "Critical security only. Fastest (~3s)."
+    tools: "Trivy only"
+    patterns: "Critical security patterns"
+
+  balanced:
+    description: "Security + key quality. Good balance (~8s)."
+    tools: "Trivy + 1-2 language-specific tools"
+    patterns: "Curated high-signal patterns only (see curated_patterns below)"
+
+  thorough:
+    description: "All tools, all rules. Most comprehensive (~15s)."
+    tools: "All applicable tools"
+    patterns: "Curated patterns + tool defaults for secondary tools"
+
+# =============================================================================
+# 8. Curated Patterns Per Tool
+#    IMPORTANT: patterns: [] means ALL defaults (thousands of rules, massive
+#    token consumption and slow runs). Always use these curated lists instead.
+#
+#    PATTERN ID FORMAT — get this wrong and the tool fails SILENTLY.
+#    Every ID is `<toolId>_<ruleId>`, with `/` replaced by `_`:
+#        no-eval                            → ESLint9_no-eval
+#        @typescript-eslint/no-explicit-any  → ESLint9_@typescript-eslint_no-explicit-any
+#        F401                               → Ruff_F401
+#        SC2086                             → shellcheck_SC2086
+#    An unrecognised ID is not an error. The adapter builds `enabledPatterns` from
+#    the config, matches nothing, and reports 0 issues — identical to clean code.
+#    Perversely, `patterns: []` (size 0) means "all defaults" and DOES work, so a
+#    wrong list is strictly worse than no list.
+#
+#    ALWAYS run `node validate-patterns.mjs` after writing codacy.config.json.
+#    Never hand-author an ID; derive it from the installed adapter metadata.
+# =============================================================================
+
+curated_patterns:
+
+  # --- ESLint9 (2900+ available → ~25 high-signal) ---
+  ESLint9:
+    description: "Security + error-prone + TypeScript strictness. Skips style/formatting."
+    patterns:
+      # Security (MUST have)
+      - patternId: "ESLint9_no-eval"
+      - patternId: "ESLint9_no-implied-eval"
+      - patternId: "ESLint9_no-new-func"
+      - patternId: "ESLint9_no-script-url"
+      # Error-prone (high value)
+      - patternId: "ESLint9_no-unused-vars"
+      - patternId: "ESLint9_no-undef"
+      - patternId: "ESLint9_no-unreachable"
+      - patternId: "ESLint9_no-constant-condition"
+      - patternId: "ESLint9_no-dupe-keys"
+      - patternId: "ESLint9_no-duplicate-case"
+      - patternId: "ESLint9_no-fallthrough"
+      - patternId: "ESLint9_no-self-assign"
+      - patternId: "ESLint9_no-self-compare"
+      - patternId: "ESLint9_use-isnan"
+      - patternId: "ESLint9_valid-typeof"
+      - patternId: "ESLint9_no-loss-of-precision"
+      - patternId: "ESLint9_no-unsafe-optional-chaining"
+      # TypeScript (if applicable)
+      - patternId: "ESLint9_@typescript-eslint_no-explicit-any"
+      - patternId: "ESLint9_@typescript-eslint_no-unused-vars"
+      - patternId: "ESLint9_@typescript-eslint_no-unsafe-assignment"
+      - patternId: "ESLint9_@typescript-eslint_no-unsafe-call"
+      - patternId: "ESLint9_@typescript-eslint_no-unsafe-return"
+      # Best practice
+      - patternId: "ESLint9_eqeqeq"
+      - patternId: "ESLint9_no-var"
+      - patternId: "ESLint9_prefer-const"
+
+  # --- Semgrep / Opengrep (2523 available) — PATTERN LIST NOT YET DERIVED ---
+  #
+  # DO NOT emit a Semgrep block into codacy.config.json until the IDs below are
+  # derived and `validate-patterns.mjs` passes. The 17 IDs previously listed here
+  # were invented and matched nothing, so Semgrep silently reported zero findings.
+  #
+  # Real IDs repeat the trailing segment and carry the tool prefix, e.g.
+  #   Semgrep_javascript.jsonwebtoken.security.jwt-hardcode.hardcoded-jwt-secret
+  #   Semgrep_generic.secrets.security.detected-artifactory-token.detected-artifactory-token
+  # Derive them from the installed adapter, never by hand:
+  #   node -e "const fs=require('fs');const d=process.env.CODACY_TOOLS_DIR+'/tools-opengrep-1/dist';\
+  #     let b='';for(const f of fs.readdirSync(d))if(f.endsWith('.js'))b+=fs.readFileSync(d+'/'+f,'utf8');\
+  #     console.log([...new Set(b.match(/Semgrep_[A-Za-z0-9_.-]+/g))].sort().join('\n'))"
+  #
+  # Also note Semgrep needs the Opengrep binary, which `--install-dependencies`
+  # does NOT fetch:  curl -fsSL https://raw.githubusercontent.com/opengrep/opengrep/main/install.sh | bash
+  #
+  # Categories to cover when curating (counts of real candidates in parentheses):
+  #   SQL injection, JS/TS (8) · XSS / unsafe HTML (15) · generic secrets (49)
+  #   hardcoded JWT secret (4) · Python deserialization / pickle (6)
+  #   NOTE: no rule matches "command-injection" for JavaScript — the old entry was fiction.
+  Semgrep:
+    description: "Security-only: injection, XSS, secrets, auth. No style rules."
+    status: unverified   # omit from generated config until derived + validated
+    patterns: []         # intentionally empty — see note above, do NOT copy into config
+
+  # --- Trivy — DERIVED, NOT HAND-MAINTAINED ---
+  #
+  # Trivy's catalogue is a fixed set of 6 umbrella patterns, so the config block is
+  # GENERATED from adapter metadata rather than copied from here. The list below is
+  # a cached snapshot for reading convenience only; the generator must emit it:
+  #
+  #   node validate-patterns.mjs --emit Trivy \
+  #     '^Trivy_(secret|malicious_packages|vulnerability_(critical|high))$'
+  #
+  # If this snapshot ever disagrees with `--list Trivy`, the adapter wins — the
+  # snapshot is stale and should be regenerated. Severity is fixed per pattern, so
+  # severity filtering IS pattern selection. There is NO misconfig/config or license
+  # pattern; the old `trivy_config`/`trivy_license` entries were fiction.
+  Trivy:
+    description: "Dependency vulnerabilities, secrets, malicious packages. 6 patterns total."
+    source: derived
+    # NO pattern list is stored here ON PURPOSE. There is exactly one source of truth
+    # — the installed adapter — so there is nothing here to copy, mistype, or let go
+    # stale. Run `--list Trivy` to see all six, `--emit Trivy '<regex>'` to generate
+    # the config block.
+    #
+    # Selecting by severity IS selecting patterns (severity is fixed per pattern):
+    #   lightweight  '^Trivy_(secret|vulnerability_critical)$'
+    #   balanced     '^Trivy_(secret|malicious_packages|vulnerability_(critical|high))$'
+    #   thorough     '^Trivy_(secret|malicious_packages|vulnerability_(critical|high|medium))$'
+    patterns: derive   # sentinel: not a list — see above. Never emit this value.
+
+  # --- Ruff (773 available → ~20 high-signal) ---
+  Ruff:
+    description: "Python errors + security. Skips style/formatting (use formatter instead)."
+    patterns:
+      # Pyflakes — error-prone
+      - patternId: "Ruff_F401"    # unused import
+      - patternId: "Ruff_F811"    # redefined unused name
+      - patternId: "Ruff_F841"    # unused variable
+      - patternId: "Ruff_F821"    # undefined name
+      # Bugbear — likely bugs
+      - patternId: "Ruff_B006"    # mutable default argument
+      - patternId: "Ruff_B007"    # unused loop variable
+      - patternId: "Ruff_B018"    # useless expression
+      # Security
+      - patternId: "Ruff_S101"    # assert used (not for prod)
+      - patternId: "Ruff_S102"    # exec used
+      - patternId: "Ruff_S103"    # bad file permissions
+      - patternId: "Ruff_S104"    # hardcoded bind all interfaces
+      - patternId: "Ruff_S105"    # hardcoded password string
+      - patternId: "Ruff_S106"    # hardcoded password argument
+      - patternId: "Ruff_S107"    # hardcoded password default
+      - patternId: "Ruff_S108"    # hardcoded temp file
+      - patternId: "Ruff_S110"    # try-except-pass
+      - patternId: "Ruff_S301"    # pickle usage
+      - patternId: "Ruff_S608"    # SQL injection via string formatting
+      # Type annotations (if desired)
+      - patternId: "Ruff_ANN001"  # missing type annotation for function argument
+      - patternId: "Ruff_ANN201"  # missing return type annotation
+
+  # --- ShellCheck (491 available → ~15 high-signal) ---
+  shellcheck:
+    description: "Quoting, globbing, and error-prone shell patterns."
+    patterns:
+      - patternId: "shellcheck_SC2086"   # double quote to prevent globbing/splitting
+      - patternId: "shellcheck_SC2046"   # quote to prevent word splitting
+      - patternId: "shellcheck_SC2006"   # use $() instead of backticks
+      - patternId: "shellcheck_SC2034"   # variable unused
+      - patternId: "shellcheck_SC2064"   # use single quotes for trap
+      - patternId: "shellcheck_SC2155"   # declare and assign separately
+      - patternId: "shellcheck_SC2164"   # use cd ... || exit
+      - patternId: "shellcheck_SC2181"   # check exit code directly
+      - patternId: "shellcheck_SC2162"   # read without -r
+      - patternId: "shellcheck_SC2002"   # useless cat
+      - patternId: "shellcheck_SC2004"   # unnecessary $ in arithmetic
+      - patternId: "shellcheck_SC2116"   # useless echo
+      - patternId: "shellcheck_SC2148"   # missing shebang
+      - patternId: "shellcheck_SC2229"   # command not found (typo)
+
+  # --- Bandit (78 available → ~10 high-signal) ---
+  Bandit:
+    description: "Python security only."
+    patterns:
+      - patternId: "B101"    # assert used
+      - patternId: "B102"    # exec used
+      - patternId: "B103"    # set_bad_file_permissions
+      - patternId: "B104"    # hardcoded_bind_all_interfaces
+      - patternId: "B105"    # hardcoded_password_string
+      - patternId: "B301"    # pickle usage
+      - patternId: "B303"    # insecure hash (md5/sha1)
+      - patternId: "B608"    # SQL injection
+      - patternId: "B602"    # subprocess with shell=True
+      - patternId: "B501"    # request with verify=False
+
+  # --- PMD7 (424 available → ~12 high-signal) ---
+  PMD7:
+    description: "Java error-prone + security. No style rules."
+    patterns:
+      - patternId: "UnusedLocalVariable"
+      - patternId: "UnusedPrivateField"
+      - patternId: "UnusedPrivateMethod"
+      - patternId: "EmptyCatchBlock"
+      - patternId: "AvoidReassigningParameters"
+      - patternId: "CloseResource"
+      - patternId: "CompareObjectsWithEquals"
+      - patternId: "EqualsNull"
+      - patternId: "MissingBreakInSwitch"
+      - patternId: "NullAssignment"
+      - patternId: "ReturnEmptyCollectionRatherThanNull"
+      - patternId: "SimplifiedTernary"
+
+  # --- detekt (296 available → ~10 high-signal) ---
+  detekt:
+    description: "Kotlin error-prone + complexity."
+    patterns:
+      - patternId: "EmptyCatchBlock"
+      - patternId: "SwallowedException"
+      - patternId: "UnusedPrivateMember"
+      - patternId: "MagicNumber"
+      - patternId: "ComplexMethod"
+      - patternId: "LongMethod"
+      - patternId: "TooManyFunctions"
+      - patternId: "ReturnCount"
+      - patternId: "ThrowsCount"
+      - patternId: "MaxLineLength"
+
+  # --- Lizard (12 available → all, already minimal) ---
+  Lizard:
+    description: "Complexity metrics only. Already minimal."
+    patterns: []  # All 12 patterns — they are all complexity metrics
+
+  # --- Hadolint (99 available → ~8 high-signal) ---
+  Hadolint:
+    description: "Dockerfile best practices."
+    patterns:
+      - patternId: "DL3006"   # always tag the version of an image
+      - patternId: "DL3007"   # using latest is error-prone
+      - patternId: "DL3008"   # pin versions in apt-get
+      - patternId: "DL3009"   # delete apt-get lists
+      - patternId: "DL3018"   # pin versions in apk add
+      - patternId: "DL3025"   # use JSON for CMD
+      - patternId: "DL3028"   # pin versions in gem install
+      - patternId: "DL4006"   # set SHELL option -o pipefail
