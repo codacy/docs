@@ -168,7 +168,7 @@ When a scan can't sign in, or loses the session and can't sign in again, the sca
 
 For API targets with header-based authentication, **Auth failed** means that 90% or more of the responses from the target were HTTP 401 or 403, so the headers were most likely rejected. A successful result only means that the API didn't reject the headers, not that every endpoint was reachable.
 
-The label reflects the target's last finished scan, so it goes away once a later scan finishes without an authentication failure. To see the exact reason, list the target with the Codacy API and read `lastAuthenticationFailureReason`, as shown in [Trigger DAST scans](../codacy-api/examples/triggering-dast-scans.md#checking-the-last-authentication-result). The reason starts with one of these messages:
+The label reflects the target's last finished scan, so it goes away once a later scan finishes without an authentication failure. The Codacy UI only shows the label. To see the exact reason, list the target with the Codacy API and read `lastAuthenticationFailureReason`, as shown in [Trigger DAST scans](../codacy-api/examples/triggering-dast-scans.md#checking-the-last-authentication-result). The reason starts with one of these messages:
 
 -   **No login form found:** check that the login page URL shows the login form, and that the form follows [the markup the scan looks for](#helping-the-scan-find-your-login-form). The reason includes the URL the scan checked.
 -   **Login was rejected:** sign in manually with the same username and password, and check that the account isn't locked or asking for MFA or a CAPTCHA.
@@ -180,9 +180,7 @@ Apart from **No login form found**, the reason also names the form and the usern
 Some failures aren't authentication failures, so the target doesn't show the **Auth failed** label, and the scan is retried:
 
 -   **The login page couldn't be reached:** check that the login page URL is correct and that [Codacy's IP addresses](../codacy-api/examples/triggering-dast-scans.md#adding-codacy-to-your-allowlist-for-dast-scans) can reach it.
--   **The scan timed out:** an authenticated web app scan stops after about an hour. <!-- TODO: verify what to advise when an authenticated scan times out (narrower target URL? contact support?) -->
-
-<!-- TODO: verify whether the scan's failure reason is shown anywhere in the Codacy UI; in the OD-815 PRs it is only available through the API -->
+-   **The scan timed out:** an authenticated web app scan stops after about an hour. If your scans keep timing out, let us know via support or your account representative.
 
 
 ## How to scan a target
