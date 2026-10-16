@@ -39,3 +39,11 @@ tools/*.csv
 .claude/worktrees/
 .claude/plans/
 .venv/
+
+# Verity — machine-local state. Everything in .verity/ is ignored EXCEPT the
+# shared standard and the knowledge graph, which are meant to be committed.
+.verity/*
+!.verity/standard.yaml
+!.verity/memory/
+.verity/memory/log.md
+.claude/settings.local.json
