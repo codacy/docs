@@ -14,7 +14,7 @@ Thanks to the new app scanning capabilities available on the Security and risk m
 
 ## Creating targets
 
-Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan, including the target URL, its type (API or web application), and other type-dependent fields like OpenAPI specification and optional authentication details for API targets.
+Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan, including the target URL, its type (API or web application), and other type-dependent fields like OpenAPI specification, optional authentication headers for API targets, and optional login credentials for web app targets.
 
 Targets only need to be created once. Note that **targets are immutable** — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.
 
@@ -44,7 +44,27 @@ curl -X POST https://app.codacy.com/api/v3/organizations/{GIT_PROVIDER}/{ORGANIZ
         "apiDefinitionUrl": {API_DEFINITION_URL},
         "apiAuthHeaders": {
           "{HEADER_NAME}": "{HEADER_VALUE}"
-        }
+        },
+        "repositoryName": {REPOSITORY_NAME}
+      }'
+```
+
+To create a web app target that [signs in through a login form](../../security/app-scanning.md#scanning-a-web-app-behind-a-login), send `formLogin` instead of the API fields:
+
+```bash
+curl -X POST https://app.codacy.com/api/v3/organizations/{GIT_PROVIDER}/{ORGANIZATION}/dast/targets \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "api-token: {API_KEY}" \
+  -d '{
+        "url": {TARGET_URL},
+        "targetType": "webapp",
+        "formLogin": {
+          "username": {LOGIN_USERNAME},
+          "password": {LOGIN_PASSWORD},
+          "loginPageUrl": {LOGIN_PAGE_URL}
+        },
+        "repositoryName": {REPOSITORY_NAME}
       }'
 ```
 
@@ -60,6 +80,10 @@ Replace the placeholders with your own values:
 | **API_DEFINITION_URL** | false * | The URL to a publicly accessible OpenAPI specification.<br/>*** Required for OpenAPI targets**|
 | **HEADER_NAME** | false | Name of the authentication header. <br/>For example, `Authentication`|
 | **HEADER_VALUE** | false | Value of the authentication header. <br/>For example, a token or API key|
+| **LOGIN_USERNAME** | false * | Username of the test account the scan signs in with.<br/>*** Required with `formLogin`, which is only allowed for `webapp` targets**|
+| **LOGIN_PASSWORD** | false * | Password of that account. Codacy encrypts it and never returns it.<br/>*** Required with `formLogin`**|
+| **LOGIN_PAGE_URL** | false | URL of the page with the login form. Omit it when the target URL shows the login form.<br/>For example, `https://staging.example.com/login`|
+| **REPOSITORY_NAME** | false | Name of a repository in the organization to link the target to.<br/>For example, `website`|
 
 Once you create the target you'll get the target `id` as a response. You will use it to trigger DAST scans in the next section.
 
@@ -91,6 +115,23 @@ curl -X POST https://app.codacy.com/api/v3/organizations/gh/codacy/security/item
   -H "api-token: {API_KEY}" \
   -d '{"statuses":["OnTrack","Overdue","DueSoon"],"dastTargetUrls":["example.com]}'
 ```
+
+## Checking the last authentication result
+
+To check whether a target's credentials worked on its last finished scan, call the '[Get DAST targets](https://api.codacy.com/api/api-docs#getdasttargets)' endpoint:
+
+```bash
+curl -X GET https://app.codacy.com/api/v3/organizations/{GIT_PROVIDER}/{ORGANIZATION}/dast/targets \
+  -H "Accept: application/json" \
+  -H "api-token: {API_KEY}"
+```
+
+Each target in the response includes these fields:
+
+-   **`formLogin`:** the username and login page URL of a web app target with form login. The password is never returned.
+-   **`repositoryName`:** the repository linked to the target, if any.
+-   **`lastAuthenticationSucceeded`:** `true` if the last finished scan signed in, or for API targets, if the API didn't reject the auth headers. `false` if the authentication failed. Absent when the target has no credentials, was never scanned, or the last scan failed for another reason, such as a timeout.
+-   **`lastAuthenticationFailureReason`:** why the authentication failed. Only present when `lastAuthenticationSucceeded` is `false`. See [why authentication fails](../../security/app-scanning.md#why-did-authentication-fail) for what each reason means.
 
 ## Adding Codacy to your allowlist for DAST scans
 
