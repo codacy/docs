@@ -101,9 +101,56 @@ The scan looks for the login form on the login page URL, or on the target URL wh
 
 When the target URL is the login page itself, the scan can confirm that the login succeeded but not that the session holds afterward, because many login pages keep showing the form to signed-in users. For the most reliable results, use a target URL that only signed-in users can see, and set the login page URL.
 
-### How the scan finds the login form
+### Login types that aren't supported
 
-You don't map any fields. Before crawling, the scan opens the login page and picks the login form from its HTML:
+Form-based authentication only supports login forms in the HTML that the server returns. These aren't supported yet:
+
+-   Login forms built by JavaScript, including single-page applications.
+-   Single sign-on (SSO), such as SAML or OAuth logins.
+-   Logins that require multi-factor authentication or a CAPTCHA.
+
+### What the scan does while signed in
+
+Before crawling, the scan signs in and checks that the target URL no longer shows the login form. During the scan, it signs in again whenever it gets one of these responses, since they mean the session ended:
+
+-   A page that shows the login form.
+-   An HTTP 401 response.
+-   A redirect to the login page.
+
+An HTTP 403 response doesn't count, since a signed-in user can still be forbidden from a page.
+
+To keep the scan from signing itself out or deleting data, an authenticated scan:
+
+-   Skips any URL whose path contains `logout`, `log-out`, `signout`, `sign-out`, `delete`, `remove`, or `destroy`.
+-   Doesn't submit forms that use `method="post"`, apart from the login form.
+
+## Why did authentication fail?
+
+When a scan can't sign in, or loses the session and can't sign in again, the scan fails and the target shows an **Auth failed** label next to its status. A failed authenticated scan:
+
+-   Doesn't add new findings or close existing ones, because its results miss the pages behind the login.
+-   Isn't retried automatically, since the same credentials would fail again.
+
+The label reflects the target's last finished scan, so it goes away once a later scan finishes without an authentication failure. The Codacy UI only shows the label. To see the exact reason, list the target with the Codacy API and read `lastAuthenticationFailureReason`, as shown in [Trigger DAST scans](../codacy-api/examples/triggering-dast-scans.md#checking-the-last-authentication-result).
+
+### Web app targets with form-based authentication
+
+The reason starts with one of these messages:
+
+-   **No login form found:** check that the login page URL shows the login form, and that the form follows [the markup the scan looks for](#how-the-scan-identifies-the-login-fields). The reason includes the URL the scan checked.
+-   **Login was rejected:** sign in manually with the same username and password, and check that the account isn't locked or asking for MFA or a CAPTCHA. If the credentials work, check that the scan [picked the right fields](#how-the-scan-identifies-the-login-fields).
+-   **The session did not hold:** the target URL still showed the login form after signing in. Check that signed-in pages don't contain the login form, or use a target URL that only signed-in users can see.
+-   **Logging in again during the scan failed:** the session ended mid-scan and the new login was rejected. Check for account lockout, and for pages that end the session but aren't [skipped by the scan](#what-the-scan-does-while-signed-in).
+
+Apart from **No login form found**, the reason also names the form and the username field the scan used, so you can check that it picked the right ones.
+
+### API targets with header-based authentication
+
+**Auth failed** means that 90% or more of the responses from the target were HTTP 401 or 403, so the headers were most likely rejected. Check the header name and value. A successful result only means that the API didn't reject the headers, not that every endpoint was reachable.
+
+### How the scan identifies the login fields
+
+You don't map any fields. The scan opens the login page and picks the login form from its HTML:
 
 1.  **The form:** the first form that uses `method="post"` and has exactly one password input with a `name`. Sign-up and change-password forms on the same page usually have two password inputs, so they're skipped.
 1.  **The username input:** the first match, in this order:
@@ -114,19 +161,7 @@ You don't map any fields. Before crawling, the scan opens the login page and pic
     1.  The first text input after the password input.
 1.  **The other fields:** hidden fields, such as CSRF tokens, are sent with their values from the page.
 
-The scan then submits the form with your credentials and checks that the target URL no longer shows the login form.
-
-During the scan, Codacy treats any of these responses as a sign that the session ended, and signs in again:
-
--   A page that shows the login form.
--   An HTTP 401 response.
--   A redirect to the login page.
-
-An HTTP 403 response doesn't count, since a signed-in user can still be forbidden from a page.
-
-### Helping the scan find your login form
-
-If the scan reports that it found no login form, or picked the wrong field, adjust the login page markup:
+If the scan finds no form or picks the wrong field, adjust the login page markup:
 
 -   Render the login form in the server's HTML response, with `method="post"`.
 -   Use exactly one password input in the login form, and give each input a `name`.
@@ -144,44 +179,12 @@ For example, the scan finds this form without any guessing:
 </form>
 ```
 
-### What the scan skips
+### Failures that aren't authentication failures
 
-To keep the scan from signing itself out or deleting data, an authenticated scan:
-
--   Skips any URL whose path contains `logout`, `log-out`, `signout`, `sign-out`, `delete`, `remove`, or `destroy`.
--   Doesn't submit forms that use `method="post"`, apart from the login form.
-
-### Login types that aren't supported
-
-Form-based authentication only supports login forms in the HTML that the server returns. These aren't supported yet:
-
--   Login forms built by JavaScript, including single-page applications.
--   Single sign-on (SSO), such as SAML or OAuth logins.
--   Logins that require multi-factor authentication or a CAPTCHA.
-
-### Why did authentication fail?
-
-When a scan can't sign in, or loses the session and can't sign in again, the scan fails and the target shows an **Auth failed** label next to its status. A failed authenticated scan:
-
--   Doesn't add new findings or close existing ones, because its results miss the pages behind the login.
--   Isn't retried automatically, since the same credentials would fail again.
-
-For API targets with header-based authentication, **Auth failed** means that 90% or more of the responses from the target were HTTP 401 or 403, so the headers were most likely rejected. A successful result only means that the API didn't reject the headers, not that every endpoint was reachable.
-
-The label reflects the target's last finished scan, so it goes away once a later scan finishes without an authentication failure. The Codacy UI only shows the label. To see the exact reason, list the target with the Codacy API and read `lastAuthenticationFailureReason`, as shown in [Trigger DAST scans](../codacy-api/examples/triggering-dast-scans.md#checking-the-last-authentication-result). The reason starts with one of these messages:
-
--   **No login form found:** check that the login page URL shows the login form, and that the form follows [the markup the scan looks for](#helping-the-scan-find-your-login-form). The reason includes the URL the scan checked.
--   **Login was rejected:** sign in manually with the same username and password, and check that the account isn't locked or asking for MFA or a CAPTCHA.
--   **The session did not hold:** the target URL still showed the login form after signing in. Check that signed-in pages don't contain the login form, or use a target URL that only signed-in users can see.
--   **Logging in again during the scan failed:** the session ended mid-scan and the new login was rejected. Check for account lockout, and for pages that end the session but aren't [skipped by the scan](#what-the-scan-skips).
-
-Apart from **No login form found**, the reason also names the form and the username field the scan used, so you can check that it picked the right ones.
-
-Some failures aren't authentication failures, so the target doesn't show the **Auth failed** label, and the scan is retried:
+These failures don't show the **Auth failed** label, and the scan is retried:
 
 -   **The login page couldn't be reached:** check that the login page URL is correct and that [Codacy's IP addresses](../codacy-api/examples/triggering-dast-scans.md#adding-codacy-to-your-allowlist-for-dast-scans) can reach it.
 -   **The scan timed out:** an authenticated web app scan stops after about an hour. If your scans keep timing out, let us know via support or your account representative.
-
 
 ## How to scan a target
 
