@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-25 08:52:29">
+    <meta http-equiv="last-modified" content="2026-10-16 13:50:10">
   
   
 
@@ -9578,6 +9578,15 @@ See <a href="../../troubleshooting/why-did-codacy-stop-commenting-on-pull-reques
 </tr>
 
 <tr>
+<td>Size of the pull requests reviewed by the AI Reviewer</td>
+<td>270,000 tokens</td>
+<td>
+The AI Reviewer doesn't review pull requests whose changes, together with the context it reads, come to more than this number of tokens. These are mostly merges of whole branches or bulk changes across hundreds of files. Instead, it posts a short review saying the pull request is too large. Splitting it into smaller pull requests lets the reviewer cover it.<br/><br/>
+See <a href="../../../repositories-configure/integrations/github-integration/#ai-reviewer">AI Reviewer</a>
+</td>
+</tr>
+
+<tr>
 <td>Showing issues on duplicated lines</td>
 <td>-</td>
 <td>
@@ -9599,7 +9608,7 @@ For now, Codacy only reports the first code issue when there are issues on dupli
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-25 08:52:29"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2026</span></time>
+    <time datetime="2026-10-16 13:50:10"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 16, 2026</span></time>
   </aside>
 
 
