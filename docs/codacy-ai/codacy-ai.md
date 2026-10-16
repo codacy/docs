@@ -4,7 +4,6 @@
 
 Codacy AI is a set of optional features integrated into the Software, designed to optimise development workflows and elevate code quality standards through automated issue descriptions, actionable recommendations and false-positive detection. These features are available for the Customer.
 
-<!-- TODO: verify with Security that this provider list matches the subprocessor list (Google Gemini removed, Amazon Bedrock added for the AI Reviewer, OD-866) -->
 Codacy AI utilizes only enterprise-grade instances of OpenAI services, accessed directly or through Amazon Bedrock, with enhanced security, privacy, and data protection features. Customer Code processed through Codacy AI will not be used by Codacy, OpenAI, or any third-party AI provider for training, improving, or developing artificial intelligence models, machine learning algorithms, or any other automated systems.
 
 ## AI Features
