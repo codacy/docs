@@ -106,6 +106,7 @@ When the target URL is the login page itself, the scan can confirm that the logi
 Form-based authentication only supports login forms in the HTML that the server returns. These aren't supported yet:
 
 -   Login forms built by JavaScript, including single-page applications.
+-   Logins that ask for the username and the password on separate pages, such as a username step followed by a password step. The username and password inputs must be in the same form.
 -   Single sign-on (SSO), such as SAML or OAuth logins.
 -   Logins that require multi-factor authentication or a CAPTCHA.
 
@@ -137,7 +138,7 @@ The label reflects the target's last finished scan, so it goes away once a later
 
 The reason starts with one of these messages:
 
--   **No login form found:** check that the login page URL shows the login form, and that the form follows [the markup the scan looks for](#how-the-scan-identifies-the-login-fields). The reason includes the URL the scan checked.
+-   **No login form found:** check that the login page URL shows the login form, that the username and password inputs are in that same form, and that the form follows [the markup the scan looks for](#how-the-scan-identifies-the-login-fields). The reason includes the URL the scan checked.
 -   **Login was rejected:** sign in manually with the same username and password, and check that the account isn't locked or asking for MFA or a CAPTCHA. If the credentials work, check that the scan [picked the right fields](#how-the-scan-identifies-the-login-fields).
 -   **The session did not hold:** the target URL still showed the login form after signing in. Check that signed-in pages don't contain the login form, or use a target URL that only signed-in users can see.
 -   **Logging in again during the scan failed:** the session ended mid-scan and the new login was rejected. Check for account lockout, and for pages that end the session but aren't [skipped by the scan](#what-the-scan-does-while-signed-in).
