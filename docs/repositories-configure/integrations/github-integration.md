@@ -63,6 +63,10 @@ Configure when the AI Reviewer runs using the **Run reviewer** setting:
 | Automatically (first review only) | Codacy runs the reviewer once automatically when the pull request is opened, then requires manual triggering for subsequent updates. |
 | Manually | Click **Run Reviewer** in the pull request summary comment or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview) to trigger a review on demand. |
 
+When you run the reviewer again on the same pull request, it reads the comments from its earlier reviews so it doesn't raise the same point twice, unless new commits changed that code substantially.
+
+The AI Reviewer skips pull requests that are too large, such as merges of whole branches. Instead, it posts a short review saying the pull request is too large and suggesting you split it. See the [limits Codacy applies](../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md).
+
 !!! tip
     Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here](../../codacy-ai/codacy-ai.md#custom-instructions).
 

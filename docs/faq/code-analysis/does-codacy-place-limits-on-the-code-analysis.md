@@ -73,6 +73,15 @@ See <a href="../../troubleshooting/why-did-codacy-stop-commenting-on-pull-reques
 </tr>
 
 <tr>
+<td>Size of the pull requests reviewed by the AI Reviewer</td>
+<td>270,000 tokens</td>
+<td>
+The AI Reviewer doesn't review pull requests whose changes, together with the context it reads, come to more than this number of tokens. These are mostly merges of whole branches or bulk changes across hundreds of files. Instead, it posts a short review saying the pull request is too large. Splitting it into smaller pull requests lets the reviewer cover it.<br/><br/>
+See <a href="../../../repositories-configure/integrations/github-integration/#ai-reviewer">AI Reviewer</a>
+</td>
+</tr>
+
+<tr>
 <td>Showing issues on duplicated lines</td>
 <td>-</td>
 <td>
