@@ -132,7 +132,7 @@ When a scan can't sign in, or loses the session and can't sign in again, the sca
 -   Doesn't add new findings or close existing ones, because its results miss the pages behind the login.
 -   Isn't retried automatically, since the same credentials would fail again.
 
-The label reflects the target's last finished scan, so it goes away once a later scan finishes without an authentication failure. The Codacy UI only shows the label. To see the exact reason, list the target with the Codacy API and read `lastAuthenticationFailureReason`, as shown in [Trigger DAST scans](../codacy-api/examples/triggering-dast-scans.md#checking-the-last-authentication-result).
+The label reflects the target's last finished scan, so it goes away once a later scan finishes without an authentication failure. Hover over the label to see the reason and a link to the matching section below. Long reasons are cut short in the tooltip. To see the full reason, list the target with the Codacy API and read `lastAuthenticationFailureReason`, as shown in [Trigger DAST scans](../codacy-api/examples/triggering-dast-scans.md#checking-the-last-authentication-result).
 
 ### Web app targets with form-based authentication
 
