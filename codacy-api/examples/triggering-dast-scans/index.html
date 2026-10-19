@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 10:12:15">
+    <meta http-equiv="last-modified" content="2026-10-19 14:18:03">
   
   
 
@@ -4715,6 +4715,15 @@
     <span class="md-ellipsis">
       
         Trigger DAST analysis scans
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#checking-the-last-authentication-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking the last authentication result
       
     </span>
   </a>
@@ -9463,6 +9472,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#checking-the-last-authentication-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking the last authentication result
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#adding-codacy-to-your-allowlist-for-dast-scans" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9548,7 +9566,7 @@
 <p><strong>Check your <a href="../../../organizations/roles-and-permissions-for-organizations/">permissions</a>.</strong> Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).</p>
 </div>
 <h2 id="creating-targets">Creating targets<a class="headerlink" href="#creating-targets" title="Permanent link">#</a></h2>
-<p>Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan, including the target URL, its type (API or web application), and other type-dependent fields like OpenAPI specification and optional authentication details for API targets.</p>
+<p>Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan, including the target URL, its type (API or web application), and other type-dependent fields like OpenAPI specification, optional authentication headers for API targets, and optional login credentials for web app targets.</p>
 <p>Targets only need to be created once. Note that <strong>targets are immutable</strong> — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -9573,7 +9591,24 @@
 <span class="s1">        &quot;apiDefinitionUrl&quot;: {API_DEFINITION_URL},</span>
 <span class="s1">        &quot;apiAuthHeaders&quot;: {</span>
 <span class="s1">          &quot;{HEADER_NAME}&quot;: &quot;{HEADER_VALUE}&quot;</span>
-<span class="s1">        }</span>
+<span class="s1">        },</span>
+<span class="s1">        &quot;repositoryName&quot;: {REPOSITORY_NAME}</span>
+<span class="s1">      }&#39;</span>
+</code></pre></div>
+<p>To create a web app target that <a href="../../../security/app-scanning/#scanning-a-web-app-behind-a-login">signs in through a login form</a>, send <code>formLogin</code> instead of the API fields:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Accept: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="s1">        &quot;url&quot;: {TARGET_URL},</span>
+<span class="s1">        &quot;targetType&quot;: &quot;webapp&quot;,</span>
+<span class="s1">        &quot;formLogin&quot;: {</span>
+<span class="s1">          &quot;username&quot;: {LOGIN_USERNAME},</span>
+<span class="s1">          &quot;password&quot;: {LOGIN_PASSWORD},</span>
+<span class="s1">          &quot;loginPageUrl&quot;: {LOGIN_PAGE_URL}</span>
+<span class="s1">        },</span>
+<span class="s1">        &quot;repositoryName&quot;: {REPOSITORY_NAME}</span>
 <span class="s1">      }&#39;</span>
 </code></pre></div>
 <p>Replace the placeholders with your own values:</p>
@@ -9626,6 +9661,26 @@
 <td>false</td>
 <td>Value of the authentication header. <br/>For example, a token or API key</td>
 </tr>
+<tr>
+<td><strong>LOGIN_USERNAME</strong></td>
+<td>false *</td>
+<td>Username of the test account the scan signs in with.<br/><strong>* Required with <code>formLogin</code>, which is only allowed for <code>webapp</code> targets</strong></td>
+</tr>
+<tr>
+<td><strong>LOGIN_PASSWORD</strong></td>
+<td>false *</td>
+<td>Password of that account. Codacy encrypts it and never returns it.<br/><strong>* Required with <code>formLogin</code></strong></td>
+</tr>
+<tr>
+<td><strong>LOGIN_PAGE_URL</strong></td>
+<td>false</td>
+<td>URL of the page with the login form. Omit it when the target URL shows the login form.<br/>For example, <code>https://staging.example.com/login</code></td>
+</tr>
+<tr>
+<td><strong>REPOSITORY_NAME</strong></td>
+<td>false</td>
+<td>Name of a repository in the organization to link the target to.<br/>For example, <code>website</code></td>
+</tr>
 </tbody>
 </table>
 <p>Once you create the target you'll get the target <code>id</code> as a response. You will use it to trigger DAST scans in the next section.</p>
@@ -9653,6 +9708,19 @@ Additionaly, you can use the <code>SearchSRMItems</code> endpoint to filter find
 <span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;statuses&quot;:[&quot;OnTrack&quot;,&quot;Overdue&quot;,&quot;DueSoon&quot;],&quot;dastTargetUrls&quot;:[&quot;example.com]}&#39;</span>
 </code></pre></div></p>
+<h2 id="checking-the-last-authentication-result">Checking the last authentication result<a class="headerlink" href="#checking-the-last-authentication-result" title="Permanent link">#</a></h2>
+<p>To check whether a target's credentials worked on its last finished scan, call the '<a href="https://api.codacy.com/api/api-docs#getdasttargets">Get DAST targets</a>' endpoint:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Accept: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span>
+</code></pre></div>
+<p>Each target in the response includes these fields:</p>
+<ul>
+<li><strong><code>formLogin</code>:</strong> the username and login page URL of a web app target with form login. The password is never returned.</li>
+<li><strong><code>repositoryName</code>:</strong> the repository linked to the target, if any.</li>
+<li><strong><code>lastAuthenticationSucceeded</code>:</strong> <code>true</code> if the last finished scan signed in, or for API targets, if the API didn't reject the auth headers. <code>false</code> if the authentication failed. Absent when the target has no credentials, was never scanned, or the last scan failed for another reason, such as a timeout.</li>
+<li><strong><code>lastAuthenticationFailureReason</code>:</strong> why the authentication failed. Only present when <code>lastAuthenticationSucceeded</code> is <code>false</code>. See <a href="../../../security/app-scanning/#why-did-authentication-fail">why authentication fails</a> for what each reason means.</li>
+</ul>
 <h2 id="adding-codacy-to-your-allowlist-for-dast-scans">Adding Codacy to your allowlist for DAST scans<a class="headerlink" href="#adding-codacy-to-your-allowlist-for-dast-scans" title="Permanent link">#</a></h2>
 <p>Our DAST scanner uses dedicated IP addresses. You may need to add the following IP addresses to your firewall's allowlist to prevent any rate limiting or connectivity issues:</p>
 <ul>
@@ -9667,7 +9735,7 @@ Additionaly, you can use the <code>SearchSRMItems</code> endpoint to filter find
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 10:12:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
+    <time datetime="2026-10-19 14:18:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2026</span></time>
   </aside>
 
 

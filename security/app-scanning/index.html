@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
   
-    <meta http-equiv="last-modified" content="2026-10-09 11:06:48">
+    <meta http-equiv="last-modified" content="2026-10-19 14:18:03">
   
   
 
@@ -2192,6 +2192,24 @@
     <span class="md-ellipsis">
       
         Creating an App Scanning target
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#scanning-a-web-app-behind-a-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scanning a web app behind a login
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#why-did-authentication-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why did authentication fail?
       
     </span>
   </a>
@@ -9454,6 +9472,24 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#scanning-a-web-app-behind-a-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scanning a web app behind a login
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#why-did-authentication-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why did authentication fail?
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#how-to-scan-a-target" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -9540,7 +9576,7 @@
 <p>Codacy supports two types of scanning:</p>
 <ul>
 <li>
-<p><strong>Web application scans</strong> perform baseline, non-intrusive analysis. These scans are safe for production environments and detect surface-level issues such as:</p>
+<p><strong>Web application scans</strong> perform baseline, non-intrusive analysis. Unauthenticated web application scans are safe for production environments, but <a href="#scanning-a-web-app-behind-a-login">scans that sign in</a> belong in a test or staging environment. Web application scans detect surface-level issues such as:</p>
 <ul>
 <li>Missing security headers</li>
 <li>Insecure cookie configurations</li>
@@ -9575,16 +9611,133 @@
 </ul>
 <p>We recommend running scans in a <strong>test or staging environment</strong>, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.</p>
 </div>
-<p>When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:</p>
+<p>When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App requires a target URL, while APIs will have other requirements:</p>
 <ul>
 <li><strong>REST APIs</strong>, which require a publicly accessible OpenAPI specification URL.</li>
 <li><strong>GraphQL APIs</strong>, where the schema is inferred from the default path <code>{targetUrl}/graphql</code>.</li>
 </ul>
-<p>API targets optionally support <strong>header-based authentication</strong>. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).</p>
+<p>Web app targets optionally support <a href="#scanning-a-web-app-behind-a-login"><strong>form-based authentication</strong></a>, and API targets optionally support <strong>header-based authentication</strong>. Any target can also be <a href="#linking-a-target-to-a-repository">linked to a repository</a>. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If exposing your API specification isn't feasible for your team, let us know via support or your account representative.</p>
 </div>
+<h3 id="linking-a-target-to-a-repository">Linking a target to a repository<a class="headerlink" href="#linking-a-target-to-a-repository" title="Permanent link">#</a></h3>
+<p>Link a target to the repository that holds the application's code so that its findings show up when you filter findings by that repository. The link is optional and works for web app and API targets.</p>
+<p>To link a target, select the repository in the <strong>Repository</strong> field. For web apps it sits below the target URL, and for APIs below the API definition URL. The target then shows the repository name as a label on the <strong>App scanning</strong> page. If the repository is later removed from Codacy, the label disappears.</p>
+<h2 id="scanning-a-web-app-behind-a-login">Scanning a web app behind a login<a class="headerlink" href="#scanning-a-web-app-behind-a-login" title="Permanent link">#</a></h2>
+<p>By default, a web app scan only reaches the pages anyone can open without signing in. With form-based authentication, Codacy signs in through your app's login form before the scan, so the scan also covers the pages behind it.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Run authenticated scans against a test or staging environment, never production.</strong> While signed in, the scan follows links and submits forms as the user, which can change that user's data.</p>
+</div>
+<h3 id="configuring-form-based-authentication">Configuring form-based authentication<a class="headerlink" href="#configuring-form-based-authentication" title="Permanent link">#</a></h3>
+<ol>
+<li>On the <strong>App scanning</strong> page, click <strong>Configure new target</strong>.</li>
+<li>Select <strong>Web app</strong> and click <strong>Next</strong>.</li>
+<li>Enter the <strong>Target URL</strong>, optionally select a <strong>Repository</strong>, and click <strong>Next</strong>.</li>
+<li>Select <strong>Form-based session</strong> and click <strong>Next</strong>.</li>
+<li>
+<p>Fill in the login details:</p>
+<ul>
+<li><strong>Login page URL:</strong> the page that shows the login form. Leave it empty when the target URL shows the login form. See <a href="#when-to-set-the-login-page-url">when to set the login page URL</a>.</li>
+<li><strong>Username</strong> and <strong>Password:</strong> the credentials of a dedicated test account. See <a href="#choosing-the-account-to-scan-with">choosing the account</a>.</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Save target</strong>.</p>
+</li>
+</ol>
+<p>Codacy encrypts the password and never shows it again. To change the credentials, delete the target and create it again.</p>
+<p>To create the same target with the Codacy API, see <a href="../../codacy-api/examples/triggering-dast-scans/#creating-targets">Trigger DAST scans</a>.</p>
+<h3 id="choosing-the-account-to-scan-with">Choosing the account to scan with<a class="headerlink" href="#choosing-the-account-to-scan-with" title="Permanent link">#</a></h3>
+<p>Create a dedicated test account for scanning instead of using a real user's account:</p>
+<ul>
+<li><strong>Turn off multi-factor authentication and CAPTCHAs</strong> for the account. The scan signs in with a username and password only.</li>
+<li><strong>Turn off account lockout</strong> for the account. A scan can sign in several times, and a locked account fails every later scan.</li>
+<li><strong>Give the account the access you want tested.</strong> The scan only reaches the pages this account can open.</li>
+<li><strong>Use an account whose data you can lose.</strong> The scan acts as this user while it crawls.</li>
+</ul>
+<h3 id="when-to-set-the-login-page-url">When to set the login page URL<a class="headerlink" href="#when-to-set-the-login-page-url" title="Permanent link">#</a></h3>
+<p>The scan looks for the login form on the login page URL, or on the target URL when you leave the login page URL empty. Set the login page URL when the target URL doesn't show the login form, for example:</p>
+<ul>
+<li>The target URL is a public landing page and the login form is on another page, such as <code>https://staging.example.com/login</code>.</li>
+<li>The login form is on another host, such as <code>https://auth.example.com/login</code>.</li>
+</ul>
+<p>When the target URL is the login page itself, the scan can confirm that the login succeeded but not that the session holds afterward, because many login pages keep showing the form to signed-in users. For the most reliable results, use a target URL that only signed-in users can see, and set the login page URL.</p>
+<h3 id="login-types-that-arent-supported">Login types that aren't supported<a class="headerlink" href="#login-types-that-arent-supported" title="Permanent link">#</a></h3>
+<p>Form-based authentication only supports login forms in the HTML that the server returns. These aren't supported yet:</p>
+<ul>
+<li>Login forms built by JavaScript, including single-page applications.</li>
+<li>Logins that ask for the username and the password on separate pages, such as a username step followed by a password step. The username and password inputs must be in the same form.</li>
+<li>Single sign-on (SSO), such as SAML or OAuth logins.</li>
+<li>Logins that require multi-factor authentication or a CAPTCHA.</li>
+</ul>
+<h3 id="what-the-scan-does-while-signed-in">What the scan does while signed in<a class="headerlink" href="#what-the-scan-does-while-signed-in" title="Permanent link">#</a></h3>
+<p>Before crawling, the scan signs in and checks that the target URL no longer shows the login form. During the scan, it signs in again whenever it gets one of these responses, since they mean the session ended:</p>
+<ul>
+<li>A page that shows the login form.</li>
+<li>An HTTP 401 response.</li>
+<li>A redirect to the login page.</li>
+</ul>
+<p>An HTTP 403 response doesn't count, since a signed-in user can still be forbidden from a page.</p>
+<p>To keep the scan from signing itself out or deleting data, an authenticated scan:</p>
+<ul>
+<li>Skips any URL whose path contains <code>logout</code>, <code>log-out</code>, <code>signout</code>, <code>sign-out</code>, <code>delete</code>, <code>remove</code>, or <code>destroy</code>.</li>
+<li>Doesn't submit forms that use <code>method="post"</code>, apart from the login form.</li>
+</ul>
+<h2 id="why-did-authentication-fail">Why did authentication fail?<a class="headerlink" href="#why-did-authentication-fail" title="Permanent link">#</a></h2>
+<p>When a scan can't sign in, or loses the session and can't sign in again, the scan fails and the target shows an <strong>Auth failed</strong> label next to its status. A failed authenticated scan:</p>
+<ul>
+<li>Doesn't add new findings or close existing ones, because its results miss the pages behind the login.</li>
+<li>Isn't retried automatically, since the same credentials would fail again.</li>
+</ul>
+<p>The label reflects the target's last finished scan, so it goes away once a later scan finishes without an authentication failure. Hover over the label to see the reason and a link to the matching section below. Long reasons are cut short in the tooltip. To see the full reason, list the target with the Codacy API and read <code>lastAuthenticationFailureReason</code>, as shown in <a href="../../codacy-api/examples/triggering-dast-scans/#checking-the-last-authentication-result">Trigger DAST scans</a>.</p>
+<h3 id="web-app-targets-with-form-based-authentication">Web app targets with form-based authentication<a class="headerlink" href="#web-app-targets-with-form-based-authentication" title="Permanent link">#</a></h3>
+<p>The reason starts with one of these messages:</p>
+<ul>
+<li><strong>No login form found:</strong> check that the login page URL shows the login form, that the username and password inputs are in that same form, and that the form follows <a href="#how-the-scan-identifies-the-login-fields">the markup the scan looks for</a>. The reason includes the URL the scan checked.</li>
+<li><strong>Login was rejected:</strong> sign in manually with the same username and password, and check that the account isn't locked or asking for MFA or a CAPTCHA. If the credentials work, check that the scan <a href="#how-the-scan-identifies-the-login-fields">picked the right fields</a>.</li>
+<li><strong>The session did not hold:</strong> the target URL still showed the login form after signing in. Check that signed-in pages don't contain the login form, or use a target URL that only signed-in users can see.</li>
+<li><strong>Logging in again during the scan failed:</strong> the session ended mid-scan and the new login was rejected. Check for account lockout, and for pages that end the session but aren't <a href="#what-the-scan-does-while-signed-in">skipped by the scan</a>.</li>
+</ul>
+<p>Apart from <strong>No login form found</strong>, the reason also names the form and the username field the scan used, so you can check that it picked the right ones.</p>
+<h3 id="api-targets-with-header-based-authentication">API targets with header-based authentication<a class="headerlink" href="#api-targets-with-header-based-authentication" title="Permanent link">#</a></h3>
+<p><strong>Auth failed</strong> means that 90% or more of the responses from the target were HTTP 401 or 403, so the headers were most likely rejected. Check the header name and value. A successful result only means that the API didn't reject the headers, not that every endpoint was reachable.</p>
+<h3 id="how-the-scan-identifies-the-login-fields">How the scan identifies the login fields<a class="headerlink" href="#how-the-scan-identifies-the-login-fields" title="Permanent link">#</a></h3>
+<p>You don't map any fields. The scan opens the login page and picks the login form from its HTML:</p>
+<ol>
+<li><strong>The form:</strong> the first form that uses <code>method="post"</code> and has exactly one password input with a <code>name</code>. Sign-up and change-password forms on the same page usually have two password inputs, so they're skipped.</li>
+<li><strong>The username input:</strong> the first match, in this order:<ol>
+<li>An input with <code>autocomplete="username"</code>.</li>
+<li>Before the password input, an input with <code>type="email"</code>.</li>
+<li>Before the password input, the text input nearest to it.</li>
+<li>Before the password input, an input with <code>type="tel"</code>.</li>
+<li>The first text input after the password input.</li>
+</ol>
+</li>
+<li><strong>The other fields:</strong> hidden fields, such as CSRF tokens, are sent with their values from the page.</li>
+</ol>
+<p>If the scan finds no form or picks the wrong field, adjust the login page markup:</p>
+<ul>
+<li>Render the login form in the server's HTML response, with <code>method="post"</code>.</li>
+<li>Use exactly one password input in the login form, and give each input a <code>name</code>.</li>
+<li>Add <code>autocomplete="username"</code> to the username input.</li>
+<li>Don't show the login form, or another input with the same name as the password input, on pages that signed-in users see. The scan would read those pages as signed out.</li>
+</ul>
+<p>For example, the scan finds this form without any guessing:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/login&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;csrf_token&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;...&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;username&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;current-password&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Sign in<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="failures-that-arent-authentication-failures">Failures that aren't authentication failures<a class="headerlink" href="#failures-that-arent-authentication-failures" title="Permanent link">#</a></h3>
+<p>These failures don't show the <strong>Auth failed</strong> label, and the scan is retried:</p>
+<ul>
+<li><strong>The login page couldn't be reached:</strong> check that the login page URL is correct and that <a href="../../codacy-api/examples/triggering-dast-scans/#adding-codacy-to-your-allowlist-for-dast-scans">Codacy's IP addresses</a> can reach it.</li>
+<li><strong>The scan timed out:</strong> an authenticated web app scan stops after about an hour. If your scans keep timing out, let us know via support or your account representative.</li>
+</ul>
 <h2 id="how-to-scan-a-target">How to scan a target<a class="headerlink" href="#how-to-scan-a-target" title="Permanent link">#</a></h2>
 <p>You can initiate scans in two ways:
 - From the <strong>App scanning</strong> tab in the Security and risk management dashboard
@@ -9627,7 +9780,7 @@ Additionally, you can click on a configured target to expand all that target's r
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-10-09 11:06:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 9, 2026</span></time>
+    <time datetime="2026-10-19 14:18:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2026</span></time>
   </aside>
 
 
