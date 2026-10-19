@@ -17,3 +17,10 @@
     <p>This documentation applies to a Self-hosted installation. For Cloud documentation, visit <a href="https://docs.codacy.com/">docs.codacy.com</a>.</p>
   </aside>
 {% endif %}
+{# Pages under chart/ come from submodules/chart, so the notice lives here rather than in that repo. #}
+{% if page and page.url.startswith("chart/") and not config.extra.self_hosted %}
+  <aside class="docs-notice" role="status">
+    <strong>Codacy Self-hosted is deprecated for new customers.</strong>
+    <p>If you're evaluating Codacy today, the recommended path is <strong>Codacy Cloud</strong> with support for cloud-based Git integrations and <strong>SOC 2 Type 2 compliance</strong>. Visit <a href="{{ 'getting-started/codacy-quickstart/' | url }}">Codacy Quickstart</a>.</p>
+  </aside>
+{% endif %}
