@@ -191,6 +191,8 @@ In the open configuration modal you'll be able to input your deadline preference
 As soon as changes are saved, your open findings statuses will be updated accordingly.
 You are also able to reset to Codacy default deadline values (see table above) at any time.
 
+Changing an SLA also changes past results in the [Remediation report](index.md#remediation-report), which compares every closed finding against today's SLAs.
+
 ## Finding statuses {: id="item-statuses"}
 
 The following table describes how finding statuses map to deadlines:
