@@ -17,6 +17,6 @@ To keep using Codacy, and to help get this fixed:
     -   Reply to the [report on the Atlassian Developer Community](https://community.developer.atlassian.com/t/bitbucket-cloud-oauth-consent-screen-shown-on-every-authorization-consent-no-longer-remembered/102357).
     -   If your company has an Atlassian subscription, [contact Atlassian Support](https://support.atlassian.com/contact/) and say that the Bitbucket Cloud OAuth consent screen is shown on every authorization since late July 2026.
 
-<!-- TODO: verify — once Codacy's ticket with Atlassian (OD-991) is sent, say so here, and link the public Atlassian issue if Atlassian opens one. -->
+Codacy has reported this to Atlassian (request BBS-257159). If you contact Atlassian Support, mention this request so Atlassian can link your report to it.
 
 If you have other problems logging in to Codacy with Bitbucket, please contact us at <mailto:support@codacy.com>.
