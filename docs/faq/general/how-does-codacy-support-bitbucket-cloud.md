@@ -19,6 +19,7 @@ Currently, the integration between Codacy and Bitbucket Cloud has the following 
 -   **Repositories that are moved between teams are not automatically transferred between Organizations on Codacy.** You must manually delete these repositories from their source Organization and add them to their new Organization.
 -   **Codacy only sends commit and pull request notification emails to the authors of the commits and pull requests.**
 -   **Codacy doesn't analyze pull requests submitted from forked repositories.**
+-   **Atlassian asks you to grant Codacy access every time you log in to Codacy with Bitbucket.** Atlassian now shows its permissions page on every authorization, even if you granted access before, and Codacy can't turn it off. The permissions are the same each time, so you can accept them to continue. See [which permissions Codacy needs](../../getting-started/which-permissions-does-codacy-need-from-my-account.md#bitbucket-cloud).
 
 ## See also
 
