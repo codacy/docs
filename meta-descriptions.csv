@@ -82,6 +82,7 @@ https://docs.codacy.com/faq/troubleshooting/we-no-longer-have-access-to-this-rep
 https://docs.codacy.com/faq/troubleshooting/why-arent-duplication-metrics-being-calculated/,"For performance reasons, Codacy skips the calculation of code duplication for programming languages that have more than 5000 source code files in a repository."
 https://docs.codacy.com/faq/troubleshooting/why-cant-i-see-my-organization/,Try these steps if you don't see your organization when adding your organization on Codacy.
 https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/,Documentation for the Codacy automated code review tool.
+https://docs.codacy.com/faq/troubleshooting/why-does-bitbucket-ask-me-to-grant-codacy-access-every-time-i-log-in/,"Atlassian shows its permissions page every time you log in to Codacy with Bitbucket. Learn why, and how to tell Atlassian it affects your team."
 https://docs.codacy.com/faq/troubleshooting/why-is-my-file-over-150-kb-missing/,"Codacy Cloud currently doesn't analyze files that are larger than 150 KB. Codacy doesn't display these files on the Files page, and doesn't take them into account when grading your repository."
 https://docs.codacy.com/faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/,Codacy only analyzes open source repositories if the following conditions are met:
 https://docs.codacy.com/getting-started/adding-a-codacy-badge/,Add a Codacy badge to the README of your repository to display the current code quality grade or code coverage of your repository.
