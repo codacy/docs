@@ -1,13 +1,13 @@
 mkdocs==1.6.1
 mike==2.1.3
-markdown==3.7
-mkdocs-material==9.7.6
+markdown==3.8.2
+mkdocs-material==9.7.7
 Jinja2==3.1.6
 defusedxml==0.7.1
 
 # Markdown extensions
-Pygments==2.18.0
-pymdown-extensions==10.11.2
+Pygments==2.20.0
+pymdown-extensions==11.0.2
 
 # MkDocs plugins
 mkdocs-exclude-search==0.6.6
