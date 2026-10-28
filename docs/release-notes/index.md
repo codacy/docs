@@ -21,6 +21,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 ### 2026 {.release-series}
 
 
+-   [Renaming Stylelint-a11y patterns October, 2026](cloud/cloud-2026-10-rename-stylelint-a11y-patterns.md)
 -   [Cloud September 2026](cloud/cloud-2026-09.md)
 -   [Adding Oxlint as new supported tool September, 2026](cloud/cloud-2026-09-adding-oxlint.md)
 -   [Cloud August 2026](cloud/cloud-2026-08.md)

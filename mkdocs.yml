@@ -791,6 +791,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2026:
+                      - release-notes/cloud/cloud-2026-10-rename-stylelint-a11y-patterns.md
                       - release-notes/cloud/cloud-2026-09.md
                       - release-notes/cloud/cloud-2026-09-adding-oxlint.md
                       - release-notes/cloud/cloud-2026-08.md
