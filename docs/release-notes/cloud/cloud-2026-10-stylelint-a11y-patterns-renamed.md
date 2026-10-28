@@ -13,7 +13,7 @@ To fix this, the patterns now use the `a11y_` prefix, which matches how Stylelin
 
 -   **The renamed patterns start disabled.** If you had any of the old patterns enabled, enable the new ones in your coding standard or in your repository's code patterns.
 -   **Existing issues from the old patterns disappear.** These were the unknown rule issues, not real findings. Once you enable the renamed patterns, Codacy reports real accessibility issues on your next analysis.
--   **If you use the [Codacy configuration file](../../repositories-configure/codacy-configuration-file.md) or a local Codacy Analysis CLI setup that lists pattern IDs**, update the IDs there too. <!-- TODO: verify with TCE that local Analysis CLI configs reference these pattern IDs -->
+-   **If you use the Codacy Analysis CLI setup that lists pattern IDs**, update the IDs there too.
 
 ## Renamed patterns
 
