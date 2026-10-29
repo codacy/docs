@@ -9,6 +9,13 @@
 # docs/release-notes/self-hosted/. kubernetes, microk8s, and postgresql come from
 # docs/requirements.md in codacy/chart at the version's tag.
 
+# Content tab titles. Hand-written tabs must use the same titles, so that a reader's
+# choice of version carries across every tab set on the site. {version} is filled in
+# from each row. Changing a title here doesn't change hand-written tabs: update those too.
+tab_labels:
+    self_hosted: "Codacy Self-hosted v{version}"
+    cloud: "Codacy Cloud"
+
 # Column headings, in the order self_hosted_table() shows them by default.
 # Every version below must set every field.
 fields:

@@ -32,6 +32,9 @@ def _load(config_dir: Path) -> dict:
     versions = data.get("versions")
     if not isinstance(fields, dict) or not fields:
         raise ValueError(f"{_DATA_FILE}: 'fields' must map each field name to its column heading.")
+    labels = data.get("tab_labels")
+    if not isinstance(labels, dict) or set(labels) != {"self_hosted", "cloud"} or "{version}" not in str(labels["self_hosted"]):
+        raise ValueError(f"{_DATA_FILE}: 'tab_labels' must set 'self_hosted' (containing {{version}}) and 'cloud'.")
     if not isinstance(versions, list) or not versions:
         raise ValueError(f"{_DATA_FILE}: 'versions' must list at least one version.")
     expected = {"version", *fields}
@@ -49,16 +52,19 @@ def _load(config_dir: Path) -> dict:
     return data
 
 
-def _tab(label: str, body: str, code: str | None) -> str:
+def _tab(label: str, body: str, code: str | None, first: bool = False) -> str:
     body = body.strip("\n")
     if code:
         body = f"```{code}\n{body}\n```"
-    return f'=== "{label}"\n\n' + textwrap.indent(body, "    ")
+    # "===!" starts a new tab set. Without it, tabs right after another tab set join it.
+    marker = "===!" if first else "==="
+    return f'{marker} "{label}"\n\n' + textwrap.indent(body, "    ")
 
 
 def define_env(env):
     data = _load(Path(env.conf["config_file_path"]).parent)
     fields: dict[str, str] = data["fields"]
+    labels: dict[str, str] = data["tab_labels"]
     versions: list[dict] = data["versions"]
 
     # Not "self_hosted": extra.self_hosted is already a variable (the Self-hosted build flag).
@@ -67,7 +73,7 @@ def define_env(env):
     env.variables["self_hosted_oldest"] = versions[-1]
 
     def label(row: dict) -> str:
-        return f"Codacy Self-hosted v{row['version']}"
+        return labels["self_hosted"].replace("{version}", row["version"])
 
     def fill(template: str, row: dict) -> str:
         def replace(match: re.Match) -> str:
@@ -104,9 +110,9 @@ def define_env(env):
         """Content tabs, one per supported version, filling {field} placeholders from the data.
 
         `code` wraps each tab in a fenced code block of that language. `cloud` adds a
-        first "Codacy Cloud" tab with that text, which takes no placeholders.
+        first Codacy Cloud tab with that text, which takes no placeholders.
         """
 
-        tabs = [_tab("Codacy Cloud", cloud, code)] if cloud is not None else []
-        tabs += [_tab(label(row), fill(template, row), code) for row in versions]
-        return "\n\n".join(tabs)
+        tabs = [(labels["cloud"], cloud)] if cloud is not None else []
+        tabs += [(label(row), fill(template, row)) for row in versions]
+        return "\n\n".join(_tab(title, body, code, first=i == 0) for i, (title, body) in enumerate(tabs))

@@ -97,9 +97,9 @@ Three ways to render it, all from `theme/macros.py`:
 
 - **One value inline.** `{{ self_hosted_latest.coverage_reporter }}` or `{{ self_hosted_oldest.version }}`. To loop over versions in a page, use `self_hosted_versions`.
 
-Content that differs by version but isn't a value, such as a different procedure, goes in hand-written tabs. Label each tab exactly as the macros do, `=== "Codacy Self-hosted v<version>"` with the full version from the data file, and `=== "Codacy Cloud"` for Cloud. Matching labels keep a reader's choice of version across every tab set on the site; a label in any other form breaks that.
+Content that differs by version but isn't a value, such as a different procedure, goes in hand-written tabs. Title each tab exactly as the macros do: the `tab_labels` in the data file, with the full version from the data file in place of `{version}`. Matching labels keep a reader's choice of version across every tab set on the site; a label in any other form breaks that.
 
-Call the macros at the top level of a page, never inside a list item or an admonition: the tabs they render are indented for the top level. A placeholder or field name that isn't in the data file fails the build, and so does a row that is missing a field.
+Call the macros at the top level of a page, never inside a list item or an admonition: the tabs they render are indented for the top level. A hand-written tab set that directly follows another one starts with `===!` instead of `===`; otherwise the two sets join into one. A placeholder or field name that isn't in the data file fails the build, and so does a row that is missing a field.
 
 ## Frontmatter
 

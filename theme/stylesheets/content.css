@@ -68,7 +68,11 @@
 .md-typeset .tabbed-labels > label:hover { color: var(--docs-text); }
 .md-typeset .tabbed-labels::before { background: var(--docs-link); }
 .md-typeset .tabbed-content { box-shadow: none; }
-.md-typeset .tabbed-content > .tabbed-block { margin: 0; }
+.md-typeset .tabbed-content > .tabbed-block { margin: 0; padding: var(--docs-space-3) var(--docs-space-4); }
+.md-typeset .tabbed-content > .tabbed-block > :first-child { margin-top: 0; }
+.md-typeset .tabbed-content > .tabbed-block > :last-child { margin-bottom: 0; }
+/* A tab holding only a code block keeps it edge to edge; the code block has its own padding. */
+.md-typeset .tabbed-content > .tabbed-block:has(> .highlight:only-child) { padding: 0; }
 .md-typeset .tabbed-content pre { margin: 0; border: 0; border-radius: 0; }
 .md-typeset table:not([class]) { border: 1px solid var(--docs-border); border-radius: var(--docs-radius); box-shadow: none; }
 .docs-table-scroll { width: 100%; overflow-x: auto; margin: 1.5rem 0; }
