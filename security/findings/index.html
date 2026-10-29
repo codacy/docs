@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.codacy.com/security/findings/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../reports/">
       
       
         <link rel="next" href="../dependencies/">
@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 10:12:15">
+    <meta http-equiv="last-modified" content="2026-10-29 10:21:45">
   
   
 
@@ -2089,6 +2089,27 @@
     
   
     Security and risk management
+  
+
+    
+  </span>
+  
+  
+</a></li>
+  
+
+  
+  
+  
+  
+    <li class="md-nav__item"><a href="../reports/" class="md-nav__link">
+  
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reports
   
 
     
@@ -9625,7 +9646,7 @@
 
 <h1 id="findings">Findings<a class="headerlink" href="#findings" title="Permanent link">#</a></h1>
 <p>The <strong>Security and risk management findings</strong> page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by <strong>Latest findings</strong> found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest. Use this page to review and prioritize findings and track the progress of your security efforts.</p>
-<p>To access the findings page, access the <a href="../#dashboard">overview page</a> and click the <strong>Findings</strong> tab.</p>
+<p>To access the findings page, access the <a href="../">Security and risk management page</a> and click the <strong>Findings</strong> tab.</p>
 <p><img width="2874" height="1266" decoding="async" alt="Security and risk management findings page" src="../images/security-risk-management-findings.png" /></p>
 <p>On the left section of the page, besides sorting, you can update the filtering criteria by clicking the  <a href="../../organizations/segments/"><strong>Segments</strong></a> , <strong>Repositories</strong>, <strong>Severities</strong>, <strong>Statuses</strong>,  <strong>Security categories</strong>, or <strong>Scan types</strong> dropdowns above the list.</p>
 <div class="admonition info">
@@ -9664,7 +9685,7 @@
 <p>You can ignore a finding using the context menu both in the findings list page and the findings details page. When ignoring a finding you can optionally specify a reason for doing so.</p>
 <p><img width="1519" height="223" decoding="async" loading="lazy" alt="Security and risk management finding ignore" src="../images/security-risk-management-finding-ignore.png" /></p>
 <p>From an organization standpoint, ignoring a finding means that you accept the risk it poses and you're not planning on addressing the issue.</p>
-<p>From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the <a href="../#dashboard">overview page</a>. Note that the <a href="../#open-findings-history">Open Findings history</a> chart will only be changed at the start of next week.</p>
+<p>From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the <a href="../reports/#overview">Overview report</a>. Note that the <a href="../reports/#open-findings-history">Open Findings history</a> chart will only be changed at the start of next week.</p>
 <div class="admonition info">
 <p class="admonition-title"><a href="../../organizations/integrations/jira-integration/">Jira</a> findings can't be ignored in Codacy. You should closed the issue directly in Jira.</p>
 </div>
@@ -9799,6 +9820,7 @@
 <p><img width="661" height="569" decoding="async" loading="lazy" alt="Security and risk management SLAs configuration modal" src="../images/security-risk-management-slas-modal.png" /></p>
 <p>As soon as changes are saved, your open findings statuses will be updated accordingly.
 You are also able to reset to Codacy default deadline values (see table above) at any time.</p>
+<p>Changing an SLA also changes past results in the <a href="../reports/#remediation-report">Remediation report</a>, which compares every closed finding against today's SLAs.</p>
 <h2 id="item-statuses">Finding statuses<a class="headerlink" href="#item-statuses" title="Permanent link">#</a></h2>
 <p>The following table describes how finding statuses map to deadlines:</p>
 <table>
@@ -9842,7 +9864,7 @@ You are also able to reset to Codacy default deadline values (see table above) a
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 10:12:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
+    <time datetime="2026-10-29 10:21:45"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 29, 2026</span></time>
   </aside>
 
 
@@ -9908,7 +9930,7 @@ You are also able to reset to Codacy default deadline values (see table above) a
 
   
     <nav class="docs-page-nav" aria-label="Page navigation">
-      <a href="../"><span>Previous</span><strong>Security and risk management</strong></a>
+      <a href="../reports/"><span>Previous</span><strong>Reports</strong></a>
       <a href="../dependencies/" class="docs-page-nav__next"><span>Next</span><strong>Dependencies</strong></a>
     </nav>
   

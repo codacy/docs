@@ -19,7 +19,7 @@
         <link rel="prev" href="../organizations/changing-your-plan-and-billing/">
       
       
-        <link rel="next" href="findings/">
+        <link rel="next" href="reports/">
       
       
         
@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 10:12:15">
+    <meta http-equiv="last-modified" content="2026-10-29 10:21:45">
   
   
 
@@ -2128,7 +2128,7 @@
   <a href="#dashboard" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Reports
       
     </span>
   </a>
@@ -2164,6 +2164,27 @@
   
 </nav>
     </li>
+  
+
+  
+  
+  
+  
+    <li class="md-nav__item"><a href="reports/" class="md-nav__link">
+  
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reports
+  
+
+    
+  </span>
+  
+  
+</a></li>
   
 
   
@@ -9478,7 +9499,7 @@
   <a href="#dashboard" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Reports
       
     </span>
   </a>
@@ -9573,11 +9594,11 @@
 <p>The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your <a href="../organizations/integrations/jira-integration/">connected Jira instance</a>, or <span class="skip-vale">as a result of</span> <a href="https://www.codacy.com/security">penetration testing</a>.</p>
 <p>Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:</p>
 <div class="topic-row topic-row--2col">
-  <a class="topic-card" href="#dashboard">
+  <a class="topic-card" href="reports/">
     <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path d="M32 32v432a16 16 0 0016 16h432" stroke-linecap="round" stroke-linejoin="round"/><rect x="96" y="224" width="80" height="192" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="240" y="176" width="80" height="240" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="383.64" y="112" width="80" height="304" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
     <div class="tc-content">
-      <h3>Overview</h3>
-      <p>The security posture of your organization: open findings by severity, scan type distribution, resolution history, and your highest-risk repositories.</p>
+      <h3>Reports</h3>
+      <p>The security posture of your organization, and how fast your team fixes findings against your SLAs.</p>
     </div>
   </a>
   <a class="topic-card" href="findings/">
@@ -9611,52 +9632,12 @@
 </div>
 
 <p>In addition, on these pages, you can <a href="findings/#sharing-filtered-view">share filtered views of findings</a>, <a href="findings/#exporting-the-security-item-list">export findings as a CSV file</a>, and <a href="findings/#reviewing-settings">review severity rules and integration settings</a></p>
-<h2 id="dashboard">Overview<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
-<p>The <strong>Security and risk management overview</strong> page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.</p>
-<p>Use this page to assess your organization's security posture and its progress over time, identify areas for improvement, and share findings with stakeholders.</p>
-<p>To access the overview page, select an organization from the top navigation bar and select <strong>Security and risk</strong> on the left navigation sidebar.</p>
-<p><img width="1810" height="802" decoding="async" alt="Security and risk management overview page" src="images/security-risk-management-overview.png" /></p>
-<p>The overview page includes six panels:</p>
+<h2 id="dashboard">Reports<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
+<p>The <strong>Reports</strong> tab shows the security posture of your organization and how fast your team fixes findings. It has two reports, documented on the <a href="reports/">Reports</a> page:</p>
 <ul>
-<li><a href="#open-findings-overview">Open findings overview</a></li>
-<li><a href="#scan-types-distribution">Scan types distribution</a></li>
-<li><a href="#open-findings-history">Open findings history</a></li>
-<li><a href="#activity-history">Activity history</a></li>
-<li><a href="#top-10-high-risk-repositories">Top 10 high-risk repositories</a></li>
-<li><a href="#top-10-common-security-categories">Top 10 common security categories</a></li>
+<li><a href="reports/#overview">Overview</a>: open findings by severity, scan type distribution, resolution history, and your highest-risk repositories.</li>
+<li><a href="reports/#remediation-report">Remediation</a>: mean time to remediate against your SLAs, the share of findings closed on time, and the overdue backlog, by severity.</li>
 </ul>
-<p>To limit the information displayed in each panel, use the filter drop-down above the main area, and choose the relevant repositories, or utilise <a href="../organizations/segments/"><strong>Segments</strong></a>.</p>
-<div class="admonition info">
-<p class="admonition-title">Check out how to <a href="../organizations/segments/#enabling-segments">enable and configure <strong>Segments</strong></a></p>
-</div>
-<h3 id="open-findings-overview">Open findings overview<a class="headerlink" href="#open-findings-overview" title="Permanent link">#</a></h3>
-<p>The <strong>Open findings overview</strong> panel displays the total number of open security findings and the number of findings of each severity, helping you <span class="skip-vale">quickly</span> assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.</p>
-<p>Within this same panel, an additional visualization shows the relative distribution of open findings by status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.</p>
-<p>To access the findings page with the corresponding filter applied, click on a number or bar area.</p>
-<p><img width="898" height="241" decoding="async" loading="lazy" alt="Security and risk management open findings overview panel" src="images/security-risk-management-overview-distribution.png" /></p>
-<h3 id="scan-types-distribution">Scan types distribution<a class="headerlink" href="#scan-types-distribution" title="Permanent link">#</a></h3>
-<p>The <strong>Scan types</strong> panel shows the relative distribution of open findings by scan type. To access the findings page with the corresponding filter applied, click on a number from the panel.</p>
-<p><img width="893" height="248" decoding="async" loading="lazy" alt="Security and risk management scan types distribution panel" src="images/security-risk-management-scan-type-distribution.png" /></p>
-<h3 id="open-findings-history">Open findings history<a class="headerlink" href="#open-findings-history" title="Permanent link">#</a></h3>
-<p>The <strong>Open findings history</strong> graph shows the open findings trends over the past three months, grouped by week and severity. It details the progression of your organization's risk and security posture over time and can, for example, help you understand if the right issues are being addressed.</p>
-<p>For a detailed view of the distribution on a specific week, hover over the graph.</p>
-<p><img width="571" height="456" decoding="async" loading="lazy" alt="Security and risk management open findings history panel" src="images/security-risk-management-overview-history-open.png" /></p>
-<h3 id="activity-history">Activity history<a class="headerlink" href="#activity-history" title="Permanent link">#</a></h3>
-<p>The <strong>Activity history</strong> graph shows weekly counts of open, closed, ignored and unignored findings over the past three months, overlaid on the overall open findings trend. It complements the <strong>Open findings history</strong> graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.</p>
-<p>To filter the graph by finding severity, use the drop-down in the top right-hand corner of the panel.</p>
-<p>For a detailed view of the counts on a specific week, hover over the graph.</p>
-<p><img width="640" height="418" decoding="async" loading="lazy" alt="Security and risk management activity history panel" src="images/security-risk-management-overview-history-activity.png" /></p>
-<h3 id="top-10-high-risk-repositories">Top 10 high-risk repositories<a class="headerlink" href="#top-10-high-risk-repositories" title="Permanent link">#</a></h3>
-<p>The <strong>Top 10 high-risk repositories</strong> list shows the repositories with the highest number of open findings, ordered by severity.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown <strong>Repository</strong> filter.</p>
-</div>
-<p><img width="887" height="456" decoding="async" loading="lazy" alt="Security and risk management high risk repositories panel" src="images/security-risk-management-overview-top-risk.png" /></p>
-<h3 id="top-10-common-security-categories">Top 10 common security categories<a class="headerlink" href="#top-10-common-security-categories" title="Permanent link">#</a></h3>
-<p>The <strong>Top 10 common security categories</strong> list shows the most common security categories of open findings, ordered by count.</p>
-<p>To access the findings page with the corresponding filter applied, click on a category.</p>
-<p><img width="571" height="383" decoding="async" loading="lazy" alt="Security and risk management top categories panel" src="images/security-risk-management-overview-top-categories.png" /></p>
 <h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -10015,7 +9996,7 @@ Note that some issues just don't have a security category. These issues will rem
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 10:12:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2026</span></time>
+    <time datetime="2026-10-29 10:21:45"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 29, 2026</span></time>
   </aside>
 
 
@@ -10082,7 +10063,7 @@ Note that some issues just don't have a security category. These issues will rem
   
     <nav class="docs-page-nav" aria-label="Page navigation">
       <a href="../organizations/changing-your-plan-and-billing/"><span>Previous</span><strong>Changing your plan and billing</strong></a>
-      <a href="findings/" class="docs-page-nav__next"><span>Next</span><strong>Findings</strong></a>
+      <a href="reports/" class="docs-page-nav__next"><span>Next</span><strong>Reports</strong></a>
     </nav>
   
 
