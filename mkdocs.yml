@@ -180,9 +180,6 @@ plugins:
     # https://github.com/prcr/mkdocs-meta-descriptions-plugin
     - meta-descriptions:
           export_csv: true
-    # Build documentation in submodules
-    # https://github.com/backstage/mkdocs-monorepo-plugin
-    - monorepo
     # Create RSS feeds for release notes
     # https://github.com/Guts/mkdocs-rss-plugin
     - rss:

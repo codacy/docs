@@ -10,23 +10,13 @@ Read this when a task needs to know how the site is built rather than how a page
 | `docs/assets/includes/` | Shared markdown snippets. Excluded from the build as pages; rendered only where included. |
 | `mkdocs.yml` | Site config: `nav:`, redirects, plugins, markdown extensions, theme options, `extra` variables. |
 | `theme/` | Codacy's theme layer — Jinja partials, stylesheets, hooks. Overrides the installed Material theme. |
-| `submodules/` | Separate repositories pulled in as submodules. Not editable from here. |
+| `docs/chart/` | The Managing Codacy Self-hosted section: installing, configuring, and operating the Codacy Helm chart. |
 | `.github/` | CI workflows and linter configuration. |
 
 ## Two content channels
 
 - **Codacy Cloud** docs are unversioned. What is on `master` is what readers see.
 - **Codacy Self-hosted** docs are versioned with `mike`. A claim that only holds from a particular chart version onward must say so. The current version is the `extra.codacy_self_hosted_version` value in `mkdocs.yml`; pages interpolate it as `{{ extra.codacy_self_hosted_version }}` rather than hardcoding a number, and new pages should do the same.
-
-## Submodules are other people's repositories
-
-`submodules/` holds checkouts of separate repositories, wired into the nav by the `monorepo` plugin via `!include` lines in `mkdocs.yml`. A file under `submodules/` cannot be fixed by a commit here — the change belongs upstream in that repository. When a build failure or a broken link points at a path under `submodules/`, say which repository owns it and stop.
-
-A fresh clone or a new worktree may not have submodule content. An empty submodule directory makes the build fail with an error about a missing config file, and that failure is about the checkout, not about the change under review. Populate it before concluding anything:
-
-```bash
-git submodule update --init --recursive
-```
 
 ## The build, and what each check actually catches
 
