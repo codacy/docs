@@ -5,11 +5,11 @@ The Security and risk management feature helps you <span class="skip-vale">quick
 Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:
 
 <div class="topic-row topic-row--2col">
-  <a class="topic-card" href="#dashboard">
+  <a class="topic-card" href="reports/">
     <div class="tc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="32"><path d="M32 32v432a16 16 0 0016 16h432" stroke-linecap="round" stroke-linejoin="round"/><rect x="96" y="224" width="80" height="192" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="240" y="176" width="80" height="240" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/><rect x="383.64" y="112" width="80" height="304" rx="20" ry="20" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
     <div class="tc-content">
-      <h3>Overview</h3>
-      <p>The security posture of your organization: open findings by severity, scan type distribution, resolution history, and your highest-risk repositories.</p>
+      <h3>Reports</h3>
+      <p>The security posture of your organization, and how fast your team fixes findings against your SLAs.</p>
     </div>
   </a>
   <a class="topic-card" href="findings/">
@@ -44,79 +44,12 @@ Under Security and risk management, you can find the following pages to help you
 
 In addition, on these pages, you can [share filtered views of findings](findings.md#sharing-filtered-view), [export findings as a CSV file](findings.md#exporting-the-security-item-list), and [review severity rules and integration settings](findings.md#reviewing-settings)
 
-## Overview {: id="dashboard"}
+## Reports {: id="dashboard"}
 
-The **Security and risk management overview** page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.
+The **Reports** tab shows the security posture of your organization and how fast your team fixes findings. It has two reports, documented on the [Reports](reports.md) page:
 
-Use this page to assess your organization's security posture and its progress over time, identify areas for improvement, and share findings with stakeholders.
-
-To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
-
-![Security and risk management overview page](images/security-risk-management-overview.png)
-
-The overview page includes six panels:
-
--   [Open findings overview](#open-findings-overview)
--   [Scan types distribution](#scan-types-distribution)
--   [Open findings history](#open-findings-history)
--   [Activity history](#activity-history)
--   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
--   [Top 10 common security categories](#top-10-common-security-categories)
-
-To limit the information displayed in each panel, use the filter drop-down above the main area, and choose the relevant repositories, or utilise [**Segments**](../organizations/segments.md).
-!!! info "Check out how to [enable and configure **Segments**](../organizations/segments.md#enabling-segments)"
-
-
-### Open findings overview
-
-The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you <span class="skip-vale">quickly</span> assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
-
-Within this same panel, an additional visualization shows the relative distribution of open findings by status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
-
-To access the findings page with the corresponding filter applied, click on a number or bar area.
-
-![Security and risk management open findings overview panel](images/security-risk-management-overview-distribution.png)
-
-### Scan types distribution
-
-The **Scan types** panel shows the relative distribution of open findings by scan type. To access the findings page with the corresponding filter applied, click on a number from the panel.
-
-![Security and risk management scan types distribution panel](images/security-risk-management-scan-type-distribution.png)
-
-### Open findings history
-
-The **Open findings history** graph shows the open findings trends over the past three months, grouped by week and severity. It details the progression of your organization's risk and security posture over time and can, for example, help you understand if the right issues are being addressed.
-
-For a detailed view of the distribution on a specific week, hover over the graph.
-
-![Security and risk management open findings history panel](images/security-risk-management-overview-history-open.png)
-
-### Activity history
-
-The **Activity history** graph shows weekly counts of open, closed, ignored and unignored findings over the past three months, overlaid on the overall open findings trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
-
-To filter the graph by finding severity, use the drop-down in the top right-hand corner of the panel.
-
-For a detailed view of the counts on a specific week, hover over the graph.
-
-![Security and risk management activity history panel](images/security-risk-management-overview-history-activity.png)
-
-### Top 10 high-risk repositories
-
-The **Top 10 high-risk repositories** list shows the repositories with the highest number of open findings, ordered by severity.
-
-!!! note
-    This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown **Repository** filter.
-
-![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)
-
-### Top 10 common security categories
-
-The **Top 10 common security categories** list shows the most common security categories of open findings, ordered by count.
-
-To access the findings page with the corresponding filter applied, click on a category.
-
-![Security and risk management top categories panel](images/security-risk-management-overview-top-categories.png)
+-   [Overview](reports.md#overview): open findings by severity, scan type distribution, resolution history, and your highest-risk repositories.
+-   [Remediation](reports.md#remediation-report): mean time to remediate against your SLAs, the share of findings closed on time, and the overdue backlog, by severity.
 
 ## Supported security categories
 
