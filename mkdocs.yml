@@ -59,11 +59,15 @@ extra_javascript:
 # Reserve image space and defer below-the-fold screenshots without a frontend build step.
 hooks:
     - "theme/hooks/image_metadata.py"
+    - "theme/hooks/self_hosted_markers.py"
 
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
     codacy_self_hosted_version: "15.0.0"
+    # Oldest supported Codacy Self-hosted version. Markers at or below it fail the build,
+    # so raising it lists every marker to remove (theme/hooks/self_hosted_markers.py)
+    codacy_self_hosted_min_version: "10.0.0"
     codacy_coverage_reporter_version: "13.10.15"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"

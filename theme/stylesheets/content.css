@@ -112,6 +112,8 @@ html .md-typeset details[class] > :last-child { margin-bottom: 0; }
 .md-typeset .admonition.tip > .admonition-title::before, .md-typeset details.tip > summary::before, .md-typeset .admonition.success > .admonition-title::before, .md-typeset details.success > summary::before { background-color: var(--docs-success); }
 .md-typeset .admonition.warning > .admonition-title::before, .md-typeset details.warning > summary::before { background-color: var(--docs-warning); }
 .md-typeset .admonition.danger > .admonition-title::before, .md-typeset details.danger > summary::before { background-color: var(--docs-danger); }
+/* Self-hosted version marker: a scope label, not a severity, so it stays neutral and carries a server icon. */
+.md-typeset .admonition.self-hosted > .admonition-title::before, .md-typeset details.self-hosted > summary::before { background-color: var(--docs-text-secondary); -webkit-mask-image: url("../assets/vendor/ionicons/svg/server-outline.svg"); mask-image: url("../assets/vendor/ionicons/svg/server-outline.svg"); }
 /* Untitled admonitions (`!!! note ""`) have no title element to hang the icon on,
    so the icon moves onto the box itself instead of leaving an unlabelled colored block. */
 .md-typeset .admonition { --docs-admonition-icon: var(--md-admonition-icon--note); --docs-admonition-color: var(--docs-link); }
@@ -136,6 +138,7 @@ html .md-typeset details[class] > :last-child { margin-bottom: 0; }
 .md-typeset .admonition.tip, .md-typeset details.tip, .md-typeset .admonition.success, .md-typeset details.success { border-color: color-mix(in srgb, var(--docs-success) 35%, var(--docs-border)); background: color-mix(in srgb, var(--docs-success) 6%, var(--docs-bg)); }
 .md-typeset .admonition.warning, .md-typeset details.warning { border-color: color-mix(in srgb, var(--docs-warning) 38%, var(--docs-border)); background: color-mix(in srgb, var(--docs-warning) 6%, var(--docs-bg)); }
 .md-typeset .admonition.danger, .md-typeset details.danger { border-color: color-mix(in srgb, var(--docs-danger) 35%, var(--docs-border)); background: color-mix(in srgb, var(--docs-danger) 6%, var(--docs-bg)); }
+.md-typeset .admonition.self-hosted, .md-typeset details.self-hosted { border-color: var(--docs-border); background: var(--docs-bg-secondary); }
 .md-content article.md-typeset blockquote { margin: 1.5rem 0; padding: .15rem 0 .15rem 1rem; border-left: 2px solid var(--docs-border-strong); color: var(--docs-text-secondary); }
 .md-content article.md-typeset blockquote > :first-child { margin-top: 0; }
 .md-content article.md-typeset blockquote > :last-child { margin-bottom: 0; }
@@ -154,6 +157,11 @@ html .md-typeset details[class] > :last-child { margin-bottom: 0; }
 .docs-notice { margin: 0 0 1.5rem; padding: 1rem 1.1rem; border: 1px solid var(--docs-border-strong); border-radius: var(--docs-radius); background: var(--docs-bg-brand); color: var(--docs-text-secondary); }
 .docs-notice strong { color: var(--docs-text); }
 .docs-notice p { margin: .35rem 0 0; }
+/* Page-level availability line, inserted under the h1 by theme/hooks/self_hosted_markers.py. */
+.md-typeset .docs-availability { display: flex; flex-wrap: wrap; align-items: center; gap: var(--docs-space-2); margin: calc(-1 * var(--docs-space-2)) 0 var(--docs-space-5); color: var(--docs-text-secondary); font-size: .8125rem; line-height: 1.4; }
+.docs-availability__label { color: var(--docs-text); font-weight: 600; }
+.docs-availability__item { padding: .1rem var(--docs-space-2); border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg-secondary); }
+.docs-availability__item--unavailable { border-style: dashed; background: transparent; color: var(--docs-text-tertiary); }
 .docs-source-link { float: right; margin: .25rem 0 1rem 1rem; color: var(--docs-text-tertiary); font-size: .78rem; font-weight: 600; text-decoration: none; }
 .docs-revision { display: flex; align-items: center; gap: .35rem; margin-top: 2.5rem; color: var(--docs-text-tertiary); font-size: .78rem; }
 .docs-revision span { color: var(--docs-text-secondary); font-weight: 600; }

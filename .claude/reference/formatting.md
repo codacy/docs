@@ -25,7 +25,7 @@ Check for these first, in this order. Each one makes a page unusable regardless 
 
 ## Admonitions
 
-Syntax is `!!! note`, with the body indented four spaces. The types used in this repo are `note`, `tip`, `info`, `important`, and `warning`. The Material admonition extension supports others, but they fall back to generic styling here — stick to these five.
+Syntax is `!!! note`, with the body indented four spaces. The types used in this repo are `note`, `tip`, `info`, `important`, and `warning`. The Material admonition extension supports others, but they fall back to generic styling here — stick to these five. The one exception is `self-hosted`, which is a version marker rather than a message; see the next section.
 
 Two forms are both valid and both in use here. `!!! note` followed by an indented body renders the type name as the heading. `!!! note "Some text"` puts that text in the heading and needs no body — used throughout this repo for one-line asides, including ones containing markdown links, which do render inside the title. An empty title (`!!! note ""`) drops the heading entirely, for a message that doesn't need one. Do not convert between forms while making an unrelated change; match the page. Two things to get right in the title form: no leading space inside the quotes, and no closing period.
 
@@ -36,6 +36,38 @@ Swap `!!!` for `???` (collapsed) or `???+` (expanded) to make any of these colla
 - Never stack two in a row and never nest one inside another. Stacking is a signal that the surrounding prose is doing too little work.
 - Roughly two per `##` section is the ceiling. Past that, readers stop seeing them.
 - Use `warning` and `important` only for consequences the reader cannot undo or would not expect. Downgrade anything else to `note`.
+
+## Codacy Self-hosted availability markers
+
+The site is unversioned: Codacy Cloud readers and Codacy Self-hosted readers read the same page. Content that differs on Self-hosted carries a marker, and content without one is read as true for both. Mark a difference only when it applies to a Self-hosted version above `extra.codacy_self_hosted_min_version` in `mkdocs.yml` — at or below that floor, every supported version has it.
+
+**A whole page.** Set `availability` in the front matter. The theme renders it as an "Available on" line under the page title.
+
+```yaml
+availability:
+  self_hosted: "13.0"   # Codacy Self-hosted v13.0 and later
+```
+
+| Key | Values | Default |
+|---|---|---|
+| `self_hosted` | `false` (not on Self-hosted), `true`, or the first version that has it, quoted, as `"MAJOR.MINOR"` | `true` |
+| `cloud` | `false` for Self-hosted-only pages | `true` |
+
+Quote the version: unquoted, YAML reads `13.10` as the number `13.1`.
+
+**One section, option, or step.** Use a `self-hosted` admonition directly above what it applies to, with exactly one of these two titles:
+
+```markdown
+!!! self-hosted "Codacy Self-hosted v14.0 and later"
+    What these versions add, in one or two sentences.
+
+!!! self-hosted "Not available on Codacy Self-hosted"
+    What Codacy Self-hosted doesn't have, in one or two sentences.
+```
+
+The admonition rules above apply: one message per marker, no stacking or nesting. Never write a Self-hosted version difference in prose — a marker is how the next support-floor change finds it.
+
+`theme/hooks/self_hosted_markers.py` fails the strict build on any other title, on a malformed `availability` value, and on any marker at or below the support floor. Raising the floor therefore lists every marker to delete.
 
 ## Tables and description lists
 
@@ -82,4 +114,5 @@ Wording that fits the page you came from is frequently wrong on the others. If i
 
 - `description:` — one or two sentences, used for search results and social previews. Expected on substantive pages.
 - Release notes carry their own RSS fields; the `docs-release-note` skill covers them.
+- `availability:` — which products the page applies to. See "Codacy Self-hosted availability markers" above.
 - Do not invent frontmatter keys. Only keys already used in `docs/` or consumed by a plugin in `mkdocs.yml` do anything.
