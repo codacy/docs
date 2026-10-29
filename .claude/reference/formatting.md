@@ -78,6 +78,29 @@ grep -rl "<include-filename>.md" docs/
 
 Wording that fits the page you came from is frequently wrong on the others. If it cannot be made to fit all of them, the right answer is prose on your page, not a rewritten include.
 
+## Codacy Self-hosted versions
+
+The site is unversioned, so a fact that differs between Codacy Self-hosted versions is shown for each supported version on the same page. Those facts live in one place, `data/self-hosted-versions.yml`: one row per supported version, newest first, one field per fact. Never type a per-version value into a page; add or correct it in the data file and render it.
+
+Three ways to render it, all from `theme/macros.py`:
+
+- **A table of versions.** `{{ self_hosted_table("analysis_cli", "coverage_reporter") }}` renders one row per version, linked to its release note, with one column per field named. With no arguments it shows every field.
+- **The same content for each version.** `{{ self_hosted_tabs("Use Codacy Coverage Reporter {coverage_reporter}.") }}` renders one content tab per version, filling `{field}` placeholders (`{version}` included) from that version's row. Add `code="bash"` to put each tab in a code block, and `cloud="..."` to add a first Codacy Cloud tab with fixed text. For a multi-line template, set it in a block first:
+
+    ```jinja
+    {% set install %}
+    helm upgrade --install codacy codacy-stable/codacy \
+        --version {version}
+    {% endset %}
+    {{ self_hosted_tabs(install, code="bash") }}
+    ```
+
+- **One value inline.** `{{ self_hosted_latest.coverage_reporter }}` or `{{ self_hosted_oldest.version }}`. To loop over versions in a page, use `self_hosted_versions`.
+
+Content that differs by version but isn't a value, such as a different procedure, goes in hand-written tabs. Label each tab exactly as the macros do, `=== "Codacy Self-hosted v<version>"` with the full version from the data file, and `=== "Codacy Cloud"` for Cloud. Matching labels keep a reader's choice of version across every tab set on the site; a label in any other form breaks that.
+
+Call the macros at the top level of a page, never inside a list item or an admonition: the tabs they render are indented for the top level. A placeholder or field name that isn't in the data file fails the build, and so does a row that is missing a field.
+
 ## Frontmatter
 
 - `description:` — one or two sentences, used for search results and social previews. Expected on substantive pages.

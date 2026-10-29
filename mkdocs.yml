@@ -9,6 +9,10 @@ copyright: "© <span data-copyright-year>2026</span> <a href=\"https://www.codac
 repo_name: "codacy/docs"
 repo_url: "https://github.com/codacy/docs"
 
+# Rebuild on `mkdocs serve` when the Self-hosted version data changes
+watch:
+    - data
+
 # Theme configuration
 theme:
     name: "material"
@@ -178,6 +182,8 @@ plugins:
     # https://github.com/fralau/mkdocs_macros_plugin
     - macros:
           on_error_fail: !ENV [MKDOCS_STRICT, true]
+          # Renders data/self-hosted-versions.yml into pages
+          module_name: theme/macros
     # Generate meta descriptions from introductory paragraphs
     # https://github.com/prcr/mkdocs-meta-descriptions-plugin
     - meta-descriptions:

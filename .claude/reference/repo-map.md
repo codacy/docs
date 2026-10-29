@@ -9,6 +9,7 @@ Read this when a task needs to know how the site is built rather than how a page
 | `docs/` | All published content. Page URLs derive from these file paths. |
 | `docs/assets/includes/` | Shared markdown snippets. Excluded from the build as pages; rendered only where included. |
 | `mkdocs.yml` | Site config: `nav:`, redirects, plugins, markdown extensions, theme options, `extra` variables. |
+| `data/self-hosted-versions.yml` | Per-version Codacy Self-hosted facts, rendered into pages by the macros in `theme/macros.py`. |
 | `theme/` | Codacy's theme layer — Jinja partials, stylesheets, hooks. Overrides the installed Material theme. |
 | `submodules/` | Separate repositories pulled in as submodules. Not editable from here. |
 | `.github/` | CI workflows and linter configuration. |
