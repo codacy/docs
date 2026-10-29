@@ -49,7 +49,7 @@ For a custom hardware resource recommendation, please contact us at <mailto:supp
 
 #### Codacy architecture
 
-You can look at Codacy separately as two groups of components:
+You can look at Codacy as two groups of components:
 
 -   The **"Platform"** contains the UI and other components important to treat and show results
 -   The **"Analysis"** is the swarm of workers that run **between one and four** linters simultaneously, depending on factors such as the number of files or the programming languages used in your projects
@@ -88,7 +88,7 @@ The storage requirements recommended on the following table **depend mainly on t
 | ---------- | ---------------------------- | ----------------------- |
 | NFS        | Yes                          | **200 GB**              |
 | RabbitMQ   | Yes                          | **8 GB**                |
-| Minio      | Yes                          | **20 GB**               |
+| MinIO      | Yes                          | **20 GB**               |
 | PostgreSQL | No (external DB recommended) | **500 GB+**             |
 
 !!! note

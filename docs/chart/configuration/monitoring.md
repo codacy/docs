@@ -6,7 +6,7 @@ description: Instructions on how to set up monitoring for your Codacy Self-hoste
 
 Currently, Codacy Self-hosted supports two monitoring solutions:
 
--   **[Crow](#setting-up-monitoring-using-crow):** A simple, lightweight, and built-in monitoring solution, enabled by default when you install Codacy.
+-   **[Crow](#setting-up-monitoring-using-crow):** A lightweight, built-in monitoring solution, enabled by default when you install Codacy.
 -   **[Prometheus + Grafana + Loki](#setting-up-monitoring-using-grafana-prometheus-and-loki):** A comprehensive third-party monitoring solution, recommended for more advanced usage.
 
 The sections below provide instructions on how to set up each monitoring solution.
@@ -49,9 +49,9 @@ We highly recommend that you define a custom password for Crow, if you haven't a
 
 ## Setting up monitoring using Grafana, Prometheus, and Loki
 
-[Prometheus](https://prometheus.io) is an open-source systems monitoring and alerting toolkit. Logs can be collected using [Loki](https://grafana.com/oss/loki/), which is a horizontally-scalable, highly-available, multi-tenant log aggregation system. Its data can be visualized with [Grafana](https://grafana.com), a widely used open source analytics and monitoring solution.
+[Prometheus](https://prometheus.io) is an open-source systems monitoring and alerting toolkit. Logs can be collected using [Loki](https://grafana.com/oss/loki/), which is a horizontally scalable, highly available, multi-tenant log aggregation system. Its data can be visualized with [Grafana](https://grafana.com), a widely used open source analytics and monitoring solution.
 
-This solution is considerably more resource demanding than Crow, and is recommended only for more advanced usage. Furthermore, its installation, configuration, and management require a deeper knowledge of Kubernetes as each component must be carefully tweaked to match your specific use case, using as starting point the `.yaml` values files provided by us.
+This solution is considerably more resource demanding than Crow, and is recommended only for more advanced usage. Furthermore, its installation, configuration, and management require a deeper knowledge of Kubernetes as each component must be tweaked to match your specific use case, using as starting point the `.yaml` values files provided by us.
 
 The instructions below cover the basic installation of these monitoring services using the [Kube Prometheus Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack).
 
@@ -114,7 +114,7 @@ helm upgrade --install --atomic --timeout 600s monitoring  prometheus-community/
   --version 39.9.0 --namespace monitoring --values values-prometheus-operator.yaml
 ```
 
-Grafana will be available on the domain you configured in your `values-prometheus-operator.yaml` file, with Prometheus and Loki configured as datasources. Follow the [Kubernetes documentation](https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster) if you need to access other monitoring services that are now running on your cluster, using the method that best suits your use case.
+Grafana will be available on the domain you configured in your `values-prometheus-operator.yaml` file, with Prometheus and Loki configured as data sources. Follow the [Kubernetes documentation](https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster) if you need to access other monitoring services that are now running on your cluster, using the method that best suits your use case.
 
 ### 5. Enable service dashboards
 

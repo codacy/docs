@@ -51,7 +51,7 @@ Rollback to a specific revision:
 helm -n codacy rollback codacy <REVISION>
 ```
 
-## Edit configmap
+## Edit ConfigMap
 
 ```bash
 kubectl get configmaps
@@ -63,9 +63,9 @@ kubectl get configmaps
 kubectl edit configmap <configmap-name>
 ```
 
-## Restart deployment of daemonset
+## Restart deployment of DaemonSet
 
-### daemonsets
+### DaemonSets
 
 ```bash
 kubectl get daemonsets
@@ -97,7 +97,7 @@ kubectl rollout status deployment/<deployment-name> -w
 
 ## Read logs
 
-### daemonset with multiple containers
+### DaemonSet with multiple containers
 
 ```bash
 kubectl logs daemonset/<daemonset-name> <container-name> -f
@@ -132,7 +132,7 @@ kubectl exec -it deployment/<deployment-name> sh
 ### Session Manager SSH
 
 When using AWS Session Manager, to connect to the instance where you installed microk8s,
-since the CLI is very limited you will benefit from using these aliases:
+since the CLI is limited you will benefit from using these aliases:
 
 ```bash
 alias kubectl='sudo microk8s.kubectl -n <namespace-name>'

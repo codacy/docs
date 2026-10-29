@@ -130,7 +130,7 @@ Now that MicroK8s is running on the machine we can proceed to enabling the neces
     dashboard: disabled
     ```
 
-After these steps you have ensured that DNS, HTTP, and NGINX Ingress are enabled and working properly inside the MicroK8s instance.
+After these steps you have ensured that DNS, HTTP, and NGINX Ingress are enabled and working inside the MicroK8s instance.
 
 ## Notes on installing Codacy
 

@@ -29,11 +29,11 @@ The next sections include detailed instructions on how to complete each step of 
 
 Before you start, you must prepare and provision the database server and Kubernetes or MicroK8s cluster that will host Codacy.
 
-Carefully review and set up the system requirements to run Codacy by following the instructions on the page below:
+Review and set up the system requirements to run Codacy by following the instructions on the page below:
 
 -   [System requirements](requirements.md)
 
-Optionally, you can follow one of the guides below to quickly create a new Kubernetes or MicroK8s cluster that satisfies the characteristics described in the system requirements:
+Optionally, you can follow one of the guides below to create a new Kubernetes or MicroK8s cluster that satisfies the characteristics described in the system requirements:
 
 -   [Creating an Amazon EKS cluster](infrastructure/eks-quickstart.md)
 -   [Creating a MicroK8s cluster](infrastructure/microk8s-quickstart.md)

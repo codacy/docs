@@ -19,7 +19,7 @@ Prepare your environment to set up the Amazon EKS cluster:
     -   [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) version >= 2.0.0
     -   [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) version 1
     -   [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) version >= 0.12
-    -   [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) version >= 1.14
+    -   [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) version >= 1.14
 
 2.  Set up the AWS CLI credentials for your AWS account using the [AWS CLI](https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html) and [Terraform](https://www.terraform.io/docs/providers/aws/index.html) documentation as reference.
 
@@ -41,7 +41,7 @@ Prepare your environment to set up the Amazon EKS cluster:
     -   **backend:** Optional S3 bucket for storing the Terraform state and a DynamoDB table for state locking
     -   **main:** Amazon EKS cluster, including the setup of all network and node infrastructure to go from zero to a fully functional cluster
 
-    You must have administration privileges on AWS to deploy (and eventually destroy) this infrastructure. The policy file [aws-terraform-minimum-admin-policy.json](./EKS/aws-terraform-minimum-admin-policy.json) lists the minimum privileges that are required.
+    You must have administration privileges on AWS to deploy (and eventually destroy) this infrastructure. The policy file [`aws-terraform-minimum-admin-policy.json`](./EKS/aws-terraform-minimum-admin-policy.json) lists the minimum privileges that are required.
 
 ## 2. Set up the Terraform state storage backend
 
@@ -75,7 +75,7 @@ Create a cluster that includes all the required network and node setup:
 
     This process takes around 10 minutes.
 
-2.  Consider if you want to tailor the cluster to your needs by customizing the cluster configuration.
+2.  Consider if you want to adapt the cluster to your needs by customizing the cluster configuration.
 
     The cluster configuration (such as the type and number of nodes, network CIDRs, etc.) is exposed as variables in the `main/variables.tf` file.
 
@@ -109,7 +109,7 @@ Create a cluster that includes all the required network and node setup:
 
 Prepare your infrastructure for the Ingress Controller setup, which is performed later during the installation process:
 
-1.  Make sure that your network resources are correctly tagged, and create the following required tags if they are missing:
+1.  Make sure that your network resources are correctly tagged, and create the following required tags if they're missing:
 
     | Resource Type    | Key = Value                                                                                   |
     | ---------------- | --------------------------------------------------------------------------------------------- |
@@ -169,11 +169,11 @@ Install the NGINX Ingress Controller:
 
 2.  Remove the Terraform backend.
 
-    If you created the Terraform backend with the provided stack you can now safely delete it.
+    If you created the Terraform backend with the provided stack you can now delete it.
 
     The backend is purposely created with extra settings to prevent its accidental destruction. To destroy it cleanly you must first disable these settings by editing the file `backend/state_and_lock.tf` and following the instructions included in the comments.
 
-    Afterwards, run the following command in the `backend/` directory:
+    Afterward, run the following command in the `backend/` directory:
 
     ```bash
     terraform apply && terraform destroy
