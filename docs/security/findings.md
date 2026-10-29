@@ -2,7 +2,7 @@
 
 The **Security and risk management findings** page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by **Latest findings** found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest. Use this page to review and prioritize findings and track the progress of your security efforts.
 
-To access the findings page, access the [overview page](index.md#dashboard) and click the **Findings** tab.
+To access the findings page, access the [Security and risk management page](index.md) and click the **Findings** tab.
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
@@ -57,7 +57,7 @@ You can ignore a finding using the context menu both in the findings list page a
 
 From an organization standpoint, ignoring a finding means that you accept the risk it poses and you're not planning on addressing the issue.
 
-From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the [overview page](index.md#dashboard). Note that the [Open Findings history](index.md#open-findings-history) chart will only be changed at the start of next week.
+From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the [Overview report](reports.md#overview). Note that the [Open Findings history](reports.md#open-findings-history) chart will only be changed at the start of next week.
 
 !!! info "[Jira](../organizations/integrations/jira-integration.md) findings can't be ignored in Codacy. You should closed the issue directly in Jira."
 
@@ -190,6 +190,8 @@ In the open configuration modal you'll be able to input your deadline preference
 
 As soon as changes are saved, your open findings statuses will be updated accordingly.
 You are also able to reset to Codacy default deadline values (see table above) at any time.
+
+Changing an SLA also changes past results in the [Remediation report](reports.md#remediation-report), which compares every closed finding against today's SLAs.
 
 ## Finding statuses {: id="item-statuses"}
 

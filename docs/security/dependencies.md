@@ -24,7 +24,7 @@ To enable Trivy across your organization, you can:
 
 ## Viewing your dependencies
 
-To access the dependencies page, access the [overview page](index.md#dashboard) and click the **Dependencies** tab.
+To access the dependencies page, access the [Security and risk management page](index.md) and click the **Dependencies** tab.
 
 ![Security and risk management dependencies page](images/security-risk-management-dependencies-list.png)
 
