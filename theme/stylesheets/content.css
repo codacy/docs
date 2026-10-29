@@ -157,11 +157,6 @@ html .md-typeset details[class] > :last-child { margin-bottom: 0; }
 .docs-notice { margin: 0 0 1.5rem; padding: 1rem 1.1rem; border: 1px solid var(--docs-border-strong); border-radius: var(--docs-radius); background: var(--docs-bg-brand); color: var(--docs-text-secondary); }
 .docs-notice strong { color: var(--docs-text); }
 .docs-notice p { margin: .35rem 0 0; }
-/* Page-level availability line, inserted under the h1 by theme/hooks/self_hosted_markers.py. */
-.md-typeset .docs-availability { display: flex; flex-wrap: wrap; align-items: center; gap: var(--docs-space-2); margin: calc(-1 * var(--docs-space-2)) 0 var(--docs-space-5); color: var(--docs-text-secondary); font-size: .8125rem; line-height: 1.4; }
-.docs-availability__label { color: var(--docs-text); font-weight: 600; }
-.docs-availability__item { padding: .1rem var(--docs-space-2); border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg-secondary); }
-.docs-availability__item--unavailable { border-style: dashed; background: transparent; color: var(--docs-text-tertiary); }
 .docs-source-link { float: right; margin: .25rem 0 1rem 1rem; color: var(--docs-text-tertiary); font-size: .78rem; font-weight: 600; text-decoration: none; }
 .docs-revision { display: flex; align-items: center; gap: .35rem; margin-top: 2.5rem; color: var(--docs-text-tertiary); font-size: .78rem; }
 .docs-revision span { color: var(--docs-text-secondary); font-weight: 600; }

@@ -37,25 +37,11 @@ Swap `!!!` for `???` (collapsed) or `???+` (expanded) to make any of these colla
 - Roughly two per `##` section is the ceiling. Past that, readers stop seeing them.
 - Use `warning` and `important` only for consequences the reader cannot undo or would not expect. Downgrade anything else to `note`.
 
-## Codacy Self-hosted availability markers
+## Codacy Self-hosted version markers
 
 The site is unversioned: Codacy Cloud readers and Codacy Self-hosted readers read the same page. Content that differs on Self-hosted carries a marker, and content without one is read as true for both. Mark a difference only when it applies to a Self-hosted version above `extra.codacy_self_hosted_min_version` in `mkdocs.yml` — at or below that floor, every supported version has it.
 
-**A whole page.** Set `availability` in the front matter. The theme renders it as an "Available on" line under the page title.
-
-```yaml
-availability:
-  self_hosted: "13.0"   # Codacy Self-hosted v13.0 and later
-```
-
-| Key | Values | Default |
-|---|---|---|
-| `self_hosted` | `false` (not on Self-hosted), `true`, or the first version that has it, quoted, as `"MAJOR.MINOR"` | `true` |
-| `cloud` | `false` for Self-hosted-only pages | `true` |
-
-Quote the version: unquoted, YAML reads `13.10` as the number `13.1`.
-
-**One section, option, or step.** Use a `self-hosted` admonition directly above what it applies to, with exactly one of these two titles:
+Use a `self-hosted` admonition directly above the section, option, or step it applies to, with exactly one of these two titles:
 
 ```markdown
 !!! self-hosted "Codacy Self-hosted v14.0 and later"
@@ -67,7 +53,7 @@ Quote the version: unquoted, YAML reads `13.10` as the number `13.1`.
 
 The admonition rules above apply: one message per marker, no stacking or nesting. Never write a Self-hosted version difference in prose — a marker is how the next support-floor change finds it.
 
-`theme/hooks/self_hosted_markers.py` fails the strict build on any other title, on a malformed `availability` value, and on any marker at or below the support floor. Raising the floor therefore lists every marker to delete.
+`theme/hooks/self_hosted_markers.py` fails the strict build on any other title and on any marker at or below the support floor. Raising the floor therefore lists every marker to delete.
 
 ## Tables and description lists
 
@@ -114,5 +100,4 @@ Wording that fits the page you came from is frequently wrong on the others. If i
 
 - `description:` — one or two sentences, used for search results and social previews. Expected on substantive pages.
 - Release notes carry their own RSS fields; the `docs-release-note` skill covers them.
-- `availability:` — which products the page applies to. See "Codacy Self-hosted availability markers" above.
 - Do not invent frontmatter keys. Only keys already used in `docs/` or consumed by a plugin in `mkdocs.yml` do anything.
