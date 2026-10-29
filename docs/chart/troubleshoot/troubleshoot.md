@@ -18,7 +18,10 @@ If the information provided on this page isn't enough to solve your issue, conta
 
 The following sections help you troubleshoot the integration of Codacy with your Git provider.
 
+<!-- The lowercase "github" below is inside a preserved anchor slug, so it is markup rather than prose. -->
+<!-- vale Vale.Terms = NO -->
 ### GitHub Cloud and GitHub Enterprise authentication {: id="github"}
+<!-- vale Vale.Terms = YES -->
 
 #### 404 error
 
@@ -38,7 +41,10 @@ If the error persists:
 1.  Take note of the parameter `client_id` in the URL of the GitHub error page (for example, `Iv1.0000000000000000`)
 2.  Check if the value of the parameter matches the value of the Client ID of your GitHub App
 
+<!-- The lowercase "gitlab" below is inside a preserved anchor slug, so it is markup rather than prose. -->
+<!-- vale Vale.Terms = NO -->
 ### GitLab Cloud and GitLab Enterprise authentication {: id="gitlab"}
+<!-- vale Vale.Terms = YES -->
 
 #### Invalid redirect URI
 
@@ -46,7 +52,7 @@ While trying to authenticate on GitLab you get the following error message:
 
 ![Invalid redirect URI](images/gitlab-invalid-redirect-uri.png)
 
-This might mean that the redirect URIs are not correct in the GitLab application that Codacy is using to authenticate on GitLab.
+This might mean that the redirect URIs aren't correct in the GitLab application that Codacy is using to authenticate on GitLab.
 
 To solve this issue:
 
@@ -78,13 +84,16 @@ If the error persists:
 1.  Take note of the parameter `client_id` in the URL of the GitLab error page (for example, `cca35a2a1f9b9b516ac927d82947bd5149b0e57e922c9e5564ac092ea16a3ccd`)
 2.  Check if the value of the parameter matches the value of the Application ID of your GitLab application
 
+<!-- The lowercase "bitbucket" below is inside a preserved anchor slug, so it is markup rather than prose. -->
+<!-- vale Vale.Terms = NO -->
 ### Bitbucket Cloud authentication {: id="bitbucket-cloud"}
+<!-- vale Vale.Terms = YES -->
 
-#### Invalid client_id
+#### Invalid `client_id`
 
 While trying to authenticate on Bitbucket Cloud you get the following error message:
 
-![Invalid client_id](images/bitbucket-invalid-client-id.png)
+![Bitbucket error page for an invalid client ID](images/bitbucket-invalid-client-id.png)
 
 This might mean that there is a mismatch in the OAuth consumer Client ID that Codacy is using to authenticate on Bitbucket Cloud.
 
@@ -128,11 +137,13 @@ If the **Code patterns** page of your repositories doesn't list a new tool that 
 curl -X POST localhost:9000/api/v1/engine/initialize
 ```
 
-## Upgrade failed: cannot patch "codacy-minio"
+## Upgrade failed: `cannot patch "codacy-minio"`
 
 If you download and use an updated `values-production.yaml` file while upgrading to [Codacy Self-hosted 9.0.0](https://docs.codacy.com/release-notes/self-hosted/self-hosted-v9.0.0/), you'll get the following error:
 
-> Error: UPGRADE FAILED: cannot patch "codacy-minio" with kind PersistentVolumeClaim: persistentvolumeclaims "codacy-minio" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
+```text
+Error: UPGRADE FAILED: cannot patch "codacy-minio" with kind PersistentVolumeClaim: persistentvolumeclaims "codacy-minio" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
+```
 
 This happens because [we updated the MinIO PVC size](https://github.com/codacy/chart/commit/40a158f8b6f62a6f90387060b86fe1dd8d008ed5). As a workaround, you can either:
 

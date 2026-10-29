@@ -12,18 +12,18 @@ Migrating databases between pods is a straightforward process with 3 steps:
 
 You will have to dump all the following databases:
 
-1.  accounts
-2.  analysis
-3.  filestore
-4.  jobs
-5.  metrics
-6.  results
+1.  `accounts`
+2.  `analysis`
+3.  `filestore`
+4.  `jobs`
+5.  `metrics`
+6.  `results`
 
 ## Requirements
 
-The following operations must be executed by a user which has elevated access (`SUPERUSER`) in the Postgres databases.
+The following operations must be executed by a user which has elevated access (`SUPERUSER`) in the PostgreSQL databases.
 
-## Dumping your current data out of a running Postgres
+## Dumping your current data out of a running PostgreSQL
 
 You will need to know the following:
 
@@ -32,7 +32,7 @@ You will need to know the following:
 -   `$DB` - the database that you would like to export.
 -   `$DB_PASSWORD` - the database password.
 
-### pg_dump
+### `pg_dump`
 
 The following command lets you extract a given database into a dump file:
 
@@ -44,9 +44,9 @@ This will dump the file with the `.dump` extension into the `/tmp` folder.
 
 [For more information and additional options, please check the official documentation.](https://www.postgresql.org/docs/12/app-pgdump.html)
 
-### pg_restore
+### `pg_restore`
 
-To restore a database, you can run a `pg_restore` command to consume the dump file and replicate the data onto Postgres:
+To restore a database, you can run a `pg_restore` command to consume the dump file and replicate the data onto PostgreSQL:
 
 ```bash
 PGPASSWORD=$DB_PASSWORD pg_restore -h $DEST_HOSTNAME -p $DEST_HOSTPORT -U $DB_USER -j 8 -d $db -n public --clean $db.dump
@@ -55,7 +55,7 @@ PGPASSWORD=$DB_PASSWORD pg_restore -h $DEST_HOSTNAME -p $DEST_HOSTPORT -U $DB_US
 With the custom format from `pg_dump` (by using `-Fc`) we can now invoke `pg_restore` with multiple parallel jobs. This should make the restoration of the databases quicker, depending on which value you provide for the number of parallel jobs to execute. We provide a value of 8 parallel jobs in the example above (`-j 8`).
 
 !!! note
-    If you run into any problems while restoring, make sure that you have the database created in that Postgres instance (e.g. before restoring the jobs database the Postgres instance should have an empty database called `jobs` created there).
+    If you run into any problems while restoring, make sure that you have the database created in that PostgreSQL instance (for example, before restoring the jobs database the PostgreSQL instance should have an empty database called `jobs` created there).
 
 For more information and additional options, please check the [official documentation](https://www.postgresql.org/docs/12/app-pgrestore.html).
 

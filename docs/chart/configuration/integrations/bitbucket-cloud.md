@@ -6,7 +6,10 @@ description: Instructions on how to set up the Codacy Self-hosted integration wi
 
 Follow the instructions below to set up the Codacy Self-hosted integration with Bitbucket Cloud.
 
+<!-- The lowercase "oauth" below is inside a preserved anchor slug, so it is markup rather than prose. -->
+<!-- vale Vale.Terms = NO -->
 ## Create an OAuth consumer {: id="create-oauth"}
+<!-- vale Vale.Terms = YES -->
 
 To integrate Codacy with Bitbucket Cloud, you must register an OAuth consumer for Codacy on Bitbucket.
 

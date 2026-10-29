@@ -27,7 +27,7 @@ Codacy supports configuring the log level of the following components:
 
 Follow these instructions to configure the log level: 
 
-1.  Edit the value of `<COMPONENT>.config.logLevel` in the `values-production.yaml` file that is used to install Codacy, as shown in the example below.
+1.  Edit the value of `<COMPONENT>.config.logLevel` in the `values-production.yaml` file that you used to install Codacy, as shown in the example below.
 
     ```yaml
     worker-manager:
@@ -46,7 +46,7 @@ Follow these instructions to configure the log level:
     The list of supported values for `logLevel` is shown below. Note that each level also prints the information of the levels higher than it:
 
     -   **DEBUG (default):** Logs detailed information on the flow through the system. **This is the most verbose level**.
-    -   **INFO:** Logs interesting events such as application startup and shutdown, important events on the flow of the system, or behavior that is skipped for expected reasons.
+    -   **INFO:** Logs interesting events such as application startup and shutdown, important events on the flow of the system, or behavior that's skipped for expected reasons.
     -   **WARN:** Logs runtime events that are unexpected, or undesirable, but not necessarily wrong such as the use of deprecated APIs.
     -   **ERROR:** Only logs runtime errors, or unexpected conditions that prevent the expected behavior from happening. **This is the least verbose level**.
 
