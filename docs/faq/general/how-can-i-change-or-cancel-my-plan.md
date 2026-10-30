@@ -16,12 +16,6 @@ Alternatively, [delete your organization](../../organizations/what-are-organizat
     end="<!--plan-caveats-end-->"
 %}
 
-## If you're using Codacy Self-hosted
-
-To help you understand how you're consuming your licensed Codacy seats, use [<span class="skip-vale">codacy-usage-report</span>](https://github.com/codacy/codacy-usage-report) to obtain details about the activity of the users in your Codacy Self-hosted instance.
-
-If you decide to cancel your plan, please contact <mailto:support@codacy.com> and we'll <span class="skip-vale">swiftly</span> process the cancellation.
-
 ## See also
 
 -   [Changing your plan and billing](../../organizations/changing-your-plan-and-billing.md)

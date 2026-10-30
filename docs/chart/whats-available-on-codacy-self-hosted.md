@@ -10,26 +10,24 @@ The rest of the documentation describes Codacy Cloud. Use this page to find out 
 
 ## Available on Codacy Self-hosted {: id="available"}
 
-These pages apply to Codacy Self-hosted:
+These pages apply to Codacy Self-hosted. Where a page needs your instance URL or a tool version, [Using Codacy tools with Codacy Self-hosted](using-codacy/using-codacy-tools-with-codacy-self-hosted.md) lists the changes:
 
 -   **Repositories:** the [repository dashboard](../repositories/repository-dashboard.md), [Commits](../repositories/commits.md), [Files](../repositories/files.md), [Issues](../repositories/issues.md), [Coverage](../repositories/coverage.md), and [Pull requests](../repositories/pull-requests.md)
--   **Repository configuration:** [code patterns](../repositories-configure/configuring-code-patterns.md), [branches](../repositories-configure/managing-branches.md), [ignored files](../repositories-configure/ignoring-files.md), [submodules](../repositories-configure/using-submodules.md), and the [Codacy configuration file](../repositories-configure/codacy-configuration-file.md)
--   **Coverage:** [Codacy Coverage Reporter](../coverage-reporter/index.md)
--   **Local analysis:** [client-side tools](../repositories-configure/local-analysis/client-side-tools.md) and the [Codacy Analysis CLI](../codacy-analysis-cli/index.md)
+-   **Repository configuration:** [code patterns](../repositories-configure/configuring-code-patterns.md), [ignored files](../repositories-configure/ignoring-files.md), [submodules](../repositories-configure/using-submodules.md) (with [these changes](using-codacy/using-codacy-tools-with-codacy-self-hosted.md#submodules)), and the [Codacy configuration file](../repositories-configure/codacy-configuration-file.md)
+-   **Coverage:** [Codacy Coverage Reporter](../coverage-reporter/index.md) (with [these changes](using-codacy/using-codacy-tools-with-codacy-self-hosted.md#coverage-reporter))
+-   **Local analysis:** [client-side tools](../repositories-configure/local-analysis/client-side-tools.md), with the Codacy Analysis CLI version for your Codacy Self-hosted version (see [these changes](using-codacy/using-codacy-tools-with-codacy-self-hosted.md#client-side-tools))
 -   **Organizations:** the [organization overview](../organizations/reporting/organization-overview.md), [managing repositories](../organizations/managing-repositories.md), [managing people](../organizations/managing-people.md), [coding standards](../organizations/using-coding-standards.md), and [roles and permissions](../organizations/roles-and-permissions-for-organizations.md)
--   **Codacy API:** [using the Codacy API](../codacy-api/using-the-codacy-api.md) and [API tokens](../codacy-api/api-tokens.md)
-
-Use the tool versions that match your Codacy Self-hosted version:
-
-{{ self_hosted_table("analysis_cli", "coverage_reporter") }}
+-   **Codacy API:** [using the Codacy API](../codacy-api/using-the-codacy-api.md) (with [these changes](using-codacy/using-codacy-tools-with-codacy-self-hosted.md#api)) and [API tokens](../codacy-api/api-tokens.md)
 
 ## Different on Codacy Self-hosted {: id="different"}
 
 Some features work differently on Codacy Self-hosted:
 
+-   **Branches:** [Managing branches](using-codacy/managing-branches.md) has its own page, including the option to enable new branches automatically.
 -   **Quality settings:** quality gates and quality goals are on one page, [Adjusting quality settings](using-codacy/adjusting-quality-settings.md), instead of the separate pages for [quality gates](../repositories-configure/adjusting-quality-gates.md) and [quality goals](../repositories-configure/adjusting-quality-goals.md).
 -   **File extensions:** instead of [Languages](../repositories-configure/languages.md), see [Configuring file extensions](using-codacy/configuring-file-extensions.md).
 -   **Integrations:** [Jira](using-codacy/jira-integration.md), [Slack](using-codacy/slack-integration.md), and [webhooks](using-codacy/webhook-notifications.md) are set up for each repository, not for the organization.
+-   **File size limit:** you can [change the 150 KB limit](configuration/file-size-limit.md).
 -   **Security:** each repository has a [Security Monitor](using-codacy/security-monitor.md). Codacy Self-hosted doesn't include [Security and risk management](../security/index.md).
 
 ## Only on Codacy Cloud {: id="cloud-only"}
