@@ -7,7 +7,9 @@
 #
 # Sources: analysis_cli and coverage_reporter come from each version's release note in
 # docs/release-notes/self-hosted/. kubernetes, microk8s, and postgresql come from
-# docs/requirements.md in codacy/chart at the version's tag.
+# docs/requirements.md in codacy/chart at the version's tag, unless the release note
+# adds support for a newer version: then the release note wins, checked against the
+# versions the chart CI (.circleci/config.yml) installs on at that tag.
 
 # Content tab titles. Hand-written tabs must use the same titles, so that a reader's
 # choice of version carries across every tab set on the site. {version} is filled in
@@ -26,20 +28,22 @@ fields:
     postgresql: PostgreSQL
 
 versions:
-    # TODO: verify kubernetes. The v16.0.0 release note adds support for 1.30 to 1.33,
-    # but docs/requirements.md at the chart tag still says 1.22 to 1.27.
+    # kubernetes follows the v16.0.0 release note. docs/requirements.md at the chart tag
+    # was never updated; the chart CI at 16.0.0 installs on 1.30 to 1.33 only (chart 0a1a1cd
+    # removed the older jobs). TODO: verify microk8s. The same CI runs MicroK8s 1.30 to 1.33,
+    # not 1.19, and the release note doesn't mention MicroK8s.
     - version: "16.0.0"
       analysis_cli: "7.9.5"
       coverage_reporter: "13.10.15"
-      kubernetes: "1.22 to 1.27 (1.26 recommended)"
+      kubernetes: "1.30 to 1.33"
       microk8s: "1.19"
       postgresql: "11.20 or 12 (12 recommended)"
-    # TODO: verify kubernetes. The v15.0.0 release note adds support for 1.30,
-    # but docs/requirements.md at the chart tag still says 1.22 to 1.27.
+    # kubernetes follows the v15.0.0 release note, which adds 1.30. docs/requirements.md at
+    # the chart tag was never updated; the chart CI at 15.0.0 installs on 1.19 to 1.27 and 1.30.
     - version: "15.0.0"
       analysis_cli: "7.9.5"
       coverage_reporter: "13.10.15"
-      kubernetes: "1.22 to 1.27 (1.26 recommended)"
+      kubernetes: "1.22 to 1.27, and 1.30"
       microk8s: "1.19"
       postgresql: "11.20 or 12 (12 recommended)"
     - version: "14.1.1"

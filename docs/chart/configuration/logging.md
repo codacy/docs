@@ -57,12 +57,13 @@ Follow these instructions to configure the log level:
         
         To do this, uncomment the last line before running the `helm upgrade` command below.
 
-    ```bash
+    {% set helm_upgrade %}
     helm upgrade (...options used to install Codacy...) \
-                 --version {{ extra.codacy_self_hosted_version }} \
+                 --version {version} \
                  --values values-production.yaml \
                  # --values values-microk8s.yaml
-    ```
+    {% endset %}
+    {{ self_hosted_tabs(helm_upgrade, code="bash", indent=4) }}
 
 ## Configuring the log retention period
 
@@ -87,9 +88,10 @@ Follow these instructions to configure the log retention period:
         
         To do this, uncomment the last line before running the `helm upgrade` command below.
 
-    ```bash
+    {% set helm_upgrade %}
     helm upgrade (...options used to install Codacy...) \
-                 --version {{ extra.codacy_self_hosted_version }} \
+                 --version {version} \
                  --values values-production.yaml \
                  # --values values-microk8s.yaml
-    ```
+    {% endset %}
+    {{ self_hosted_tabs(helm_upgrade, code="bash", indent=4) }}

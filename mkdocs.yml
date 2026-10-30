@@ -722,6 +722,15 @@ nav:
                 - account/user-session-management.md
           - Managing Codacy Self-hosted:
                 - chart/index.md
+                - chart/whats-available-on-codacy-self-hosted.md
+                - Using Codacy Self-hosted:
+                      - chart/using-codacy/adjusting-quality-settings.md
+                      - chart/using-codacy/configuring-file-extensions.md
+                      - chart/using-codacy/security-monitor.md
+                      - Repository integrations:
+                            - chart/using-codacy/jira-integration.md
+                            - chart/using-codacy/slack-integration.md
+                            - chart/using-codacy/webhook-notifications.md
                 - chart/requirements.md
                 - Setting up Kubernetes:
                       - chart/infrastructure/eks-quickstart.md
