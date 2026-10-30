@@ -1,3 +1,4 @@
+addons
 Agentlinter
 aligncheck
 allowlist
@@ -17,6 +18,7 @@ Bundler
 bundler-audit
 Checkov
 Checkstyle
+CIDRs
 Clang-Tidy
 CLIs
 cloc
@@ -27,12 +29,15 @@ CodeNarc
 CoffeeLint
 config
 [Cc]overable
+ConfigMap
+conformant
 Cppcheck
 Credo
 CSSLint
 Ctrl
 [Cc]yclomatic
 CVEs
+DaemonSets?
 dartanalyzer
 deadcode
 Dependabot
@@ -62,6 +67,9 @@ jscpd
 JSHint
 JSP
 Junie
+Kube Prometheus Stack
+kubeconfig
+kubectl
 lockfile
 markdownlint
 misconfigurations
@@ -107,12 +115,15 @@ sourceId
 SpotBugs
 SQLFluff
 SQLint
+[Ss]ubnets?
 Staticcheck
 Stylelint
+subcommands
 subfolder
 SVGs
 SwiftLint
 Tailor
+Terraform
 tooltip
 triaged
 triages
@@ -121,12 +132,15 @@ Trivy
 TSLint
 TSQLLint
 unassigns
+uncommenting
 unfollow
 unignore
 unignored
+URIs
 [Uu]nignoring
 unreferenced
 vacuumdb
+vCPUs?
 vendored
 Visualforce
 VSCode
