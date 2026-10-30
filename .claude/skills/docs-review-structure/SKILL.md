@@ -67,7 +67,6 @@ A structure proposal without its cost is not actionable. For every move, rename,
 - **URL impact.** URLs derive from file paths, not from `nav:`. Moving a *file* changes its URL and requires a `redirect_maps` entry in `mkdocs.yml`. Moving an entry *within* `nav:` without touching the file changes no URL and needs no redirect — but still changes what readers find, which is the part needing approval.
 - **Inbound links,** from the greps above, plus the fact that links from the product UI, the blog, and support content are invisible to any check here. Any rename that changes a heading should preserve the old anchor with `{: id="old-anchor"}` rather than rely on a redirect.
 - **New top-level sections.** A new tab needs an `extra.sidebar_icons` entry, and the icon set is closed — the value is a Jinja template path, so a name that does not exist crashes the build. Check `ls theme/assets/vendor/ionicons/svg/` and name a real one, or say that none fits.
-- **Submodule content.** Sections sourced from `submodules/` belong to other repositories and cannot be restructured from here. Name the owning repository instead.
 
 ## 4. Report
 

@@ -29,7 +29,6 @@ Look at the actual rendered page. Inspect the element and find which rule wins b
 2.  `theme/partials/*.html` — each file silently replaces the upstream Material partial of the same name. Anything in an overridden partial is frozen at the moment it was copied; upstream improvements to that partial no longer reach the site. When a partial's markup looks out of date, this is why.
 3.  `theme/main.html` — block-level overrides of Material's `base.html`.
 4.  `theme/hooks/` — Python hooks registered under `hooks:` in `mkdocs.yml` that transform pages at build time. A rendering oddity present in the built HTML but absent from the markdown source is usually here.
-5.  `submodules/codacy-mkdocs-material` — a separate repository. Not editable from here; changes belong upstream.
 
 **Read `theme/stylesheets/tokens.css` before writing a color, a space, or a radius.** It defines the design tokens per color scheme, and every other stylesheet consumes them.
 

@@ -15,7 +15,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2
         with:
-          args: --verbose --accept '100..=103,200..=299,403' ./docs/**/*.md ./submodules/chart/docs/**/*.md
+          args: --verbose --accept '100..=103,200..=299,403' ./docs/**/*.md
           jobSummary: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -101,7 +101,6 @@ jobs:
         uses: calibreapp/image-actions@03c976c29803442fc4040a9de5509669e7759b81 # main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          ignorePaths: submodules/**
           compressOnly: true
 
       - name: Create pull request
