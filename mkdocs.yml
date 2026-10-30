@@ -724,6 +724,8 @@ nav:
                 - chart/index.md
                 - chart/whats-available-on-codacy-self-hosted.md
                 - Using Codacy Self-hosted:
+                      - chart/using-codacy/using-codacy-tools-with-codacy-self-hosted.md
+                      - chart/using-codacy/managing-branches.md
                       - chart/using-codacy/adjusting-quality-settings.md
                       - chart/using-codacy/configuring-file-extensions.md
                       - chart/using-codacy/security-monitor.md
@@ -746,6 +748,7 @@ nav:
                             - chart/configuration/integrations/bitbucket-server.md
                             - chart/configuration/integrations/email.md
                       - chart/configuration/caching.md
+                      - chart/configuration/file-size-limit.md
                       - chart/configuration/monitoring.md
                       - chart/configuration/logging.md
                 - Maintenance and operations:

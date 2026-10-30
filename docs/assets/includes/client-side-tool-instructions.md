@@ -22,12 +22,6 @@
         ```
 
     {% include-markdown "./api-token-warning.md" %}
-
-1.  **If you're using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
-
-    ```bash
-    export CODACY_API_BASE_URL=<your Codacy instance URL>
-    ```
 <!--instructions-end-->
 
 <!--advanced-start-->

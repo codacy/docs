@@ -11,8 +11,6 @@ By default, Codacy does normal Git clones that **don't include submodules** to e
 
 1.  Contact us at <mailto:support@codacy.com> asking to enable submodules on Codacy.
 
-1.  **If you're using Codacy Self-hosted**, [update your license](../chart/maintenance/license.md).
-
 1.  Make sure that your **Git URL** uses the correct protocol:
     -   **GitHub:** HTTPS protocol
     -   **GitLab and Bitbucket:**
@@ -49,17 +47,6 @@ To update your GitLab or Bitbucket public SSH key that Codacy uses to access you
         1.  Add a new SSH key to your Git provider account.
 
     ![Generate new user key](images/using-submodules-generate-new-user-key.png)
-
-## Automating user keys for new repositories
-
-!!! info "This section applies only to Codacy Self-hosted"
-
-You can set Codacy to automatically add the new SSH key to your Git provider account for all new repositories by enabling **Add project key to the user, by default** on the **Administration** console, page **Settings**.
-
-!!! important
-    **If you're using Bitbucket Cloud** this setting must be turned off since automatically adding the user keys isn't supported.
-
-![Add project key to the user by default](images/using-submodules-default-add-user-key.png)
 
 ## See also
 
