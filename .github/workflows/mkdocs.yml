@@ -61,7 +61,7 @@ jobs:
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: nwtgck/actions-netlify@4cbaf4c08f1a7bfa537d6113472ef4424e4eb654 # v3.0
+        uses: nwtgck/actions-netlify@d22a32a27c918fe470bbc562e984f80ec48c2668 # v4.0.0
         with:
           publish-dir: ./site
           production-branch: master
@@ -92,7 +92,7 @@ jobs:
           echo -e "User-agent: *\nSitemap: https://${{ env.CUSTOM_DOMAIN }}/sitemap.xml" > "./site/robots.txt"
 
       - name: Deploy docs (Latest)
-        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4
         if: github.ref == 'refs/heads/master'
         with:
           personal_token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
