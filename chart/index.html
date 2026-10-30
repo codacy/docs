@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2023-05-25 16:38:28">
+    <meta http-equiv="last-modified" content="2026-10-30 11:25:48">
   
   
 
@@ -9601,11 +9601,11 @@
 <p>The next sections include detailed instructions on how to complete each step of the installation process. Make sure that you complete each step before advancing to the next one.</p>
 <h2 id="1-setting-up-the-system-requirements">1. Setting up the system requirements<a class="headerlink" href="#1-setting-up-the-system-requirements" title="Permanent link">#</a></h2>
 <p>Before you start, you must prepare and provision the database server and Kubernetes or MicroK8s cluster that will host Codacy.</p>
-<p>Carefully review and set up the system requirements to run Codacy by following the instructions on the page below:</p>
+<p>Review and set up the system requirements to run Codacy by following the instructions on the page below:</p>
 <ul>
 <li><a href="requirements/">System requirements</a></li>
 </ul>
-<p>Optionally, you can follow one of the guides below to quickly create a new Kubernetes or MicroK8s cluster that satisfies the characteristics described in the system requirements:</p>
+<p>Optionally, you can follow one of the guides below to create a new Kubernetes or MicroK8s cluster that satisfies the characteristics described in the system requirements:</p>
 <ul>
 <li><a href="infrastructure/eks-quickstart/">Creating an Amazon EKS cluster</a></li>
 <li><a href="infrastructure/microk8s-quickstart/">Creating a MicroK8s cluster</a></li>
@@ -9643,7 +9643,7 @@
 </code></pre></div>
 </li>
 <li>
-<p>Download the template file <a href="values-files/values-production.yaml"><code>values-production.yaml</code></a> and use a text editor of your choice to edit the value placeholders as described in the comments.</p>
+<p>Download the template file <a href="https://raw.githubusercontent.com/codacy/chart/15.0.0/codacy/values-production.yaml"><code>values-production.yaml</code></a> and use a text editor of your choice to edit the value placeholders as described in the comments.</p>
 </li>
 <li>
 <p>Create an address record on your DNS provider mapping the hostname you used in the previous step to the IP address of your Ingress controller.</p>
@@ -9656,14 +9656,14 @@
 <p><span id="helm-upgrade">Add Codacy's chart repository to your Helm client and install the Codacy chart using the file <code>values-production.yaml</code> created previously.</span></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you're using MicroK8s</strong> you must download and use the file <a href="values-files/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> together with the file <code>values-production.yaml</code> by uncommenting the last line in the <code>helm upgrade</code> command below.</p>
+<p><strong>If you're using MicroK8s</strong> you must download and use the file <a href="https://raw.githubusercontent.com/codacy/chart/15.0.0/codacy/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> together with the file <code>values-production.yaml</code> by uncommenting the last line in the <code>helm upgrade</code> command below.</p>
 </div>
 <div class="highlight"><pre><span></span><code>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>codacy-stable<span class="w"> </span>https://charts.codacy.com/stable/
 helm<span class="w"> </span>repo<span class="w"> </span>update
 helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>codacy<span class="w"> </span>codacy-stable/codacy<span class="w"> </span><span class="se">\</span>
 <span class="w">             </span>--namespace<span class="w"> </span>codacy<span class="w"> </span><span class="se">\</span>
 <span class="w">             </span>--version<span class="w"> </span><span class="m">15</span>.0.0<span class="w"> </span><span class="se">\</span>
-<span class="w">             </span>--values<span class="w"> </span>values-production.yaml
+<span class="w">             </span>--values<span class="w"> </span>values-production.yaml<span class="w"> </span><span class="se">\</span>
 <span class="w">             </span><span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
 </li>
@@ -9729,7 +9729,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c<span class="w">          </span><span cla
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2023-05-25 16:38:28"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 25, 2023</span></time>
+    <time datetime="2026-10-30 11:25:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2026</span></time>
   </aside>
 
 
@@ -9756,7 +9756,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c<span class="w">          </span><span cla
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
     <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Installing%20Codacy%20Self-hosted%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/chart/edit/master/docs/index.md">Edit this page on GitHub</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/chart/index.md">Edit this page on GitHub</a>
       <a href="mailto:support@codacy.com?subject=Question%20regarding%20Installing%20Codacy%20Self-hosted">Contact support</a>
     </p>
   </section>

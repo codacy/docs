@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2021-04-14 15:27:38">
+    <meta http-equiv="last-modified" content="2026-10-30 11:25:48">
   
   
 
@@ -3213,7 +3213,7 @@
   <a href="#edit-configmap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Edit configmap
+        Edit ConfigMap
       
     </span>
   </a>
@@ -3222,7 +3222,7 @@
   <a href="#restart-deployment-of-daemonset" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Restart deployment of daemonset
+        Restart deployment of DaemonSet
       
     </span>
   </a>
@@ -9544,7 +9544,7 @@
   <a href="#edit-configmap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Edit configmap
+        Edit ConfigMap
       
     </span>
   </a>
@@ -9553,7 +9553,7 @@
   <a href="#restart-deployment-of-daemonset" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Restart deployment of daemonset
+        Restart deployment of DaemonSet
       
     </span>
   </a>
@@ -9689,14 +9689,14 @@ By looking at them you can see if probes are failing, and other important signal
 <p>Rollback to a specific revision:</p>
 <div class="highlight"><pre><span></span><code>helm<span class="w"> </span>-n<span class="w"> </span>codacy<span class="w"> </span>rollback<span class="w"> </span>codacy<span class="w"> </span>&lt;REVISION&gt;
 </code></pre></div>
-<h2 id="edit-configmap">Edit configmap<a class="headerlink" href="#edit-configmap" title="Permanent link">#</a></h2>
+<h2 id="edit-configmap">Edit ConfigMap<a class="headerlink" href="#edit-configmap" title="Permanent link">#</a></h2>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>configmaps
 </code></pre></div>
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>edit<span class="w"> </span>configmap<span class="w"> </span>&lt;configmap-name&gt;
 </code></pre></div>
-<h2 id="restart-deployment-of-daemonset">Restart deployment of daemonset<a class="headerlink" href="#restart-deployment-of-daemonset" title="Permanent link">#</a></h2>
-<h3 id="daemonsets">daemonsets<a class="headerlink" href="#daemonsets" title="Permanent link">#</a></h3>
+<h2 id="restart-deployment-of-daemonset">Restart deployment of DaemonSet<a class="headerlink" href="#restart-deployment-of-daemonset" title="Permanent link">#</a></h2>
+<h3 id="daemonsets">DaemonSets<a class="headerlink" href="#daemonsets" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>daemonsets
 </code></pre></div>
 <p><strong>and</strong></p>
@@ -9712,7 +9712,7 @@ By looking at them you can see if probes are failing, and other important signal
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class="w"> </span>deployment/&lt;deployment-name&gt;<span class="w"> </span>-w
 </code></pre></div>
 <h2 id="read-logs">Read logs<a class="headerlink" href="#read-logs" title="Permanent link">#</a></h2>
-<h3 id="daemonset-with-multiple-containers">daemonset with multiple containers<a class="headerlink" href="#daemonset-with-multiple-containers" title="Permanent link">#</a></h3>
+<h3 id="daemonset-with-multiple-containers">DaemonSet with multiple containers<a class="headerlink" href="#daemonset-with-multiple-containers" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>logs<span class="w"> </span>daemonset/&lt;daemonset-name&gt;<span class="w"> </span>&lt;container-name&gt;<span class="w"> </span>-f
 </code></pre></div>
 <h3 id="service">service<a class="headerlink" href="#service" title="Permanent link">#</a></h3>
@@ -9730,7 +9730,7 @@ By looking at them you can see if probes are failing, and other important signal
 <h2 id="microk8s">MicroK8s<a class="headerlink" href="#microk8s" title="Permanent link">#</a></h2>
 <h3 id="session-manager-ssh">Session Manager SSH<a class="headerlink" href="#session-manager-ssh" title="Permanent link">#</a></h3>
 <p>When using AWS Session Manager, to connect to the instance where you installed microk8s,
-since the CLI is very limited you will benefit from using these aliases:</p>
+since the CLI is limited you will benefit from using these aliases:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">alias</span><span class="w"> </span><span class="nv">kubectl</span><span class="o">=</span><span class="s1">&#39;sudo microk8s.kubectl -n &lt;namespace-name&gt;&#39;</span>
 <span class="nb">alias</span><span class="w"> </span><span class="nv">helm</span><span class="o">=</span><span class="s1">&#39;sudo helm&#39;</span>
 </code></pre></div>
@@ -9742,7 +9742,7 @@ since the CLI is very limited you will benefit from using these aliases:</p>
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2021-04-14 15:27:38"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span></time>
+    <time datetime="2026-10-30 11:25:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2026</span></time>
   </aside>
 
 
@@ -9769,7 +9769,7 @@ since the CLI is very limited you will benefit from using these aliases:</p>
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
     <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Kubernetes%20cheatsheet%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/chart/edit/master/docs/troubleshoot/k8s-cheatsheet.md">Edit this page on GitHub</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/chart/troubleshoot/k8s-cheatsheet.md">Edit this page on GitHub</a>
       <a href="mailto:support@codacy.com?subject=Question%20regarding%20Kubernetes%20cheatsheet">Contact support</a>
     </p>
   </section>

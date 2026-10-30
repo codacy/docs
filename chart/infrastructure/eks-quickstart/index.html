@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2023-11-15 12:38:42">
+    <meta http-equiv="last-modified" content="2026-10-30 11:25:48">
   
   
 
@@ -9656,7 +9656,7 @@
 <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a> version &gt;= 2.0.0</li>
 <li><a href="https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html">AWS CLI</a> version 1</li>
 <li><a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">Terraform</a> version &gt;= 0.12</li>
-<li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">Kubectl</a> version &gt;= 1.14</li>
+<li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">kubectl</a> version &gt;= 1.14</li>
 </ul>
 </li>
 <li>
@@ -9668,14 +9668,14 @@
 <li>
 <p>Clone the Codacy chart repository and change to the directory that includes the provided Terraform configuration files:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/codacy/chart.git
-<span class="nb">cd</span><span class="w"> </span>chart/docs/infrastructure/EKS/
+<span class="nb">cd</span><span class="w"> </span>chart/infrastructure/eks/
 </code></pre></div>
 <p>This folder includes the following infrastructure stacks:</p>
 <ul>
 <li><strong>backend:</strong> Optional S3 bucket for storing the Terraform state and a DynamoDB table for state locking</li>
 <li><strong>main:</strong> Amazon EKS cluster, including the setup of all network and node infrastructure to go from zero to a fully functional cluster</li>
 </ul>
-<p>You must have administration privileges on AWS to deploy (and eventually destroy) this infrastructure. The policy file <a href="../EKS/aws-terraform-minimum-admin-policy.json">aws-terraform-minimum-admin-policy.json</a> lists the minimum privileges that are required.</p>
+<p>You must have administration privileges on AWS to deploy (and eventually destroy) this infrastructure. The policy file <a href="https://github.com/codacy/chart/blob/master/infrastructure/eks/aws-terraform-minimum-admin-policy.json"><code>aws-terraform-minimum-admin-policy.json</code></a> lists the minimum privileges that are required.</p>
 </li>
 </ol>
 <h2 id="2-set-up-the-terraform-state-storage-backend">2. Set up the Terraform state storage backend<a class="headerlink" href="#2-set-up-the-terraform-state-storage-backend" title="Permanent link">#</a></h2>
@@ -9707,7 +9707,7 @@ terraform<span class="w"> </span>init<span class="w"> </span><span class="o">&am
 <p>This process takes around 10 minutes.</p>
 </li>
 <li>
-<p>Consider if you want to tailor the cluster to your needs by customizing the cluster configuration.</p>
+<p>Consider if you want to adapt the cluster to your needs by customizing the cluster configuration.</p>
 <p>The cluster configuration (such as the type and number of nodes, network CIDRs, etc.) is exposed as variables in the <code>main/variables.tf</code> file.</p>
 <p>To customize the defaults of that file we recommend that you use a <a href="https://www.terraform.io/docs/configuration/variables.html#variable-definitions-tfvars-files">variable definitions file</a> and set the variables in a file named <code>terraform.tfvars</code> in the directory <code>main/</code>. The following is an example <code>terraform.tfvars</code>:</p>
 <div class="highlight"><pre><span></span><code>some_key = &quot;a_string_value&quot;
@@ -9733,7 +9733,7 @@ someting_else = true
 <p>Prepare your infrastructure for the Ingress Controller setup, which is performed later during the installation process:</p>
 <ol>
 <li>
-<p>Make sure that your network resources are correctly tagged, and create the following required tags if they are missing:</p>
+<p>Make sure that your network resources are correctly tagged, and create the following required tags if they're missing:</p>
 <table>
 <thead>
 <tr>
@@ -9769,7 +9769,7 @@ helm<span class="w"> </span>repo<span class="w"> </span>update
 <p>Install the NGINX Ingress Controller:</p>
 <ol>
 <li>
-<p>Download the configuration file <a href="../../values-files/values-nginx.yaml"><code>values-nginx.yaml</code></a> for the NGINX Ingress Controller.</p>
+<p>Download the configuration file <a href="https://raw.githubusercontent.com/codacy/chart/master/values-files/values-nginx.yaml"><code>values-nginx.yaml</code></a> for the NGINX Ingress Controller.</p>
 <p>If you wish to use a private load balancer or restrict the IP range for the provisioned load balancer edit the file and enable the required annotation and/or the corresponding setting where indicated.</p>
 </li>
 <li>
@@ -9801,9 +9801,9 @@ helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-
 </li>
 <li>
 <p>Remove the Terraform backend.</p>
-<p>If you created the Terraform backend with the provided stack you can now safely delete it.</p>
+<p>If you created the Terraform backend with the provided stack you can now delete it.</p>
 <p>The backend is purposely created with extra settings to prevent its accidental destruction. To destroy it cleanly you must first disable these settings by editing the file <code>backend/state_and_lock.tf</code> and following the instructions included in the comments.</p>
-<p>Afterwards, run the following command in the <code>backend/</code> directory:</p>
+<p>Afterward, run the following command in the <code>backend/</code> directory:</p>
 <div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>apply<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>terraform<span class="w"> </span>destroy
 </code></pre></div>
 <p>Note that you first have to run <code>terraform apply</code> to update the settings, and only
@@ -9818,7 +9818,7 @@ then will <code>terraform destroy</code> be able to destroy the backend.</p>
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2023-11-15 12:38:42"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 15, 2023</span></time>
+    <time datetime="2026-10-30 11:25:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2026</span></time>
   </aside>
 
 
@@ -9845,7 +9845,7 @@ then will <code>terraform destroy</code> be able to destroy the backend.</p>
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
     <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Creating%20an%20Amazon%20EKS%20cluster%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/chart/edit/master/docs/infrastructure/eks-quickstart.md">Edit this page on GitHub</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/chart/infrastructure/eks-quickstart.md">Edit this page on GitHub</a>
       <a href="mailto:support@codacy.com?subject=Question%20regarding%20Creating%20an%20Amazon%20EKS%20cluster">Contact support</a>
     </p>
   </section>

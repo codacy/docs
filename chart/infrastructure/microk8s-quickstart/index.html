@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2023-06-22 15:47:05">
+    <meta http-equiv="last-modified" content="2026-10-30 11:25:48">
   
   
 
@@ -9657,7 +9657,7 @@ sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span><
 <li>
 <p>Configure MicroK8s to allow privileged containers:</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/snap/microk8s/current/args
-sudo<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;--allow-privileged=true&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/var/snap/microk8s/current/args/kube-apiserver
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;--allow-privileged=true&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/var/snap/microk8s/current/args/kube-apiserver
 microk8s.status<span class="w"> </span>--wait-ready
 </code></pre></div>
 </li>
@@ -9721,7 +9721,7 @@ dashboard: disabled
 </code></pre></div>
 </li>
 </ol>
-<p>After these steps you have ensured that DNS, HTTP, and NGINX Ingress are enabled and working properly inside the MicroK8s instance.</p>
+<p>After these steps you have ensured that DNS, HTTP, and NGINX Ingress are enabled and working inside the MicroK8s instance.</p>
 <h2 id="notes-on-installing-codacy">Notes on installing Codacy<a class="headerlink" href="#notes-on-installing-codacy" title="Permanent link">#</a></h2>
 <p>You can now follow the generic <a href="../../#2-installing-codacy">Codacy installation instructions</a> but please note the following:</p>
 <ul>
@@ -9732,7 +9732,7 @@ dashboard: disabled
 </code></pre></div>
 </li>
 <li>
-<p>When running the <code>helm upgrade</code> command that installs the Codacy chart, you will be instructed to also use the file <a href="../../values-files/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> that downsizes some component limits, making it easier to fit Codacy in the lightweight MicroK8s solution.</p>
+<p>When running the <code>helm upgrade</code> command that installs the Codacy chart, you will be instructed to also use the file <a href="https://raw.githubusercontent.com/codacy/chart/15.0.0/codacy/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> that downsizes some component limits, making it easier to fit Codacy in the lightweight MicroK8s solution.</p>
 </li>
 </ul>
 
@@ -9743,7 +9743,7 @@ dashboard: disabled
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2023-06-22 15:47:05"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 22, 2023</span></time>
+    <time datetime="2026-10-30 11:25:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2026</span></time>
   </aside>
 
 
@@ -9770,7 +9770,7 @@ dashboard: disabled
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
     <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Creating%20a%20MicroK8s%20cluster%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/chart/edit/master/docs/infrastructure/microk8s-quickstart.md">Edit this page on GitHub</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/chart/infrastructure/microk8s-quickstart.md">Edit this page on GitHub</a>
       <a href="mailto:support@codacy.com?subject=Question%20regarding%20Creating%20a%20MicroK8s%20cluster">Contact support</a>
     </p>
   </section>

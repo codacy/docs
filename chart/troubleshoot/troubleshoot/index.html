@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2022-11-18 12:26:17">
+    <meta http-equiv="last-modified" content="2026-10-30 11:25:48">
   
   
 
@@ -9644,7 +9644,7 @@
 <h4 id="invalid-redirect-uri">Invalid redirect URI<a class="headerlink" href="#invalid-redirect-uri" title="Permanent link">#</a></h4>
 <p>While trying to authenticate on GitLab you get the following error message:</p>
 <p><img width="363" height="154" decoding="async" loading="lazy" alt="Invalid redirect URI" src="../images/gitlab-invalid-redirect-uri.png" /></p>
-<p>This might mean that the redirect URIs are not correct in the GitLab application that Codacy is using to authenticate on GitLab.</p>
+<p>This might mean that the redirect URIs aren't correct in the GitLab application that Codacy is using to authenticate on GitLab.</p>
 <p>To solve this issue:</p>
 <ol>
 <li>Open the GitLab application that you created on <a href="../../configuration/integrations/gitlab-cloud/#create-application">GitLab Cloud</a> or <a href="../../configuration/integrations/gitlab-enterprise/#create-application">GitLab Enterprise</a></li>
@@ -9672,9 +9672,9 @@
 <li>Check if the value of the parameter matches the value of the Application ID of your GitLab application</li>
 </ol>
 <h3 id="bitbucket-cloud">Bitbucket Cloud authentication<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">#</a></h3>
-<h4 id="invalid-client_id">Invalid client_id<a class="headerlink" href="#invalid-client_id" title="Permanent link">#</a></h4>
+<h4 id="invalid-client_id">Invalid <code>client_id</code><a class="headerlink" href="#invalid-client_id" title="Permanent link">#</a></h4>
 <p>While trying to authenticate on Bitbucket Cloud you get the following error message:</p>
-<p><img width="628" height="228" decoding="async" loading="lazy" alt="Invalid client_id" src="../images/bitbucket-invalid-client-id.png" /></p>
+<p><img width="628" height="228" decoding="async" loading="lazy" alt="Bitbucket error page for an invalid client ID" src="../images/bitbucket-invalid-client-id.png" /></p>
 <p>This might mean that there is a mismatch in the OAuth consumer Client ID that Codacy is using to authenticate on Bitbucket Cloud.</p>
 <p>To solve this issue:</p>
 <ol>
@@ -9712,11 +9712,10 @@
 <p>If the <strong>Code patterns</strong> page of your repositories doesn't list a new tool that was included in a new Codacy version, force the list of available tools to refresh by running the following command on any <code>codacy-engine-*</code> pod:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>localhost:9000/api/v1/engine/initialize
 </code></pre></div>
-<h2 id="upgrade-failed-cannot-patch-codacy-minio">Upgrade failed: cannot patch "codacy-minio"<a class="headerlink" href="#upgrade-failed-cannot-patch-codacy-minio" title="Permanent link">#</a></h2>
+<h2 id="upgrade-failed-cannot-patch-codacy-minio">Upgrade failed: <code>cannot patch "codacy-minio"</code><a class="headerlink" href="#upgrade-failed-cannot-patch-codacy-minio" title="Permanent link">#</a></h2>
 <p>If you download and use an updated <code>values-production.yaml</code> file while upgrading to <a href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v9.0.0/">Codacy Self-hosted 9.0.0</a>, you'll get the following error:</p>
-<blockquote>
-<p>Error: UPGRADE FAILED: cannot patch "codacy-minio" with kind PersistentVolumeClaim: persistentvolumeclaims "codacy-minio" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize</p>
-</blockquote>
+<div class="highlight"><pre><span></span><code>Error: UPGRADE FAILED: cannot patch &quot;codacy-minio&quot; with kind PersistentVolumeClaim: persistentvolumeclaims &quot;codacy-minio&quot; is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
+</code></pre></div>
 <p>This happens because <a href="https://github.com/codacy/chart/commit/40a158f8b6f62a6f90387060b86fe1dd8d008ed5">we updated the MinIO PVC size</a>. As a workaround, you can either:</p>
 <ul>
 <li>
@@ -9739,7 +9738,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2022-11-18 12:26:17"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2022</span></time>
+    <time datetime="2026-10-30 11:25:48"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2026</span></time>
   </aside>
 
 
@@ -9766,7 +9765,7 @@
     <p class="docs-feedback__thanks" role="status" tabindex="-1" hidden>Thanks for helping improve Codacy documentation.</p>
     <p class="docs-feedback__issue" hidden>For more detailed feedback, <a target="_blank" rel="noopener noreferrer" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Troubleshooting%20Codacy%20Self-hosted%22">open an issue on GitHub</a>.</p>
     <p class="docs-feedback__links">
-      <a href="https://github.com/codacy/chart/edit/master/docs/troubleshoot/troubleshoot.md">Edit this page on GitHub</a>
+      <a href="https://github.com/codacy/docs/edit/master/docs/chart/troubleshoot/troubleshoot.md">Edit this page on GitHub</a>
       <a href="mailto:support@codacy.com?subject=Question%20regarding%20Troubleshooting%20Codacy%20Self-hosted">Contact support</a>
     </p>
   </section>
