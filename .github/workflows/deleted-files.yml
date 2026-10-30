@@ -11,7 +11,7 @@ jobs:
     name: Detect deleted files
     steps:
       - name: Checkout
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Get changed docs md files
         id: changed-files
@@ -30,11 +30,11 @@ jobs:
 
       - name: Comment PR if there are deleted files
         if: steps.changed-files.outputs.any_deleted == 'true'
-        uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # v2
+        uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b # v3.0.1
         with:
           message: |
             ## Remember to add redirects
             ${{ steps.format-output.outputs.FORMATTED_DELETED != '' && format('This PR **deletes** one or more `md` files:<br>`{0}`<br>', steps.format-output.outputs.FORMATTED_DELETED) || ''  }}
             ${{ steps.format-output.outputs.FORMATTED_RENAMED != '' && format('This PR **renames** one or more `md` files:<br>`{0}`<br>', steps.format-output.outputs.FORMATTED_RENAMED) || ''  }}
             Remember to append the appropriate redirects in `mkdocs.yml` under `plugins.redirects.redirect_maps`.
-          comment_tag: deleted-files-reminder
+          comment-tag: deleted-files-reminder
