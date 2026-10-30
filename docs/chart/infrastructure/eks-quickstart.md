@@ -33,7 +33,7 @@ Prepare your environment to set up the Amazon EKS cluster:
 
     ```bash
     git clone https://github.com/codacy/chart.git
-    cd chart/docs/infrastructure/EKS/
+    cd chart/infrastructure/eks/
     ```
 
     This folder includes the following infrastructure stacks:
@@ -41,7 +41,7 @@ Prepare your environment to set up the Amazon EKS cluster:
     -   **backend:** Optional S3 bucket for storing the Terraform state and a DynamoDB table for state locking
     -   **main:** Amazon EKS cluster, including the setup of all network and node infrastructure to go from zero to a fully functional cluster
 
-    You must have administration privileges on AWS to deploy (and eventually destroy) this infrastructure. The policy file [`aws-terraform-minimum-admin-policy.json`](./EKS/aws-terraform-minimum-admin-policy.json) lists the minimum privileges that are required.
+    You must have administration privileges on AWS to deploy (and eventually destroy) this infrastructure. The policy file [`aws-terraform-minimum-admin-policy.json`](https://github.com/codacy/chart/blob/master/infrastructure/eks/aws-terraform-minimum-admin-policy.json) lists the minimum privileges that are required.
 
 ## 2. Set up the Terraform state storage backend
 
@@ -130,7 +130,7 @@ Prepare your infrastructure for the Ingress Controller setup, which is performed
 
 Install the NGINX Ingress Controller:
 
-1.  Download the configuration file [`values-nginx.yaml`](../values-files/values-nginx.yaml) for the NGINX Ingress Controller.
+1.  Download the configuration file [`values-nginx.yaml`](https://raw.githubusercontent.com/codacy/chart/master/values-files/values-nginx.yaml) for the NGINX Ingress Controller.
 
     If you wish to use a private load balancer or restrict the IP range for the provisioned load balancer edit the file and enable the required annotation and/or the corresponding setting where indicated.
 

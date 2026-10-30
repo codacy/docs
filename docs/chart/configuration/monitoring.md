@@ -75,7 +75,7 @@ kubectl apply --server-side -f https://raw.githubusercontent.com/prometheus-oper
 
 ### 2. Installing Loki
 
-Obtain the configuration file for Loki, [`values-loki.yaml`](../values-files/values-loki.yaml), and install it by running the command below. While the default storage class setting for Loki persistence should suit most use cases, you may need to adjust it to your specific Kubernetes installation. For instance, for MicroK8s use `storageClassName: microk8s-hostpath`.
+Obtain the configuration file for Loki, [`values-loki.yaml`](https://raw.githubusercontent.com/codacy/chart/master/values-files/values-loki.yaml), and install it by running the command below. While the default storage class setting for Loki persistence should suit most use cases, you may need to adjust it to your specific Kubernetes installation. For instance, for MicroK8s use `storageClassName: microk8s-hostpath`.
 
 ```bash
 helm repo add grafana https://grafana.github.io/helm-charts
@@ -90,7 +90,7 @@ helm upgrade --install --atomic --timeout 600s loki grafana/loki \
 
 Promtail is an agent that ships the contents of local logs to a Loki instance.
 
-Obtain the configuration file for Promtail, [`values-promtail.yaml`](../values-files/values-promtail.yaml), and install it by running the command below.
+Obtain the configuration file for Promtail, [`values-promtail.yaml`](https://raw.githubusercontent.com/codacy/chart/master/values-files/values-promtail.yaml), and install it by running the command below.
 
 ```bash
 helm upgrade --install --atomic --timeout 600s promtail grafana/promtail \
@@ -100,7 +100,7 @@ helm upgrade --install --atomic --timeout 600s promtail grafana/promtail \
 
 ### 4. Installing Prometheus and Grafana
 
-Obtain the configuration file for the [Kube Prometheus Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack), [`values-prometheus-operator.yaml`](../values-files/values-prometheus-operator.yaml). Then:
+Obtain the configuration file for the [Kube Prometheus Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack), [`values-prometheus-operator.yaml`](https://raw.githubusercontent.com/codacy/chart/master/values-files/values-prometheus-operator.yaml). Then:
 
 1.  Edit the Grafana password for the `admin` user and the hostname for Grafana in the `values-prometheus-operator.yaml` file.
 

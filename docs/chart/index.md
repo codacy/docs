@@ -68,7 +68,7 @@ Install Codacy on an existing cluster using our Helm chart:
         --namespace codacy
     ```
 
-4.  Download the template file [`values-production.yaml`](./values-files/values-production.yaml) and use a text editor of your choice to edit the value placeholders as described in the comments.
+4.  Download the template file [`values-production.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ extra.codacy_self_hosted_version }}/codacy/values-production.yaml) and use a text editor of your choice to edit the value placeholders as described in the comments.
 
 5.  Create an address record on your DNS provider mapping the hostname you used in the previous step to the IP address of your Ingress controller.
 
@@ -78,7 +78,7 @@ Install Codacy on an existing cluster using our Helm chart:
 6.  <span id="helm-upgrade">Add Codacy's chart repository to your Helm client and install the Codacy chart using the file `values-production.yaml` created previously.</span>
 
     !!! important
-        **If you're using MicroK8s** you must download and use the file [`values-microk8s.yaml`](./values-files/values-microk8s.yaml) together with the file `values-production.yaml` by uncommenting the last line in the `helm upgrade` command below.
+        **If you're using MicroK8s** you must download and use the file [`values-microk8s.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ extra.codacy_self_hosted_version }}/codacy/values-microk8s.yaml) together with the file `values-production.yaml` by uncommenting the last line in the `helm upgrade` command below.
 
     ```bash
     helm repo add codacy-stable https://charts.codacy.com/stable/
@@ -86,7 +86,7 @@ Install Codacy on an existing cluster using our Helm chart:
     helm upgrade --install codacy codacy-stable/codacy \
                  --namespace codacy \
                  --version {{ extra.codacy_self_hosted_version }} \
-                 --values values-production.yaml
+                 --values values-production.yaml \
                  # --values values-microk8s.yaml
     ```
 

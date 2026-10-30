@@ -15,7 +15,7 @@ To integrate Codacy with Bitbucket Server, you must create an application link o
     Run the following command to create the key pair using the RSA algorithm in the PKCS#8 format:
 
     ```bash
-    bash <(curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/docs/configuration/integrations/generate-bitbucket-server-secrets.sh)
+    bash <(curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/scripts/generate-bitbucket-server-secrets.sh)
     ```
 
     Store the keys in a safe place for usage in the next steps and as a backup.

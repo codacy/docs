@@ -59,7 +59,7 @@ Now that MicroK8s is running on the machine we can proceed to enabling the neces
 
     ```bash
     sudo mkdir -p /var/snap/microk8s/current/args
-    sudo echo "--allow-privileged=true" >> /var/snap/microk8s/current/args/kube-apiserver
+    echo "--allow-privileged=true" | sudo tee -a /var/snap/microk8s/current/args/kube-apiserver
     microk8s.status --wait-ready
     ```
 
@@ -144,4 +144,4 @@ You can now follow the generic [Codacy installation instructions](../index.md#2-
     alias kubectl=microk8s.kubectl
     ```
 
--   When running the `helm upgrade` command that installs the Codacy chart, you will be instructed to also use the file [`values-microk8s.yaml`](../values-files/values-microk8s.yaml) that downsizes some component limits, making it easier to fit Codacy in the lightweight MicroK8s solution.
+-   When running the `helm upgrade` command that installs the Codacy chart, you will be instructed to also use the file [`values-microk8s.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ extra.codacy_self_hosted_version }}/codacy/values-microk8s.yaml) that downsizes some component limits, making it easier to fit Codacy in the lightweight MicroK8s solution.
