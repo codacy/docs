@@ -66,9 +66,17 @@
 .md-typeset .tabbed-labels { padding: .25rem .5rem 0; border-bottom: 1px solid var(--docs-border); background: var(--docs-bg-secondary); }
 .md-typeset .tabbed-labels > label { padding: .55rem .65rem; color: var(--docs-text-tertiary); font-size: .78rem; font-weight: 600; }
 .md-typeset .tabbed-labels > label:hover { color: var(--docs-text); }
+/* With content.tabs.link, Material wraps each title in a link that carries its own padding,
+   which stacked on the label padding above. Move the padding onto the link. */
+.md-typeset .tabbed-labels--linked > label { padding: 0; }
+.md-typeset .tabbed-labels--linked > label > a { padding: .55rem .65rem; }
 .md-typeset .tabbed-labels::before { background: var(--docs-link); }
 .md-typeset .tabbed-content { box-shadow: none; }
-.md-typeset .tabbed-content > .tabbed-block { margin: 0; }
+.md-typeset .tabbed-content > .tabbed-block { margin: 0; padding: var(--docs-space-3) var(--docs-space-4); }
+.md-typeset .tabbed-content > .tabbed-block > :first-child { margin-top: 0; }
+.md-typeset .tabbed-content > .tabbed-block > :last-child { margin-bottom: 0; }
+/* A tab holding only a code block keeps it edge to edge; the code block has its own padding. */
+.md-typeset .tabbed-content > .tabbed-block:has(> .highlight:only-child) { padding: 0; }
 .md-typeset .tabbed-content pre { margin: 0; border: 0; border-radius: 0; }
 .md-typeset table:not([class]) { border: 1px solid var(--docs-border); border-radius: var(--docs-radius); box-shadow: none; }
 .docs-table-scroll { width: 100%; overflow-x: auto; margin: 1.5rem 0; }
