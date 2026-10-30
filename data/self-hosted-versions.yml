@@ -1,0 +1,82 @@
+# Supported Codacy Self-hosted versions, newest first.
+#
+# This file is the single source for facts that differ between Self-hosted versions.
+# Pages render it with the macros in theme/macros.py; see "Codacy Self-hosted versions"
+# in .claude/reference/formatting.md. To document a new release, add a row at the top.
+# To drop a version from support, delete its row.
+#
+# Sources: analysis_cli and coverage_reporter come from each version's release note in
+# docs/release-notes/self-hosted/. kubernetes, microk8s, and postgresql come from
+# docs/requirements.md in codacy/chart at the version's tag.
+
+# Content tab titles. Hand-written tabs must use the same titles, so that a reader's
+# choice of version carries across every tab set on the site. {version} is filled in
+# from each row. Changing a title here doesn't change hand-written tabs: update those too.
+tab_labels:
+    self_hosted: "Codacy Self-hosted v{version}"
+    cloud: "Codacy Cloud"
+
+# Column headings, in the order self_hosted_table() shows them by default.
+# Every version below must set every field.
+fields:
+    analysis_cli: Codacy Analysis CLI
+    coverage_reporter: Codacy Coverage Reporter
+    kubernetes: Kubernetes
+    microk8s: MicroK8s
+    postgresql: PostgreSQL
+
+versions:
+    # TODO: verify kubernetes. The v16.0.0 release note adds support for 1.30 to 1.33,
+    # but docs/requirements.md at the chart tag still says 1.22 to 1.27.
+    - version: "16.0.0"
+      analysis_cli: "7.9.5"
+      coverage_reporter: "13.10.15"
+      kubernetes: "1.22 to 1.27 (1.26 recommended)"
+      microk8s: "1.19"
+      postgresql: "11.20 or 12 (12 recommended)"
+    # TODO: verify kubernetes. The v15.0.0 release note adds support for 1.30,
+    # but docs/requirements.md at the chart tag still says 1.22 to 1.27.
+    - version: "15.0.0"
+      analysis_cli: "7.9.5"
+      coverage_reporter: "13.10.15"
+      kubernetes: "1.22 to 1.27 (1.26 recommended)"
+      microk8s: "1.19"
+      postgresql: "11.20 or 12 (12 recommended)"
+    - version: "14.1.1"
+      analysis_cli: "7.9.5"
+      coverage_reporter: "13.10.15"
+      kubernetes: "1.22 to 1.27 (1.26 recommended)"
+      microk8s: "1.19"
+      postgresql: "11.20 or 12 (12 recommended)"
+    - version: "14.0.0"
+      analysis_cli: "7.9.5"
+      coverage_reporter: "13.10.15"
+      kubernetes: "1.22 to 1.27 (1.26 recommended)"
+      microk8s: "1.19"
+      postgresql: "11.20 or 12 (12 recommended)"
+    - version: "13.0.0"
+      analysis_cli: "7.9.5"
+      coverage_reporter: "13.10.15"
+      kubernetes: "1.22 to 1.26 (1.23 recommended)"
+      microk8s: "1.19"
+      postgresql: "11.20 or 12 (12 recommended)"
+    # TODO: verify coverage_reporter. The release notes list 13.10.15 for v12.0.0 and
+    # later, which is older than the 13.13.1 listed for v11.0.0.
+    - version: "12.0.0"
+      analysis_cli: "7.8.3"
+      coverage_reporter: "13.10.15"
+      kubernetes: "1.22 to 1.25 (1.23 recommended)"
+      microk8s: "1.19"
+      postgresql: "11.20"
+    - version: "11.0.0"
+      analysis_cli: "7.8.3"
+      coverage_reporter: "13.13.1"
+      kubernetes: "1.22 to 1.23 (1.23 recommended)"
+      microk8s: "1.19"
+      postgresql: "11.20"
+    - version: "10.0.0"
+      analysis_cli: "7.7.4"
+      coverage_reporter: "13.12.3"
+      kubernetes: "1.19 to 1.22 (1.22 recommended)"
+      microk8s: "1.19 to 1.22 (1.19 recommended)"
+      postgresql: "11.18"

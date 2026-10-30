@@ -6,7 +6,6 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 -   [Working on the documentation theme](#working-on-the-documentation-theme)
 -   [Releasing a new Codacy Self-hosted documentation version](#releasing-a-new-codacy-self-hosted-documentation-version)
 -   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
--   [Applying documentation hotfixes to existing chart releases](#applying-documentation-hotfixes-to-existing-chart-releases)
 
 ## Authoring documentation pages
 
@@ -14,10 +13,10 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 
 [Build and preview](https://www.mkdocs.org/#getting-started) the generated HTML on your machine to validate your changes:
 
-1.  Clone the `codacy/docs` repository, including the submodules, and change into the local copy directory:
+1.  Clone the `codacy/docs` repository and change into the local copy directory:
 
     ```bash
-    git clone --recursive https://github.com/codacy/docs.git
+    git clone https://github.com/codacy/docs.git
     cd docs
     ```
 
@@ -44,8 +43,7 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 
 The documentation uses the installed `mkdocs-material` package with a small,
 Codacy-owned theme layer in [`theme/`](theme/). This is
-the current theme source of truth. Don't copy, modify, or renew the legacy
-`submodules/codacy-mkdocs-material` clone when changing this site's theme.
+the current theme source of truth.
 
 The theme is intentionally plain CSS and minimal Jinja overrides:
 
@@ -179,34 +177,6 @@ Create pull requests to make changes to the documentation:
 
 1.  Merge the pull request using the "merge commit" strategy.
 
-### Making changes to submodules
-
-To make changes to any of the [repository submodules](https://github.com/codacy/docs/tree/master/submodules), you must first update the original submodule repository and then update the reference to the submodule on this repository:
-
-1.  Make the changes directly in the submodule repository.
-
-1.  Back in this repository, create and checkout a feature branch named `feat/update-<submodule>`. For example:
-
-    ```bash
-    git checkout -b feat/update-chart
-    ```
-
-1.  Change into the directory of the submodule that includes new changes and pull the new changes. For example:
-
-    ```bash
-    cd submodules/chart
-    git checkout master && git pull origin master
-    ```
-
-1.  Commit the updated submodule reference and open a pull request. For example:
-
-    ```bash
-    cd ../..
-    git add submodules/chart
-    git commit -m "feat: Update chart submodule"
-    git push
-    ```
-
 ### Deploying the documentation to GitHub Pages
 
 A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master` or to the release branches `release/v*`.
@@ -215,21 +185,13 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 ## Releasing a new Codacy Self-hosted documentation version
 
-It's necessary to release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
+It's necessary to release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the Codacy Self-hosted pages under [`docs/chart/`](docs/chart/) on the Latest version of the documentation and creating a dedicated documentation version for the new release.
 
 ### Updating the Latest documentation version
 
 First, update the Latest documentation version with the latest chart documentation:
 
-1.  Create a new branch and pull the latest changes from the `master` branch of the chart submodule.
-
-    ```bash
-    git checkout -b feature/update-submodules
-    cd submodules/chart
-    git checkout master
-    git pull
-    cd ../..
-    ```
+1.  Create a new branch and update the pages under [`docs/chart/`](docs/chart/) for the new chart version.
 
 1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.codacy_self_hosted_version` to the new version of the chart.
 
@@ -242,24 +204,6 @@ First, update the Latest documentation version with the latest chart documentati
 After updating the Latest documentation version, you're ready to create a new Codacy Self-hosted documentation version:
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the branch of the previous Codacy Self-hosted docs version.
-
-1.  Edit the file [`.gitmodules`](.gitmodules) and update the branch of the chart submodule to the correct release branch. For example:
-
-    ```text
-    [submodule "submodules/chart"]
-        path = submodules/chart
-        url = https://github.com/codacy/chart
-        branch = release-11.0.0
-    ```
-
-1.  Pull the latest changes from this branch of the chart submodule.
-
-    ```bash
-    cd submodules/chart
-    git checkout release-11.0.0
-    git pull
-    cd ../..
-    ```
 
 1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.codacy_self_hosted_version` is set to the new version of the chart.
 
@@ -277,43 +221,3 @@ To do this, you must update the documentation of the chart on the:
 -   Corresponding version of the documentation (for example, v11.0)
 
     Follow the instructions on [updating the Latest documentation version](#updating-the-latest-documentation-version), but when updating the corresponding version of the documentation commit the changes to that release branch instead of `master`. For example, `release/v11.0`.
-
-## Applying documentation hotfixes to existing chart releases
-
-Sometimes it may be necessary to apply important documentation fixes to existing chart releases. This is typically done on the latest chart release, but depending on the fix, it may be necessary to apply it to older versions as well.
-
-To apply a hotfix to an existing chart release:
-
-1.  Use a pull request to apply the changes to the `master` branch of the chart. This ensures that the fixes will also be available on the next chart version.
-
-1.  Check out the chart branch to apply the hotfix and cherry-pick one or more changes:
-
-    ```bash
-    git checkout release-x.x.x
-    git cherry-pick --no-commit -m 1 <commit UUID 1>
-    git cherry-pick --no-commit -m 1 <commit UUID 2>
-    ```
-
-1.  Build the docs and validate the changes locally to ensure everything is OK.
-
-1.  Commit and push the changes to the release branch but **skip triggering the CircleCI workflow**:
-
-    ```bash
-    git add .
-    git commit -m "doc: Cherry-pick pull request #xxx and #yyy [ci skip]"
-    git push
-    ```
-
-1.  Update the release tag to point to the new commit:
-
-    ```bash
-    git tag -f x.x.x
-    git push --force origin --tags
-    ```
-
-    If there is a bug fix release to the chart, the bug fix branch will be sourced from the tag pointing to the most recent commit. This ensures that the bug fix branch will include all documentation hotfixes.
-
-1.  Finally, follow the instructions to deploy the updated documentation for the chart version that received the hotfix:
-
-    -   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
-    -   [Updating the Latest documentation version](#updating-the-latest-documentation-version)
