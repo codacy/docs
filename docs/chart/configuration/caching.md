@@ -31,13 +31,15 @@ To use your own external NFS server:
         
         To do this, uncomment the last line before running the `helm upgrade` command below.
 
-    {% set helm_upgrade %}
+    {% set command %}
+    ```bash
     helm upgrade (...options used to install Codacy...) \
                  --version {version} \
                  --values values-production.yaml \
                  # --values values-microk8s.yaml
+    ```
     {% endset %}
-    {{ self_hosted_tabs(helm_upgrade, code="bash", indent=4) }}
+    {{ self_hosted_tabs(command, indent=4) }}
 
 1.  Validate that the `repository-listener` pod  is now using the external NFS server:
 

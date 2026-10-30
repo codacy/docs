@@ -2,8 +2,6 @@
 rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 description: Release notes for Codacy Self-hosted v17.0.0.
-codacy_tools_version_old: https://github.com/codacy-sh/codacy-tools-sh/releases/tag/1.2.21
-codacy_tools_version_new: https://github.com/codacy-sh/codacy-tools-sh/releases/tag/1.2.21
 ---
 
 # Self-hosted v17.0.0
@@ -35,7 +33,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v17.0.0:
 
 This version of Codacy Self-hosted includes the tool versions below. No tools were updated on this version:
 
--   @coffeelint/cli 5.2.11
+-   `@coffeelint/cli` 5.2.11
 -   Ameba 1.6.4
 -   Bandit 1.8.3
 -   Brakeman 4.3.1

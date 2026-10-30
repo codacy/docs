@@ -99,7 +99,7 @@ Three ways to render it, all from `theme/macros.py`:
 
 Content that differs by version but isn't a value, such as a different procedure, goes in hand-written tabs. Title each tab exactly as the macros do: the `tab_labels` in the data file, with the full version from the data file in place of `{version}`. Matching labels keep a reader's choice of version across every tab set on the site; a label in any other form breaks that.
 
-Call `self_hosted_table()` at the top level of a page, never inside a list item or an admonition. `self_hosted_tabs()` can go inside a list item if you pass the column the call sits at, such as `indent=4` for a step in a numbered list; a `{% set %}` block there can be indented like the rest of the step. A hand-written tab set that directly follows another one starts with `===!` instead of `===`; otherwise the two sets join into one. A placeholder or field name that isn't in the data file fails the build, and so does a row that is missing a field.
+Call `self_hosted_table()` at the top level of a page, never inside a list item or an admonition. `self_hosted_tabs()` can go inside a list item if you pass the column the call sits at, such as `indent=4` for a step in a numbered list; a `{% set %}` block there can be indented like the rest of the step. Inside a list, put the template in its own fenced code block and leave out `code=`: Vale lints indented lines as prose, and a fence makes it read the command as code. A hand-written tab set that directly follows another one starts with `===!` instead of `===`; otherwise the two sets join into one. A placeholder or field name that isn't in the data file fails the build, and so does a row that is missing a field.
 
 ## Frontmatter
 

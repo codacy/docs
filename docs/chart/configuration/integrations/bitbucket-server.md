@@ -84,12 +84,14 @@ After creating the Bitbucket Server application link, you must configure it on C
         
         To do this, uncomment the last line before running the `helm upgrade` command below.
 
-    {% set helm_upgrade %}
+    {% set command %}
+    ```bash
     helm upgrade (...options used to install Codacy...) \
                  --version {version} \
                  --values values-production.yaml \
                  # --values values-microk8s.yaml
+    ```
     {% endset %}
-    {{ self_hosted_tabs(helm_upgrade, code="bash", indent=4) }}
+    {{ self_hosted_tabs(command, indent=4) }}
 
 After this is done you will be able to use Bitbucket Server to authenticate to Codacy.
