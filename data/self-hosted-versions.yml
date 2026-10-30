@@ -28,6 +28,16 @@ fields:
     postgresql: PostgreSQL
 
 versions:
+    # v17.0.0 has no product or component changes: requirements.lock matches 16.0.0, and
+    # codacy-tools-sh stays at 1.2.21. kubernetes: the chart CI at 17.0.0 installs on 1.30
+    # to 1.33 (the DigitalOcean test cluster moved to 1.34 in chart c13da1d, but no install
+    # job covers 1.34). TODO: verify microk8s, as for v16.0.0.
+    - version: "17.0.0"
+      analysis_cli: "7.9.5"
+      coverage_reporter: "13.10.15"
+      kubernetes: "1.30 to 1.33"
+      microk8s: "1.19"
+      postgresql: "11.20 or 12 (12 recommended)"
     # kubernetes follows the v16.0.0 release note. docs/requirements.md at the chart tag
     # was never updated; the chart CI at 16.0.0 installs on 1.30 to 1.33 only (chart 0a1a1cd
     # removed the older jobs). TODO: verify microk8s. The same CI runs MicroK8s 1.30 to 1.33,
