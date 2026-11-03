@@ -3,7 +3,7 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Stylelint accessibility patterns renamed – October 2026
+# Stylelint accessibility patterns renamed – November 2026
 
 We've fixed how Codacy runs the Stylelint accessibility patterns! Until now, these 12 patterns didn't check your code. Stylelint didn't recognize their names, so each one reported an issue saying the rule was unknown instead of a real finding.
 
