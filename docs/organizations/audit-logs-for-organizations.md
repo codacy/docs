@@ -57,15 +57,6 @@ If you leave out `from`, the response starts at the oldest event Codacy keeps. I
 
 !!! note "Large date ranges may time out. If that happens, export the period in smaller chunks"
 
-## What audit logs don't cover {: id="what-audit-logs-dont-cover"}
-
-Codacy doesn't log every change to your organization. These operations don't appear in the audit logs:
-
--   Adding or removing repositories
--   Changing code patterns in bulk on a coding standard
--   Ignoring issues in bulk
--   Changing the default branch of a repository
-
 ## Audit log events
 
 Each audit log tracks when a Codacy user executed a specific operation in your organization using the Codacy app or the [Codacy API](https://api.codacy.com/api/api-docs#codacy-api). Each operation is identified by an **action**. For the detailed content of each audit log, see the [Codacy API reference](https://api.codacy.com/api/api-docs#listauditlogsfororganization).
