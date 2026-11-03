@@ -6,7 +6,9 @@ https://docs.codacy.com/account/managing-your-profile/,"To manage your profile i
 https://docs.codacy.com/account/user-session-management/,"To reduce the risk of unauthorized access to your account, Codacy sets automatic expiration timeouts for every session. When a session expires, Codacy invalidates the session both on the client and server side, and creates a new session."
 https://docs.codacy.com/chart/,Install and configure Codacy Self-hosted on Kubernetes or MicroK8s.
 https://docs.codacy.com/chart/requirements/,Before installing Codacy Self-hosted you must ensure that you have your infrastructure correctly provisioned and configured.
+https://docs.codacy.com/chart/whats-available-on-codacy-self-hosted/,"The Codacy features and tools available on Codacy Self-hosted v10.0 and later, where they differ from Codacy Cloud, and what's only on Codacy Cloud."
 https://docs.codacy.com/chart/configuration/caching/,Configure Codacy Self-hosted to use an external NFS server to improve the performance of the cloned repository cache.
+https://docs.codacy.com/chart/configuration/file-size-limit/,Change the maximum size of the files that Codacy Self-hosted analyzes.
 https://docs.codacy.com/chart/configuration/logging/,Configure log levels and log retention periods for your Codacy Self-hosted instance.
 https://docs.codacy.com/chart/configuration/monitoring/,Instructions on how to set up monitoring for your Codacy Self-hosted instance.
 https://docs.codacy.com/chart/configuration/integrations/bitbucket-cloud/,Instructions on how to set up the Codacy Self-hosted integration with Bitbucket Cloud.
@@ -26,6 +28,14 @@ https://docs.codacy.com/chart/maintenance/upgrade/,Instructions on how to upgrad
 https://docs.codacy.com/chart/troubleshoot/k8s-cheatsheet/,Useful helm and kubectl commands to help troubleshoot your Codacy Self-hosted instance.
 https://docs.codacy.com/chart/troubleshoot/logs-collect/,"To help troubleshoot issues, obtain the logs from your Codacy Self-hosted instance and send them to Codacy's Support."
 https://docs.codacy.com/chart/troubleshoot/troubleshoot/,"This page includes information to help you troubleshoot issues that you may come across while installing, configuring, and operating Codacy Self-hosted."
+https://docs.codacy.com/chart/using-codacy/adjusting-quality-settings/,"The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard."
+https://docs.codacy.com/chart/using-codacy/configuring-file-extensions/,"If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis."
+https://docs.codacy.com/chart/using-codacy/jira-integration/,The Jira integration incorporates Codacy on your existing Jira workflows.
+https://docs.codacy.com/chart/using-codacy/managing-branches/,"Codacy automatically triggers analysis on the main branch of your repository (typically master or main as configured on your Git provider), and also supports analyzing multiple branches."
+https://docs.codacy.com/chart/using-codacy/security-monitor/,"The Security Monitor provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off."
+https://docs.codacy.com/chart/using-codacy/slack-integration/,Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
+https://docs.codacy.com/chart/using-codacy/using-codacy-tools-with-codacy-self-hosted/,"What changes when you follow the Codacy Coverage Reporter, client-side tools, Codacy API, and submodules pages on Codacy Self-hosted."
+https://docs.codacy.com/chart/using-codacy/webhook-notifications/,Codacy integrates with any service by sending a POST message to a defined address.
 https://docs.codacy.com/codacy-ai/codacy-ai/,Documentation for the Codacy automated code review tool.
 https://docs.codacy.com/codacy-analysis-cli/,"Install and use the Codacy Analysis CLI to run Codacy's analyzers on your own machine, scope analysis to changed files, and upload the results to Codacy."
 https://docs.codacy.com/codacy-api/api-tokens/,"Create an account API token to authorize access to all the repositories that you have access to, or a repository API token to authorize access only to a specific repository."
@@ -225,6 +235,7 @@ https://docs.codacy.com/release-notes/self-hosted/self-hosted-v14.0.0/,Release n
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v14.1.1/,Release notes for Codacy Self-hosted v14.1.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v15.0.0/,Release notes for Codacy Self-hosted v15.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v16.0.0/,Release notes for Codacy Self-hosted v16.0.0.
+https://docs.codacy.com/release-notes/self-hosted/self-hosted-v17.0.0/,Release notes for Codacy Self-hosted v17.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v2.0.0/,Release notes for Codacy Self-hosted v2.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v2.1.0/,Release notes for Codacy Self-hosted v2.1.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v2.1.1/,Release notes for Codacy Self-hosted v2.1.1.
