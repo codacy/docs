@@ -18,12 +18,6 @@
       {{ icon("search-outline") }}
       <span>Search documentation</span><kbd data-search-shortcut>⌘ K</kbd>
     </label>
-    <div class="version-select-container">
-      <select id="version-selector" class="select-css" aria-label="Documentation version" title="For Codacy Cloud, select Latest. For Codacy Self-Hosted, select the version of your Codacy installation.">
-        <option selected>{% if config.extra.self_hosted %}Self-hosted{% else %}Cloud (Latest){% endif %}</option>
-      </select>
-      {{ icon("chevron-down-outline", "docs-version-select__icon") }}
-    </div>
     <a class="docs-header__cta" href="https://www.codacy.com/signup">Get started</a>
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}{% include "partials/palette.html" %}{% endif %}

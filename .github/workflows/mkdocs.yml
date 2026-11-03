@@ -3,7 +3,7 @@ name: MkDocs
 on: push
 
 # Set concurrency group to either "dev" or "prod"
-concurrency: ${{ fromJSON('{"false":"dev","true":"prod"}')[github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/release/v')] }}
+concurrency: ${{ github.ref == 'refs/heads/master' && 'prod' || 'dev' }}
 
 jobs:
   mkdocs:
@@ -28,11 +28,11 @@ jobs:
 
       - name: Obtain pull request number
         id: pull_request
-        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        if: github.ref != 'refs/heads/master'
         uses: jwalton/gh-find-current-pr@f3d61b485d2801773f7a07b2aaa3306bd8f8e653 # v1
 
       - name: Set up environment variables
-        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        if: github.ref != 'refs/heads/master'
         run: |
           echo "MKDOCS_PREVIEW_BRANCH=$GITHUB_REF_NAME" >> $GITHUB_ENV
           echo "MKDOCS_PREVIEW_PULL_REQUEST=${{ steps.pull_request.outputs.pr }}" >> $GITHUB_ENV
@@ -54,13 +54,13 @@ jobs:
       # Deploy branch previews
       - name: Obtain Netlify alias from branch name
         id: branch
-        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        if: github.ref != 'refs/heads/master'
         uses: common-fate/branch-name@baca702844ae4e7dfd7bfdfa6a9bd4235bc9f08e # v1.1.2
         with:
           max-length: 35
 
       - name: Deploy docs (branch preview)
-        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        if: github.ref != 'refs/heads/master'
         uses: nwtgck/actions-netlify@4cbaf4c08f1a7bfa537d6113472ef4424e4eb654 # v3.0
         with:
           publish-dir: ./site
@@ -102,20 +102,3 @@ jobs:
           cname: ${{ env.CUSTOM_DOMAIN }}
           allow_empty_commit: true
           full_commit_message: Deployed ${{ env.SHORT_SHA }} to . with MkDocs ${{ env.MKDOCS_VERSION }}
-
-      # Deploy Self-hosted docs on push to release/vM.m branch
-      - name: Set up git author
-        uses: oleksiyrudenko/gha-git-credentials@6132cfce45156e2c1562673f9be1a91a575ce879 # v2
-        if: startsWith(github.ref, 'refs/heads/release/v')
-        with:
-          name: ${{ github.actor }}
-          email: ${{ github.actor }}@users.noreply.github.com
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-
-      - name: Deploy docs (Self-hosted)
-        if: startsWith(github.ref, 'refs/heads/release/v')
-        run: |
-          git fetch origin gh-pages --verbose
-          mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push
-        env:
-          MKDOCS_SELF_HOSTED: true

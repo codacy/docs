@@ -43,4 +43,4 @@
 .docs-feedback__thanks { color: var(--docs-success); font-weight: 600; }
 .docs-feedback__thanks:focus { outline: none; }
 .docs-feedback__links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; padding-top: .75rem; color: var(--docs-text-tertiary); font-size: .78rem; }
-.docs-search-trigger:focus-visible, .docs-header__cta:focus-visible, .version-select-container .select-css:focus-visible, .content-link:focus-visible, .topic-card:focus-visible, .docs-page-nav a:focus-visible, .docs-feedback button:focus-visible, .docs-feedback textarea:focus-visible, .docs-feedback a:focus-visible, .docs-footer a:focus-visible, .docs-source-link:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }
+.docs-search-trigger:focus-visible, .docs-header__cta:focus-visible, .content-link:focus-visible, .topic-card:focus-visible, .docs-page-nav a:focus-visible, .docs-feedback button:focus-visible, .docs-feedback textarea:focus-visible, .docs-feedback a:focus-visible, .docs-footer a:focus-visible, .docs-source-link:focus-visible { outline: 2px solid var(--docs-link); outline-offset: 3px; }
