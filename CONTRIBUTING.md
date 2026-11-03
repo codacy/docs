@@ -179,9 +179,9 @@ Create pull requests to make changes to the documentation:
 
 ### Deploying the documentation to GitHub Pages
 
-A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master` or to the release branches `release/v*`.
+A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master`.
 
-**Never use mkdocs directly to deploy the documentation**, since that would overwrite the contents of the `gh-pages` branch and remove the multiple versions of the documentation.
+**Never run `mkdocs gh-deploy` to deploy the documentation.** It replaces the whole `gh-pages` branch with the new build, which removes the archived Codacy Self-hosted documentation versions under `https://docs.codacy.com/v<MAJOR>.<MINOR>/`. The workflow keeps them because it deploys with `keep_files: true`.
 
 ## Documenting a new Codacy Self-hosted release
 

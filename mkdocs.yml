@@ -57,7 +57,6 @@ extra_css:
     - "stylesheets/layout.css"
     - "stylesheets/responsive.css"
 extra_javascript:
-    - "assets/javascripts/version-select.js"
     - "assets/javascripts/docs-theme.js"
 
 # Reserve image space and defer below-the-fold screenshots without a frontend build step.
@@ -100,8 +99,6 @@ extra:
     # Add pull request preview banner
     preview_branch: !ENV [MKDOCS_PREVIEW_BRANCH, false]
     preview_pull_request: !ENV [MKDOCS_PREVIEW_PULL_REQUEST, false]
-    # Control search engine indexing and the visibility of features on Codacy Self-hosted documentation pages
-    self_hosted: !ENV [MKDOCS_SELF_HOSTED, false]
 
 # Stop build on warnings
 # To disable while developing locally set MKDOCS_STRICT to false

@@ -67,7 +67,6 @@ def define_env(env):
     labels: dict[str, str] = data["tab_labels"]
     versions: list[dict] = data["versions"]
 
-    # Not "self_hosted": extra.self_hosted is already a variable (the Self-hosted build flag).
     env.variables["self_hosted_versions"] = versions
     env.variables["self_hosted_latest"] = versions[0]
     env.variables["self_hosted_oldest"] = versions[-1]
