@@ -62,7 +62,6 @@ If you leave out `from`, the response starts at the oldest event Codacy keeps. I
 Codacy doesn't log every change to your organization. These operations don't appear in the audit logs:
 
 -   Adding or removing repositories
--   Enabling or disabling a single code pattern
 -   Changing code patterns in bulk on a coding standard
 -   Ignoring issues in bulk
 -   Changing the default branch of a repository
@@ -107,7 +106,7 @@ The sections below list the events that Codacy logs for your organization at use
 | Create new coding standard from draft                                                                                   | New coding standard created                                                        | `organizations.codingstandards.promote`                       |
 | Update coding standard from draft                                                                                       | Coding standard updated                                                            | `organizations.codingstandards.promote`                       |
 | Update coding standard | Coding standard updated | `organizations.codingstandards.update` |
-| Update tool in coding standard | Tool settings of a coding standard updated | `organizations.codingstandards.tools.update` |
+| Update tool in coding standard | Tool or code pattern settings of a coding standard updated | `organizations.codingstandards.tools.update` |
 | Apply coding standard to repositories                                                                                   | Coding standard applied to a list of repositories                                  | `organizations.codingstandards.repositories`                  |
 | Make coding standard default                                                                                            | Coding standard was made the default                                               | `organizations.codingstandards.setdefault`                    |
 | Delete coding standard                                                                                                  | Coding standard deleted                                                            | `organizations.codingstandards.delete`                        |
@@ -130,7 +129,7 @@ The sections below list the events that Codacy logs for your organization at use
 |Apply organization Git provider settings to repository| Default Git provider configuration of the organization applied to the repository |`repositories.integrations.providersettings.apply`|
 |Refresh Git provider integration<br>(applies only to [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#refreshing) and [GitLab](../repositories-configure/integrations/gitlab-integration.md#refreshing))| Git provider integration for the repository refreshed        |`repositories.integrations.refreshprovider`|
 | Update issue                                                                                                         | For example ignore issue                                     |`repositories.issues.update`|
-| Update tool                                                                                                          | Can be change parameters or disable/enable tool              |`repositories.tools.update`|
+| Update tool                                                                                                          | Tool or code pattern settings updated, for example enabling a tool or a single code pattern |`repositories.tools.update`|
 | Update code patterns in bulk | Enable or disable code patterns of a tool in bulk |`repositories.tools.bulk.update`|
 | Bypass pull request                                                                                                  | Bypass pull request by authorized person                     |`repositories.pullrequests.bypass`|
 | Update repository language                                                                                           | Change languages analyzed in repository                      |`repositories.settings.language.update`|
