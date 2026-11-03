@@ -9,6 +9,7 @@ A documentation site built with MkDocs and the Material theme, plus a Codacy-own
 | Change wording, steps, or facts on a page that already exists | `docs-edit` |
 | Add a page that does not exist yet | `docs-write` |
 | Announce a change that shipped | `docs-release-note` |
+| A new Codacy Self-hosted version shipped, or the supported versions change | `docs-self-hosted-version` |
 | "Review this page", "what's wrong with", "clean this up" | `docs-review-page` |
 | Where a page belongs, nav placement, splitting or merging sections | `docs-review-structure` |
 | CSS, Jinja partials, design tokens, layout, rendering | `docs-review-theme` |

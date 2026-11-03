@@ -80,7 +80,7 @@ Wording that fits the page you came from is frequently wrong on the others. If i
 
 ## Codacy Self-hosted versions
 
-The site is unversioned, so a fact that differs between Codacy Self-hosted versions is shown for each supported version on the same page. Those facts live in one place, `data/self-hosted-versions.yml`: one row per supported version, newest first, one field per fact. Never type a per-version value into a page; add or correct it in the data file and render it.
+The site is unversioned, so a fact that differs between Codacy Self-hosted versions is shown for each supported version on the same page. Those facts live in one place, `data/self-hosted-versions.yml`: one row per supported version, newest first, one field per fact. Never type a per-version value into a page; add or correct it in the data file and render it. The macros below are for pages in the Self-hosted section (`docs/chart/`) only, never Cloud pages.
 
 Three ways to render it, all from `theme/macros.py`:
 
