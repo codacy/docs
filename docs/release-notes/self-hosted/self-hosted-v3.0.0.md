@@ -18,11 +18,11 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
     ![Codacy pull request status on GitHub](../../repositories-configure/integrations/images/github-integration-pr-status.png)
 
-1.  Follow the instructions to [require the Codacy status check to pass before merging pull requests](https://docs.codacy.com/v3.0/faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/#github) on your GitHub branch protection rules.
+1.  Follow the instructions to [require the Codacy status check to pass before merging pull requests](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests) on your GitHub branch protection rules.
 
 ## Product enhancements
 
--   Codacy now supports the integration with GitHub Checks. From now on, [all Codacy analysis information on pull requests](https://docs.codacy.com/v3.0/repositories-configure/integrations/github-integration/#configuring-the-github-integration) will show up under the **Checks** tab on the GitHub pull request pages. For private repositories, the annotations will appear as authored by Codacy instead of the user who configured the integration. (CY-46)
+-   Codacy now supports the integration with GitHub Checks. From now on, [all Codacy analysis information on pull requests](../../repositories-configure/integrations/github-integration.md#configuring) will show up under the **Checks** tab on the GitHub pull request pages. For private repositories, the annotations will appear as authored by Codacy instead of the user who configured the integration. (CY-46)
 
 ## Tool versions
 
