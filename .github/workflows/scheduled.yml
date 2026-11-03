@@ -13,7 +13,7 @@ jobs:
 
       - name: Check for broken links
         id: lychee
-        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
         with:
           args: --verbose --accept '100..=103,200..=299,403' ./docs/**/*.md
           jobSummary: true
@@ -98,14 +98,14 @@ jobs:
 
       - name: Compress images
         id: calibre
-        uses: calibreapp/image-actions@03c976c29803442fc4040a9de5509669e7759b81 # main
+        uses: calibreapp/image-actions@cfe6ba91a2f0e9046d44e2088d002378daeb4a9c # main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           compressOnly: true
 
       - name: Create pull request
         if: steps.calibre.outputs.markdown != ''
-        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           title: "clean: Compress images"
           branch-suffix: timestamp

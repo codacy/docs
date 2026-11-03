@@ -13,7 +13,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Vale
-        uses: errata-ai/vale-action@0135b9fe2b3107365569cc3142b9a1c85221ea2f # reviewdog
+        uses: errata-ai/vale-action@518a9136acc6e6668ce7c00d367051e0941e87ff # reviewdog
         with:
           filter_mode: added
           debug: true
