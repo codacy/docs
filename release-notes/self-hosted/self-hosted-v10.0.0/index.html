@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2023-06-01 17:27:26">
+    <meta http-equiv="last-modified" content="2026-11-03 09:52:10">
   
   
 
@@ -10024,7 +10024,7 @@
 <p>Check the <a href="../../#self-hosted">release notes for all Codacy Self-hosted versions</a> <strong>between your current version and the most recent version</strong> for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.</p>
 </li>
 <li>
-<p>Follow the instructions to <a href="https://docs.codacy.com/v10.0/chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
+<p>Follow the instructions to <a href="../../../chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
 </li>
 <li>
 <p>Update your Codacy command-line tools to the following versions:</p>
@@ -10035,7 +10035,7 @@
 </li>
 </ol>
 <h2 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link">#</a></h2>
-<p>This Codacy Self-hosted version requires <a href="https://docs.codacy.com/v10.0/chart/requirements/#postgresql-server-setup">PostgreSQL version 11.18</a> since the previous major version <a href="https://www.postgresql.org/support/versioning/">recently reached end-of-life (EOL)</a>.</p>
+<p>This Codacy Self-hosted version requires <a href="../../../chart/requirements/#postgresql-server-setup">PostgreSQL version 11.18</a> since the previous major version <a href="https://www.postgresql.org/support/versioning/">recently reached end-of-life (EOL)</a>.</p>
 <p>To upgrade PostgreSQL:</p>
 <ol>
 <li>
@@ -10045,17 +10045,17 @@
 <p>After the upgrade, clean the Codacy databases with <a href="https://www.postgresql.org/docs/11/app-vacuumdb.html">vacuumdb</a> to prevent the autovacuum feature from momentarily affecting the performance of the databases at a later time.</p>
 </li>
 </ol>
-<p><strong>If you're using GitHub Enterprise Server</strong> this Codacy Self-hosted version requires <a href="https://docs.codacy.com/v10.0/faq/general/which-version-control-systems-does-codacy-support/">GitHub Enterprise Server version 3.6.2 or later</a>.</p>
+<p><strong>If you're using GitHub Enterprise Server</strong> this Codacy Self-hosted version requires <a href="../../../faq/general/which-platforms-and-technologies-does-codacy-support/">GitHub Enterprise Server version 3.6.2 or later</a>.</p>
 <h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
 <ul>
-<li>Added support for <a href="https://docs.codacy.com/v10.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup">Kubernetes 1.22.*</a> (REL-992)</li>
+<li>Added support for <a href="../../../chart/requirements/#kubernetes-or-microk8s-cluster-setup">Kubernetes 1.22.*</a> (REL-992)</li>
 <li>You can now configure your Codacy GitHub App to use <a href="https://docs.github.com/en/developers/apps/building-github-apps/refreshing-user-to-server-access-tokens">expiring user access tokens</a>. (PLUTO-133)</li>
 <li>Improved the performance of applying coding standards to repositories to avoid timeouts when updating hundreds of repositories. (PLUTO-83)</li>
-<li>The <strong>Status</strong> column of the <a href="https://docs.codacy.com/v10.0/coverage-reporter/#validating-coverage">coverage reports list</a> now includes direct links to troubleshooting instructions when there are coverage errors. (IO-155)</li>
-<li>Improved the performance and error handling of retrieving many open pull requests from the Git providers while populating the <a href="https://docs.codacy.com/v10.0/repositories/pull-requests/"><strong>Pull requests</strong> page</a>. (IO-133)</li>
-<li>Codacy now supports the <a href="https://docs.codacy.com/v10.0/related-tools/local-analysis/client-side-tools/">client-side tool Unity Roslyn Analyzers</a> for reporting error-prone and performance issues on C# projects that use the Unity framework. (IO-96)</li>
+<li>The <strong>Status</strong> column of the <a href="../../../coverage-reporter/#validating-coverage">coverage reports list</a> now includes direct links to troubleshooting instructions when there are coverage errors. (IO-155)</li>
+<li>Improved the performance and error handling of retrieving many open pull requests from the Git providers while populating the <a href="../../../repositories/pull-requests/"><strong>Pull requests</strong> page</a>. (IO-133)</li>
+<li>Codacy now supports the <a href="../../../repositories-configure/local-analysis/client-side-tools/">client-side tool Unity Roslyn Analyzers</a> for reporting error-prone and performance issues on C# projects that use the Unity framework. (IO-96)</li>
 <li>
-<p>Codacy now displays the coverage variation metric with a precision of two decimal places on the <a href="https://docs.codacy.com/v10.0/repositories/repository-dashboard/">Repository Dashboard</a> and <a href="https://docs.codacy.com/v10.0/organizations/organization-overview/">Organization Overview</a>, and you can <a href="https://docs.codacy.com/v10.0/repositories-configure/adjusting-quality-settings/#gates">define quality gates</a> with a coverage variation threshold using the same precision.</p>
+<p>Codacy now displays the coverage variation metric with a precision of two decimal places on the <a href="../../../repositories/repository-dashboard/">Repository Dashboard</a> and <a href="../../../organizations/reporting/organization-overview/">Organization Overview</a>, and you can <a href="../../../chart/using-codacy/adjusting-quality-settings/#gates">define quality gates</a> with a coverage variation threshold using the same precision.</p>
 <p>The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. (IO-56)</p>
 <p><img width="676" height="359" decoding="async" alt="Coverage threshold with two decimal places on the Quality settings page" src="../../images/io-56.png" /></p>
 </li>
@@ -10070,7 +10070,7 @@
 <p>Added support for the remark-lint plugin <a href="https://github.com/remarkjs/remark-gfm"><span class="skip-vale">remarkjs/remark-gfm</span></a>. (CY-6513)</p>
 </li>
 <li>
-<p>While <a href="https://docs.codacy.com/v10.0/organizations/using-a-coding-standard/">configuring a coding standard</a>, you can now toggle all code patterns using the new checkbox on the header. This allows you to conveniently toggle code patterns in bulk, for example, to enable all security code patterns. (CY-6255, CY-6336)</p>
+<p>While <a href="../../../organizations/using-coding-standards/">configuring a coding standard</a>, you can now toggle all code patterns using the new checkbox on the header. This allows you to conveniently toggle code patterns in bulk, for example, to enable all security code patterns. (CY-6255, CY-6336)</p>
 <p><img width="1198" height="745" decoding="async" loading="lazy" alt="Selecting all code patterns while configuring a coding standard" src="../../images/cy-6336.png" /></p>
 </li>
 </ul>
@@ -10139,7 +10139,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2023-06-01 17:27:26"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 1, 2023 17:27:26 UTC">June 1, 2023</span></time>
+    <time datetime="2026-11-03 09:52:10"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2026 09:52:10 UTC">November 3, 2026</span></time>
   </aside>
 
 

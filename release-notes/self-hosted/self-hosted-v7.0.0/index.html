@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2023-06-01 17:27:26">
+    <meta http-equiv="last-modified" content="2026-11-03 09:52:10">
   
   
 
@@ -10024,7 +10024,7 @@
 <p>Check the <a href="../../#self-hosted">release notes for all Codacy Self-hosted versions</a> <strong>between your current version and the most recent version</strong> for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.</p>
 </li>
 <li>
-<p>Follow the instructions to <a href="https://docs.codacy.com/v7.0/chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
+<p>Follow the instructions to <a href="../../../chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
 </li>
 <li>
 <p>Update your Codacy command-line tools to the versions with the Git tag <code>self-hosted-7.0.0</code>:</p>
@@ -10035,7 +10035,7 @@
 </li>
 </ol>
 <h2 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link">#</a></h2>
-<p><strong>If you're using GitLab</strong> please review the roles of your team on GitLab <a href="http://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/#permissions-for-gitlab">considering the new permissions for project Maintainers</a>.</p>
+<p><strong>If you're using GitLab</strong> please review the roles of your team on GitLab <a href="../../../organizations/roles-and-permissions-for-organizations/#permissions-for-gitlab">considering the new permissions for project Maintainers</a>.</p>
 <p>GitLab defines Maintainers as <a href="https://about.gitlab.com/handbook/product/gitlab-the-product/#permissions-in-gitlab">super-developers</a>:</p>
 <blockquote>
 <p>They're able to push to <span class="skip-vale">master</span>, deploy to production. This role is often held by maintainers and engineering managers.</p>
@@ -10055,41 +10055,41 @@
 <li>Configuring the project</li>
 <li>Changing the following analysis settings: ignoring issues and files, configuring code patterns, configuring file extensions, and managing branches</li>
 </ul>
-<p><a href="https://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/">See the updated permissions</a> for all GitLab roles. (CY-5876)</p>
+<p><a href="../../../organizations/roles-and-permissions-for-organizations/">See the updated permissions</a> for all GitLab roles. (CY-5876)</p>
 </li>
 <li>
 <p>Included ESLint 8 as a new supported tool and deprecated ESLint 7.</p>
 <p>New repositories will use ESLint 7 by default, but <strong>Codacy won't provide more updates for ESLint 7 and will remove ESLint 7 on April 4, 2023</strong>. (CY-5848)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Please <a href="https://docs.codacy.com/v7.0/chart/troubleshoot/troubleshoot/#missing-new-tools">follow these troubleshooting instructions</a> if the new tool ESLint 8 doesn't appear on the <strong>Code patterns</strong> page of your repositories after upgrading to this Codacy Self-hosted version.</p>
+<p>Please <a href="../../../chart/troubleshoot/troubleshoot/#missing-new-tools">follow these troubleshooting instructions</a> if the new tool ESLint 8 doesn't appear on the <strong>Code patterns</strong> page of your repositories after upgrading to this Codacy Self-hosted version.</p>
 </div>
 </li>
 <li>
-<p>The <a href="https://docs.codacy.com/v7.0/organizations/managing-repositories/"><strong>Repositories list</strong> page</a> now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)</p>
+<p>The <a href="../../../organizations/managing-repositories/"><strong>Repositories list</strong> page</a> now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)</p>
 <p><img width="766" height="463" decoding="async" loading="lazy" alt="Repositories with warnings on the Repositories list page" src="../../images/cy-5797.png" /></p>
 </li>
 <li>
-<p>The <a href="https://docs.codacy.com/v7.0/repositories/repository-dashboard/#open-pull-requests"><strong>Open pull requests</strong> area</a> on the Repository Dashboard now displays more details about the open pull requests. (CY-5796)</p>
+<p>The <a href="../../../repositories/repository-dashboard/#open-pull-requests"><strong>Open pull requests</strong> area</a> on the Repository Dashboard now displays more details about the open pull requests. (CY-5796)</p>
 <p><img width="374" height="546" decoding="async" loading="lazy" alt="Open pull requests area on the Repository Dashboard" src="../../images/cy-5796.png" /></p>
 </li>
 <li>
-<p>The <a href="https://docs.codacy.com/v7.0/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations"><strong>Access management</strong> page</a> under your account settings now also allows adding new Git providers. (CY-5795)</p>
+<p>The <a href="../../../getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations"><strong>Access management</strong> page</a> under your account settings now also allows adding new Git providers. (CY-5795)</p>
 </li>
 <li>
 <p>The <strong>Organization Overview</strong> and <strong>Repositories list</strong> pages have improved loading times using a short-lived cache in the user's browser. (CY-5793)</p>
 </li>
 <li>
-<p>The <a href="https://docs.codacy.com/v7.0/organizations/managing-repositories/"><strong>Repositories list</strong> page</a> now allows sorting the list of repositories using the available columns in organizations with less than 100 repositories. (CY-5695)</p>
+<p>The <a href="../../../organizations/managing-repositories/"><strong>Repositories list</strong> page</a> now allows sorting the list of repositories using the available columns in organizations with less than 100 repositories. (CY-5695)</p>
 </li>
 <li>
-<p>The <a href="https://docs.codacy.com/v7.0/organizations/organization-overview/#overall-quality-chart"><strong>Overall quality</strong> chart</a> now allows drilling down on the information to understand which repositories require attention to improve the organization's code quality. (CY-5580)</p>
+<p>The <a href="../../../organizations/reporting/organization-overview/#overall-quality-chart"><strong>Overall quality</strong> chart</a> now allows drilling down on the information to understand which repositories require attention to improve the organization's code quality. (CY-5580)</p>
 <p><img width="1093" height="538" decoding="async" loading="lazy" alt="Drilling down on the Overall quality chart" src="../../images/cy-5580.png" /></p>
 </li>
 </ul>
 <h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
 <ul>
-<li>Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the <a href="https://docs.codacy.com/v7.0/organizations/organization-overview/#last-updated-repositories">date of the last push to the repositories</a>. (CY-5784)</li>
+<li>Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the <a href="../../../organizations/reporting/organization-overview/#last-updated-repositories">date of the last push to the repositories</a>. (CY-5784)</li>
 <li>dartanalyzer now supports including the packages <a href="https://pub.dev/packages/lints">lints</a> and <a href="https://pub.dev/packages/flutter_lints">flutter_lints</a> in the <code>analysis_option.yaml</code> configuration file. (CY-5626)</li>
 <li>Fixed an issue that blocked re-analyzing commits made by non-authors on Codacy Self-hosted. (CY-5012)</li>
 <li>The re-analyze button is now hidden on repositories that are running analysis through a build server. (CY-4205)</li>
@@ -10152,7 +10152,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2023-06-01 17:27:26"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 1, 2023 17:27:26 UTC">June 1, 2023</span></time>
+    <time datetime="2026-11-03 09:52:10"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2026 09:52:10 UTC">November 3, 2026</span></time>
   </aside>
 
 

@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2024-06-26 10:05:13">
+    <meta http-equiv="last-modified" content="2026-11-03 09:52:10">
   
   
 
@@ -10042,7 +10042,7 @@
 <p>Check the <a href="../../#self-hosted">release notes for all Codacy Self-hosted versions</a> <strong>between your current version and the most recent version</strong> for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.</p>
 </li>
 <li>
-<p>Follow the instructions to <a href="https://docs.codacy.com/v13.0/chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
+<p>Follow the instructions to <a href="../../../chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
 </li>
 <li>
 <p>Update your Codacy command-line tools to the following versions:</p>
@@ -10061,7 +10061,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Although <a href="https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table">ingress-nginx chart 4.8.3 officially supports</a> Kubernetes <strong>version 1.25</strong> to <strong>1.28</strong>, we tested this version of Codacy Self-hosted using <a href="https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3">ingress-nginx chart 4.8.3</a> on all the <a href="https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup">supported Kubernetes versions</a>, <strong>1.22.*</strong> to <strong>1.26.*</strong>. All tests were successful in accordance with our quality assurance standards.</p>
+<p>Although <a href="https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table">ingress-nginx chart 4.8.3 officially supports</a> Kubernetes <strong>version 1.25</strong> to <strong>1.28</strong>, we tested this version of Codacy Self-hosted using <a href="https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3">ingress-nginx chart 4.8.3</a> on all the <a href="../../../chart/requirements/#kubernetes-or-microk8s-cluster-setup">supported Kubernetes versions</a>, <strong>1.22.*</strong> to <strong>1.26.*</strong>. All tests were successful in accordance with our quality assurance standards.</p>
 </div>
 <h3 id="upgrading-ingress-nginx-chart-to-version-483">Upgrading ingress-nginx chart to version 4.8.3<a class="headerlink" href="#upgrading-ingress-nginx-chart-to-version-483" title="Permanent link">#</a></h3>
 <div class="admonition warning">
@@ -10072,10 +10072,10 @@
 </ul>
 <p>If you have any questions regarding the above scenarios or need help, please contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
 </div>
-<p>If your Codacy Self-hosted setup uses a <strong>dedicated NGINX Ingress Controller</strong> that follows <a href="https://docs.codacy.com/v13.0/chart/infrastructure/eks-quickstart/">Codacy's installation instructions</a> with <strong>no custom configurations</strong>, you can upgrade ingress-nginx chart to version 4.8.3 by executing the steps below:</p>
+<p>If your Codacy Self-hosted setup uses a <strong>dedicated NGINX Ingress Controller</strong> that follows <a href="../../../chart/infrastructure/eks-quickstart/">Codacy's installation instructions</a> with <strong>no custom configurations</strong>, you can upgrade ingress-nginx chart to version 4.8.3 by executing the steps below:</p>
 <ol>
 <li>
-<p>Download the updated configuration file <a href="https://docs.codacy.com/v13.0/chart/values-files/values-nginx.yaml"><code>values-nginx.yaml</code></a> for the NGINX Ingress Controller, which enables <code>enableAnnotationValidations</code>.</p>
+<p>Download the updated configuration file <a href="https://raw.githubusercontent.com/codacy/chart/13.0.0/docs/values-files/values-nginx.yaml"><code>values-nginx.yaml</code></a> for the NGINX Ingress Controller, which enables <code>enableAnnotationValidations</code>.</p>
 </li>
 <li>
 <p>Run the following script:</p>
@@ -10092,8 +10092,8 @@ helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-
 </div>
 <h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
 <ul>
-<li>Added support for <a href="https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup">Kubernetes 1.26</a>. (REL-1389)</li>
-<li>Added support for <a href="https://docs.codacy.com/v13.0/chart/requirements/#postgresql-server-setup">PostgreSQL server 12</a>. (REL-1347)</li>
+<li>Added support for <a href="../../../chart/requirements/#kubernetes-or-microk8s-cluster-setup">Kubernetes 1.26</a>. (REL-1389)</li>
+<li>Added support for <a href="../../../chart/requirements/#postgresql-server-setup">PostgreSQL server 12</a>. (REL-1347)</li>
 <li>Pylint now supports Python 3.11 syntax. (TS-467)</li>
 <li>Added support for the ESLint plugin <a href="https://www.npmjs.com/package/eslint-plugin-vue-scoped-css"><span class="skip-vale">vue-scoped-css</span></a>. (TS-356)</li>
 <li>Added support for the ESLint plugin <a href="https://www.npmjs.com/package/eslint-plugin-rxjs"><span class="skip-vale">eslint-plugin-rxjs</span></a>. (TS-346)</li>
@@ -10107,7 +10107,7 @@ helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-
 <h2 id="tool-deprecations">Tool deprecations<a class="headerlink" href="#tool-deprecations" title="Permanent link">#</a></h2>
 <p>This version of Codacy Self-hosted deprecates the following tools: <strong>CSSLint</strong>, <strong>Faux Pas</strong>, <strong>JSHint</strong>, <strong>Tailor</strong>, and <strong>TSLint</strong>.</p>
 <p>These tools have become deprecated or stopped being updated by their maintainers and started providing a bad experience to Codacy users either by reporting false positives or causing other unexpected issues.</p>
-<p>To continue analyzing your repositories, enable the replacement tool for the corresponding deprecated tool listed below on the <a href="https://docs.codacy.com/v13.0/repositories-configure/configuring-code-patterns/">code patterns page</a> of each affected repository or in your <a href="https://docs.codacy.com/v13.0/organizations/using-a-coding-standard/">organization coding standard</a>, if you are using one:</p>
+<p>To continue analyzing your repositories, enable the replacement tool for the corresponding deprecated tool listed below on the <a href="../../../repositories-configure/configuring-code-patterns/">code patterns page</a> of each affected repository or in your <a href="../../../organizations/using-coding-standards/">organization coding standard</a>, if you are using one:</p>
 <table>
 <thead>
 <tr>
@@ -10138,7 +10138,7 @@ helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-
 </tr>
 </tbody>
 </table>
-<p>The suggested replacement tools are enabled by default for new repositories, except for Clang Tidy, which is a <a href="https://docs.codacy.com/v13.0/related-tools/local-analysis/client-side-tools/">client-side tool</a>.</p>
+<p>The suggested replacement tools are enabled by default for new repositories, except for Clang Tidy, which is a <a href="../../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.</p>
 <p>If you have any questions or need help, please contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
 <h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">#</a></h2>
 <p>This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:</p>
@@ -10199,7 +10199,7 @@ helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2024-06-26 10:05:13"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 26, 2024 10:05:13 UTC">June 26, 2024</span></time>
+    <time datetime="2026-11-03 09:52:10"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2026 09:52:10 UTC">November 3, 2026</span></time>
   </aside>
 
 
