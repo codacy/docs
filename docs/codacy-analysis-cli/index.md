@@ -317,14 +317,7 @@ Install the CLI as a step and pass a repository API token as a secret:
 
 To gate a pull request on the analysis rather than only reporting it, drop the `upload` step and let the exit code of `analyze --diff` fail the job.
 
-## Network and Codacy Self-hosted
-
-On Codacy Self-hosted, point the CLI at your own instance with `CODACY_API_BASE_URL`. The `upload` command talks to a different endpoint from the rest of the CLI and reads its own variable, so set both:
-
-```bash
-export CODACY_API_BASE_URL=<your Codacy instance API URL>
-export CODACY_RESULTS_API_BASE_URL=<your Codacy instance results API URL>
-```
+## Network {: id="network-and-codacy-self-hosted"}
 
 All outbound requests — Codacy API calls and analyzer downloads alike — honor the standard proxy variables:
 

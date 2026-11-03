@@ -36,11 +36,14 @@ Follow the instructions below to set up the Codacy Self-hosted integration with 
         
         To do this, uncomment the last line before running the `helm upgrade` command below.
 
+    {% set command %}
     ```bash
     helm upgrade (...options used to install Codacy...) \
-                 --version {{ extra.codacy_self_hosted_version }} \
+                 --version {version} \
                  --values values-production.yaml \
                  # --values values-microk8s.yaml
     ```
+    {% endset %}
+    {{ self_hosted_tabs(command, indent=4) }}
 
 After this is done you will be able to use GitHub Enterprise to authenticate to Codacy.

@@ -21,10 +21,10 @@ To use Codacy Self-hosted, you must use one or more of our [supported Git provid
 The cluster running Codacy must satisfy the following requirements:
 
 -   The infrastructure hosting the cluster must be provisioned with the hardware and networking requirements described below
--   The orchestration platform managing the cluster must be one of:
-    -   [Kubernetes](https://kubernetes.io/) **version 1.22.\*** to **1.27.\*** (1.26 recommended)
-    -   [MicroK8s](https://microk8s.io/) **version 1.19.\***
+-   The orchestration platform managing the cluster must be [Kubernetes](https://kubernetes.io/) or [MicroK8s](https://microk8s.io/), at a version that your Codacy Self-hosted version supports
 -   The [NGINX Ingress controller](https://github.com/kubernetes/ingress-nginx) must be installed and correctly set up in the cluster
+
+{{ self_hosted_table("kubernetes", "microk8s") }}
 
 ### Cluster networking requirements
 
@@ -69,7 +69,7 @@ The following is a simplified overview of how to calculate resource allocation f
 
 As described in the section above, Codacy's architecture allows scaling the "Analysis" group of components, meaning that the resources needed for Codacy **depend mainly on the rate of commits** done by your team that Codacy will be analyzing.
 
-The resources recommended on the following table are based on our experience and are also the defaults in the [`values-production.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ extra.codacy_self_hosted_version }}/codacy/values-production.yaml) file. You might need to adapt these defaults taking into account your use case. In particular, you should set the value of `global.workerManager.workers.config.dedicatedMax` to the maximum number of concurrent analysis depending on the available resources and number of replicas per component.
+The resources recommended on the following table are based on our experience and are also the defaults in the [`values-production.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ self_hosted_latest.version }}/codacy/values-production.yaml) file. You might need to adapt these defaults taking into account your use case. In particular, you should set the value of `global.workerManager.workers.config.dedicatedMax` to the maximum number of concurrent analysis depending on the available resources and number of replicas per component.
 
 !!! note
     For MicroK8s clusters we added an extra 1.5 vCPU and 1.5 GB memory to the "Platform" to account for the MicroK8s platform itself running on the same machine.
@@ -99,9 +99,11 @@ The storage requirements recommended on the following table **depend mainly on t
 Codacy requires a database server to persist data that must satisfy the following requirements:
 
 -   The infrastructure hosting the database server must be provisioned with the hardware requirements described below
--   The DBMS server must be [PostgreSQL](https://www.postgresql.org/) **version 11.20** or **version 12.\*** (12.* recommended)
+-   The DBMS server must be [PostgreSQL](https://www.postgresql.org/), at a version that your Codacy Self-hosted version supports
 -   The PostgreSQL server must be configured to accept connections from the cluster
 -   The Codacy databases and a dedicated user must be created using the instructions below
+
+{{ self_hosted_table("postgresql") }}
 
 !!! important
     Google, the developer of Kubernetes, [doesn't recommend running database servers on your cluster](https://cloud.google.com/blog/products/databases/to-run-or-not-to-run-a-database-on-kubernetes-what-to-consider). As such, consider using a managed solution like Amazon RDS or Google Cloud SQL, or running the PostgreSQL server on a dedicated virtual machine.
