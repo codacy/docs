@@ -106,13 +106,18 @@ def define_env(env):
         return "\n".join(lines)
 
     @env.macro
-    def self_hosted_tabs(template: str, code: str | None = None, cloud: str | None = None) -> str:
+    def self_hosted_tabs(template: str, code: str | None = None, cloud: str | None = None, indent: int = 0) -> str:
         """Content tabs, one per supported version, filling {field} placeholders from the data.
 
         `code` wraps each tab in a fenced code block of that language. `cloud` adds a
-        first Codacy Cloud tab with that text, which takes no placeholders.
+        first Codacy Cloud tab with that text, which takes no placeholders. `indent` is the
+        column the call sits at, for a call inside a list item: 4 for one level of nesting.
         """
 
+        template = textwrap.dedent(template)
         tabs = [(labels["cloud"], cloud)] if cloud is not None else []
         tabs += [(label(row), fill(template, row)) for row in versions]
-        return "\n\n".join(_tab(title, body, code, first=i == 0) for i, (title, body) in enumerate(tabs))
+        rendered = "\n\n".join(_tab(title, body, code, first=i == 0) for i, (title, body) in enumerate(tabs))
+        # The first line lands where the call is, so only the lines after it need the indent.
+        first, _, rest = rendered.partition("\n")
+        return first + "\n" + textwrap.indent(rest, " " * indent) if indent else rendered

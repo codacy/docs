@@ -4,7 +4,7 @@ description: Install and configure Codacy Self-hosted on Kubernetes or MicroK8s.
 
 # Installing Codacy Self-hosted
 
-This documentation guides you on how to install Codacy Self-hosted on Kubernetes or MicroK8s.
+This documentation guides you on how to install Codacy Self-hosted on Kubernetes or MicroK8s. Codacy supports Codacy Self-hosted v{{ self_hosted_oldest.version }} and later: see [supported versions](#supported-versions).
 
 !!! important
     **If you're running the legacy Codacy Self-hosted solution running on Docker** please contact <mailto:support@codacy.com> so that we can assist you with the migration to Codacy Self-hosted running on Kubernetes or MicroK8s.
@@ -68,7 +68,7 @@ Install Codacy on an existing cluster using our Helm chart:
         --namespace codacy
     ```
 
-4.  Download the template file [`values-production.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ extra.codacy_self_hosted_version }}/codacy/values-production.yaml) and use a text editor of your choice to edit the value placeholders as described in the comments.
+4.  Download the template file [`values-production.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ self_hosted_latest.version }}/codacy/values-production.yaml) and use a text editor of your choice to edit the value placeholders as described in the comments.
 
 5.  Create an address record on your DNS provider mapping the hostname you used in the previous step to the IP address of your Ingress controller.
 
@@ -78,14 +78,14 @@ Install Codacy on an existing cluster using our Helm chart:
 6.  <span id="helm-upgrade">Add Codacy's chart repository to your Helm client and install the Codacy chart using the file `values-production.yaml` created previously.</span>
 
     !!! important
-        **If you're using MicroK8s** you must download and use the file [`values-microk8s.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ extra.codacy_self_hosted_version }}/codacy/values-microk8s.yaml) together with the file `values-production.yaml` by uncommenting the last line in the `helm upgrade` command below.
+        **If you're using MicroK8s** you must download and use the file [`values-microk8s.yaml`](https://raw.githubusercontent.com/codacy/chart/{{ self_hosted_latest.version }}/codacy/values-microk8s.yaml) together with the file `values-production.yaml` by uncommenting the last line in the `helm upgrade` command below.
 
     ```bash
     helm repo add codacy-stable https://charts.codacy.com/stable/
     helm repo update
     helm upgrade --install codacy codacy-stable/codacy \
                  --namespace codacy \
-                 --version {{ extra.codacy_self_hosted_version }} \
+                 --version {{ self_hosted_latest.version }} \
                  --values values-production.yaml \
                  # --values values-microk8s.yaml
     ```
@@ -137,3 +137,9 @@ After successfully installing Codacy on your cluster, you're now ready to perfor
 4.  As a last step we recommend that you [set up monitoring](configuration/monitoring.md) on your Codacy instance.
 
 If you run into any issues while configuring Codacy, be sure to [check our troubleshooting guide](troubleshoot/troubleshoot.md) for more help.
+
+## Supported versions {: id="supported-versions"}
+
+Every supported version of Codacy Self-hosted has the same features: see [what's available on Codacy Self-hosted](whats-available-on-codacy-self-hosted.md). The versions differ in the platforms they run on and in the tool versions they work with:
+
+{{ self_hosted_table() }}

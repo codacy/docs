@@ -26,10 +26,6 @@ As a workaround, if you're exceeding the maximum number of source code files:
 
 If the analysis finishes but the code duplication metric wasn't calculated, follow the next steps:
 
--   **If you're using Codacy Self-hosted**, open the **Admin panel**, **Repositories**, select the repository, tab **Settings**, and reset the code duplication analysis in **Duplication settings**. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
-
-    ![Resetting the failed duplication analysis](images/duplication-metrics-reset.png)
-
 -   **If you're [analyzing your repository locally](../../repositories-configure/local-analysis/client-side-tools.md)** with the Codacy Analysis CLI, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 
--   **If you're using Codacy Cloud** or if the steps above didn't solve the issue, please contact us at <mailto:support@codacy.com>.
+-   If the steps above didn't solve the issue, please contact us at <mailto:support@codacy.com>.

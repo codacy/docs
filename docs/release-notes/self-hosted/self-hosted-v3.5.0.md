@@ -12,13 +12,13 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   Now, Codacy allows [configuring who is allowed to manage patterns and ignore files](https://docs.codacy.com/v3.5/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration) on all supported Git providers. (CY-3883)
+-   Now, Codacy allows [configuring who is allowed to manage patterns and ignore files](../../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration) on all supported Git providers. (CY-3883)
 -   Codacy now runs [Checkov](https://github.com/bridgecrewio/checkov), extending the analysis support for infrastructure-as-code: Terraform, Terraform Plan, AWS CloudFormation, Kubernetes, Serverless framework, and ARM Templates. This new type of analysis contains more than 500 rules, covering compliance and security best practices for AWS, Azure, and Google Cloud. (CY-3830)
 -   Improved visibility of the tool that reports each issue, bringing that information to the top of the issue details. (CY-3768)
 -   Added the following Codacy API endpoints:
     -   **[getCommitDeltaStatistics](https://api.codacy.com/api/api-docs#getcommitdeltastatistics)** returns the quality metric deltas introduced by a commit. (CY-3560)
     -   **[listCommitDeltaIssues](https://api.codacy.com/api/api-docs#listcommitdeltaissues)** returns the list of issues that were introduced or fixed by a commit. (CY-3560)
--   Continuous improvements on the [Codacy API documentation](https://docs.codacy.com/v3.5/codacy-api/using-the-codacy-api/). (DOCS-42)
+-   Continuous improvements on the [Codacy API documentation](../../codacy-api/using-the-codacy-api.md). (DOCS-42)
 
 ## Bug fixes
 

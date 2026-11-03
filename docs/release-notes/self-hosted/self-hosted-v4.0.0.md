@@ -12,7 +12,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Breaking changes
 
-This version of Codacy Self-hosted requires [PostgreSQL version 10.15](https://docs.codacy.com/v4.0/chart/requirements/#postgresql-server-setup) since the previous major version [will reach end-of-life (EOL) later this year](https://www.postgresql.org/support/versioning/).
+This version of Codacy Self-hosted requires [PostgreSQL version 10.15](../../chart/requirements.md#postgresql-server-setup) since the previous major version [will reach end-of-life (EOL) later this year](https://www.postgresql.org/support/versioning/).
 
 To upgrade PostgreSQL:
 
@@ -22,8 +22,8 @@ To upgrade PostgreSQL:
 
 ## Product enhancements
 
--   Improved the loading time of the [repositories list](https://docs.codacy.com/v4.0/organizations/managing-repositories/) page when an organization has many repositories. (CY-4084)
--   Now, Codacy allows [configuring who is allowed to manage file extensions and branches](https://docs.codacy.com/v4.0/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration). (CY-3886, CY-3887)
+-   Improved the loading time of the [repositories list](../../organizations/managing-repositories.md) page when an organization has many repositories. (CY-4084)
+-   Now, Codacy allows [configuring who is allowed to manage file extensions and branches](../../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration). (CY-3886, CY-3887)
 
 ## Bug fixes
 

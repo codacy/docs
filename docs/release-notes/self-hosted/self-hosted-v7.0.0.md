@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v7.0/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-7.0.0`:
 
@@ -27,7 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
 
 ## Breaking changes
 
-**If you're using GitLab** please review the roles of your team on GitLab [considering the new permissions for project Maintainers](http://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/#permissions-for-gitlab).
+**If you're using GitLab** please review the roles of your team on GitLab [considering the new permissions for project Maintainers](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-gitlab).
 
 GitLab defines Maintainers as [super-developers](https://about.gitlab.com/handbook/product/gitlab-the-product/#permissions-in-gitlab):
 
@@ -48,36 +48,36 @@ However, until now the Codacy permissions for this role were limited to the same
     -   Configuring the project
     -   Changing the following analysis settings: ignoring issues and files, configuring code patterns, configuring file extensions, and managing branches
 
-    [See the updated permissions](https://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/) for all GitLab roles. (CY-5876)
+    [See the updated permissions](../../organizations/roles-and-permissions-for-organizations.md) for all GitLab roles. (CY-5876)
 
 -   Included ESLint 8 as a new supported tool and deprecated ESLint 7.
 
     New repositories will use ESLint 7 by default, but **Codacy won't provide more updates for ESLint 7 and will remove ESLint 7 on April 4, 2023**. (CY-5848)
 
     !!! note
-        Please [follow these troubleshooting instructions](https://docs.codacy.com/v7.0/chart/troubleshoot/troubleshoot/#missing-new-tools) if the new tool ESLint 8 doesn't appear on the **Code patterns** page of your repositories after upgrading to this Codacy Self-hosted version.
+        Please [follow these troubleshooting instructions](../../chart/troubleshoot/troubleshoot.md#missing-new-tools) if the new tool ESLint 8 doesn't appear on the **Code patterns** page of your repositories after upgrading to this Codacy Self-hosted version.
 
--   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
+-   The [**Repositories list** page](../../organizations/managing-repositories.md) now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
 
     ![Repositories with warnings on the Repositories list page](../images/cy-5797.png)
 
--   The [**Open pull requests** area](https://docs.codacy.com/v7.0/repositories/repository-dashboard/#open-pull-requests) on the Repository Dashboard now displays more details about the open pull requests. (CY-5796)
+-   The [**Open pull requests** area](../../repositories/repository-dashboard.md#open-pull-requests) on the Repository Dashboard now displays more details about the open pull requests. (CY-5796)
 
     ![Open pull requests area on the Repository Dashboard](../images/cy-5796.png)
 
--   The [**Access management** page](https://docs.codacy.com/v7.0/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations) under your account settings now also allows adding new Git providers. (CY-5795)
+-   The [**Access management** page](../../getting-started/which-permissions-does-codacy-need-from-my-account.md#revoking-access-to-integrations) under your account settings now also allows adding new Git providers. (CY-5795)
 
 -   The **Organization Overview** and **Repositories list** pages have improved loading times using a short-lived cache in the user's browser. (CY-5793)
 
--   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now allows sorting the list of repositories using the available columns in organizations with less than 100 repositories. (CY-5695)
+-   The [**Repositories list** page](../../organizations/managing-repositories.md) now allows sorting the list of repositories using the available columns in organizations with less than 100 repositories. (CY-5695)
 
--   The [**Overall quality** chart](https://docs.codacy.com/v7.0/organizations/organization-overview/#overall-quality-chart) now allows drilling down on the information to understand which repositories require attention to improve the organization's code quality. (CY-5580)
+-   The [**Overall quality** chart](../../organizations/reporting/organization-overview.md#overall-quality-chart) now allows drilling down on the information to understand which repositories require attention to improve the organization's code quality. (CY-5580)
 
     ![Drilling down on the Overall quality chart](../images/cy-5580.png)
 
 ## Bug fixes
 
--   Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the [date of the last push to the repositories](https://docs.codacy.com/v7.0/organizations/organization-overview/#last-updated-repositories). (CY-5784)
+-   Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the [date of the last push to the repositories](../../organizations/reporting/organization-overview.md#last-updated-repositories). (CY-5784)
 -   dartanalyzer now supports including the packages [lints](https://pub.dev/packages/lints) and [flutter_lints](https://pub.dev/packages/flutter_lints) in the `analysis_option.yaml` configuration file. (CY-5626)
 -   Fixed an issue that blocked re-analyzing commits made by non-authors on Codacy Self-hosted. (CY-5012)
 -   The re-analyze button is now hidden on repositories that are running analysis through a build server. (CY-4205)
