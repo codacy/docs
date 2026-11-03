@@ -193,7 +193,7 @@ First, update the Latest documentation version with the latest chart documentati
 
 1.  Create a new branch and update the pages under [`docs/chart/`](docs/chart/) for the new chart version.
 
-1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.codacy_self_hosted_version` to the new version of the chart.
+1.  Add a row for the new chart version at the top of [`data/self-hosted-versions.yml`](data/self-hosted-versions.yml).
 
 1.  Build the documentation and make sure that the changes for the new chart version are correct.
 

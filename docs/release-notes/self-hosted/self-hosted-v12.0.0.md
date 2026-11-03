@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v12.0/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the following versions:
 
@@ -64,13 +64,13 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
     1.  Upgrade to Codacy Self-hosted v12.0.0
 
-    1.  If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), update Loki and Promtail by following the latest respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail)).
+    1.  If using the monitoring functionality [Grafana + Prometheus + Loki](../../chart/configuration/monitoring.md#setting-up-monitoring-using-grafana-prometheus-and-loki), update Loki and Promtail by following the latest respective installation instructions ([Loki](../../chart/configuration/monitoring.md#2-installing-loki), [Promtail](../../chart/configuration/monitoring.md#3-installing-promtail)).
 
     1.  Upgrade Kubernetes to v1.25
 
 ## Product enhancements
 
--   Added support for [Kubernetes 1.24.\* and 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1304, REL-1306)
+-   Added support for [Kubernetes 1.24.\* and 1.25.\*](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup) (REL-1304, REL-1306)
 -   Added support for the Stylelint plugin [<span class="skip-vale">stylelint-no-px</span>](https://www.npmjs.com/package/stylelint-no-px). (TS-455)
 -   Improved the performance of the tool Stylelint by reviewing and refactoring the tool configurations and supported packages. (TS-438)
 -   Updated and refactored the tool Ameba. [Thanks to <span class="skip-vale">Sija</span> for the contribution!](https://github.com/codacy/codacy-ameba/pull/25) (TS-417)

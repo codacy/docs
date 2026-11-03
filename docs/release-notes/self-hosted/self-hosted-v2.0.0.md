@@ -39,7 +39,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
     !!! important
         After you upgrade Codacy, our chart will install a new version of RabbitMQ with the **new default of one replica**.
 
--   The structure of the file [`values-production.yaml`](https://docs.codacy.com/v2.0/chart/values-files/values-production.yaml) changed. You must update your version of the file to match the structure of the new file:
+-   The structure of the file [`values-production.yaml`](https://raw.githubusercontent.com/codacy/chart/2.0.0/docs/values-files/values-production.yaml) changed. You must update your version of the file to match the structure of the new file:
 
     -   The following analysis workers configuration values moved from:
 
@@ -114,7 +114,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Product enhancements
 
--   The chart for Codacy Self-hosted now [supports Helm 3.3](https://docs.codacy.com/v2.0/chart/#2-installing-codacy).
+-   The chart for Codacy Self-hosted now [supports Helm 3.3](../../chart/index.md#2-installing-codacy).
 -   Updated the RabbitMQ chart to version 7.5.7 from the Bitnami Helm chart repository.
 -   Updated the MinIO chart to version 5.0.33 from the stable Helm chart repository.
 

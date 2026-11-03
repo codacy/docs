@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v13.0/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the following versions:
 
@@ -34,7 +34,7 @@ This version of Codacy Self-hosted adds support for [ingress-nginx chart 4.8.3](
 -   [CVE-2023\-5044](https://github.com/kubernetes/ingress-nginx/issues/10572)
 
 !!! note
-    Although [ingress-nginx chart 4.8.3 officially supports](https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table) Kubernetes **version 1.25** to **1.28**, we tested this version of Codacy Self-hosted using [ingress-nginx chart 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3) on all the [supported Kubernetes versions](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup), **1.22.\*** to **1.26.\***. All tests were successful in accordance with our quality assurance standards.
+    Although [ingress-nginx chart 4.8.3 officially supports](https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table) Kubernetes **version 1.25** to **1.28**, we tested this version of Codacy Self-hosted using [ingress-nginx chart 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3) on all the [supported Kubernetes versions](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup), **1.22.\*** to **1.26.\***. All tests were successful in accordance with our quality assurance standards.
 
 ### Upgrading ingress-nginx chart to version 4.8.3
 
@@ -44,9 +44,9 @@ This version of Codacy Self-hosted adds support for [ingress-nginx chart 4.8.3](
 
     If you have any questions regarding the above scenarios or need help, please contact <mailto:support@codacy.com>.
 
-If your Codacy Self-hosted setup uses a **dedicated NGINX Ingress Controller** that follows [Codacy's installation instructions](https://docs.codacy.com/v13.0/chart/infrastructure/eks-quickstart/) with **no custom configurations**, you can upgrade ingress-nginx chart to version 4.8.3 by executing the steps below:
+If your Codacy Self-hosted setup uses a **dedicated NGINX Ingress Controller** that follows [Codacy's installation instructions](../../chart/infrastructure/eks-quickstart.md) with **no custom configurations**, you can upgrade ingress-nginx chart to version 4.8.3 by executing the steps below:
 
-1.  Download the updated configuration file [`values-nginx.yaml`](https://docs.codacy.com/v13.0/chart/values-files/values-nginx.yaml) for the NGINX Ingress Controller, which enables `enableAnnotationValidations`.
+1.  Download the updated configuration file [`values-nginx.yaml`](https://raw.githubusercontent.com/codacy/chart/13.0.0/docs/values-files/values-nginx.yaml) for the NGINX Ingress Controller, which enables `enableAnnotationValidations`.
 
 1.  Run the following script:
 
@@ -62,8 +62,8 @@ If your Codacy Self-hosted setup uses a **dedicated NGINX Ingress Controller** t
 
 ## Product enhancements
 
--   Added support for [Kubernetes 1.26](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). (REL-1389)
--   Added support for [PostgreSQL server 12](https://docs.codacy.com/v13.0/chart/requirements/#postgresql-server-setup). (REL-1347)
+-   Added support for [Kubernetes 1.26](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup). (REL-1389)
+-   Added support for [PostgreSQL server 12](../../chart/requirements.md#postgresql-server-setup). (REL-1347)
 -   Pylint now supports Python 3.11 syntax. (TS-467)
 -   Added support for the ESLint plugin [<span class="skip-vale">vue-scoped-css</span>](https://www.npmjs.com/package/eslint-plugin-vue-scoped-css). (TS-356)
 -   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs). (TS-346)
@@ -80,7 +80,7 @@ This version of Codacy Self-hosted deprecates the following tools: **CSSLint**, 
 
 These tools have become deprecated or stopped being updated by their maintainers and started providing a bad experience to Codacy users either by reporting false positives or causing other unexpected issues.
 
-To continue analyzing your repositories, enable the replacement tool for the corresponding deprecated tool listed below on the [code patterns page](https://docs.codacy.com/v13.0/repositories-configure/configuring-code-patterns/) of each affected repository or in your [organization coding standard](https://docs.codacy.com/v13.0/organizations/using-a-coding-standard/), if you are using one:
+To continue analyzing your repositories, enable the replacement tool for the corresponding deprecated tool listed below on the [code patterns page](../../repositories-configure/configuring-code-patterns.md) of each affected repository or in your [organization coding standard](../../organizations/using-coding-standards.md), if you are using one:
 
 | Deprecated tool | Replacement tool |
 |-----------------|------------------|
@@ -90,7 +90,7 @@ To continue analyzing your repositories, enable the replacement tool for the cor
 | Tailor          | SwiftLint        |
 | TSLint          | ESLint           |
 
-The suggested replacement tools are enabled by default for new repositories, except for Clang Tidy, which is a [client-side tool](https://docs.codacy.com/v13.0/related-tools/local-analysis/client-side-tools/).
+The suggested replacement tools are enabled by default for new repositories, except for Clang Tidy, which is a [client-side tool](../../repositories-configure/local-analysis/client-side-tools.md).
 
 If you have any questions or need help, please contact <mailto:support@codacy.com>.
 

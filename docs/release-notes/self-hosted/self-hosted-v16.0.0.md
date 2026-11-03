@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v16.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v16.0/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the following versions:
 
@@ -26,10 +26,10 @@ Follow the steps below to upgrade to Codacy Self-hosted v16.0.0:
     -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
 ## Product enhancements
--   Added support for [Kubernetes 1.30](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
--   Added support for [Kubernetes 1.31](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
--   Added support for [Kubernetes 1.32](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). 
--   Added support for [Kubernetes 1.33](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). 
+-   Added support for [Kubernetes 1.30](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
+-   Added support for [Kubernetes 1.31](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
+-   Added support for [Kubernetes 1.32](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup). 
+-   Added support for [Kubernetes 1.33](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup). 
 
 
 ## Bug fixes
