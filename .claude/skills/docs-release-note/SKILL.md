@@ -33,6 +33,8 @@ Start from [`.claude/templates/release-note.md`](../../templates/release-note.md
 
 **Voice.** This is the one page type that is first-person, cheerful, and allowed an exclamation mark: "We've upgraded how ShellCheck works on Codacy! While you previously had to configure ShellCheck analysis directly through the Codacy UI, you can now manage your settings using a configuration file." Do not flatten it into the neutral instructional voice, and do not carry this voice into any other page type. Both are regressions.
 
+**Self-hosted notes.** Link to pages with relative links, never to `docs.codacy.com/vX.Y/`: those versions are being retired. A new Self-hosted version also needs a row in the version data file, so start from `docs-self-hosted-version`, which hands back here for the note.
+
 **Content.** Short. One topic for a single-topic note. State what changed, then what the reader does about it if anything. A screenshot if there is a visible UI change, with alt text. Close by naming a way to get help, matching how recent notes do it.
 
 The formatting rules in [`.claude/reference/formatting.md`](../../reference/formatting.md) still apply — a release note is short, not exempt.
