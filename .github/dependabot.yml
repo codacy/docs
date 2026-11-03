@@ -8,6 +8,9 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 7
+    groups:
+      github-actions:
+        patterns: ["*"]
 
   # Maintain dependencies for pip
   - package-ecosystem: "pip"
@@ -16,3 +19,6 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 7
+    groups:
+      pip:
+        patterns: ["*"]
