@@ -183,41 +183,14 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 **Never use mkdocs directly to deploy the documentation**, since that would overwrite the contents of the `gh-pages` branch and remove the multiple versions of the documentation.
 
-## Releasing a new Codacy Self-hosted documentation version
+## Documenting a new Codacy Self-hosted release
 
-It's necessary to release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the Codacy Self-hosted pages under [`docs/chart/`](docs/chart/) on the Latest version of the documentation and creating a dedicated documentation version for the new release.
-
-### Updating the Latest documentation version
-
-First, update the Latest documentation version with the latest chart documentation:
+The site has one unversioned Self-hosted section, so every new release of the [Codacy Self-hosted chart](https://github.com/codacy/chart), major, minor, or patch, is documented on `master`. Don't create a `release/v*` branch or a new `/vX.Y/` documentation version.
 
 1.  Create a new branch and update the pages under [`docs/chart/`](docs/chart/) for the new chart version.
 
-1.  Add a row for the new chart version at the top of [`data/self-hosted-versions.yml`](data/self-hosted-versions.yml).
+1.  Add a row for the new chart version at the top of [`data/self-hosted-versions.yml`](data/self-hosted-versions.yml). Pages that show the latest version, such as the `helm upgrade` commands, read it from there.
 
 1.  Build the documentation and make sure that the changes for the new chart version are correct.
 
 1.  Open a pull request with the changes and merge the branch into `master`.
-
-### Creating a new Codacy Self-hosted documentation version
-
-After updating the Latest documentation version, you're ready to create a new Codacy Self-hosted documentation version:
-
-1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the branch of the previous Codacy Self-hosted docs version.
-
-1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.codacy_self_hosted_version` is set to the new version of the chart.
-
-1.  Build the documentation and make sure that the changes for the new chart version are correct.
-
-1.  Push the new branch and check that the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
-
-## Updating an existing Codacy Self-hosted documentation version
-
-You must update an existing Codacy Self-hosted documentation version when there is a new **patch release** of the [Codacy Self-hosted chart](https://github.com/codacy/chart).
-
-To do this, you must update the documentation of the chart on the:
-
--   [Latest version of the documentation](#updating-the-latest-documentation-version)
--   Corresponding version of the documentation (for example, v11.0)
-
-    Follow the instructions on [updating the Latest documentation version](#updating-the-latest-documentation-version), but when updating the corresponding version of the documentation commit the changes to that release branch instead of `master`. For example, `release/v11.0`.
