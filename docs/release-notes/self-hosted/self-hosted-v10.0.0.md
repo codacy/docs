@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v10.0/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the following versions:
 
@@ -27,7 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
 
 ## Breaking changes
 
-This Codacy Self-hosted version requires [PostgreSQL version 11.18](https://docs.codacy.com/v10.0/chart/requirements/#postgresql-server-setup) since the previous major version [recently reached end-of-life (EOL)](https://www.postgresql.org/support/versioning/).
+This Codacy Self-hosted version requires [PostgreSQL version 11.18](../../chart/requirements.md#postgresql-server-setup) since the previous major version [recently reached end-of-life (EOL)](https://www.postgresql.org/support/versioning/).
 
 To upgrade PostgreSQL:
 
@@ -35,17 +35,17 @@ To upgrade PostgreSQL:
 
 1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/11/app-vacuumdb.html) to prevent the autovacuum feature from momentarily affecting the performance of the databases at a later time.
 
-**If you're using GitHub Enterprise Server** this Codacy Self-hosted version requires [GitHub Enterprise Server version 3.6.2 or later](https://docs.codacy.com/v10.0/faq/general/which-version-control-systems-does-codacy-support/).
+**If you're using GitHub Enterprise Server** this Codacy Self-hosted version requires [GitHub Enterprise Server version 3.6.2 or later](../../faq/general/which-platforms-and-technologies-does-codacy-support.md).
 
 ## Product enhancements
 
--   Added support for [Kubernetes 1.22.\*](https://docs.codacy.com/v10.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-992)
+-   Added support for [Kubernetes 1.22.\*](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup) (REL-992)
 -   You can now configure your Codacy GitHub App to use [expiring user access tokens](https://docs.github.com/en/developers/apps/building-github-apps/refreshing-user-to-server-access-tokens). (PLUTO-133)
 -   Improved the performance of applying coding standards to repositories to avoid timeouts when updating hundreds of repositories. (PLUTO-83)
--   The **Status** column of the [coverage reports list](https://docs.codacy.com/v10.0/coverage-reporter/#validating-coverage) now includes direct links to troubleshooting instructions when there are coverage errors. (IO-155)
--   Improved the performance and error handling of retrieving many open pull requests from the Git providers while populating the [**Pull requests** page](https://docs.codacy.com/v10.0/repositories/pull-requests/). (IO-133)
--   Codacy now supports the [client-side tool Unity Roslyn Analyzers](https://docs.codacy.com/v10.0/related-tools/local-analysis/client-side-tools/) for reporting error-prone and performance issues on C# projects that use the Unity framework. (IO-96)
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Repository Dashboard](https://docs.codacy.com/v10.0/repositories/repository-dashboard/) and [Organization Overview](https://docs.codacy.com/v10.0/organizations/organization-overview/), and you can [define quality gates](https://docs.codacy.com/v10.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
+-   The **Status** column of the [coverage reports list](../../coverage-reporter/index.md#validating-coverage) now includes direct links to troubleshooting instructions when there are coverage errors. (IO-155)
+-   Improved the performance and error handling of retrieving many open pull requests from the Git providers while populating the [**Pull requests** page](../../repositories/pull-requests.md). (IO-133)
+-   Codacy now supports the [client-side tool Unity Roslyn Analyzers](../../repositories-configure/local-analysis/client-side-tools.md) for reporting error-prone and performance issues on C# projects that use the Unity framework. (IO-96)
+-   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Repository Dashboard](../../repositories/repository-dashboard.md) and [Organization Overview](../../organizations/reporting/organization-overview.md), and you can [define quality gates](../../chart/using-codacy/adjusting-quality-settings.md#gates) with a coverage variation threshold using the same precision.
 
     The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. (IO-56)
 
@@ -56,7 +56,7 @@ To upgrade PostgreSQL:
     -   [<span class="skip-vale">eslint-plugin-typescript-sort-keys</span>](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys) (CY-6561)
 -   Added support for the remark-lint plugin [<span class="skip-vale">remarkjs/remark-gfm</span>](https://github.com/remarkjs/remark-gfm). (CY-6513)
 
--   While [configuring a coding standard](https://docs.codacy.com/v10.0/organizations/using-a-coding-standard/), you can now toggle all code patterns using the new checkbox on the header. This allows you to conveniently toggle code patterns in bulk, for example, to enable all security code patterns. (CY-6255, CY-6336)
+-   While [configuring a coding standard](../../organizations/using-coding-standards.md), you can now toggle all code patterns using the new checkbox on the header. This allows you to conveniently toggle code patterns in bulk, for example, to enable all security code patterns. (CY-6255, CY-6336)
 
     ![Selecting all code patterns while configuring a coding standard](../images/cy-6336.png)
 

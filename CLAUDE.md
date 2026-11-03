@@ -64,7 +64,7 @@ The build (`mkdocs build --strict`) does not catch these. Check each one by hand
 - **A reworded heading changes its anchor.** The strict build catches internal breakage only if the `validation:` block in `mkdocs.yml` sets `anchors` to `warn` or higher — read the block rather than assuming. Nothing at all catches inbound links from the product UI, the blog, support macros, or search results. Preserve the old slug instead: `## New wording {: id="old-anchor"}`. That pattern is already used across the repo; follow it rather than adding a redirect.
 - **A new top-level `nav:` section needs an `extra.sidebar_icons` entry, and the icon set is closed.** The value is used as a template path, so a name that does not exist crashes the build with a Jinja `TemplateNotFound` — not a warning you can defer. Pick a name that exists: `ls theme/assets/vendor/ionicons/svg/`. If nothing fits, say so and stop; vendoring an SVG is a separate change.
 - **A release note needs three edits, not one.** See `docs-release-note`.
-- **A Self-hosted-specific claim needs a version.** Check it against `extra.codacy_self_hosted_version` in `mkdocs.yml` and do not present a version-gated behavior as current.
+- **Self-hosted content goes in the Self-hosted section, never on Cloud pages.** Where it goes there is in `.claude/reference/information-architecture.md`. Facts that differ by version come from `data/self-hosted-versions.yml` (see `.claude/reference/formatting.md`); do not hard-code a version.
 - **Filenames are kebab-case and match the page title.** Release notes are the exception and carry a channel-and-date prefix instead.
 
 ## Reference

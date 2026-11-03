@@ -12,8 +12,8 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   The GitLab integration now supports [merge request summaries](https://docs.codacy.com/v4.1/repositories-configure/integrations/gitlab-integration/#enabling) for both GitLab Cloud and GitLab Enterprise. (CY-4310)
--   You can now use markdownlint to provide [suggested fixes](https://docs.codacy.com/v4.1/repositories-configure/integrations/github-integration/#suggest-fixes) for Markdown issues. (CY-3717)
+-   The GitLab integration now supports [merge request summaries](../../repositories-configure/integrations/gitlab-integration.md#pull-request-summary) for both GitLab Cloud and GitLab Enterprise. (CY-4310)
+-   You can now use markdownlint to provide [suggested fixes](../../repositories-configure/integrations/github-integration.md#suggest-fixes) for Markdown issues. (CY-3717)
 
 ## Bug fixes
 

@@ -43,7 +43,7 @@ Read [`.claude/reference/formatting.md`](../../reference/formatting.md) and [`.c
 
     Any hit, or any plausible link from the product UI, the blog, or support content, means you keep the old slug: `## New wording {: id="old-anchor"}`. Nothing in CI can see links from outside the repo, so default to pinning.
 
-4.  **Version gating.** If the claim concerns Codacy Self-hosted, check whether it holds for all versions or only from a chart version onward. See `extra.codacy_self_hosted_version` in `mkdocs.yml`.
+4.  **Self-hosted.** If the claim concerns Codacy Self-hosted, it doesn't belong on a Cloud page: put it in the Self-hosted section as `.claude/reference/information-architecture.md` describes. If it differs by version, take the value from `data/self-hosted-versions.yml`.
 
 ## 2. Change
 

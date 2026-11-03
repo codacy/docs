@@ -16,8 +16,8 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   The previously released feature to [copy tool and pattern configurations in bulk](https://docs.codacy.com/v4.3/organizations/copying-code-patterns-between-repositories/) between your repositories is now available by default.
--   Now, Codacy also supports analyzing Objective-C using Clang-Tidy as a [client-side tool](https://docs.codacy.com/v4.3/related-tools/local-analysis/client-side-tools/). (CY-4795)
+-   The previously released feature to [copy tool and pattern configurations in bulk](../../organizations/using-coding-standards.md) between your repositories is now available by default.
+-   Now, Codacy also supports analyzing Objective-C using Clang-Tidy as a [client-side tool](../../repositories-configure/local-analysis/client-side-tools.md). (CY-4795)
 
 ## Bug fixes
 

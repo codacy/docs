@@ -67,7 +67,6 @@ hooks:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "15.0.0"
     codacy_coverage_reporter_version: "13.10.15"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
@@ -414,8 +413,6 @@ plugins:
               "hc/en-us/articles/360015300100-How-does-Codacy-support-GitLab-Enterprise-.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
               "docs/security.md": "https://security.codacy.com/"
               # Redirect release note pages
-              # Delete these lines while preparing a new Codacy Self-hosted version
-              # https://github.com/codacy/docs/blob/master/CONTRIBUTING.md#creating-a-new-codacy-self-hosted-documentation-version
               "hc/en-us/articles/115002492425.md": "release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md"
               "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md"
               "hc/en-us/articles/207280189.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
@@ -722,6 +719,17 @@ nav:
                 - account/user-session-management.md
           - Managing Codacy Self-hosted:
                 - chart/index.md
+                - chart/whats-available-on-codacy-self-hosted.md
+                - Using Codacy Self-hosted:
+                      - chart/using-codacy/using-codacy-tools-with-codacy-self-hosted.md
+                      - chart/using-codacy/managing-branches.md
+                      - chart/using-codacy/adjusting-quality-settings.md
+                      - chart/using-codacy/configuring-file-extensions.md
+                      - chart/using-codacy/security-monitor.md
+                      - Repository integrations:
+                            - chart/using-codacy/jira-integration.md
+                            - chart/using-codacy/slack-integration.md
+                            - chart/using-codacy/webhook-notifications.md
                 - chart/requirements.md
                 - Setting up Kubernetes:
                       - chart/infrastructure/eks-quickstart.md
@@ -737,6 +745,7 @@ nav:
                             - chart/configuration/integrations/bitbucket-server.md
                             - chart/configuration/integrations/email.md
                       - chart/configuration/caching.md
+                      - chart/configuration/file-size-limit.md
                       - chart/configuration/monitoring.md
                       - chart/configuration/logging.md
                 - Maintenance and operations:
@@ -928,6 +937,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v17:
+                      - release-notes/self-hosted/self-hosted-v17.0.0.md
                 - v16:
                       - release-notes/self-hosted/self-hosted-v16.0.0.md
                 - v15:

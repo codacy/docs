@@ -12,19 +12,19 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   It's now possible to [see the current Codacy Self-hosted version](https://docs.codacy.com/v3.4/chart/troubleshoot/troubleshoot/) under the avatar menu. (CY-3767)
--   Now, Codacy allows [configuring who is allowed to ignore issues](https://docs.codacy.com/v3.4/organizations/roles-and-permissions-for-synced-organizations/#configure-ignore-issues) on all supported Git providers. (CY-3581)
--   Now, the **Code patterns** page allows you to [enable or disable all code patterns in a category](https://docs.codacy.com/v3.4/repositories-configure/code-patterns/#pattern-filters) with a single click. (CY-3527)
+-   It's now possible to [see the current Codacy Self-hosted version](../../chart/troubleshoot/troubleshoot.md) under the avatar menu. (CY-3767)
+-   Now, Codacy allows [configuring who is allowed to ignore issues](../../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration) on all supported Git providers. (CY-3581)
+-   Now, the **Code patterns** page allows you to [enable or disable all code patterns in a category](../../repositories-configure/configuring-code-patterns.md) with a single click. (CY-3527)
 -   Added the following Codacy API endpoints:
-    -   **[listFiles](https://api.codacy.com/api/api-docs#listfiles)** returns the most recent analysis information for the files in a repository as available on the [Files page](https://docs.codacy.com/v3.4/repositories/files-view/). (CY-3540)
+    -   **[listFiles](https://api.codacy.com/api/api-docs#listfiles)** returns the most recent analysis information for the files in a repository as available on the [Files page](../../repositories/files.md). (CY-3540)
     -   **[searchRepositoryIssues](https://api.codacy.com/api/api-docs#searchrepositoryissues)** returns information about the issues that Codacy found in a repository as available on the [Issues page](https://docs.codacy.com/repositories/issues-view/). (CY-3468)
-    -   **[searchRepositoryIgnoredIssues](https://api.codacy.com/api/api-docs#searchrepositoryignoredissues)** returns information about the issues that Codacy found in a repository and were [ignored on the Codacy UI](https://docs.codacy.com/v3.4/repositories/issues/#restoring-ignored-issues). (CY-3498)
+    -   **[searchRepositoryIgnoredIssues](https://api.codacy.com/api/api-docs#searchrepositoryignoredissues)** returns information about the issues that Codacy found in a repository and were [ignored on the Codacy UI](../../repositories/issues.md#restoring-ignored-issues). (CY-3498)
 -   You can now activate automatic [GitHub fix suggestions](https://docs.codacy.com/repositories-configure/integrations/github-integration/#suggest-fixes) to issues identified by ESLint. This way, instead of having to do most fixes by themselves, your team members can save time by approving the suggestion to have the code automatically updated and merged. (CY-3439)
--   Improved the [onboarding flow for new users](https://docs.codacy.com/v3.4/getting-started/getting-started-with-codacy/) to simplify adding organizations and repositories and help troubleshoot common issues. (CY-3405)
--   Now, the [Repository Dashboard](https://docs.codacy.com/v3.4/repositories/repository-dashboard/) and [Issues page](https://docs.codacy.com/v3.4/repositories/issues/) include links to the corresponding documentation to help you make the most from the code quality information provided by Codacy and to assist you in configuring your repository settings. (CY-3303)
+-   Improved the [onboarding flow for new users](../../getting-started/codacy-quickstart.md) to simplify adding organizations and repositories and help troubleshoot common issues. (CY-3405)
+-   Now, the [Repository Dashboard](../../repositories/repository-dashboard.md) and [Issues page](../../repositories/issues.md) include links to the corresponding documentation to help you make the most from the code quality information provided by Codacy and to assist you in configuring your repository settings. (CY-3303)
 -   Now, Codacy has an improved user experience to manage people in organizations. (CY-2954)
--   Now, the Repositories list automatically suggests repositories that you haven't added to Codacy yet when you [search for a repository](https://docs.codacy.com/v3.4/organizations/managing-repositories/#adding-a-repository). (CY-2363)
--   Codacy Self-hosted now [supports MicroK8s version 1.19.\*](https://docs.codacy.com/v3.4/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+-   Now, the Repositories list automatically suggests repositories that you haven't added to Codacy yet when you [search for a repository](../../organizations/managing-repositories.md#adding-a-repository). (CY-2363)
+-   Codacy Self-hosted now [supports MicroK8s version 1.19.\*](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
 
 ## Bug fixes
 

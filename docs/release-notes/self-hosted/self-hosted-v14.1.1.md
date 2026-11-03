@@ -19,7 +19,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v14.1.1:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v14.1/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the following versions:
 
@@ -27,7 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v14.1.1:
     -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
 ## Product enhancements
--   Added support for [Kubernetes 1.28](https://docs.codacy.com/v14.1/chart/requirements/#kubernetes-or-microk8s-cluster-setup). (REL-1560)
+-   Added support for [Kubernetes 1.28](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup). (REL-1560)
 
 
 ## Tool versions
