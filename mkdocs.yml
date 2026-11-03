@@ -634,6 +634,7 @@ plugins:
               "organizations/copying-code-patterns-between-repositories.md": "organizations/using-coding-standards.md"
               "repositories-configure/file-extensions.md": "repositories-configure/languages.md"
               "organizations/managing-security-and-risk.md": "security/index.md"
+              "faq/troubleshooting/why-does-bitbucket-ask-me-to-grant-codacy-access-every-time-i-log-in.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
 
 nav:
     - Documentation:
@@ -789,7 +790,6 @@ nav:
                       - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                       - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
                       - faq/troubleshooting/error-line-endings.md
-                      - faq/troubleshooting/why-does-bitbucket-ask-me-to-grant-codacy-access-every-time-i-log-in.md
           - special-thanks.md
     - Developer tools:
           - Codacy dev tools: "developer-tools/index.md"
