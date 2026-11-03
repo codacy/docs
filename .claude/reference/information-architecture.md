@@ -32,6 +32,17 @@ Codacy Skills is its own section under "Developer tools", a sibling of "Codacy C
 
 Skills is a set, not a feature of one tool: some members drive the Codacy Cloud CLI, some the Codacy Analysis CLI, some both, and some neither. Nesting the set under one of its members misdescribes the rest. The tab itself was never in question — Skills passes the direction-of-consumption test above, since the reader's own agent is the caller.
 
+## Codacy Self-hosted content lives in the Self-hosted section
+
+Cloud pages describe Codacy Cloud only: no "If you're using Codacy Self-hosted" steps, notes, or `{% if extra.self_hosted %}` branches. Self-hosted has had no product changes since v10.0, so per-page markers would keep growing on Cloud pages for a product that no longer changes. Everything specific to Self-hosted goes under "Managing Codacy Self-hosted", by how much the Cloud procedure has to change:
+
+- **Same steps, different inputs** (an instance URL instead of `app.codacy.com`, a pinned tool version, a different endpoint): one section on `chart/using-codacy/using-codacy-tools-with-codacy-self-hosted.md`. It links to the Cloud procedure and lists only what changes, with versions from `data/self-hosted-versions.yml`. Don't copy the Cloud steps: two copies drift, and Self-hosted readers stop getting fixes.
+- **The steps or UI really differ**: a full page in `chart/using-codacy/`, such as quality settings or managing branches. Copying is worth it only then.
+- **A Helm value or license change**: a page or step under the chart's "Configuring Codacy" or "Maintenance and operations", with the `helm upgrade` command in version tabs.
+- **Every case**: one line on `chart/whats-available-on-codacy-self-hosted.md`, which is where a Self-hosted reader starts.
+
+The one exception is a product-level support matrix that compares Cloud and Self-hosted side by side, such as the supported Git providers on `faq/general/which-platforms-and-technologies-does-codacy-support.md`.
+
 ## A structural move can still be the wrong call for reasons outside IA
 
 Where a section sits sets how visible it is, and a product with marketing driving signups to it may be placed for that reason rather than for IA. When a move is IA-correct but changes prominence, flag it to whoever owns the placement instead of deciding it here.

@@ -11,34 +11,3 @@ As a solution to this problem, we placed a size limit to the files that Codacy w
 ## What if I need to analyze a file that exceeds this limit?
 
 While Codacy will ignore your file by default, you can still analyze it by running the analysis locally using the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli). The Codacy Analysis CLI doesn't have any limitation on file size.
-
-## What about Codacy Self-hosted?
-
-By default, Codacy Self-hosted has the same limit of 150 KB as Codacy Cloud. However, in this case the limit is configurable because the resource allocation for on-premise instances is decided by each organization.
-
-To update the file size limit:
-
-1.  Edit the value of `global.workerManager.workers.config.analysis.maxFileSizeBytes` in the `values-production.yaml` file that you used to install Codacy:
-
-    ```yaml
-    global:
-      workerManager:
-        workers:
-          config:
-            analysis:
-              maxFileSizeBytes: 150000
-    ```
-
-1.  Apply the new configuration by performing a Helm upgrade and specifying the Codacy Self-hosted version currently installed. To do so execute the command [used to install Codacy](../../chart/index.md#helm-upgrade):
-
-    !!! important
-        **If you're using MicroK8s** you must use the file `values-microk8s.yaml` together with the file `values-production.yaml`.
-
-        To do this, uncomment the last line before running the `helm upgrade` command below.
-
-    ```bash
-    helm upgrade (...options used to install Codacy...) \
-                 --version <current Codacy Self-hosted version> \
-                 --values values-production.yaml \
-                 # --values values-microk8s.yaml
-    ```

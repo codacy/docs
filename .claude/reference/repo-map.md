@@ -17,7 +17,7 @@ Read this when a task needs to know how the site is built rather than how a page
 ## Two content channels
 
 - **Codacy Cloud** docs are unversioned. What is on `master` is what readers see.
-- **Codacy Self-hosted** docs are versioned with `mike`. A claim that only holds from a particular chart version onward must say so. The current version is the `extra.codacy_self_hosted_version` value in `mkdocs.yml`; pages interpolate it as `{{ extra.codacy_self_hosted_version }}` rather than hardcoding a number, and new pages should do the same.
+- **Codacy Self-hosted** docs live in the Self-hosted section (`docs/chart/`) of the one unversioned site; the frozen `mike` builds are being retired. Facts that differ by version come from `data/self-hosted-versions.yml` through the macros in `.claude/reference/formatting.md`. Don't use `extra.codacy_self_hosted_version` on new pages: it's a single stale value, and its removal is tracked in OD-1038.
 
 ## The build, and what each check actually catches
 

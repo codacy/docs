@@ -59,17 +59,6 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
   </tbody>
 </table>
 
-!!! important
-    **If you're using Codacy Self-hosted** you must use your own Codacy instance domain name in the API URLs to access the endpoint documentation matching your Codacy Self-hosted version and to call the endpoints on your Codacy instance.
-
-    For example, use the following URLs for the API v3 endpoint documentation and endpoints:
-
-    ```
-    https://<your Codacy instance domain name>/api/api-docs
-    
-    https://<your Codacy instance domain name>/api/v3
-    ```
-
 ## Authenticating requests
 
 Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your repository API token>`.
@@ -192,5 +181,3 @@ If you continue requesting more pages the endpoint will eventually return a `pag
 -   When a request is rate limited, Codacy responds with an HTTP 503 or 504 error code and you should wait before attempting the request again
 
 Although it's possible for you to perform short bursts of requests to the Codacy API, you should always use a delay between requests to ensure that your API client doesn't hit the rate limits.
-
-The request rate limit doesn't apply to Codacy Self-hosted.
