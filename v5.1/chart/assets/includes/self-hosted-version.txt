@@ -1,4 +1,0 @@
-!!! tip
-    To see the version of your Codacy Self-hosted instance click your avatar on the top right-hand corner of any Codacy page: 
-
-    ![Obtaining the Codacy Self-hosted version](images/self-hosted-version.png)
