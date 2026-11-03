@@ -17,7 +17,7 @@ Read this when a task needs to know how the site is built rather than how a page
 ## Two content channels
 
 - **Codacy Cloud** docs are unversioned. What is on `master` is what readers see.
-- **Codacy Self-hosted** docs live in the Self-hosted section (`docs/chart/`) of the one unversioned site; the frozen `mike` builds are being retired. Facts that differ by version come from `data/self-hosted-versions.yml` through the macros in `.claude/reference/formatting.md`.
+- **Codacy Self-hosted** docs live in the Self-hosted section (`docs/chart/`) of the one unversioned site; the frozen `/vX.Y/` builds published before it are being retired. Facts that differ by version come from `data/self-hosted-versions.yml` through the macros in `.claude/reference/formatting.md`.
 
 ## The build, and what each check actually catches
 
