@@ -194,3 +194,5 @@ The site has one unversioned Self-hosted section, so every new release of the [C
 1.  Build the documentation and make sure that the changes for the new chart version are correct.
 
 1.  Open a pull request with the changes and merge the branch into `master`.
+
+To have Claude do this, ask it to document the new Codacy Self-hosted version: the `docs-self-hosted-version` skill in `.claude/skills/` covers these steps and the release note.
