@@ -14,16 +14,16 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   It's now possible to [configure the Codacy quality settings](https://docs.codacy.com/v4.2/repositories-configure/adjusting-quality-settings/) with the minimum severity level of new issues and a maximum number of new security issues, giving you more control over the pull requests that Codacy blocks from being merged. Besides this, the status reported by Codacy on pull requests now includes more information on why the quality checks failed. (CY-4216)
+-   It's now possible to [configure the Codacy quality settings](../../chart/using-codacy/adjusting-quality-settings.md) with the minimum severity level of new issues and a maximum number of new security issues, giving you more control over the pull requests that Codacy blocks from being merged. Besides this, the status reported by Codacy on pull requests now includes more information on why the quality checks failed. (CY-4216)
 
     ![Improved flexibility of quality settings](../images/cy-4216.png)
 
--   You can now [copy tool and pattern configurations in bulk](https://docs.codacy.com/v4.2/organizations/copying-code-patterns-between-repositories/) between your repositories to help you bootstrap and standardize the coding standards in your organization. (CY-4196)
+-   You can now [copy tool and pattern configurations in bulk](../../organizations/using-coding-standards.md) between your repositories to help you bootstrap and standardize the coding standards in your organization. (CY-4196)
 
     !!! important
         On September 10, 2021 we noticed that the feature flag for this feature was turned off in Codacy Self-hosted v4.2.0 by mistake.
 
-        If you're using this version of Codacy Self-hosted and want to use this feature, we ask that you please activate the feature manually by adding the following configuration to your `values.yml` file and then [performing a Helm upgrade](https://docs.codacy.com/v4.2/chart/#helm-upgrade):
+        If you're using this version of Codacy Self-hosted and want to use this feature, we ask that you please activate the feature manually by adding the following configuration to your `values.yml` file and then [performing a Helm upgrade](../../chart/index.md#helm-upgrade):
 
         ```yml
         global:

@@ -31,8 +31,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v5.1.0:
 ## Product enhancements
 
 -   When connecting to email servers over SMTPS, Codacy now prefers to rely on TLSv1.2 over the deprecated TLSv1 or TLSv1.1 if the SMTP server allows it. (CY-5394)
--   It's now possible to [assign a coding standard automatically to new repositories](https://docs.codacy.com/v5.1/organizations/using-a-coding-standard/#set-default). (CY-5263)
--   The Codacy API now includes endpoints that allow you to [create and manage project API tokens programmatically](https://docs.codacy.com/v5.1/codacy-api/examples/creating-project-api-tokens-programmatically). This feature can be used to automate setting up coverage for either new repositories or for all your existing repositories. (CY-5090)
+-   It's now possible to [assign a coding standard automatically to new repositories](../../organizations/using-coding-standards.md#set-default). (CY-5263)
+-   The Codacy API now includes endpoints that allow you to [create and manage project API tokens programmatically](../../codacy-api/examples/creating-repository-api-tokens-programmatically.md). This feature can be used to automate setting up coverage for either new repositories or for all your existing repositories. (CY-5090)
 -   Now, all configurable Stylelint code patterns have [default values set to the recommended settings](https://github.com/codacy/codacy-stylelint/pull/240/files), ensuring that they're ready to be used as soon as you enable them. (CY-3275)
 
 ## Bug fixes

@@ -13,8 +13,8 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   The Codacy top navigation bar now includes a link to the recently launched [Codacy Community](https://community.codacy.com/). Join us there! (CY-3462)
--   It's now possible to [import tool and pattern configurations](https://docs.codacy.com/v3.3/repositories-configure/code-patterns/#import-patterns) from another repository to make it easier to set up new repositories and have consistent rules across repositories. (CY-3162)
--   Codacy Self-hosted now [supports Kubernetes version 1.20.\*](https://docs.codacy.com/v3.3/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+-   It's now possible to [import tool and pattern configurations](../../repositories-configure/configuring-code-patterns.md) from another repository to make it easier to set up new repositories and have consistent rules across repositories. (CY-3162)
+-   Codacy Self-hosted now [supports Kubernetes version 1.20.\*](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
 
 ## Bug fixes
 

@@ -21,6 +21,8 @@ For product updates that are in progress or planned [visit the Codacy public roa
 ### 2026 {.release-series}
 
 
+-   [Cloud October 2026](cloud/cloud-2026-10.md)
+-   [Stylelint accessibility patterns renamed – November 2026](cloud/cloud-2026-11-stylelint-a11y-patterns-renamed.md)
 -   [Cloud September 2026](cloud/cloud-2026-09.md)
 -   [Adding Oxlint as new supported tool September, 2026](cloud/cloud-2026-09-adding-oxlint.md)
 -   [Cloud August 2026](cloud/cloud-2026-08.md)
@@ -146,6 +148,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
+
+### v17 {.release-series}
+
+-   [v17.0.0](self-hosted/self-hosted-v17.0.0.md) (September 2, 2026)
 
 ### v16 {.release-series}
 

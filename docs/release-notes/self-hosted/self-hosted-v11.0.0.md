@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v11.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v11.0/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the following versions:
 
@@ -29,14 +29,14 @@ Follow the steps below to upgrade to Codacy Self-hosted v11.0.0:
 
 This version of Codacy Self-hosted drops support for Kubernetes 1.19, 1.20, and 1.21. These are old versions that [already reached EOL](https://kubernetes.io/releases/patch-releases/#non-active-branch-history).
 
-If you're using Kubernetes 1.19, 1.20, or 1.21, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+If you're using Kubernetes 1.19, 1.20, or 1.21, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
 
 !!! important
     **If you use MicroK8s to run Codacy Self-hosted please use version 1.19 only**, as we're investigating feedback from customers that had issues running Codacy Self-hosted using MicroK8s versions newer than 1.19.\*.
 
 ## Product enhancements
 
--   Added support for [Kubernetes 1.23.\*](https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1151)
+-   Added support for [Kubernetes 1.23.\*](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup) (REL-1151)
 
 ## Bug fixes
 

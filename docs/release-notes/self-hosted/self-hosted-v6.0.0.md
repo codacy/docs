@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v6.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v6.0/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
 1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-6.0.0`:
 
@@ -33,7 +33,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
     Kubernetes 1.14 is an old version [first released in 2019](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/) that's no longer being maintained.
 
-    If you're using Kubernetes 1.14 or MicroK8s 1.14, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](https://docs.codacy.com/v6.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+    If you're using Kubernetes 1.14 or MicroK8s 1.14, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
 
 -   Removed the tool **PMD (Legacy)**
 
@@ -49,9 +49,9 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Product enhancements
 
--   Now, Codacy calculates the new metric [diff coverage for pull requests](https://docs.codacy.com/v6.0/repositories/pull-requests/#pull-request-quality-overview). (CY-5533)
+-   Now, Codacy calculates the new metric [diff coverage for pull requests](../../repositories/pull-requests.md#coverage-tab). (CY-5533)
 
-    It's also possible to [set up a quality gate rule](https://docs.codacy.com/v6.0/repositories-configure/adjusting-quality-settings/#gates) for diff coverage. (CY-5534)
+    It's also possible to [set up a quality gate rule](../../chart/using-codacy/adjusting-quality-settings.md#gates) for diff coverage. (CY-5534)
 
     ![Diff coverage for a pull request](../images/cy-5533.png)
 
@@ -66,13 +66,13 @@ This version of Codacy Self-hosted introduces the following breaking changes:
     -   [<span class="skip-vale">rubocop-graphql 0.12.3</span>](https://rubygems.org/gems/rubocop-graphql/versions/0.12.3)
     -   [<span class="skip-vale">rubocop-ast 1.15.1</span>](https://rubygems.org/gems/rubocop-ast/versions/1.15.1)
 
--   Now, the [**Issues breakdown** area on the Repository Dashboard](https://docs.codacy.com/v6.0/repositories/repository-dashboard/#issues-breakdown) displays all issue categories, including **Code complexity**. (CY-5463)
+-   Now, the [**Issues breakdown** area on the Repository Dashboard](../../repositories/repository-dashboard.md#issues-breakdown) displays all issue categories, including **Code complexity**. (CY-5463)
 
--   You can now use the Codacy configuration file to [adjust how PMD CPD detects duplicated code](https://docs.codacy.com/v6.0/repositories-configure/codacy-configuration-file/#pmd-cpd-duplication), giving you more flexibility to eliminate false positives. (CY-5184)
+-   You can now use the Codacy configuration file to [adjust how PMD CPD detects duplicated code](../../repositories-configure/codacy-configuration-file.md#pmd-cpd-duplication), giving you more flexibility to eliminate false positives. (CY-5184)
 
 -   Now, Codacy supports static code analysis for Dart/Flutter projects using [dartanalyzer](https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli). The new tool checks your code for errors and warnings that are specified in the [Dart language specification](https://dart.dev/guides/language/spec). (CY-4314)
 
--   Added documentation on [how to configure the log level and log retention period](https://docs.codacy.com/v6.0/chart/configuration/logging/) of the Codacy components running on your Kubernetes or MicroK8s cluster. (CY-2768)
+-   Added documentation on [how to configure the log level and log retention period](../../chart/configuration/logging.md) of the Codacy components running on your Kubernetes or MicroK8s cluster. (CY-2768)
 
 ## Bug fixes
 

@@ -10,7 +10,6 @@
   {% if page and page.meta and page.meta.git_revision_date_localized_raw_iso_datetime %}
     <meta http-equiv="last-modified" content="{{ page.meta.git_revision_date_localized_raw_iso_datetime }}">
   {% endif %}
-  {% if config.extra.self_hosted %}<meta name="robots" content="noindex">{% endif %}
 {% endblock %}
 
 {% block analytics %}

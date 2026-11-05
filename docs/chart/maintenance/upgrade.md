@@ -36,15 +36,15 @@ To upgrade Codacy Self-hosted to the latest stable version:
     ```bash
     helm repo update
     helm upgrade codacy codacy-stable/codacy \
-                 --version {{ extra.codacy_self_hosted_version }} \
+                 --version {{ self_hosted_latest.version }} \
                  --namespace codacy \
                  --values codacy.yaml
     ```
 
-1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-{{ extra.codacy_self_hosted_version }}`:
+1.  Update your Codacy command-line tools to the versions that Codacy Self-hosted v{{ self_hosted_latest.version }} works with:
 
     <!-- The lowercase "codacy" and "github" below are inside URLs that Vale reads as prose because of the template variable. -->
     <!-- vale Vale.Terms = NO -->
-    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-{{ extra.codacy_self_hosted_version }})
-    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-{{ extra.codacy_self_hosted_version }})
+    -   [Codacy Analysis CLI {{ self_hosted_latest.analysis_cli }}](https://github.com/codacy/codacy-analysis-cli/releases/tag/{{ self_hosted_latest.analysis_cli }})
+    -   [Codacy Coverage Reporter {{ self_hosted_latest.coverage_reporter }}](https://github.com/codacy/codacy-coverage-reporter/releases/tag/{{ self_hosted_latest.coverage_reporter }})
     <!-- vale Vale.Terms = YES -->
