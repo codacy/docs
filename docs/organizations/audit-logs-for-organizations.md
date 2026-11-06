@@ -42,13 +42,15 @@ If your organization doesn't have access to audit logs yet, the **Audit logs** p
 The **Audit logs** page shows one day at a time. To get the events of a longer period, up to one year, use the Codacy API endpoint [listAuditLogsForOrganization](https://api.codacy.com/api/api-docs#listauditlogsfororganization).
 
 1.  On the **Audit logs** page, click **Export via API**.
-1.  Pick the **From** and **To** dates of the period you want to export. By default, Codacy selects yesterday and today.
+1.  Pick the **From** and **To** dates of the period you want to export. By default, Codacy selects the date you're viewing and the day before it.
 1.  Copy the generated `curl` command.
-1.  In your terminal, save an [account API token](../codacy-api/api-tokens.md#account-api-tokens) in the `CODACY_API_TOKEN` variable, then paste and run the command. `read -rs` hides the token as you paste it and keeps it out of your shell history. If you don't have a token yet, generate one in your account, tab **Access management**.
+1.  In your terminal, save an [account API token](../codacy-api/api-tokens.md#account-api-tokens) in the `CODACY_API_TOKEN` variable. `read -rs` hides the token as you paste it and keeps it out of your shell history. If you don't have a token yet, generate one in your account, tab **Access management**.
 
     ```bash
     read -rs CODACY_API_TOKEN
     ```
+
+1.  Paste the command, replace `'api-token: <YOUR_API_TOKEN>'` with `"api-token: $CODACY_API_TOKEN"`, and run it.
 
 To build the request yourself, pass the start and end of the period as Unix timestamps in milliseconds:
 
