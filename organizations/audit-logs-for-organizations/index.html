@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="List of events that Codacy can log for an organization.">
+        <meta name="description" content="View and export the events Codacy logs for your organization, and see the list of events Codacy logs.">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 10:12:15">
+    <meta http-equiv="last-modified" content="2026-11-06 10:39:17">
   
 
     
@@ -2001,10 +2001,37 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#viewing-audit-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing audit logs in Codacy
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#exporting-audit-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exporting audit logs with the Codacy API
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#audit-log-events" class="md-nav__link">
     <span class="md-ellipsis">
       
         Audit log events
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See also
       
     </span>
   </a>
@@ -9870,10 +9897,37 @@
   
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"><svg class="docs-icon docs-ionicon docs-ionicon--nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix><li class="md-nav__item">
+  <a href="#viewing-audit-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing audit logs in Codacy
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#exporting-audit-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exporting audit logs with the Codacy API
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#audit-log-events" class="md-nav__link">
     <span class="md-ellipsis">
       
         Audit log events
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See also
       
     </span>
   </a>
@@ -9939,9 +9993,48 @@
 <div class="admonition info">
 <p class="admonition-title">This feature is <a href="https://www.codacy.com/pricing">only available on Business plan</a></p>
 </div>
-<p>Codacy logs important events in your organization, reflecting when your team members execute specific operations. This enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who added a repository to Codacy, or changed the settings of a coding standard.</p>
-<p><a href="../roles-and-permissions-for-organizations/">Organization admins and organization managers</a> can obtain the audit log data of the organization events using the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#listauditlogsfororganization">listAuditLogsForOrganization</a>.</p>
-<p>The retention period of audit logs for organization events is one year.</p>
+<p>Codacy logs important events in your organization, reflecting when your team members execute specific operations. This enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who changed a gate policy, or changed the settings of a coding standard.</p>
+<p>Only <a href="../roles-and-permissions-for-organizations/#permissions-by-codacy-role">organization admins</a> can see the audit logs of an organization, on the <strong>Audit logs</strong> page or using the Codacy API. Organization managers and members can't, and personal organizations don't have audit logs.</p>
+<p>Codacy keeps audit logs for one year. It records events only from the moment audit logs were enabled for your organization, so there's no history from before that date.</p>
+<h2 id="viewing-audit-logs">Viewing audit logs in Codacy<a class="headerlink" href="#viewing-audit-logs" title="Permanent link">#</a></h2>
+<p>To see the events of your organization, open your organization <strong>Settings</strong>, page <strong>Audit logs</strong>.</p>
+<p>The page shows the events of one day, starting with today. To see another day, pick a date in the date field. You can go back up to one year.</p>
+<p>To find specific events, type an action, actor, or repository in the search box. The search covers only the selected day: to search another day, pick that date first. If nothing matches, check the action names in <a href="#audit-log-events">Audit log events</a>.</p>
+<p>Each row is one event:</p>
+<ul>
+<li><strong>Source:</strong> Where the operation came from: the Codacy app (web icon) or the Codacy API (code icon).</li>
+<li><strong>Action:</strong> The identifier of the operation, such as <code>organizations.gatepolicies.update</code>. See <a href="#audit-log-events">Audit log events</a> for what each action means.</li>
+<li><strong>Actor:</strong> The email of the user who executed the operation.</li>
+<li><strong>Repository:</strong> The repository the operation applies to, or <code>-</code> for operations on the organization or user.</li>
+<li><strong>Time:</strong> When the operation happened, in your local time zone.</li>
+<li><strong>Result:</strong> Whether the operation succeeded (<strong>Success</strong>), failed (<strong>Failed</strong>), or was denied (<strong>Rejected</strong>).</li>
+</ul>
+<p>If a day shows <strong>No audit logs on this date</strong>, Codacy didn't record any events in your organization that day. This is also the case for every day before audit logs were enabled for your organization.</p>
+<p>If your organization doesn't have access to audit logs yet, the <strong>Audit logs</strong> page shows an upgrade prompt instead. <a href="https://start-chat.com/slack/codacy/rmbTzb">Talk to us</a> about upgrading.</p>
+<h2 id="exporting-audit-logs">Exporting audit logs with the Codacy API<a class="headerlink" href="#exporting-audit-logs" title="Permanent link">#</a></h2>
+<p>The <strong>Audit logs</strong> page shows one day at a time. To get the events of a longer period, up to one year, use the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#listauditlogsfororganization">listAuditLogsForOrganization</a>.</p>
+<ol>
+<li>On the <strong>Audit logs</strong> page, click <strong>Export via API</strong>.</li>
+<li>Pick the <strong>From</strong> and <strong>To</strong> dates of the period you want to export. By default, Codacy selects the date you're viewing and the day before it.</li>
+<li>Copy the generated <code>curl</code> command.</li>
+<li>
+<p>In your terminal, save an <a href="../../codacy-api/api-tokens/#account-api-tokens">account API token</a> in the <code>CODACY_API_TOKEN</code> variable. <code>read -rs</code> hides the token as you paste it and keeps it out of your shell history. If you don't have a token yet, generate one in your account, tab <strong>Access management</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">read</span><span class="w"> </span>-rs<span class="w"> </span>CODACY_API_TOKEN
+</code></pre></div>
+</li>
+<li>
+<p>Paste the command, replace <code>'api-token: &lt;YOUR_API_TOKEN&gt;'</code> with <code>"api-token: $CODACY_API_TOKEN"</code>, and run it.</p>
+</li>
+</ol>
+<p>To build the request yourself, pass the start and end of the period as Unix timestamps in milliseconds:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">read</span><span class="w"> </span>-rs<span class="w"> </span>CODACY_API_TOKEN
+curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/audit?from=&lt;FROM&gt;&amp;to=&lt;TO&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>If you leave out <code>from</code>, the response starts at the oldest event Codacy keeps. If you leave out <code>to</code>, it ends at the current time.</p>
+<div class="admonition note">
+<p class="admonition-title">Large date ranges may time out. If that happens, export the period in smaller chunks</p>
+</div>
 <h2 id="audit-log-events">Audit log events<a class="headerlink" href="#audit-log-events" title="Permanent link">#</a></h2>
 <p>Each audit log tracks when a Codacy user executed a specific operation in your organization using the Codacy app or the <a href="https://api.codacy.com/api/api-docs#codacy-api">Codacy API</a>. Each operation is identified by an <strong>action</strong>. For the detailed content of each audit log, see the <a href="https://api.codacy.com/api/api-docs#listauditlogsfororganization">Codacy API reference</a>.</p>
 <p>The sections below list the events that Codacy logs for your organization at user, organization, and repository levels.</p>
@@ -9975,6 +10068,16 @@
 <td>Account API token deleted</td>
 <td><code>user.tokens.delete</code></td>
 </tr>
+<tr>
+<td>Remove Git provider integration</td>
+<td>Git provider integration removed from the user's account. <code>&lt;provider&gt;</code> is <code>gh</code> (GitHub), <code>gl</code> (GitLab), or <code>bb</code> (Bitbucket)</td>
+<td><code>user.integrations.&lt;provider&gt;.delete</code></td>
+</tr>
+<tr>
+<td>Add enterprise Git provider token</td>
+<td>Account token for an enterprise Git provider added</td>
+<td><code>user.enterprise.integrations.create</code></td>
+</tr>
 </tbody>
 </table>
 <h3 id="organization">Organization<a class="headerlink" href="#organization" title="Permanent link">#</a></h3>
@@ -9995,7 +10098,12 @@
 <tr>
 <td><a href="../managing-people/#adding-people">Add people</a> to organization</td>
 <td>New people added to the organization</td>
-<td><code>organizations.people.create</code></td>
+<td><code>organizations.people.invite</code></td>
+</tr>
+<tr>
+<td><a href="../managing-people/#removing-people">Remove people</a> from organization</td>
+<td>People removed from the organization</td>
+<td><code>organizations.people.remove</code></td>
 </tr>
 <tr>
 <td><a href="../managing-people/#joining">Join organization</a></td>
@@ -10010,17 +10118,17 @@
 <tr>
 <td>Assign <a href="../roles-and-permissions-for-organizations/#managing-the-organization-manager-role">organization manager role</a></td>
 <td>Organization manager role assigned to a team member</td>
-<td><code>organizations.security.managers.create</code></td>
+<td><code>security.managers.create</code></td>
 </tr>
 <tr>
 <td>Revoke organization manager role</td>
 <td>Organization manager role revoked from a team member</td>
-<td><code>organizations.security.managers.delete</code></td>
+<td><code>security.manager.delete</code></td>
 </tr>
 <tr>
 <td>Update <a href="../integrations/default-git-provider-integration-settings/">default Git provider configuration</a></td>
 <td>Default Git provider configuration for the organization updated</td>
-<td><code>organizations.integrations.providersettings.update</code></td>
+<td><code>organizations.integrations.providersetting.update</code></td>
 </tr>
 <tr>
 <td>Apply default Git provider configuration to all repositories</td>
@@ -10030,7 +10138,7 @@
 <tr>
 <td>Create new organization hook</td>
 <td>New organization webhook created</td>
-<td><code>organizations.settings.hooks.create</code></td>
+<td><code>organizations.hooks.create</code></td>
 </tr>
 <tr>
 <td>Create new <a href="../using-gate-policies/">gate policy</a></td>
@@ -10083,9 +10191,19 @@
 <td><code>organizations.codingstandards.promote</code></td>
 </tr>
 <tr>
+<td>Update coding standard</td>
+<td>Coding standard updated</td>
+<td><code>organizations.codingstandards.update</code></td>
+</tr>
+<tr>
+<td>Update tool in coding standard</td>
+<td>Tool or code pattern settings of a coding standard updated</td>
+<td><code>organizations.codingstandards.tools.update</code></td>
+</tr>
+<tr>
 <td>Apply coding standard to repositories</td>
 <td>Coding standard applied to a list of repositories</td>
-<td><code>organizations.codingstandards.repositories.apply</code></td>
+<td><code>organizations.codingstandards.repositories</code></td>
 </tr>
 <tr>
 <td>Make coding standard default</td>
@@ -10130,7 +10248,7 @@
 <tr>
 <td>Update security SLA configurations</td>
 <td>The security SLA Configuration was updated</td>
-<td><code>organizations.security.sla.configuration.update</code></td>
+<td><code>organizations.sla.configuration.update</code></td>
 </tr>
 <tr>
 <td>### Repository</td>
@@ -10174,6 +10292,11 @@
 <td><code>repositories.integrations.providersettings.update</code></td>
 </tr>
 <tr>
+<td>Apply organization Git provider settings to repository</td>
+<td>Default Git provider configuration of the organization applied to the repository</td>
+<td><code>repositories.integrations.providersettings.apply</code></td>
+</tr>
+<tr>
 <td>Refresh Git provider integration<br>(applies only to <a href="../../repositories-configure/integrations/bitbucket-integration/#refreshing">Bitbucket</a> and <a href="../../repositories-configure/integrations/gitlab-integration/#refreshing">GitLab</a>)</td>
 <td>Git provider integration for the repository refreshed</td>
 <td><code>repositories.integrations.refreshprovider</code></td>
@@ -10185,8 +10308,13 @@
 </tr>
 <tr>
 <td>Update tool</td>
-<td>Can be change parameters or disable/enable tool</td>
+<td>Tool or code pattern settings updated, for example enabling a tool or a single code pattern</td>
 <td><code>repositories.tools.update</code></td>
+</tr>
+<tr>
+<td>Update code patterns in bulk</td>
+<td>Enable or disable code patterns of a tool in bulk</td>
+<td><code>repositories.tools.bulk.update</code></td>
 </tr>
 <tr>
 <td>Bypass pull request</td>
@@ -10235,6 +10363,12 @@
 </tr>
 </tbody>
 </table>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../roles-and-permissions-for-organizations/">Roles and permissions for organizations</a></li>
+<li><a href="../../codacy-api/api-tokens/">API tokens</a></li>
+<li><a href="../../codacy-api/using-the-codacy-api/">Using the Codacy API</a></li>
+</ul>
 
   
     
@@ -10243,7 +10377,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 10:12:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 22, 2026 10:12:15 UTC">September 22, 2026</span></time>
+    <time datetime="2026-11-06 10:39:17"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 6, 2026 10:39:17 UTC">November 6, 2026</span></time>
   </aside>
 
 
