@@ -60,7 +60,7 @@ On `pull_request` events, the action uploads the results for the pull request's 
   uses: codacy/analysis-cli-action@v1
   with:
     project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-    tool: ESLint9
+    tool: eslint9
     upload: true
 ```
 {% endraw %}
@@ -79,7 +79,7 @@ The action takes the provider, organization, and repository from the workflow. S
   uses: codacy/analysis-cli-action@v1
   with:
     api-token: ${{ secrets.CODACY_API_TOKEN }}
-    tool: ESLint9
+    tool: eslint9
     upload: true
 ```
 {% endraw %}
