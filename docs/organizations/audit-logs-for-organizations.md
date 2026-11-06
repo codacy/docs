@@ -44,13 +44,18 @@ The **Audit logs** page shows one day at a time. To get the events of a longer p
 1.  On the **Audit logs** page, click **Export via API**.
 1.  Pick the **From** and **To** dates of the period you want to export. By default, Codacy selects yesterday and today.
 1.  Copy the generated `curl` command.
-1.  Replace `<API_KEY>` with an [account API token](../codacy-api/api-tokens.md#account-api-tokens) and run the command from your terminal or a script. If you don't have a token yet, generate one in your account, tab **Access management**.
+1.  In your terminal, save an [account API token](../codacy-api/api-tokens.md#account-api-tokens) in the `CODACY_API_TOKEN` variable, then paste and run the command. `read -rs` hides the token as you paste it and keeps it out of your shell history. If you don't have a token yet, generate one in your account, tab **Access management**.
+
+    ```bash
+    read -rs CODACY_API_TOKEN
+    ```
 
 To build the request yourself, pass the start and end of the period as Unix timestamps in milliseconds:
 
 ```bash
-curl -X GET 'https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/audit?from=<FROM>&to=<TO>' \
-     -H 'api-token: <API_KEY>'
+read -rs CODACY_API_TOKEN
+curl -X GET "https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/audit?from=<FROM>&to=<TO>" \
+     -H "api-token: $CODACY_API_TOKEN"
 ```
 
 If you leave out `from`, the response starts at the oldest event Codacy keeps. If you leave out `to`, it ends at the current time.
