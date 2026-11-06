@@ -78,6 +78,8 @@ The sections below list the events that Codacy logs for your organization at use
 |Create [account API token](../codacy-api/api-tokens.md#account-api-tokens)|New account API token created|`user.tokens.create`|
 |Read account API token|List of account API tokens retrieved|`user.tokens.read`|
 |Delete account API token|Account API token deleted|`user.tokens.delete`|
+|Remove Git provider integration|Git provider integration removed from the user's account. `<provider>` is `gh` (GitHub), `gl` (GitLab), or `bb` (Bitbucket)|`user.integrations.<provider>.delete`|
+|Add enterprise Git provider token|Account token for an enterprise Git provider added|`user.enterprise.integrations.create`|
 
 ### Organization
 
