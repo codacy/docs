@@ -13,7 +13,7 @@ The sections below provide instructions on how to configure each logging configu
 
 ## Configuring the log level
 
-The log level defines the minimum severity of the events contained in the logs, and affects the necessary storage space in MinIO.
+The log level defines the minimum severity of the events contained in the logs, and affects the necessary storage space in RustFS, or MinIO before Codacy Self-hosted v17.0.0.
 
 !!! important
     We recommend that you don't use a log level lower than WARN, as the logs are useful to troubleshoot any issues in your Codacy Self-hosted instance.
@@ -69,7 +69,7 @@ Follow these instructions to configure the log level:
 
 ## Configuring the log retention period
 
-The log retention period is the number of days during which logs will be stored before being removed by the [MinIO bucket lifecycle configuration policy](https://docs.min.io/docs/minio-bucket-lifecycle-guide.html) that we provide in the template [lifecycle-police-job.yaml](https://github.com/codacy/chart/blob/master/codacy/templates/fluentd/lifecycle-police-job.yaml).
+The log retention period is the number of days during which logs will be stored before being removed by the S3 bucket lifecycle configuration policy that we provide in the template [lifecycle-police-job.yaml](https://github.com/codacy/chart/blob/master/codacy/templates/fluentd/lifecycle-police-job.yaml).
 
 Follow these instructions to configure the log retention period:
 
