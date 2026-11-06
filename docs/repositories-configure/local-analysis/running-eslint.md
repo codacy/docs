@@ -44,39 +44,45 @@ codacy-analysis upload eslint.sarif --commit $COMMIT_SHA --repository <gh|gl|bb>
 
 ## GitHub Action
 
-The GitHub Action still uses [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2), a separate tool from the `codacy-analysis` CLI used above. It reads its runtime and tool versions from a `.codacy/codacy.yaml` file in your repository:
+The [Codacy Analysis CLI GitHub Action](https://github.com/codacy/analysis-cli-action) runs the same `codacy-analysis` CLI as the manual configuration above. If your repository has no committed `.codacy/codacy.config.json`, the action fetches the repository's configuration from Codacy with your token.
 
-```yaml
-runtimes:
-    - node@22.2.0
-tools:
-    - eslint@9.3.0
-```
-
+On `pull_request` events, the action uploads the results for the pull request's head commit. Check out that commit with `ref:` as in the examples below, otherwise line numbers can point at the wrong lines.
 
 ### Using a project token
+
+{% raw %}
 ```yml
-- name: Run Codacy CLI
-  uses: codacy/codacy-cli-v2-action@main
+- uses: actions/checkout@v4
   with:
-    project-token: CODACY_PROJECT_TOKEN
-    tool: eslint
-    upload_report: true
+    ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+- name: Run Codacy Analysis CLI
+  uses: codacy/analysis-cli-action@v1
+  with:
+    project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+    tool: ESLint9
+    upload: true
 ```
+{% endraw %}
 
 ### Using an account API token
 
+The action takes the provider, organization, and repository from the workflow. Set `provider`, `owner`, and `repository` only if the repository is on Codacy under different names.
+
+{% raw %}
 ```yml
-- name: Run Codacy CLI
-  uses: codacy/codacy-cli-v2-action@main
+- uses: actions/checkout@v4
   with:
-    api_token: CODACY_API_TOKEN
-    tool: eslint
-    upload_report: true
-    provider: gh
-    owner: codacy-acme
-    repository: sample-javascript-project
+    ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+- name: Run Codacy Analysis CLI
+  uses: codacy/analysis-cli-action@v1
+  with:
+    api-token: ${{ secrets.CODACY_API_TOKEN }}
+    tool: ESLint9
+    upload: true
 ```
+{% endraw %}
 
 !!! warning "Tokens should be stored in the repository secrets."
 
