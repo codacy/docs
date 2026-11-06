@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-11-03 09:48:15">
+    <meta http-equiv="last-modified" content="2026-11-06 10:44:35">
   
 
     
@@ -10015,30 +10015,32 @@ codacy-analysis<span class="w"> </span>upload<span class="w"> </span>eslint.sari
 <p><code>--tool</code> matches against the tool IDs in your <code>.codacy/codacy.config.json</code>, and only tools listed there run. If <code>--tool eslint9</code> doesn't match your setup, check that file for the ID it recorded, which is <code>ESLint9</code> for ESLint 9.x and <code>ESLint8</code> for ESLint 8.x.</p>
 </div>
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">#</a></h2>
-<p>The GitHub Action still uses <a href="https://github.com/codacy/codacy-cli-v2">Codacy CLI v2</a>, a separate tool from the <code>codacy-analysis</code> CLI used above. It reads its runtime and tool versions from a <code>.codacy/codacy.yaml</code> file in your repository:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">runtimes</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node@22.2.0</span>
-<span class="nt">tools</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eslint@9.3.0</span>
-</code></pre></div>
+<p>The <a href="https://github.com/codacy/analysis-cli-action">Codacy Analysis CLI GitHub Action</a> runs the same <code>codacy-analysis</code> CLI as the manual configuration above. If your repository has no committed <code>.codacy/codacy.config.json</code>, the action fetches the repository's configuration from Codacy with your token.</p>
+<p>On <code>pull_request</code> events, the action uploads the results for the pull request's head commit. Check out that commit with <code>ref:</code> as in the examples below, otherwise line numbers can point at the wrong lines.</p>
 <h3 id="using-a-project-token">Using a project token<a class="headerlink" href="#using-a-project-token" title="Permanent link">#</a></h3>
-<div class="highlight"><pre><span></span><code>- name: Run Codacy CLI
-  uses: codacy/codacy-cli-v2-action@main
+<div class="highlight"><pre><span></span><code>- uses: actions/checkout@v4
   with:
-    project-token: CODACY_PROJECT_TOKEN
-    tool: eslint
-    upload_report: true
+    ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+- name: Run Codacy Analysis CLI
+  uses: codacy/analysis-cli-action@v1
+  with:
+    project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+    tool: eslint9
+    upload: true
 </code></pre></div>
 <h3 id="using-an-account-api-token">Using an account API token<a class="headerlink" href="#using-an-account-api-token" title="Permanent link">#</a></h3>
-<div class="highlight"><pre><span></span><code>- name: Run Codacy CLI
-  uses: codacy/codacy-cli-v2-action@main
+<p>The action takes the provider, organization, and repository from the workflow. Set <code>provider</code>, <code>owner</code>, and <code>repository</code> only if the repository is on Codacy under different names.</p>
+<div class="highlight"><pre><span></span><code>- uses: actions/checkout@v4
   with:
-    api_token: CODACY_API_TOKEN
-    tool: eslint
-    upload_report: true
-    provider: gh
-    owner: codacy-acme
-    repository: sample-javascript-project
+    ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+- name: Run Codacy Analysis CLI
+  uses: codacy/analysis-cli-action@v1
+  with:
+    api-token: ${{ secrets.CODACY_API_TOKEN }}
+    tool: eslint9
+    upload: true
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Tokens should be stored in the repository secrets.</p>
@@ -10051,7 +10053,7 @@ codacy-analysis<span class="w"> </span>upload<span class="w"> </span>eslint.sari
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-11-03 09:48:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2026 09:48:15 UTC">November 3, 2026</span></time>
+    <time datetime="2026-11-06 10:44:35"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 6, 2026 10:44:35 UTC">November 6, 2026</span></time>
   </aside>
 
 
