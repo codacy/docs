@@ -152,7 +152,7 @@ The AI Reviewer adapts to your team using your recently closed pull requests. It
 - The review comments that people left on those pull requests
 - The replies and reactions to the AI Reviewer's own comments
 
-From these, it picks up what your team cares about and what to stop flagging. To steer it, react 👍 to the AI Reviewer's comments that are right, and reply to the ones that are wrong saying why.
+From these, it picks up on what your team cares about and what to stop flagging. To steer it, react with a 👍 to the AI Reviewer's comments that are right, and reply to the ones that are wrong explaining why.
 
 **Notes**
 
