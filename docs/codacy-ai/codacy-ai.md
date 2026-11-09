@@ -44,7 +44,7 @@ AI-enhanced comments are optional, machine-generated suggestions that appear dir
     end="<!--paid-feature-business-end-->"
 %}
 
-_This feature leverages OpenAI models, and is strictly opt-in: you need to get in touch with us in order to enable it._
+_This feature leverages OpenAI models through Amazon Bedrock, and is strictly opt-in: you need to get in touch with us in order to enable it._
 
 Codacy False Positive triage analyzes results on a commit basis to give you visibility into issues that may be false positives (based on their context). During triage, each issue is given a confidence score along with an explanation. When the confidence level falls below a defined threshold, the issue is then flagged as an AI false positive and surfaced for manual review. You can evaluate potential false positives during a pull request in app or on any Codacy page where issues appear. These issues can be ignored or marked as Not a false positive.
 
@@ -84,7 +84,7 @@ Also note that:
 
 _This feature leverages OpenAI models through Amazon Bedrock, and is strictly opt-in; it will only run on repositories or organizations where an admin has enabled it._
 
-The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if [integration exists](../organizations/integrations/jira-integration.md), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
+The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, a [Jira or Linear ticket](#ticket-context), your repository's [review instructions and agent guidelines](#custom-instructions), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
 More details about [AI Reviewer here](../repositories-configure/integrations/github-integration.md#ai-reviewer).
 
@@ -96,11 +96,16 @@ More details about [AI Reviewer here](../repositories-configure/integrations/git
 4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.
 5. To request a PR review, click **Run Reviewer** in the Summary or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview). Your review will be published as soon as it's ready.
 
-#### Jira context for the AI Reviewer
+<div id="jira-context-for-the-ai-reviewer"></div>
 
-If the Jira integration is enabled, we will automatically attempt to detect the Jira ticket key (ABC-123, case-insensitive) in the Pull request metadata. If found, the ticket title and description will be used to enrich the context of our reviewer. If the ticket's parent is an epic or a task, the parent's title and description are used too.
+#### Ticket context for the AI Reviewer {: id="ticket-context"}
 
-More about the [Jira integration here](../organizations/integrations/jira-integration.md).
+The AI Reviewer looks for a ticket key, such as ABC-123, in the pull request title, branch name, description, or latest commit message. It then reads the ticket from Jira or Linear:
+
+- **Jira:** If the [Jira integration](../organizations/integrations/jira-integration.md) is enabled, the AI Reviewer reads the ticket's title and description, and those of its parent epic or task.
+- **Linear:** If you use the [Linear integration for GitHub](https://linear.app/docs/github), the AI Reviewer reads the Linear issues linked to the pull request when there's no Jira ticket. You don't need to set up anything in Codacy for this.
+
+The AI Reviewer is designed to paraphrase what it needs from the ticket rather than quote it in the review.
 
 #### Custom Instructions
 
@@ -132,12 +137,34 @@ Rules for the output:
 - If something is not applicable or not inferable, omit the section entirely.
 ```
 
+The AI Reviewer also reads the guideline files that AI coding agents use, so it knows your conventions even without a `review.md` file:
 
+- `AGENTS.md`, `AGENT.md`, `CLAUDE.md`, and `GEMINI.md`
+- `.cursorrules`, `.windsurfrules`, and the rule files in `.cursor/rules`, `.clinerules`, and `.rules`
+- `.github/copilot-instructions.md` and the `.instructions.md` files in `.github/instructions`
+
+Use `review.md` for instructions that only apply to code reviews.
+
+#### Learning from your reviews {: id="learning-from-reviews"}
+
+The AI Reviewer adapts to your team using your recently closed pull requests. It reads:
+
+- The review comments that people left on those pull requests
+- The replies and reactions to the AI Reviewer's own comments
+
+From these, it picks up on what your team cares about and what to stop flagging. To steer it, react with a 👍 to the AI Reviewer's comments that are right, and reply to the ones that are wrong explaining why.
 
 **Notes**
 
 - Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
-- To enrich the review, the git diff of the Pull Request as well as some related files' contents can be sent as context. No data is stored on our side, or used to train any models.
+- To enrich the review, Codacy can send this context:
+    - The git diff of the pull request and the contents of related files
+    - Your review instructions and agent guideline files
+    - The linked Jira or Linear tickets
+    - The AI Reviewer's earlier comments on the pull request
+    - Review comments from closed pull requests
+- Codacy stores the AI Reviewer's own comments, a summary of your agent guideline files, and the rules it learns from your reviews.
+- Codacy doesn't store the comments people leave on your pull requests, including replies to the AI Reviewer. For replies and reactions to its comments, it keeps only the number of reactions and whether the replies agree with the comment.
 - Prompts are neither stored nor visible to anyone.
 - As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.
 

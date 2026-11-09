@@ -52,9 +52,9 @@ When enabled, Codacy posts a comment on your pull requests each time a new analy
 
 When enabled, the AI Reviewer posts a standalone code review on the pull request and adds a trigger section to the pull request summary comment, allowing you to run the reviewer on demand. When disabled, the trigger section does not appear in the pull request summary comment.
 
-The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if [integration exists](../../organizations/integrations/jira-integration.md), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
+The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, a [Jira or Linear ticket](../../codacy-ai/codacy-ai.md#ticket-context), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
-It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.
+It comments only on the Codacy issues it judges worth a reviewer's attention, and sums up the rest in the review. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.
 
 Configure when the AI Reviewer runs using the **Run reviewer** setting:
 
@@ -63,9 +63,18 @@ Configure when the AI Reviewer runs using the **Run reviewer** setting:
 | Automatically (first review only) | Codacy runs the reviewer once automatically when the pull request is opened, then requires manual triggering for subsequent updates. |
 | Manually | Click **Run Reviewer** in the pull request summary comment or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview) to trigger a review on demand. |
 
+A review can contain:
+
+-   **A verdict** at the top: "No blocking issues noticed", "Worth a closer look", or "Resolve issues before merging".
+-   **A summary** of the changes, which can end with a short "Codacy also found" list of other Codacy findings.
+-   **Test suggestions** for the scenarios the changes should test.
+-   **Inline comments** on the lines that need attention, most with a suggested fix. React 👍 if a comment is right, or reply with what's wrong. The AI Reviewer [learns from these reactions and replies](../../codacy-ai/codacy-ai.md#learning-from-reviews).
+-   **General comments** for requirements it finds the changes don't implement.
+-   **Tips** under "Make this review better" with what you can add to get a better review.
+
 When you run the reviewer again on the same pull request, it reads the comments from its earlier reviews so it doesn't raise the same point twice, unless new commits changed that code substantially.
 
-The AI Reviewer skips pull requests that are too large, such as merges of whole branches. Instead, it posts a short review saying the pull request is too large and suggesting you split it. See the [limits Codacy applies](../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md).
+The AI Reviewer skips pull requests that are too large (merges of whole branches, or git diffs larger than 1 MB). Instead, it posts a short review saying the pull request is too large and suggesting you split it. See the [limits Codacy applies](../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md).
 
 !!! tip
     Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here](../../codacy-ai/codacy-ai.md#custom-instructions).
