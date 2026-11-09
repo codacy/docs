@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-10-16 13:50:10">
+    <meta http-equiv="last-modified" content="2026-11-09 08:48:28">
   
 
     
@@ -10021,8 +10021,8 @@
 <p><img width="1784" height="888" decoding="async" loading="lazy" alt="Pull request summary" src="../images/pull-request-summary.png" /></p>
 <h4 id="ai-reviewer">Enable AI Reviewer<a class="headerlink" href="#ai-reviewer" title="Permanent link">#</a></h4>
 <p>When enabled, the AI Reviewer posts a standalone code review on the pull request and adds a trigger section to the pull request summary comment, allowing you to run the reviewer on demand. When disabled, the trigger section does not appear in the pull request summary comment.</p>
-<p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if <a href="../../../organizations/integrations/jira-integration/">integration exists</a>, source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
-<p>It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.</p>
+<p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, a <a href="../../../codacy-ai/codacy-ai/#ticket-context">Jira or Linear ticket</a>, source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
+<p>It comments only on the Codacy issues it judges worth a reviewer's attention, and sums up the rest in the review. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.</p>
 <p>Configure when the AI Reviewer runs using the <strong>Run reviewer</strong> setting:</p>
 <table>
 <thead>
@@ -10042,8 +10042,17 @@
 </tr>
 </tbody>
 </table>
+<p>A review can contain:</p>
+<ul>
+<li><strong>A verdict</strong> at the top: "No blocking issues noticed", "Worth a closer look", or "Resolve issues before merging".</li>
+<li><strong>A summary</strong> of the changes, which can end with a short "Codacy also found" list of other Codacy findings.</li>
+<li><strong>Test suggestions</strong> for the scenarios the changes should test.</li>
+<li><strong>Inline comments</strong> on the lines that need attention, most with a suggested fix. React 👍 if a comment is right, or reply with what's wrong. The AI Reviewer <a href="../../../codacy-ai/codacy-ai/#learning-from-reviews">learns from these reactions and replies</a>.</li>
+<li><strong>General comments</strong> for requirements it finds the changes don't implement.</li>
+<li><strong>Tips</strong> under "Make this review better" with what you can add to get a better review.</li>
+</ul>
 <p>When you run the reviewer again on the same pull request, it reads the comments from its earlier reviews so it doesn't raise the same point twice, unless new commits changed that code substantially.</p>
-<p>The AI Reviewer skips pull requests that are too large, such as merges of whole branches. Instead, it posts a short review saying the pull request is too large and suggesting you split it. See the <a href="../../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">limits Codacy applies</a>.</p>
+<p>The AI Reviewer skips pull requests that are too large (merges of whole branches, or git diffs larger than 1 MB). Instead, it posts a short review saying the pull request is too large and suggesting you split it. See the <a href="../../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">limits Codacy applies</a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Improve the AI Reviewer results by providing custom instructions. <a href="../../../codacy-ai/codacy-ai/#custom-instructions">Learn how to do it here</a>.</p>
@@ -10077,7 +10086,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-10-16 13:50:10"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 16, 2026 13:50:10 UTC">October 16, 2026</span></time>
+    <time datetime="2026-11-09 08:48:28"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 9, 2026 08:48:28 UTC">November 9, 2026</span></time>
   </aside>
 
 
