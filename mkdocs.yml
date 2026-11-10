@@ -62,6 +62,8 @@ extra_javascript:
 # Reserve image space and defer below-the-fold screenshots without a frontend build step.
 hooks:
     - "theme/hooks/image_metadata.py"
+    # Redirect the retired /vX.Y/ Self-hosted docs URLs, listed in data/retired-version-redirects.tsv.
+    - "theme/hooks/retired_version_redirects.py"
 
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
