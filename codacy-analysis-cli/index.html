@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-11-03 09:48:15">
+    <meta http-equiv="last-modified" content="2026-11-10 20:53:05">
   
 
     
@@ -5165,6 +5165,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#scan-container-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scan container images
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#inspect-and-combine-configurations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -10005,6 +10014,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#scan-container-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scan container images
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#inspect-and-combine-configurations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -10174,6 +10192,7 @@ codacy-analysis<span class="w"> </span>init<span class="w"> </span>--default
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code>init</code> and <code>update-config</code> read the <code>exclude_paths</code> in your <a href="../repositories-configure/codacy-configuration-file/">Codacy configuration file</a> and record them in <code>codacy.config.json</code>, which is where <code>analyze</code> reads them from. Editing <code>.codacy.yaml</code> on its own doesn't change what <code>analyze</code> covers — run <code>update-config</code> afterward.</p>
+<p>To check that file for mistakes first, run <code>codacy-analysis validate-configuration</code>.</p>
 </div>
 <h2 id="analyze">Analyze<a class="headerlink" href="#analyze" title="Permanent link">#</a></h2>
 <p>With the configuration in place, analyze the repository:</p>
@@ -10229,10 +10248,14 @@ codacy-analysis<span class="w"> </span>analyze<span class="w"> </span>--tool-tim
 
 <span class="c1"># Log every tool invocation to stderr</span>
 codacy-analysis<span class="w"> </span>analyze<span class="w"> </span>--log-level<span class="w"> </span>debug
+
+<span class="c1"># Analyze files up to 1 MB instead of skipping those over 150 KB</span>
+codacy-analysis<span class="w"> </span>analyze<span class="w"> </span>--max-file-size<span class="w"> </span>1MB
 </code></pre></div>
+<p>By default <code>analyze</code> skips files over 150 KB, like <a href="../faq/troubleshooting/why-is-my-file-over-150-kb-missing/">Codacy Cloud</a>, and lists them in its output. Dependency manifests and lockfiles are always analyzed, whatever their size.</p>
 <p>Logs are written to <code>~/.codacy/logs/</code> as JSON lines and rotate at 10 MB. Add <code>--no-log</code> to disable file logging, which is worth doing in CI.</p>
 <h2 id="upload-results-to-codacy">Upload results to Codacy<a class="headerlink" href="#upload-results-to-codacy" title="Permanent link">#</a></h2>
-<p><code>upload</code> sends a report produced by <code>analyze</code> to Codacy and attaches its issues to a commit. Only reports from this CLI are accepted, because they already carry Codacy pattern IDs.</p>
+<p><code>upload</code> sends a report to Codacy and attaches its issues to a commit. Reports produced by <code>analyze</code> already carry Codacy pattern IDs. A SARIF report from another tool is mapped to the matching Codacy tool by its driver name; if the CLI can't tell which tool produced it, name it with <code>--tool</code>.</p>
 <div class="highlight"><pre><span></span><code>codacy-analysis<span class="w"> </span>analyze<span class="w"> </span>--output-format<span class="w"> </span>sarif<span class="w"> </span>--output<span class="w"> </span>results.sarif
 codacy-analysis<span class="w"> </span>upload<span class="w"> </span>results.sarif<span class="w"> </span>--repository-token<span class="w"> </span>&lt;token&gt;
 </code></pre></div>
@@ -10240,6 +10263,15 @@ codacy-analysis<span class="w"> </span>upload<span class="w"> </span>results.sar
 <p>With an account API token instead of a repository API token, name the repository as well. <code>upload</code> falls back to the coordinates stored by <code>init --remote</code> when you omit them:</p>
 <div class="highlight"><pre><span></span><code>codacy-analysis<span class="w"> </span>upload<span class="w"> </span>results.sarif<span class="w"> </span>--repository<span class="w"> </span>gh<span class="w"> </span>my-org<span class="w"> </span>my-repo<span class="w"> </span>--commit<span class="w"> </span>&lt;sha&gt;
 </code></pre></div>
+<h2 id="scan-container-images">Scan container images<a class="headerlink" href="#scan-container-images" title="Permanent link">#</a></h2>
+<p><code>container-scan</code> scans a container image for known vulnerabilities with Trivy, which the CLI downloads on first use. It reads the image from your local Docker daemon first and pulls it from the registry only if it isn't there:</p>
+<div class="highlight"><pre><span></span><code>codacy-analysis<span class="w"> </span>container-scan<span class="w"> </span>myorg/app:1.4.2
+</code></pre></div>
+<p>By default it reports <code>HIGH</code> and <code>CRITICAL</code> vulnerabilities in operating system packages that have a fix available. Change that with <code>--severity</code>, <code>--pkg-types library</code>, and <code>--no-ignore-unfixed</code>. It exits <code>1</code> when it finds vulnerabilities, so it can fail a pipeline.</p>
+<p>To have Codacy track the image's vulnerabilities over time instead, <code>upload-sbom</code> generates the image's SBOM and uploads it to <a href="../security/container-scanning/">Container scanning</a> in one step. It needs an <a href="../codacy-api/api-tokens/#account-api-tokens">account API token</a>, from <code>CODACY_API_TOKEN</code> or <code>codacy-analysis login</code>:</p>
+<div class="highlight"><pre><span></span><code>codacy-analysis<span class="w"> </span>upload-sbom<span class="w"> </span>myorg/app:1.4.2<span class="w"> </span>-p<span class="w"> </span>gh<span class="w"> </span>-o<span class="w"> </span>my-org<span class="w"> </span>-r<span class="w"> </span>my-repo<span class="w"> </span>-e<span class="w"> </span>production
+</code></pre></div>
+<p>Add <code>--tag</code> to record the SBOM under a different tag from the image's own, such as a rolling <code>prod</code> tag. See <a href="../security/container-scanning/#how-tagging-affects-your-findings">How tagging affects your findings</a>.</p>
 <h2 id="inspect-and-combine-configurations">Inspect and combine configurations<a class="headerlink" href="#inspect-and-combine-configurations" title="Permanent link">#</a></h2>
 <p><code>discover</code> reports the languages, frameworks, libraries, and notable files the CLI finds, which is what <code>init --auto</code> bases its selection on:</p>
 <div class="highlight"><pre><span></span><code>codacy-analysis<span class="w"> </span>discover
@@ -10319,7 +10351,7 @@ codacy-analysis<span class="w"> </span>config<span class="w"> </span>--merge<spa
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-11-03 09:48:15"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2026 09:48:15 UTC">November 3, 2026</span></time>
+    <time datetime="2026-11-10 20:53:05"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 10, 2026 20:53:05 UTC">November 10, 2026</span></time>
   </aside>
 
 

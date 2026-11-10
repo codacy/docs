@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-09-22 13:54:57">
+    <meta http-equiv="last-modified" content="2026-11-10 20:53:05">
   
 
     
@@ -10002,7 +10002,7 @@
 
 
 <h1 id="uploading-container-image-sboms-to-codacy">Uploading container image SBOMs to Codacy<a class="headerlink" href="#uploading-container-image-sboms-to-codacy" title="Permanent link">#</a></h1>
-<p>Codacy scans your container images for known vulnerabilities from an SBOM (Software Bill of Materials) that you upload. If your pipeline already produces an SBOM, or you generate one with a tool other than the <a href="https://github.com/codacy/codacy-cli-v2">Codacy CLI v2</a>, you can upload it directly through the API and monitor the results as findings under <a href="../../../security/container-scanning/">Container scanning</a>.</p>
+<p>Codacy scans your container images for known vulnerabilities from an SBOM (Software Bill of Materials) that you upload. If your pipeline already produces an SBOM, or you generate one with a tool other than the <a href="../../../codacy-analysis-cli/#scan-container-images">Codacy Analysis CLI</a>, you can upload it directly through the API and monitor the results as findings under <a href="../../../security/container-scanning/">Container scanning</a>.</p>
 <p>Before you automate this, read <a href="../../../security/container-scanning/#how-tagging-affects-your-findings">how tagging affects your findings</a>. The tag you upload to decides whether Codacy keeps one set of findings for the image or starts a new set with every release, and it's the choice that's hardest to reverse.</p>
 <h2 id="uploading-an-sbom-to-codacy">Uploading an SBOM to Codacy<a class="headerlink" href="#uploading-an-sbom-to-codacy" title="Permanent link">#</a></h2>
 <ol>
@@ -10118,7 +10118,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </spa
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-09-22 13:54:57"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 22, 2026 13:54:57 UTC">September 22, 2026</span></time>
+    <time datetime="2026-11-10 20:53:05"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 10, 2026 20:53:05 UTC">November 10, 2026</span></time>
   </aside>
 
 
