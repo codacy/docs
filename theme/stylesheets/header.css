@@ -85,6 +85,8 @@ body[data-md-color-scheme="codacy-dark"] [data-md-component="palette"] .docs-pal
 .md-search .md-search-result__link { display: block; color: inherit; border-radius: inherit; }
 .md-search .md-search-result__article { min-height: 0; padding: .62rem .75rem; }
 .md-search .md-search-result__article h1, .md-search .md-search-result__article h2 { margin: 0; color: var(--docs-text); font-size: .86rem; font-weight: 600; line-height: 1.4; }
+/* Self-hosted pages all live under /chart/; label them so Cloud readers can tell them apart from Cloud pages with similar titles. */
+.md-search .md-search-result__link[href*="/chart/"] .md-search-result__article h1::after { content: "Self-hosted"; display: inline-block; margin-left: .4rem; padding: 0 .35rem; border: 1px solid var(--docs-border); border-radius: var(--docs-radius); background: var(--docs-bg-subtle); color: var(--docs-text-secondary); font-size: .62rem; font-weight: 500; line-height: 1.5; vertical-align: .1em; }
 .md-search .md-search-result__article > p { display: none; }
 .md-search .md-search-result__article > h1 + p, .md-search .md-search-result__article > h2 + p { display: -webkit-box; margin: .3rem 0 0; overflow: hidden; color: var(--docs-text-tertiary); font-size: .72rem; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .md-search .md-search-result__article > ul, .md-search .md-search-result__article > ol { display: none; }
