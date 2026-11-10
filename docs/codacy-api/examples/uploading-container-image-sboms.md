@@ -4,7 +4,7 @@ description: Instructions on how to upload container image SBOMs to Codacy using
 
 # Uploading container image SBOMs to Codacy
 
-Codacy scans your container images for known vulnerabilities from an SBOM (Software Bill of Materials) that you upload. If your pipeline already produces an SBOM, or you generate one with a tool other than the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2), you can upload it directly through the API and monitor the results as findings under [Container scanning](../../security/container-scanning.md).
+Codacy scans your container images for known vulnerabilities from an SBOM (Software Bill of Materials) that you upload. If your pipeline already produces an SBOM, or you generate one with a tool other than the [Codacy Analysis CLI](../../codacy-analysis-cli/index.md#scan-container-images), you can upload it directly through the API and monitor the results as findings under [Container scanning](../../security/container-scanning.md).
 
 Before you automate this, read [how tagging affects your findings](../../security/container-scanning.md#how-tagging-affects-your-findings). The tag you upload to decides whether Codacy keeps one set of findings for the image or starts a new set with every release, and it's the choice that's hardest to reverse.
 
