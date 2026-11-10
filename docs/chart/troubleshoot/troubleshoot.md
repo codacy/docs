@@ -157,3 +157,24 @@ This happens because [we updated the MinIO PVC size](https://github.com/codacy/c
     ```
 
 -   [Uninstall your current version of Codacy](../maintenance/uninstall.md) and reinstall Codacy Self-hosted 9.0.0 directly. Your data won't be impacted by the uninstall since it's stored on the database.
+
+## Upgrade failed: `cannot patch "codacy-rustfs"`
+
+On Codacy Self-hosted v17.0.0 and later, if you download and use an updated `values-production.yaml` file while upgrading, and the storage class of the RustFS volume doesn't support resizing, you'll get an error similar to the following:
+
+```text
+Error: UPGRADE FAILED: cannot patch "codacy-rustfs" with kind PersistentVolumeClaim: persistentvolumeclaims "codacy-rustfs" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
+```
+
+As a workaround, you can either:
+
+-   Set the PVC size back to the size it was created with on your `values.yaml` file:
+
+    ```yaml
+    rustfs:
+      fullnameOverride: codacy-rustfs
+      storageclass:
+        dataStorageSize: 40Gi
+    ```
+
+-   [Uninstall your current version of Codacy](../maintenance/uninstall.md) and reinstall the version you're upgrading to. Your data won't be impacted by the uninstall since it's stored on the database.
