@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2023-11-17 16:41:18">
+    <meta http-equiv="last-modified" content="2026-11-10 15:45:31">
   
 
     
@@ -9974,13 +9974,19 @@
 <p><strong>On Slack</strong>:</p>
 <ol>
 <li>
-<p>Access the <a href="https://slack.com/apps/new/A0F7XDUAZ-incoming-webhooks">Incoming WebHooks</a> page on the App Directory of your Slack account.</p>
+<p><a href="https://api.slack.com/apps?new_app=1&amp;manifest_json=%7B%22display_information%22%3A%7B%22name%22%3A%22Codacy%22%2C%22description%22%3A%22Posts%20the%20new%20critical%20security%20issues%20Codacy%20finds%20in%20your%20repositories.%22%2C%22background_color%22%3A%22%231a2336%22%7D%2C%22features%22%3A%7B%22bot_user%22%3A%7B%22display_name%22%3A%22Codacy%22%2C%22always_online%22%3Afalse%7D%7D%2C%22oauth_config%22%3A%7B%22scopes%22%3A%7B%22bot%22%3A%5B%22incoming-webhook%22%5D%7D%7D%2C%22settings%22%3A%7B%22org_deploy_enabled%22%3Afalse%2C%22socket_mode_enabled%22%3Afalse%2C%22token_rotation_enabled%22%3Afalse%7D%7D">Create the Codacy app</a> in Slack. Slack opens <strong>Create from a manifest</strong> with the app settings filled in, and notes that the manifest was created by a third party.</p>
 </li>
 <li>
-<p>Select the channel where you want to receive notifications and click <strong>Add Incoming WebHooks Integration</strong>.</p>
+<p>Select your workspace, click <strong>Next</strong>, then click <strong>Create and Install</strong>.</p>
 </li>
 <li>
-<p>Copy the Incoming WebHook URL (it starts with <code>https://hooks.slack.com/services/</code>).</p>
+<p>Select the channel where you want to receive notifications and click <strong>Allow</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Go to App Settings</strong>. Optionally, add the <a href="../images/codacy-slack-app-icon.png">Codacy logo</a> under <strong>App icon &amp; Preview</strong>.</p>
+</li>
+<li>
+<p>Open <strong>Incoming Webhooks</strong> and copy the webhook URL (it starts with <code>https://hooks.slack.com/services/</code>).</p>
 </li>
 </ol>
 </li>
@@ -9991,13 +9997,13 @@
 <p>Open your organization <strong>Integrations</strong>, page <strong>Slack</strong>.</p>
 </li>
 <li>
-<p>Paste the Incoming WebHook URL in the field and click <strong>Install Slack</strong>.</p>
+<p>Paste the webhook URL in the field and click <strong>Install Slack</strong>.</p>
 </li>
 </ol>
 <p><img width="1280" height="715" decoding="async" alt="Slack integration installation" src="../images/slack-integration-install.png" /></p>
 </li>
 </ol>
-<p>Once the Slack integration is installed, Codacy sends a confirmation message to the Slack channel you configured when creating the Incoming WebHook. From there on, Codacy notifies you on the same channel whenever a new critical Security issue is detected in the default branch of any repository in your organization.</p>
+<p>Once the Slack integration is installed, Codacy sends a confirmation message to the Slack channel you selected when creating the app. From there on, Codacy notifies you on the same channel whenever a new critical Security issue is detected in the default branch of any repository in your organization.</p>
 <p><img width="450" height="135" decoding="async" loading="lazy" alt="Slack integration message" src="../images/slack-integration-message.png" /></p>
 <h2 id="uninstalling-the-slack-integration">Uninstalling the Slack integration<a class="headerlink" href="#uninstalling-the-slack-integration" title="Permanent link">#</a></h2>
 <p>To uninstall the Slack integration, open your organization <strong>Integrations</strong>, page <strong>Slack</strong>, then click <strong>Uninstall Slack</strong> and confirm.</p>
@@ -10009,7 +10015,7 @@
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2023-11-17 16:41:18"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 17, 2023 16:41:18 UTC">November 17, 2023</span></time>
+    <time datetime="2026-11-10 15:45:31"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 10, 2026 15:45:31 UTC">November 10, 2026</span></time>
   </aside>
 
 
