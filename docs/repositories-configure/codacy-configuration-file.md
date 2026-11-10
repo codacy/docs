@@ -72,11 +72,13 @@ To use a Codacy configuration file:
       - "**/tests/integration/**"
     ```
 
-1.  Optionally, validate the syntax of your configuration file with the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) by running the following command in the same folder as the Codacy configuration file:
+1.  Optionally, validate your configuration file with the [Codacy Analysis CLI](../codacy-analysis-cli/index.md) by running the following command in the same folder as the Codacy configuration file:
 
     ```bash
-    codacy-analysis-cli validate-configuration --directory `pwd`
+    codacy-analysis validate-configuration
     ```
+
+    The command lists every setting that doesn't follow the format above, and exits with a non-zero code if it finds any. It also warns about engine and language names it doesn't recognize.
 
 ## Ignoring files using a Codacy configuration file {: id="ignore-files"}
 
