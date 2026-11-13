@@ -70,7 +70,7 @@ A review can contain:
 -   **Test suggestions** for the scenarios the changes should test.
 -   **Inline comments** on the lines that need attention, most with a suggested fix. React 👍 if a comment is right, or reply with what's wrong. The AI Reviewer [learns from these reactions and replies](../../codacy-ai/codacy-ai.md#learning-from-reviews).
 -   **General comments** for requirements it finds the changes don't implement.
--   **Tips** under "Make this review better" with what you can add to get a better review.
+-   **A tip** with one thing you can add to get a better review, such as review instructions, a pull request description, or a Jira or Linear ticket key.
 
 When you run the reviewer again on the same pull request, it reads the comments from its earlier reviews so it doesn't raise the same point twice, unless new commits changed that code substantially.
 
