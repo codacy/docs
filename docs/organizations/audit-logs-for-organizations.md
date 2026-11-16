@@ -117,6 +117,7 @@ The sections below list the events that Codacy logs for your organization at use
 | Delete DAST target                                                                                                      | A target for DAST scanning was deleted                                             | `organizations.dast.target.delete`                            |
 | Analyze DAST target                                                                                                     | Request a DAST scan of an existing target                                          | `organizations.dast.target.analyze`                           |
 | Update security SLA configurations                                                                                               | The security SLA Configuration was updated                                                  | `organizations.sla.configuration.update`                             |
+
 ### Repository
 
 |Event| Description                                                  |Action|
