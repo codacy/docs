@@ -10,4 +10,15 @@ As a solution to this problem, we placed a size limit to the files that Codacy w
 
 ## What if I need to analyze a file that exceeds this limit?
 
-While Codacy will ignore your file by default, you can still analyze it by running the analysis locally using the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli). The Codacy Analysis CLI doesn't have any limitation on file size.
+While Codacy will ignore your file by default, you can still analyze it locally with the [Codacy Analysis CLI](../../codacy-analysis-cli/index.md). The CLI applies the same 150 KB limit by default, so that local results match Codacy Cloud's. Raise it with `--max-file-size`:
+
+```bash
+codacy-analysis analyze --max-file-size 1MB
+```
+
+To send those results to Codacy, write them to a file and [upload them](../../codacy-analysis-cli/index.md#upload-results-to-codacy):
+
+```bash
+codacy-analysis analyze --max-file-size 1MB --output-format sarif --output results.sarif
+codacy-analysis upload results.sarif
+```

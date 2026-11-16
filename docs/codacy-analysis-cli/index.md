@@ -129,6 +129,8 @@ Configurations created with `init --remote` are always re-synced in full, becaus
 !!! note
     `init` and `update-config` read the `exclude_paths` in your [Codacy configuration file](../repositories-configure/codacy-configuration-file.md) and record them in `codacy.config.json`, which is where `analyze` reads them from. Editing `.codacy.yaml` on its own doesn't change what `analyze` covers — run `update-config` afterward.
 
+    To check that file for mistakes first, run `codacy-analysis validate-configuration`.
+
 ## Analyze
 
 With the configuration in place, analyze the repository:
@@ -218,13 +220,18 @@ codacy-analysis analyze --tool-timeout 1800000
 
 # Log every tool invocation to stderr
 codacy-analysis analyze --log-level debug
+
+# Analyze files up to 1 MB instead of skipping those over 150 KB
+codacy-analysis analyze --max-file-size 1MB
 ```
+
+By default `analyze` skips files over 150 KB, like [Codacy Cloud](../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md), and lists them in its output. Dependency manifests and lockfiles are always analyzed, whatever their size.
 
 Logs are written to `~/.codacy/logs/` as JSON lines and rotate at 10 MB. Add `--no-log` to disable file logging, which is worth doing in CI.
 
 ## Upload results to Codacy {: id="upload-results-to-codacy"}
 
-`upload` sends a report produced by `analyze` to Codacy and attaches its issues to a commit. Only reports from this CLI are accepted, because they already carry Codacy pattern IDs.
+`upload` sends a report to Codacy and attaches its issues to a commit. Reports produced by `analyze` already carry Codacy pattern IDs. A SARIF report from another tool is mapped to the matching Codacy tool by its driver name; if the CLI can't tell which tool produced it, name it with `--tool`.
 
 ```bash
 codacy-analysis analyze --output-format sarif --output results.sarif
@@ -238,6 +245,24 @@ With an account API token instead of a repository API token, name the repository
 ```bash
 codacy-analysis upload results.sarif --repository gh my-org my-repo --commit <sha>
 ```
+
+## Scan container images {: id="scan-container-images"}
+
+`container-scan` scans a container image for known vulnerabilities with Trivy, which the CLI downloads on first use. It reads the image from your local Docker daemon first and pulls it from the registry only if it isn't there:
+
+```bash
+codacy-analysis container-scan myorg/app:1.4.2
+```
+
+By default it reports `HIGH` and `CRITICAL` vulnerabilities in operating system packages that have a fix available. Change that with `--severity`, `--pkg-types library`, and `--no-ignore-unfixed`. It exits `1` when it finds vulnerabilities, so it can fail a pipeline.
+
+To have Codacy track the image's vulnerabilities over time instead, `upload-sbom` generates the image's SBOM and uploads it to [Container scanning](../security/container-scanning.md) in one step. It needs an [account API token](../codacy-api/api-tokens.md#account-api-tokens), from `CODACY_API_TOKEN` or `codacy-analysis login`:
+
+```bash
+codacy-analysis upload-sbom myorg/app:1.4.2 -p gh -o my-org -r my-repo -e production
+```
+
+Add `--tag` to record the SBOM under a different tag from the image's own, such as a rolling `prod` tag. See [How tagging affects your findings](../security/container-scanning.md#how-tagging-affects-your-findings).
 
 ## Inspect and combine configurations
 

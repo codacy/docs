@@ -40,6 +40,8 @@ To uninstall the Jira integration, open your organization **Integrations**, page
 
 If the repository or organization has the AI Reviewer enabled, it will automatically check the Pull Request metadata for a Jira ticket key (ABC-123, case-insensitive). The title and description will be fetched to enrich the review context, along with those of the ticket's parent if it's an epic or a task, and the process will cross-check the required deliverable and acceptance criteria with the existing code changes. 
 
+The AI Reviewer is designed not to quote the ticket in its review. See [ticket context for the AI Reviewer](../../codacy-ai/codacy-ai.md#ticket-context).
+
 More details about [AI Reviewer here](../../repositories-configure/integrations/github-integration.md#ai-reviewer).
 
 ## Creating Jira tickets from issues, dependencies and files
