@@ -215,7 +215,7 @@ Once a scan completes, results will be available under the **Findings** tab. Use
     Failed scans are retried based on the failure reason. Retries are added back to the queue automatically and processed when capacity allows.
 
 !!! note
-    Admins and organization managers can see all DAST findings. Other members only see security items from repositories they follow. See [roles and permissions for organizations](../organizations/roles-and-permissions-for-organizations.md).
+    Only admins and organization managers can create targets and see all DAST findings. Other members only see findings from targets linked to a repository they follow. See [roles and permissions for organizations](../organizations/roles-and-permissions-for-organizations.md).
 
 ## Findings results for your DAST scans
 
