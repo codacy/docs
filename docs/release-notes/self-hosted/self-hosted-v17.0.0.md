@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v17.0.0.
 
 # Self-hosted v17.0.0
 
-These release notes are for [Codacy Self-hosted v17.0.0](https://github.com/codacy/chart/releases/tag/17.0.0){: target="_blank"}, released on September 2, 2026.
+These release notes are for [Codacy Self-hosted v17.0.0](https://github.com/codacy/chart/releases/tag/17.0.0){: target="_blank"}, released on September 2, 2026. <!-- TODO: verify the release date once the release from release-17.0.0 is published. -->
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -23,9 +23,15 @@ Follow the steps below to upgrade to Codacy Self-hosted v17.0.0:
     -   [Codacy Analysis CLI 7.9.5](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.5)
     -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
+## Breaking changes
+
+This version of Codacy Self-hosted stores logs and analysis files in [RustFS](https://github.com/rustfs/rustfs) instead of MinIO. The chart installs RustFS with a 40 GB data volume, so check that your cluster has the [storage that RustFS needs](../../chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
+
+<!-- TODO: verify with the chart owners what happens to the data in MinIO on upgrade (migrated, recreated, or left behind), and add the steps a reader needs to take, including removing the old codacy-minio volume. -->
+
 ## Bug fixes
 
--   Fixed Helm upgrades that failed with `BackoffLimitExceeded` because the job that sets the log retention policy ran before the MinIO bucket was ready.
+-   Fixed Helm upgrades that failed with `BackoffLimitExceeded` because the job that sets the log retention policy ran before the logs bucket was ready.
 
 <!-- TODO: verify with the chart owners. codacy/values.yaml changes the default RabbitMQ image tag from 3.8.35-debian-11-r5 to 3.8.5, matching values-production.yaml and values-microk8s.yaml. Confirm whether this needs an upgrade note. -->
 
