@@ -32,7 +32,7 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
   
-    <meta http-equiv="last-modified" content="2026-10-19 14:18:03">
+    <meta http-equiv="last-modified" content="2026-11-16 14:39:06">
   
 
     
@@ -10077,7 +10077,7 @@
 <tr>
 <td><strong>ORGANIZATION</strong></td>
 <td>true</td>
-<td>Name of the organization on the Git provider. You must have admin permissions over the organization on the Git provider.<br/>For example, <code>codacy</code></td>
+<td>Name of the organization on the Git provider. You must be an admin of the organization on the Git provider or an organization manager on Codacy.<br/>For example, <code>codacy</code></td>
 </tr>
 <tr>
 <td><strong>TARGET_URL</strong></td>
@@ -10141,8 +10141,8 @@
 <ul>
 <li><strong>API_KEY:</strong> <a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
 <li><strong>GIT_PROVIDER:</strong> Git provider hosting of the organization (check the table on the example above). For example, <code>gh</code> for GitHub Cloud.</li>
-<li><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.</li>
-<li><strong>DAST_TARGET_ID:</strong> Identifier of a DAST target to analyze (obtained in the <a href="./#creating-targets">previous section</a>. For example, <code>457</code>. You must have admin permissions over the organization on the Git provider.</li>
+<li><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must be an admin of the organization on the Git provider or an organization manager on Codacy.</li>
+<li><strong>DAST_TARGET_ID:</strong> Identifier of a DAST target to analyze (obtained in the <a href="./#creating-targets">previous section</a>. For example, <code>457</code>. You must be an admin of the organization on the Git provider or an organization manager on Codacy.</li>
 </ul>
 <p>Scans occur asynchronously. To monitor an ongoing scan you can use the <a href="../../../security/app-scanning/#app-scanning">target management page in Codacy</a>. Once completed, you can access all scan results by navigating to the <strong>Security dashboard</strong>, selecting the <strong>Findings tab</strong> and filtering by <strong>Scan types &gt; DAST/App scanning</strong>, or by clicking on a configured target to expand all of that target's results.
 Additionaly, you can use the <code>SearchSRMItems</code> endpoint to filter findings by their DAST target URL with the following request:
@@ -10178,7 +10178,7 @@ Additionaly, you can use the <code>SearchSRMItems</code> endpoint to filter find
 
   <aside class="md-source-file docs-revision" aria-label="Page information">
     <span>Last updated</span>
-    <time datetime="2026-10-19 14:18:03"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 19, 2026 14:18:03 UTC">October 19, 2026</span></time>
+    <time datetime="2026-11-16 14:39:06"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 16, 2026 14:39:06 UTC">November 16, 2026</span></time>
   </aside>
 
 
