@@ -5,7 +5,7 @@ Coding standards enable the analysis of multiple repositories with the same tool
 This page covers the following topics:
 
 -   [Creating a coding standard](#creating)
--   [Configuring a coding standard (guided setup)](#guided-setup)
+-   [Configuring a coding ne standard (guided setup)](#guided-setup)
 -   [Configuring a coding standard (advanced setup)](#advanced-settings)
 -   [Defining default coding standards](#set-default)
 -   [Editing a coding standard](#editing)
