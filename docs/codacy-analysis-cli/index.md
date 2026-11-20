@@ -101,11 +101,21 @@ If you want the rules Codacy enforces as well as the tools the CLI detects local
 codacy-analysis init --auto
 ```
 
+With no filter, `init --auto` leaves out Minor patterns in the Code style and Documentation categories. Minor patterns in other categories, such as Error prone or Unused code, stay in.
+
 Narrow it with comma-separated severities and categories when a full run reports more than you want to act on:
 
 ```bash
 codacy-analysis init --auto Critical,High,Security
 ```
+
+Any filter replaces the no-filter default. To include the Minor Code style and Documentation patterns, list every severity:
+
+```bash
+codacy-analysis init --auto Critical,High,Medium,Minor
+```
+
+`init --auto` doesn't select markdownlint or Agentlinter, with or without filters, unless the repository has its own configuration file for that tool. That file then decides which rules run.
 
 Two narrower modes exist for cases `--auto` doesn't fit. Bare `init` configures only the tools that already have a configuration file in the repository, and `init --default` adds Codacy's default patterns from the public API, which needs no token:
 
