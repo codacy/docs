@@ -2,4 +2,6 @@
 
 ## Limitations with Windows
 
-Windows WSL (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows. Additionally, at this point we're only supporting VSCode and VSCode-based IDEs on Windows.
+On Windows, Codacy Guardrails runs natively in Visual Studio Code, Cursor, and Windsurf.
+
+JetBrains IDEs on Windows require [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (Windows Subsystem for Linux, which runs a Linux environment directly on Windows). The JetBrains extension runs its local analysis inside WSL. To set it up, see [How to install - WSL (JetBrains)](codacy-guardrails-getting-started.md#how-to-install-wsl).
