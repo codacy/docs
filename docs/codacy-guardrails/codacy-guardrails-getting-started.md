@@ -25,7 +25,7 @@ Codacy Guardrails supports Visual Studio Code, Cursor, and Windsurf.
 - Windows
 
 !!! note
-    We currently only support VSCode, Cursor, and Windsurf on Windows.
+    On Windows, Visual Studio Code, Cursor, and Windsurf run natively, without WSL. JetBrains IDEs on Windows require WSL: see [Prerequisites (JetBrains)](#prerequisites-jetbrains).
 
 
 ### Supported IDEs
