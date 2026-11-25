@@ -127,6 +127,9 @@ codacy findings gh my-org my-repo --severities Critical,High
 # Filter by scan type
 codacy findings gh my-org --scan-types SAST,Secrets
 codacy findings gh my-org --scan-types SCA,IaC --severities High
+
+# Container scanning findings for one image
+codacy findings gh my-org --scan-types ContainerSCA --image myorg/app:1.4.2
 ```
 
 Findings are tracked with statuses like `Overdue`, `OnTrack`, and `DueSoon`. Use `--statuses` to filter accordingly:
