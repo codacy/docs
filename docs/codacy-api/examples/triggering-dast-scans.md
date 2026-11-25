@@ -74,7 +74,7 @@ Replace the placeholders with your own values:
 |-------|----------|-------------|
 | **API_KEY** | true | [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API |
 | **GIT_PROVIDER** | true | Git provider hosting of the organization, using one of the values in the table below. <br/>**Options:** `gh` (GitHub Cloud), `ghe`(GitHub Enterprise), `gl` (Gitlab Cloud), `gle` (Gitlab Enterprise), `bb` (Bitbucket Cloud), `bbe` (Bitbucket Server) | 
-| **ORGANIZATION** | true | Name of the organization on the Git provider. You must have admin permissions over the organization on the Git provider.<br/>For example, `codacy` |
+| **ORGANIZATION** | true | Name of the organization on the Git provider. You must be an admin of the organization on the Git provider or an organization manager on Codacy.<br/>For example, `codacy` |
 | **TARGET_URL** | true | URL of the Web app or API that will be scanned. <br/>Must start with `http://` or `https://`<br/>For example, `https://api.codacy.com/v1`|
 | **TARGET_TYPE** | false | Type of target to be scanned <br/> **Options:** `webapp` (default), `openapi` or `graphql`|
 | **API_DEFINITION_URL** | false * | The URL to a publicly accessible OpenAPI specification.<br/>*** Required for OpenAPI targets**|
@@ -104,8 +104,8 @@ Replace the placeholders with your own values:
 
 -   **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 -   **GIT_PROVIDER:** Git provider hosting of the organization (check the table on the example above). For example, `gh` for GitHub Cloud.
--   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must have admin permissions over the organization on the Git provider.
--   **DAST_TARGET_ID:** Identifier of a DAST target to analyze (obtained in the [previous section](./triggering-dast-scans.md#creating-targets). For example, `457`. You must have admin permissions over the organization on the Git provider.
+-   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must be an admin of the organization on the Git provider or an organization manager on Codacy.
+-   **DAST_TARGET_ID:** Identifier of a DAST target to analyze (obtained in the [previous section](./triggering-dast-scans.md#creating-targets). For example, `457`. You must be an admin of the organization on the Git provider or an organization manager on Codacy.
 
 Scans occur asynchronously. To monitor an ongoing scan you can use the [target management page in Codacy](../../security/app-scanning.md#app-scanning). Once completed, you can access all scan results by navigating to the **Security dashboard**, selecting the **Findings tab** and filtering by **Scan types > DAST/App scanning**, or by clicking on a configured target to expand all of that target's results.
 Additionaly, you can use the `SearchSRMItems` endpoint to filter findings by their DAST target URL with the following request:
