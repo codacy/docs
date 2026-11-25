@@ -88,8 +88,11 @@ The storage requirements recommended on the following table **depend mainly on t
 | ---------- | ---------------------------- | ----------------------- |
 | NFS        | Yes                          | **200 GB**              |
 | RabbitMQ   | Yes                          | **8 GB**                |
-| MinIO      | Yes                          | **20 GB**               |
+| RustFS (v17.0.0 and later) | Yes                | **40 GB**               |
+| MinIO (before v17.0.0)     | Yes                | **20 GB**               |
 | PostgreSQL | No (external DB recommended) | **500 GB+**             |
+
+<!-- TODO: verify the RustFS size with the chart owners. 40 GB is rustfs.storageclass.dataStorageSize in values.yaml and values-production.yaml on release-17.0.0; logs use a separate 3 Gi volume (logStorageSize). -->
 
 !!! note
     Please note that due to the way Codacy works, a small number of pods will run in privileged mode with the `CAP_SYS_ADMIN` capability. This is required to allow the Worker pods to serve NFS shares to be mounted by the pods running the static code analysis tools.
