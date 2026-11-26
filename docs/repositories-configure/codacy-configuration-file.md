@@ -22,7 +22,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 ## Using a Codacy configuration file
 
 !!! important
-    -   If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
+    -   If your repository has a Codacy configuration file, the [ignore rules](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
     -   Codacy always uses the configuration file **in the default branch**. New settings added to the Codacy configuration file by a pull request are also considered for the pull request analysis, but the existing configuration in the default branch takes precedence.
 
         For example, if a pull request removes an ignored path from the Codacy configuration file, any matching files will stay ignored until that pull request is merged into the default branch.
@@ -35,7 +35,7 @@ To use a Codacy configuration file:
 
 1.  Add your settings to the configuration file based on the example template below.
 
-    If you defined any [Ignored files settings](ignoring-files.md) for the repository, make sure you [add those settings](#syntax-for-ignoring-files) to the Codacy configuration file.
+    If you defined any [ignore rules](ignoring-files.md) for the repository, make sure you [add those paths](#syntax-for-ignoring-files) to the Codacy configuration file.
 
     ```yaml
     ---
@@ -82,7 +82,7 @@ To use a Codacy configuration file:
 
 ## Ignoring files using a Codacy configuration file {: id="ignore-files"}
 
-The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis.
+The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis. To decide between a configuration file and ignore rules on the Codacy UI, see [choosing between ignore rules and a Codacy configuration file](ignoring-files.md#ignore-rules-or-configuration-file).
 
 !!! note
     {% include-markdown "../assets/includes/coverage-ignore.md" %}
