@@ -26,6 +26,51 @@ After installing, Codacy imports all open Jira issues labeled **security** and c
 
 For more information on how this integration works, see [how Codacy manages security items](../../security/findings.md#opening-and-closing-items) and [how Codacy assigns security item severities](../../security/findings.md#item-severities-and-deadlines).
 
+## What to do when Codacy loses access to Jira
+
+Codacy accesses Jira with the access token of the Jira account that installed the integration. If Jira rejects that token, Codacy loses access to your Jira site until an organization admin or manager reconnects Jira.
+
+While Codacy has no access to Jira:
+
+-   Codacy can't create Jira tickets, so **Create Jira ticket** is disabled on issues, findings, dependencies, and files.
+-   Codacy stops importing Jira issues and their updates into [Security and risk management](../../security/index.md).
+-   The security items and Jira tickets you already have stay in Codacy.
+
+Jira doesn't tell Codacy why it rejected the token. The usual causes are:
+
+-   The Jira account that installed the integration changed its password.
+-   That account lost access to the Jira site, or was deactivated.
+-   The token went 90 days without being used.
+
+### How do I know Codacy lost access to Jira?
+
+-   On your organization **Integrations** page, Jira shows **access lost**.
+-   The page **Jira** shows the banner **Codacy lost access to your Jira site**, with the date Codacy lost access, the Jira site, and the email of the person who connected Jira.
+-   Organization admins and managers also see the banner at the top of the organization pages. Dismissing it hides it until the next time Codacy loses access.
+-   **Create Jira ticket** shows a tooltip that links to the Jira integration page.
+
+### Reconnecting Jira
+
+Reconnecting gives Codacy a new access token for the same Jira site. It keeps your settings, security items, and linked Jira tickets.
+
+!!! important
+    Don't uninstall the Jira integration to fix lost access. Uninstalling deletes all associated open items, and installing again imports your Jira issues as new items.
+
+To reconnect Jira:
+
+1.  Open your organization **Integrations**, page **Jira**, and click **Reconnect Jira** to proceed to Atlassian's website. You can also click **Reconnect Jira** on the banner at the top of the organization pages.
+
+    !!! note
+        Only organization admins and managers can reconnect Jira. Other members see who to ask instead.
+
+1.  On Atlassian's website, sign in with a Jira account that has admin permissions and access to the same Jira site, then authorize Codacy. To connect a different Jira site, uninstall the integration and install it again.
+
+    <!-- TODO: verify what Codacy shows when the account authorizes a different Jira site (the API returns 409 Conflict per OD-1202; the SPA message is unconfirmed) -->
+
+1.  Once successful, you're redirected back to Codacy and see the message **Jira reconnected**.
+
+After reconnecting, Codacy resumes creating Jira tickets and retrieving updates from Jira once a day.
+
 ## Uninstalling the Jira integration
 
 To uninstall the Jira integration, open your organization **Integrations**, page **Jira**, then click **Uninstall Jira** and confirm.
