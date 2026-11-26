@@ -725,6 +725,7 @@ nav:
                       - chart/using-codacy/managing-branches.md
                       - chart/using-codacy/adjusting-quality-settings.md
                       - chart/using-codacy/configuring-file-extensions.md
+                      - chart/using-codacy/ignoring-files.md
                       - chart/using-codacy/security-monitor.md
                       - Repository integrations:
                             - chart/using-codacy/jira-integration.md
