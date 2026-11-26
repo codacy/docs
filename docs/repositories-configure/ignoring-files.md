@@ -53,6 +53,13 @@ To ignore a folder, end the path with `/**`, not with `/`. Codacy doesn't accept
 -   Paths that use `\` to separate folders.
 -   Paths that match every file in the repository, such as `**`.
 
+!!! note
+    -   You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
+
+    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+
+    -   When excluding files from **Duplication** analysis, you must state the **entire path** to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.
+
 ## Ignoring files for specific tools {: id="specific-tools"}
 
 By default, an ignore rule applies to all tools. To ignore a path only for some tools, select those tools under **Advanced options** › **Tools** when you add or edit the rule. The tools that you don't select still analyze the files.
@@ -105,13 +112,6 @@ When a repository has a Codacy configuration file, the **Ignore rules** tab show
 
 <!-- TODO: retake ignored-files-configuration-file.png from the shipped Ignore rules tab with a configuration file -->
 ![The Ignore rules tab when the repository has a Codacy configuration file](images/ignored-files-configuration-file.png)
-
-!!! note
-    -   You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
-
-    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
-
-    -   When excluding files from **Duplication** analysis, you must state the **entire path** to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.
 
 ## Limits
 
